@@ -1,0 +1,12 @@
+Source: siduxcc
+Section: admin
+Priority: extra
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Build-Depends: cdbs, debhelper (>= 5), automake1.9, kdelibs4-dev
+Standards-Version: 3.7.2
+
+Package: siduxcc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: sidux control center
+ Frontend for managing sidux.
