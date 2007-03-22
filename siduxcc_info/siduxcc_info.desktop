@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=siduxcc
+Type=Application
+Exec=kcmshell siduxcc_info
+
+X-KDE-Library=siduxcc_info
+X-KDE-FactoryName=siduxcc_info
+X-KDE-ParentApp=kinfocenter
+
+Name=sidux
+Comment=Information about sidux
+Comment[de]=Informationen über sidux
+
+Categories=Qt;KDE;X-KDE-information;

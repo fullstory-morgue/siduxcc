@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=network
+Type=Application
+Exec=kcmshell siduxcc_network
+
+X-KDE-RootOnly=true
+X-KDE-Library=siduxcc_network
+X-KDE-FactoryName=siduxcc_network
+X-KDE-ParentApp=kcontrol
+
+Name=Network
+Name[de]=Netzwerk
+Comment=Configure your Network
+Comment[de]=Netzwerk-Einstellungen
+
+Categories=Qt;KDE;X-KDE-settings-sidux;

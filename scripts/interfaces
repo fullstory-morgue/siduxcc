@@ -1,0 +1,179 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+#use diagnostics;
+use Getopt::Std;
+use Switch;
+
+###############################################################################
+# GLOBAL VARIABLES
+my %iface;
+my $device_blacklist = "lo|br|vmnet|sit";
+
+###############################################################################
+# PROCESS OPTIONS
+my %opts;
+getopts( 'dwvVi:', \%opts );
+
+if ( exists $opts{'v'} ) { printf ( "* Processing options\n" ) }
+foreach ( keys %opts ) {
+	if ( exists $opts{'i'} and not $opts{'i'} ) {
+		die "Must specify device after `-i' option (or comma separated device list)\n";
+	}
+	if ( exists $opts{'v'} ) { printf ( "\t\$opts{'%s'} = '%s'\n", $_, $opts{$_} ) }
+}
+
+###############################################################################
+# FUNCTIONS
+sub detect_interfaces {
+	my @iface_list;
+	if ( exists $opts{'i'} ) {
+		my @tmp_iface_list = split ( ',', $opts{'i'} );
+		foreach ( @tmp_iface_list ) {
+			if ( $opts{'v'} ) { printf ( "* Looking for %s\n", $_ ) }
+			if ( not -d "/sys/class/net/$_" or grep ( /^($device_blacklist)\d*$/, $_ ) ) {
+				if ( $opts{'v'} ) { printf ( "\t%s not found\n", $_ ) }
+				next;
+			}
+			push( @iface_list, $_ );
+			if ( $opts{'v'} ) { printf ( "\t\@iface_list = '%s'\n", join( ' ', @iface_list ) ) }
+		}
+	}
+	else {
+		if ( $opts{'v'} ) { printf ( "* Detecting network interfaces via sysfs\n" ) }
+		@iface_list = map { s|.*/||g; grep( !/^($device_blacklist)\d*$/, $_ ) } </sys/class/net/*>;
+		if ( $opts{'v'} ) { printf ( "\t\@iface_list = %s\n", join( ' ', @iface_list ) ) }
+	}
+	@iface_list > 0 ? return @iface_list : die "No suitable network interfaces detected!\n";
+}
+
+sub add_iface_element {
+	my $element = shift;
+	my $match = shift;
+	chomp ( $match );
+	# cardbus hack
+	if ( $element eq 'driver' and $match =~ /cardbus/ )  {
+		if ( $opts{'v'} ) {
+			printf ( "\t(!) cardbus hack: overriding \$iface{'bus'}\n" );
+			printf ( "\t\$iface{'bus'} = 'cardbus'\n" );
+		}
+		$iface{'bus'} = "cardbus"
+	}
+	if ( not $iface{$element} ) {
+		$iface{$element} = $match;
+		if ( $opts{'v'} ) { printf ( "\t\$iface{'%s'} = '%s'\n", $element, $iface{$element} ) }
+	}
+	else {
+		if ( $opts{'v'} ) { printf ( "\t(!) discarding: \$iface{'%s'} = '%s'\n", $element, $match ) }
+	}
+}
+
+sub process_iface_info {
+	my $attr = shift;
+	if ( $opts{'V'} ) { printf ( "\t\t%s", $attr ) }
+	my %iface_attr = (
+		'bus' 		=> '^[ \t]+(BUS|SUBSYSTEMS)=="(.+)"$',
+		'device' 	=> '^[ \t]+(SYSFS|ATTRS){device}=="(.+)"$',
+		'driver' 	=> '^[ \t]+(DRIVER|DRIVERS)=="(.+)"$',
+		'mac' 		=> '^[ \t]+(SYSFS|ATTR){address}=="(.+)"$',
+		'manufacturer' 	=> '^[ \t]+(SYSFS|ATTRS){manufacturer}=="(.+)"$',
+		'name' 		=> '^[ \t]+(KERNEL)=="(.+)"$',
+		'prod_id1' 	=> '^[ \t]+(SYSFS|ATTRS){prod_id1}=="(.+)"$',
+		'prod_id2' 	=> '^[ \t]+(SYSFS|ATTRS){prod_id2}=="(.+)"$',
+		'product' 	=> '^[ \t]+(SYSFS|ATTRS){product}=="(.+)"$',
+		'type' 		=> '^[ \t]+(SYSFS|ATTR){type}=="(.+)"$',
+		'vendor' 	=> '^[ \t]+(SYSFS|ATTRS){vendor}=="(.+)"$'
+	);
+	foreach ( keys %iface_attr ) {
+		if ( $attr =~ s/$iface_attr{$_}/$2/ ) {
+			&add_iface_element ( $_, $attr );
+		}
+	}
+}
+
+sub desc_from_bus {
+	my $bus = shift;
+	my $desc;
+	switch ( $bus ) {
+		case /(pci|cardbus)/ {
+			return "unknown" unless ( exists $iface{'vendor'} and exists $iface{'device'} );
+			my @lspci = qx( lspci -d $iface{'vendor'}:$iface{'device'} );
+			if (@lspci) {
+				chomp ( @lspci );
+				$lspci[0] =~ s/^.+:[ \t]+//;
+				$desc = $lspci[0];
+			}
+		}
+		case "pcmcia" {
+			return "unknown" unless ( exists $iface{'prod_id1'} and exists $iface{'prod_id2'} );
+			$desc = ( $iface{'prod_id1'} =~ $iface{'prod_id2'}) ? 
+				"$iface{'prod_id2'}" : "$iface{'prod_id1'} $iface{'prod_id2'}";
+		}
+		case "usb" {
+			return "unknown" unless ( exists $iface{'product'} and exists $iface{'manufacturer'} );
+			$desc = ( $iface{'manufacturer'} =~ /^Linux/ or $iface{'product'} =~ /$iface{'manufacturer'}/ ) ? 
+				"$iface{'product'}" : "$iface{'manufacturer'} $iface{'product'}";
+		}
+		case "ieee1394" {
+			$iface{'medium'} = "Firewire";
+			$desc = "IEEE1394 Network Adapter";
+		}
+	}
+	if ($desc) {
+		$desc =~ s/[ \t]+(corporation|communications|technologies|technology|group|inc\.?|ltd\.?|co\.|\(tm\)|\(rev .+\)),?//gi;
+		return $desc;
+	}
+	else {
+		return "unknown";
+	}
+}
+
+sub interfaces {
+	my @ifaces = &detect_interfaces;
+	my %iface_stdout = (
+		'1' => 'name',
+		'2' => 'driver',
+		'3' => 'medium',
+		'4' => 'bus',
+		'5' => 'mac',
+		'6' => 'desc'
+	);
+	if ( $opts{'v'} ) { printf ( "* Processing interface list '%s'\n", join( ' ', sort ( @ifaces ) ) ) }
+	foreach ( sort @ifaces ) {
+		if ( $opts{'v'} ) { printf ( "<!-- %s\n", $_ ) }
+		# clear iface hash
+		%iface = ();
+		# walk through sysfs device chain
+		my @udevinfo = qx( udevinfo -a -p /sys/class/net/$_ );
+		foreach ( @udevinfo ) {
+			next unless $_ =~ /^[ \t]*[A-Z]+.*==".*"$/;
+			&process_iface_info($_);
+		}
+		$iface{'medium'} = (-d "/sys/class/net/$_/wireless") ? "Wireless" : "Ethernet";
+		# device description
+		if ( exists $iface{'bus'} ) {
+			&add_iface_element ( 'desc', &desc_from_bus( $iface{'bus'} ) );
+		}
+		if ( $opts{'v'} ) { printf ( "%s -->\n", $_ ) }
+		# skip interfaces of wrong type
+		next if ( exists $iface{'type'} and $iface{'type'} !~ /^(1|24)$/ );
+		if ( $opts{'d'} ) { printf ( "%s\n", $_ ); next }
+		if ( $opts{'w'} ) { 
+			if ( $iface{'medium'} eq "Wireless" ) { printf ( "%s\n", $_ ) }
+			next;
+		}
+		# say it
+		foreach ( sort keys %iface_stdout ) {
+			if ( not exists $iface{$iface_stdout{$_}} ) {
+				$iface{$iface_stdout{$_}} = "unknown";
+			}
+			printf ( "%s ", $iface{$iface_stdout{$_}} );
+		}
+		print "\n";
+	}
+}
+
+###############################################################################
+# MAIN
+&interfaces(  );

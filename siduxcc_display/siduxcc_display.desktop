@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=kscreensaver
+Type=Application
+Exec=kcmshell siduxcc_display
+
+X-KDE-RootOnly=true
+X-KDE-Library=siduxcc_display
+X-KDE-FactoryName=siduxcc_display
+X-KDE-ParentApp=kcontrol
+
+Name=Display
+Comment=Display Settings
+Comment[de]=Anzeige-Einstellungen
+
+Categories=Qt;KDE;X-KDE-settings-sidux;
