@@ -1,11 +1,28 @@
-
+/*
+ * siduxcc_network.cpp
+ *
+ * Copyright (c) 2007 Fabian Wuertz
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
 
 #include <qcombobox.h>
 #include <kgenericfactory.h>
 #include <kpushbutton.h>
 #include <klistview.h>
 #include <qlabel.h>
-
+#include <klocale.h>
 
 #include "siduxcc_network.h"
 
@@ -36,23 +53,20 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 	}
 }
 
-void siduxcc_network::load(){
-
+void siduxcc_network::load()
+{
 	getBrowsers();
 	getNetworkcards();
 }
 
 
 
-void siduxcc_network::save(){
-
+void siduxcc_network::save()
+{
 	// Set browser 
 	this->shell->setCommand("update-alternatives --set x-www-browser /usr/bin/"+browserSelect->currentText());
 	this->shell->start(true);
-
 }
-
-void siduxcc_network::defaults(){}
 
 
 void siduxcc_network::getNetworkcards()
@@ -67,7 +81,7 @@ void siduxcc_network::getNetworkcards()
 	QPixmap inactiveWirelessDeviceImg("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png");
 
 	// add networkcards to list
-	this->shell->setCommand("/usr/bin/interfaces");
+	this->shell->setCommand("nicinfo");
 	this->shell->start(true);
 	QStringList deviceList = QStringList::split( "\n", this->shell->getBuffer() );
 
@@ -85,10 +99,10 @@ void siduxcc_network::getNetworkcards()
 		item->setText(1,tmp);
 
 		// active?
-		if(valueList[2] == "Ethernet") {
+		if(valueList[1] == "ethernet") {
 			if(tmp != "") {item->setPixmap(0,activeEthernetDeviceImg);}
 			else {item->setPixmap(0,inactiveEthernetDeviceImg);} }
-		if(valueList[2] == "Wireless") {
+		if(valueList[1] == "wireless") {
 			if(tmp != "") {item->setPixmap(0,activeWirelessDeviceImg);}
 			else {item->setPixmap(0,inactiveWirelessDeviceImg);} }
 		
@@ -103,7 +117,7 @@ void siduxcc_network::getNetworkcards()
 		item->setText(3,this->shell->getBuffer().stripWhiteSpace());
 
 		// driver
-		item->setText(4,valueList[1]);
+		item->setText(4,valueList[2]);
 
 		// slot
 		item->setText(5,valueList[3]);
@@ -112,7 +126,8 @@ void siduxcc_network::getNetworkcards()
 		if(i==0) {
 			for(int i = 6; i < valueList.count(); i++) {
 				valueList[5] = valueList[5]+" "+valueList[i];}
-			ncLabel->setText("<b>Interface:</b> "+valueList[0]+"<br><b>MAC-address:</b> "+valueList[4]+"<br><b>Description:</b> "+valueList[5]); }
+ 			ncLabel->setText(i18n("<b>Interface:</b> ")+valueList[0]+i18n("<br><b>MAC-address:</b> ")+valueList[4]+i18n("<br><b>Description:</b> ")+valueList[5]); }
+
 
 	}
 
@@ -124,17 +139,15 @@ void siduxcc_network::ncDescSlot()
 
 	QListViewItem *item = ncList->currentItem();
 
-	this->shell->setCommand("/usr/bin/interfaces -i "+item->text(0));
+	this->shell->setCommand("nicinfo "+item->text(0));
 	this->shell->start(true);
 	QStringList valueList = QStringList::split( " ", this->shell->getBuffer());
-
-
 
 	// description
 	for(int i = 6; i < valueList.count(); i++) {
 		valueList[5] = valueList[5]+" "+valueList[i];}
 	// mac-address valueList[4]
- 	ncLabel->setText("<b>Interface:</b> "+valueList[0]+"<br><b>MAC-address:</b> "+valueList[4]+"<br><b>Description:</b> "+valueList[5]);
+ 	ncLabel->setText(i18n("<b>Interface:</b> ")+valueList[0]+i18n("<br><b>MAC-address:</b> ")+valueList[4]+i18n("<br><b>Description:</b> ")+valueList[5]);
 
 }
 
@@ -192,7 +205,6 @@ void siduxcc_network::d3Slot() {
 
 void siduxcc_network::i1Slot() {
 	this->shell->setCommand("su-me x-terminal-emulator -e capi-isdnconf&"); this->shell->start(true); }
-
 
 
 

@@ -33254,15 +33254,23 @@ ac_config_files="$ac_config_files menu/Makefile"
 
 ac_config_files="$ac_config_files po/Makefile"
 
-ac_config_files="$ac_config_files scripts/Makefile"
+ac_config_files="$ac_config_files po/de/Makefile"
 
-ac_config_files="$ac_config_files sidux_network/Makefile"
+ac_config_files="$ac_config_files siduxcc/Makefile"
 
 ac_config_files="$ac_config_files siduxcc_display/Makefile"
 
+ac_config_files="$ac_config_files siduxcc_hermes/Makefile"
+
 ac_config_files="$ac_config_files siduxcc_info/Makefile"
 
+ac_config_files="$ac_config_files siduxcc_kernel/Makefile"
+
+ac_config_files="$ac_config_files siduxcc_network/Makefile"
+
 ac_config_files="$ac_config_files siduxcc_services/Makefile"
+
+ac_config_files="$ac_config_files siduxcc_software/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -33876,11 +33884,15 @@ do
     "icons/Makefile") CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;
     "menu/Makefile") CONFIG_FILES="$CONFIG_FILES menu/Makefile" ;;
     "po/Makefile") CONFIG_FILES="$CONFIG_FILES po/Makefile" ;;
-    "scripts/Makefile") CONFIG_FILES="$CONFIG_FILES scripts/Makefile" ;;
-    "sidux_network/Makefile") CONFIG_FILES="$CONFIG_FILES sidux_network/Makefile" ;;
+    "po/de/Makefile") CONFIG_FILES="$CONFIG_FILES po/de/Makefile" ;;
+    "siduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc/Makefile" ;;
     "siduxcc_display/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_display/Makefile" ;;
+    "siduxcc_hermes/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hermes/Makefile" ;;
     "siduxcc_info/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_info/Makefile" ;;
+    "siduxcc_kernel/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kernel/Makefile" ;;
+    "siduxcc_network/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_network/Makefile" ;;
     "siduxcc_services/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_services/Makefile" ;;
+    "siduxcc_software/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_software/Makefile" ;;
 
   *) { { echo "$as_me:$LINENO: error: invalid argument: $ac_config_target" >&5
 echo "$as_me: error: invalid argument: $ac_config_target" >&2;}

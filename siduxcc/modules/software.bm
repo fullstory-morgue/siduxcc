@@ -1,0 +1,108 @@
+#!/bin/bash
+# siduxcc-module: software
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module software $(eval_gettext "Software")
+
+function checkRunlevel()
+{
+	local rlc=$( echo $( runlevel ) | wc -w ) response='' wmRunning=''
+	local RunLvl=$( echo $(runlevel) | cut -d " " -f $rlc ) sleepTime=6
+	echo $RunLvl;
+}
+
+function du()
+{
+	apt-get update
+	apt-get dist-upgrade
+}
+
+function dlgDu()
+{
+	test=`checkRunlevel`
+	if [ $test != '3' ] 
+	then
+		dlg --msgbox "$(eval_gettext "You must be in runlevel 3 and out of X to run this script.")"
+		return 0
+	fi
+	test=`duWarnings`
+	if [ $test == 'disconnected' ] 
+	then
+		dlg --yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 0 0
+		return 0
+	elif [ $test != '' ]
+	then
+		dlg --msgbox "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
+		return 0
+	else
+		dlg --msgbox "$(eval_gettext "At the moment there are no DU-warnings!")"
+		du
+	fi
+}
+
+function duWarnings()
+{
+	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
+	wget -O $TMP -q http://sidux.com/xBackends.php
+	tmp=`cat $TMP`
+	if [ -n "$tmp" ]; then 
+		egrep WARNING $TMP | cut -f2 -d"<" | cut -c7-
+		egrep Warning $TMP | cut -f2 -d"<" | cut -c7-
+	else
+		echo "disconnected"
+	fi
+	rm -f $TMP
+}
+
+function dlgDuWarnings()
+{
+	test=`duWarnings`
+	if [ $test == 'disconnected' ] 
+	then
+		dlg --yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 0 0
+	elif [ $test != '' ]
+	then
+		dlg --msgbox "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
+	else
+		dlg --msgbox "$(eval_gettext "At the moment there are no DU-warnings!")"
+	fi
+}
+
+function dlgDuLog
+{
+	DATE=$(dlg --calendar "$(eval_gettext "Please choose a date...")" 0 0 0 0 0)
+	case $? in
+	0)
+		day=`echo $DATE | cut -f1 -d"/"`
+		month=`echo $DATE | cut -f2 -d"/"`
+		year=`echo $DATE | cut -f3 -d"/"`
+		clear
+		cat /var/log/dpkg.log | grep $year-$month-$day| grep installed | less;;
+	esac
+}
+
+
+function software_interface()
+{
+	while true;
+	do
+		software=$(dlg --menu "$(eval_gettext "Software")" 0 0 0 \
+			"du"       "$(eval_gettext "Run Dist-Upgrade")" \
+			"warnings" "$(eval_gettext "Show DU-Warnings")" \
+			"duLog"    "$(eval_gettext "Show DU-Log")" \
+			"return"   "$(eval_gettext "Return to main Menu")" )
+
+		case $software in
+			du) dlgDu;;
+			warnings) dlgDuWarnings;;
+			duLog) dlgDuLog;;
+			return|"") break;;
+		esac
+	done
+}

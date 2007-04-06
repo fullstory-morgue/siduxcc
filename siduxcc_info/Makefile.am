@@ -14,3 +14,4 @@ xdg_apps_DATA = siduxcc_info.desktop
 messages: rc.cpp
 	$(EXTRACTRC) *.ui *.rc >> rc.cpp
 	$(XGETTEXT) $(kcm_siduxcc_info_la_SOURCES) rc.cpp -o $(podir)/siduxccinfo.pot
+

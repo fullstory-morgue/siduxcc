@@ -1,0 +1,83 @@
+#!/bin/bash
+# siduxcc-module: kernel
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module kernel $(eval_gettext Kernel)
+
+function checkInternet
+{
+	if [ -z "$(ping -c 1 sidux.com)" ]; then
+		echo "Couldn't connect to sidux.com"
+		return
+	fi
+}
+
+function currentKernel()
+{
+	uname -r
+}
+
+function kernelType()
+{
+	if [ -n "$(uname -r | grep slh-up)" ]; then
+		echo slh-up
+	elif [ -n "$(uname -r | grep slh-smp)" ]; then
+		echo slh-smp
+	elif [ -n "$(uname -r | grep slh-64smp)" ]; then
+		echo slh64-up
+	fi
+}
+
+
+function newestKernel()
+{
+	checkInternet
+
+	TMP="$(mktemp -p /tmp/ newestKernel-XXXXXXXXXX)"
+	wget -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/
+	egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	rm -f $TMP
+}
+
+function downloadNewestKernel()
+{
+	checkInternet
+	wget -O $HOME/kernel-$(newestKernel).zip http://debian.tu-bs.de/project/sidux/kernel/kernel-$(newestKernel).zip
+# 	echo $(eval_gettext "<Enter> to continue...")
+	read
+}
+
+function getOldKernels()
+{
+	pushd /boot 2>&1 >>/dev/null
+	for v in vmlinuz-*; do
+		Kernel=$(echo $v|sed s/vmlinuz-//)
+		if [ "${Kernel}" != "$(uname -r)" ]; then
+			echo $Kernel
+		fi
+	done
+	popd 2>&1 >> /dev/null
+}
+
+function kernel_interface()
+{
+	while true;
+	do
+		kernel=$(dlg --menu "$(eval_gettext "Kernel"): $(currentKernel)" 0 0 0 \
+			"remover"  "$(eval_gettext "Run kernel-remover")" \
+			"download" "$(eval_gettext "Download newest kernel")" \
+			"return"   "$(eval_gettext "Return to main Menu")" )
+
+		case $kernel in
+			remover) kernel-remover;;
+			download) downloadNewestKernel;;
+			return|"") break;;
+		esac
+	done
+}

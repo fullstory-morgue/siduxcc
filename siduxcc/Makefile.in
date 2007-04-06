@@ -38,7 +38,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = scripts
+subdir = siduxcc
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -301,7 +301,7 @@ xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
 sharedir = $(pkgdatadir)
-bin_SCRIPTS = restorex interfaces netcardconfig2
+bin_SCRIPTS = siduxcc
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -316,9 +316,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  scripts/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  scripts/Makefile
+#>- 	  $(AUTOMAKE) --gnu  siduxcc/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -328,10 +328,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  scripts/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  scripts/Makefile
-	cd $(top_srcdir) && perl admin/am_edit scripts/Makefile.in
+	  $(AUTOMAKE) --gnu  siduxcc/Makefile
+	cd $(top_srcdir) && perl admin/am_edit siduxcc/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -507,13 +507,17 @@ uninstall-am: uninstall-binSCRIPTS uninstall-info-am
 
 install-data-local:
 	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/rcconf.pl $(DESTDIR)$(sharedir)/
+	cp -aR $(srcdir)/modules $(DESTDIR)$(sharedir)/
+	cp -aR $(srcdir)/scripts $(DESTDIR)$(sharedir)/
+
+messages:
+	$(XGETTEXT) -Lshell siduxcc modules/*.bm modules/interface -o $(podir)/siduxcc.pot
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=Makefile.in interfaces restorex netcardconfig2 Makefile.am rcconf.pl 
+KDE_DIST=Makefile.in siduxcc Makefile.am 
 
 #>+ 2
 docs-am:
@@ -528,10 +532,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  scripts/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  scripts/Makefile
-	cd $(top_srcdir) && perl admin/am_edit scripts/Makefile.in
+	  $(AUTOMAKE) --gnu  siduxcc/Makefile
+	cd $(top_srcdir) && perl admin/am_edit siduxcc/Makefile.in
 
 
 #>+ 21

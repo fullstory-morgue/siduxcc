@@ -1,0 +1,64 @@
+#!/bin/bash
+# siduxcc-module: services
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module services $(eval_gettext "Services")
+
+function dlgService1()
+{
+	service=$(dlg --menu "$(eval_gettext "Services: $services")" 0 0 0 \
+		"apache"  "$(eval_gettext "Webserver")" \
+		"apache2" "$(eval_gettext "Webserver")" \
+		"cupsys"  "$(eval_gettext "Printserver")" \
+		"mysql"   "$(eval_gettext "SQL Databaseserver")" \
+		"ssh"     "$(eval_gettext "Secure-shell-server")" \
+		"samba"   "$(eval_gettext "Samabaserver")" \
+		"return"  "$(eval_gettext "Return to main Menu")" )
+	case $service in
+		apache|apache2|cupsys|ssh|samba) dlgService2;;
+		return|"") break;;
+	esac
+}
+
+function dlgService2()
+{
+	service=$(dlg --menu "$(eval_gettext "Services: $services")" 0 0 0 \
+	"start"   "$(eval_gettext "Start now")" \
+	"stop"    "$(eval_gettext "Stop now")" \
+	"restart" "$(eval_gettext "Restart now")" \
+	"reload"  "$(eval_gettext "Reload now")" \
+	"add"     "$(eval_gettext "Add a Runlevel-Entry")" \
+	"del"     "$(eval_gettext "Delete Runlevel-Entry")" \
+	"return"  "$(eval_gettext "Return to main Menu")" )
+	
+	case $action in
+		start|restart|stop|reload) /etc/init.d/$service $action;;
+		add) update-rc.d -f $service defaults;;
+		del) update-rc.d -f $service remove;;
+		return|"") break;;
+	esac
+}
+
+
+function services_interface()
+{
+	while true;
+	do
+		services=$(dlg --menu "$(eval_gettext "Boot")" 0 0 0 \
+			"boot"     "$(eval_gettext "Enable/Disable Services at Boot")" \
+			"services" "$(eval_gettext "Manage Services")" \
+			"return"   "$(eval_gettext "Return to main Menu")" )
+		
+		case $selection in
+			boot) rcconf;;
+			services) dlgService1;;
+			return|"") break;;
+		esac
+	done
+}

@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-03-25 20:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: siduxcc_network.cpp:111 siduxcc_network.cpp:132
+msgid "<b>Interface:</b> "
+msgstr ""
+
+#: siduxcc_network.cpp:111 siduxcc_network.cpp:132
+msgid "<br><b>MAC-address:</b> "
+msgstr ""
+
+#: siduxcc_network.cpp:111 siduxcc_network.cpp:132
+msgid "<br><b>Description:</b> "
+msgstr ""
+
+#. i18n: file displaydialog.ui line 17
+#: rc.cpp:3 rc.cpp:130
+#, no-c-format
+msgid "Display"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 35
+#: rc.cpp:6 rc.cpp:133
+#, no-c-format
+msgid "&Netcardconfig"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 40
+#: rc.cpp:9 rc.cpp:136
+#, no-c-format
+msgid "Interface"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 51
+#: rc.cpp:12 rc.cpp:139
+#, no-c-format
+msgid "Ip Address    "
+msgstr ""
+
+#. i18n: file displaydialog.ui line 62
+#: rc.cpp:15 rc.cpp:142
+#, no-c-format
+msgid "Method"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 73
+#: rc.cpp:18 rc.cpp:145
+#, no-c-format
+msgid "Boot"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 84
+#: rc.cpp:21 rc.cpp:148
+#, no-c-format
+msgid "Driver"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 95
+#: rc.cpp:24 rc.cpp:151
+#, no-c-format
+msgid "Slot"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 124
+#: rc.cpp:27 rc.cpp:154
+#, no-c-format
+msgid "List of configured network devices"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 146
+#: rc.cpp:33 rc.cpp:160
+#, no-c-format
+msgid "Change the settings of the selected device"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 165
+#: rc.cpp:36 rc.cpp:163
+#, no-c-format
+msgid "Enable"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 184
+#: rc.cpp:39 rc.cpp:166
+#, no-c-format
+msgid "Di&sable"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 200
+#: rc.cpp:42 rc.cpp:169
+#, no-c-format
+msgid "Interface Description"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 209
+#: rc.cpp:45 rc.cpp:172
+#, no-c-format
+msgid "Br&owser"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 235
+#: rc.cpp:48 rc.cpp:175
+#, no-c-format
+msgid "sidux-Browser (require root access)"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 279
+#: rc.cpp:51 rc.cpp:178
+#, no-c-format
+msgid "Ndis&wrapper"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 305
+#: rc.cpp:54 rc.cpp:181
+#, no-c-format
+msgid "Network"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 320
+#: rc.cpp:57 rc.cpp:184
+#, no-c-format
+msgid "Ndiswrapper"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 370
+#: rc.cpp:61 rc.cpp:188
+#, no-c-format
+msgid "Cards known to work"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 407
+#: rc.cpp:64 rc.cpp:191
+#, no-c-format
+msgid "Show list"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 420
+#: rc.cpp:68 rc.cpp:195
+#, no-c-format
+msgid "&Modem"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 446
+#. i18n: file displaydialog.ui line 511
+#. i18n: file displaydialog.ui line 576
+#. i18n: file displaydialog.ui line 641
+#. i18n: file displaydialog.ui line 446
+#. i18n: file displaydialog.ui line 511
+#. i18n: file displaydialog.ui line 576
+#. i18n: file displaydialog.ui line 641
+#: rc.cpp:71 rc.cpp:78 rc.cpp:85 rc.cpp:92 rc.cpp:198 rc.cpp:205 rc.cpp:212
+#: rc.cpp:219
+#, no-c-format
+msgid "Modem"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 480
+#: rc.cpp:74 rc.cpp:201
+#, no-c-format
+msgid "/dev/modem connection"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 545
+#: rc.cpp:81 rc.cpp:208
+#, no-c-format
+msgid "GPRS connection"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 591
+#: rc.cpp:88 rc.cpp:215
+#, no-c-format
+msgid "My PPP Conf"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 659
+#: rc.cpp:95 rc.cpp:222
+#, no-c-format
+msgid "Modem Dialer"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 691
+#: rc.cpp:99 rc.cpp:226
+#, no-c-format
+msgid "DSL/&ISDN"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 717
+#: rc.cpp:102 rc.cpp:229
+#, no-c-format
+msgid "ISDN"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 751
+#: rc.cpp:105 rc.cpp:232
+#, no-c-format
+msgid "CAPI ISDN Conf"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 782
+#. i18n: file displaydialog.ui line 850
+#. i18n: file displaydialog.ui line 918
+#. i18n: file displaydialog.ui line 782
+#. i18n: file displaydialog.ui line 850
+#. i18n: file displaydialog.ui line 918
+#: rc.cpp:109 rc.cpp:116 rc.cpp:123 rc.cpp:236 rc.cpp:243 rc.cpp:250
+#, no-c-format
+msgid "DSL"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 819
+#: rc.cpp:112 rc.cpp:239
+#, no-c-format
+msgid "PPPoE Conf"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 887
+#: rc.cpp:119 rc.cpp:246
+#, no-c-format
+msgid "Fritz!Card DSL PPPoE Conf"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 955
+#: rc.cpp:126 rc.cpp:253
+#, no-c-format
+msgid "My PPPoE Conf"
+msgstr ""

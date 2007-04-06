@@ -29,7 +29,7 @@
                     <cstring>tab</cstring>
                 </property>
                 <attribute name="title">
-                    <string>M&amp;ain</string>
+                    <string>&amp;Main</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -75,7 +75,7 @@
                             </sizepolicy>
                         </property>
                         <property name="text">
-                            <string>Desciption Text</string>
+                            <string>Description Text</string>
                         </property>
                         <property name="alignment">
                             <set>WordBreak|AlignTop</set>
@@ -216,44 +216,6 @@
                     </property>
                     <widget class="QRadioButton">
                         <property name="name">
-                            <cstring>actionReload</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>96</x>
-                                <y>45</y>
-                                <width>70</width>
-                                <height>22</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Reloa&amp;d</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+D</string>
-                        </property>
-                    </widget>
-                    <widget class="QRadioButton">
-                        <property name="name">
-                            <cstring>actionAdd</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>205</x>
-                                <y>20</y>
-                                <width>309</width>
-                                <height>22</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>&amp;Add a Runlevel-Entry (Start service at Boot)</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+A</string>
-                        </property>
-                    </widget>
-                    <widget class="QRadioButton">
-                        <property name="name">
                             <cstring>actionStart</cstring>
                         </property>
                         <property name="geometry">
@@ -265,10 +227,23 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Start</string>
+                            <string>&amp;Start</string>
                         </property>
-                        <property name="accel">
-                            <string></string>
+                    </widget>
+                    <widget class="QRadioButton">
+                        <property name="name">
+                            <cstring>actionStop</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>6</x>
+                                <y>45</y>
+                                <width>90</width>
+                                <height>22</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>S&amp;top</string>
                         </property>
                     </widget>
                     <widget class="QRadioButton">
@@ -292,6 +267,22 @@
                     </widget>
                     <widget class="QRadioButton">
                         <property name="name">
+                            <cstring>actionReload</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>96</x>
+                                <y>45</y>
+                                <width>70</width>
+                                <height>22</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Reloa&amp;d</string>
+                        </property>
+                    </widget>
+                    <widget class="QRadioButton">
+                        <property name="name">
                             <cstring>actionDelete</cstring>
                         </property>
                         <property name="geometry">
@@ -305,27 +296,21 @@
                         <property name="text">
                             <string>Delete Ru&amp;nlevel-Entry</string>
                         </property>
-                        <property name="accel">
-                            <string>Alt+N</string>
-                        </property>
                     </widget>
                     <widget class="QRadioButton">
                         <property name="name">
-                            <cstring>actionStop</cstring>
+                            <cstring>actionAdd</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>6</x>
-                                <y>45</y>
-                                <width>90</width>
+                                <x>205</x>
+                                <y>20</y>
+                                <width>309</width>
                                 <height>22</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>St&amp;op</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+O</string>
+                            <string>Add a R&amp;unlevel-Entry (Start service at Boot)</string>
                         </property>
                     </widget>
                 </widget>
@@ -335,7 +320,7 @@
                     <cstring>tab</cstring>
                 </property>
                 <attribute name="title">
-                    <string>&amp;Overview</string>
+                    <string>B&amp;oot</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -491,6 +476,8 @@
         </widget>
     </grid>
 </widget>
+<customwidgets>
+</customwidgets>
 <connections>
     <connection>
         <sender>actionStart</sender>

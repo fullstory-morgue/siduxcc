@@ -32,7 +32,7 @@
                     <cstring>TabPage</cstring>
                 </property>
                 <attribute name="title">
-                    <string>Netcardconfig</string>
+                    <string>&amp;Netcardconfig</string>
                 </attribute>
                 <widget class="KListView">
                     <column>
@@ -140,7 +140,7 @@
                         </rect>
                     </property>
                     <property name="text">
-                        <string>Configure</string>
+                        <string>&amp;Configure</string>
                     </property>
                     <property name="toolTip" stdset="0">
                         <string>Change the settings of the selected device</string>
@@ -181,7 +181,7 @@
                         </rect>
                     </property>
                     <property name="text">
-                        <string>Disable</string>
+                        <string>Di&amp;sable</string>
                     </property>
                 </widget>
                 <widget class="QLabel">
@@ -193,7 +193,7 @@
                             <x>35</x>
                             <y>250</y>
                             <width>450</width>
-                            <height>50</height>
+                            <height>60</height>
                         </rect>
                     </property>
                     <property name="text">
@@ -206,7 +206,7 @@
                     <cstring>tab</cstring>
                 </property>
                 <attribute name="title">
-                    <string>Browser</string>
+                    <string>Br&amp;owser</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -276,7 +276,7 @@
                     <cstring>TabPage</cstring>
                 </property>
                 <attribute name="title">
-                    <string>Ndiswrapper</string>
+                    <string>Ndis&amp;wrapper</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -417,7 +417,7 @@
                     <cstring>tab</cstring>
                 </property>
                 <attribute name="title">
-                    <string>Modem</string>
+                    <string>&amp;Modem</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -688,7 +688,7 @@
                     <cstring>TabPage</cstring>
                 </property>
                 <attribute name="title">
-                    <string>DSL/ISDN</string>
+                    <string>DSL/&amp;ISDN</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">

@@ -1,0 +1,39 @@
+#!/bin/bash
+# siduxcc-module: info
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module info $(eval_gettext "Infos")
+
+function siduxVersion()
+{
+	cat /etc/sidux-version
+}
+
+function info_interface()
+{
+	while true;
+	do
+		selection=$(dlg --menu "$(eval_gettext "Infos")" 0 0 0 \
+			"version" "$(eval_gettext "sidux Version")" \
+			"infobash" "$(eval_gettext "Infobash")" \
+			"return" "$(eval_gettext "Return to main Menu")" )
+		
+		case $selection in
+			version) dlg --msgbox "$(eval_gettext "You are using ") $(siduxVersion)";;
+			infobash)
+				clear
+				infobash -v3
+				echo
+				echo $(eval_gettext "Press <Enter> to continue...")
+				read
+				;;
+			return|"") break;;
+		esac
+	done
+}

@@ -10,6 +10,7 @@ X-KDE-FactoryName=siduxcc_display
 X-KDE-ParentApp=kcontrol
 
 Name=Display
+Name[de]=Anzeige
 Comment=Display Settings
 Comment[de]=Anzeige-Einstellungen
 

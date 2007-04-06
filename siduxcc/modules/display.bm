@@ -1,0 +1,269 @@
+#!/bin/bash
+# siduxcc-module: display
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module display $(eval_gettext "Display")
+
+X_CONF="/etc/X11/xorg.conf"
+DM="$(cat /etc/X11/default-display-manager 2>/dev/null)"
+DM="$(basename $DM 2>/dev/null)"
+[ -z "$DM" ] && DM=kdm
+
+
+# Screen Resolution
+# ------------------
+
+function getResolution()
+{
+	xdpyinfo | sed -n 's/^.*dimensions:\s*\(.*\) pixels.*$/\1/p'
+}
+
+function setResolution()
+{
+	if [ "$1" = "$(getResolution)" ]; then
+		echo "Resolution unchanged."
+		return 128
+	else
+		backupX
+		fix-res $1
+	fi
+}
+
+function dlgResolution()
+{
+	newres=$(dlg --menu "$(eval_gettext "Select new Resolution")" 0 0 0 640x480 "" 800x600 "" 1024x768 "" 1152x864 "" 1280x1024 "" 1400x1050 "" 1600x1200 "" custom "")
+
+	if [ $? -eq 0 ]; then
+		if [ "$newres" = "custom" ]; then
+			newres=$(dlg --inputbox "$(eval_gettext "Enter new Resolution:")" 0 0 "1024x768")
+			[ $? -ne 0 ] && newres=
+		fi
+		if [ "$newres" ]; then
+			fix-res $newres \
+			&& dlg --msgbox "$(eval_gettext "The resolution has been changed successfully to $newres.")" \
+			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the resolution to $newres!")"
+		fi
+	fi
+}
+
+# Screen Frequenz
+# --------------
+
+function getHorizSync()
+{
+	awk '{if($1=="HorizSync"){print $4}}' $X_CONF
+}
+
+function setHorizSync()
+{
+	backupX
+	perl -pi -e "s/^(\s*HorizSync).*/\1 31 - $1/" $X_CONF
+}
+
+function getVertRefresh()
+{
+	awk '{if($1=="VertRefresh"){print $4}}' $X_CONF
+}
+
+function setVertRefresh()
+{
+	backupX
+	perl -pi -e "s/^(\s*VertRefresh).*/\1 50 - $1/" $X_CONF
+}
+
+function dlgFrequenz()
+{
+
+	dlg --yesno "Do you have a TFT-monitor?"
+
+	if [ $? -eq 1 ]; then
+		defaultrate="$(getVertRefresh)" || defaultrate="75"
+		newrate=$(dlg --inputbox "$(eval_gettext "Enter new vertical refresh rate:")" 0 0 "$defaultrate")
+		if [ $? -eq 0 ]; then
+			setVertRefresh $newrate \
+			&& dlg --msgbox "$(eval_gettext "The vertical refresh rate has been changed successfully to $newrate.")" \
+			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $newrate!")"
+		fi
+	fi
+
+	defaultrate="$(getHorizSync)" || defaultrate="65"
+	newrate=$(dlg --inputbox "$(eval_gettext "Enter new horizontal sync rate:")" 0 0 "$defaultrate")
+	if [ $? -eq 0 ]; then
+		setHorizSync $newrate \
+		&& dlg --msgbox "$(eval_gettext "The horizontal sync rate has been changed successfully to $newrate.")" \
+		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $newrate!")"
+	fi
+
+
+}
+
+# DPI-Settings
+# ------------
+
+function getDpi()
+{
+	sed -ne 's/^.*ServerArgsLocal=-nolisten tcp.*-dpi \([^ ]*\).*$/\1/p' < /etc/kde3/kdm/kdmrc
+}
+
+function setDpi()
+{
+	if [ $1 -eq $(getDpi) ]; then
+		echo "DPI-Settings unchanged."
+		return 128
+	else
+		fix-dpi-kdm $1
+	fi
+}
+function dlgDpi()
+{
+	defaultdpi="$(getDpi)" || defaultdpi="72"
+	newdpi=$(dlg --inputbox "$(eval_gettext "Enter new DPI-Settings:")" 0 0 "$defaultdpi")
+	if [ $? -eq 0 ]; then
+		setDpi $newdpi \
+		&& dlg --msgbox "$(eval_gettext "The DPI-Settings have been changed successfully to $newdpi dpi.")" \
+		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the DPI-Settings to $newdpi dpi!")"
+	fi
+}
+
+# ColorDepth
+# ----------
+
+function getColorDepth()
+{
+	awk '/DefaultColorDepth/{print $2}' < $X_CONF
+}
+
+function setColorDepth()
+{
+	if [ $1 -eq $(getColorDepth) ]; then
+		echo "DefaultDepth-Settings unchanged."
+		return 128
+	else
+		backupX
+		perl -pi -e "s/^(\s*DefaultColorDepth).*/\1 $1/" $X_CONF
+	fi
+}
+
+function dlgColorDepth()
+{
+	cdepth="$(getColorDepth)"
+	case $cdepth in
+		8|15|16|24) default=$cdepth;;
+		*) default=24;;
+	esac
+	new=$(dlg --default-item $default --menu "$(eval_gettext "Default Color Depth")" 0 0 0 8 bit 15 bit 16 bit 24 bit)
+	if [ $? -eq 0 ]; then
+			setColorDepth $new \
+			&& dlg --msgbox "$(eval_gettext "The Colordepth has been changed successfully to $new.")" \
+			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the Colordepth to $new")"
+	fi
+}
+
+# Fonts
+# -----
+
+function fixFonts()
+{
+	if [ "$DISPLAY" ]; then
+		konsole -T "Fix-Fonts (sidux-Control-Center)" --nomenubar --notabbar -e fix-fonts
+	else
+		fix-fonts
+	fi
+}
+
+# Modelines
+# ---------
+
+function removeModelines()
+{
+	backupX
+	perl -pi -e 's/^.*Mode.ine.*\n?//g' $X_CONF
+}
+
+# X-Server
+# --------
+
+function backupX()
+{
+	tmp=`date +%d.%m.%y-%H:%M`
+	cp $X_CONF $X_CONF-$tmp.save
+}
+
+function restoreX()
+{
+	tmp=`ls $X_CONF-*.save`
+	tmp=`echo ${tmp//"save"/'save ""'}`
+	newres=$(dlg --menu "$(eval_gettext "Select the file that should be restore")" 0 0 0 $tmp)
+	cp -f $newres $X_CONF
+}
+
+function restartX()
+{
+	/etc/init.d/$DM stop &>/dev/null
+	chvt 7 || chvt -t 7
+	/etc/init.d/$DM start &>/dev/null
+}
+
+# Driver
+# ------
+
+function binaryGfx()
+{
+	clear
+	get-sidux-binary-gfx
+	install-binary-gfx -a
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+function fixFonts()
+{
+	clear
+	fix-fonts
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+# Interface
+# ---------
+
+function display_interface()
+{
+	while true;
+	do
+		display=$(dlg --menu "$(eval_gettext "Display")" 0 0 0 \
+			"resolution" "$(eval_gettext "Change Resolution")" \
+			"frequenz"   "$(eval_gettext "Set Scanning Frequenz")" \
+			"dpi"        "$(eval_gettext "Change DPI-Settings")" \
+			"cdepth"     "$(eval_gettext "Change ColorDepth")" \
+			"rmml"       "$(eval_gettext "Remove Modelines")" \
+			"fix-fonts"  "$(eval_gettext "Register/Repair Fonts")" \
+			"binary-gfx" "$(eval_gettext "Install Ati/nVidia 3d Drivers")" \
+			"restartX"   "$(eval_gettext "Restart X-Server")" \
+			"restoreX"   "$(eval_gettext "Restore X-Server")" \
+			"return"     "$(eval_gettext "Return to main Menu")" )
+
+		case $display in
+			binary-gfx) binaryGfx;;
+
+			resolution) dlgResolution;;
+			cdepth)     dlgColorDepth;;
+			dpi)        dlgDpi;;
+			frequenz)   dlgFrequenz;;
+
+			rmml) removeModelines;;
+			fix-fonts) fixFonts;;
+
+			restartX) restartX;;
+			restoreX) restoreX;;
+
+			return|"") break;;
+			*) dlg --msgbox "$(eval_gettext "Error: This module is not implemented yet!")";;
+		esac
+	done
+}

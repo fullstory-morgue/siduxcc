@@ -1,3 +1,22 @@
+/*
+ * siduxcc_services.cpp
+ *
+ * Copyright (c) 2007 Fabian Wuertz
+ * siduxcc_services is based on knxcc_services from Andreas Loible
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
 
 #include <qcombobox.h>
 #include <kgenericfactory.h>
@@ -10,8 +29,6 @@
 #include <qcheckbox.h>
 #include <qfile.h>
 #include <qlistbox.h>
-
-
 
 #include "siduxcc_services.h"
 
@@ -36,7 +53,6 @@ siduxcc_services::siduxcc_services(QWidget *parent, const char *name, const QStr
 
 void siduxcc_services::load()
 {
-
 	// add services
 	servicesBox->insertItem("apache");	//0
 	servicesBox->insertItem("apache2");	//1
@@ -48,7 +64,6 @@ void siduxcc_services::load()
 
 	// update service ionformations
 	updateSlot();
-
 }
 
 
@@ -113,7 +128,6 @@ void siduxcc_services::defaults(){}
 void siduxcc_services::updateSlot()
 {
 
-
 	// status
 	QString pid [50];
 	pid[0] = "apache";
@@ -138,19 +152,19 @@ void siduxcc_services::updateSlot()
 
 	// description
 	QString description [50];
-	description[0] = "The most popular server in the world, Apache features a modular design and supports dynamic selection of extension modules at runtime. ";
-	description[1] = "Apache v2 is the next generation of the omnipresent Apache web server.";
-	description[2] = "The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.";
-	description[3] = "MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.";
-	description[4] = "The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.";
-	description[5] = "SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.";
+	description[0] = i18n("The most popular server in the world, Apache features a modular design and supports dynamic selection of extension modules at runtime. ");
+	description[1] = i18n("Apache v2 is the next generation of the omnipresent Apache web server.");
+	description[2] = i18n("The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.");
+	description[3] = i18n("MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.");
+	description[4] = i18n("The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.");
+	description[5] = i18n("SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.");
 
 	descriptionLabel->setText(description[servicesBox->currentItem()]);
 
 
 	 // Services
 	activeServices->clear();
-	this->shell->setCommand("perl /usr/share/siduxcc/rcconf.pl | egrep ^active | cut -d\\  -f2");
+	this->shell->setCommand("perl /usr/share/siduxcc/scripts/rcconf.pl | egrep ^active | cut -d\\  -f2");
 	this->shell->start(true);
 	QStringList activeServicesList = QStringList::split( "\n", this->shell->getBuffer() );
 	for ( QStringList::Iterator it = activeServicesList.begin(); it != activeServicesList.end(); ++it ) {
@@ -159,7 +173,7 @@ void siduxcc_services::updateSlot()
 	}
 
 	disabledServices->clear();
-	this->shell->setCommand("perl /usr/share/siduxcc/rcconf.pl | egrep ^disabled | cut -d\\  -f2");
+	this->shell->setCommand("perl /usr/share/siduxcc/scripts/rcconf.pl | egrep ^disabled | cut -d\\  -f2");
 	this->shell->start(true);
 	QStringList disabledServicesList = QStringList::split( "\n", this->shell->getBuffer() );
 	for ( QStringList::Iterator it = disabledServicesList.begin(); it != disabledServicesList.end(); ++it ) {

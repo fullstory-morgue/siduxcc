@@ -76,11 +76,15 @@ AC_CONFIG_FILES([ doc/en/Makefile ])
 AC_CONFIG_FILES([ icons/Makefile ])
 AC_CONFIG_FILES([ menu/Makefile ])
 AC_CONFIG_FILES([ po/Makefile ])
-AC_CONFIG_FILES([ scripts/Makefile ])
-AC_CONFIG_FILES([ sidux_network/Makefile ])
+AC_CONFIG_FILES([ po/de/Makefile ])
+AC_CONFIG_FILES([ siduxcc/Makefile ])
 AC_CONFIG_FILES([ siduxcc_display/Makefile ])
+AC_CONFIG_FILES([ siduxcc_hermes/Makefile ])
 AC_CONFIG_FILES([ siduxcc_info/Makefile ])
+AC_CONFIG_FILES([ siduxcc_kernel/Makefile ])
+AC_CONFIG_FILES([ siduxcc_network/Makefile ])
 AC_CONFIG_FILES([ siduxcc_services/Makefile ])
+AC_CONFIG_FILES([ siduxcc_software/Makefile ])
 AC_OUTPUT
 # Check if KDE_SET_PREFIX was called, and --prefix was passed to configure
 if test -n "$kde_libs_prefix" -a -n "$given_prefix"; then

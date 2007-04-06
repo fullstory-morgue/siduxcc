@@ -40,7 +40,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = sidux_network
+subdir = siduxcc_network
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -373,9 +373,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  sidux_network/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc_network/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  sidux_network/Makefile
+#>- 	  $(AUTOMAKE) --gnu  siduxcc_network/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -385,10 +385,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  sidux_network/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc_network/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  sidux_network/Makefile
-	cd $(top_srcdir) && perl admin/am_edit sidux_network/Makefile.in
+	  $(AUTOMAKE) --gnu  siduxcc_network/Makefile
+	cd $(top_srcdir) && perl admin/am_edit siduxcc_network/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -737,10 +737,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  sidux_network/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  siduxcc_network/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  sidux_network/Makefile
-	cd $(top_srcdir) && perl admin/am_edit sidux_network/Makefile.in
+	  $(AUTOMAKE) --gnu  siduxcc_network/Makefile
+	cd $(top_srcdir) && perl admin/am_edit siduxcc_network/Makefile.in
 
 
 #>+ 21

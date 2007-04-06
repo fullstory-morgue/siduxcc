@@ -1,0 +1,33 @@
+#!/bin/bash
+# siducc-interface
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+if (($UID)); then
+	echo $(eval_gettext "Error: You must be root to run this script!")
+	exit 1
+fi
+
+MODULES="$(echo "$MODULES" | sort)"
+
+command="dlg --menu \"`eval_gettext "Main Menu"`\" 0 0 0 $MODULES
+         exit \"`eval_gettext Exit`\""
+
+while true;
+do
+   selection=$(eval "$command")
+   
+   case $selection in
+      exit|"")
+         break;
+         ;;
+      *)
+         eval ${selection}_interface
+         ;;
+   esac
+done

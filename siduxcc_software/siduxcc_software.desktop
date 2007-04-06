@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=package
+Type=Application
+Exec=kcmshell siduxcc_software
+
+X-KDE-RootOnly=true
+X-KDE-Library=siduxcc_software
+X-KDE-FactoryName=siduxcc_software
+X-KDE-ParentApp=kcontrol
+
+Name=Software
+Comment=Software Settings
+Comment[de]=Software Einstellungen
+
+Categories=Qt;KDE;X-KDE-settings-sidux;

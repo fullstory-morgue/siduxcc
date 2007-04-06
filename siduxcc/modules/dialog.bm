@@ -1,0 +1,32 @@
+#!/bin/bash
+# siduxcc-module: dialog
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+#run gettext
+. /usr/bin/gettext.sh
+
+DIALOG="dialog"
+
+function dlg()
+{
+	# reset Variables
+	ARG=; PARAMETERS=;
+	if [ $# -eq 2 ]; then
+		case "$1" in
+		--msgbox|--yesno|--infobox|--inputbox|--textbox|--gauge)
+			ARG="0 0"
+			;;
+		esac
+	fi
+	# escape Parameters
+	PARAMETERS="\"$1\""
+	while shift; do
+		(($#)) && PARAMETERS="$PARAMETERS \"$1\""
+	done
+	output="$(eval $DIALOG --backtitle "$(eval_gettext "sidux-Control-Center")" $PARAMETERS $ARG 3>&1 1>&2 2>&3 )"
+	rc=$?
+	echo "$output"
+	return $rc
+}

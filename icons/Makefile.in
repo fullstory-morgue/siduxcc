@@ -485,12 +485,12 @@ uninstall-am: uninstall-kde-icons  uninstall-info-am
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png Makefile.in hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi22-app-siduxcc_wlan_up.png hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png Makefile.am 
+KDE_DIST=hi22-app-siduxcc_ok.png hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi22-app-siduxcc_wlan_up.png hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi22-app-siduxcc_warning.png 
 
 #>+ 2
 docs-am:
 
-#>+ 30
+#>+ 40
 install-kde-icons:
 	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/128x128/apps
 	$(INSTALL_DATA) $(srcdir)/hi128-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/128x128/apps/siduxcc.png
@@ -506,8 +506,13 @@ install-kde-icons:
 	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_disconnected.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-sidux_book.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_ok.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_ok.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
 
 uninstall-kde-icons:
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/128x128/apps/siduxcc.png
@@ -518,8 +523,13 @@ uninstall-kde-icons:
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_ok.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
 
 #>+ 15
 force-reedit:

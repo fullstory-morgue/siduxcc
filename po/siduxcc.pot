@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-02 23:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: modules/dialog.bm:28
+#, sh-format
+msgid "sidux-Control-Center"
+msgstr ""
+
+#: modules/display.bm:10 modules/display.bm:239
+#, sh-format
+msgid "Display"
+msgstr ""
+
+#: modules/display.bm:39
+#, sh-format
+msgid "Select new Resolution"
+msgstr ""
+
+#: modules/display.bm:43
+#, sh-format
+msgid "Enter new Resolution:"
+msgstr ""
+
+#: modules/display.bm:86
+#, sh-format
+msgid "Enter new vertical refresh rate:"
+msgstr ""
+
+#: modules/display.bm:95
+#, sh-format
+msgid "Enter new horizontal sync rate:"
+msgstr ""
+
+#: modules/display.bm:125
+#, sh-format
+msgid "Enter new DPI-Settings:"
+msgstr ""
+
+#: modules/display.bm:159
+#, sh-format
+msgid "Default Color Depth"
+msgstr ""
+
+#: modules/display.bm:201
+#, sh-format
+msgid "Select the file that should be restore"
+msgstr ""
+
+#: modules/display.bm:220 modules/display.bm:228 modules/info.bm:33
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr ""
+
+#: modules/display.bm:240
+#, sh-format
+msgid "Change Resolution"
+msgstr ""
+
+#: modules/display.bm:241
+#, sh-format
+msgid "Set Scanning Frequenz"
+msgstr ""
+
+#: modules/display.bm:242
+#, sh-format
+msgid "Change DPI-Settings"
+msgstr ""
+
+#: modules/display.bm:243
+#, sh-format
+msgid "Change ColorDepth"
+msgstr ""
+
+#: modules/display.bm:244
+#, sh-format
+msgid "Remove Modelines"
+msgstr ""
+
+#: modules/display.bm:245
+#, sh-format
+msgid "Register/Repair Fonts"
+msgstr ""
+
+#: modules/display.bm:246
+#, sh-format
+msgid "Install Ati/nVidia 3d Drivers"
+msgstr ""
+
+#: modules/display.bm:247
+#, sh-format
+msgid "Restart X-Server"
+msgstr ""
+
+#: modules/display.bm:248
+#, sh-format
+msgid "Restore X-Server"
+msgstr ""
+
+#: modules/display.bm:249 modules/info.bm:25 modules/kernel.bm:75
+#: modules/services.bm:22 modules/services.bm:38 modules/services.bm:56
+#: modules/software.bm:99
+#, sh-format
+msgid "Return to main Menu"
+msgstr ""
+
+#: modules/display.bm:266
+#, sh-format
+msgid "Error: This module is not implemented yet!"
+msgstr ""
+
+#: modules/info.bm:11 modules/info.bm:22
+#, sh-format
+msgid "Infos"
+msgstr ""
+
+#: modules/info.bm:23
+#, sh-format
+msgid "sidux Version"
+msgstr ""
+
+#: modules/info.bm:24
+#, sh-format
+msgid "Infobash"
+msgstr ""
+
+#: modules/info.bm:28
+#, sh-format
+msgid "You are using "
+msgstr ""
+
+#: modules/kernel.bm:11 modules/kernel.bm:72
+#, sh-format
+msgid "Kernel"
+msgstr ""
+
+#: modules/kernel.bm:73
+#, sh-format
+msgid "Run kernel-remover"
+msgstr ""
+
+#: modules/kernel.bm:74
+#, sh-format
+msgid "Download newest kernel"
+msgstr ""
+
+#: modules/services.bm:11
+#, sh-format
+msgid "Services"
+msgstr ""
+
+#: modules/services.bm:16 modules/services.bm:17
+#, sh-format
+msgid "Webserver"
+msgstr ""
+
+#: modules/services.bm:18
+#, sh-format
+msgid "Printserver"
+msgstr ""
+
+#: modules/services.bm:19
+#, sh-format
+msgid "SQL Databaseserver"
+msgstr ""
+
+#: modules/services.bm:20
+#, sh-format
+msgid "Secure-shell-server"
+msgstr ""
+
+#: modules/services.bm:21
+#, sh-format
+msgid "Samabaserver"
+msgstr ""
+
+#: modules/services.bm:32
+#, sh-format
+msgid "Start now"
+msgstr ""
+
+#: modules/services.bm:33
+#, sh-format
+msgid "Stop now"
+msgstr ""
+
+#: modules/services.bm:34
+#, sh-format
+msgid "Restart now"
+msgstr ""
+
+#: modules/services.bm:35
+#, sh-format
+msgid "Reload now"
+msgstr ""
+
+#: modules/services.bm:36
+#, sh-format
+msgid "Add a Runlevel-Entry"
+msgstr ""
+
+#: modules/services.bm:37
+#, sh-format
+msgid "Delete Runlevel-Entry"
+msgstr ""
+
+#: modules/services.bm:53
+#, sh-format
+msgid "Boot"
+msgstr ""
+
+#: modules/services.bm:54
+#, sh-format
+msgid "Enable/Disable Services at Boot"
+msgstr ""
+
+#: modules/services.bm:55
+#, sh-format
+msgid "Manage Services"
+msgstr ""
+
+#: modules/software.bm:11 modules/software.bm:95
+#, sh-format
+msgid "Software"
+msgstr ""
+
+#: modules/software.bm:31
+#, sh-format
+msgid "You must be in runlevel 3 and out of X to run this script."
+msgstr ""
+
+#: modules/software.bm:37 modules/software.bm:68
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+
+#: modules/software.bm:41 modules/software.bm:71
+#, sh-format
+msgid ""
+"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
+"com for more information!"
+msgstr ""
+
+#: modules/software.bm:44 modules/software.bm:73
+#, sh-format
+msgid "At the moment there are no DU-warnings!"
+msgstr ""
+
+#: modules/software.bm:79
+#, sh-format
+msgid "Please choose a date..."
+msgstr ""
+
+#: modules/software.bm:96
+#, sh-format
+msgid "Run Dist-Upgrade"
+msgstr ""
+
+#: modules/software.bm:97
+#, sh-format
+msgid "Show DU-Warnings"
+msgstr ""
+
+#: modules/software.bm:98
+#, sh-format
+msgid "Show DU-Log"
+msgstr ""
+
+#: modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr ""
+
+#: modules/interface:18
+#, sh-format
+msgid "Main Menu"
+msgstr ""
+
+#: modules/interface:19
+#, sh-format
+msgid "Exit"
+msgstr ""

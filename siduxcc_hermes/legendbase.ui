@@ -1,0 +1,161 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>legendBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>legendbase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>409</width>
+            <height>200</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string></string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox5</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>340</width>
+                <height>151</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Legend</string>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>duwarnerPixmap</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>22</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="pixmap">
+                <pixmap>image1</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>duwarnerPixmap_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>70</y>
+                    <width>22</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="pixmap">
+                <pixmap>image2</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>duwarnerPixmap_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>110</y>
+                    <width>22</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="pixmap">
+                <pixmap>image3</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>60</y>
+                    <width>260</width>
+                    <height>35</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>There are dist-upgrade warnings. Please visit sidux.com for more information!</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>110</y>
+                    <width>260</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>No connection to sidux.com.</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>30</y>
+                    <width>260</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>No dist-upgrade warnings.</string>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="803">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ea49444154388d75935d48536118c7ffefd999eee8d887da54ca34c1b46815067d61485f5817a904e54de54d1411548415d14d60d05d30e8a608c3422212528c20a1408bd44ce943a7534cd766b639f7e13c3b67efcedeb78bd432edb97c9efff3e3f92458c12e0a422a002b00c30a6106c0e3608c0380f877a44e920e9696975dceb0984b530462d511a207e7e00b826412b181cfbc7d68bc06c0b325803a493a545b77e9c53a73ba4e1b1d069b8d0094026c311d34aee2feb49f688464b7b4b40ad5d5556c11b065dbd62b399ceabccdade898f263584920c1ff240380ca3986148a93a74e1c974cd6da9e8ffd4de27ccf44d2ebec811117def8437816988385c367b6d9cc119f2fccf96f52e69eb2ecd3bb770a7ca8cf2ac414a17bc899bd5081a0a9aa612e3a0b8503856969a11b5dbd1f3c2e67e79373e71b0d5e6f5c5f7160636e6e5657be7b00712e6f6aba7ded73f78c7a8bcc5700fbfa027791cdba361a9c819869839293879474e33c9f635255d13e3e0a12f021333d05df62f1e6f691a96302009c750e1a926b0a02ce1f3f314335c495188c721852641ae9a93aac3a5c89cd17ae232fbf0863318a1e5f6492eaf5f500207e1d184c3399b31ea795ef6b6879f7ae705c27588c41193bf28b5176e4284c0545686c7c0074bcc22e2109bd28e2a73fdaf7682af40500c8c8f88f8772340225167d2abbbf572a72eccc2afb16e29e98f07e6a6b718e3c6fd6a02a62bec55861cf3091ae60049311d9fd926a050020cecd86e550385a45697c4f58d08f790281fa7b37aebc9ee8ecec3f40693ceff7108cc5251b7ca0b154793a880487e9a2201007639c4892841a4a6ddbf7ef9d30e7644b494a97ec9e1002d16080d59605d78b56b4b9bdd0a99ab784f13c0763101545815910a49454bdc4130ad45070f9f16b0978badfc2ebf3c14335d8397fef600c4b4ed9f5b1175fa2738824b465000060e008330e0b83b69ae3ce827f011076fb83ae24f8e2e657b24c10ff3a8e9b0ec67a165bfc9fb8e1eed525a3009997fef31fbf000d7b5e47e553ca410000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="1252">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000004ab49444154388db5d45f881e5719c7f1ef3967ce993333effbee9b8d79b3d95893289a96a24628526a6f5290564c11095e299a0ba1c422de8850e81f2fea55a1a0ed85a888f4c62b11a397b15aa80d6a74b76563144d42fe6cddcdfe79f7dd7d67e69d3967e6f4e24d771b8b977dee0686cff9cd73e6794408810fa22200f195c1f4497b484ad0158ced216eeb336cc7a7a366f6584f773b420ab68bb270797d03a5cf11c73f47700d25e03df9c2c58b53f8ae12800fdfc3974fdd77efc7fba71ef8120f7fe22106330711c0c668d35cb8bcd0ffddf93f7e6a71f1ea7720fa21a979e67d4c08e1eec462f8dbfec1cea96f3d7a96af3df80d8ecf1c47beeffc86abe3abfcf2fc397ef4e35f71fbfaf80d327312a8df4d2c775302d4eedcfca1b953dffffab37cf5e1332451c6463924f7394ddbd0b40da52fd9986ca1a4e6f4638ff28317cef0b113b30f51fad7de7bf414ae22a8c4776d1a3dfef8e71fe3f0fe8fb23c5c66381952f882d297e44d4edee414be20f739db931d96d757999d9de5cb4f7c86eebc78903abc78d7e5d1c8818ac4d3c9871c6bf988cd7283a05bb4d2482171c1a1a506c0074fee7246f588911bb1e1b6b85dad111f5f63323c7cd6b5fe27c03fa33b6f7f73df9c9d19c76bbcf9f65b7cfae809484104f08da7d0055a6a8410b8d651b882613d64b3da64bd5a67e1c69b6c7757e81f396cd7fe2d9f04be1d01282d4edb038251afe54a7585576fbdcac9c327a97c4de14ad228412b03025ce3287dc9c86d33ac36797de57596f24bc87e20395a125fcbbeb80b67a93a160dc0c70dd208fe3c7c83921d4ecc3ec0bc9d278bba18356d856b1c7993b33af92f8bc3bfb1b8b180e80a1a1b68e4189bf5077b3dcec82649898c213309368ab8e5aeb0b3b5c6209e63bf1e90a804104cda92a15b63b55a61abdaa29ba468e7c95541ddd660307b93671cca2aac366426263586c418222dc9d53ab5dc440a359d2ad9e05583b1d0973d6ae788644d2b1db2112084d883c5a4d8670e995a8f48b5268da7b8d58638361829916afa6786a6a56e5b2ae728654d290421049c34cc4c7a5495a877e1b1dfb919c607fbddf994584624c690c53189315863305aa3e4146edb96ca7bb452a869389ad0920943727d3f939d7a7d17f685f84d714d7c72ffb17d3851608dc1c6f16ef2d818b4521002be6dd1cea1a42484800f81aaad9915b3ec5c4a99d4b7cfef4d5e93fc6c7969679cac0c48bb1aad1471a4498c21b5968eb5f4aca597a674ac9d7e8dd6c45a63a422e948ba2b1f6179715c13f3f21e9cf7aed73be2c56be73c83ea2851da1229895111566b3263e8a629bd24a1632d89d618add13242d99683e108377f6dc88bfc1522b9b00707208a9fbb7579fca7fffcd472c01dc5f603320a2801fa0e9e598b8922a494481530bd9603eac3dcf8458fab4babff205567dfddcb726f8102897ae4d25fdfbe70e1794f583842c77489bb92c83604d31022878c1be28ea463bb88cbf7f097e7057f7fede652c8f81ce077b91002e2d43d505918f5a01550fa17e228397bff67e7b2fb1fe9317f9f269e69a69b75ac58f997e7f21f462c5d589de493e21512f50422ec35e0e2c5ff030bc035f752b54f4a197f615fcfcee92c3208842f9a7a6b54ae795ffd9e58bc84891609e14e3fff07fe20ea1d16cb06e64d41319b0000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="1314">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000004e949444154388d85955b6c145518c77f6766766777d95dba6db7054ccbad1b2ea9608b5c8c046fd14489d14844833c78bfa3358660080f9a103504131e101e3445508c520d464d506a48501b2d4a5568948bc5b6b0d0eeadedececeecceece1c1fa440a5c03f390fe73bdff9e5fffd739223a4948c277b8bf00153f516797cb456fcf4c657b0cd94cc1cff566f9189712f9e97180f6c6f113394f92bd78b9a862aa7fdcd17f516193ff5d99a95a1d94d6f85234ead9aeaf955267a8e387d873ae450ff7eff5a39744db0dd5ab75cbde9d11794d90befa69093e9aefe6f9d8627221515c1851e8f474927e3948d234c720f23f38561277eb2cb194afc511a38dee118c9fd918d323b066c6f119ab86ec15af5f6e75689caea46d2e7c80e0a3cf52b6520141100aeeb323c6c90cbe570fabfa2deea00230d4606592261a606f615537d8f47374b57390fad167396bfabdebf61ad08f81be93f01bd7fe14c58c828b4542a631826b65d04540a15cb486643600c819101d32c94ccecbee866e90268e713b0f0faa5184954903c0dc938861922347f1e8ee3522e3b98a689651529971dca6507450b90642651e33b3032e4b5e8f7e591cce7679f178aeba06b007a8b34ed2d62932bf53ac5b6ef2179067bfa33e60408da7611d3343971ec774af92c93a7cd27df730aabef14b2619685b7faacab7b44391a93e1e52fbc9ffdfac348f9c4a197471da3b7c853f67b93b6e28bd52b96473af9fcdc62b144369b279b35299929425a8e73273bf1b5ff4c24d6c059dbe32bd6cc98e179e4a142d8ca2c31f6eef9c43a76e8d9a91f484b585b834fa877bcb108bf272a7c811ae19bd8c048a676245b899c7c17866190c90c934ffe89bf34c0c0e1b3dc7cd3edf8a3510eb7bec3e2579b918343f9f4be2f56d7be7e74efa85175c39dc53332d3a78b487d5884aaab8463c5b0339aafd48f9e3b8a4f6450f54ae2f141ec9282ffa76e663637a1d836d9e33d84d5bf91e978aa62cdf74f5df11de7de16d5de5bd6b5a9b3aebf95813ee8ed86542f147238950df49c9848853e97e8b26528d3a6916d6de5d88f3b98bb626a22f8d8feda4bc1caa59b09afc9945444964890ded0bd9cbbe125eca615b06039caac79243afb88e4f3a84d4d889a1a7c96859bab223f688ce15c063e9f0e009a5a8dd09a19aa7992c1aa07f9fdb3bfa90b54a2c662f4c6e31c3c7810cfc30fd3e07a38dad61bba2658a2490a268ea3313c9c63289d67c40cd1bfa39de82f5d68f7dd47676727dbb76f47cc9e4dd07571ffc97a760a31ebaa60d771194994f1bb06554a0f7e37c1b91ddb69b0ca7857ad8240604cbf77f3669ac251c5abaadbae1e85e3626572247b3ac9644c865326436d7b981e0ae35db70e005dd7f17abdff01162f2638650a955eefbc9d42348f62b4ff73dda29b0fcb2e192a8e88dc698da31f9f2696cbe17dfa69080601686c6cc4b2ac8bae376d62c1ead5d5ed67ce6c03968ceb38bdfbad8d85dffa3638c37ce931b23df91fba983e7122def5eb2ff4d8b68da65df4a42c5d4ab0b696a8aec77609711b0052ca71d7c907117b26b0f7b760d0b55b5ae4a5eaeeee966d6d6d636ae50307e4605d9ddcad2847a494974731aa8e3626f984689e39392cb4458b70bff9e6c2d91c604e3038a626803010f57aeb7709f1c0b85f13c04742b4061465d5f44040043c1ea1a82aaaaaa2a82aaaa280a28094b8ae8beb38388e83532ef38f6539a94261e08ae09d42cc0462579ae81a4aff0b96c77d35da34c6c30000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="948">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000037b49444154388da5d46f681b751cc7f1f75d93364997f6d6b49a0ea7155999032145f0cf1496322722cc158cddd4993f623746597d521fec8158f0998a65b82141346914b4b3a02832545c2ac850a9a43eaadb84c4826b236b9baee9a5e972f7f54193344bd35af0073f8ee3b8d7ef739fbbfb292282a228bc79ee6a309fcb465657f47bdf7afdf114ff63880896d289cd5effc6ad7c5db4163a38301e14d30c98628e0c9f7f22ba1d5c0578279af6389d0d1d8aa2fe5879f1b58171cfe0e978a2fdaea6c881a7f67aebac6aa4ffc4c5e076604b313b768715ab852383a7e35a2ebfa2d91bec196b7dddf0a1c37bb9e7be560a0668ae46c63ef939d2f7f2577cf0d1335b26574a1dbffd61f28ba5e46c4f67d72ea626a6697335d273f401eaac160a06140c300c98b9bec885d84fe8fa4a68e4635f4d5c44d6aa0048fe3275b67997931bb3cb74ee7171fc952e6c760baa028a42f97887bb99675f7c8c46a72df2c2b14f37ada50c67966e72edf7bfb02bb7e8e9bdff36ac7454cab8c64b7d4fd27a67f3b0cf17f36c09b7692d19776b13cf3dbf0fb50656395505ec762b47fd073577bb2b5e0b2fc386690e1f3bbe0f87c3b28ea81bc1ca056df67a9e3ef2a0060c57c31680fe1317830f3dd2eeddd3d942c1a88da90a98950b9ad0aa4183b945c7866104bc073bb64c573d5bd251eebe12425ff8a7266c0128980639b30953d65173135055409bfb12f79ffde074d196bac4ee1da7466a262e18059673303d034815a6defe044d8de07615efdedf4b4787f0eea3675e95305aad2a32b33319722b909e5bbb50ab921d0e68dd09290e10bd1a826fdf87fdbde0daed01e295b85afc224217623f4c5eff7b81dc2a64963676ecb0c1ce2648a516181afa8e6fae3d1c62550f6d8a8b08003e5f4cf3fb4713e397e7657a5664e1a6889e1359cc8a642723225f7b253971490281cfc4e78b054bc9244c50220e91e429913022613c22b20e97f1c068e2f2aff3929e13c9ea22f9998448c421327158b2e71d726ea06fa8fa45499860118d94c356c2253c10184d4c24e625b324622c2645229ac895e0da0cb320616afec6e5852a37a1d2181bf3679697f3ddef9dfd7ef28fa934c91bcd0cfd7606c6a31900bc41add8e5967879dbac1e3e5f4c03e20e47bd47d757439f1ff24f02f1225c5aa84b39496a5b892b9303ddbabeda3536e68f2a279904ba198f66c8ebe074698077d3c8d51dffd790309e62cf1b369e4af35feef2a00557257d170000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=sidux dist-upgrade alerter
+Comment[de]=sidux dist-upgrade Warner
+Encoding=UTF-8
+Exec=siduxcc-hermes
+Icon=siduxcc
+Name=siducc-hermes

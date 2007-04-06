@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-02 09:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. i18n: file displaydialog.ui line 17
+#: rc.cpp:3 rc.cpp:58
+#, no-c-format
+msgid "Software"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 32
+#: rc.cpp:6 rc.cpp:61
+#, no-c-format
+msgid "Di&st-Upgrade"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 47
+#: rc.cpp:9 rc.cpp:64
+#, no-c-format
+msgid "Howto"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 66
+#: rc.cpp:12 rc.cpp:67
+#, no-c-format
+msgid ""
+"To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
+"+F1, login as root and type init 3. After that run the command siduxcc and "
+"choose the option Software->Dist-Upgrade"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 97
+#: rc.cpp:15 rc.cpp:70
+#, no-c-format
+msgid "Status"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 169
+#: rc.cpp:19 rc.cpp:74
+#, no-c-format
+msgid "Up&gradable packages"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 172
+#: rc.cpp:22 rc.cpp:77
+#, no-c-format
+msgid "Alt+G"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 195
+#: rc.cpp:25 rc.cpp:80
+#, no-c-format
+msgid "D&ist-upgrade alerter"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 198
+#: rc.cpp:28 rc.cpp:83
+#, no-c-format
+msgid "Alt+I"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 226
+#: rc.cpp:31 rc.cpp:86
+#, no-c-format
+msgid "apt-get update"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 273
+#: rc.cpp:37 rc.cpp:92
+#, no-c-format
+msgid "&Metapackages"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 299
+#: rc.cpp:40 rc.cpp:95
+#, no-c-format
+msgid "Metapackages"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 333
+#: rc.cpp:43 rc.cpp:98
+#, no-c-format
+msgid "Install Metapa&ckes"
+msgstr ""
+
+#. i18n: file upgradablebase.ui line 16
+#: rc.cpp:46 rc.cpp:101
+#, no-c-format
+msgid "Upgradable packages"
+msgstr ""
+
+#. i18n: file upgradablebase.ui line 25
+#: rc.cpp:49 rc.cpp:104
+#, no-c-format
+msgid "Name"
+msgstr ""
+
+#. i18n: file upgradablebase.ui line 36
+#: rc.cpp:52 rc.cpp:107
+#, no-c-format
+msgid "Installed Version"
+msgstr ""
+
+#. i18n: file upgradablebase.ui line 47
+#: rc.cpp:55 rc.cpp:110
+#, no-c-format
+msgid "Latest Version"
+msgstr ""
