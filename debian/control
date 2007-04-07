@@ -7,6 +7,6 @@ Standards-Version: 3.7.2
 
 Package: siduxcc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, apt-show-versions, configure-networkcard (>= 0.6.31)
 Description: sidux control center
  Frontend for managing sidux.
