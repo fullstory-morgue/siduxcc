@@ -1,6 +1,7 @@
-siduxcc (0.5.3-1) UNRELEASED; urgency=low
+siduxcc (0.5.3-1) ORPHANED; urgency=low
 
   * (NOT RELEASED YET) New upstream release
+  * ORPHAN PACKAGE, hopefully only temporarily.
   * update dependencies.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 07 Apr 2007 16:26:18 +0200
