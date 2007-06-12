@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxccdisplay\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-02 23:04+0200\n"
-"PO-Revision-Date: 2007-04-02 09:23+0200\n"
+"PO-Revision-Date: 2007-04-03 00:03+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgid ""
 msgstr ""
 "Mit falschen Einstellungen lässt sich der X-Server nicht mehr starten! Zum "
 "Wiederherstellen einer alten Konfiguration CTR + ALT + F1 drücken, sich als "
-"root einloggen und die Option Anzeige -> restoreX auswählen!"
+"root einloggen, siduxcc ausführen und die Option Anzeige -> restoreX auswählen!"
 
 #. i18n: file displaydialog.ui line 377
 #: rc.cpp:54 rc.cpp:186
@@ -262,3 +262,4 @@ msgstr "Schriften"
 #, no-c-format
 msgid "Re&gister Fonts (fix-fonts)"
 msgstr "Schriften registrieren"
+

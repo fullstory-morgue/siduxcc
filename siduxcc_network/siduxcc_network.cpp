@@ -167,7 +167,7 @@ void siduxcc_network::getBrowsers()
 	for(int i = 0; i < browserList.count(); i++) {
 		QStringList browser = QStringList::split( "/", browserList[i] );
 		browserSelect->insertItem(browser[2]);
-		if(browser[2] == current) { browserSelect->setCurrentItem(i-1);}}
+		if(browser[2] == current) { browserSelect->setCurrentItem(i);}}
 }
 
 

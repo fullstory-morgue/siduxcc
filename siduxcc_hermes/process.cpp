@@ -6,7 +6,7 @@ Process::Process()
 	_process = new KProcess();
 
 	connect(_process, SIGNAL(receivedStdout(KProcess*, char*, int)),
-			this, SLOT(slotProcessOutput(KProcess*, char*, int)));
+		this, SLOT(slotProcessOutput(KProcess*, char*, int)));
 
 }
 

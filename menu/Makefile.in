@@ -534,8 +534,9 @@ uninstall-am: uninstall-info-am uninstall-xdg_directoryDATA \
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=Makefile.in kde-settings-sidux.directory kde-sidux.menu Makefile.am 
+KDE_DIST=Makefile.am Makefile.in kde-sidux.menu kde-settings-sidux.directory 
 
 #>+ 2
 docs-am:

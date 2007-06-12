@@ -1,7 +1,7 @@
 /*
  * systray.h
  *
- * Copyright (c) 2007 Fabian Wuertz
+ * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -26,7 +26,7 @@
 #include <ksystemtray.h>
 #include <qstring.h>
 
-#include <process.h>
+#include "process.h"
 
 
 class SysTray : public KSystemTray

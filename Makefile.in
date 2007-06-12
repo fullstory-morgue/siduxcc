@@ -330,6 +330,7 @@ xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
 SUBDIRS = $(TOPSUBDIRS)
+siduxcc_LDADD = $(top_builddir)/common/libsiduxcc.a
 MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 configure.files 
 EXTRA_DIST = admin COPYING configure.in.in
 #>- all: config.h

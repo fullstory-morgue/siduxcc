@@ -494,8 +494,9 @@ uninstall-am: uninstall-info-am
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=siduxccservices.po Makefile.in siduxcc.po siduxccsoftware.po siduxcckernel.po siduxccinfo.po siduxcchermes.po siduxccdisplay.po siduxccnetwork.po Makefile.am 
+KDE_DIST=siduxcchermes.po siduxccservices.po Makefile.in siduxcc.po siduxccsoftware.po siduxccdisplay.po siduxcckernel.po Makefile.am siduxccnetwork.po siduxccinfo.po 
 
 #>+ 25
 siduxccdisplay.gmo: siduxccdisplay.po

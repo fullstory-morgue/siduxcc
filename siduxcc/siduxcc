@@ -1,7 +1,7 @@
 #!/bin/bash
 # Sidux-Control-Center
 # Fabian Wuertz
-# by Andreas Loibl <andreas@andreas-loibl.de>
+# siduxcc based on knxcc_info from Andreas Loible
 # License: GPL
 
 SEARCHPATH="/usr/share/siduxcc"

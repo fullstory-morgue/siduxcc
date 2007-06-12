@@ -685,6 +685,7 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 8
 kcm_siduxcc_kernel.la.closure: $(kcm_siduxcc_kernel_la_OBJECTS) $(kcm_siduxcc_kernel_la_DEPENDENCIES)
 	@echo "int main() {return 0;}" > kcm_siduxcc_kernel_la_closure.cpp
@@ -713,7 +714,7 @@ clean-metasources:
 	-rm -f  siduxcc_kernel.moc process.moc.cpp
 
 #>+ 2
-KDE_DIST=Makefile.in displaydialog.ui siduxcc_kernel.desktop process.h Makefile.am 
+KDE_DIST=process.h Makefile.in displaydialog.ui Makefile.am siduxcc_kernel.desktop 
 
 #>+ 4
 clean-ui:

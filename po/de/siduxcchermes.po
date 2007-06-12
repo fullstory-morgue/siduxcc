@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-26 16:44+0200\n"
-"PO-Revision-Date: 2007-03-30 00:30+0200\n"
+"PO-Revision-Date: 2007-04-04 20:00+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "Fabian Wuertz"
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr "-"
+msgstr "xadras@sidux.com"
 
 #: main.cpp:39
 msgid "A KDE tray application for sidux"
@@ -41,8 +41,7 @@ msgstr "Legende"
 #. i18n: file ./legendbase.ui line 106
 #: rc.cpp:7
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 125
@@ -61,7 +60,7 @@ msgstr "Keine dist-upgrade Warnungen."
 #: rc.cpp:16
 #, no-c-format
 msgid "Upgradable packages"
-msgstr "Aufrüstbare Pakete"
+msgstr "Neue Pakete"
 
 #. i18n: file ./upgradablebase.ui line 25
 #: rc.cpp:19
@@ -101,7 +100,7 @@ msgstr "Aktualisierung des installierten Systems"
 
 #: systray.cpp:47
 msgid "Show upgradable packages"
-msgstr "Aufrüstbare Pakete anzeigen"
+msgstr "Neuere Pakete anzeigen"
 
 #: systray.cpp:48
 msgid "Update (apt-get update)"
@@ -118,3 +117,4 @@ msgstr "Über siduxcc-hermes"
 #: systray.cpp:64
 msgid "en"
 msgstr "de"
+

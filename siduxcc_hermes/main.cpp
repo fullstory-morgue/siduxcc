@@ -1,7 +1,7 @@
 /*
  * main.cpp
  *
- * Copyright (c) 2007 Fabian Wuertz
+ * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -29,28 +29,28 @@
 
 static KCmdLineOptions options[] =
 {
-    KCmdLineLastOption
+	KCmdLineLastOption
 };
 
 int main(int argc, char *argv[])
 {
-    // specify data for About dialog
+	// specify data for About dialog
 	KAboutData* about = new KAboutData("siduxcchermes", "siduxcc-hermes (sidux dist-upgrade alerter)", "0.5");
 	about->setShortDescription(I18N_NOOP("A KDE tray application for sidux"));
 	about->setLicense(KAboutData::License_GPL_V2);
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
-    
-    
-    KCmdLineArgs::init(argc, argv, about);
-    KCmdLineArgs::addCmdLineOptions(options);
+	
+	
+	KCmdLineArgs::init(argc, argv, about);
+	KCmdLineArgs::addCmdLineOptions(options);
 
-    Hermes app;
+	Hermes app;
 
-    // start program
-    kdDebug() << "creating first instance" << endl;
-    SysTray* tray = new SysTray();
-    app.setMainWidget(tray);
-    tray->show();
+	// start program
+	kdDebug() << "creating first instance" << endl;
+	SysTray* tray = new SysTray();
+	app.setMainWidget(tray);
+	tray->show();
 
-    return app.exec();
+	return app.exec();
 }

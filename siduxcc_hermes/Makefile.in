@@ -57,14 +57,14 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(shelldesktopdir)" \
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
 am_siduxcc_hermes_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) upgradable.$(OBJEXT) process.$(OBJEXT) \
-	hermes.$(OBJEXT)
+	legend.$(OBJEXT) upgradable.$(OBJEXT) hermes.$(OBJEXT) \
+	process.$(OBJEXT)
 #>- siduxcc_hermes_OBJECTS = $(am_siduxcc_hermes_OBJECTS)
 #>+ 7
 siduxcc_hermes_final_OBJECTS = siduxcc_hermes.all_cpp.o 
 siduxcc_hermes_nofinal_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) upgradable.$(OBJEXT) process.$(OBJEXT) \
-	hermes.$(OBJEXT) legendbase.$(OBJEXT) upgradablebase.$(OBJEXT)\
+	legend.$(OBJEXT) upgradable.$(OBJEXT) hermes.$(OBJEXT) \
+	process.$(OBJEXT) legendbase.$(OBJEXT) upgradablebase.$(OBJEXT)\
 systray.moc.o process.moc.o hermes.moc.o 
 @KDE_USE_FINAL_FALSE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_nofinal_OBJECTS)
 @KDE_USE_FINAL_TRUE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_final_OBJECTS)
@@ -357,16 +357,16 @@ xdg_menudir = @xdg_menudir@
 INCLUDES = $(all_includes)
 
 # these are the headers for your project
-noinst_HEADERS = systray.h process.h legend.h upgradable.h hermes.h
+noinst_HEADERS = systray.h legend.h upgradable.h hermes.h process.h
 
 # let automoc handle all of the meta source files (moc)
 #>- METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui upgradable.cpp upgradablebase.ui process.cpp hermes.cpp
+#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui upgradable.cpp upgradablebase.ui hermes.cpp process.cpp
 #>+ 1
-siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  upgradable.cpp  process.cpp hermes.cpp legendbase.cpp upgradablebase.cpp
+siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  upgradable.cpp  hermes.cpp process.cpp legendbase.cpp upgradablebase.cpp
 siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_hermes_LDADD = $(LIB_KDEUI)
 
@@ -808,11 +808,11 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/upgradable.cpp $(srcdir)/process.cpp $(srcdir)/hermes.cpp legendbase.cpp upgradablebase.cpp systray.moc.cpp hermes.moc.cpp process.moc.cpp  upgradablebase.moc legendbase.moc legend.moc upgradable.moc
+siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/upgradable.cpp $(srcdir)/hermes.cpp $(srcdir)/process.cpp legendbase.cpp upgradablebase.cpp systray.moc.cpp hermes.moc.cpp process.moc.cpp  upgradablebase.moc legendbase.moc legend.moc upgradable.moc
 	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
 	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \
-	for file in main.cpp systray.cpp legend.cpp upgradable.cpp process.cpp hermes.cpp legendbase.cpp upgradablebase.cpp systray.moc.cpp hermes.moc.cpp process.moc.cpp ; do \
+	for file in main.cpp systray.cpp legend.cpp upgradable.cpp hermes.cpp process.cpp legendbase.cpp upgradablebase.cpp systray.moc.cpp hermes.moc.cpp process.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> siduxcc_hermes.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_hermes.all_cpp.final; \
 	done; \

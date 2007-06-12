@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-02 09:20+0200\n"
-"PO-Revision-Date: 2007-04-02 09:36+0200\n"
+"PO-Revision-Date: 2007-04-03 00:00+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "Status"
 #: rc.cpp:19 rc.cpp:74
 #, no-c-format
 msgid "Up&gradable packages"
-msgstr "Aufrüstbare Pakete"
+msgstr "Neuere Pakete"
 
 #. i18n: file displaydialog.ui line 172
 #: rc.cpp:22 rc.cpp:77
@@ -104,7 +104,7 @@ msgstr "Metapakete installieren"
 #: rc.cpp:46 rc.cpp:101
 #, no-c-format
 msgid "Upgradable packages"
-msgstr "Aufrüstbare Pakete"
+msgstr "Neuere Pakete"
 
 #. i18n: file upgradablebase.ui line 25
 #: rc.cpp:49 rc.cpp:104
@@ -123,3 +123,4 @@ msgstr "Installierte Version"
 #, no-c-format
 msgid "Latest Version"
 msgstr "Neuste Version"
+

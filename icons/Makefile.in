@@ -484,8 +484,9 @@ uninstall-am: uninstall-kde-icons  uninstall-info-am
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=hi22-app-siduxcc_ok.png hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi22-app-siduxcc_wlan_up.png hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi22-app-siduxcc_warning.png 
+KDE_DIST=hi22-app-siduxcc_ok.png hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi32-app-siduxcc.png hi48-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi22-app-siduxcc_wlan_up.png hi64-app-siduxcc.png hi22-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi22-app-siduxcc_warning.png 
 
 #>+ 2
 docs-am:

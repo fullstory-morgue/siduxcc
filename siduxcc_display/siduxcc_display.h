@@ -65,7 +65,6 @@ class siduxcc_display : public DisplayDialog
 		virtual void removeModelines();
 		virtual void restartX();
 		virtual void customScreenSize();
-
 };
 
 #endif
