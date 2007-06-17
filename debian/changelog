@@ -1,21 +1,20 @@
-siduxcc (0.5.4-3) unstable; urgency=low
+siduxcc (0.5.4.2) unstable; urgency=low
 
+  [ wuertz ]
     * copyright for the icons added.
     * new sidux-icons included in the network and software module.
 
- -- wuertz <wuertz@bart>  Wed, 13 Jun 2007 23:56:03 +0200
+  [ Stefan Lippers-Hollmann ]
+  * make packaging native, it's maintained in svn now.
 
-siduxcc (0.5.4-2) unstable; urgency=low
-
-  * 
-
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 13 Jun 2007 23:46:01 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 17 Jun 2007 16:27:50 +0200
 
 siduxcc (0.5.4-1) unstable; urgency=low
 
   * new upstream version.
   * rework debian/copyright.
   * tweak packaging.
+  * de- orphan.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 13 Jun 2007 00:00:51 +0200
 
