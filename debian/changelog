@@ -1,3 +1,10 @@
+siduxcc (0.5.4-3) unstable; urgency=low
+
+    * copyright for the icons added.
+    * new sidux-icons included in the network and software module.
+
+ -- wuertz <wuertz@bart>  Wed, 13 Jun 2007 23:56:03 +0200
+
 siduxcc (0.5.4-2) unstable; urgency=low
 
   * 
