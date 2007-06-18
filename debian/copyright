@@ -6,11 +6,11 @@ It was downloaded from http://www.wuertz.org/downloads/siduxcc/
 Upstream Author: Fabian Wuertz
 
 Copyright:
-    (C) 2007 Fabian Wuertz
+	(C) 2007 Fabian Wuertz
 
-    siduxcc is based on knxcc from:
-    (C) 2006 Andreas Loibl <andreas@andreas-loibl.de>
-    The following files are based on knxcc (Kanotix-Control-Center):
+	siduxcc is based on knxcc from:
+	(C) 2006 Andreas Loibl <andreas@andreas-loibl.de>
+	The following files are based on knxcc (Kanotix-Control-Center):
 	siduxcc/siduxcc
 	siduxcc/scripts/rcconf.pl
 	siduxcc/modules/dialog.bm
@@ -31,59 +31,62 @@ Copyright:
 	siduxcc_services/siduxcc_services.h
 	siduxcc_services/siduxcc_services.ui
 
-    The following file is based on configure-networkcard, formerly known as 
-    netcardconfig and netcardconfig-kanotix, from:
-    (C) 2001-2004 Klaus Knopper <knoppix@knopper.net>
-    (C) 2004-2007 Stefan Lippers-Hollmann <s.l-h@gmx.de>
-    (C) 2005-2007 Niall Walsh <niallwalsh@users.berlios.de>
+	The following file is based on configure-networkcard, formerly known as 
+	netcardconfig and netcardconfig-kanotix, from:
+	(C) 2001-2004 Klaus Knopper <knoppix@knopper.net>
+	(C) 2004-2007 Stefan Lippers-Hollmann <s.l-h@gmx.de>
+	(C) 2005-2007 Niall Walsh <niallwalsh@users.berlios.de>
 	siduxcc/scripts/netcardconfig
 
-   The following icons are from adept-common
+	The following icons are from adept-common
 	(c) 2004  David Vignoni <dave@icon-king.com>
-   siduxcc/icons/hi22-app-siduxcc_ok.png (adept_notifier_ok.png)
-   siduxcc/icons/hi22-app-siduxcc_warning.png (adept_notifier_warning)
-   adept_sourceseditor.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-   adept_reinstall.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   adept_update.png (in siduxcc/siduxcc_software/displaydialog.ui)
+	siduxcc/icons/hi22-app-siduxcc_ok.png (adept_notifier_ok.png)
+	siduxcc/icons/hi22-app-siduxcc_warning.png (adept_notifier_warning)
+	adept_sourceseditor.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
+	adept_reinstall.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	adept_update.png (in siduxcc/siduxcc_software/displaydialog.ui)
 
 	The following icons are from knetworkconf
 	(c) Bernhard Rosenkraenzer <bero@redhat.de> and many others.
 	siduxcc/icons/hi22-app-siduxcc_lan_down.png
-   siduxcc/icons/hi22-app-siduxcc_lan_up.png
-   siduxcc/icons/hi22-app-siduxcc_wlan_down.png
-   siduxcc/icons/hi22-app-siduxcc_wlan_up.png
+	siduxcc/icons/hi22-app-siduxcc_lan_up.png
+	siduxcc/icons/hi*-app-siduxcc_wlan_down.png
+	siduxcc/icons/hi*-app-siduxcc_wlan_up.png
 
-   The following icons are from kdelibs-data
-   (c) 2002 Kalle Dalheimer <kalle@kde.org> and many others
-   siduxcc/icons/hi22-app-siduxcc_disconnected.png
-   eraser.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   emptytrash.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-   penguin.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-   fonts.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   view_text.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   colors.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   randr.png (in siduxcc/siduxcc_display/displaydialog.ui)
-   html.png (in siduxcc/siduxcc_network/displaydialog.ui)
+	The following icons are from kdelibs-data
+	(c) 2002 Kalle Dalheimer <kalle@kde.org> and many others
+	siduxcc/icons/hi22-app-siduxcc_disconnected.png
+	siduxcc/icons/hi32-app-siduxcc_lan_up.png
+	siduxcc/icons/hi48-app-siduxcc_lan_up.png
+	siduxcc/icons/hi32-app-siduxcc_lan_down.png
+	siduxcc/icons/hi48-app-siduxcc_lan_down.png
+	eraser.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	emptytrash.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
+	penguin.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
+	fonts.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	view_text.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	colors.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	randr.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	html.png (in siduxcc/siduxcc_network/displaydialog.ui)
 
-   The following icon is from krdc
-   (c) 2002 Stephan Kulow <coolo@kde.org> and many others.
-   krdc.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	The following icon is from krdc
+	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
+	krdc.png (in siduxcc/siduxcc_display/displaydialog.ui)
 
-	
 
 License:
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License version 2 as
-    published by the Free Software Foundation.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License version 2 as
+	published by the Free Software Foundation.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
 On Debian systems, the complete text of the GNU General

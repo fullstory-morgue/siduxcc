@@ -1,6 +1,15 @@
+siduxcc (0.5.5-1) unstable; urgency=low
+
+  * network kioslave added.
+  * apt-show-versions set in the debian control-file from depends to recommends.
+  * alternative netcarconfig-script removed.
+  * small image-bug in the module network solved.
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Jun 2007 18:39:56 +0200
+
 siduxcc (0.5.4.2) unstable; urgency=low
 
-  [ wuertz ]
+  [ Fabian Wuertz ]
     * copyright for the icons added.
     * new sidux-icons included in the network and software module.
 
