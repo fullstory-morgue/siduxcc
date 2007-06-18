@@ -1,3 +1,9 @@
+siduxcc (0.5.5-4) unstable; urgency=low
+
+  * network kioslave added.
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Jun 2007 19:12:42 +0200
+
 siduxcc (0.5.5-3) unstable; urgency=low
 
   * network kioslave added.
