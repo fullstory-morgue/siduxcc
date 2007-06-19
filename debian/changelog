@@ -1,8 +1,16 @@
-siduxcc (0.5.5-5) unstable; urgency=low
+siduxcc (0.5.5.5) unstable; urgency=low
 
+  [ Fabian Wuertz ]
   * network kioslave added.
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Jun 2007 19:23:38 +0200
+  [ Stefan Lippers-Hollmann ]
+  * make networkbin handling generic (can't this be done with a parameter?).
+  * fix lintian warnings.
+  * fix FSF address.
+  * bash modules must not be executable.
+  * only recommend apt-show-versions after recent upstream changes.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 19 Jun 2007 18:38:38 +0200
 
 siduxcc (0.5.5-4) unstable; urgency=low
 

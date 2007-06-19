@@ -1,4 +1,3 @@
-#!/bin/bash
 # siduxcc-module: services
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
@@ -62,3 +61,4 @@ function services_interface()
 		esac
 	done
 }
+

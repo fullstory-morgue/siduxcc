@@ -1,4 +1,3 @@
-#!/bin/bash
 # siduxcc-module: info
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
@@ -37,3 +36,4 @@ function info_interface()
 		esac
 	done
 }
+

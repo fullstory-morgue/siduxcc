@@ -1,4 +1,3 @@
-#!/bin/bash
 # siduxcc-module: kernel
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
@@ -81,3 +80,4 @@ function kernel_interface()
 		esac
 	done
 }
+
