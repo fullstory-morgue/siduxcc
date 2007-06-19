@@ -2,6 +2,7 @@
  * kio_network.cpp
  *
  * Copyright (c) 2007 Fabian Wuertz
+ * kio_network is based on kio_resources from Luke Sandell <lasandell@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -16,6 +17,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
+
+
 
 #include "kio_network.h"
 #include <kinstance.h>

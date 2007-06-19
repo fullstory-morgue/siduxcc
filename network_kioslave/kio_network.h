@@ -2,6 +2,7 @@
  * kio_network.h
  *
  * Copyright (c) 2007 Fabian Wuertz
+ * kio_network is based on kio_resources from Luke Sandell <lasandell@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
