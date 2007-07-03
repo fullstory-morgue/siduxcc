@@ -34,12 +34,12 @@ siduxcc_kernel::siduxcc_kernel(QWidget *parent, const char *name, const QStringL
 	this->setUseRootOnlyMsg(true);
 	load();
 	
-	if (getuid() != 0)
+	if (getuid() == 0)
 	{
 		// Disable User-Input-Widgets
-		removeList->setDisabled(true);
-		manualButton->setEnabled(true);
-		downloadButton->setEnabled(true);
+		removeList->setEnabled(true);
+		manualButton->setEnabled(false);
+		removeButton->setEnabled(true);
 	}
 }
 
