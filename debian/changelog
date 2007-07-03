@@ -1,3 +1,9 @@
+siduxcc (0.5.5.9) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 03 Jul 2007 13:00:32 +0200
+
 siduxcc (0.5.5.8) unstable; urgency=low
 
   * Kernel remove button enable/disable bug fixed.
