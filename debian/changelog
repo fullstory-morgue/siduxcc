@@ -1,3 +1,9 @@
+siduxcc (0.5.6.2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Jul 2007 00:02:24 +0200
+
 siduxcc (0.5.6.1) unstable; urgency=low
 
   * siduxcc_network small design fix
