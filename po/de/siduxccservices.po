@@ -28,12 +28,6 @@ msgstr "nicht aktiv..."
 msgid "running..."
 msgstr "aktiv..."
 
-#: siduxcc_services.cpp:136
-msgid ""
-"The most popular server in the world, Apache features a modular design and "
-"supports dynamic selection of extension modules at runtime. "
-msgstr "Der Apache HTTP Server ist der meistverbreitete Webserver im Internet."
-
 #: siduxcc_services.cpp:137
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
 msgstr "Apache2 ist eine Weiterentwicklung des Apache Webservers."

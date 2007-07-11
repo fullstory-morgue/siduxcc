@@ -54,12 +54,11 @@ siduxcc_services::siduxcc_services(QWidget *parent, const char *name, const QStr
 void siduxcc_services::load()
 {
 	// add services
-	servicesBox->insertItem("apache");	//0
-	servicesBox->insertItem("apache2");	//1
-	servicesBox->insertItem("cupsys");	//2
-	servicesBox->insertItem("mysql");	//3
-	servicesBox->insertItem("samba");	//4
-	servicesBox->insertItem("ssh");		//5
+	servicesBox->insertItem("apache2");	//0
+	servicesBox->insertItem("cupsys");	//1
+	servicesBox->insertItem("mysql");	//2
+	servicesBox->insertItem("samba");	//3
+	servicesBox->insertItem("ssh");		//4
 	servicesBox->setCurrentItem(0);
 
 	// update service ionformations
@@ -130,12 +129,11 @@ void siduxcc_services::updateSlot()
 
 	// status
 	QString pid [50];
-	pid[0] = "apache";
-	pid[1] = "apache2";
-	pid[2] = "cupsd";
-	pid[3] = "mysqld";
-	pid[4] = "smbd";
-	pid[5] = "sshd";
+	pid[0] = "apache2";
+	pid[1] = "cupsd";
+	pid[2] = "mysqld";
+	pid[3] = "smbd";
+	pid[4] = "sshd";
 
 	this->shell->setCommand("pidof "+pid[servicesBox->currentItem()]);
 	this->shell->start(true);
@@ -152,12 +150,11 @@ void siduxcc_services::updateSlot()
 
 	// description
 	QString description [50];
-	description[0] = i18n("The most popular server in the world, Apache features a modular design and supports dynamic selection of extension modules at runtime. ");
-	description[1] = i18n("Apache v2 is the next generation of the omnipresent Apache web server.");
-	description[2] = i18n("The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.");
-	description[3] = i18n("MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.");
-	description[4] = i18n("The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.");
-	description[5] = i18n("SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.");
+	description[0] = i18n("Apache v2 is the next generation of the omnipresent Apache web server.");
+	description[1] = i18n("The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.");
+	description[2] = i18n("MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.");
+	description[3] = i18n("The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.");
+	description[4] = i18n("SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.");
 
 	descriptionLabel->setText(description[servicesBox->currentItem()]);
 
