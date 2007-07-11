@@ -1,4 +1,11 @@
-siduxcc (0.5.6) unstable; urgency=low
+siduxcc (0.5.6-2) unstable; urgency=low
+
+  * network script nicstatus added, again...
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 11 Jul 2007 23:13:00 +0200
+
+
+siduxcc (0.5.6-1) unstable; urgency=low
 
   * kernel-update function added
   * fix-font problem fixed
@@ -104,4 +111,3 @@ siduxcc (0.4-1) unstable; urgency=low
   * Initial release.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Mar 2007 22:39:28 +0100
-

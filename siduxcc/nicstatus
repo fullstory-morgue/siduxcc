@@ -1,0 +1,19 @@
+#!/bin/sh
+# (C) Fabian Wuertz Jun 2007
+
+interface=$1
+
+if [ -z $interface ]
+then
+	echo "Usage: nicstatus [devicename e.g. eth0]"
+else
+	ip=$(/sbin/ifconfig $interface | grep "inet addr" | gawk -F: '{print $2}' | gawk '{print $1}')
+	method=$(awk '/^\s*iface/{if($2=="'"$interface"'"){print $4}}' /etc/network/interfaces)
+	boot=$(grep auto /etc/network/interfaces | grep -q $interface && echo auto)
+
+	if [ -z $ip ];     then ip="-"; fi
+	if [ -z $method ]; then method="-"; fi
+	if [ -z $boot ];   then boot="-"; fi
+
+	echo "$ip $method $boot"
+fi
