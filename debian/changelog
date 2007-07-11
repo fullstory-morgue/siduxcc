@@ -1,18 +1,12 @@
-siduxcc (0.5.6-1) UNRELEASED; urgency=low
+siduxcc (0.5.6) unstable; urgency=low
 
-	* kernel-update function added
-	* fix-font problem fixed
-	* network script nicstatus added
-	* siduxcc_network design changed
-	* de-translation for the network-kioslave added
-	
+  * kernel-update function added
+  * fix-font problem fixed
+  * network script nicstatus added
+  * siduxcc_network design changed
+  * de-translation for the network-kioslave added
+
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 11 Jul 2007 22:56:00 +0200
-
-siduxcc (0.5.5.9) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 03 Jul 2007 13:00:32 +0200
 
 siduxcc (0.5.5.8) unstable; urgency=low
 
