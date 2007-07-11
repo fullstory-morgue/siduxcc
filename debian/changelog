@@ -1,9 +1,5 @@
-siduxcc (0.5.7) UNRELEASED; urgency=low
+siduxcc (0.5.6.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc_network small design fix
   * siduxcc_kernel small design fix
 
