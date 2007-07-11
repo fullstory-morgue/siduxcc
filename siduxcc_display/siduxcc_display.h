@@ -24,6 +24,7 @@
 #include "displaydialog.h"
 #include "process.h"
 
+
 class siduxcc_display : public DisplayDialog
 {
 	Q_OBJECT
@@ -58,13 +59,17 @@ class siduxcc_display : public DisplayDialog
 
 	private:
 		Process* shell;
+		KProcess proc;
 
 	public slots:
 		virtual void monitorType();
-		virtual void fixFonts();
 		virtual void removeModelines();
 		virtual void restartX();
 		virtual void customScreenSize();
+
+		virtual void fixFonts();
+		virtual void fixFonts_END();
+		virtual void getOutput(KProcess *, char *, int);
 };
 
 #endif

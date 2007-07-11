@@ -1,21 +1,14 @@
+#!/bin/bash
 # siduxcc-module: kernel
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
 # siduxcc is based on knxcc from Andreas Loibl
 
-
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module kernel $(eval_gettext Kernel)
+register_module kernel $(eval_gettext "Kernel")
 
-function checkInternet
-{
-	if [ -z "$(ping -c 1 sidux.com)" ]; then
-		echo "Couldn't connect to sidux.com"
-		return
-	fi
-}
 
 function currentKernel()
 {
@@ -36,21 +29,85 @@ function kernelType()
 
 function newestKernel()
 {
-	checkInternet
-
 	TMP="$(mktemp -p /tmp/ newestKernel-XXXXXXXXXX)"
 	wget -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/
 	egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
 	rm -f $TMP
 }
 
-function downloadNewestKernel()
+function experimentalKernel()
 {
-	checkInternet
-	wget -O $HOME/kernel-$(newestKernel).zip http://debian.tu-bs.de/project/sidux/kernel/kernel-$(newestKernel).zip
-# 	echo $(eval_gettext "<Enter> to continue...")
-	read
+	TMP="$(mktemp -p /tmp/ experimentalKernel-XXXXXXXXXX)"
+	wget -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/experimental/
+	egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	rm -f $TMP
 }
+
+function updateKernel()
+{
+
+	nKernel=$(newestKernel)
+	eKernel=$(experimentalKernel)
+
+	choice=$(dlg --menu "$(eval_gettext "Select a kernel")" 0 0 0 "newest" "$nKernel" "experimental" "$eKernel" )
+
+	if [ $? -eq 0 ]; then
+
+		case $choice in
+			newest) sKernel=$nKernel;;
+			experimental) sKernel=$eKernel;;
+		esac
+
+		if [ $skernel = $("uname -r") ]; then
+			dlg --yesno "$(eval_gettext "The versions of the new and the current Kernel are the same!")"
+		else
+
+			sKernel="kernel-$sKernel"
+
+			case $choice in
+				newest) downloadKernel $sKernel;;
+				experimental) downloadExpKernel $sKernel exp;;
+			esac
+
+			unzipKernel $sKernel
+
+			installKernel $sKernel
+		
+			echo "$(eval_gettext "Press <Enter> to continue...")"
+			read
+		fi
+	fi
+}
+
+function downloadKernel()
+{
+	cd /tmp
+	if [ ! -w $1 ]; then
+		if [ -z $2 ]; then
+			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/$1.zip
+		else
+			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/experimental/$1.zip
+		fi
+	fi
+}
+
+function unzipKernel()
+{
+	cd /tmp
+	unzip $1 -d $1
+	rm -f $1
+}
+
+function installKernel()
+{
+	cd /tmp
+	cd $1
+	./install-kernel-sidux.sh
+	cd ..
+	rm -rf $1
+}
+
+
 
 function getOldKernels()
 {
@@ -70,12 +127,12 @@ function kernel_interface()
 	do
 		kernel=$(dlg --menu "$(eval_gettext "Kernel"): $(currentKernel)" 0 0 0 \
 			"remover"  "$(eval_gettext "Run kernel-remover")" \
-			"download" "$(eval_gettext "Download newest kernel")" \
+			"update" "$(eval_gettext "Update kernel")" \
 			"return"   "$(eval_gettext "Return to main Menu")" )
 
 		case $kernel in
 			remover) kernel-remover;;
-			download) downloadNewestKernel;;
+			update)  updateKernel;;
 			return|"") break;;
 		esac
 	done

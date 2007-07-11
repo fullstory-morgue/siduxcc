@@ -50,7 +50,7 @@ class siduxcc_network : public DisplayDialog
 		virtual void getBrowsers();
 		virtual void getNetworkcards();
 
-		virtual void ncDescSlot();
+		virtual void ncInfoSlot();
 		virtual void ncConfigSlot();
 		virtual void ncEnableSlot();
 		virtual void ncDisableSlot();

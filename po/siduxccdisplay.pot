@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-02 23:04+0200\n"
+"POT-Creation-Date: 2007-07-10 22:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,107 +15,173 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. i18n: file displaydialog.ui line 433
-#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:78 rc.cpp:210
+#. i18n: file displaydialog.ui line 191
+#: siduxcc_display.cpp:157 siduxcc_display.cpp:211 rc.cpp:42 rc.cpp:190
 #, no-c-format
 msgid "custom"
 msgstr ""
 
+#: siduxcc_display.cpp:200
+msgid "Modelines removed"
+msgstr ""
+
+#: siduxcc_display.cpp:251
+msgid "Process is running!"
+msgstr ""
+
+#: siduxcc_display.cpp:272 siduxcc_display.cpp:273
+msgid "Process finished"
+msgstr ""
+
 #. i18n: file displaydialog.ui line 17
-#: rc.cpp:3 rc.cpp:135
+#: rc.cpp:3 rc.cpp:151
 #, no-c-format
 msgid "Display"
 msgstr ""
 
 #. i18n: file displaydialog.ui line 35
-#: rc.cpp:6 rc.cpp:138
+#: rc.cpp:6 rc.cpp:154
 #, no-c-format
-msgid "X-Ser&ver"
+msgid "&X-Server"
 msgstr ""
 
 #. i18n: file displaydialog.ui line 61
-#: rc.cpp:9 rc.cpp:141
-#, no-c-format
-msgid "Scanning Frequenz"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 82
-#: rc.cpp:13 rc.cpp:145
-#, no-c-format
-msgid "Horizontal Frequenz"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 104
-#: rc.cpp:17 rc.cpp:149
-#, no-c-format
-msgid "Vertical Frequenz"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 120
-#: rc.cpp:20 rc.cpp:152
-#, no-c-format
-msgid "HorizSync:"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 136
-#: rc.cpp:23 rc.cpp:155
-#, no-c-format
-msgid "VertRefresh:"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 152
-#. i18n: file displaydialog.ui line 168
-#. i18n: file displaydialog.ui line 152
-#. i18n: file displaydialog.ui line 168
-#: rc.cpp:26 rc.cpp:29 rc.cpp:158 rc.cpp:161
-#, no-c-format
-msgid "Hz"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 193
-#: rc.cpp:32 rc.cpp:164
-#, no-c-format
-msgid "Type"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 198
-#: rc.cpp:35 rc.cpp:167
-#, no-c-format
-msgid "TFT"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 203
-#: rc.cpp:38 rc.cpp:170
-#, no-c-format
-msgid "CRT"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 254
-#: rc.cpp:41 rc.cpp:173
+#: rc.cpp:9 rc.cpp:157
 #, no-c-format
 msgid "Modelines"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 291
-#: rc.cpp:44 rc.cpp:176
+#. i18n: file displaydialog.ui line 101
+#: rc.cpp:12 rc.cpp:160
 #, no-c-format
 msgid "Remove &Modelines"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 331
-#. i18n: file displaydialog.ui line 814
-#. i18n: file displaydialog.ui line 331
-#. i18n: file displaydialog.ui line 814
-#: rc.cpp:48 rc.cpp:120 rc.cpp:180 rc.cpp:252
+#. i18n: file displaydialog.ui line 104
+#: rc.cpp:15 rc.cpp:163
+#, no-c-format
+msgid "Alt+M"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 132
+#: rc.cpp:18 rc.cpp:166
+#, no-c-format
+msgid "Resolution"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 156
+#: rc.cpp:21 rc.cpp:169
+#, no-c-format
+msgid "640x480"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 161
+#: rc.cpp:24 rc.cpp:172
+#, no-c-format
+msgid "800x600"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 166
+#: rc.cpp:27 rc.cpp:175
+#, no-c-format
+msgid "1024x768"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 171
+#: rc.cpp:30 rc.cpp:178
+#, no-c-format
+msgid "1152x864"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 176
+#: rc.cpp:33 rc.cpp:181
+#, no-c-format
+msgid "1280x1024"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 181
+#: rc.cpp:36 rc.cpp:184
+#, no-c-format
+msgid "1400x1050"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 186
+#: rc.cpp:39 rc.cpp:187
+#, no-c-format
+msgid "1600x1200"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 253
+#: rc.cpp:45 rc.cpp:193
+#, no-c-format
+msgid "Scanning Frequenz"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 274
+#: rc.cpp:49 rc.cpp:197
+#, no-c-format
+msgid "Vertical Frequenz"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 290
+#: rc.cpp:52 rc.cpp:200
+#, no-c-format
+msgid "HorizSync:"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 306
+#: rc.cpp:55 rc.cpp:203
+#, no-c-format
+msgid "VertRefresh:"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 322
+#. i18n: file displaydialog.ui line 338
+#. i18n: file displaydialog.ui line 322
+#. i18n: file displaydialog.ui line 338
+#: rc.cpp:58 rc.cpp:61 rc.cpp:206 rc.cpp:209
+#, no-c-format
+msgid "Hz"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 379
+#: rc.cpp:65 rc.cpp:213
+#, no-c-format
+msgid "Horizontal Frequenz"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 385
+#: rc.cpp:68 rc.cpp:216
+#, no-c-format
+msgid "Type"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 390
+#: rc.cpp:71 rc.cpp:219
+#, no-c-format
+msgid "TFT"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 395
+#: rc.cpp:74 rc.cpp:222
+#, no-c-format
+msgid "CRT"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 435
+#. i18n: file displaydialog.ui line 818
+#. i18n: file displaydialog.ui line 435
+#. i18n: file displaydialog.ui line 818
+#: rc.cpp:77 rc.cpp:128 rc.cpp:225 rc.cpp:276
 #, no-c-format
 msgid "WARNING!"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 346
-#. i18n: file displaydialog.ui line 829
-#. i18n: file displaydialog.ui line 346
-#. i18n: file displaydialog.ui line 829
-#: rc.cpp:51 rc.cpp:123 rc.cpp:183 rc.cpp:255
+#. i18n: file displaydialog.ui line 450
+#. i18n: file displaydialog.ui line 833
+#. i18n: file displaydialog.ui line 450
+#. i18n: file displaydialog.ui line 833
+#: rc.cpp:80 rc.cpp:131 rc.cpp:228 rc.cpp:279
 #, no-c-format
 msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
@@ -123,136 +189,110 @@ msgid ""
 "choose the option Display -> restoreX."
 msgstr ""
 
-#. i18n: file displaydialog.ui line 377
-#: rc.cpp:54 rc.cpp:186
-#, no-c-format
-msgid "Resolution"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 398
-#: rc.cpp:57 rc.cpp:189
-#, no-c-format
-msgid "640x480"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 403
-#: rc.cpp:60 rc.cpp:192
-#, no-c-format
-msgid "800x600"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 408
-#: rc.cpp:63 rc.cpp:195
-#, no-c-format
-msgid "1024x768"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 413
-#: rc.cpp:66 rc.cpp:198
-#, no-c-format
-msgid "1152x864"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 418
-#: rc.cpp:69 rc.cpp:201
-#, no-c-format
-msgid "1280x1024"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 423
-#: rc.cpp:72 rc.cpp:204
-#, no-c-format
-msgid "1400x1050"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 428
-#: rc.cpp:75 rc.cpp:207
-#, no-c-format
-msgid "1600x1200"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 498
-#. i18n: file displaydialog.ui line 676
-#. i18n: file displaydialog.ui line 498
-#. i18n: file displaydialog.ui line 676
-#: rc.cpp:81 rc.cpp:96 rc.cpp:213 rc.cpp:228
+#. i18n: file displaydialog.ui line 481
+#. i18n: file displaydialog.ui line 671
+#. i18n: file displaydialog.ui line 481
+#. i18n: file displaydialog.ui line 671
+#: rc.cpp:83 rc.cpp:101 rc.cpp:231 rc.cpp:249
 #, no-c-format
 msgid "Restart (Ctrl-Alt-Backspace)"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 532
-#. i18n: file displaydialog.ui line 710
-#. i18n: file displaydialog.ui line 532
-#. i18n: file displaydialog.ui line 710
-#: rc.cpp:84 rc.cpp:99 rc.cpp:216 rc.cpp:231
+#. i18n: file displaydialog.ui line 518
+#. i18n: file displaydialog.ui line 708
+#. i18n: file displaydialog.ui line 518
+#. i18n: file displaydialog.ui line 708
+#: rc.cpp:86 rc.cpp:104 rc.cpp:234 rc.cpp:252
 #, no-c-format
-msgid "Res&tart X-Server"
+msgid "Rest&art X-Server"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 542
-#: rc.cpp:87 rc.cpp:219
+#. i18n: file displaydialog.ui line 521
+#. i18n: file displaydialog.ui line 711
+#. i18n: file displaydialog.ui line 521
+#. i18n: file displaydialog.ui line 711
+#: rc.cpp:89 rc.cpp:107 rc.cpp:237 rc.cpp:255
+#, no-c-format
+msgid "Alt+A"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 531
+#: rc.cpp:92 rc.cpp:240
 #, no-c-format
 msgid "X-&Server"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 568
-#: rc.cpp:90 rc.cpp:222
+#. i18n: file displaydialog.ui line 557
+#: rc.cpp:95 rc.cpp:243
 #, no-c-format
 msgid "DPI-Settings"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 583
-#: rc.cpp:93 rc.cpp:225
+#. i18n: file displaydialog.ui line 631
+#: rc.cpp:98 rc.cpp:246
 #, no-c-format
 msgid " dpi"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 727
-#: rc.cpp:102 rc.cpp:234
+#. i18n: file displaydialog.ui line 728
+#: rc.cpp:110 rc.cpp:258
 #, no-c-format
 msgid "Color-Depth"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 732
-#: rc.cpp:105 rc.cpp:237
-#, no-c-format
-msgid "8 bit"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 737
-#: rc.cpp:108 rc.cpp:240
-#, no-c-format
-msgid "15 bit"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 742
-#: rc.cpp:111 rc.cpp:243
-#, no-c-format
-msgid "16 bit"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 747
-#: rc.cpp:114 rc.cpp:246
-#, no-c-format
-msgid "24 bit"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 797
-#: rc.cpp:117 rc.cpp:249
+#. i18n: file displaydialog.ui line 762
+#: rc.cpp:113 rc.cpp:261
 #, no-c-format
 msgid ""
 "<b>Note:</b> If you are using the ATI-Driver (fglrx) you can not change the "
 "Color-Depth (it has to be 24 bit then)"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 842
-#: rc.cpp:126 rc.cpp:258
+#. i18n: file displaydialog.ui line 768
+#: rc.cpp:116 rc.cpp:264
+#, no-c-format
+msgid "8 bit"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 773
+#: rc.cpp:119 rc.cpp:267
+#, no-c-format
+msgid "15 bit"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 778
+#: rc.cpp:122 rc.cpp:270
+#, no-c-format
+msgid "16 bit"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 783
+#: rc.cpp:125 rc.cpp:273
+#, no-c-format
+msgid "24 bit"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 846
+#: rc.cpp:134 rc.cpp:282
 #, no-c-format
 msgid "Fo&nts"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 902
-#: rc.cpp:132 rc.cpp:264
+#. i18n: file displaydialog.ui line 949
+#: rc.cpp:142 rc.cpp:290
 #, no-c-format
-msgid "Re&gister Fonts (fix-fonts)"
+msgid "Register F&onts (fix-fonts)"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 952
+#: rc.cpp:145 rc.cpp:293
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#. i18n: file displaydialog.ui line 968
+#: rc.cpp:148 rc.cpp:296
+#, no-c-format
+msgid ""
+"This process takes a while. <b>Don't close the window</b> during the process!"
 msgstr ""

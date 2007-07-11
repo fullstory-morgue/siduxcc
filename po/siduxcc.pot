@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-02 23:04+0200\n"
+"POT-Creation-Date: 2007-07-11 00:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr ""
 
-#: modules/display.bm:10 modules/display.bm:239
+#: modules/display.bm:10 modules/display.bm:233
 #, sh-format
 msgid "Display"
 msgstr ""
@@ -33,6 +33,11 @@ msgstr ""
 #: modules/display.bm:43
 #, sh-format
 msgid "Enter new Resolution:"
+msgstr ""
+
+#: modules/display.bm:82
+#, sh-format
+msgid "Do you have a TFT-monitor?"
 msgstr ""
 
 #: modules/display.bm:86
@@ -55,69 +60,70 @@ msgstr ""
 msgid "Default Color Depth"
 msgstr ""
 
+#: modules/display.bm:174 modules/display.bm:220 modules/info.bm:33
+#: modules/kernel.bm:81
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr ""
+
 #: modules/display.bm:201
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr ""
 
-#: modules/display.bm:220 modules/display.bm:228 modules/info.bm:33
-#, sh-format
-msgid "Press <Enter> to continue..."
-msgstr ""
-
-#: modules/display.bm:240
+#: modules/display.bm:234
 #, sh-format
 msgid "Change Resolution"
 msgstr ""
 
-#: modules/display.bm:241
+#: modules/display.bm:235
 #, sh-format
 msgid "Set Scanning Frequenz"
 msgstr ""
 
-#: modules/display.bm:242
+#: modules/display.bm:236
 #, sh-format
 msgid "Change DPI-Settings"
 msgstr ""
 
-#: modules/display.bm:243
+#: modules/display.bm:237
 #, sh-format
 msgid "Change ColorDepth"
 msgstr ""
 
-#: modules/display.bm:244
+#: modules/display.bm:238
 #, sh-format
 msgid "Remove Modelines"
 msgstr ""
 
-#: modules/display.bm:245
+#: modules/display.bm:239
 #, sh-format
 msgid "Register/Repair Fonts"
 msgstr ""
 
-#: modules/display.bm:246
+#: modules/display.bm:240
 #, sh-format
 msgid "Install Ati/nVidia 3d Drivers"
 msgstr ""
 
-#: modules/display.bm:247
+#: modules/display.bm:241
 #, sh-format
 msgid "Restart X-Server"
 msgstr ""
 
-#: modules/display.bm:248
+#: modules/display.bm:242
 #, sh-format
 msgid "Restore X-Server"
 msgstr ""
 
-#: modules/display.bm:249 modules/info.bm:25 modules/kernel.bm:75
+#: modules/display.bm:243 modules/info.bm:25 modules/kernel.bm:141
 #: modules/services.bm:22 modules/services.bm:38 modules/services.bm:56
 #: modules/software.bm:99
 #, sh-format
 msgid "Return to main Menu"
 msgstr ""
 
-#: modules/display.bm:266
+#: modules/display.bm:260
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr ""
@@ -142,19 +148,34 @@ msgstr ""
 msgid "You are using "
 msgstr ""
 
-#: modules/kernel.bm:11 modules/kernel.bm:72
+#: modules/kernel.bm:10 modules/kernel.bm:138
 #, sh-format
 msgid "Kernel"
 msgstr ""
 
-#: modules/kernel.bm:73
+#: modules/kernel.bm:52
+#, sh-format
+msgid "Select a kernel"
+msgstr ""
+
+#: modules/kernel.bm:62
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr ""
+
+#: modules/kernel.bm:76
+#, sh-format
+msgid "Remove the downloaded kernel-file in the /root directory?"
+msgstr ""
+
+#: modules/kernel.bm:139
 #, sh-format
 msgid "Run kernel-remover"
 msgstr ""
 
-#: modules/kernel.bm:74
+#: modules/kernel.bm:140
 #, sh-format
-msgid "Download newest kernel"
+msgid "Update kernel"
 msgstr ""
 
 #: modules/services.bm:11

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckernel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-02 09:17+0200\n"
-"PO-Revision-Date: 2007-04-03 00:00+0200\n"
+"POT-Creation-Date: 2007-07-11 19:34+0200\n"
+"PO-Revision-Date: 2007-07-11 19:36+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,81 +16,134 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: siduxcc_kernel.cpp:66
-msgid "en"
-msgstr "de"
+#: siduxcc_kernel.cpp:89 siduxcc_kernel.cpp:106
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: siduxcc_kernel.cpp:78
-msgid "please wait..."
-msgstr "bitte warten..."
+#: siduxcc_kernel.cpp:93 siduxcc_kernel.cpp:110
+msgid "Are you sure you want to install a new kernel?"
+msgstr "Wollen Sie wirklich einen neuen Kernel installieren?"
 
-#: siduxcc_kernel.cpp:81
-msgid " removed!"
-msgstr "gelöscht!"
+#: siduxcc_kernel.cpp:122 siduxcc_kernel.cpp:143 siduxcc_kernel.cpp:159
+#: siduxcc_kernel.cpp:175
+msgid "Download"
+msgstr "Download"
+
+#: siduxcc_kernel.cpp:122 siduxcc_kernel.cpp:143 siduxcc_kernel.cpp:159
+msgid "Running"
+msgstr "läuft"
+
+#: siduxcc_kernel.cpp:143 siduxcc_kernel.cpp:159 siduxcc_kernel.cpp:175
+msgid "Done"
+msgstr "abgeschlossen"
+
+#: siduxcc_kernel.cpp:143 siduxcc_kernel.cpp:159 siduxcc_kernel.cpp:175
+msgid "Unzip"
+msgstr "Unzip"
+
+#: siduxcc_kernel.cpp:159 siduxcc_kernel.cpp:175
+msgid "Installation"
+msgstr "Installation"
+
+#: siduxcc_kernel.cpp:176
+msgid "Installation finished."
+msgstr "Installation abgeschlossen."
+
+#: siduxcc_kernel.cpp:215
+msgid "removed"
+msgstr "gelöscht"
 
 #. i18n: file displaydialog.ui line 17
-#: rc.cpp:3 rc.cpp:39
+#: rc.cpp:3 rc.cpp:65
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
-#. i18n: file displaydialog.ui line 98
-#: rc.cpp:7 rc.cpp:43
+#. i18n: file displaydialog.ui line 81
+#: rc.cpp:6 rc.cpp:68
 #, no-c-format
-msgid "Remove old Kernels"
-msgstr "Alte Kernel löschen"
+msgid "Kernel Version"
+msgstr "Kernelversion"
 
-#. i18n: file displaydialog.ui line 148
-#: rc.cpp:10 rc.cpp:46
-#, no-c-format
-msgid "Rem&ove"
-msgstr "Löschen"
-
-#. i18n: file displaydialog.ui line 151
-#: rc.cpp:13 rc.cpp:49
-#, no-c-format
-msgid "Alt+O"
-msgstr "Alt+O"
-
-#. i18n: file displaydialog.ui line 179
-#: rc.cpp:16 rc.cpp:52
-#, no-c-format
-msgid "Kernel Info"
-msgstr "Kernel Info"
-
-#. i18n: file displaydialog.ui line 251
-#: rc.cpp:19 rc.cpp:55
+#. i18n: file displaydialog.ui line 96
+#: rc.cpp:9 rc.cpp:71
 #, no-c-format
 msgid "Current:"
 msgstr "Lokal:"
 
-#. i18n: file displaydialog.ui line 302
-#: rc.cpp:24 rc.cpp:60
-#, no-c-format
-msgid "&Manual"
-msgstr "Handbuch"
-
-#. i18n: file displaydialog.ui line 305
-#: rc.cpp:27 rc.cpp:63
-#, no-c-format
-msgid "Alt+M"
-msgstr "Alt+M"
-
-#. i18n: file displaydialog.ui line 324
-#: rc.cpp:30 rc.cpp:66
-#, no-c-format
-msgid "Do&wnload"
-msgstr "&Download"
-
-#. i18n: file displaydialog.ui line 327
-#: rc.cpp:33 rc.cpp:69
-#, no-c-format
-msgid "Alt+W"
-msgstr "Alt+W"
-
-#. i18n: file displaydialog.ui line 343
-#: rc.cpp:36 rc.cpp:72
+#. i18n: file displaydialog.ui line 112
+#: rc.cpp:12 rc.cpp:74
 #, no-c-format
 msgid "Newest:"
 msgstr "Neuster:"
+
+#. i18n: file displaydialog.ui line 128
+#: rc.cpp:15 rc.cpp:77
+#, no-c-format
+msgid "Experimental:"
+msgstr "Experimentel:"
+
+#. i18n: file displaydialog.ui line 194
+#. i18n: file displaydialog.ui line 210
+#. i18n: file displaydialog.ui line 226
+#. i18n: file displaydialog.ui line 415
+#. i18n: file displaydialog.ui line 434
+#. i18n: file displaydialog.ui line 194
+#. i18n: file displaydialog.ui line 210
+#. i18n: file displaydialog.ui line 226
+#. i18n: file displaydialog.ui line 415
+#. i18n: file displaydialog.ui line 434
+#: rc.cpp:22 rc.cpp:25 rc.cpp:28 rc.cpp:52 rc.cpp:55 rc.cpp:84 rc.cpp:87
+#: rc.cpp:90 rc.cpp:114 rc.cpp:117
+#, no-c-format
+msgid "xxx"
+msgstr "xxx"
+
+#. i18n: file displaydialog.ui line 254
+#: rc.cpp:31 rc.cpp:93
+#, no-c-format
+msgid "Remove old Kernels"
+msgstr "Alte Kernel löschen"
+
+#. i18n: file displaydialog.ui line 291
+#: rc.cpp:34 rc.cpp:96
+#, no-c-format
+msgid "Rem&ove"
+msgstr "Löschen"
+
+#. i18n: file displaydialog.ui line 294
+#: rc.cpp:37 rc.cpp:99
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file displaydialog.ui line 334
+#. i18n: file displaydialog.ui line 498
+#. i18n: file displaydialog.ui line 334
+#. i18n: file displaydialog.ui line 498
+#: rc.cpp:40 rc.cpp:58 rc.cpp:102 rc.cpp:120
+#, no-c-format
+msgid "&Back"
+msgstr "Back"
+
+#. i18n: file displaydialog.ui line 337
+#. i18n: file displaydialog.ui line 501
+#. i18n: file displaydialog.ui line 337
+#. i18n: file displaydialog.ui line 501
+#: rc.cpp:43 rc.cpp:61 rc.cpp:105 rc.cpp:123
+#, no-c-format
+msgid "Alt+B"
+msgstr "Alt+B"
+
+#. i18n: file displaydialog.ui line 383
+#: rc.cpp:46 rc.cpp:108
+#, no-c-format
+msgid "Det&ails"
+msgstr "Deteils"
+
+#. i18n: file displaydialog.ui line 386
+#: rc.cpp:49 rc.cpp:111
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
 

@@ -22,10 +22,11 @@
 
 #include "displaydialog.h"
 #include "process.h"
-
 class siduxcc_kernel : public DisplayDialog
 {
 	Q_OBJECT
+
+		
 
 	public:
 		siduxcc_kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
@@ -33,11 +34,21 @@ class siduxcc_kernel : public DisplayDialog
 	
 	private:
 		Process* shell;
+		KProcess proc;
+		bool experimental;
 	
 	public slots:
-		virtual void manual();
+		virtual void update1();
+		virtual void update2();
 		virtual void download();
+		virtual void unzip();
+		virtual void install();
+		virtual void finish();
+		virtual void back1();
+		virtual void back2();
+		virtual void details();
 		virtual void remove();
+		virtual void getOutput(KProcess *, char *, int);
 	
 };
 

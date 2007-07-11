@@ -1,5 +1,5 @@
 sharedir = $(pkgdatadir)
-bin_SCRIPTS = siduxcc
+bin_SCRIPTS = siduxcc nicstatus
 
 install-data-local:
 	$(mkinstalldirs) $(DESTDIR)$(sharedir)
@@ -7,4 +7,4 @@ install-data-local:
 	cp -aR $(srcdir)/scripts $(DESTDIR)$(sharedir)/
 
 messages:
-	$(XGETTEXT) -Lshell siduxcc modules/*.bm modules/interface -o $(podir)/siduxcc.pot
+	$(XGETTEXT) -Lshell siduxcc nicstatus modules/*.bm modules/interface -o $(podir)/siduxcc.pot

@@ -18,20 +18,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+
 #include <qcombobox.h>
 #include <kgenericfactory.h>
 #include <qlabel.h>
-#include <qtextbrowser.h>
-#include <kled.h>
-#include <qradiobutton.h>
-#include <qbuttongroup.h>
-#include <qcheckbox.h>
-#include <qfile.h>
 #include <qpushbutton.h>
-#include <qlistbox.h>
 #include <qlineedit.h>
-#include <qspinbox.h>
+#include <qlineedit.h>
 #include <qslider.h>
+#include <kmessagebox.h>
+#include <kprocess.h>
+#include <qspinbox.h>
 
 
 #include <siduxcc_display.h>
@@ -42,22 +39,25 @@ K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_display, ModuleFactory("siduxccdisplay")
 siduxcc_display::siduxcc_display(QWidget *parent, const char *name, const QStringList &)
 :DisplayDialog(parent, name)
 {
+
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);
 	load();
 	
-	if (getuid() != 0)
+	if (getuid() == 0)
 	{
-		// Disable User-Input-Widgets
-		resolutionList->setDisabled(true);
-		fontButton->setDisabled(true);
-		mlButton->setDisabled(true);
-		restartxButton->setDisabled(true);
-		restartxButton2->setDisabled(true);
-		dpiSlider->setDisabled(true);
-		monitorList->setDisabled(true);
-		colorDepthList->setDisabled(true);
+		// Enable Root-Input-Widgets
+		resolutionList->setEnabled(true);
+		fontButton->setEnabled(true);
+		mlButton->setEnabled(true);
+		restartxButton->setEnabled(true);
+		restartxButton2->setEnabled(true);
+		dpiSlider->setEnabled(true);
+		monitorList->setEnabled(true);
+		colorDepthList->setEnabled(true);
 	}
+
+
 }
 
 void siduxcc_display::load()
@@ -92,6 +92,9 @@ void siduxcc_display::load()
 			break;
 		}
 	}
+
+
+
 }
 
 void siduxcc_display::save()
@@ -186,15 +189,15 @@ void siduxcc_display::setVertRefresh()
 
 void siduxcc_display::backupX()
 {
-	this->shell->setCommand("siduxcc display backupX");
-	this->shell->start(true);
+	proc << "siduxcc display backupX";
+	proc.start();
 }
 
 void siduxcc_display::removeModelines()
 {
 	this->shell->setCommand("siduxcc display removeModelines");
 	this->shell->start(true);
-	messageText->setText("Modelines removed!");
+	KMessageBox::information(this, i18n("Modelines removed"));
 }
 
 void siduxcc_display::restartX()
@@ -244,8 +247,39 @@ void siduxcc_display::monitorType()
 
 void siduxcc_display::fixFonts()
 {
-	this->shell->setCommand("siduxcc display fixFonts&");
-	this->shell->start(true);
+
+	statusText->setText(i18n("Process is running!"));
+
+	proc << "fix-fonts";
+	proc.start(KProcess::NotifyOnExit, KProcess::AllOutput);
+
+	connect(&proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+	connect(&proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+
+	connect(&proc, SIGNAL(processExited(KProcess *)),
+		this, SLOT( fixFonts_END() ));
+
+//connect(&proc, SIGNAL(processExited(KProcess *)),
+// dialog, SLOT( close() ));
+
+}
+
+
+void siduxcc_display::fixFonts_END()
+{
+	statusText->setText(i18n("Process finished"));
+	KMessageBox::information(this, i18n("Process finished"));
+}
+
+
+void siduxcc_display::getOutput(KProcess *, char *data, int len)
+{
+	char dst[len+1];
+	memmove(dst,data,len);
+	dst[len]=0;
+	consoleText->setText(consoleText->text()+dst);
 }
 
 

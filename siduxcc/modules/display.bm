@@ -1,3 +1,4 @@
+#!/bin/bash
 # siduxcc-module: display
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
@@ -78,7 +79,7 @@ function setVertRefresh()
 function dlgFrequenz()
 {
 
-	dlg --yesno "Do you have a TFT-monitor?"
+	dlg --yesno "$(eval_gettext "Do you have a TFT-monitor?")"
 
 	if [ $? -eq 1 ]; then
 		defaultrate="$(getVertRefresh)" || defaultrate="75"
@@ -168,11 +169,11 @@ function dlgColorDepth()
 
 function fixFonts()
 {
-	if [ "$DISPLAY" ]; then
-		konsole -T "Fix-Fonts (sidux-Control-Center)" --nomenubar --notabbar -e fix-fonts
-	else
-		fix-fonts
-	fi
+	clear
+	fix-fonts
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+
 }
 
 # Modelines
@@ -220,13 +221,7 @@ function binaryGfx()
 	read
 }
 
-function fixFonts()
-{
-	clear
-	fix-fonts
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
+
 
 # Interface
 # ---------
@@ -266,4 +261,3 @@ function display_interface()
 		esac
 	done
 }
-

@@ -38,9 +38,6 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 	
 	if (getuid() != 0)
 	{
-		// Disable User-Input-Widgets
-		ncList->setDisabled(true);
-		ncConfigButton->setDisabled(true);
 		ncEnableButton->setDisabled(true);
 		ncDisableButton->setDisabled(true);
 		browserSelect->setDisabled(true);
@@ -49,7 +46,6 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 		d2Button->setDisabled(false);
 		d2Button->setDisabled(false);
 		nwlButton->setDisabled(false);
-
 	}
 }
 
@@ -57,6 +53,7 @@ void siduxcc_network::load()
 {
 	getBrowsers();
 	getNetworkcards();
+	ncInfoSlot();
 }
 
 
@@ -84,70 +81,59 @@ void siduxcc_network::getNetworkcards()
 	this->shell->setCommand("nicinfo");
 	this->shell->start(true);
 	QStringList deviceList = QStringList::split( "\n", this->shell->getBuffer() );
+	
+	QStringList nicInfo;
+	QStringList nicStatus;
 
 	for(int i = 0; i < deviceList.count(); i++) {
 		QListViewItem * item = new QListViewItem( ncList, 0 );
-		QStringList valueList = QStringList::split( " ", deviceList[i] );
+		nicInfo = QStringList::split( " ", deviceList[i] );
 
-		// device (E.g. eth0)
-		item->setText(0,valueList[0]);
+		// get device info
+		nicInfo = QStringList::split( " ", deviceList[i] );
+		//for(int j = 6; j < nicInfo.count(); j++) {
+		//		nicInfo[5] = nicInfo[5]+" "+nicInfo[j]; }
 
-		// ip address
-		this->shell->setCommand("/sbin/ifconfig "+valueList[0]+" | grep \"inet addr\" | gawk -F: '{print $2}' | gawk '{print $1}'");
+		// get device status
+		this->shell->setCommand("nicstatus "+nicInfo[0]);
 		this->shell->start(true);
-		QString tmp = this->shell->getBuffer().stripWhiteSpace();
-		item->setText(1,tmp);
+		nicStatus = QStringList::split( " ", this->shell->getBuffer() );
+		for(int j = 0; j < nicStatus.count(); j++) {
+				if(nicStatus[j] == "-") {nicStatus[j] = ""; }}
 
-		// active?
-		if(valueList[1] == "ethernet") {
-			if(tmp != "") {item->setPixmap(0,activeEthernetDeviceImg);}
+		item->setText(0, nicInfo[0]);   // device name (E.g. eth0)
+		item->setText(1, nicStatus[0]); // ip-address
+		item->setText(2, nicStatus[1]); // method (dhcp/static)
+		item->setText(3, nicStatus[2]); // boot (enable/disable)
+		item->setText(4, nicInfo[2]);   // driver (E.g. e1000)
+		item->setText(5, nicInfo[3]);   // slot (E.g. pci)
+		//item->setText(6, nicInfo[4]);   // mac-address (xx:xx:...)
+		//item->setText(7, nicInfo[5]);   // description
+
+		// set image
+		if(nicInfo[1] == "ethernet") {
+			if(nicStatus[0] != "") {item->setPixmap(0,activeEthernetDeviceImg);}
 			else {item->setPixmap(0,inactiveEthernetDeviceImg);} }
-		if(valueList[1] == "wireless") {
-			if(tmp != "") {item->setPixmap(0,activeWirelessDeviceImg);}
+		if(nicInfo[1] == "wireless") {
+			if(nicStatus[0] != "") {item->setPixmap(0,activeWirelessDeviceImg);}
 			else {item->setPixmap(0,inactiveWirelessDeviceImg);} }
-		
-		// method
-		this->shell->setCommand("awk '/^\\s*iface/{if($2==\""+valueList[0]+"\"){print $4}}' /etc/network/interfaces");
-		this->shell->start(true);
-		item->setText(2,this->shell->getBuffer().stripWhiteSpace());
-
-		// boot
-		this->shell->setCommand("grep auto /etc/network/interfaces | grep -q "+valueList[0]+" && echo auto");
-		this->shell->start(true);
-		item->setText(3,this->shell->getBuffer().stripWhiteSpace());
-
-		// driver
-		item->setText(4,valueList[2]);
-
-		// slot
-		item->setText(5,valueList[3]);
-
-		// description
-		if(i==0) {
-			for(int i = 6; i < valueList.count(); i++) {
-				valueList[5] = valueList[5]+" "+valueList[i];}
- 			ncLabel->setText(i18n("<b>Interface:</b> ")+valueList[0]+i18n("<br><b>MAC-address:</b> ")+valueList[4]+i18n("<br><b>Description:</b> ")+valueList[5]); }
-
 
 	}
 
-
 }
 
-void siduxcc_network::ncDescSlot()
+void siduxcc_network::ncInfoSlot()
 {
 
 	QListViewItem *item = ncList->currentItem();
-
 	this->shell->setCommand("nicinfo "+item->text(0));
 	this->shell->start(true);
-	QStringList valueList = QStringList::split( " ", this->shell->getBuffer());
+	QStringList nicInfo = QStringList::split( " ", this->shell->getBuffer());
+	for(int j = 6; j < nicInfo.count(); j++) {
+		nicInfo[5] = nicInfo[5]+" "+nicInfo[j]; }
 
-	// description
-	for(int i = 6; i < valueList.count(); i++) {
-		valueList[5] = valueList[5]+" "+valueList[i];}
-	// mac-address valueList[4]
- 	ncLabel->setText(i18n("<b>Interface:</b> ")+valueList[0]+i18n("<br><b>MAC-address:</b> ")+valueList[4]+i18n("<br><b>Description:</b> ")+valueList[5]);
+	macText2->setText(nicInfo[4]);         // mac-address (xx:xx:...)
+	descriptionText2->setText(nicInfo[5]); // description
 
 }
 
@@ -216,6 +202,7 @@ void siduxcc_network::ncConfigSlot()
 	this->shell->setCommand("/usr/sbin/netcardconfig "+currentDevice+"&");
 	this->shell->start(true);
 }
+
 
 void siduxcc_network::ncEnableSlot()
 {

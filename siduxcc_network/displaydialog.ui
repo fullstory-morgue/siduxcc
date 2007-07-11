@@ -20,12 +20,12 @@
         <property name="name">
             <cstring>unnamed</cstring>
         </property>
-        <property name="margin">
-            <number>0</number>
-        </property>
         <widget class="QTabWidget" row="0" column="0">
             <property name="name">
                 <cstring>tabWidget</cstring>
+            </property>
+            <property name="margin">
+                <number>5</number>
             </property>
             <widget class="QWidget">
                 <property name="name">
@@ -108,17 +108,32 @@
                         <rect>
                             <x>30</x>
                             <y>30</y>
-                            <width>400</width>
+                            <width>380</width>
                             <height>150</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
                         <sizepolicy>
-                            <hsizetype>7</hsizetype>
-                            <vsizetype>7</vsizetype>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>5</vsizetype>
                             <horstretch>0</horstretch>
                             <verstretch>0</verstretch>
                         </sizepolicy>
+                    </property>
+                    <property name="lineWidth">
+                        <number>2</number>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="midLineWidth">
+                        <number>10</number>
+                    </property>
+                    <property name="selectionMode" stdset="0">
+                        <enum>Single</enum>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
                     </property>
                     <property name="toolTip" stdset="0">
                         <string>List of configured network devices</string>
@@ -134,13 +149,24 @@
                     <property name="geometry">
                         <rect>
                             <x>30</x>
-                            <y>200</y>
+                            <y>190</y>
                             <width>120</width>
                             <height>26</height>
                         </rect>
                     </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
                     <property name="text">
                         <string>&amp;Configure</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
                     </property>
                     <property name="toolTip" stdset="0">
                         <string>Change the settings of the selected device</string>
@@ -155,14 +181,25 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>170</x>
-                            <y>200</y>
+                            <x>160</x>
+                            <y>190</y>
                             <width>120</width>
                             <height>26</height>
                         </rect>
                     </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
                     <property name="text">
-                        <string>Enable</string>
+                        <string>En&amp;able</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
                     </property>
                 </widget>
                 <widget class="KPushButton">
@@ -174,31 +211,123 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>310</x>
-                            <y>200</y>
+                            <x>290</x>
+                            <y>190</y>
                             <width>120</width>
                             <height>26</height>
                         </rect>
                     </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
                     <property name="text">
-                        <string>Di&amp;sable</string>
+                        <string>Disa&amp;ble</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+B</string>
                     </property>
                 </widget>
-                <widget class="QLabel">
+                <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>ncLabel</cstring>
+                        <cstring>macText1</cstring>
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>35</x>
-                            <y>250</y>
-                            <width>450</width>
-                            <height>60</height>
+                            <x>30</x>
+                            <y>230</y>
+                            <width>380</width>
+                            <height>61</height>
                         </rect>
                     </property>
-                    <property name="text">
-                        <string>Interface Description</string>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
                     </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>10</y>
+                                <width>110</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>&lt;b&gt;Mac Address:&lt;/b&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>macText2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>130</x>
+                                <y>10</y>
+                                <width>150</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>xxx</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>descriptionText2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>130</x>
+                                <y>30</y>
+                                <width>240</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>xxx</string>
+                        </property>
+                        <property name="alignment">
+                            <set>WordBreak|AlignTop</set>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>descriptiontext1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>30</y>
+                                <width>98</width>
+                                <height>21</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>&lt;b&gt;Description:&lt;/b&gt;</string>
+                        </property>
+                    </widget>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -276,7 +405,7 @@
                     <cstring>TabPage</cstring>
                 </property>
                 <attribute name="title">
-                    <string>Ndis&amp;wrapper</string>
+                    <string>Ndiswr&amp;apper</string>
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -1050,28 +1179,10 @@
         <slot>d3Slot()</slot>
     </connection>
     <connection>
-        <sender>ncList</sender>
-        <signal>doubleClicked(QListViewItem*)</signal>
-        <receiver>DisplayDialog</receiver>
-        <slot>ncConfigSlot()</slot>
-    </connection>
-    <connection>
         <sender>nwlButton</sender>
         <signal>clicked()</signal>
         <receiver>DisplayDialog</receiver>
         <slot>nwlSlot()</slot>
-    </connection>
-    <connection>
-        <sender>ncConfigButton</sender>
-        <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
-        <slot>ncConfigSlot()</slot>
-    </connection>
-    <connection>
-        <sender>ncList</sender>
-        <signal>selectionChanged()</signal>
-        <receiver>DisplayDialog</receiver>
-        <slot>ncDescSlot()</slot>
     </connection>
     <connection>
         <sender>ncEnableButton</sender>
@@ -1084,6 +1195,24 @@
         <signal>clicked()</signal>
         <receiver>DisplayDialog</receiver>
         <slot>ncDisableSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ncConfigButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DisplayDialog</receiver>
+        <slot>ncConfigSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ncList</sender>
+        <signal>selectionChanged()</signal>
+        <receiver>DisplayDialog</receiver>
+        <slot>ncInfoSlot()</slot>
+    </connection>
+    <connection>
+        <sender>ncList</sender>
+        <signal>doubleClicked(QListViewItem*)</signal>
+        <receiver>DisplayDialog</receiver>
+        <slot>ncConfigSlot()</slot>
     </connection>
 </connections>
 <includes>
@@ -1104,6 +1233,7 @@
     <slot>d1Slot()</slot>
     <slot>ncEnableSlot()</slot>
     <slot>ncDisableSlot()</slot>
+    <slot>ncInfoSlot()</slot>
 </slots>
 <layoutdefaults spacing="3" margin="6"/>
 <layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-02 23:04+0200\n"
-"PO-Revision-Date: 2007-04-02 09:20+0200\n"
+"POT-Creation-Date: 2007-07-11 00:41+0200\n"
+"PO-Revision-Date: 2007-07-11 00:43+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux-Kontrollzentrum"
 
-#: modules/display.bm:10 modules/display.bm:239
+#: modules/display.bm:10 modules/display.bm:233
 #, sh-format
 msgid "Display"
 msgstr "Anzeige"
@@ -37,6 +37,11 @@ msgstr "Neue Auflösung auswählen"
 msgid "Enter new Resolution:"
 msgstr "Neue Auflösung eingeben:"
 
+#: modules/display.bm:82
+#, sh-format
+msgid "Do you have a TFT-monitor?"
+msgstr "Wird ein TFT Monitor verwendet?"
+
 #: modules/display.bm:86
 #, sh-format
 msgid "Enter new vertical refresh rate:"
@@ -45,8 +50,7 @@ msgstr "Neue Bildwiederholfrequenz eingeben:"
 #: modules/display.bm:95
 #, sh-format
 msgid "Enter new horizontal sync rate:"
-msgstr ""
-"Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
+msgstr "Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
 
 #: modules/display.bm:125
 #, sh-format
@@ -58,69 +62,70 @@ msgstr "Neue DPI-Einstellungen eingeben:"
 msgid "Default Color Depth"
 msgstr "Standard Farbtiefe"
 
+#: modules/display.bm:174 modules/display.bm:220 modules/info.bm:33
+#: modules/kernel.bm:81
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Drücken Sie <Enter> um fortzufahren..."
+
 #: modules/display.bm:201
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Datei zur wiederherstellung Auswählen"
 
-#: modules/display.bm:220 modules/display.bm:228 modules/info.bm:33
-#, sh-format
-msgid "Press <Enter> to continue..."
-msgstr "Drücken Sie <Enter> um fortzufahren..."
-
-#: modules/display.bm:240
+#: modules/display.bm:234
 #, sh-format
 msgid "Change Resolution"
 msgstr "Auflösung ändern"
 
-#: modules/display.bm:241
+#: modules/display.bm:235
 #, sh-format
 msgid "Set Scanning Frequenz"
 msgstr "Bildschirmfrequenz setzen"
 
-#: modules/display.bm:242
+#: modules/display.bm:236
 #, sh-format
 msgid "Change DPI-Settings"
 msgstr "DPI-Einstellungen ändern"
 
-#: modules/display.bm:243
+#: modules/display.bm:237
 #, sh-format
 msgid "Change ColorDepth"
 msgstr "Farbtiefe ändern"
 
-#: modules/display.bm:244
+#: modules/display.bm:238
 #, sh-format
 msgid "Remove Modelines"
 msgstr "Modelines entfernen"
 
-#: modules/display.bm:245
+#: modules/display.bm:239
 #, sh-format
 msgid "Register/Repair Fonts"
 msgstr "Schriften registrieren/reparieren"
 
-#: modules/display.bm:246
+#: modules/display.bm:240
 #, sh-format
 msgid "Install Ati/nVidia 3d Drivers"
 msgstr "Ati/Nvidia 3D Treiber installieren"
 
-#: modules/display.bm:247
+#: modules/display.bm:241
 #, sh-format
 msgid "Restart X-Server"
 msgstr "X-Server neu starten"
 
-#: modules/display.bm:248
+#: modules/display.bm:242
 #, sh-format
 msgid "Restore X-Server"
 msgstr "X-Server wiederherstellen"
 
-#: modules/display.bm:249 modules/info.bm:25 modules/kernel.bm:75
+#: modules/display.bm:243 modules/info.bm:25 modules/kernel.bm:141
 #: modules/services.bm:22 modules/services.bm:38 modules/services.bm:56
 #: modules/software.bm:99
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Zurück zum Hauptmenü"
 
-#: modules/display.bm:266
+#: modules/display.bm:260
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Fehler: Dieses Modul ist noch nicht implementiert!"
@@ -145,20 +150,35 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Sie verwenden "
 
-#: modules/kernel.bm:11 modules/kernel.bm:72
+#: modules/kernel.bm:10 modules/kernel.bm:138
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
 
-#: modules/kernel.bm:73
+#: modules/kernel.bm:52
+#, sh-format
+msgid "Select a kernel"
+msgstr "Bitte einen Kernel wählen"
+
+#: modules/kernel.bm:62
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
+
+#: modules/kernel.bm:76
+#, sh-format
+msgid "Remove the downloaded kernel-file in the /root directory?"
+msgstr "Soll die heruntergeladene Kernel-Datei im /root Verzeichnis gelöscht werden?"
+
+#: modules/kernel.bm:139
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "kernel-remover starten"
 
-#: modules/kernel.bm:74
+#: modules/kernel.bm:140
 #, sh-format
-msgid "Download newest kernel"
-msgstr "Neusten Kernel downloaden"
+msgid "Update kernel"
+msgstr "Kernel aktualisieren"
 
 #: modules/services.bm:11
 #, sh-format
@@ -243,8 +263,7 @@ msgstr "Software"
 #: modules/software.bm:31
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr ""
-"Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
+msgstr "Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
 
 #: modules/software.bm:37 modules/software.bm:68
 #, sh-format
@@ -305,5 +324,3 @@ msgstr "Hauptmenü"
 msgid "Exit"
 msgstr "Ende"
 
-#~ msgid "Install beryl"
-#~ msgstr "Beryl installieren"
