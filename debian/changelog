@@ -1,7 +1,6 @@
-siduxcc (0.5.6.2) UNRELEASED; urgency=low
+siduxcc (0.5.6.2) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
   * apache v1.3 is about to be removed from debian, don't offer it in siduxcc.
 
   [ Fabian Wuertz ]
