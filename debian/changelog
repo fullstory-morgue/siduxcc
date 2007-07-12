@@ -1,9 +1,13 @@
 siduxcc (0.5.6.2) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
   * apache v1.3 is about to be removed from debian, don't offer it in siduxcc.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Jul 2007 01:20:04 +0200
+  [ Fabian Wuertz ]
+  * siduxcc_kernel: second progressbar added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 12 Jul 2007 11:30:36 +0200
 
 siduxcc (0.5.6.1) unstable; urgency=low
 

@@ -118,7 +118,8 @@ void siduxcc_kernel::update2()
 void siduxcc_kernel::download()
 {
 	widgetStack->raiseWidget(1);
-	statusBar->setProgress(10);
+	statusBar1->setProgress(10);
+	statusBar2->setProgress(10);
 	statusText->setText(i18n("Download")+": "+i18n("Running")+" ...");
 
 	KProcess* proc = new KProcess();
@@ -139,7 +140,8 @@ void siduxcc_kernel::download()
 void siduxcc_kernel::unzip()
 {
 	
-	statusBar->setProgress(60);
+	statusBar1->setProgress(60);
+	statusBar2->setProgress(60);
 	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Running")+" ...");
 
 	KProcess* proc = new KProcess();
@@ -155,7 +157,8 @@ void siduxcc_kernel::unzip()
 
 void siduxcc_kernel::install()
 {
-	statusBar->setProgress(70);
+	statusBar1->setProgress(70);
+	statusBar2->setProgress(70);
 	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Done")+".<br>"+i18n("Installation")+": "+i18n("Running")+" ...");
 
 	KProcess* proc = new KProcess();
@@ -171,7 +174,8 @@ void siduxcc_kernel::install()
 
 void siduxcc_kernel::finish()
 {
-	statusBar->setProgress(100);
+	statusBar1->setProgress(100);
+	statusBar2->setProgress(100);
 	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Done")+".<br>"+i18n("Installation")+": "+i18n("Done")+".");
 	KMessageBox::information(this, i18n("Installation finished.") );
 	backButton1->setEnabled(true);

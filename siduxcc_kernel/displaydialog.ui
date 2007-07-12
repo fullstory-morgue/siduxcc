@@ -410,9 +410,25 @@
                                 <string>Alt+A</string>
                             </property>
                         </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>updateKernel</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>60</x>
+                                    <y>80</y>
+                                    <width>151</width>
+                                    <height>21</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>xxx</string>
+                            </property>
+                        </widget>
                         <widget class="QProgressBar">
                             <property name="name">
-                                <cstring>statusBar</cstring>
+                                <cstring>statusBar1</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
@@ -440,22 +456,6 @@
                             </property>
                             <property name="alignment">
                                 <set>AlignTop</set>
-                            </property>
-                        </widget>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>updateKernel</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>60</x>
-                                    <y>80</y>
-                                    <width>151</width>
-                                    <height>21</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>xxx</string>
                             </property>
                         </widget>
                     </widget>
@@ -489,24 +489,12 @@
                     <property name="name">
                         <cstring>unnamed</cstring>
                     </property>
-                    <spacer row="1" column="0">
+                    <widget class="QProgressBar" row="0" column="0">
                         <property name="name">
-                            <cstring>spacer6</cstring>
+                            <cstring>statusBar2</cstring>
                         </property>
-                        <property name="orientation">
-                            <enum>Horizontal</enum>
-                        </property>
-                        <property name="sizeType">
-                            <enum>Expanding</enum>
-                        </property>
-                        <property name="sizeHint">
-                            <size>
-                                <width>470</width>
-                                <height>20</height>
-                            </size>
-                        </property>
-                    </spacer>
-                    <widget class="QPushButton" row="1" column="1">
+                    </widget>
+                    <widget class="QPushButton" row="0" column="1">
                         <property name="name">
                             <cstring>backButton2</cstring>
                         </property>
@@ -525,7 +513,7 @@
                             <string>Alt+B</string>
                         </property>
                     </widget>
-                    <widget class="QTextBrowser" row="0" column="0" rowspan="1" colspan="2">
+                    <widget class="QTextBrowser" row="1" column="0" rowspan="1" colspan="2">
                         <property name="name">
                             <cstring>consoleBrowser</cstring>
                         </property>
@@ -580,16 +568,28 @@
         <slot>back1()</slot>
     </connection>
     <connection>
-        <sender>backButton2</sender>
+        <sender>detailsButton</sender>
+        <signal>clicked()</signal>
+        <receiver>consoleBrowser</receiver>
+        <slot>scrollToBottom()</slot>
+    </connection>
+    <connection>
+        <sender>updateButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>DisplayDialog</receiver>
+        <slot>update1()</slot>
+    </connection>
+    <connection>
+        <sender>updateButton2</sender>
         <signal>clicked()</signal>
         <receiver>DisplayDialog</receiver>
         <slot>back2()</slot>
     </connection>
     <connection>
-        <sender>detailsButton</sender>
+        <sender>backButton2</sender>
         <signal>clicked()</signal>
-        <receiver>consoleBrowser</receiver>
-        <slot>scrollToBottom()</slot>
+        <receiver>DisplayDialog</receiver>
+        <slot>back2()</slot>
     </connection>
 </connections>
 <includes>
