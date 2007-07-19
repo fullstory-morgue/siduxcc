@@ -8,8 +8,8 @@ X-KDE-Library=siduxcc_info
 X-KDE-FactoryName=siduxcc_info
 X-KDE-ParentApp=kinfocenter
 
-Name=sidux
+Name=sidux Info
 Comment=Information about sidux
 Comment[de]=Informationen über sidux
 
-Categories=Qt;KDE;X-KDE-information;
+Categories=Qt;KDE;X-KDE-information;siduxcc;

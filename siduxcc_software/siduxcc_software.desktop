@@ -13,4 +13,4 @@ Name=Software
 Comment=Software Settings
 Comment[de]=Software Einstellungen
 
-Categories=Qt;KDE;X-KDE-settings-sidux;
+Categories=Qt;KDE;X-KDE-settings-sidux;siduxcc;

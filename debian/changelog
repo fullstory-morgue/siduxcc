@@ -1,8 +1,13 @@
 siduxcc (0.5.6.3) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Jul 2007 12:33:35 +0200
+  [ Fabian Wuertz ]
+  * NOT RELEASED YET
+  * kde-menu entries added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 19 Jul 2007 11:52:29 +0200
 
 siduxcc (0.5.6.2) unstable; urgency=low
 

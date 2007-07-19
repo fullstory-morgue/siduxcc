@@ -14,4 +14,4 @@ Name[de]=Dienste
 Comment=Options for Services
 Comment[de]=Dienste-Einstellungen
 
-Categories=Qt;KDE;X-KDE-settings-sidux;
+Categories=Qt;KDE;X-KDE-settings-sidux;siduxcc;

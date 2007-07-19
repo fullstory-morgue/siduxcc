@@ -14,4 +14,4 @@ Name[de]=Netzwerk
 Comment=Configure your Network
 Comment[de]=Netzwerk-Einstellungen
 
-Categories=Qt;KDE;X-KDE-settings-sidux;
+Categories=Qt;KDE;X-KDE-settings-sidux;siduxcc

@@ -26,7 +26,7 @@ siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_hermes_LDADD = $(LIB_KDEUI)
 
 # this is where the desktop file will go 
-shelldesktopdir   = $(kde_appsdir)/sidux/Utilities
+shelldesktopdir   = $(datadir)/applications/sidux
 shelldesktop_DATA = siduxcc-hermes.desktop
 
 # this is where the shell's XML-GUI resource file goes
