@@ -1,10 +1,5 @@
-siduxcc (0.5.6.3) UNRELEASED; urgency=low
+siduxcc (0.5.6.3) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * kde-menu entries added
 
  -- Fabian Wuertz <xadras@sidux.com>  Thu, 19 Jul 2007 11:52:29 +0200
