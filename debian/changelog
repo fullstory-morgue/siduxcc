@@ -6,8 +6,9 @@ siduxcc (0.5.6.4) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * NOT RELEASED YET
   * siduxcclib added
+  * siduxcclib added, again
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jul 2007 22:48:38 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jul 2007 23:16:45 +0200
 
 siduxcc (0.5.6.3) unstable; urgency=low
 
