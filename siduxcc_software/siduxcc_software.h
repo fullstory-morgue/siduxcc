@@ -21,7 +21,7 @@
 #define SIDUXCC_SOFTWARE_H_
 
 #include "displaydialog.h"
-#include "process.h"
+#include "../libsiduxcc/process.h"
 
 class siduxcc_software : public DisplayDialog
 {

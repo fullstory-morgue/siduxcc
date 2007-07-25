@@ -21,12 +21,11 @@
 #define SIDUXCC_NETWORK_H_
 
 #include "displaydialog.h"
-#include "process.h"
+#include "../libsiduxcc/process.h"
+
 class siduxcc_kernel : public DisplayDialog
 {
 	Q_OBJECT
-
-		
 
 	public:
 		siduxcc_kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
@@ -49,7 +48,6 @@ class siduxcc_kernel : public DisplayDialog
 		virtual void details();
 		virtual void remove();
 		virtual void getOutput(KProcess *, char *, int);
-	
 };
 
 #endif

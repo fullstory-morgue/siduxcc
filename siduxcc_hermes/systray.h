@@ -26,7 +26,7 @@
 #include <ksystemtray.h>
 #include <qstring.h>
 
-#include "process.h"
+#include "../libsiduxcc/process.h"
 
 
 class SysTray : public KSystemTray

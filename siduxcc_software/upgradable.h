@@ -21,7 +21,7 @@
 #ifndef UPGRADABLE_H
 #define UPGRADABLE_H
 
-#include "process.h"
+#include "../libsiduxcc/process.h"
 #include "upgradablebase.h"
 
 

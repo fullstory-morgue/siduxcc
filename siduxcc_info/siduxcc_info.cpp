@@ -47,7 +47,5 @@ void siduxcc_info::load(){
 	infobash->setText(this->shell->getBuffer());
 }
 
-void siduxcc_info::save(){}
-void siduxcc_info::defaults(){}
 
 #include "siduxcc_info.moc"

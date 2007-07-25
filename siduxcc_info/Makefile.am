@@ -3,9 +3,9 @@ METASOURCES = AUTO
 
 kde_module_LTLIBRARIES = kcm_siduxcc_info.la
 
-kcm_siduxcc_info_la_SOURCES = infodialog.ui siduxcc_info.cpp process.cpp
+kcm_siduxcc_info_la_SOURCES = infodialog.ui siduxcc_info.cpp
 kcm_siduxcc_info_la_LDFLAGS  = $(all_libraries) -module -avoid-version -no-undefined
-kcm_siduxcc_info_la_LIBADD = $(LIB_KIO)
+kcm_siduxcc_info_la_LIBADD = $(LIB_KIO) ../libsiduxcc/libsiduxcc.la
 
 noinst_HEADERS = siduxcc_info.h
 

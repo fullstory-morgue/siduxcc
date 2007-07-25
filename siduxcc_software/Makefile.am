@@ -3,11 +3,11 @@ METASOURCES = AUTO
 
 kde_module_LTLIBRARIES = kcm_siduxcc_software.la
 
-kcm_siduxcc_software_la_SOURCES = displaydialog.ui siduxcc_software.cpp process.cpp upgradablebase.ui upgradable.cpp
+kcm_siduxcc_software_la_SOURCES = displaydialog.ui siduxcc_software.cpp upgradablebase.ui upgradable.cpp
 kcm_siduxcc_software_la_LDFLAGS  = $(all_libraries) -module -avoid-version -no-undefined
-kcm_siduxcc_software_la_LIBADD = $(LIB_KIO)
+kcm_siduxcc_software_la_LIBADD = $(LIB_KIO) ../libsiduxcc/libsiduxcc.la
 
-noinst_HEADERS = siduxcc_software.h process.h upgradable.h
+noinst_HEADERS = siduxcc_software.h upgradable.h
 
 xdg_apps_DATA = siduxcc_software.desktop
 
