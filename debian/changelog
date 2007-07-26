@@ -1,12 +1,6 @@
-siduxcc (0.5.6.4) UNRELEASED; urgency=low
+siduxcc (0.5.6.4) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * siduxcclib added
-  * siduxcclib added, again
 
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jul 2007 23:16:45 +0200
 
