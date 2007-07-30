@@ -1,8 +1,9 @@
 siduxcc (0.5.6.6) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * remove #!/bin/bash from modules.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Jul 2007 23:55:29 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Jul 2007 00:00:36 +0200
 
 siduxcc (0.5.6.5) unstable; urgency=low
 
