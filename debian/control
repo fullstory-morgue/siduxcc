@@ -2,12 +2,12 @@ Source: siduxcc
 Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 5), automake1.9, kdelibs4-dev
+Build-Depends: cdbs, debhelper (>= 5), automake1.9, kdelibs4-dev, gettext
 Standards-Version: 3.7.2
 
 Package: siduxcc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, configure-networkcard (>= 0.6.31)
+Depends: ${shlibs:Depends}, ${misc:Depends}, configure-networkcard (>= 0.6.31), gettext-base
 Recommends: apt-show-versions
 Description: sidux control center
  Frontend for managing sidux.

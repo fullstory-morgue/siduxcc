@@ -1,8 +1,8 @@
-siduxcc (0.5.6.5) UNRELEASED; urgency=low
+siduxcc (0.5.6.5) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * (build-) depend on gettext[-base].
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 26 Jul 2007 23:44:45 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Jul 2007 23:50:10 +0200
 
 siduxcc (0.5.6.4) unstable; urgency=low
 
