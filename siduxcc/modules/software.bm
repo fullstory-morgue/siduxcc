@@ -1,3 +1,4 @@
+#!/bin/bash
 # siduxcc-module: software
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
@@ -51,8 +52,8 @@ function duWarnings()
 	wget -O $TMP -q http://sidux.com/xBackends.php
 	tmp=`cat $TMP`
 	if [ -n "$tmp" ]; then 
-		egrep WARNING $TMP | cut -f2 -d"<" | cut -c7-
-		egrep Warning $TMP | cut -f2 -d"<" | cut -c7-
+		egrep ">WARNING" $TMP | cut -f2 -d"<" | cut -c7-
+		egrep ">Warning" $TMP | cut -f2 -d"<" | cut -c7-
 	else
 		echo "disconnected"
 	fi
@@ -105,4 +106,3 @@ function software_interface()
 		esac
 	done
 }
-

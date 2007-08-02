@@ -21,22 +21,17 @@
 #ifndef SIDUXCC_INFO_H_
 #define SIDUXCC_INFO_H_
 
-#include <klocale.h>
-#include <kcmodule.h>
 #include <infodialog.h>
 #include <../libsiduxcc/process.h>
 
 class siduxcc_info : public InfoDialog
 {
-   Q_OBJECT
+	Q_OBJECT
 
-   public:
-      siduxcc_info(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
-      void load();
-
-   private:
-      Process* shell;
-
+	public:
+		siduxcc_info(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
+	private:
+		Process* shell;
 };
 
 #endif

@@ -20,24 +20,13 @@
 
 #include <qlineedit.h>
 #include <qtextedit.h>
-#include <kcmoduleloader.h>
-#include <kdialog.h>
-#include <kgenericfactory.h>
-
 
 #include "siduxcc_info.h"
-
-typedef KGenericFactory<siduxcc_info, QWidget> ModuleFactory;
-K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_info, ModuleFactory("siduxccinfo") )
 
 siduxcc_info::siduxcc_info(QWidget *parent, const char *name, const QStringList &)
 :InfoDialog(parent, name)
 {
 	this->shell = new Process();
-	load();
-}
-
-void siduxcc_info::load(){
 	this->shell->setCommand("cat /etc/sidux-version");
 	this->shell->start(true);
 	siduxVersion->setText(this->shell->getBuffer().simplifyWhiteSpace());
