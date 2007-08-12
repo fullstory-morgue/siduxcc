@@ -6,3 +6,4 @@ Exec=siduxcc-hermes
 Icon=siduxcc
 Name=siduxcc-hermes
 Categories=siduxcc;
+Type=Application
