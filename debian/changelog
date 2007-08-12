@@ -1,3 +1,9 @@
+siduxcc (0.5.6.8) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 12 Aug 2007 23:24:08 +0200
+
 siduxcc (0.5.6.7) unstable; urgency=low
 
   * add Type=Application to siduxcc-hermes.desktop, "thanks to aka_sidux".
