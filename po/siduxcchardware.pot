@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-17 15:42+0200\n"
+"POT-Creation-Date: 2007-08-17 22:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,26 +15,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. i18n: file hardwaredialog.ui line 373
+#: siduxcc_hardware.cpp:56 rc.cpp:15 rc.cpp:33
+#, no-c-format
+msgid "detected"
+msgstr ""
+
 #. i18n: file hardwaredialog.ui line 17
-#: rc.cpp:3 rc.cpp:15
+#: rc.cpp:3 rc.cpp:21
 #, no-c-format
 msgid "Hardware"
 msgstr ""
 
 #. i18n: file hardwaredialog.ui line 32
-#: rc.cpp:6 rc.cpp:18
+#: rc.cpp:6 rc.cpp:24
 #, no-c-format
 msgid "&Non-Free Firmware"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 364
-#: rc.cpp:9 rc.cpp:21
+#. i18n: file hardwaredialog.ui line 89
+#: rc.cpp:9 rc.cpp:27
 #, no-c-format
-msgid "I&nstall"
+msgid "Inst&all"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 367
-#: rc.cpp:12 rc.cpp:24
+#. i18n: file hardwaredialog.ui line 92
+#: rc.cpp:12 rc.cpp:30
 #, no-c-format
-msgid "Alt+N"
+msgid "Alt+A"
+msgstr ""
+
+#. i18n: file hardwaredialog.ui line 378
+#: rc.cpp:18 rc.cpp:36
+#, no-c-format
+msgid "all"
 msgstr ""

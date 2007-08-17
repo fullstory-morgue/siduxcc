@@ -53,7 +53,7 @@ void siduxcc_hardware::showDevices()
 	// show firmware
 	QPixmap hardwareImg("/usr/share/icons/hicolor/32x32/apps/siduxcc_hardware.png");
 	hardwareList->clear();
-	if(comboBox->currentText() == "System")
+	if(comboBox->currentText() == i18n("detected"))
 	{ 
 		this->shell->setCommand("siduxcc hardware detect");
 	}
