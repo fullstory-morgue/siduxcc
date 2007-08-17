@@ -1,9 +1,5 @@
-siduxcc (0.5.6.8) UNRELEASED; urgency=low
+siduxcc (0.5.6.8) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc_software: new design
   * siduxcc_software: timeout for duWarnings
   * siduxcc_network: ndiswrapper link fixed
