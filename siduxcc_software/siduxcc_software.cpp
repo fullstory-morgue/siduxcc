@@ -21,8 +21,11 @@
 #include <kpushbutton.h>
 #include <qlabel.h>
 #include <qlistbox.h>
-#include <qpixmap.h>
-#include <upgradable.h>
+#include <klistview.h>
+#include <kmessagebox.h>
+#include <qwidgetstack.h>
+#include <qtextbrowser.h>
+#include <kled.h>
 
 #include "siduxcc_software.h"
 
@@ -31,7 +34,7 @@ typedef KGenericFactory<siduxcc_software, QWidget> ModuleFactory;
 K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_software, ModuleFactory("siduxccsoftware") )
 
 siduxcc_software::siduxcc_software(QWidget *parent, const char *name, const QStringList &)
-:DisplayDialog(parent, name)
+:SoftwareDialog(parent, name)
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);
@@ -41,53 +44,142 @@ siduxcc_software::siduxcc_software(QWidget *parent, const char *name, const QStr
 	{
 		// Root-Input-Widgets
 		updateButton->setEnabled(true);
-		duwarnerButton->setEnabled(false);
+		downloadButton->setEnabled(true);
 
 	}
 }
 
 void siduxcc_software::load()
 {
-	// check for upgradable packages
-	this->shell->setCommand("apt-show-versions | egrep upgradeable | wc -l");
-	this->shell->start(true);
-	upText->setText("("+this->shell->getBuffer().stripWhiteSpace()+")");
-	if(this->shell->getBuffer().toInt() == 0)
-	{
-		upPixmap->setPixmap(QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_ok.png"));
-	}
-	else 
-	{
-		upPixmap->setPixmap(QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_warning.png"));
-	}
-	
+	checkASV();
+	showPackages();
+	warning();
+}
 
+
+//------------------------------------------------------------------------------
+// upgradable packages
+
+
+void siduxcc_software::checkASV()
+{
+
+	// check if apt-show-versions is installed
+	this->shell->setCommand("siduxcc software checkASV");
+	this->shell->start(true);
+	if(this->shell->getBuffer().stripWhiteSpace() == "missing")
+	{
+
+		if (getuid() == 0)
+		{
+			if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Apt-show-versions is missing!")+" "+i18n("Do you want to install it?") ) )
+			{
+				widgetStack->raiseWidget(1);
+				KProcess* proc = new KProcess();
+				*proc << "siduxcc" << "software" << "installASV";
+				proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+			
+				connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
+					this, SLOT(getOutput(KProcess *, char *, int)));
+				connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
+					this, SLOT(getOutput(KProcess *, char *, int)));
+				connect(proc, SIGNAL(processExited(KProcess *)),
+					this, SLOT( enableBack() )  );
+			}
+		}
+		else
+		{
+			KMessageBox::information(this, i18n("Apt-show-versions is missing!")+" "+i18n("Switch to the Administration to install it!") );
+		}	
+
+	}
+}
+
+void siduxcc_software::warning()
+{
 	// check for Dist-Upgrade warnings
 	this->shell->setCommand("siduxcc software duWarnings");
 	this->shell->start(true);
 	if(this->shell->getBuffer().stripWhiteSpace() == "")
 	{
-		duwarnerPixmap->setPixmap(QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_ok.png"));
+		warningLabel->setText(i18n("There are no warnings"));
+		warningLed->setColor(QColor(0x00ff00));
 	}
 	else 
-	{
+ 	{
 		if(this->shell->getBuffer().stripWhiteSpace() == "disconnected")
-			{
-				duwarnerPixmap->setPixmap(QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_disconnected.png"));
-			}
+		{
+			warningLabel->setText(i18n("No internet connection!"));
+			warningLed->setColor(QColor(0xffa858));
+		}
 		else
-			{
-				duwarnerPixmap->setPixmap(QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_warning.png"));
-			}
+		{
+			warningLabel->setText(i18n("Don't make a dist-Upgrade!"));
+			warningLed->setColor(QColor(0xff0000));
+		}
 	}
 }
 
+
+void siduxcc_software::showPackages()
+{
+	this->shell->setCommand("LANG=C apt-show-versions | grep upgradeable");
+	this->shell->start(true);
+	QStringList upgrade = QStringList::split( "\n", this->shell->getBuffer() );
+
+	QStringList tmp;
+	for(int i = 0; i < upgrade.count(); i++) {
+		QListViewItem * item = new QListViewItem( uList, 0 );
+		tmp = QStringList::split( "/", upgrade[i] );
+		item->setText(0,tmp[0]);
+		tmp = QStringList::split( " ", upgrade[i] ); 
+		item->setText(1,tmp[3]);
+		item->setText(2,tmp[5]); }
+}
+
+
+void siduxcc_software::upgrade()
+{
+	KMessageBox::information(this, i18n("To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command siduxcc and choose the option Software->Dist-Upgrade") );
+}
+
+
 void siduxcc_software::update()
 {
-	this->shell->setCommand("konsole -T \"apt-get update\" --nomenubar --notabbar -e apt-get update&");
-	this->shell->start(true);
-	load();
+	widgetStack->raiseWidget(1);
+
+	KProcess* proc = new KProcess();
+	*proc << "apt-get" << "update";
+	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+
+	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+	connect(proc, SIGNAL(processExited(KProcess *)),
+		this, SLOT( enableBack() )  );
 }
+
+
+void siduxcc_software::download()
+{
+	widgetStack->raiseWidget(1);
+
+	KProcess* proc = new KProcess();
+	*proc << "apt-get" << "-dy" << "dist-upgrade";
+	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+
+	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
+		this, SLOT(getOutput(KProcess *, char *, int)));
+	connect(proc, SIGNAL(processExited(KProcess *)),
+		this, SLOT( enableBack() )  );
+}
+
+
+//------------------------------------------------------------------------------
+// metapackages
 
 void siduxcc_software::metapackages()
 {
@@ -95,17 +187,34 @@ void siduxcc_software::metapackages()
 	this->shell->start(true);
 }
 
-void siduxcc_software::duwarner()
+
+//------------------------------------------------------------------------------
+// ouput
+
+void siduxcc_software::getOutput(KProcess *, char *data, int len)
 {
-	this->shell->setCommand("siduxcc-hermes&");
-	this->shell->start(true);
+	char dst[len+1];
+	memmove(dst,data,len);
+	dst[len]=0;
+	outputBrowser->setText(outputBrowser->text()+dst);
+	outputBrowser->scrollToBottom ();
 }
 
-void siduxcc_software::upgradablePackages()
+
+void siduxcc_software::enableBack()
 {
-	upgradable* dialog = new upgradable();
-	dialog->show();
+	backButton->setEnabled(true);
 }
+
+
+void siduxcc_software::back()
+{
+	widgetStack->raiseWidget(0);
+	outputBrowser->setText("");
+	showPackages();
+}
+
+
 
 
 #include "siduxcc_software.moc"

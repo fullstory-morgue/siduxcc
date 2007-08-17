@@ -1,8 +1,16 @@
 siduxcc (0.5.6.8) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 12 Aug 2007 23:24:08 +0200
+  [ Fabian Wuertz ]
+  * siduxcc_software: new design
+  * siduxcc_software: timeout for duWarnings
+  * siduxcc_network: ndiswrapper link fixed
+  * siduxcc_info: de-translation fixed
+  * siduxcc_kernel: timeout for kernelsearch
+
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 17 Aug 2007 11:09:18 +0200
 
 siduxcc (0.5.6.7) unstable; urgency=low
 

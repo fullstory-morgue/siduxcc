@@ -163,7 +163,7 @@ void siduxcc_network::nwSlot() {
 	this->shell->setCommand("su-me configure-ndiswrapper&");
 	this->shell->start(true); }
 void siduxcc_network::nwlSlot() {
-	this->shell->setCommand("x-www-browser http://ndiswrapper.sourceforge.net/mediawiki/index.php/List&");
+	this->shell->setCommand("x-www-browser http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/&");
 	this->shell->start(true); }
 
 void siduxcc_network::m1Slot() {

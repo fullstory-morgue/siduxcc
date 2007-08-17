@@ -20,25 +20,33 @@
 #ifndef SIDUXCC_SOFTWARE_H_
 #define SIDUXCC_SOFTWARE_H_
 
-#include "displaydialog.h"
+#include "softwaredialog.h"
 #include "../libsiduxcc/process.h"
 
-class siduxcc_software : public DisplayDialog
+class siduxcc_software : public SoftwareDialog
 {
 	Q_OBJECT
 
 	public:
 		siduxcc_software(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
+		void showPackages();
+		void warning();
+		void checkASV();
 	
 	private:
 		Process* shell;
 	
 	public slots:
 		virtual void update();
+		virtual void upgrade();
+		virtual void download();
+
 		virtual void metapackages();
-		virtual void duwarner();
-		virtual void upgradablePackages();
+
+		virtual void back();
+		virtual void enableBack();
+		virtual void getOutput(KProcess *, char *, int);
 	
 };
 
