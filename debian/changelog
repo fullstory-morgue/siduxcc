@@ -6,8 +6,9 @@ siduxcc (0.5.6.9) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * NOT RELEASED YET
   * new hardware module added
+  * copyrigth-file updated 
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 17 Aug 2007 18:41:36 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 17 Aug 2007 18:56:23 +0200
 
 siduxcc (0.5.6.8) unstable; urgency=low
 

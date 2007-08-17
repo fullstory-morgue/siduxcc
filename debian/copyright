@@ -31,6 +31,10 @@ Copyright:
 	siduxcc_services/siduxcc_services.h
 	siduxcc_services/siduxcc_services.ui
 
+	The following file is based on fw-detect from:
+	(c) 2007 Kel Modderman <kel@otaku42.de>
+	siduxcc/modules/hardware.bm
+
 	The following files are based on kio_resources from Luke Sandell <lasandell@gmail.com>
 	network_kioslave/kio_network.cpp
 	network_kioslave/kio_network.h
