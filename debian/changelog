@@ -1,12 +1,7 @@
-siduxcc (0.5.6.9) UNRELEASED; urgency=low
+siduxcc (0.5.6.9) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * new hardware module added
-  * copyrigth-file updated
+  * copyright-file updated
   * siduxcc_hardware: de-translation improved  
 
  -- Fabian Wuertz <xadras@sidux.com>  Fri, 17 Aug 2007 22:04:53 +0200
