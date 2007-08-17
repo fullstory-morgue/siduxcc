@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-16 15:09+0200\n"
-"PO-Revision-Date: 2007-08-16 15:13+0200\n"
+"POT-Creation-Date: 2007-08-17 13:15+0200\n"
+"PO-Revision-Date: 2007-08-17 18:28+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,21 +16,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
+#: siduxcc_software.cpp:75 siduxcc_software.cpp:92
+msgid "Apt-show-versions is missing!"
+msgstr "Apt-show-version fehlt!"
+
+#: siduxcc_software.cpp:75
+msgid "Do you want to install it?"
+msgstr "Soll das Paket installiert werden?"
+
+#: siduxcc_software.cpp:92
+msgid "Switch to the Administration to install it!"
+msgstr "Zum installieren des Pakets bitte in den Systemverwatungsmodus wechseln!"
+
 #. i18n: file softwaredialog.ui line 79
-#: siduxcc_software.cpp:70 rc.cpp:9 rc.cpp:63
+#: siduxcc_software.cpp:105 rc.cpp:9 rc.cpp:63
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Keine Warnungen bekannt"
 
-#: siduxcc_software.cpp:77
+#: siduxcc_software.cpp:112
 msgid "No internet connection!"
 msgstr "Keine Internetverbindung!"
 
-#: siduxcc_software.cpp:82
+#: siduxcc_software.cpp:119
 msgid "Don't make a dist-Upgrade!"
 msgstr "Bitte keinen Dis-Upgrade durchgeführen."
 
-#: siduxcc_software.cpp:108
+#: siduxcc_software.cpp:145
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
@@ -95,7 +107,7 @@ msgstr "Alt+U"
 #: rc.cpp:33 rc.cpp:87
 #, no-c-format
 msgid "D&ownload"
-msgstr "Download"
+msgstr "Herunterladen"
 
 #. i18n: file softwaredialog.ui line 258
 #: rc.cpp:36 rc.cpp:90
@@ -132,3 +144,4 @@ msgstr "Metapakete installieren"
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
+

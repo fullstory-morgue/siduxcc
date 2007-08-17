@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-11 00:41+0200\n"
-"PO-Revision-Date: 2007-07-11 00:43+0200\n"
+"POT-Creation-Date: 2007-08-17 17:10+0200\n"
+"PO-Revision-Date: 2007-08-17 15:37+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,255 +17,257 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: modules/dialog.bm:28
+#: modules/dialog.bm:27
 #, sh-format
 msgid "sidux-Control-Center"
 msgstr "sidux-Kontrollzentrum"
 
-#: modules/display.bm:10 modules/display.bm:233
+#: modules/display.bm:9 modules/display.bm:232
 #, sh-format
 msgid "Display"
 msgstr "Anzeige"
 
-#: modules/display.bm:39
+#: modules/display.bm:38
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Neue Auflösung auswählen"
 
-#: modules/display.bm:43
+#: modules/display.bm:42
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Neue Auflösung eingeben:"
 
-#: modules/display.bm:82
+#: modules/display.bm:81
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Wird ein TFT Monitor verwendet?"
 
-#: modules/display.bm:86
+#: modules/display.bm:85
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Neue Bildwiederholfrequenz eingeben:"
 
-#: modules/display.bm:95
+#: modules/display.bm:94
 #, sh-format
 msgid "Enter new horizontal sync rate:"
-msgstr "Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
+msgstr ""
+"Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
 
-#: modules/display.bm:125
+#: modules/display.bm:124
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Neue DPI-Einstellungen eingeben:"
 
-#: modules/display.bm:159
+#: modules/display.bm:158
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Standard Farbtiefe"
 
-#: modules/display.bm:174 modules/display.bm:220 modules/info.bm:33
-#: modules/kernel.bm:81
+#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:108
+#: modules/info.bm:32 modules/kernel.bm:75
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Drücken Sie <Enter> um fortzufahren..."
 
-#: modules/display.bm:201
+#: modules/display.bm:200
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Datei zur wiederherstellung Auswählen"
 
-#: modules/display.bm:234
+#: modules/display.bm:233
 #, sh-format
 msgid "Change Resolution"
 msgstr "Auflösung ändern"
 
-#: modules/display.bm:235
+#: modules/display.bm:234
 #, sh-format
 msgid "Set Scanning Frequenz"
 msgstr "Bildschirmfrequenz setzen"
 
-#: modules/display.bm:236
+#: modules/display.bm:235
 #, sh-format
 msgid "Change DPI-Settings"
 msgstr "DPI-Einstellungen ändern"
 
-#: modules/display.bm:237
+#: modules/display.bm:236
 #, sh-format
 msgid "Change ColorDepth"
 msgstr "Farbtiefe ändern"
 
-#: modules/display.bm:238
+#: modules/display.bm:237
 #, sh-format
 msgid "Remove Modelines"
 msgstr "Modelines entfernen"
 
-#: modules/display.bm:239
+#: modules/display.bm:238
 #, sh-format
 msgid "Register/Repair Fonts"
 msgstr "Schriften registrieren/reparieren"
 
-#: modules/display.bm:240
+#: modules/display.bm:239
 #, sh-format
 msgid "Install Ati/nVidia 3d Drivers"
 msgstr "Ati/Nvidia 3D Treiber installieren"
 
-#: modules/display.bm:241
+#: modules/display.bm:240
 #, sh-format
 msgid "Restart X-Server"
 msgstr "X-Server neu starten"
 
-#: modules/display.bm:242
+#: modules/display.bm:241
 #, sh-format
 msgid "Restore X-Server"
 msgstr "X-Server wiederherstellen"
 
-#: modules/display.bm:243 modules/info.bm:25 modules/kernel.bm:141
-#: modules/services.bm:22 modules/services.bm:38 modules/services.bm:56
-#: modules/software.bm:99
+#: modules/display.bm:242 modules/hardware.bm:137 modules/info.bm:24
+#: modules/kernel.bm:130 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:122
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Zurück zum Hauptmenü"
 
-#: modules/display.bm:260
+#: modules/display.bm:259
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Fehler: Dieses Modul ist noch nicht implementiert!"
 
-#: modules/info.bm:11 modules/info.bm:22
+#: modules/hardware.bm:8 modules/hardware.bm:136
+#, sh-format
+msgid "Hardware"
+msgstr "Hardware"
+
+#: modules/info.bm:10 modules/info.bm:21
 #, sh-format
 msgid "Infos"
 msgstr "Informationen"
 
-#: modules/info.bm:23
+#: modules/info.bm:22
 #, sh-format
 msgid "sidux Version"
 msgstr "sidux Version"
 
-#: modules/info.bm:24
+#: modules/info.bm:23
 #, sh-format
 msgid "Infobash"
 msgstr "Infobash"
 
-#: modules/info.bm:28
+#: modules/info.bm:27
 #, sh-format
 msgid "You are using "
 msgstr "Sie verwenden "
 
-#: modules/kernel.bm:10 modules/kernel.bm:138
+#: modules/kernel.bm:9 modules/kernel.bm:127
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
 
-#: modules/kernel.bm:52
+#: modules/kernel.bm:51
 #, sh-format
 msgid "Select a kernel"
 msgstr "Bitte einen Kernel wählen"
 
-#: modules/kernel.bm:62
+#: modules/kernel.bm:61
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: modules/kernel.bm:76
-#, sh-format
-msgid "Remove the downloaded kernel-file in the /root directory?"
-msgstr "Soll die heruntergeladene Kernel-Datei im /root Verzeichnis gelöscht werden?"
-
-#: modules/kernel.bm:139
+#: modules/kernel.bm:128
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "kernel-remover starten"
 
-#: modules/kernel.bm:140
+#: modules/kernel.bm:129
 #, sh-format
 msgid "Update kernel"
 msgstr "Kernel aktualisieren"
 
-#: modules/services.bm:11
+#: modules/services.bm:10
 #, sh-format
 msgid "Services"
 msgstr "Dienste"
 
-#: modules/services.bm:16 modules/services.bm:17
+#: modules/services.bm:15
 #, sh-format
 msgid "Webserver"
 msgstr "Webserver"
 
-#: modules/services.bm:18
+#: modules/services.bm:16
 #, sh-format
 msgid "Printserver"
 msgstr "Druckerserver"
 
-#: modules/services.bm:19
+#: modules/services.bm:17
 #, sh-format
 msgid "SQL Databaseserver"
 msgstr "SQL Databankserver"
 
-#: modules/services.bm:20
+#: modules/services.bm:18
 #, sh-format
 msgid "Secure-shell-server"
 msgstr "Secure-shell-server"
 
-#: modules/services.bm:21
+#: modules/services.bm:19
 #, sh-format
 msgid "Samabaserver"
 msgstr "Samabaserver"
 
-#: modules/services.bm:32
+#: modules/services.bm:30
 #, sh-format
 msgid "Start now"
 msgstr "Starten"
 
-#: modules/services.bm:33
+#: modules/services.bm:31
 #, sh-format
 msgid "Stop now"
 msgstr "Anhalten"
 
-#: modules/services.bm:34
+#: modules/services.bm:32
 #, sh-format
 msgid "Restart now"
 msgstr "Neustarten"
 
-#: modules/services.bm:35
+#: modules/services.bm:33
 #, sh-format
 msgid "Reload now"
 msgstr "Neuladen"
 
-#: modules/services.bm:36
+#: modules/services.bm:34
 #, sh-format
 msgid "Add a Runlevel-Entry"
 msgstr "Runlevel-Eintrag hinzufügen"
 
-#: modules/services.bm:37
+#: modules/services.bm:35
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr "Runlevel-Eintrag entfernen"
 
-#: modules/services.bm:53
+#: modules/services.bm:51
 #, sh-format
 msgid "Boot"
 msgstr "Systemstart"
 
-#: modules/services.bm:54
+#: modules/services.bm:52
 #, sh-format
 msgid "Enable/Disable Services at Boot"
 msgstr "Systemdienste aktivieren/deaktivieren"
 
-#: modules/services.bm:55
+#: modules/services.bm:53
 #, sh-format
 msgid "Manage Services"
 msgstr "Diensteverwaltung"
 
-#: modules/software.bm:11 modules/software.bm:95
+#: modules/software.bm:10 modules/software.bm:118
 #, sh-format
 msgid "Software"
 msgstr "Software"
 
-#: modules/software.bm:31
+#: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr "Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
+msgstr ""
+"Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
 
-#: modules/software.bm:37 modules/software.bm:68
+#: modules/software.bm:36 modules/software.bm:91
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -275,7 +277,7 @@ msgstr ""
 "nicht Möglich zu überprüfen, ob Dist-Upgrade Warnungen vorliegen. Wollen Sie "
 "trotzdem fortfahren?"
 
-#: modules/software.bm:41 modules/software.bm:71
+#: modules/software.bm:40 modules/software.bm:94
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -284,27 +286,27 @@ msgstr ""
 "Achtung es wurden Dist-Upgrade-Warnungen gefunden! Im Moment sollte kein "
 "Dist-Upgrade druchgeführt werden! Mehr informationen finden Sie auf sidux.com"
 
-#: modules/software.bm:44 modules/software.bm:73
+#: modules/software.bm:43 modules/software.bm:96
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Im Moment sind keine Dist-Upgrade-Warnungen bekannt!"
 
-#: modules/software.bm:79
+#: modules/software.bm:102
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Bitte eine Datum auswählen"
 
-#: modules/software.bm:96
+#: modules/software.bm:119
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr "Dist-Upgrade ausführen"
 
-#: modules/software.bm:97
+#: modules/software.bm:120
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr "Zeige Dist-Upgrade-Warnungen"
 
-#: modules/software.bm:98
+#: modules/software.bm:121
 #, sh-format
 msgid "Show DU-Log"
 msgstr "Zeige Dist-Upgrade-Warnungen"
@@ -324,3 +326,8 @@ msgstr "Hauptmenü"
 msgid "Exit"
 msgstr "Ende"
 
+#~ msgid "Run hardware-remover"
+#~ msgstr "kernel-remover starten"
+
+#~ msgid "Update hardware"
+#~ msgstr "Kernel aktualisieren"

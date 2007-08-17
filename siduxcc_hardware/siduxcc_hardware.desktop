@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=hwinfo
+Type=Application
+Exec=kcmshell siduxcc_hardware
+
+X-KDE-RootOnly=true
+X-KDE-Library=siduxcc_hardware
+X-KDE-FactoryName=siduxcc_hardware
+X-KDE-ParentApp=kcontrol
+
+Name=Hardware
+Comment=Hardware Settings
+Comment[de]=Hardware Einstellungen
+
+Categories=Qt;KDE;X-KDE-settings-sidux;siduxcc;

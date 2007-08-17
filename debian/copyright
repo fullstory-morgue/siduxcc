@@ -47,8 +47,9 @@ Copyright:
 	siduxcc/icons/hi22-app-siduxcc_ok.png (adept_notifier_ok.png)
 	siduxcc/icons/hi22-app-siduxcc_warning.png (adept_notifier_warning)
 	adept_sourceseditor.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-	adept_reinstall.png (in siduxcc/siduxcc_display/displaydialog.ui)
-	adept_update.png (in siduxcc/siduxcc_software/displaydialog.ui)
+	adept_reinstall.png     (in siduxcc/siduxcc_display/displaydialog.ui)
+	adept_update.png        (in siduxcc/siduxcc_software/softwaredialog.ui)
+	adept_upgrade.png       (in siduxcc/siduxcc_software/softwaredialog.ui)
 
 	The following icons are from knetworkconf
 	(c) Bernhard Rosenkraenzer <bero@redhat.de> and many others.
@@ -64,18 +65,22 @@ Copyright:
 	siduxcc/icons/hi48-app-siduxcc_lan_up.png
 	siduxcc/icons/hi32-app-siduxcc_lan_down.png
 	siduxcc/icons/hi48-app-siduxcc_lan_down.png
-	eraser.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	eraser.png     (in siduxcc/siduxcc_display/displaydialog.ui)
+	fonts.png      (in siduxcc/siduxcc_display/displaydialog.ui)
+	view_text.png  (in siduxcc/siduxcc_display/displaydialog.ui)
+	colors.png     (in siduxcc/siduxcc_display/displaydialog.ui)
+	randr.png      (in siduxcc/siduxcc_display/displaydialog.ui)
+	html.png       (in siduxcc/siduxcc_network/displaydialog.ui)
 	emptytrash.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-	penguin.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-	fonts.png (in siduxcc/siduxcc_display/displaydialog.ui)
-	view_text.png (in siduxcc/siduxcc_display/displaydialog.ui)
-	colors.png (in siduxcc/siduxcc_display/displaydialog.ui)
-	randr.png (in siduxcc/siduxcc_display/displaydialog.ui)
-	html.png (in siduxcc/siduxcc_network/displaydialog.ui)
+	penguin.png    (in siduxcc/siduxcc_kernel/displaydialog.ui)
 
 	The following icon is from krdc
 	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
 	krdc.png (in siduxcc/siduxcc_display/displaydialog.ui)
+
+	The following icon is from ksim
+	(c) 2002 Matthias Elter <elter@kde.org> and many others.
+	siduxcc/icons/hi32-app-siduxcc_hardware.png
 
 
 License:
