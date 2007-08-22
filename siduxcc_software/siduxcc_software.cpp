@@ -38,27 +38,58 @@ siduxcc_software::siduxcc_software(QWidget *parent, const char *name, const QStr
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);
-	load();
 	
 	if (getuid() == 0)
 	{
 		// Root-Input-Widgets
 		updateButton->setEnabled(true);
 		downloadButton->setEnabled(true);
-
+		cleanButton->setEnabled(true);
 	}
+	load();
 }
+
 
 void siduxcc_software::load()
 {
 	checkASV();
 	showPackages();
 	warning();
+
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
 }
 
 
 //------------------------------------------------------------------------------
-// upgradable packages
+// load console
+
+bool siduxcc_software::eventFilter( QObject *o, QEvent *e )
+{
+	// This function makes the console emulator expanding
+	if ( e->type() == QEvent::Resize )
+	{
+		QResizeEvent *re = dynamic_cast< QResizeEvent * >( e );
+		if ( !re ) return false;
+		konsole->widget()->setGeometry( 0, 0, re->size().width(), re->size().height() );
+	}
+	return false;
+};
+
+void siduxcc_software::loadKonsole()
+{
+	KLibFactory* factory = KLibLoader::self()->factory( "libsanekonsolepart" );
+	if (!factory)
+		factory = KLibLoader::self()->factory( "libkonsolepart" );
+	konsole = static_cast<KParts::Part*>( factory->create( konsoleFrame, "konsolepart", "QObject", "KParts::ReadOnlyPart" ) );
+	terminal()->setAutoDestroy( true );
+	terminal()->setAutoStartShell( false );
+	konsole->widget()->setGeometry(0, 0, konsoleFrame->width(), konsoleFrame->height());	
+	konsole->widget()->setFocus();
+}
+
+//------------------------------------------------------------------------------
+// check for apt-get-show versions and warnings
 
 
 void siduxcc_software::checkASV()
@@ -74,17 +105,17 @@ void siduxcc_software::checkASV()
 		{
 			if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Apt-show-versions is missing!")+" "+i18n("Do you want to install it?") ) )
 			{
+				// change widget
 				widgetStack->raiseWidget(1);
-				KProcess* proc = new KProcess();
-				*proc << "siduxcc" << "software" << "installASV";
-				proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+
+				// run command
+				QStrList run; run.append( "siduxcc" ); 
+					run.append( "software" );
+					run.append( "installASV" );
+				terminal()->startProgram( "siduxcc", run );
 			
-				connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-					this, SLOT(getOutput(KProcess *, char *, int)));
-				connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-					this, SLOT(getOutput(KProcess *, char *, int)));
-				connect(proc, SIGNAL(processExited(KProcess *)),
-					this, SLOT( enableBack() )  );
+				connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+
 			}
 		}
 		else
@@ -111,6 +142,8 @@ void siduxcc_software::warning()
 		{
 			warningLabel->setText(i18n("No internet connection!"));
 			warningLed->setColor(QColor(0xffa858));
+			updateButton->setEnabled(false);
+			downloadButton->setEnabled(false);
 		}
 		else
 		{
@@ -120,6 +153,9 @@ void siduxcc_software::warning()
 	}
 }
 
+
+//------------------------------------------------------------------------------
+// show packages
 
 void siduxcc_software::showPackages()
 {
@@ -138,6 +174,10 @@ void siduxcc_software::showPackages()
 }
 
 
+//------------------------------------------------------------------------------
+// commands of the buttons 
+
+
 void siduxcc_software::upgrade()
 {
 	KMessageBox::information(this, i18n("To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command siduxcc and choose the option Software->Dist-Upgrade") );
@@ -146,35 +186,50 @@ void siduxcc_software::upgrade()
 
 void siduxcc_software::update()
 {
+	// change widget
 	widgetStack->raiseWidget(1);
 
-	KProcess* proc = new KProcess();
-	*proc << "apt-get" << "update";
-	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "software" );
+		run.append( "update" );
+	terminal()->startProgram( "siduxcc", run );
 
-	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( enableBack() )  );
+	connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+
 }
 
 
 void siduxcc_software::download()
 {
+	// change widget
 	widgetStack->raiseWidget(1);
 
-	KProcess* proc = new KProcess();
-	*proc << "apt-get" << "-dy" << "dist-upgrade";
-	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "software" );
+		run.append( "download" );
+	terminal()->startProgram( "siduxcc", run );
 
-	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( enableBack() )  );
+	connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+}
+
+
+void siduxcc_software::clean()
+{
+	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to clear your local repository?") ) )
+	{
+		this->shell->setCommand("apt-get clean");
+		this->shell->start(true);
+		KMessageBox::information(this, i18n("The local repository was cleaned.") );
+	}
+}
+
+
+void siduxcc_software::back()
+{
+	widgetStack->raiseWidget(0);
+	load();
 }
 
 
@@ -186,34 +241,6 @@ void siduxcc_software::metapackages()
 	this->shell->setCommand("su-me /usr/sbin/metapackage-installer&");
 	this->shell->start(true);
 }
-
-
-//------------------------------------------------------------------------------
-// ouput
-
-void siduxcc_software::getOutput(KProcess *, char *data, int len)
-{
-	char dst[len+1];
-	memmove(dst,data,len);
-	dst[len]=0;
-	outputBrowser->setText(outputBrowser->text()+dst);
-	outputBrowser->scrollToBottom ();
-}
-
-
-void siduxcc_software::enableBack()
-{
-	backButton->setEnabled(true);
-}
-
-
-void siduxcc_software::back()
-{
-	widgetStack->raiseWidget(0);
-	outputBrowser->setText("");
-	showPackages();
-}
-
 
 
 

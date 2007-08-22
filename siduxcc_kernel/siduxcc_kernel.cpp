@@ -26,6 +26,7 @@
 #include <qprogressbar.h>
 #include <kprocess.h>
 #include <qwidgetstack.h>
+#include <qcombobox.h>
 
 #include "siduxcc_kernel.h"
 
@@ -33,18 +34,15 @@ typedef KGenericFactory<siduxcc_kernel, QWidget> ModuleFactory;
 K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_kernel, ModuleFactory("siduxcckernel") )
 
 siduxcc_kernel::siduxcc_kernel(QWidget *parent, const char *name, const QStringList &)
-:DisplayDialog(parent, name)
+:KernelDialog(parent, name)
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);
 	
+	// root access
 	if (getuid() == 0)
 	{
-		// Disable User-Input-Widgets
-		removeList->setEnabled(true);
 		removeButton->setEnabled(true);
-		updateButton1->setEnabled(true);
-		updateButton2->setEnabled(true);
 	}
 
 	load();
@@ -52,162 +50,143 @@ siduxcc_kernel::siduxcc_kernel(QWidget *parent, const char *name, const QStringL
 
 void siduxcc_kernel::load()
 {
+	getCurrentKernel();
+	getNewKernels();
+	getOldKernels();
+
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
+}
+
+//------------------------------------------------------------------------------
+// get Kernels
+
+void siduxcc_kernel::getCurrentKernel()
+{
 	this->shell->setCommand("uname -r");
 	this->shell->start(true);
 	currentKernel->setText(this->shell->getBuffer().stripWhiteSpace());
+}
 
-	this->shell->setCommand("siduxcc kernel newestKernel");
-	this->shell->start(true);
-	newestKernel->setText(this->shell->getBuffer().stripWhiteSpace());
+void siduxcc_kernel::getNewKernels()
+{
 
-	this->shell->setCommand("siduxcc kernel experimentalKernel");
-	this->shell->start(true);
-	experimentalKernel->setText(this->shell->getBuffer().stripWhiteSpace());
+	//QPixmap kernelImg("/usr/share/icons/hicolor/32x32/apps/siduxcc_hardware.png");
+	QPixmap kernelImg("/usr/share/siduxcc/images/spacer.png");
+	installList->clear();
 
-	if ( experimentalKernel->text() == "")
+	if(comboBox->currentText() == i18n("default"))
+	{ 
+		this->shell->setCommand("siduxcc kernel newestKernel");
+		this->shell->start(true);
+	}
+	else
 	{
-		updateButton2->setEnabled(false);
+		this->shell->setCommand("siduxcc kernel experimentalKernel");
+		this->shell->start(true);
+	}
+	QString selectedKernel= this->shell->getBuffer().stripWhiteSpace();
+	if(selectedKernel != "")
+	{
+		installList->insertItem(kernelImg,selectedKernel);
+		if(getuid() == 0) // root access
+		{
+			installButton->setEnabled(true);
+		}
+	}
+	else
+	{
+		installButton->setEnabled(false);
 	}
 
-	//Get old kernels
+
+}
+
+void siduxcc_kernel::getOldKernels()
+{
+	removeList->clear();
+	QPixmap kernelImg("/usr/share/siduxcc/images/spacer.png");
 	this->shell->setCommand("siduxcc kernel getOldKernels");
 	this->shell->start(true);
 	QStringList oldKernels = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
 	for(int i = 0; i < oldKernels.count(); i++) {
-		removeList->insertItem(oldKernels[i]); }
+		removeList->insertItem(kernelImg,oldKernels[i]); }
 }
+
+//------------------------------------------------------------------------------
+// load console
+
+bool siduxcc_kernel::eventFilter( QObject *o, QEvent *e )
+{
+	// This function makes the console emulator expanding
+	if ( e->type() == QEvent::Resize )
+	{
+		QResizeEvent *re = dynamic_cast< QResizeEvent * >( e );
+		if ( !re ) return false;
+		konsole->widget()->setGeometry( 0, 0, re->size().width(), re->size().height() );
+	}
+	return false;
+};
+
+void siduxcc_kernel::loadKonsole()
+{
+	KLibFactory* factory = KLibLoader::self()->factory( "libsanekonsolepart" );
+	if (!factory)
+		factory = KLibLoader::self()->factory( "libkonsolepart" );
+	konsole = static_cast<KParts::Part*>( factory->create( konsoleFrame, "konsolepart", "QObject", "KParts::ReadOnlyPart" ) );
+	terminal()->setAutoDestroy( true );
+	terminal()->setAutoStartShell( false );
+	konsole->widget()->setGeometry(0, 0, konsoleFrame->width(), konsoleFrame->height());	
+	konsole->widget()->setFocus();
+}
+
 
 
 //------------------------------------------------------------------------------
 // kernel-installation
 
-void siduxcc_kernel::update1()
-{
-	updateKernel->setText("kernel-"+newestKernel->text());
-	if (updateKernel->text() == currentKernel->text() )
-	{
-		KMessageBox::information(this, i18n("The versions of the new and the current Kernel are the same!") );
-	}
-	else
-	{
-		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
-		{
-			experimental = false;
-			download();
-		}
-	}
-}
-
-void siduxcc_kernel::update2()
-{
-	updateKernel->setText("kernel-"+experimentalKernel->text());
-	if (updateKernel->text() == currentKernel->text() )
-	{
-		KMessageBox::information(this, i18n("The versions of the new and the current Kernel are the same!") );
-	}
-	else
-	{
-		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
-		{
-			experimental = false;
-			download();
-		}
-	}
-}
-
-void siduxcc_kernel::download()
-{
-	widgetStack->raiseWidget(1);
-	statusBar1->setProgress(10);
-	statusBar2->setProgress(10);
-	statusText->setText(i18n("Download")+": "+i18n("Running")+" ...");
-
-	KProcess* proc = new KProcess();
-	*proc << "siduxcc" << "kernel" << "downloadKernel" << updateKernel->text();
-	if (experimental == true) {
-		*proc << "exp"; }
-	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
-
-	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( unzip() ));
-}
-
-
-void siduxcc_kernel::unzip()
-{
-	
-	statusBar1->setProgress(60);
-	statusBar2->setProgress(60);
-	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Running")+" ...");
-
-	KProcess* proc = new KProcess();
-	*proc << "siduxcc" << "kernel" << "unzipKernel" << updateKernel->text();
-	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
-	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( install() ));
-}
-
 void siduxcc_kernel::install()
 {
-	statusBar1->setProgress(70);
-	statusBar2->setProgress(70);
-	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Done")+".<br>"+i18n("Installation")+": "+i18n("Running")+" ...");
 
-	KProcess* proc = new KProcess();
-	*proc << "siduxcc" << "kernel" << "installKernel" << updateKernel->text();
-	proc->start(KProcess::NotifyOnExit, KProcess::AllOutput);
-	connect(proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( finish() ));
+	if (installList->currentText() == currentKernel->text() )
+	{
+		KMessageBox::information(this, i18n("The versions of the new and the current Kernel are the same!") );
+	}
+	else
+	{
+
+		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
+		{
+			KMessageBox::information(this, i18n("Please don't close the window or press the Ok or Cancel button, before it's written, that the installation is finished!") );	
+
+			// change widget
+			widgetStack->raiseWidget(1);
+	
+			// run command
+			QStrList run; run.append( "siduxcc" ); 
+				run.append( "kernel" );
+				run.append( "installKernel" );
+				run.append( installList->currentText() );
+				if(comboBox->currentText() == i18n("experimental"))
+				{
+					run.append( "exp" );
+				}
+			terminal()->startProgram( "siduxcc", run );
+	
+			connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+	
+		}
+
+	}
 }
 
-void siduxcc_kernel::finish()
-{
-	statusBar1->setProgress(100);
-	statusBar2->setProgress(100);
-	statusText->setText(i18n("Download")+": "+i18n("Done")+".<br>"+i18n("Unzip")+": "+i18n("Done")+".<br>"+i18n("Installation")+": "+i18n("Done")+".");
-	KMessageBox::information(this, i18n("Installation finished.") );
-	backButton1->setEnabled(true);
-	updateButton1->setEnabled(false);
-	updateButton2->setEnabled(false);
-}
-
-void siduxcc_kernel::getOutput(KProcess *, char *data, int len)
-{
-	char dst[len+1];
-	memmove(dst,data,len);
-	dst[len]=0;
-	consoleBrowser->setText(consoleBrowser->text()+dst);
-
-	consoleBrowser->scrollToBottom ();
-
-}
-
-// widget-changer
-void siduxcc_kernel::details()
-{
-	widgetStack->raiseWidget(2);
-}
-void siduxcc_kernel::back1()
+void siduxcc_kernel::back()
 {
 	widgetStack->raiseWidget(0);
-	backButton1->setEnabled(false);
+	load();
 }
-void siduxcc_kernel::back2()
-{
-	widgetStack->raiseWidget(1);
-}
+
+
 
 //------------------------------------------------------------------------------
 // kernel-remover
@@ -217,6 +196,7 @@ void siduxcc_kernel::remove()
 	this->shell->setCommand("kernel-remover -x "+removeList->currentText());
 	this->shell->start(true);
 	KMessageBox::information(this, removeList->currentText()+" "+i18n("removed")+"" );
+	getOldKernels();
 }
 
 //------------------------------------------------------------------------------

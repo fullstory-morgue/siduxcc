@@ -23,6 +23,10 @@
 #include "softwaredialog.h"
 #include "../libsiduxcc/process.h"
 
+#include <kde_terminal_interface.h>
+#include <kparts/part.h>
+
+
 class siduxcc_software : public SoftwareDialog
 {
 	Q_OBJECT
@@ -33,6 +37,12 @@ class siduxcc_software : public SoftwareDialog
 		void showPackages();
 		void warning();
 		void checkASV();
+
+		ExtTerminalInterface *terminal()
+		{
+			return static_cast<ExtTerminalInterface*>(konsole->qt_cast( "ExtTerminalInterface" ) );
+		}
+		virtual bool eventFilter( QObject *o, QEvent *e );
 	
 	private:
 		Process* shell;
@@ -41,12 +51,14 @@ class siduxcc_software : public SoftwareDialog
 		virtual void update();
 		virtual void upgrade();
 		virtual void download();
+		virtual void clean();
+		virtual void back();
 
 		virtual void metapackages();
 
-		virtual void back();
-		virtual void enableBack();
-		virtual void getOutput(KProcess *, char *, int);
+	protected:
+		void loadKonsole();
+		KParts::Part *konsole;
 	
 };
 

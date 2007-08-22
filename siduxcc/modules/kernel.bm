@@ -42,11 +42,44 @@ function experimentalKernel()
 	rm -f $TMP
 }
 
-function updateKernel()
+installKernel()
 {
+	# $1: kernelversion, e.g 2.6.22.1
+	# $2: exp (experimental)
 
+	# download
+	cd /tmp
+	if [ ! -w kernel-$1.zip ]; then
+		if [ -z $2 ]; then
+			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/kernel-$1.zip
+		else
+			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/experimental/$1.zip
+		fi
+	fi
+
+	# unzip
+	unzip kernel-$1.zip -d kernel-$1
+	rm -f kernel-$1.zip
+
+	#install
+	cd kernel-$1
+	./install-kernel-sidux.sh
+	cd ..
+	rm -rf kernel-$1
+
+	echo ""
+	echo "$(eval_gettext "The installation is finished!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+
+}
+
+dlgInstallKernel()
+{
+	
 	nKernel=$(newestKernel)
 	eKernel=$(experimentalKernel)
+	cKernel=$(currentKernel)
 
 	choice=$(dlg --menu "$(eval_gettext "Select a kernel")" 0 0 0 "newest" "$nKernel" "experimental" "$eKernel" )
 
@@ -57,53 +90,17 @@ function updateKernel()
 			experimental) sKernel=$eKernel;;
 		esac
 
-		if [ $skernel = $("uname -r") ]; then
-			dlg --yesno "$(eval_gettext "The versions of the new and the current Kernel are the same!")"
+		if [ $skernel =  $cKernel ]; then
+			dlg --msgbox "$(eval_gettext "The versions of the new and the current Kernel are the same!")"
 		else
-
-			sKernel="kernel-$sKernel"
 
 			case $choice in
-				newest) downloadKernel $sKernel;;
-				experimental) downloadExpKernel $sKernel exp;;
+				newest) installKernel $sKernel;;
+				experimental) installKernel $sKernel exp;;
 			esac
-
-			unzipKernel $sKernel
-
-			installKernel $sKernel
-		
-			echo "$(eval_gettext "Press <Enter> to continue...")"
-			read
 		fi
 	fi
-}
 
-function downloadKernel()
-{
-	cd /tmp
-	if [ ! -w $1 ]; then
-		if [ -z $2 ]; then
-			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/$1.zip
-		else
-			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/experimental/$1.zip
-		fi
-	fi
-}
-
-function unzipKernel()
-{
-	cd /tmp
-	unzip $1 -d $1
-	rm -f $1
-}
-
-function installKernel()
-{
-	cd /tmp
-	cd $1
-	./install-kernel-sidux.sh
-	cd ..
-	rm -rf $1
 }
 
 
@@ -131,7 +128,7 @@ function kernel_interface()
 
 		case $kernel in
 			remover) kernel-remover;;
-			update)  updateKernel;;
+			update)  dlgInstallKernel;;
 			return|"") break;;
 		esac
 	done

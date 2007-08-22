@@ -30,19 +30,19 @@ function detect()
 function allDevices()
 {
 	echo "Atheros PCI wireless card"
-	echo acx*
-	echo atmel*
+	echo acx
+	echo atmel
 	echo at76_usb
-	echo bcm43xx*
+	echo bcm43xx
 	echo ipw2100
 	echo ipw2200
 	echo iwl3945
 	echo iwl4965
 	echo prism54
-	echo rt61*
-	echo rt73*
+	echo rt61
+	echo rt73
 	echo zd1201
-	echo zd1211*
+	echo zd1211
 }
 
 function install()
@@ -94,7 +94,7 @@ function install()
 
 	case "${fw}" in
 		apt-get*)
-			apt-get update
+			#apt-get update
 			${fw}
 			modprobe -r ${driver}
 			modprobe ${driver}
@@ -124,6 +124,7 @@ function install()
 			;;
 	esac
 
+	echo ""
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 

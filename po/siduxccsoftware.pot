@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-02 09:20+0200\n"
+"POT-Creation-Date: 2007-08-22 20:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,107 +15,136 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. i18n: file displaydialog.ui line 17
-#: rc.cpp:3 rc.cpp:58
-#, no-c-format
-msgid "Software"
+#: siduxcc_software.cpp:106 siduxcc_software.cpp:123
+msgid "Apt-show-versions is missing!"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 32
-#: rc.cpp:6 rc.cpp:61
-#, no-c-format
-msgid "Di&st-Upgrade"
+#: siduxcc_software.cpp:106
+msgid "Do you want to install it?"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 47
-#: rc.cpp:9 rc.cpp:64
-#, no-c-format
-msgid "Howto"
+#: siduxcc_software.cpp:123
+msgid "Switch to the Administration to install it!"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 66
-#: rc.cpp:12 rc.cpp:67
+#. i18n: file softwaredialog.ui line 143
+#: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
 #, no-c-format
+msgid "There are no warnings"
+msgstr ""
+
+#: siduxcc_software.cpp:143
+msgid "No internet connection!"
+msgstr ""
+
+#: siduxcc_software.cpp:150
+msgid "Don't make a dist-Upgrade!"
+msgstr ""
+
+#: siduxcc_software.cpp:183
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 97
-#: rc.cpp:15 rc.cpp:70
-#, no-c-format
-msgid "Status"
+#: siduxcc_software.cpp:220
+msgid "Are you sure you want to clear your local repository?"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 169
-#: rc.cpp:19 rc.cpp:74
-#, no-c-format
-msgid "Up&gradable packages"
+#: siduxcc_software.cpp:224
+msgid "The local repository was cleaned."
 msgstr ""
 
-#. i18n: file displaydialog.ui line 172
-#: rc.cpp:22 rc.cpp:77
+#. i18n: file softwaredialog.ui line 17
+#: rc.cpp:3 rc.cpp:57
 #, no-c-format
-msgid "Alt+G"
+msgid "Software"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 195
-#: rc.cpp:25 rc.cpp:80
+#. i18n: file softwaredialog.ui line 64
+#: rc.cpp:6 rc.cpp:60
 #, no-c-format
-msgid "D&ist-upgrade alerter"
+msgid "Upgrada&ble Packages"
 msgstr ""
 
-#. i18n: file displaydialog.ui line 198
-#: rc.cpp:28 rc.cpp:83
-#, no-c-format
-msgid "Alt+I"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 226
-#: rc.cpp:31 rc.cpp:86
-#, no-c-format
-msgid "apt-get update"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 273
-#: rc.cpp:37 rc.cpp:92
-#, no-c-format
-msgid "&Metapackages"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 299
-#: rc.cpp:40 rc.cpp:95
-#, no-c-format
-msgid "Metapackages"
-msgstr ""
-
-#. i18n: file displaydialog.ui line 333
-#: rc.cpp:43 rc.cpp:98
-#, no-c-format
-msgid "Install Metapa&ckes"
-msgstr ""
-
-#. i18n: file upgradablebase.ui line 16
-#: rc.cpp:46 rc.cpp:101
-#, no-c-format
-msgid "Upgradable packages"
-msgstr ""
-
-#. i18n: file upgradablebase.ui line 25
-#: rc.cpp:49 rc.cpp:104
+#. i18n: file softwaredialog.ui line 86
+#: rc.cpp:9 rc.cpp:63
 #, no-c-format
 msgid "Name"
 msgstr ""
 
-#. i18n: file upgradablebase.ui line 36
-#: rc.cpp:52 rc.cpp:107
+#. i18n: file softwaredialog.ui line 97
+#: rc.cpp:12 rc.cpp:66
 #, no-c-format
 msgid "Installed Version"
 msgstr ""
 
-#. i18n: file upgradablebase.ui line 47
-#: rc.cpp:55 rc.cpp:110
+#. i18n: file softwaredialog.ui line 108
+#: rc.cpp:15 rc.cpp:69
 #, no-c-format
 msgid "Latest Version"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 205
+#: rc.cpp:21 rc.cpp:75
+#, no-c-format
+msgid "Clea&n"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 208
+#. i18n: file softwaredialog.ui line 412
+#. i18n: file softwaredialog.ui line 208
+#. i18n: file softwaredialog.ui line 412
+#: rc.cpp:24 rc.cpp:54 rc.cpp:78 rc.cpp:108
+#, no-c-format
+msgid "Alt+N"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 250
+#: rc.cpp:27 rc.cpp:81
+#, no-c-format
+msgid "D&ownload"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 253
+#: rc.cpp:30 rc.cpp:84
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 294
+#: rc.cpp:36 rc.cpp:90
+#, no-c-format
+msgid "Alt+U"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 336
+#: rc.cpp:39 rc.cpp:93
+#, no-c-format
+msgid "Upgr&ade"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 339
+#: rc.cpp:42 rc.cpp:96
+#, no-c-format
+msgid "Alt+A"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 349
+#: rc.cpp:45 rc.cpp:99
+#, no-c-format
+msgid "&Metapackages"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 375
+#: rc.cpp:48 rc.cpp:102
+#, no-c-format
+msgid "Metapackages"
+msgstr ""
+
+#. i18n: file softwaredialog.ui line 409
+#: rc.cpp:51 rc.cpp:105
+#, no-c-format
+msgid "I&nstall Metapackes"
 msgstr ""

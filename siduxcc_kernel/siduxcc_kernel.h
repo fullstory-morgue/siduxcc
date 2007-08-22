@@ -20,24 +20,41 @@
 #ifndef SIDUXCC_NETWORK_H_
 #define SIDUXCC_NETWORK_H_
 
-#include "displaydialog.h"
+#include "kerneldialog.h"
 #include "../libsiduxcc/process.h"
 
-class siduxcc_kernel : public DisplayDialog
+#include <kde_terminal_interface.h>
+#include <kparts/part.h>
+
+
+class siduxcc_kernel : public KernelDialog
 {
 	Q_OBJECT
 
 	public:
 		siduxcc_kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
-	
+		void getCurrentKernel();
+		void getNewKernels();
+		void getOldKernels();
+
+		ExtTerminalInterface *terminal()
+		{
+			return static_cast<ExtTerminalInterface*>(konsole->qt_cast( "ExtTerminalInterface" ) );
+		}
+		virtual bool eventFilter( QObject *o, QEvent *e );
+
 	private:
 		Process* shell;
 		KProcess proc;
 		bool experimental;
 	
 	public slots:
-		virtual void update1();
+		virtual void remove();
+		virtual void install();
+		virtual void back();
+
+		/* virtual void update1();
 		virtual void update2();
 		virtual void download();
 		virtual void unzip();
@@ -45,9 +62,12 @@ class siduxcc_kernel : public DisplayDialog
 		virtual void finish();
 		virtual void back1();
 		virtual void back2();
-		virtual void details();
-		virtual void remove();
-		virtual void getOutput(KProcess *, char *, int);
+		virtual void details(); */
+		//virtual void getOutput(KProcess *, char *, int);
+
+	protected:
+		void loadKonsole();
+		KParts::Part *konsole;
 };
 
 #endif

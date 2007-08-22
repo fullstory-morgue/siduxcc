@@ -22,6 +22,7 @@
 #include <qlistbox.h>
 #include <qlineedit.h>
 #include <qcombobox.h>
+#include <qwidgetstack.h>
 
 #include "siduxcc_hardware.h"
 
@@ -41,12 +42,20 @@ siduxcc_hardware::siduxcc_hardware(QWidget *parent, const char *name, const QStr
 		// Root-Input-Widgets
 		installButton->setEnabled(true);
 	}
+
 }
+
 
 void siduxcc_hardware::load()
 {
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
 	showDevices();
 }
+
+
+//------------------------------------------------------------------------------
+// showDevices
 
 void siduxcc_hardware::showDevices()
 {
@@ -65,19 +74,70 @@ void siduxcc_hardware::showDevices()
 	QStringList hardwareName = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
 	for(int i = 0; i < hardwareName.count(); i++)
 	{
-		hardwareList->insertItem(hardwareImg,""+hardwareName[i]);
+		hardwareList->insertItem(hardwareImg,hardwareName[i]);
 	}
 }
 
 
+//------------------------------------------------------------------------------
+// load console
+
+
+void siduxcc_hardware::loadKonsole()
+{
+	KLibFactory* factory = KLibLoader::self()->factory( "libsanekonsolepart" );
+	if (!factory)
+		factory = KLibLoader::self()->factory( "libkonsolepart" );
+	konsole = static_cast<KParts::Part*>( factory->create( konsoleFrame, "konsolepart", "QObject", "KParts::ReadOnlyPart" ) );
+	terminal()->setAutoDestroy( true );
+	terminal()->setAutoStartShell( false );
+	konsole->widget()->setGeometry(0, 0, konsoleFrame->width(), konsoleFrame->height());	
+}
+
+
+bool siduxcc_hardware::eventFilter( QObject *o, QEvent *e )
+{
+	// This function makes the console emulator expanding
+	if ( e->type() == QEvent::Resize )
+	{
+		QResizeEvent *re = dynamic_cast< QResizeEvent * >( e );
+		if ( !re ) return false;
+		konsole->widget()->setGeometry( 0, 0, re->size().width(), re->size().height() );
+	}
+	return false;
+};
+//------------------------------------------------------------------------------
+// install drivers
+
+
 void siduxcc_hardware::install()
 {
+	// add non-free sources to /etc/apt/sources.list
 	this->shell->setCommand("siduxcc hardware addSources");
 	this->shell->start(true);
 
-	this->shell->setCommand("konsole -T \"sidux-Control-Center\" --nomenubar --notabbar -e siduxcc hardware install "+hardwareList->currentText());
-	this->shell->start(true);
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "hardware" );
+		run.append( "install" );
+		run.append( hardwareList->currentText() );
+	terminal()->startProgram( "siduxcc", run );
+
+	 connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+
+	// use a eternal console window
+	// this->shell->setCommand("konsole -T \"sidux-Control-Center\" --nomenubar --notabbar -e siduxcc hardware install "+hardwareList->currentText());
+	// this->shell->start(true);
 }
 
+
+void siduxcc_hardware::back()
+{
+	widgetStack->raiseWidget(0);
+	load();
+}
 
 #include "siduxcc_hardware.moc"

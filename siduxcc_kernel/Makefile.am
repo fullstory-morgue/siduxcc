@@ -3,7 +3,7 @@ METASOURCES = AUTO
 
 kde_module_LTLIBRARIES = kcm_siduxcc_kernel.la
 
-kcm_siduxcc_kernel_la_SOURCES = displaydialog.ui siduxcc_kernel.cpp
+kcm_siduxcc_kernel_la_SOURCES = kerneldialog.ui siduxcc_kernel.cpp
 kcm_siduxcc_kernel_la_LDFLAGS  = $(all_libraries) -module -avoid-version -no-undefined
 kcm_siduxcc_kernel_la_LIBADD = $(LIB_KIO) ../libsiduxcc/libsiduxcc.la
 
