@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckernel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 22:11+0200\n"
+"POT-Creation-Date: 2007-08-24 14:00+0200\n"
 "PO-Revision-Date: 2007-08-22 22:30+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -17,34 +17,33 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: file kerneldialog.ui line 81
-#: siduxcc_kernel.cpp:78 rc.cpp:10 rc.cpp:45
+#: siduxcc_kernel.cpp:79 rc.cpp:10 rc.cpp:45
 #, no-c-format
 msgid "default"
 msgstr "standard"
 
-#: siduxcc_kernel.cpp:153
+#: siduxcc_kernel.cpp:154
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: siduxcc_kernel.cpp:158
+#: siduxcc_kernel.cpp:159
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Wollen Sie wirklich einen neuen Kernel installieren?"
 
-#: siduxcc_kernel.cpp:160
+#: siduxcc_kernel.cpp:161
 msgid ""
 "Please don't close the window or press the Ok or Cancel button, before it's "
 "written, that the installation is finished!"
-msgstr "Bitte nicht das Fenster schliessen oder den Ok- bzw. den Abrechen-Knopf drücken, bevor die Nachricht erscheint, dass die Installation abgeschlossen ist!"
+msgstr ""
+"Bitte nicht das Fenster schliessen oder den Ok- bzw. den Abrechen-Knopf "
+"drücken, bevor die Nachricht erscheint, dass die Installation abgeschlossen "
+"ist!"
 
 #. i18n: file kerneldialog.ui line 86
-#: siduxcc_kernel.cpp:170 rc.cpp:13 rc.cpp:48
+#: siduxcc_kernel.cpp:171 rc.cpp:13 rc.cpp:48
 #, no-c-format
 msgid "experimental"
 msgstr "experimentel"
-
-#: siduxcc_kernel.cpp:198
-msgid "removed"
-msgstr "gelöscht"
 
 #. i18n: file kerneldialog.ui line 17
 #: rc.cpp:3 rc.cpp:38
@@ -100,3 +99,5 @@ msgstr "löschen"
 msgid "Alt+M"
 msgstr "Alt+M"
 
+#~ msgid "removed"
+#~ msgstr "gelöscht"

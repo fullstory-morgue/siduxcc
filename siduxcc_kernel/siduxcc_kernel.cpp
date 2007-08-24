@@ -58,6 +58,7 @@ void siduxcc_kernel::load()
 	konsoleFrame->installEventFilter( this );
 }
 
+
 //------------------------------------------------------------------------------
 // get Kernels
 
@@ -193,11 +194,24 @@ void siduxcc_kernel::back()
 
 void siduxcc_kernel::remove()
 {
-	this->shell->setCommand("kernel-remover -x "+removeList->currentText());
-	this->shell->start(true);
-	KMessageBox::information(this, removeList->currentText()+" "+i18n("removed")+"" );
-	getOldKernels();
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "kernel" );
+		run.append( "removeKernel" );
+		run.append( removeList->currentText() );
+	terminal()->startProgram( "siduxcc", run );
+			
+	connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+
+	//this->shell->setCommand("kernel-remover -x "+removeList->currentText());
+	//this->shell->start(true);
+	//KMessageBox::information(this, removeList->currentText()+" "+i18n("removed")+"" );
+	//getOldKernels();
 }
+
 
 //------------------------------------------------------------------------------
 // END

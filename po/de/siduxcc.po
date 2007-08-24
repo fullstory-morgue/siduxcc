@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 22:11+0200\n"
-"PO-Revision-Date: 2007-08-22 22:14+0200\n"
+"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"PO-Revision-Date: 2007-08-24 14:08+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -62,9 +62,9 @@ msgstr "Neue DPI-Einstellungen eingeben:"
 msgid "Default Color Depth"
 msgstr "Standard Farbtiefe"
 
-#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:128
-#: modules/info.bm:32 modules/kernel.bm:72 modules/software.bm:64
-#: modules/software.bm:72
+#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
+#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Drücken Sie <Enter> um fortzufahren..."
@@ -119,9 +119,9 @@ msgstr "X-Server neu starten"
 msgid "Restore X-Server"
 msgstr "X-Server wiederherstellen"
 
-#: modules/display.bm:242 modules/hardware.bm:158 modules/info.bm:24
-#: modules/kernel.bm:127 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:133
+#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
+#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:138
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Zurück zum Hauptmenü"
@@ -131,10 +131,16 @@ msgstr "Zurück zum Hauptmenü"
 msgid "Error: This module is not implemented yet!"
 msgstr "Fehler: Dieses Modul ist noch nicht implementiert!"
 
-#: modules/hardware.bm:9 modules/hardware.bm:157
+#: modules/hardware.bm:9 modules/hardware.bm:158
 #, sh-format
 msgid "Hardware"
 msgstr "Hardware"
+
+#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
+#: modules/software.bm:73 modules/software.bm:84
+#, sh-format
+msgid "Process done!"
+msgstr "Prozess abgeschlossen!"
 
 #: modules/info.bm:10 modules/info.bm:21
 #, sh-format
@@ -156,32 +162,37 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Sie verwenden "
 
-#: modules/kernel.bm:9 modules/kernel.bm:124
+#: modules/kernel.bm:9 modules/kernel.bm:144
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
 
-#: modules/kernel.bm:71
+#: modules/kernel.bm:16
+#, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr "Das Programm Kernel-remover fehlt! Soll es installiert werden?"
+
+#: modules/kernel.bm:91
 #, sh-format
 msgid "The installation is finished!"
 msgstr "Installation beendet!"
 
-#: modules/kernel.bm:84
+#: modules/kernel.bm:104
 #, sh-format
 msgid "Select a kernel"
 msgstr "Bitte einen Kernel wählen"
 
-#: modules/kernel.bm:94
+#: modules/kernel.bm:114
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: modules/kernel.bm:125
+#: modules/kernel.bm:145
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "kernel-remover starten"
 
-#: modules/kernel.bm:126
+#: modules/kernel.bm:146
 #, sh-format
 msgid "Update kernel"
 msgstr "Kernel aktualisieren"
@@ -261,7 +272,7 @@ msgstr "Systemdienste aktivieren/deaktivieren"
 msgid "Manage Services"
 msgstr "Diensteverwaltung"
 
-#: modules/software.bm:10 modules/software.bm:129
+#: modules/software.bm:10 modules/software.bm:134
 #, sh-format
 msgid "Software"
 msgstr "Software"
@@ -271,7 +282,7 @@ msgstr "Software"
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
 
-#: modules/software.bm:36 modules/software.bm:102
+#: modules/software.bm:36 modules/software.bm:107
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -281,7 +292,7 @@ msgstr ""
 "nicht Möglich zu überprüfen, ob Dist-Upgrade Warnungen vorliegen. Wollen Sie "
 "trotzdem fortfahren?"
 
-#: modules/software.bm:40 modules/software.bm:105
+#: modules/software.bm:40 modules/software.bm:110
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -290,27 +301,27 @@ msgstr ""
 "Achtung es wurden Dist-Upgrade-Warnungen gefunden! Im Moment sollte kein "
 "Dist-Upgrade druchgeführt werden! Mehr informationen finden Sie auf sidux.com"
 
-#: modules/software.bm:43 modules/software.bm:107
+#: modules/software.bm:43 modules/software.bm:112
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Im Moment sind keine Dist-Upgrade-Warnungen bekannt!"
 
-#: modules/software.bm:113
+#: modules/software.bm:118
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Bitte eine Datum auswählen"
 
-#: modules/software.bm:130
+#: modules/software.bm:135
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr "Dist-Upgrade ausführen"
 
-#: modules/software.bm:131
+#: modules/software.bm:136
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr "Zeige Dist-Upgrade-Warnungen"
 
-#: modules/software.bm:132
+#: modules/software.bm:137
 #, sh-format
 msgid "Show DU-Log"
 msgstr "Zeige Dist-Upgrade-Warnungen"

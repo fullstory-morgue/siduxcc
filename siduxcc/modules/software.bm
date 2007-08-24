@@ -61,6 +61,7 @@ function download()
 {
 	apt-get -dy dist-upgrade
 	echo ""
+	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 }
@@ -69,6 +70,7 @@ function update()
 {
 	apt-get update
 	echo ""
+	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 }
@@ -78,6 +80,9 @@ function installASV()
 {
 	apt-get update
 	apt-get -y install apt-show-versions
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
 }
 
 function duWarnings()

@@ -9,6 +9,27 @@
 register_module kernel $(eval_gettext "Kernel")
 
 
+function removeKernel()
+{
+	# check if kernel-remover is installed
+	if [ ! -f /usr/sbin/kernel-remover ]; then
+		read -p "$(eval_gettext "Kernel-remover is missing! Do you want do install it?") <yes/no>"
+		if [ "$REPLY" = "yes" ]; then
+			apt-get update
+			apt-get install sidux-kernelhacking
+			kernel-remover -x $1
+		fi
+	else
+		kernel-remover -x $1
+	fi
+
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+
 function currentKernel()
 {
 	uname -r
