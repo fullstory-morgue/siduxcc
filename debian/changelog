@@ -6,8 +6,9 @@ siduxcc (0.5.6.11) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * NOT RELEASED YET
   * siduxcc_kernel: kernel-remover improved
+  * siduxcc_kernel: warning-window for kernel-remover added
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 24 Aug 2007 14:11:05 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 24 Aug 2007 14:21:34 +0200
 
 siduxcc (0.5.6.10) unstable; urgency=low
 

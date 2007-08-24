@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-24 14:00+0200\n"
+"POT-Creation-Date: 2007-08-24 14:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,10 @@ msgstr ""
 msgid "Are you sure you want to install a new kernel?"
 msgstr ""
 
-#: siduxcc_kernel.cpp:161
+#: siduxcc_kernel.cpp:161 siduxcc_kernel.cpp:197
 msgid ""
-"Please don't close the window or press the Ok or Cancel button, before it's "
-"written, that the installation is finished!"
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
 msgstr ""
 
 #. i18n: file kerneldialog.ui line 86

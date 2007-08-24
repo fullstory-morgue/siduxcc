@@ -158,7 +158,7 @@ void siduxcc_kernel::install()
 
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
 		{
-			KMessageBox::information(this, i18n("Please don't close the window or press the Ok or Cancel button, before it's written, that the installation is finished!") );	
+			KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );	
 
 			// change widget
 			widgetStack->raiseWidget(1);
@@ -194,6 +194,8 @@ void siduxcc_kernel::back()
 
 void siduxcc_kernel::remove()
 {
+	KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );	
+
 	// change widget
 	widgetStack->raiseWidget(1);
 
