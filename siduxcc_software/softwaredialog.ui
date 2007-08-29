@@ -46,12 +46,6 @@
                     <property name="name">
                         <cstring>unnamed</cstring>
                     </property>
-                    <property name="margin">
-                        <number>0</number>
-                    </property>
-                    <property name="spacing">
-                        <number>0</number>
-                    </property>
                     <widget class="QTabWidget" row="0" column="0">
                         <property name="name">
                             <cstring>tabWidget</cstring>
@@ -66,6 +60,12 @@
                             <grid>
                                 <property name="name">
                                     <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>5</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>5</number>
                                 </property>
                                 <widget class="KLed" row="0" column="0">
                                     <property name="name">
@@ -124,7 +124,7 @@
                                         <bool>true</bool>
                                     </property>
                                     <property name="itemMargin">
-                                        <number>1</number>
+                                        <number>2</number>
                                     </property>
                                 </widget>
                                 <widget class="QLabel" row="0" column="1" rowspan="1" colspan="9">
@@ -357,7 +357,7 @@
                                 </property>
                                 <property name="geometry">
                                     <rect>
-                                        <x>40</x>
+                                        <x>30</x>
                                         <y>30</y>
                                         <width>275</width>
                                         <height>80</height>
@@ -475,6 +475,9 @@
                                 <property name="lineWidth">
                                     <number>7</number>
                                 </property>
+                                <property name="margin">
+                                    <number>0</number>
+                                </property>
                             </widget>
                         </grid>
                     </widget>
@@ -544,9 +547,9 @@
     <slot>metapackages()</slot>
     <slot>upgrade()</slot>
     <slot>clean()</slot>
+    <slot>tabWidget_selected(const QString&amp;)</slot>
 </slots>
-<layoutdefaults spacing="3" margin="6"/>
-<layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>
+<layoutdefaults spacing="6" margin="0"/>
 <includehints>
     <includehint>kcmodule.h</includehint>
     <includehint>kled.h</includehint>

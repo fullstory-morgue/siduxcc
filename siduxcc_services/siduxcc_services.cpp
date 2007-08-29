@@ -36,7 +36,7 @@ typedef KGenericFactory<siduxcc_services, QWidget> ModuleFactory;
 K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_services, ModuleFactory("siduxccservices") )
 
 siduxcc_services::siduxcc_services(QWidget *parent, const char *name, const QStringList &)
-:DisplayDialog(parent, name)
+:ServicesDialog(parent, name)
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);

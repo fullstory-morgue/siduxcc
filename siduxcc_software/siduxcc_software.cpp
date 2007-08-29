@@ -159,6 +159,7 @@ void siduxcc_software::warning()
 
 void siduxcc_software::showPackages()
 {
+	uList->clear();
 	this->shell->setCommand("LANG=C apt-show-versions | grep upgradeable");
 	this->shell->start(true);
 	QStringList upgrade = QStringList::split( "\n", this->shell->getBuffer() );

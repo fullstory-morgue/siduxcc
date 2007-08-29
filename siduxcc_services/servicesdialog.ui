@@ -1,20 +1,20 @@
 <!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>DisplayDialog</class>
+<class>ServicesDialog</class>
 <author>Fabian Wuertz</author>
 <widget class="KCModule">
     <property name="name">
-        <cstring>DisplayDialog</cstring>
+        <cstring>ServicesDialog</cstring>
     </property>
     <property name="geometry">
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>841</width>
+            <width>842</width>
             <height>717</height>
         </rect>
     </property>
     <property name="caption">
-        <string>Display</string>
+        <string>Services</string>
     </property>
     <grid>
         <property name="name">
@@ -33,52 +33,41 @@
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>descriptionGroup</cstring>
+                        <cstring>selectGroup</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>18</x>
-                            <y>121</y>
-                            <width>530</width>
-                            <height>90</height>
+                            <x>30</x>
+                            <y>30</y>
+                            <width>230</width>
+                            <height>70</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
                         <sizepolicy>
-                            <hsizetype>0</hsizetype>
-                            <vsizetype>7</vsizetype>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
                             <horstretch>0</horstretch>
                             <verstretch>0</verstretch>
                         </sizepolicy>
                     </property>
                     <property name="title">
-                        <string>Description</string>
+                        <string>Select service</string>
                     </property>
-                    <widget class="QLabel">
+                    <widget class="QComboBox">
                         <property name="name">
-                            <cstring>descriptionLabel</cstring>
+                            <cstring>servicesBox</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>17</x>
-                                <y>23</y>
-                                <width>505</width>
-                                <height>60</height>
+                                <x>20</x>
+                                <y>30</y>
+                                <width>161</width>
+                                <height>20</height>
                             </rect>
-                        </property>
-                        <property name="sizePolicy">
-                            <sizepolicy>
-                                <hsizetype>7</hsizetype>
-                                <vsizetype>7</vsizetype>
-                                <horstretch>0</horstretch>
-                                <verstretch>0</verstretch>
-                            </sizepolicy>
-                        </property>
-                        <property name="text">
-                            <string>Description Text</string>
-                        </property>
-                        <property name="alignment">
-                            <set>WordBreak|AlignTop</set>
                         </property>
                     </widget>
                 </widget>
@@ -91,8 +80,8 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>278</x>
-                            <y>31</y>
+                            <x>300</x>
+                            <y>30</y>
                             <width>270</width>
                             <height>70</height>
                         </rect>
@@ -161,41 +150,52 @@
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>selectGroup</cstring>
-                    </property>
-                    <property name="enabled">
-                        <bool>true</bool>
+                        <cstring>descriptionGroup</cstring>
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>18</x>
-                            <y>31</y>
-                            <width>230</width>
-                            <height>70</height>
+                            <x>28</x>
+                            <y>121</y>
+                            <width>540</width>
+                            <height>90</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
                         <sizepolicy>
-                            <hsizetype>5</hsizetype>
-                            <vsizetype>5</vsizetype>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>7</vsizetype>
                             <horstretch>0</horstretch>
                             <verstretch>0</verstretch>
                         </sizepolicy>
                     </property>
                     <property name="title">
-                        <string>Select service</string>
+                        <string>Description</string>
                     </property>
-                    <widget class="QComboBox">
+                    <widget class="QLabel">
                         <property name="name">
-                            <cstring>servicesBox</cstring>
+                            <cstring>descriptionLabel</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>20</x>
-                                <y>30</y>
-                                <width>161</width>
-                                <height>20</height>
+                                <x>17</x>
+                                <y>23</y>
+                                <width>510</width>
+                                <height>60</height>
                             </rect>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="text">
+                            <string>Description Text</string>
+                        </property>
+                        <property name="alignment">
+                            <set>WordBreak|AlignTop</set>
                         </property>
                     </widget>
                 </widget>
@@ -205,9 +205,9 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>18</x>
+                            <x>28</x>
                             <y>231</y>
-                            <width>530</width>
+                            <width>540</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -310,7 +310,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Add a R&amp;unlevel-Entry (Start service at Boot)</string>
+                            <string>&amp;Add a Runlevel-Entry (Start service at Boot)</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
                         </property>
                     </widget>
                 </widget>
@@ -328,9 +331,9 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>16</x>
-                            <y>16</y>
-                            <width>532</width>
+                            <x>30</x>
+                            <y>30</y>
+                            <width>540</width>
                             <height>187</height>
                         </rect>
                     </property>
@@ -340,6 +343,12 @@
                     <hbox>
                         <property name="name">
                             <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>10</number>
+                        </property>
+                        <property name="spacing">
+                            <number>10</number>
                         </property>
                         <widget class="QLayoutWidget">
                             <property name="name">
@@ -482,55 +491,55 @@
     <connection>
         <sender>actionStart</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>actionRestart</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>actionDelete</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>actionAdd</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>actionReload</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>servicesBox</sender>
         <signal>activated(const QString&amp;)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>updateSlot()</slot>
     </connection>
     <connection>
         <sender>actionStop</sender>
         <signal>toggled(bool)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>serviceEnable</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>enableService()</slot>
     </connection>
     <connection>
         <sender>serviceDisable</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>ServicesDialog</receiver>
         <slot>disableService()</slot>
     </connection>
 </connections>
@@ -542,8 +551,7 @@
     <slot>disableService()</slot>
     <slot>enableService()</slot>
 </slots>
-<layoutdefaults spacing="3" margin="6"/>
-<layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>
+<layoutdefaults spacing="1" margin="0"/>
 <includehints>
     <includehint>kcmodule.h</includehint>
     <includehint>kled.h</includehint>

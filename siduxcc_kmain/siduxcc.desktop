@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=siduxcc
+Type=Application
+Exec=siduxcc-kmain
+
+Name=siduxcc
+Comment=Information about sidux
+Comment[de]=Informationen über sidux
+
+Categories=Qt;KDE;siduxcc

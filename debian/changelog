@@ -1,8 +1,21 @@
 siduxcc (0.5.6.12) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 24 Aug 2007 14:34:12 +0200
+  [ Fabian Wuertz ]
+  * NOT RELEASED YET
+  * siduxcc_hardware: ati/nvidia install added
+  * siduxcc_hardware: desktop name = drivers
+  * desktop-files: start with root privileges
+  * ui-files: default margin = 0
+  * siduxcc_software: clear list bug fixed
+  * siduxcc_info: translation bug fixed
+  * new kde startgui siduxcc_kmain added
+  * siduxcc_network: displaydialog.ui -> networkdialog.ui
+  * siduxcc_services: displaydialog.ui -> servicesdialog.ui
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 29 Aug 2007 12:16:00 +0200
 
 siduxcc (0.5.6.11) unstable; urgency=low
 

@@ -18,7 +18,7 @@
  */
 
 
-#include "siduxcc_info.h"
+#include "siduxcc_kmain.h"
 
 #include <kapplication.h>
 #include <kaboutdata.h>
@@ -34,26 +34,31 @@ static KCmdLineOptions options[] =
 
 int main(int argc, char **argv)
 {
-
 	// specify data for About dialog
-	KAboutData* about = new KAboutData("siduxccinfo", "SysInfo", "");
+	KAboutData* about = new KAboutData("siduxcckmain", I18N_NOOP("sidux Control Center"), "");
 
-	//about->setProgramLogo( QImage("/usr/share/icons/hicolor/32x32/apps/siduxcc.png") );
-	//about->setShortDescription( I18N_NOOP("Frontend for managing sidux.") );
-	//about->setLicense(KAboutData::License_GPL_V2);
-   //about->setHomepage("http://www.sidux.com");
-   //about->setBugAddress("xadras@sidux.com");
-	//about->setCopyrightStatement("(c) 2007 Fabian Würtz");
+	about->setProgramLogo( QImage("/usr/share/icons/hicolor/32x32/apps/siduxcc.png") );
+	about->setShortDescription( I18N_NOOP("Frontend for managing sidux.") );
+	about->setLicense(KAboutData::License_GPL_V2);
+   about->setHomepage("http://www.sidux.com");
+   about->setBugAddress("xadras@sidux.com");
+	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
+
+	about->addAuthor("Fabian Würtz (xadras)", I18N_NOOP("Developer"), "xadras@sidux.com", "http://xadras.wordpress.com/");
+
+	about->addCredit("Stefan Lippers-Hollmann (slh)", I18N_NOOP("Packaging") );
+	about->addCredit("Andreas Loibl (Acritox)", I18N_NOOP("Developer of the knxcc") , "andreas@andreas-loibl.de", "http://www.andreas-loibl.de/");
+
 
 
 	KCmdLineArgs::init(argc, argv, about);
 	KCmdLineArgs::addCmdLineOptions( options );
 	KApplication app;
-	siduxcc_info *mainWin = 0;
+	siduxcc_kmain *mainWin = 0;
 
 	if (app.isRestored())
 	{
-		//RESTORE(siduxcc_info);
+		//RESTORE(siduxcc_main);
 	}
 	else
 	{
@@ -62,7 +67,7 @@ int main(int argc, char **argv)
 
 		/// @todo do something with the command line args here
 
-		mainWin = new siduxcc_info();
+		mainWin = new siduxcc_kmain();
 		app.setMainWidget( mainWin );
 		mainWin->show();
 

@@ -49,6 +49,7 @@ class siduxcc_hardware : public HardwareDialog
 	
 	public slots:
 		virtual void install();
+		virtual void gfx();
 		virtual void back();
 
 	protected:

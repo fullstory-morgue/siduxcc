@@ -1,9 +1,9 @@
 <!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>DisplayDialog</class>
+<class>NetworkDialog</class>
 <author>Fabian Wuertz</author>
 <widget class="KCModule">
     <property name="name">
-        <cstring>DisplayDialog</cstring>
+        <cstring>NetworkDialog</cstring>
     </property>
     <property name="geometry">
         <rect>
@@ -14,7 +14,7 @@
         </rect>
     </property>
     <property name="caption">
-        <string>Display</string>
+        <string>Network</string>
     </property>
     <grid>
         <property name="name">
@@ -25,7 +25,7 @@
                 <cstring>tabWidget</cstring>
             </property>
             <property name="margin">
-                <number>5</number>
+                <number>0</number>
             </property>
             <widget class="QWidget">
                 <property name="name">
@@ -347,7 +347,7 @@
                     <property name="geometry">
                         <rect>
                             <x>30</x>
-                            <y>30</y>
+                            <y>20</y>
                             <width>275</width>
                             <height>80</height>
                         </rect>
@@ -418,7 +418,7 @@
                         <rect>
                             <x>30</x>
                             <y>30</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -433,25 +433,6 @@
                     <property name="title">
                         <string>Network</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>nwButton</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>180</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Ndiswrapper</string>
-                        </property>
-                        <property name="accel">
-                            <string></string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>nwPixmap</cstring>
@@ -471,6 +452,25 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>nwButton</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Ndiswrapper</string>
+                        </property>
+                        <property name="accel">
+                            <string></string>
+                        </property>
+                    </widget>
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -483,7 +483,7 @@
                         <rect>
                             <x>30</x>
                             <y>140</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -526,9 +526,9 @@
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>70</x>
+                                <x>75</x>
                                 <y>30</y>
-                                <width>180</width>
+                                <width>150</width>
                                 <height>30</height>
                             </rect>
                         </property>
@@ -559,7 +559,7 @@
                         <rect>
                             <x>30</x>
                             <y>30</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -574,25 +574,6 @@
                     <property name="title">
                         <string>Modem</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>m1Button</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>180</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>/de&amp;v/modem connection</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+V</string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>m1Pixmap</cstring>
@@ -612,6 +593,25 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>m1Button</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>/de&amp;v/modem</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+V</string>
+                        </property>
+                    </widget>
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -624,7 +624,7 @@
                         <rect>
                             <x>30</x>
                             <y>140</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -639,25 +639,6 @@
                     <property name="title">
                         <string>Modem</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>m2Button</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>180</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>GPRS &amp;connection</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+C</string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>m2Pixmap</cstring>
@@ -677,6 +658,25 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>m2Button</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>GPRS &amp;connection</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+C</string>
+                        </property>
+                    </widget>
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -687,9 +687,9 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>350</x>
+                            <x>320</x>
                             <y>140</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -704,25 +704,6 @@
                     <property name="title">
                         <string>Modem</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>m4Button</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>190</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>M&amp;y PPP Conf</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+Y</string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>m4Pixmap</cstring>
@@ -742,6 +723,25 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>m4Button</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>70</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>M&amp;y PPP Conf</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+Y</string>
+                        </property>
+                    </widget>
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
@@ -752,9 +752,9 @@
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>350</x>
+                            <x>320</x>
                             <y>30</y>
-                            <width>275</width>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -769,28 +769,6 @@
                     <property name="title">
                         <string>Modem</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>m3Button</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>false</bool>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>190</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Modem Dialer</string>
-                        </property>
-                        <property name="accel">
-                            <string></string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>m3Pixmap</cstring>
@@ -810,6 +788,28 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>m3Button</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>70</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Modem Dialer</string>
+                        </property>
+                        <property name="accel">
+                            <string></string>
+                        </property>
+                    </widget>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -821,16 +821,16 @@
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>i1Group</cstring>
+                        <cstring>d1Group</cstring>
                     </property>
                     <property name="enabled">
                         <bool>true</bool>
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>350</x>
-                            <y>140</y>
-                            <width>275</width>
+                            <x>30</x>
+                            <y>30</y>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -843,30 +843,11 @@
                         </sizepolicy>
                     </property>
                     <property name="title">
-                        <string>ISDN</string>
+                        <string>DSL</string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>i1Button</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>180</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>&amp;CAPI ISDN Conf</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+C</string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
-                            <cstring>i1Pixmap</cstring>
+                            <cstring>d1Pixmap</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
@@ -883,19 +864,41 @@
                             <bool>true</bool>
                         </property>
                     </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>d1Button</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Frit&amp;z!Card DSL PPPoE</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+Z</string>
+                        </property>
+                    </widget>
                 </widget>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>d3Group</cstring>
+                        <cstring>d2Group</cstring>
                     </property>
                     <property name="enabled">
                         <bool>true</bool>
                     </property>
                     <property name="geometry">
                         <rect>
-                            <x>350</x>
-                            <y>30</y>
-                            <width>275</width>
+                            <x>30</x>
+                            <y>140</y>
+                            <width>250</width>
                             <height>80</height>
                         </rect>
                     </property>
@@ -910,28 +913,139 @@
                     <property name="title">
                         <string>DSL</string>
                     </property>
-                    <widget class="QPushButton">
+                    <widget class="QLabel">
                         <property name="name">
-                            <cstring>d3Button</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>true</bool>
+                            <cstring>d2Pixmap</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>70</x>
+                                <x>15</x>
                                 <y>30</y>
-                                <width>180</width>
+                                <width>32</width>
+                                <height>32</height>
+                            </rect>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image5</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>d2Button</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
                                 <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>PPPoE Conf</string>
+                            <string>M&amp;y PPPoE Conf</string>
                         </property>
                         <property name="accel">
-                            <string></string>
+                            <string>Alt+Y</string>
                         </property>
                     </widget>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>i1Group</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>320</x>
+                            <y>140</y>
+                            <width>250</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>ISDN</string>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>i1Pixmap</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>30</y>
+                                <width>32</width>
+                                <height>32</height>
+                            </rect>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image8</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>i1Button</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>75</x>
+                                <y>30</y>
+                                <width>150</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>&amp;CAPI ISDN Conf</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+C</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>d3Group</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>320</x>
+                            <y>30</y>
+                            <width>250</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>DSL</string>
+                    </property>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>d3Pixmap</cstring>
@@ -951,140 +1065,26 @@
                             <bool>true</bool>
                         </property>
                     </widget>
-                </widget>
-                <widget class="QGroupBox">
-                    <property name="name">
-                        <cstring>d1Group</cstring>
-                    </property>
-                    <property name="enabled">
-                        <bool>true</bool>
-                    </property>
-                    <property name="geometry">
-                        <rect>
-                            <x>30</x>
-                            <y>30</y>
-                            <width>275</width>
-                            <height>80</height>
-                        </rect>
-                    </property>
-                    <property name="sizePolicy">
-                        <sizepolicy>
-                            <hsizetype>5</hsizetype>
-                            <vsizetype>5</vsizetype>
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                        </sizepolicy>
-                    </property>
-                    <property name="title">
-                        <string>DSL</string>
-                    </property>
                     <widget class="QPushButton">
                         <property name="name">
-                            <cstring>d1Button</cstring>
+                            <cstring>d3Button</cstring>
                         </property>
                         <property name="enabled">
-                            <bool>false</bool>
+                            <bool>true</bool>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>70</x>
+                                <x>75</x>
                                 <y>30</y>
-                                <width>180</width>
+                                <width>150</width>
                                 <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Fri&amp;tz!Card DSL PPPoE Conf</string>
+                            <string>PPPoE Conf</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+T</string>
-                        </property>
-                    </widget>
-                    <widget class="QLabel">
-                        <property name="name">
-                            <cstring>d1Pixmap</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>15</x>
-                                <y>30</y>
-                                <width>32</width>
-                                <height>32</height>
-                            </rect>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image8</pixmap>
-                        </property>
-                        <property name="scaledContents">
-                            <bool>true</bool>
-                        </property>
-                    </widget>
-                </widget>
-                <widget class="QGroupBox">
-                    <property name="name">
-                        <cstring>d2Group</cstring>
-                    </property>
-                    <property name="enabled">
-                        <bool>true</bool>
-                    </property>
-                    <property name="geometry">
-                        <rect>
-                            <x>30</x>
-                            <y>140</y>
-                            <width>275</width>
-                            <height>80</height>
-                        </rect>
-                    </property>
-                    <property name="sizePolicy">
-                        <sizepolicy>
-                            <hsizetype>5</hsizetype>
-                            <vsizetype>5</vsizetype>
-                            <horstretch>0</horstretch>
-                            <verstretch>0</verstretch>
-                        </sizepolicy>
-                    </property>
-                    <property name="title">
-                        <string>DSL</string>
-                    </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>d2Button</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>false</bool>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>70</x>
-                                <y>30</y>
-                                <width>180</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>M&amp;y PPPoE Conf</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+Y</string>
-                        </property>
-                    </widget>
-                    <widget class="QLabel">
-                        <property name="name">
-                            <cstring>d2Pixmap</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>15</x>
-                                <y>30</y>
-                                <width>32</width>
-                                <height>32</height>
-                            </rect>
-                        </property>
-                        <property name="pixmap">
-                            <pixmap>image5</pixmap>
-                        </property>
-                        <property name="scaledContents">
-                            <bool>true</bool>
+                            <string></string>
                         </property>
                     </widget>
                 </widget>
@@ -1117,101 +1117,101 @@
         <data format="PNG" length="2252">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000893494441545885a5975b8c5d5519c77f6bad7d397b9ffb994be7d296993274e885622f064b6b954b41a1a026102f21243e40e28331213e688cbef962f0c5a8e181a8311043e4d250412285b6b645a1b6d832d27b3bd3e9dce79c9973e6dcf675f97026063aa597b893bdb3b3b2d6f7ffedef5bdffabe2db8996be5d3dda69bdf994bbb5fc96712f716b26ea2e185c1ccececfb73e3a7f734463f7c07ce9fbb1993e28666753cd455e85efbccae07363ff1f03debba37adeba1b390441992288a6934234e5d2cb1ffbd93e5975edefddac943affe12a6866eeae33ef3ea7c64e7ce279e3bf3cf0f2feb30d43a8eb45ea879ba345fd7e54a53d7ebbe6e36431d855a6badf5e4acaf7ffaec5f8b76fb5d4ffdffe2ce1d8f7fe7077faa8f4dd674ad16eae9625d4f4c55f4f068515f1c2de999624dcf94ea7aa658d3d333353d3553d3c5b986aed763fdfc9f4fe854cffd3fbb9e84fa6cf1dbee7ae0b11fbdf2ec8f1f495aa6606c729689c96926a666992d55982fd748ba0ea661128431711c13459aa61752ad7bdc715b27766ef09e03078f8d697ff2d8cd02b87d5bbef7ea0f9f7ef89654124e9ebec0c8e818a5729d6a0316ea11512ce86ccb50add61042120611f30b75049220886978012bbb0b0c8d9adb474f1ddc03feec0d03d89ddbbf7bdf7d8f3fd5bf3cc5d98be799999da3195a78a145a51e1246823503dd64930966e7cad4ea4dc6a74a1886816dd9046184e747c47144a3e938ff3e7b39e997cfbc7ea3006a60f393bf6ecbb72f9f2a4ea168d2885c1abea45af3c8671d767c7e15bdcbb2482528e4b224123699748aa4e3e007214118130431b59a4fb9ec315d11fde367f7bf0251e94a31b944deea1abc65c5ad9b4e9c19e16ffb8f303e1b323bef335d5c6062a6425f6f81bede02a0514a023186a1300d837051b8d1f088624db9ea23d00cf4afcaca54ffbd57f380b16424d175a7693be657b7afe1e333920b972b6432115228823064cfbb1fd3bfa28d35031d044144ade1a3bd887071b91092e25c05df87a3c7cf93cd74b0acbd4022ddb5b15e3d7d7d80642ad7b3a6bf97955d0e1bd7aec00f9bbc73e8034e5d9c279bef6062e6323fffed5eb67eae8b30f0f9d6a35bb14cab1573ad09a3885c3acb8953e35cb834c5f0d408b7f6ad22e1e4baeb2d8fc7d704105a9886a9f0c3102b14b4e5b37ce3c16dbcf2e67ede1f1a26e1e6397c7498bd874f634858b77a055b37af265e681286ad543c756186dffc610f1d8524eb060639373647c30f15570158b207a2a831e7793e5208620dbe1fd2d696a72deb522c559829d5a8549b84214c97ea7c70e212007e1011459a8617f1fb970f7079ba4228921c3f33c18933638441bd79a5f85501fcdac4e9f9f979a49468ad719d04c787cef0c2eef7309c364013c59a308a89a298d2bc47a3191286310b358fdd6f0f716ce81c39a7c9d68d03dcbeaa8bde8e34b1571cbd2180a836f2d1f0e8f0a8d61201bcb9f7002fee390a4e2f528086d6438093b079ebe059ce5e9c4249c5c973d3bc75e03868a8d72aac5adece8ecd83e49344d1fcf923576ac1d5cf8146d533576fd8b06dcb4c6996e75f7895e9aa856d398046498169284c4361592673952696a9b8345ee6577f3cc8c8e8381bd60e60d919b2990c955ac491238717e6c60ffd0298ba526c691a028e9c9dfef8fc259414e4db9753f7628494246c938465601a12a5240241ac63feb2ef14f5a68fe78538c91c4d5f131b2976ef1b422883f5836dcea50f0d2b0cc3255a5705181cec5f6e65222a33311dcb5610043eb1962829b02d03cb54184a8200ad2108225cc7c4f723c230a21904106ba68b55b6dfddc7fac12eebefbbb3bdd56a714918ae0a9048667bd60c16786ff622a5728365ed29da730e4a4a8490282590a2d5cb68ad89e29830d2ad8a186be6171a9c1b2971d79ddd3cf4e53e8aa532b6e37657abc51bf2809dcb77f7c471cca60d3992aec1c5910668413eeb92742d2c63d10368620d6114e30711f546c04ca94abd1e70cf1756f0cd5dab99abfb18b64b2a95ed29ce8cde1080934825bba53400c1badb337477ba4c4e86d886453e95c63225a629104210c79a861750ae34f0bc06b62579e4fe3e36ae6f276129ecc8c63042d2b95cd7d5bcbd042093c9b4bba94c5a2a89e52409bd26858241216fe03781c8476b8bc05780060d1241266dd0d69ea2b7cb219bb6d008ac4492948850a526997c6717adac8bae09202db7279dc958a6141876029948104501c4218e13810e10440804203094c030259665e158499432b0ec048e93c0b62d42ede13a36995ca1134802956b02649385de427b419aa6228e5b9b4d252ca41448c1a26c8c90a0442b1d0da55a25d9343194422985922d44c73649ba3685f68e0e207d5d806426d3e5380962407ca269174220a5404989520aa9044a080c2991aa95a2528ac545ba95a2680c29495806d95c5b1ec80063d70448a7d2b9f503bd184afc8f40eb18a90ca46e1d484208241aa114426ba400a58c96307ad15b12215ae0f97c9ad9e1952e90ba526f0940fbb2eeb6b1e9796a5e8057af21a2002395c19b9f2391c9e27b4d4414a192a9c5b10c4a9a54aa650c53e1d82eb1d68b45034063db36c2304cd7cde4ebf5cab501bc50a44f5f9aa116846c3cbe8fba9be25ca69b9dc347797df536768cfd874937c7989be3eed18fd8b7f64b44864929fd0fd454173dee7a221d7ccaa6320ce6a7cbc230acc2957a4baa6122614937936279798a2defbe4eb3ab977b0fbd81aa2cd0ef2f70c7ded7f17a56b073df6ba87a837cf74a26dc630c650fd39beec74d98241d7bc99d721d2ccb4c5e370409cb64555f2fab168651bb1ea57ffb36d69c3fc2e9071f67c7d428c1aeafb16eeb16fa8eefe5e4d79f644d470f55edb23cd8c5a6f60d34e3c69526312c9371ed11c7f1927e60c9cf69efca81c7beffcc4f7ed7ddd5990e353a08426c43e2c502534768a588c208d310f8b1408721b6a920967851b8d4a000c334c5db6fec39f7d28bcf7d1bf8d7350116c3f24529cd5e206e1d5c57b60d9f1cfbacf74fcd97711c8f001f009fda20ff058426d9741bc09dac0000000049454e44ae426082</data>
     </image>
     <image name="image7">
-        <data format="PNG" length="1818">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006e1494441545885e5977b885c571dc73fe73e66677776937db9d94d62b325d618243628068a45ac8282b5a9566ada88560bd13455c12234b042432da4f6111052a40d922d6a2b25d4fa846a2c6a2d69d3a66ad3986eb6d9e76c667767363b8f3b33f7797efe7167f63513cdfffdc1cc997bcf9cfb7d9cdf39bf73e1bd1eea6afef438181e6c15d8a661a382360debaf66bc022c085330fc3d48afedb7fed7e047e1baaefe0d07b77dea935fda70ed60576f7f1f5d9debc030209904ad4164c5080d18ab1f72e11c9c789627cfa6fb11be73d5041e815b6fba67ff331ffbe6d7da484fc1cc34e4e66172145c1782007404ba4e602511b57cfdcfd7f8f3489a45a1bd194e53028fc1f6cfdcbbff573befb83dc95ffe046f9c82f4143805f07d88c2187895fa26a11423a52abf890c5ad1c6ee3bee6ced4eb6a8e1e16197d8aee673f8f4a68dbff8faf0b1af72ea6578f17730370ba263eb955a16d910d2d071d671792257a577cbd6330f8d8c2cb8416857ab95b9b1b10bcf0d1dfce10b0d0e3c0ed6d68f7ff48b8cbf0bff7a1d2e2f806de16961b6ea315d7529fa414cbfa9ea957c14a7cb11e743b82173a9fad7574f5deaebddb4ebe2d4fc4d1d49f9fcb7f7efbba581800f1f1ed838906266066f3e4b8481ab35af2d1439b76327dd7bf7e005418c23a045c5c26b1f11b564861245af56dc86d0d39afcc07c2e1fcd65e6da041b53a752a5a8727703010d9b53c9047e7e11a75a012d4c3a1526bfb09b81bbf6505ccc21918e734f0031100d44b17ad1b17289622222f1431742e9979974bf68416b8dbba1cd2c950b5b9a2561674241582e13563d946d53beef3e92d76fa752b88c89a04c0344810822208602335e95ca00b44214b57e15e78e0912814693ea6cc1b0847c3edfb80a0c88fc5211d329e10d0e72f19e7d4cb6255081474b8b0d62d794c96a1235e5d416876815e779fdb728b406cbd4b47727c8e6724461d474192e9666668976ede4fce76e22e797494611aa2581422d83af202152f35a14a2eb6dcd095926615b0a332914f20574a411a491400017b237eca2f8e5cf522ee449d9362a61a35008b28244fd2b26b20cc432295df35443e407282ba45028e007014114343a509472f7f4e2a59f667219b45b21956c59055a8ffa3d419636bcbaf2fabc8b8e5b258a52d1c13235856209df0f08831027eff8d54af5d812818214764d642e0e670bd9ed0a48da8926b3d33cea53529fff98570c5e2d9531d12c96f278ae87a10c4ac592effaee9d471e3cf2bc055015f71b13f98923e5a8dc95ea487195457229ea7b42dd1111d05aa8142a940b0e8562013ff0b12c0ba7e810f8c1d0e183879f0750430fddffc8faee753f58bc9c57ea8ab806572c3675e9b5fb4a408b90300cb65dbf9342314f1885d8b68de33838a5f2d143df7fe0bbf591a6b358186aefe91a54a689b24c4429825063266c8220429402cbc0f3038230228c34611411694d106a8248a345b012098230c20b43304db6f4be0f9db0f17d9f444b828a1750ba38f1dca1a187ef5e29cdea5cb7ceba6df72d74767562d0cadce8141b766cc69d2a52b64306360f30feea287d3bfa56d5ffb8ecc45b5f8b9d245b71c1f159df93449422ca39fc673e8d95b0f18290b137df62e0e8f1b9066f5548e82d56f017ca64cecf3273e8c7cc4d6559f7ecaff9fdb11314f321b3f7ff88b3af9fc3cb5670e71ddc79076fdec19d2f51cd96d1977d7eab5ee2f82f4fe0640a78d90a41c9c33015d52060eef49b5c38fa33fc30ec5a4bc0d241246eae423534b9f84e86b1a971daa6b394462618d35532e319ce4d8dd33799e19af65e248a903515b96c0b6f2fbc4b303a8fb750216af151be2668512c4c4cd37afce754228d67a88ee5034c8dc0a6ee3eba3bbab10c8bad1f7c3fc6d0030c74f531b1770f7b55446fc266f0d187d9764d3fc94412ad1b0bb15226dff26e863d21ed1d5d8832b05a0d16c646d8f2d4538c7b3e05c3c0d6526970e0ba9eeea7bb522d7f33ed04a9f656f4e9bfdfdaffa1cd3b7bba6d82928b9a9fe4c66e13e5e49092200df0712e6c6b37514ae14f8e509c9ea25cc8d3f3e20ba8ec22b36250047a60bc71ec9a78a2ad75f8d3871fbcab3435c1e2e805b80264b365197a1ee5b9594ae934be53c530a028267ff085bc08fb3437df8bfc7195030d965816d977ce73e9cc1bccfdfbadd55806f1febeead453a3a096ea110a03c330d102a3114c88f00921a7142fadd5d34040190651a4d14148a815ca5871ccae4f7ffd30d28448bd75439816e195483045f808ea270744dc06c16b6f449ecbe8c993bc3d9926bda2e22db575a9aa66cd1a45427c38ca13137081dbe174073cb616ab29814ad50b5f9e487346a00c28add780347b0f6824610183c08d70f25a61cf011ad54393247c52a9ed1e7cc5149451ef5d9b6f2bef2d5dcbf2915d0451aaaa85570cc53f0efcbff787f774fc175c65d7269fb32aa70000000049454e44ae426082</data>
+        <data format="PNG" length="2154">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000831494441545885ed976b7055d515c77ffb9c73ef4d422037ef272902318258df58eb5015ebe048c5426d89753ad8569d0ed24a3b3af6f1c9aad099d241db719c6a69334e0b8c96411d6044c22b1204c3d388012501f2b890849bdcdcf73d8fbdfa2189e6d596efed9eb977ce3efbacbd7f67fdd75a7b1ff85f6fea4a1e5a0b8607b3046a810a05391af2aed4de04d782fa67a16bfc98f59f0cd7404d7155e52fafbee3f6a5a5d5d3f30b8b0b094ecbc5320c0804c0f3406494858c651281b6d3f0ee56fef469a80c9155570cb0161e5cf8c4e31be7d73d94c3a5105c0a41380ca1f3904e83eb82f6408f008c0651437d01f9f8280de742c44472275b675280b530e79b3f797cf32dcb966471e8001c6f86ee4e880e80eda00b8b509101543c0aa609ca00354e8de1ee99688af73c0313cff8cef2e5d953b3b3557d7d7d1ad0a31e1bdbeabf52fdf7152faf7b84134760ef4eb874119c0cbaa49cbe751b8857d7e02453e41eda4f70df76723fdc03b60da602c31c9a560d49703c9161437f9afcab6a8e3e7be264389348fa52a9644f7bfb676fae797eeddb1300d68275c7838b230beebd6b0afbde87d3a710c7265d5245ff4bf5c473f3490e26483b36828115f091a520d0dc48bc611bbd4d7b104f639806a24c8e256d0e261c6ea9a83cb070f3e6b3c54515f3db3b7ae666fbbc68341c7a6082041e5c5b5e5a32858b17c9f4f6e13a1ee9f2ab88adff2b095f0ed19e30b15802d7f5b04c13cb6791f65b58f3be46e0d63b29766dceecd949f3b6b739f56113290d6240e642c76777ddfef55fbcd7b0fb55d35f30b7baba38b1abe558df64315095edf7911e8c908cc7d13366935af73a51c92616ee271e8b9249bb682dd8a2300c03d367625969d2090bbfdfc7ec6f2c62dea207711231da766d97ee9d3b2e9c397c68cb1b9b37ffe69aeb6e5996b16da7adf5f8734f3eb9aa75028040d08fe0c663b8d533493fff479a3e2da3e900f4f64ea5bc2c46edeccb54960da094468bc6b35d5cc7c04e1ba42d13cb67924c24f0f9fcccb86fa9aa5dfaf08c7b94b7315858946b676cdddcd4f0e23f376efecba441f822d4ad7874f9a69cb252a23ff8297b8e96b06f8f475bbbc34044e3b9909565505c6470ddb5835c5313a6ac2482c8484930504a612803d3676059163e9f85cf676259169665a0459d716ce7e54824fafa040f681818cccec57b7435bb0e16d1b8dfa1addd251ad5683d9471998ca6b34bd3d93585bd8dd3282d53dc706d3f35b3fa29291a446b85a73dbc8c8163bb644c03d334b04c13ad85542a53ebbaf61a9fdfffc6040fb4bcb36d59d6ccda2d7b0f97b2bfd1a5bddd2116d3b8de4477c9f09fc85019c8c936a9ac80afce0b53332b4cfeb4045a40440d970985d642221173a74ecd3d92c9d8b79ba327eceb1db847e5976edab5bf20d0b84ff379b49b78d887760d501a350e4131b4b052431dc711c2fd42eb67d91c3b598cdfef525591fc42691121918c3bf905412ef5f4bcf2e863df3d688c4c76f08323051d1d035b36bd1598d6d0e0d152b69dbeb93bf15c48dcbb052c77e895450dff981cc600ad059f799e1bafbbfca5b7444824e25e516181eaeeee0e470623ff188a9861fbc31f1d5c64483a6ff68c0e4a8a3b897782b1a58efec7d7e06f998fce0fa383fda00467ce09c472c6ab87009e8682bc4e56afec272b4b401422422a11a3b0a880f3172e447a7a2f3ef4ecaf5785004c80254b1eb8ed91158faddbb9e3fd92ec80cbcdd72b1ebeb39c3935090247e6d3f1b945f4aeed649d584062f1467ca1ab30078ac76e7c8068c89fd6c1d33f8b10088068851621958c132c2aa4bdbdbdeb52dfa545bf7de1574746ecccbbefbebbe2953fbff652c6336f3bf549f38f76ecd8d6d8d1d951140e0f9615043db57061aeae5bea53b36333712445f791728c8b3351c3be1bd9833c4f282dbec0ea9583f8fd0ad10a4f043b9d202f98cfd1038dd8afad5ff3dcf6ad5b477bcd5a5e57b7209093bfa079ef4ea3ac6ac6efd6bfba221cc8caca49a79c543c999e52565965a4e3710a0b0ef1e34782accccee6c8b16e3e38e8e7f8892c2c2b1711282d39cfcf57c6304c85d6439adbe924b979415a766de358fdabdc984c558d97cdeaede93976acf9e0d9c5f72f9ae3f3054a3cad8b11d18699ccb86eaae3ccc94367ceb59fddd9b8bbc9575951f55045c5f49ba75755b1ea893c0c23c0e1e618275aa2dc7f4f3f869a82d6a0b5c6716db272a772eedd3731b6fe0dc776482b953ff60033ace2eaa79e0a1614163e90971f2c8d275376e852a8a3bb2b74facce9d3a1d69696e86883fb162fab09060beacacb2aeaaaabaae74eafa8223f380d9fcf241a8d13890ce20f04304c1f5d6f6da074cf3bb4d91ebbd39a1b3cfdce7a2ddf9e0030babd0037159497af344cc3122d1886fa42681141b4a0458308e1ec29f312d533af37e6dd6495ceaaa5b2bc929cdc6c7afb2e93deb199a9bbdf46a338656b1a329a859e6cfabdc8f7c748301ea0647ad5aa251b5effa1138b92eae96142c28fa61f097d11ce453a696d6ea5cb56d45eee64dae106d25a7004fa5c2126900fe726c4c0f81b9e6d1b7d2d278887ba196c3b8b889e6ce931600a8552c2d5990c157d7d242e8688c5122010f1840b9e90278225345d0900974fb7d2dbf231bd9fb40c27f8f0a0c1d0496eb47023636aa8e0880c0f2b852b429b071d5ab855b8ac147bc63b74e28144295cdbc14967c88c2f76de24ce98403274e588d025c2479e6089508b7af91991f47ff5809b4e71b6b191d6ae10dd9a2f2bcd48fa28f5e5f6377cf41e8fe101112024820d7c0b3eca817593614f004825336e53478893222484a1481bb3c864df0113214ca00ab8151a2a85e5cf30f1ed619234fc8352735cf89e21a376dff1df1ca3ef7dd197b1de522a254293a138f0b4fc7bd8ffb77f01574e0ac80b5b27130000000049454e44ae426082</data>
     </image>
     <image name="image8">
-        <data format="PNG" length="2154">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000831494441545885ed976b7055d515c77ffb9c73ef4d422037ef272902318258df58eb5015ebe048c5426d89753ad8569d0ed24a3b3af6f1c9aad099d241db719c6a69334e0b8c96411d6044c22b1204c3d388012501f2b890849bdcdcf73d8fbdfa2189e6d596efed9eb977ce3efbacbd7f67fdd75a7b1ff85f6fea4a1e5a0b8607b3046a810a05391af2aed4de04d782fa67a16bfc98f59f0cd7404d7155e52fafbee3f6a5a5d5d3f30b8b0b094ecbc5320c0804c0f3406494858c651281b6d3f0ee56fef469a80c9155570cb0161e5cf8c4e31be7d73d94c3a5105c0a41380ca1f3904e83eb82f6408f008c0651437d01f9f8280de742c44472275b675280b530e79b3f797cf32dcb966471e8001c6f86ee4e880e80eda00b8b509101543c0aa609ca00354e8de1ee99688af73c0313cff8cef2e5d953b3b3557d7d7d1ad0a31e1bdbeabf52fdf7152faf7b84134760ef4eb874119c0cbaa49cbe751b8857d7e02453e41eda4f70df76723fdc03b60da602c31c9a560d49703c9161437f9afcab6a8e3e7be264389348fa52a9644f7bfb676fae797eeddb1300d68275c7838b230beebd6b0afbde87d3a710c7265d5245ff4bf5c473f3490e26483b36828115f091a520d0dc48bc611bbd4d7b104f639806a24c8e256d0e261c6ea9a83cb070f3e6b3c54515f3db3b7ae666fbbc68341c7a6082041e5c5b5e5a32858b17c9f4f6e13a1ee9f2ab88adff2b095f0ed19e30b15802d7f5b04c13cb6791f65b58f3be46e0d63b29766dceecd949f3b6b739f56113290d6240e642c76777ddfef55fbcd7b0fb55d35f30b7baba38b1abe558df64315095edf7911e8c908cc7d13366935af73a51c92616ee271e8b9249bb682dd8a2300c03d367625969d2090bbfdfc7ec6f2c62dea207711231da766d97ee9d3b2e9c397c68cb1b9b37ffe69aeb6e5996b16da7adf5f8734f3eb9aa75028040d08fe0c663b8d533493fff479a3e2da3e900f4f64ea5bc2c46edeccb54960da094468bc6b35d5cc7c04e1ba42d13cb67924c24f0f9fcccb86fa9aa5dfaf08c7b94b7315858946b676cdddcd4f0e23f376efecba441f822d4ad7874f9a69cb252a23ff8297b8e96b06f8f475bbbc34044e3b9909565505c6470ddb5835c5313a6ac2482c8484930504a612803d3676059163e9f85cf676259169665a0459d716ce7e54824fafa040f681818cccec57b7435bb0e16d1b8dfa1addd251ad5683d9471998ca6b34bd3d93585bd8dd3282d53dc706d3f35b3fa29291a446b85a73dbc8c8163bb644c03d334b04c13ad85542a53ebbaf61a9fdfffc6040fb4bcb36d59d6ccda2d7b0f97b2bfd1a5bddd2116d3b8de4477c9f09fc85019c8c936a9ac80afce0b53332b4cfeb4045a40440d970985d642221173a74ecd3d92c9d8b79ba327eceb1db847e5976edab5bf20d0b84ff379b49b78d887760d501a350e4131b4b052431dc711c2fd42eb67d91c3b598cdfef525591fc42691121918c3bf905412ef5f4bcf2e863df3d688c4c76f08323051d1d035b36bd1598d6d0e0d152b69dbeb93bf15c48dcbb052c77e895450dff981cc600ad059f799e1bafbbfca5b7444824e25e516181eaeeee0e470623ff188a9861fbc31f1d5c64483a6ff68c0e4a8a3b897782b1a58efec7d7e06f998fce0fa383fda00467ce09c472c6ab87009e8682bc4e56afec272b4b401422422a11a3b0a880f3172e447a7a2f3ef4ecaf5785004c80254b1eb8ed91158faddbb9e3fd92ec80cbcdd72b1ebeb39c3935090247e6d3f1b945f4aeed649d584062f1467ca1ab30078ac76e7c8068c89fd6c1d33f8b10088068851621958c132c2aa4bdbdbdeb52dfa545bf7de1574746ecccbbefbebbe2953fbff652c6336f3bf549f38f76ecd8d6d8d1d951140e0f9615043db57061aeae5bea53b36333712445f791728c8b3351c3be1bd9833c4f282dbec0ea9583f8fd0ad10a4f043b9d202f98cfd1038dd8afad5ff3dcf6ad5b477bcd5a5e57b7209093bfa079ef4ea3ac6ac6efd6bfba221cc8caca49a79c543c999e52565965a4e3710a0b0ef1e34782accccee6c8b16e3e38e8e7f8892c2c2b1711282d39cfcf57c6304c85d6439adbe924b979415a766de358fdabdc984c558d97cdeaede93976acf9e0d9c5f72f9ae3f3054a3cad8b11d18699ccb86eaae3ccc94367ceb59fddd9b8bbc9575951f55045c5f49ba75755b1ea893c0c23c0e1e618275aa2dc7f4f3f869a82d6a0b5c6716db272a772eedd3731b6fe0dc776482b953ff60033ace2eaa79e0a1614163e90971f2c8d275376e852a8a3bb2b74facce9d3a1d69696e86883fb162fab09060beacacb2aeaaaabaae74eafa8223f380d9fcf241a8d13890ce20f04304c1f5d6f6da074cf3bb4d91ebbd39a1b3cfdce7a2ddf9e0030babd0037159497af344cc3122d1886fa42681141b4a0458308e1ec29f312d533af37e6dd6495ceaaa5b2bc929cdc6c7afb2e93deb199a9bbdf46a338656b1a329a859e6cfabdc8f7c748301ea0647ad5aa251b5effa1138b92eae96142c28fa61f097d11ce453a696d6ea5cb56d45eee64dae106d25a7004fa5c2126900fe726c4c0f81b9e6d1b7d2d278887ba196c3b8b889e6ce931600a8552c2d5990c157d7d242e8688c5122010f1840b9e90278225345d0900974fb7d2dbf231bd9fb40c27f8f0a0c1d0496eb47023636aa8e0880c0f2b852b429b071d5ab855b8ac147bc63b74e28144295cdbc14967c88c2f76de24ce98403274e588d025c2479e6089508b7af91991f47ff5809b4e71b6b191d6ae10dd9a2f2bcd48fa28f5e5f6377cf41e8fe101112024820d7c0b3eca817593614f004825336e53478893222484a1481bb3c864df0113214ca00ab8151a2a85e5cf30f1ed619234fc8352735cf89e21a376dff1df1ca3ef7dd197b1de522a254293a138f0b4fc7bd8ffb77f01574e0ac80b5b27130000000049454e44ae426082</data>
+        <data format="PNG" length="1818">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000006e1494441545885e5977b885c571dc73fe73e66677776937db9d94d62b325d618243628068a45ac8282b5a9566ada88560bd13455c12234b042432da4f6111052a40d922d6a2b25d4fa846a2c6a2d69d3a66ad3986eb6d9e76c667767363b8f3b33f7797efe7167f63513cdfffdc1cc997bcf9cfb7d9cdf39bf73e1bd1eea6afef438181e6c15d8a661a382360debaf66bc022c085330fc3d48afedb7fed7e047e1baaefe0d07b77dea935fda70ed60576f7f1f5d9debc030209904ad4164c5080d18ab1f72e11c9c789627cfa6fb11be73d5041e815b6fba67ff331ffbe6d7da484fc1cc34e4e66172145c1782007404ba4e602511b57cfdcfd7f8f3489a45a1bd194e53028fc1f6cfdcbbff573befb83dc95ffe046f9c82f4143805f07d88c2187895fa26a11423a52abf890c5ad1c6ee3bee6ced4eb6a8e1e16197d8aee673f8f4a68dbff8faf0b1af72ea6578f17730370ba263eb955a16d910d2d071d671792257a577cbd6330f8d8c2cb8416857ab95b9b1b10bcf0d1dfce10b0d0e3c0ed6d68f7ff48b8cbf0bff7a1d2e2f806de16961b6ea315d7529fa414cbfa9ea957c14a7cb11e743b82173a9fad7574f5deaebddb4ebe2d4fc4d1d49f9fcb7f7efbba581800f1f1ed838906266066f3e4b8481ab35af2d1439b76327dd7bf7e005418c23a045c5c26b1f11b564861245af56dc86d0d39afcc07c2e1fcd65e6da041b53a752a5a8727703010d9b53c9047e7e11a75a012d4c3a1526bfb09b81bbf6505ccc21918e734f0031100d44b17ad1b17289622222f1431742e9979974bf68416b8dbba1cd2c950b5b9a2561674241582e13563d946d53beef3e92d76fa752b88c89a04c0344810822208602335e95ca00b44214b57e15e78e0912814693ea6cc1b0847c3edfb80a0c88fc5211d329e10d0e72f19e7d4cb6255081474b8b0d62d794c96a1235e5d416876815e779fdb728b406cbd4b47727c8e6724461d474192e9666668976ede4fce76e22e797494611aa2581422d83af202152f35a14a2eb6dcd095926615b0a332914f20574a411a491400017b237eca2f8e5cf522ee449d9362a61a35008b28244fd2b26b20cc432295df35443e407282ba45028e007014114343a509472f7f4e2a59f667219b45b21956c59055a8ffa3d419636bcbaf2fabc8b8e5b258a52d1c13235856209df0f08831027eff8d54af5d812818214764d642e0e670bd9ed0a48da8926b3d33cea53529fff98570c5e2d9531d12c96f278ae87a10c4ac592effaee9d471e3cf2bc055015f71b13f98923e5a8dc95ea487195457229ea7b42dd1111d05aa8142a940b0e8562013ff0b12c0ba7e810f8c1d0e183879f0750430fddffc8faee753f58bc9c57ea8ab806572c3675e9b5fb4a408b90300cb65dbf9342314f1885d8b68de33838a5f2d143df7fe0bbf591a6b358186aefe91a54a689b24c4429825063266c8220429402cbc0f3038230228c34611411694d106a8248a345b012098230c20b43304db6f4be0f9db0f17d9f444b828a1750ba38f1dca1a187ef5e29cdea5cb7ceba6df72d74767562d0cadce8141b766cc69d2a52b64306360f30feea287d3bfa56d5ffb8ecc45b5f8b9d245b71c1f159df93449422ca39fc673e8d95b0f18290b137df62e0e8f1b9066f5548e82d56f017ca64cecf3273e8c7cc4d6559f7ecaff9fdb11314f321b3f7ff88b3af9fc3cb5670e71ddc79076fdec19d2f51cd96d1977d7eab5ee2f82f4fe0640a78d90a41c9c33015d52060eef49b5c38fa33fc30ec5a4bc0d241246eae423534b9f84e86b1a971daa6b394462618d35532e319ce4d8dd33799e19af65e248a903515b96c0b6f2fbc4b303a8fb750216af151be2668512c4c4cd37afce754228d67a88ee5034c8dc0a6ee3eba3bbab10c8bad1f7c3fc6d0030c74f531b1770f7b55446fc266f0d187d9764d3fc94412ad1b0bb15226dff26e863d21ed1d5d8832b05a0d16c646d8f2d4538c7b3e05c3c0d6526970e0ba9eeea7bb522d7f33ed04a9f656f4e9bfdfdaffa1cd3b7bba6d82928b9a9fe4c66e13e5e49092200df0712e6c6b37514ae14f8e509c9ea25cc8d3f3e20ba8ec22b36250047a60bc71ec9a78a2ad75f8d3871fbcab3435c1e2e805b80264b365197a1ee5b9594ae934be53c530a028267ff085bc08fb3437df8bfc7195030d965816d977ce73e9cc1bccfdfbadd55806f1febeead453a3a096ea110a03c330d102a3114c88f00921a7142fadd5d34040190651a4d14148a815ca5871ccae4f7ffd30d28448bd75439816e195483045f808ea270744dc06c16b6f449ecbe8c993bc3d9926bda2e22db575a9aa66cd1a45427c38ca13137081dbe174073cb616ab29814ad50b5f9e487346a00c28add780347b0f6824610183c08d70f25a61cf011ad54393247c52a9ed1e7cc5149451ef5d9b6f2bef2d5dcbf2915d0451aaaa85570cc53f0efcbff787f774fc175c65d7269fb32aa70000000049454e44ae426082</data>
     </image>
 </images>
 <connections>
     <connection>
         <sender>browserSelect</sender>
         <signal>activated(const QString&amp;)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>changed()</slot>
     </connection>
     <connection>
         <sender>d1Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>d1Slot()</slot>
     </connection>
     <connection>
         <sender>d2Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>d2Slot()</slot>
     </connection>
     <connection>
         <sender>i1Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>i1Slot()</slot>
     </connection>
     <connection>
         <sender>m1Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>m1Slot()</slot>
     </connection>
     <connection>
         <sender>m2Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>m2Slot()</slot>
     </connection>
     <connection>
         <sender>m3Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>m3Slot()</slot>
     </connection>
     <connection>
         <sender>m4Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>m4Slot()</slot>
     </connection>
     <connection>
         <sender>d3Button</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>d3Slot()</slot>
     </connection>
     <connection>
         <sender>nwlButton</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>nwlSlot()</slot>
     </connection>
     <connection>
         <sender>ncEnableButton</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>ncEnableSlot()</slot>
     </connection>
     <connection>
         <sender>ncDisableButton</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>ncDisableSlot()</slot>
     </connection>
     <connection>
         <sender>ncConfigButton</sender>
         <signal>clicked()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>ncConfigSlot()</slot>
     </connection>
     <connection>
         <sender>ncList</sender>
         <signal>selectionChanged()</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>ncInfoSlot()</slot>
     </connection>
     <connection>
         <sender>ncList</sender>
         <signal>doubleClicked(QListViewItem*)</signal>
-        <receiver>DisplayDialog</receiver>
+        <receiver>NetworkDialog</receiver>
         <slot>ncConfigSlot()</slot>
     </connection>
 </connections>
@@ -1235,8 +1235,7 @@
     <slot>ncDisableSlot()</slot>
     <slot>ncInfoSlot()</slot>
 </slots>
-<layoutdefaults spacing="3" margin="6"/>
-<layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>
+<layoutdefaults spacing="0" margin="0"/>
 <includehints>
     <includehint>kcmodule.h</includehint>
     <includehint>klistview.h</includehint>

@@ -23,6 +23,7 @@
 #include <qlineedit.h>
 #include <qcombobox.h>
 #include <qwidgetstack.h>
+#include <kmessagebox.h>
 
 #include "siduxcc_hardware.h"
 
@@ -41,6 +42,7 @@ siduxcc_hardware::siduxcc_hardware(QWidget *parent, const char *name, const QStr
 	{
 		// Root-Input-Widgets
 		installButton->setEnabled(true);
+		gfxButton->setEnabled(true);
 	}
 
 }
@@ -112,6 +114,8 @@ bool siduxcc_hardware::eventFilter( QObject *o, QEvent *e )
 
 void siduxcc_hardware::install()
 {
+	KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );
+
 	// add non-free sources to /etc/apt/sources.list
 	this->shell->setCommand("siduxcc hardware addSources");
 	this->shell->start(true);
@@ -133,6 +137,22 @@ void siduxcc_hardware::install()
 	// this->shell->start(true);
 }
 
+
+void siduxcc_hardware::gfx()
+{
+	KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );
+
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "hardware" );
+		run.append( "gfx" );
+	terminal()->startProgram( "siduxcc", run );
+
+	 connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+}
 
 void siduxcc_hardware::back()
 {

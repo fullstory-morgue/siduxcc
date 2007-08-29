@@ -2,7 +2,7 @@
 AM_CPPFLAGS = $(all_includes)
 
 # these are the headers for your project
-noinst_HEADERS = siduxcc_info.h
+noinst_HEADERS = siduxcc_kmain.h
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
@@ -10,15 +10,17 @@ METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-siduxcc_info_SOURCES = main.cpp siduxcc_info.cpp infodialog.ui
-siduxcc_info_LDFLAGS = $(KDE_RPATH) $(all_libraries)
-siduxcc_info_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
+siduxcc_kmain_SOURCES = main.cpp siduxcc_kmain.cpp kmaindialog.ui
+siduxcc_kmain_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+siduxcc_kmain_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
-xdg_apps_DATA = siduxcc_info.desktop
-bin_PROGRAMS = siduxcc_info
+xdg_apps_DATA = siduxcc.desktop
+bin_PROGRAMS = siduxcc-kmain
+
 
 # translation
 messages: rc.cpp
 	$(EXTRACTRC) `find . -name \*.ui -o -name \*.rc` > rc.cpp
-	$(XGETTEXT) *.cpp -o $(podir)/siduxccinfo.pot
+	$(XGETTEXT) *.cpp -o $(podir)/siduxcckmain.pot
+

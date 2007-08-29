@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 20:04+0200\n"
+"POT-Creation-Date: 2007-08-28 16:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,38 +15,65 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. i18n: file hardwaredialog.ui line 453
-#: siduxcc_hardware.cpp:65 rc.cpp:16 rc.cpp:35
+#. i18n: file hardwaredialog.ui line 463
+#: siduxcc_hardware.cpp:67 rc.cpp:16 rc.cpp:47
 #, no-c-format
 msgid "detected"
 msgstr ""
 
+#: siduxcc_hardware.cpp:117 siduxcc_hardware.cpp:143
+msgid ""
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
+msgstr ""
+
 #. i18n: file hardwaredialog.ui line 17
-#: rc.cpp:3 rc.cpp:22
+#: rc.cpp:3 rc.cpp:34
 #, no-c-format
 msgid "Hardware"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 70
-#: rc.cpp:6 rc.cpp:25
+#. i18n: file hardwaredialog.ui line 72
+#: rc.cpp:6 rc.cpp:37
 #, no-c-format
-msgid "N&on-Free Firmware"
+msgid "Non-Free Fir&mware"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 417
-#: rc.cpp:10 rc.cpp:29
+#. i18n: file hardwaredialog.ui line 152
+#: rc.cpp:10 rc.cpp:41
 #, no-c-format
 msgid "I&nstall"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 420
-#: rc.cpp:13 rc.cpp:32
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#: rc.cpp:13 rc.cpp:31 rc.cpp:44 rc.cpp:62
 #, no-c-format
 msgid "Alt+N"
 msgstr ""
 
-#. i18n: file hardwaredialog.ui line 458
-#: rc.cpp:19 rc.cpp:38
+#. i18n: file hardwaredialog.ui line 468
+#: rc.cpp:19 rc.cpp:50
 #, no-c-format
 msgid "all"
+msgstr ""
+
+#. i18n: file hardwaredialog.ui line 490
+#: rc.cpp:22 rc.cpp:53
+#, no-c-format
+msgid "Gr&aphiccard"
+msgstr ""
+
+#. i18n: file hardwaredialog.ui line 516
+#: rc.cpp:25 rc.cpp:56
+#, no-c-format
+msgid "ATI/Nvidia (Non-Free)"
+msgstr ""
+
+#. i18n: file hardwaredialog.ui line 537
+#: rc.cpp:28 rc.cpp:59
+#, no-c-format
+msgid "I&nstall driver"
 msgstr ""

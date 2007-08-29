@@ -8,6 +8,9 @@ Upstream Author: Fabian Wuertz
 Copyright:
 	(C) 2007 Fabian Wuertz
 
+
+   --- code ---
+
 	siduxcc is based on knxcc from:
 	(C) 2006 Andreas Loibl <andreas@andreas-loibl.de>
 	The following files are based on knxcc (Kanotix-Control-Center):
@@ -31,17 +34,21 @@ Copyright:
 	siduxcc_services/siduxcc_services.h
 	siduxcc_services/siduxcc_services.ui
 
+
 	The following file is based on fw-detect from:
 	(c) 2007 Kel Modderman <kel@otaku42.de>
 	siduxcc/modules/hardware.bm
+
 
 	The following file is based on install-meta from:
 	(c) 2007 Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/hardware.bm
 
+
 	The following files are based on kio_resources from Luke Sandell <lasandell@gmail.com>
 	network_kioslave/kio_network.cpp
 	network_kioslave/kio_network.h
+
 
 	The following file is based on configure-networkcard, formerly known as 
 	netcardconfig and netcardconfig-kanotix, from:
@@ -50,14 +57,19 @@ Copyright:
 	(C) 2005-2007 Niall Walsh <niallwalsh@users.berlios.de>
 	siduxcc/scripts/netcardconfig
 
+
+	--- icons ---
+
 	The following icons are from adept-common
 	(c) 2004  David Vignoni <dave@icon-king.com>
-	siduxcc/icons/hi22-app-siduxcc_ok.png (adept_notifier_ok.png)
-	siduxcc/icons/hi22-app-siduxcc_warning.png (adept_notifier_warning)
-	adept_sourceseditor.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-	adept_reinstall.png     (in siduxcc/siduxcc_display/displaydialog.ui)
-	adept_update.png        (in siduxcc/siduxcc_software/softwaredialog.ui)
-	adept_upgrade.png       (in siduxcc/siduxcc_software/softwaredialog.ui)
+	adept_sourceseditor.png     (in siduxcc/siduxcc_kernel/kerneldialog.ui)
+	adept_reinstall.png         (in siduxcc/siduxcc_display/displaydialog.ui)
+	adept_update.png            (in siduxcc/siduxcc_software/softwaredialog.ui)
+	adept_upgrade.png           (in siduxcc/siduxcc_software/softwaredialog.ui)
+	adept_notifier_warning.png  (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	                            (-> siduxcc/icons/hi22-app-siduxcc_warning.png)
+	adept_notifier_ok.png       (-> siduxcc/icons/hi22-app-siduxcc_ok.png)
+
 
 	The following icons are from knetworkconf
 	(c) Bernhard Rosenkraenzer <bero@redhat.de> and many others.
@@ -73,22 +85,55 @@ Copyright:
 	siduxcc/icons/hi48-app-siduxcc_lan_up.png
 	siduxcc/icons/hi32-app-siduxcc_lan_down.png
 	siduxcc/icons/hi48-app-siduxcc_lan_down.png
-	eraser.png     (in siduxcc/siduxcc_display/displaydialog.ui)
-	fonts.png      (in siduxcc/siduxcc_display/displaydialog.ui)
-	view_text.png  (in siduxcc/siduxcc_display/displaydialog.ui)
-	colors.png     (in siduxcc/siduxcc_display/displaydialog.ui)
-	randr.png      (in siduxcc/siduxcc_display/displaydialog.ui)
-	html.png       (in siduxcc/siduxcc_network/displaydialog.ui)
-	emptytrash.png (in siduxcc/siduxcc_kernel/displaydialog.ui)
-	penguin.png    (in siduxcc/siduxcc_kernel/displaydialog.ui)
+	eraser.png                  (in siduxcc/siduxcc_display/displaydialog.ui)
+	fonts.png                   (in siduxcc/siduxcc_display/displaydialog.ui)
+	view_text.png               (in siduxcc/siduxcc_display/displaydialog.ui)
+	colors.png                  (in siduxcc/siduxcc_display/displaydialog.ui)
+	randr.png                   (in siduxcc/siduxcc_display/displaydialog.ui)
+	html.png                    (in siduxcc/siduxcc_network/networkdialog.ui)
+	emptytrash.png              (in siduxcc/siduxcc_kernel/kerneldialog.ui)
+	penguin.png                 (in siduxcc/siduxcc_kernel/kerneldialog.ui)
+	                            (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	button_cancel.png           (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+
+
+	The following icons are from kdebase-data
+	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
+	kcontrol.png                (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	package_development.png     (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	hwinfo.png                  (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	kcmsystem.png               (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+
+
+	The following icons are from kdebase-data
+	(c) Rik Hemsley <rik@kde.org> and many others...
+	kontact_contacts.png        (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+
+
+	The following icons are from sidux-icons
+	(c) 2007 cathbard <cathbard@gmail.com>
+	sidux-net.png              (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	kmenu.png                  (-> siduxcc/images/hi*-app-siduxcc.png)
+	sidux-book2s.png           (-> siduxcc/images/hi*-app-sidux_book.png)
+
 
 	The following icon is from krdc
 	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
-	krdc.png (in siduxcc/siduxcc_display/displaydialog.ui)
+	krdc.png                    (in siduxcc/siduxcc_display/displaydialog.ui)
+	                            (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+
 
 	The following icon is from ksim
 	(c) 2002 Matthias Elter <elter@kde.org> and many others.
 	siduxcc/icons/hi32-app-siduxcc_hardware.png
+
+
+	--- artwork ---
+
+	The follwing artwork is from  sidux_inmotion
+	(c) 2007 rodneyc <rodneyck@pacbell.net> & cathbard <cathbard@gmail.com>
+	logo.png                    (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	stripes.png                 (in siduxcc/siduxcc_kmain/kmaindialog.ui)
 
 
 License:

@@ -30,7 +30,7 @@ typedef KGenericFactory<siduxcc_network, QWidget> ModuleFactory;
 K_EXPORT_COMPONENT_FACTORY( kcm_siduxcc_network, ModuleFactory("siduxccnetwork") )
 
 siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStringList &)
-:DisplayDialog(parent, name)
+:NetworkDialog(parent, name)
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);

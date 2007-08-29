@@ -3,7 +3,7 @@ METASOURCES = AUTO
 
 kde_module_LTLIBRARIES = kcm_siduxcc_network.la
 
-kcm_siduxcc_network_la_SOURCES = displaydialog.ui siduxcc_network.cpp
+kcm_siduxcc_network_la_SOURCES = networkdialog.ui siduxcc_network.cpp
 kcm_siduxcc_network_la_LDFLAGS  = $(all_libraries) -module -avoid-version -no-undefined
 kcm_siduxcc_network_la_LIBADD = $(LIB_KIO) ../libsiduxcc/libsiduxcc.la
 

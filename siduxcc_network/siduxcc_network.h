@@ -20,10 +20,10 @@
 #ifndef SIDUXCC_NETWORK_H_
 #define SIDUXCC_NETWORK_H_
 
-#include "displaydialog.h"
+#include "networkdialog.h"
 #include "../libsiduxcc/process.h"
 
-class siduxcc_network : public DisplayDialog
+class siduxcc_network : public NetworkDialog
 {
 	Q_OBJECT
 

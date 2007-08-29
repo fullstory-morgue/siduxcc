@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Icon=package_system
 Type=Application
-Exec=kcmshell siduxcc_services
+Exec=su-me kcmshell siduxcc_services
 
 X-KDE-RootOnly=true
 X-KDE-Library=siduxcc_services

@@ -1,7 +1,7 @@
 /*
  * main.cpp
  *
- * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
+ * Copyright (c) 2007 Fabian Wuertz
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -35,7 +35,7 @@ static KCmdLineOptions options[] =
 int main(int argc, char *argv[])
 {
 	// specify data for About dialog
-	KAboutData* about = new KAboutData("siduxcchermes", "siduxcc-hermes (sidux dist-upgrade alerter)", "0.5");
+	KAboutData* about = new KAboutData("siduxcchermes", "siduxcc-hermes (sidux dist-upgrade alerter)", "");
 	about->setShortDescription(I18N_NOOP("A KDE tray application for sidux"));
 	about->setLicense(KAboutData::License_GPL_V2);
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");

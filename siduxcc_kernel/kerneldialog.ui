@@ -43,12 +43,6 @@
                     <property name="name">
                         <cstring>unnamed</cstring>
                     </property>
-                    <property name="margin">
-                        <number>0</number>
-                    </property>
-                    <property name="spacing">
-                        <number>0</number>
-                    </property>
                     <widget class="QTabWidget" row="0" column="0">
                         <property name="name">
                             <cstring>tabWidget</cstring>
@@ -340,12 +334,6 @@
                             <property name="name">
                                 <cstring>unnamed</cstring>
                             </property>
-                            <property name="margin">
-                                <number>2</number>
-                            </property>
-                            <property name="spacing">
-                                <number>0</number>
-                            </property>
                             <widget class="QFrame" row="0" column="0">
                                 <property name="name">
                                     <cstring>konsoleFrame</cstring>
@@ -416,8 +404,7 @@
     <slot>install()</slot>
     <slot>getNewKernels()</slot>
 </slots>
-<layoutdefaults spacing="3" margin="6"/>
-<layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>
+<layoutdefaults spacing="1" margin="0"/>
 <includehints>
     <includehint>kcmodule.h</includehint>
 </includehints>
