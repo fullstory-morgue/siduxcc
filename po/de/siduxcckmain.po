@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcckmain\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-28 22:11+0200\n"
-"PO-Revision-Date: 2007-08-28 22:13+0200\n"
+"PO-Revision-Date: 2007-08-29 14:03+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr "Metapakete"
 #: kmaindialog.cpp:4684 rc.cpp:33 siduxcc_kmain.cpp:123
 #, no-c-format
 msgid "Manual"
-msgstr "Manual"
+msgstr "Handbuch"
 
 #. i18n: file ./kmaindialog.ui line 416
 #: kmaindialog.cpp:4686 rc.cpp:39
@@ -120,3 +120,4 @@ msgstr "Entwickler von knxcc"
 #: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "de"
+

@@ -19,7 +19,6 @@
 
 #include "systray.h"
 #include "legend.h"
-#include "upgradable.h"
 
 #include <kaboutapplication.h>
 #include <kiconloader.h>
@@ -44,8 +43,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu = contextMenu();
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
 	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
-	menu->insertItem ( SmallIcon ( "package" ), i18n("Show upgradable packages"), this, SLOT ( upgradablePackages() ) );
-	menu->insertItem ( SmallIcon ("exec"), i18n("Update (apt-get update)"), this, SLOT (update()) );
+	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
@@ -65,12 +63,6 @@ void SysTray::manual()
 	this->shell->start ( true );
 }
 
-void SysTray::update()
-{
-	this->shell->setCommand ( "su-me konsole -T \"Download newest Kernel\" --nomenubar --notabbar -e apt-get update&" );
-	this->shell->start ( true );
-}
-
 void SysTray::showAbout()
 {
 	KAboutApplication* about = new KAboutApplication ( this );
@@ -79,8 +71,8 @@ void SysTray::showAbout()
 
 void SysTray::upgradablePackages()
 {
-	upgradable* dialog = new upgradable();
-	dialog->show();
+	this->shell->setCommand ( "su-me \"kcmshell siduxcc_software\"" );
+	this->shell->start ( true );
 }
 
 void SysTray::showLegend()

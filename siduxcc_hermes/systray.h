@@ -39,7 +39,6 @@ class SysTray : public KSystemTray
 	public slots:
 		void forum();
 		void manual();
-		void update();
 		void showAbout();
 		void updateIcon();
 		void upgradablePackages();
