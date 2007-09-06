@@ -1,8 +1,13 @@
 siduxcc (0.5.8) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 31 Aug 2007 13:31:20 +0200
+  [ Fabian Wuertz ]
+  * NOT RELEASED YET
+  * siduxcc_software: install apt-show-versions bug fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 06 Sep 2007 18:41:54 +0200
 
 siduxcc (0.5.7) unstable; urgency=low
 

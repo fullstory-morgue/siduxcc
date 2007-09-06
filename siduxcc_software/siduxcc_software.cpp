@@ -52,12 +52,12 @@ siduxcc_software::siduxcc_software(QWidget *parent, const char *name, const QStr
 
 void siduxcc_software::load()
 {
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
+
 	checkASV();
 	showPackages();
 	warning();
-
-	loadKonsole();
-	konsoleFrame->installEventFilter( this );
 }
 
 
@@ -115,7 +115,6 @@ void siduxcc_software::checkASV()
 				terminal()->startProgram( "siduxcc", run );
 			
 				connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
-
 			}
 		}
 		else
@@ -131,25 +130,24 @@ void siduxcc_software::warning()
 	// check for Dist-Upgrade warnings
 	this->shell->setCommand("siduxcc software duWarnings");
 	this->shell->start(true);
-	if(this->shell->getBuffer().stripWhiteSpace() == "")
+	QString status = this->shell->getBuffer().stripWhiteSpace();
+
+	if( status == "" )
 	{
 		warningLabel->setText(i18n("There are no warnings"));
 		warningLed->setColor(QColor(0x00ff00));
 	}
-	else 
+	else if ( status == "disconnected")
  	{
-		if(this->shell->getBuffer().stripWhiteSpace() == "disconnected")
-		{
-			warningLabel->setText(i18n("No internet connection!"));
-			warningLed->setColor(QColor(0xffa858));
-			updateButton->setEnabled(false);
-			downloadButton->setEnabled(false);
-		}
-		else
-		{
-			warningLabel->setText(i18n("Don't make a dist-Upgrade!"));
-			warningLed->setColor(QColor(0xff0000));
-		}
+		warningLabel->setText(i18n("No internet connection!"));
+		warningLed->setColor(QColor(0xffa858));
+		updateButton->setEnabled(false);
+		downloadButton->setEnabled(false);
+	}
+	else
+	{
+		warningLabel->setText(i18n("Don't make a dist-Upgrade!"));
+		warningLed->setColor(QColor(0xff0000));
 	}
 }
 
