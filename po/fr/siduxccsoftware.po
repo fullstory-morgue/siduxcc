@@ -1,96 +1,100 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of siduxccsoftware.po to
+# translation of siduxcc-software.po to
 # This file is put in the public domain.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-22 20:04+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-08-22 21:08+0200\n"
+"Last-Translator: LjanA\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: siduxcc_software.cpp:106 siduxcc_software.cpp:123
 msgid "Apt-show-versions is missing!"
-msgstr ""
+msgstr "Apt-show-versions est manquant!"
 
 #: siduxcc_software.cpp:106
 msgid "Do you want to install it?"
-msgstr ""
+msgstr "Voulez-vous l'installer ?"
 
 #: siduxcc_software.cpp:123
-msgid "Switch to Administration to install it!"
-msgstr ""
+msgid "Switch to the Administration to install it!"
+msgstr "Passez en mode d'administration pour l'installer!"
 
 #. i18n: file softwaredialog.ui line 143
 #: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
 #, no-c-format
 msgid "There are no warnings"
-msgstr ""
+msgstr "Pas d'alerte signalée"
 
 #: siduxcc_software.cpp:143
 msgid "No internet connection!"
-msgstr ""
+msgstr "Pas de connexion internet!"
 
 #: siduxcc_software.cpp:150
-msgid "Don't make a dist-upgrade!"
-msgstr ""
+msgid "Don't make a dist-Upgrade!"
+msgstr "Ne procédez pas à un dist-Upgrade!"
 
 #: siduxcc_software.cpp:183
 msgid ""
-"To run a dist-upgrade you have to init the runlevel 3. Press CTR+ALT"
-"+F1 to do so, login as root and type init 3. After that run the command siduxcc and "
+"To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT "
+"+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
+"Pour effectuer un dist-upgrade vous devez basculer vers le niveau 3 d'exécution. "
+"Appuyez sur CTR+ALT+F1, devenez root et entrez init 3. lancez ensuite siduxcc et "
+"choisissez l'option Logiciels->Dist-Upgrade"
 
 #: siduxcc_software.cpp:220
 msgid "Are you sure you want to clear your local repository?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir nettoyer votre dépot local ?"
 
 #: siduxcc_software.cpp:224
 msgid "The local repository was cleaned."
-msgstr ""
+msgstr "Le dépot local a été nettoyé"
 
 #. i18n: file softwaredialog.ui line 17
 #: rc.cpp:3 rc.cpp:57
 #, no-c-format
 msgid "Software"
-msgstr ""
+msgstr "Logiciels"
 
 #. i18n: file softwaredialog.ui line 64
 #: rc.cpp:6 rc.cpp:60
 #, no-c-format
 msgid "Upgrada&ble Packages"
-msgstr ""
+msgstr "Paquetages actualisables"
 
 #. i18n: file softwaredialog.ui line 86
 #: rc.cpp:9 rc.cpp:63
 #, no-c-format
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. i18n: file softwaredialog.ui line 97
 #: rc.cpp:12 rc.cpp:66
 #, no-c-format
 msgid "Installed Version"
-msgstr ""
+msgstr "Version installée"
 
 #. i18n: file softwaredialog.ui line 108
 #: rc.cpp:15 rc.cpp:69
 #, no-c-format
 msgid "Latest Version"
-msgstr ""
+msgstr "Dernière version"
 
 #. i18n: file softwaredialog.ui line 205
 #: rc.cpp:21 rc.cpp:75
 #, no-c-format
 msgid "Clea&n"
-msgstr ""
+msgstr "Nettoyer"
 
 #. i18n: file softwaredialog.ui line 208
 #. i18n: file softwaredialog.ui line 412
@@ -99,52 +103,53 @@ msgstr ""
 #: rc.cpp:24 rc.cpp:54 rc.cpp:78 rc.cpp:108
 #, no-c-format
 msgid "Alt+N"
-msgstr ""
+msgstr "Alt+N"
 
 #. i18n: file softwaredialog.ui line 250
 #: rc.cpp:27 rc.cpp:81
 #, no-c-format
 msgid "D&ownload"
-msgstr ""
+msgstr "Télécharger"
 
 #. i18n: file softwaredialog.ui line 253
 #: rc.cpp:30 rc.cpp:84
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file softwaredialog.ui line 294
 #: rc.cpp:36 rc.cpp:90
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file softwaredialog.ui line 336
 #: rc.cpp:39 rc.cpp:93
 #, no-c-format
 msgid "Upgr&ade"
-msgstr ""
+msgstr "Mettre-à-jour"
 
 #. i18n: file softwaredialog.ui line 339
 #: rc.cpp:42 rc.cpp:96
 #, no-c-format
 msgid "Alt+A"
-msgstr ""
+msgstr "Alt+A"
 
 #. i18n: file softwaredialog.ui line 349
 #: rc.cpp:45 rc.cpp:99
 #, no-c-format
 msgid "&Metapackages"
-msgstr ""
+msgstr "Métapaquets"
 
 #. i18n: file softwaredialog.ui line 375
 #: rc.cpp:48 rc.cpp:102
 #, no-c-format
 msgid "Metapackages"
-msgstr ""
+msgstr "Métapaquets"
 
 #. i18n: file softwaredialog.ui line 409
 #: rc.cpp:51 rc.cpp:105
 #, no-c-format
 msgid "I&nstall Metapackes"
-msgstr ""
+msgstr "Installer des Métapaquets"
+
