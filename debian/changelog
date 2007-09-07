@@ -1,22 +1,12 @@
-siduxcc (0.5.8) UNRELEASED; urgency=low
+siduxcc (0.5.8) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-<<<<<<< .mine
   [ Ferdinand Thommes ]
   * added po files for nl and fr
-=======
+
   [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * siduxcc_software: install apt-show-versions bug fixed
->>>>>>> .r10414
 
-<<<<<<< .mine
  -- Ferdinand Thommes <devil@sidux.com>  Fri, 07 Sep 2007 23:59:10 +0200
-
-=======
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 06 Sep 2007 18:41:54 +0200
 
 siduxcc (0.5.7) unstable; urgency=low
 
@@ -24,7 +14,6 @@ siduxcc (0.5.7) unstable; urgency=low
 
  -- Fabian Wuertz <xadras@sidux.com>  Fri, 31 Aug 2007 10:32:37 +0200
 
->>>>>>> .r10414
 siduxcc (0.5.6.12) unstable; urgency=low
 
   * siduxcc_hardware: ati/nvidia install added
