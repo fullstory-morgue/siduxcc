@@ -1,12 +1,24 @@
-siduxcc (0.5.6.13) UNRELEASED; urgency=low
+siduxcc (0.5.8.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Ferdinand Thommes ]
-  * added Makefile.am to po/nl and po/fr editet Makefile.am for en
+  * actually use previously added translations.
 
  -- Ferdinand Thommes <devil@sidux.com>  Mon, 10 Sep 2007 17:24:25 +0200
+
+siduxcc (0.5.8) unstable; urgency=low
+
+  [ Ferdinand Thommes ]
+  * added po files for nl and fr
+
+  [ Fabian Wuertz ]
+  * siduxcc_software: install apt-show-versions bug fixed
+
+ -- Ferdinand Thommes <devil@sidux.com>  Fri, 07 Sep 2007 23:59:10 +0200
+
+siduxcc (0.5.7) unstable; urgency=low
+
+  * siduxcc_hermes: menu-entry for siduxcc_software
+
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 31 Aug 2007 10:32:37 +0200
 
 siduxcc (0.5.6.12) unstable; urgency=low
 
