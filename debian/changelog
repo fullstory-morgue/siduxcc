@@ -1,3 +1,9 @@
+siduxcc (0.5.8.2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 11 Sep 2007 00:39:59 +0200
+
 siduxcc (0.5.8.1) unstable; urgency=low
 
   * actually use previously added translations.
