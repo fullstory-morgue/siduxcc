@@ -1,0 +1,299 @@
+# translation of siduxccdisplay_hr.po to
+# translation of siduxccdisplay.po to
+# translation of siduxcc-display.po to
+# This file is put in the public domain.
+#
+# cobra <cobra@sidux.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxccdisplay_hr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"PO-Revision-Date: 2007-09-10 04:42+0200\n"
+"Last-Translator: cobra <cobra@sidux.com>\n"
+"Language-Team:  <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file displaydialog.ui line 155
+#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:39 rc.cpp:181
+#, no-c-format
+msgid "custom"
+msgstr "Definirano od Korisnika"
+
+#: siduxcc_display.cpp:199
+msgid "Modelines removed"
+msgstr "Modelines izbrisane"
+
+#: siduxcc_display.cpp:250
+msgid "Process is running!"
+msgstr "Proces radi!"
+
+#: siduxcc_display.cpp:271 siduxcc_display.cpp:272
+msgid "Process finished"
+msgstr "Proces sređen"
+
+#. i18n: file displaydialog.ui line 17
+#: rc.cpp:3 rc.cpp:145
+#, no-c-format
+msgid "Display"
+msgstr "Display"
+
+#. i18n: file displaydialog.ui line 35
+#: rc.cpp:6 rc.cpp:148
+#, no-c-format
+msgid "&X-Server"
+msgstr "&X-Poslužitelj"
+
+#. i18n: file displaydialog.ui line 50
+#. i18n: file displaydialog.ui line 514
+#. i18n: file displaydialog.ui line 50
+#. i18n: file displaydialog.ui line 514
+#: rc.cpp:9 rc.cpp:89 rc.cpp:151 rc.cpp:231
+#, no-c-format
+msgid "WARNING!"
+msgstr "POZOR!"
+
+#. i18n: file displaydialog.ui line 65
+#. i18n: file displaydialog.ui line 529
+#. i18n: file displaydialog.ui line 65
+#. i18n: file displaydialog.ui line 529
+#: rc.cpp:12 rc.cpp:92 rc.cpp:154 rc.cpp:234
+#, no-c-format
+msgid ""
+"With wrong options the x-server doesn't work! To restore an old "
+"configuration press CTR + ALT + F1, run as root the command siduxcc and "
+"choose the option Display -> restoreX."
+msgstr "Sa pogrešnim podacima, X-Poslužitelj neće više startati ! Da se vratite na staru konfiguraciju pritisnite CTRL + ALT + F1, prijavite se kao root korisnik, izvodite siduxcc i odaberite opciju Display -> restoreX!"
+
+#. i18n: file displaydialog.ui line 96
+#: rc.cpp:15 rc.cpp:157
+#, no-c-format
+msgid "Resolution"
+msgstr "Rezolucija"
+
+#. i18n: file displaydialog.ui line 120
+#: rc.cpp:18 rc.cpp:160
+#, no-c-format
+msgid "640x480"
+msgstr "640x480"
+
+#. i18n: file displaydialog.ui line 125
+#: rc.cpp:21 rc.cpp:163
+#, no-c-format
+msgid "800x600"
+msgstr "800x600"
+
+#. i18n: file displaydialog.ui line 130
+#: rc.cpp:24 rc.cpp:166
+#, no-c-format
+msgid "1024x768"
+msgstr "1024x768"
+
+#. i18n: file displaydialog.ui line 135
+#: rc.cpp:27 rc.cpp:169
+#, no-c-format
+msgid "1152x864"
+msgstr "1152x864"
+
+#. i18n: file displaydialog.ui line 140
+#: rc.cpp:30 rc.cpp:172
+#, no-c-format
+msgid "1280x1024"
+msgstr "1280x1024"
+
+#. i18n: file displaydialog.ui line 145
+#: rc.cpp:33 rc.cpp:175
+#, no-c-format
+msgid "1400x1050"
+msgstr "1400x1050"
+
+#. i18n: file displaydialog.ui line 150
+#: rc.cpp:36 rc.cpp:178
+#, no-c-format
+msgid "1600x1200"
+msgstr "1600x1200"
+
+#. i18n: file displaydialog.ui line 217
+#: rc.cpp:42 rc.cpp:184
+#, no-c-format
+msgid "Modelines"
+msgstr "Modelinije"
+
+#. i18n: file displaydialog.ui line 257
+#: rc.cpp:45 rc.cpp:187
+#, no-c-format
+msgid "Remove &Modelines"
+msgstr "Izbriši &Modelinije"
+
+#. i18n: file displaydialog.ui line 260
+#: rc.cpp:48 rc.cpp:190
+#, no-c-format
+msgid "Alt+M"
+msgstr "Alt+M"
+
+#. i18n: file displaydialog.ui line 288
+#. i18n: file displaydialog.ui line 764
+#. i18n: file displaydialog.ui line 288
+#. i18n: file displaydialog.ui line 764
+#: rc.cpp:51 rc.cpp:119 rc.cpp:193 rc.cpp:261
+#, no-c-format
+msgid "Restart (Ctrl-Alt-Backspace)"
+msgstr "Restart (Ctrl-Alt-Backspace)"
+
+#. i18n: file displaydialog.ui line 325
+#. i18n: file displaydialog.ui line 801
+#. i18n: file displaydialog.ui line 325
+#. i18n: file displaydialog.ui line 801
+#: rc.cpp:54 rc.cpp:122 rc.cpp:196 rc.cpp:264
+#, no-c-format
+msgid "Rest&art X-Server"
+msgstr "Rest&art X-Poslužitelja"
+
+#. i18n: file displaydialog.ui line 328
+#. i18n: file displaydialog.ui line 804
+#. i18n: file displaydialog.ui line 328
+#. i18n: file displaydialog.ui line 804
+#: rc.cpp:57 rc.cpp:125 rc.cpp:199 rc.cpp:267
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file displaydialog.ui line 356
+#: rc.cpp:60 rc.cpp:202
+#, no-c-format
+msgid "Scanning Frequenz"
+msgstr "Frekvencija Monitora"
+
+#. i18n: file displaydialog.ui line 380
+#: rc.cpp:63 rc.cpp:205
+#, no-c-format
+msgid "Type"
+msgstr "Tip"
+
+#. i18n: file displaydialog.ui line 385
+#: rc.cpp:66 rc.cpp:208
+#, no-c-format
+msgid "TFT"
+msgstr "TFT"
+
+#. i18n: file displaydialog.ui line 390
+#: rc.cpp:69 rc.cpp:211
+#, no-c-format
+msgid "CRT"
+msgstr "CRT"
+
+#. i18n: file displaydialog.ui line 429
+#: rc.cpp:72 rc.cpp:214
+#, no-c-format
+msgid "HorizSync:"
+msgstr "HorizSync:"
+
+#. i18n: file displaydialog.ui line 445
+#: rc.cpp:75 rc.cpp:217
+#, no-c-format
+msgid "VertRefresh:"
+msgstr "VertRefresh:"
+
+#. i18n: file displaydialog.ui line 467
+#: rc.cpp:79 rc.cpp:221
+#, no-c-format
+msgid "Horizontal Frequenz"
+msgstr "Horizontalna Frekvencija"
+
+#. i18n: file displaydialog.ui line 489
+#: rc.cpp:83 rc.cpp:225
+#, no-c-format
+msgid "Vertical Frequenz"
+msgstr "Vertikalna Frekvencija"
+
+#. i18n: file displaydialog.ui line 499
+#: rc.cpp:86 rc.cpp:228
+#, no-c-format
+msgid "X-&Server"
+msgstr "X-Poslužitelj"
+
+#. i18n: file displaydialog.ui line 549
+#: rc.cpp:95 rc.cpp:237
+#, no-c-format
+msgid "Color-Depth"
+msgstr "Dubina boja"
+
+#. i18n: file displaydialog.ui line 573
+#: rc.cpp:98 rc.cpp:240
+#, no-c-format
+msgid "8 bit"
+msgstr "8 bit"
+
+#. i18n: file displaydialog.ui line 578
+#: rc.cpp:101 rc.cpp:243
+#, no-c-format
+msgid "15 bit"
+msgstr "15 bit"
+
+#. i18n: file displaydialog.ui line 583
+#: rc.cpp:104 rc.cpp:246
+#, no-c-format
+msgid "16 bit"
+msgstr "16 bit"
+
+#. i18n: file displaydialog.ui line 588
+#: rc.cpp:107 rc.cpp:249
+#, no-c-format
+msgid "24 bit"
+msgstr "24 bit"
+
+#. i18n: file displaydialog.ui line 622
+#: rc.cpp:110 rc.cpp:252
+#, no-c-format
+msgid ""
+"<b>Note:</b> If you are using the ATI-Driver (fglrx) you can not change the "
+"Color-Depth (it has to be 24 bit then)"
+msgstr ""
+"<b>Bilješka:</b> Ako koristite ATI-Pogonitelj (fglrx) nesmijete promjentiti Dubinu boja "
+"(mora biti postavljena na 24 Bit)"
+
+#. i18n: file displaydialog.ui line 650
+#: rc.cpp:113 rc.cpp:255
+#, no-c-format
+msgid "DPI-Settings"
+msgstr "DPI-Postavke"
+
+#. i18n: file displaydialog.ui line 687
+#: rc.cpp:116 rc.cpp:258
+#, no-c-format
+msgid " dpi"
+msgstr " dpi"
+
+#. i18n: file displaydialog.ui line 814
+#: rc.cpp:128 rc.cpp:270
+#, no-c-format
+msgid "Fo&nts"
+msgstr "Tip &slova"
+
+#. i18n: file displaydialog.ui line 840
+#: rc.cpp:131 rc.cpp:273
+#, no-c-format
+msgid "Fonts (fix-fonts)"
+msgstr "Tip-Slova (fix-fonts)"
+
+#. i18n: file displaydialog.ui line 877
+#: rc.cpp:134 rc.cpp:276
+#, no-c-format
+msgid "Register F&onts"
+msgstr "Registriraj &Tip Slova"
+
+#. i18n: file displaydialog.ui line 880
+#: rc.cpp:137 rc.cpp:279
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file displaydialog.ui line 896
+#: rc.cpp:140 rc.cpp:282
+#, no-c-format
+msgid "This process takes a while. <b>Don't close the window</b> during the process!"
+msgstr "Procesu treba malo vremena. Tijekom izvođenja ne smijete <b>ugasiti</b> KControl!"
+

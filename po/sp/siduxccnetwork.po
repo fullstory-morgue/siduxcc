@@ -1,0 +1,290 @@
+# translation of siduxccnetwork.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxccnetwork\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"PO-Revision-Date: 2007-08-28 15:17+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file networkdialog.ui line 17
+#. i18n: file networkdialog.ui line 434
+#. i18n: file networkdialog.ui line 17
+#. i18n: file networkdialog.ui line 434
+#: rc.cpp:3 rc.cpp:73 rc.cpp:163 rc.cpp:233
+#, no-c-format
+msgid "Network"
+msgstr "Red"
+
+#. i18n: file networkdialog.ui line 35
+#: rc.cpp:6 rc.cpp:166
+#, no-c-format
+msgid "&Netcardconfig"
+msgstr "Netcardconfig"
+
+#. i18n: file networkdialog.ui line 40
+#: rc.cpp:9 rc.cpp:169
+#, no-c-format
+msgid "Interface"
+msgstr "Interface"
+
+#. i18n: file networkdialog.ui line 51
+#: rc.cpp:12 rc.cpp:172
+#, no-c-format
+msgid "Ip Address    "
+msgstr "lp Address"
+
+#. i18n: file networkdialog.ui line 62
+#: rc.cpp:15 rc.cpp:175
+#, no-c-format
+msgid "Method"
+msgstr "Metodo"
+
+#. i18n: file networkdialog.ui line 73
+#: rc.cpp:18 rc.cpp:178
+#, no-c-format
+msgid "Boot"
+msgstr "Boot"
+
+#. i18n: file networkdialog.ui line 84
+#: rc.cpp:21 rc.cpp:181
+#, no-c-format
+msgid "Driver"
+msgstr "Controlador (driver)"
+
+#. i18n: file networkdialog.ui line 95
+#: rc.cpp:24 rc.cpp:184
+#, no-c-format
+msgid "Slot"
+msgstr "Ranura"
+
+#. i18n: file networkdialog.ui line 139
+#: rc.cpp:27 rc.cpp:187
+#, no-c-format
+msgid "List of configured network devices"
+msgstr "Lista de componentes de red configurados"
+
+#. i18n: file networkdialog.ui line 169
+#. i18n: file networkdialog.ui line 677
+#. i18n: file networkdialog.ui line 1019
+#. i18n: file networkdialog.ui line 169
+#. i18n: file networkdialog.ui line 677
+#. i18n: file networkdialog.ui line 1019
+#: rc.cpp:33 rc.cpp:107 rc.cpp:153 rc.cpp:193 rc.cpp:267 rc.cpp:313
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file networkdialog.ui line 172
+#: rc.cpp:36 rc.cpp:196
+#, no-c-format
+msgid "Change the settings of the selected device"
+msgstr "Cambie la configuración de los componentes seleccionados"
+
+#. i18n: file networkdialog.ui line 199
+#: rc.cpp:39 rc.cpp:199
+#, no-c-format
+msgid "En&able"
+msgstr "Usar"
+
+#. i18n: file networkdialog.ui line 202
+#: rc.cpp:42 rc.cpp:202
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file networkdialog.ui line 229
+#: rc.cpp:45 rc.cpp:205
+#, no-c-format
+msgid "Disa&ble"
+msgstr "No usar"
+
+#. i18n: file networkdialog.ui line 232
+#: rc.cpp:48 rc.cpp:208
+#, no-c-format
+msgid "Alt+B"
+msgstr "Alt+B"
+
+#. i18n: file networkdialog.ui line 277
+#: rc.cpp:52 rc.cpp:212
+#, no-c-format
+msgid "<b>Mac Address:</b>"
+msgstr "<b>Mac Address:</b>"
+
+#. i18n: file networkdialog.ui line 293
+#: rc.cpp:55 rc.cpp:215
+#, no-c-format
+msgid "<b>Description:</b>"
+msgstr "<b>Descripcion</b>"
+
+#. i18n: file networkdialog.ui line 309
+#. i18n: file networkdialog.ui line 325
+#. i18n: file networkdialog.ui line 309
+#. i18n: file networkdialog.ui line 325
+#: rc.cpp:58 rc.cpp:61 rc.cpp:218 rc.cpp:221
+#, no-c-format
+msgid "xxx"
+msgstr "xxx"
+
+#. i18n: file networkdialog.ui line 338
+#: rc.cpp:64 rc.cpp:224
+#, no-c-format
+msgid "Br&owser"
+msgstr "Navegador (browser)"
+
+#. i18n: file networkdialog.ui line 364
+#: rc.cpp:67 rc.cpp:227
+#, no-c-format
+msgid "sidux-Browser (requires root access)"
+msgstr "navegador sidux (requiere acceso de root)"
+
+#. i18n: file networkdialog.ui line 408
+#: rc.cpp:70 rc.cpp:230
+#, no-c-format
+msgid "Ndiswr&apper"
+msgstr "Ndiswrapper"
+
+#. i18n: file networkdialog.ui line 468
+#: rc.cpp:76 rc.cpp:236
+#, no-c-format
+msgid "Ndiswrapper"
+msgstr "Ndiswrapper"
+
+#. i18n: file networkdialog.ui line 499
+#: rc.cpp:80 rc.cpp:240
+#, no-c-format
+msgid "Cards known to work"
+msgstr "Tarjetas conocidas que trabajan"
+
+#. i18n: file networkdialog.ui line 536
+#: rc.cpp:83 rc.cpp:243
+#, no-c-format
+msgid "Show lis&t"
+msgstr "Mostar Lista"
+
+#. i18n: file networkdialog.ui line 539
+#: rc.cpp:86 rc.cpp:246
+#, no-c-format
+msgid "Alt+T"
+msgstr "Alt+T"
+
+#. i18n: file networkdialog.ui line 549
+#: rc.cpp:89 rc.cpp:249
+#, no-c-format
+msgid "&Modem"
+msgstr "Modem"
+
+#. i18n: file networkdialog.ui line 575
+#. i18n: file networkdialog.ui line 640
+#. i18n: file networkdialog.ui line 705
+#. i18n: file networkdialog.ui line 770
+#. i18n: file networkdialog.ui line 575
+#. i18n: file networkdialog.ui line 640
+#. i18n: file networkdialog.ui line 705
+#. i18n: file networkdialog.ui line 770
+#: rc.cpp:92 rc.cpp:101 rc.cpp:110 rc.cpp:119 rc.cpp:252 rc.cpp:261 rc.cpp:270
+#: rc.cpp:279
+#, no-c-format
+msgid "Modem"
+msgstr "Modem"
+
+#. i18n: file networkdialog.ui line 609
+#: rc.cpp:95 rc.cpp:255
+#, no-c-format
+msgid "/de&v/modem"
+msgstr "/dev/modem"
+
+#. i18n: file networkdialog.ui line 612
+#: rc.cpp:98 rc.cpp:258
+#, no-c-format
+msgid "Alt+V"
+msgstr "Alt+V"
+
+#. i18n: file networkdialog.ui line 674
+#: rc.cpp:104 rc.cpp:264
+#, no-c-format
+msgid "GPRS &connection"
+msgstr "GPRS coneccion"
+
+#. i18n: file networkdialog.ui line 739
+#: rc.cpp:113 rc.cpp:273
+#, no-c-format
+msgid "M&y PPP Conf"
+msgstr "MyPPP configuracion"
+
+#. i18n: file networkdialog.ui line 742
+#. i18n: file networkdialog.ui line 954
+#. i18n: file networkdialog.ui line 742
+#. i18n: file networkdialog.ui line 954
+#: rc.cpp:116 rc.cpp:144 rc.cpp:276 rc.cpp:304
+#, no-c-format
+msgid "Alt+Y"
+msgstr "Alt+Y"
+
+#. i18n: file networkdialog.ui line 807
+#: rc.cpp:122 rc.cpp:282
+#, no-c-format
+msgid "Modem Dialer"
+msgstr "Dialer para modem"
+
+#. i18n: file networkdialog.ui line 820
+#: rc.cpp:126 rc.cpp:286
+#, no-c-format
+msgid "DS&L/ISDN"
+msgstr "DSL/ISDN"
+
+#. i18n: file networkdialog.ui line 846
+#. i18n: file networkdialog.ui line 914
+#. i18n: file networkdialog.ui line 1047
+#. i18n: file networkdialog.ui line 846
+#. i18n: file networkdialog.ui line 914
+#. i18n: file networkdialog.ui line 1047
+#: rc.cpp:129 rc.cpp:138 rc.cpp:156 rc.cpp:289 rc.cpp:298 rc.cpp:316
+#, no-c-format
+msgid "DSL"
+msgstr "DSL"
+
+#. i18n: file networkdialog.ui line 883
+#: rc.cpp:132 rc.cpp:292
+#, no-c-format
+msgid "Frit&z!Card DSL PPPoE"
+msgstr "Fritz!Card DSL PPPoE"
+
+#. i18n: file networkdialog.ui line 886
+#: rc.cpp:135 rc.cpp:295
+#, no-c-format
+msgid "Alt+Z"
+msgstr "Alt+Z"
+
+#. i18n: file networkdialog.ui line 951
+#: rc.cpp:141 rc.cpp:301
+#, no-c-format
+msgid "M&y PPPoE Conf"
+msgstr "My PPPoE Conf"
+
+#. i18n: file networkdialog.ui line 982
+#: rc.cpp:147 rc.cpp:307
+#, no-c-format
+msgid "ISDN"
+msgstr "ISDN"
+
+#. i18n: file networkdialog.ui line 1016
+#: rc.cpp:150 rc.cpp:310
+#, no-c-format
+msgid "&CAPI ISDN Conf"
+msgstr "CAPI ISDN Conf"
+
+#. i18n: file networkdialog.ui line 1084
+#: rc.cpp:159 rc.cpp:319
+#, no-c-format
+msgid "PPPoE Conf"
+msgstr "PPPoE Conf"
+

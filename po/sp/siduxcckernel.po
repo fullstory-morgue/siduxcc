@@ -1,0 +1,100 @@
+# translation of siduxcckernel.po to
+# translation of siduxcc-kernel.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcckernel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-24 14:19+0200\n"
+"PO-Revision-Date: 2007-08-24 14:20+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file kerneldialog.ui line 81
+#: siduxcc_kernel.cpp:79 rc.cpp:10 rc.cpp:45
+#, no-c-format
+msgid "default"
+msgstr "predeterminado"
+
+#: siduxcc_kernel.cpp:154
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "¡La version del nuevo y del actual Kernel son los mismos!"
+
+#: siduxcc_kernel.cpp:159
+msgid "Are you sure you want to install a new kernel?"
+msgstr "Esta seguro que quiere instalar un nuevo kernel?"
+
+#: siduxcc_kernel.cpp:161 siduxcc_kernel.cpp:197
+#: translator note: I don't get the meaning of "or" in "Please don't close the window or press the Ok/C". shouldn't it be "nor"?
+#: I translated literaly as "or". if indeed should be "nor" please change  "cierre o presione" to "cierre ni presione". Thank you (latino)
+msgid ""
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
+msgstr "Por favor no cierre o presione el botón OK/Cancel antes de que el proceso ha terminado"
+
+#. i18n: file kerneldialog.ui line 86
+#: siduxcc_kernel.cpp:171 rc.cpp:13 rc.cpp:48
+#, no-c-format
+msgid "experimental"
+msgstr "experimental"
+
+#. i18n: file kerneldialog.ui line 17
+#: rc.cpp:3 rc.cpp:38
+#, no-c-format
+msgid "Kernel"
+msgstr "Kernel"
+
+#. i18n: file kerneldialog.ui line 61
+#: rc.cpp:6 rc.cpp:41
+#, no-c-format
+msgid "&New Kernels"
+msgstr "Nuevo Kernels"
+
+#. i18n: file kerneldialog.ui line 152
+#: rc.cpp:16 rc.cpp:51
+#, no-c-format
+msgid "Lokal Kernel:"
+msgstr "Kernel local"
+
+#. i18n: file kerneldialog.ui line 168
+#: rc.cpp:19 rc.cpp:54
+#, no-c-format
+msgid "xxx"
+msgstr "xxx"
+
+#. i18n: file kerneldialog.ui line 187
+#: rc.cpp:22 rc.cpp:57
+#, no-c-format
+msgid "inst&all"
+msgstr "instalar"
+
+#. i18n: file kerneldialog.ui line 190
+#: rc.cpp:25 rc.cpp:60
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file kerneldialog.ui line 216
+#: rc.cpp:28 rc.cpp:63
+#, no-c-format
+msgid "&Old Kernels"
+msgstr "Kernels viejos"
+
+#. i18n: file kerneldialog.ui line 279
+#: rc.cpp:32 rc.cpp:67
+#, no-c-format
+msgid "re&move"
+msgstr "remover"
+
+#. i18n: file kerneldialog.ui line 282
+#: rc.cpp:35 rc.cpp:70
+#, no-c-format
+msgid "Alt+M"
+msgstr "Alt+M"
+

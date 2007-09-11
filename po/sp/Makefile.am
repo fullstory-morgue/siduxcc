@@ -1,0 +1,2 @@
+KDE_LANG= sp
+POFILES= AUTO
