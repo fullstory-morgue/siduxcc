@@ -14,7 +14,6 @@
 # PARTICULAR PURPOSE.
 
 @SET_MAKE@
-
 VPATH = @srcdir@
 pkgdatadir = $(datadir)/@PACKAGE@
 pkglibdir = $(libdir)/@PACKAGE@
@@ -34,7 +33,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = common
+subdir = po/es
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -44,29 +43,13 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-LIBRARIES = $(noinst_LIBRARIES)
-ARFLAGS = cru
-libsiduxcc_a_AR = $(AR) $(ARFLAGS)
-libsiduxcc_a_DEPENDENCIES = @LIBOBJS@
-am_libsiduxcc_a_OBJECTS =
-#>- libsiduxcc_a_OBJECTS = $(am_libsiduxcc_a_OBJECTS)
-#>+ 1
-libsiduxcc_a_OBJECTS = 
-DEFAULT_INCLUDES = -I. -I$(top_builddir)@am__isrc@
-COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
-	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
-LTCOMPILE = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
-	--mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
-	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
-CCLD = $(CC)
-LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
-	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
-	$(LDFLAGS) -o $@
-SOURCES = $(libsiduxcc_a_SOURCES)
-DIST_SOURCES = $(libsiduxcc_a_SOURCES)
+SOURCES =
+DIST_SOURCES =
 #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 #>+ 1
-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>+ 1
+DISTFILES = $(GMOFILES) $(POFILES) $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
 ACLOCAL = @ACLOCAL@
 AMTAR = @AMTAR@
 AR = @AR@
@@ -309,13 +292,14 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-INCLUDES = -I$(top_builddir) -I$(top_srcdir)
-noinst_LIBRARIES = libsiduxcc.a
-libsiduxcc_a_SOURCES = 
-libsiduxcc_a_LIBADD = @LIBOBJS@ 
+KDE_LANG = es
+#>- POFILES = AUTO
+#>+ 2
+POFILES = siduxccservices.po siduxcchardware.po kionetwork.po siduxccsoftware.po siduxccdisplay.po siduxcc.po siduxccnetwork.po siduxccinfo.po siduxcckmain.po siduxcckernel.po siduxcchermes.po
+GMOFILES = siduxccservices.gmo siduxcchardware.gmo kionetwork.gmo siduxccsoftware.gmo siduxccdisplay.gmo siduxcc.gmo siduxccnetwork.gmo siduxccinfo.gmo siduxcckmain.gmo siduxcckernel.gmo siduxcchermes.gmo
 #>- all: all-am
 #>+ 1
-all: docs-am  all-am
+all: all-nls docs-am  all-am
 
 .SUFFIXES:
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
@@ -327,9 +311,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  common/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/es/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  common/Makefile
+#>- 	  $(AUTOMAKE) --gnu  po/es/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -339,10 +323,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  common/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/es/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  common/Makefile
-	cd $(top_srcdir) && perl admin/am_edit common/Makefile.in
+	  $(AUTOMAKE) --gnu  po/es/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/es/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -361,19 +345,6 @@ $(top_srcdir)/configure:  $(am__configure_deps)
 $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 
-clean-noinstLIBRARIES:
-	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
-libsiduxcc.a: $(libsiduxcc_a_OBJECTS) $(libsiduxcc_a_DEPENDENCIES) 
-	-rm -f libsiduxcc.a
-	$(libsiduxcc_a_AR) libsiduxcc.a $(libsiduxcc_a_OBJECTS) $(libsiduxcc_a_LIBADD)
-	$(RANLIB) libsiduxcc.a
-
-mostlyclean-compile:
-	-rm -f *.$(OBJEXT)
-
-distclean-compile:
-	-rm -f *.tab.c
-
 mostlyclean-libtool:
 	-rm -f *.lo
 
@@ -386,7 +357,9 @@ ctags: CTAGS
 CTAGS:
 
 
-distdir: $(DISTFILES)
+#>- distdir: $(DISTFILES)
+#>+ 1
+distdir: distdir-nls  $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	list='$(DISTFILES)'; \
@@ -414,12 +387,14 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(LIBRARIES)
+all-am: Makefile
 installdirs:
 install: install-am
 install-exec: install-exec-am
 install-data: install-data-am
-uninstall: uninstall-am
+#>- uninstall: uninstall-am
+#>+ 1
+uninstall: uninstall-nls  uninstall-am
 
 install-am: all-am
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
@@ -444,15 +419,13 @@ maintainer-clean-generic:
 #>+ 1
 clean: kde-rpo-clean  clean-am
 
-#>- clean-am: clean-generic clean-libtool clean-noinstLIBRARIES \
-#>- 	mostlyclean-am
-#>+ 2
-clean-am: clean-bcheck  clean-generic clean-libtool clean-noinstLIBRARIES \
-	mostlyclean-am
+#>- clean-am: clean-generic clean-libtool mostlyclean-am
+#>+ 1
+clean-am: clean-bcheck  clean-generic clean-libtool mostlyclean-am
 
 distclean: distclean-am
 	-rm -f Makefile
-distclean-am: clean-am distclean-compile distclean-generic
+distclean-am: clean-am distclean-generic
 
 dvi: dvi-am
 
@@ -464,7 +437,9 @@ info: info-am
 
 info-am:
 
-install-data-am:
+#>- install-data-am:
+#>+ 1
+install-data-am: install-nls 
 
 install-dvi: install-dvi-am
 
@@ -482,14 +457,15 @@ install-ps: install-ps-am
 
 installcheck-am:
 
-maintainer-clean: maintainer-clean-am
+#>- maintainer-clean: maintainer-clean-am
+#>+ 1
+maintainer-clean: clean-nls  maintainer-clean-am
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
 mostlyclean: mostlyclean-am
 
-mostlyclean-am: mostlyclean-compile mostlyclean-generic \
-	mostlyclean-libtool
+mostlyclean-am: mostlyclean-generic mostlyclean-libtool
 
 pdf: pdf-am
 
@@ -504,24 +480,98 @@ uninstall-am:
 .MAKE: install-am install-strip
 
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
-	clean-noinstLIBRARIES distclean distclean-compile \
-	distclean-generic distclean-libtool distdir dvi dvi-am html \
-	html-am info info-am install install-am install-data \
-	install-data-am install-dvi install-dvi-am install-exec \
-	install-exec-am install-html install-html-am install-info \
-	install-info-am install-man install-pdf install-pdf-am \
-	install-ps install-ps-am install-strip installcheck \
-	installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-compile \
-	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	uninstall uninstall-am
+	distclean distclean-generic distclean-libtool distdir dvi \
+	dvi-am html html-am info info-am install install-am \
+	install-data install-data-am install-dvi install-dvi-am \
+	install-exec install-exec-am install-html install-html-am \
+	install-info install-info-am install-man install-pdf \
+	install-pdf-am install-ps install-ps-am install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-generic \
+	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=Makefile.in process.h Makefile.am 
+KDE_DIST=siduxcchardware.po siduxccservices.po Makefile.in siduxcckmain.po siduxcc.po siduxcckernel.po siduxccsoftware.po siduxccinfo.po siduxcchermes.po kionetwork.po siduxccdisplay.po siduxccnetwork.po Makefile.am 
+
+#>+ 34
+siduxccservices.gmo: siduxccservices.po
+	rm -f siduxccservices.gmo; $(GMSGFMT) -o siduxccservices.gmo $(srcdir)/siduxccservices.po
+	test ! -f siduxccservices.gmo || touch siduxccservices.gmo
+siduxcchardware.gmo: siduxcchardware.po
+	rm -f siduxcchardware.gmo; $(GMSGFMT) -o siduxcchardware.gmo $(srcdir)/siduxcchardware.po
+	test ! -f siduxcchardware.gmo || touch siduxcchardware.gmo
+kionetwork.gmo: kionetwork.po
+	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
+	test ! -f kionetwork.gmo || touch kionetwork.gmo
+siduxccsoftware.gmo: siduxccsoftware.po
+	rm -f siduxccsoftware.gmo; $(GMSGFMT) -o siduxccsoftware.gmo $(srcdir)/siduxccsoftware.po
+	test ! -f siduxccsoftware.gmo || touch siduxccsoftware.gmo
+siduxccdisplay.gmo: siduxccdisplay.po
+	rm -f siduxccdisplay.gmo; $(GMSGFMT) -o siduxccdisplay.gmo $(srcdir)/siduxccdisplay.po
+	test ! -f siduxccdisplay.gmo || touch siduxccdisplay.gmo
+siduxcc.gmo: siduxcc.po
+	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
+	test ! -f siduxcc.gmo || touch siduxcc.gmo
+siduxccnetwork.gmo: siduxccnetwork.po
+	rm -f siduxccnetwork.gmo; $(GMSGFMT) -o siduxccnetwork.gmo $(srcdir)/siduxccnetwork.po
+	test ! -f siduxccnetwork.gmo || touch siduxccnetwork.gmo
+siduxccinfo.gmo: siduxccinfo.po
+	rm -f siduxccinfo.gmo; $(GMSGFMT) -o siduxccinfo.gmo $(srcdir)/siduxccinfo.po
+	test ! -f siduxccinfo.gmo || touch siduxccinfo.gmo
+siduxcckmain.gmo: siduxcckmain.po
+	rm -f siduxcckmain.gmo; $(GMSGFMT) -o siduxcckmain.gmo $(srcdir)/siduxcckmain.po
+	test ! -f siduxcckmain.gmo || touch siduxcckmain.gmo
+siduxcckernel.gmo: siduxcckernel.po
+	rm -f siduxcckernel.gmo; $(GMSGFMT) -o siduxcckernel.gmo $(srcdir)/siduxcckernel.po
+	test ! -f siduxcckernel.gmo || touch siduxcckernel.gmo
+siduxcchermes.gmo: siduxcchermes.po
+	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
+	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
+
+#>+ 3
+clean-nls:
+	-rm -f  siduxccservices.gmo siduxcchardware.gmo kionetwork.gmo siduxccsoftware.gmo siduxccdisplay.gmo siduxcc.gmo siduxccnetwork.gmo siduxccinfo.gmo siduxcckmain.gmo siduxcckernel.gmo siduxcchermes.gmo
+
+#>+ 10
+install-nls:
+	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
+	@for base in siduxccservices siduxcchardware kionetwork siduxccsoftware siduxccdisplay siduxcc siduxccnetwork siduxccinfo siduxcckmain siduxcckernel siduxcchermes ; do \
+	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  fi ;\
+	done
+
+
+#>+ 13
+uninstall-nls:
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccservices.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchardware.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccsoftware.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccdisplay.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccnetwork.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccinfo.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckmain.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckernel.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
+
+#>+ 2
+all-nls: $(GMOFILES)
+
+#>+ 8
+distdir-nls:$(GMOFILES)
+	for file in $(POFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
+	for file in $(GMOFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
 
 #>+ 2
 docs-am:
@@ -536,10 +586,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  common/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/es/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  common/Makefile
-	cd $(top_srcdir) && perl admin/am_edit common/Makefile.in
+	  $(AUTOMAKE) --gnu  po/es/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/es/Makefile.in
 
 
 #>+ 21

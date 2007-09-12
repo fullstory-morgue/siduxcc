@@ -1,0 +1,17 @@
+common
+doc
+icons
+libsiduxcc
+menu
+network_kioslave
+po
+siduxcc
+siduxcc_display
+siduxcc_hardware
+siduxcc_hermes
+siduxcc_info
+siduxcc_kernel
+siduxcc_kmain
+siduxcc_network
+siduxcc_services
+siduxcc_software

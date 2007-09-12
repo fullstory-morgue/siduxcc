@@ -7,8 +7,9 @@ siduxcc (0.5.8.2) unstable; urgency=low
   * add VCS control headers.
   * fix spanish locales.
   * refresh automake.
+  * refresh build system.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Sep 2007 00:25:28 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Sep 2007 10:56:25 +0200
 
 siduxcc (0.5.8.1) unstable; urgency=low
 
