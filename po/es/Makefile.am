@@ -1,2 +1,2 @@
-KDE_LANG= sp
+KDE_LANG= es
 POFILES= AUTO

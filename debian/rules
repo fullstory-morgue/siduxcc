@@ -8,7 +8,7 @@ include /usr/share/cdbs/1/class/kde.mk
 #debian/stamp-autothings-update:
 #	cp -f /usr/share/libtool/libtool.m4 $(DEB_SRCDIR)/admin/libtool.m4.in
 #	cp -f /usr/share/libtool/ltmain.sh  $(DEB_SRCDIR)/admin/ltmain.sh
-#	for f in /usr/share/automake-1.9/*; do \
+#	for f in /usr/share/automake-1.10/*; do \
 #		if  test -f $$f && \
 #			test -f $(DEB_SRCDIR)/admin/`basename $$f`; then \
 #			cp -f $$f $(DEB_SRCDIR)/admin; \
