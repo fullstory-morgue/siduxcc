@@ -8,8 +8,9 @@ siduxcc (0.5.8.2) unstable; urgency=low
   * fix spanish locales.
   * refresh automake.
   * refresh build system.
+  * switch to automake1.10.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Sep 2007 10:56:25 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 13 Sep 2007 14:23:41 +0200
 
 siduxcc (0.5.8.1) unstable; urgency=low
 
