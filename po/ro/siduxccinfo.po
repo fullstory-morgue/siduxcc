@@ -53,6 +53,6 @@ msgstr "Mrs.Bluewater"
 
 #: _translatorinfo.cpp:3
 msgid ""
-"Your emails"
 "_: EMAIL OF TRANSLATORS\n"
+"Your emails"
 msgstr "trwaw@ozemail.com.au"
