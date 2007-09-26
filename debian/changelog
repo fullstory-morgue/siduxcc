@@ -5,8 +5,9 @@ siduxcc (0.5.8.3) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added ru ro da
+  * changed Makefile.am
 
- -- Ferdinand Thommes <devil@sidux.com>  Wed, 26 Sep 2007 09:26:06 +0200
+ -- Ferdinand Thommes <devil@sidux.com>  Wed, 26 Sep 2007 09:29:07 +0200
 
 siduxcc (0.5.8.2) unstable; urgency=low
 
