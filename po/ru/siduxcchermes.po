@@ -21,17 +21,13 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
-"_: Имя переводчика\n"
-""
+msgstr "Mikhail Burov"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
-"_: EMAIL переводчика\n"
-""
+msgstr "vonselbst@gmail.com"
 
 #. i18n: file ./legendbase.ui line 34
 #: legendbase.cpp:464 rc.cpp:7
