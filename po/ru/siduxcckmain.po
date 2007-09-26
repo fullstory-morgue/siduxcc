@@ -21,17 +21,13 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your name"
-msgstr ""
-"_: Имя переводчика\n"
-""
+msgstr "Mikhail Burov"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your email"
-msgstr ""
-"_: EMAIL переводчика\n"
-""
+msgstr "vonselbst@gmail.com"
 
 #. i18n: file ./kmaindialog.ui line 24
 #: kmaindialog.cpp:4671 main.cpp:38 rc.cpp:3
