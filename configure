@@ -33270,6 +33270,8 @@ ac_config_files="$ac_config_files network_kioslave/Makefile"
 
 ac_config_files="$ac_config_files po/Makefile"
 
+ac_config_files="$ac_config_files po/da/Makefile"
+
 ac_config_files="$ac_config_files po/de/Makefile"
 
 ac_config_files="$ac_config_files po/es/Makefile"
@@ -33279,6 +33281,10 @@ ac_config_files="$ac_config_files po/fr/Makefile"
 ac_config_files="$ac_config_files po/hr/Makefile"
 
 ac_config_files="$ac_config_files po/nl/Makefile"
+
+ac_config_files="$ac_config_files po/ro/Makefile"
+
+ac_config_files="$ac_config_files po/ru/Makefile"
 
 ac_config_files="$ac_config_files siduxcc/Makefile"
 
@@ -33916,11 +33922,14 @@ do
     "menu/Makefile") CONFIG_FILES="$CONFIG_FILES menu/Makefile" ;;
     "network_kioslave/Makefile") CONFIG_FILES="$CONFIG_FILES network_kioslave/Makefile" ;;
     "po/Makefile") CONFIG_FILES="$CONFIG_FILES po/Makefile" ;;
+    "po/da/Makefile") CONFIG_FILES="$CONFIG_FILES po/da/Makefile" ;;
     "po/de/Makefile") CONFIG_FILES="$CONFIG_FILES po/de/Makefile" ;;
     "po/es/Makefile") CONFIG_FILES="$CONFIG_FILES po/es/Makefile" ;;
     "po/fr/Makefile") CONFIG_FILES="$CONFIG_FILES po/fr/Makefile" ;;
     "po/hr/Makefile") CONFIG_FILES="$CONFIG_FILES po/hr/Makefile" ;;
     "po/nl/Makefile") CONFIG_FILES="$CONFIG_FILES po/nl/Makefile" ;;
+    "po/ro/Makefile") CONFIG_FILES="$CONFIG_FILES po/ro/Makefile" ;;
+    "po/ru/Makefile") CONFIG_FILES="$CONFIG_FILES po/ru/Makefile" ;;
     "siduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc/Makefile" ;;
     "siduxcc_display/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_display/Makefile" ;;
     "siduxcc_hardware/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hardware/Makefile" ;;

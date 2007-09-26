@@ -33,7 +33,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = po
+subdir = po/ru
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -45,29 +45,11 @@ CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
 SOURCES =
 DIST_SOURCES =
-#>- RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \
-#>- 	html-recursive info-recursive install-data-recursive \
-#>- 	install-dvi-recursive install-exec-recursive \
-#>- 	install-html-recursive install-info-recursive \
-#>- 	install-pdf-recursive install-ps-recursive install-recursive \
-#>- 	installcheck-recursive installdirs-recursive pdf-recursive \
-#>- 	ps-recursive uninstall-recursive
-#>+ 7
-RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \
-	html-recursive info-recursive install-data-recursive \
-	install-dvi-recursive install-exec-recursive \
-	install-html-recursive install-info-recursive \
-	install-pdf-recursive install-ps-recursive install-recursive \
-	installcheck-recursive installdirs-recursive pdf-recursive \
-	ps-recursive uninstall-recursive nmcheck-recursive bcheck-recursive
-RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
-  distclean-recursive maintainer-clean-recursive
-ETAGS = etags
-CTAGS = ctags
-DIST_SUBDIRS = $(SUBDIRS)
 #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 #>+ 1
-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>+ 1
+DISTFILES = $(GMOFILES) $(POFILES) $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
 ACLOCAL = @ACLOCAL@
 AMTAR = @AMTAR@
 AR = @AR@
@@ -203,7 +185,7 @@ QT_INCLUDES = @QT_INCLUDES@
 QT_LDFLAGS = @QT_LDFLAGS@
 RANLIB = @RANLIB@
 SET_MAKE = @SET_MAKE@
-SHELL = /bin/sh
+SHELL = @SHELL@
 STRIP = @STRIP@
 TOPSUBDIRS = @TOPSUBDIRS@
 UIC = @UIC@
@@ -310,11 +292,14 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-POFILES = AUTO
-SUBDIRS = de es fr nl hr ru ro da
-#>- all: all-recursive
+KDE_LANG = ru
+#>- POFILES = AUTO
+#>+ 2
+POFILES = siduxccservices.po siduxcchardware.po kionetwork.po siduxccsoftware.po siduxccdisplay.po siduxcc.po siduxccnetwork.po siduxccinfo.po siduxcckmain.po siduxcckernel.po siduxcchermes.po
+GMOFILES = siduxccservices.gmo siduxcchardware.gmo kionetwork.gmo siduxccsoftware.gmo siduxccdisplay.gmo siduxcc.gmo siduxccnetwork.gmo siduxccinfo.gmo siduxcckmain.gmo siduxcckernel.gmo siduxcchermes.gmo
+#>- all: all-am
 #>+ 1
-all: docs-am  all-recursive
+all: all-nls docs-am  all-am
 
 .SUFFIXES:
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
@@ -326,9 +311,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ru/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  po/Makefile
+#>- 	  $(AUTOMAKE) --gnu  po/ru/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -338,10 +323,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ru/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/Makefile.in
+	  $(AUTOMAKE) --gnu  po/ru/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/ru/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -365,139 +350,16 @@ mostlyclean-libtool:
 
 clean-libtool:
 	-rm -rf .libs _libs
-
-# This directory's subdirectories are mostly independent; you can cd
-# into them and run `make' without going through this Makefile.
-# To change the values of `make' variables: instead of editing Makefiles,
-# (1) if the variable is set in `config.status', edit `config.status'
-#     (which will cause the Makefiles to be regenerated when you run `make');
-# (2) otherwise, pass the desired values on the `make' command line.
-$(RECURSIVE_TARGETS):
-	@failcom='exit 1'; \
-	for f in x $$MAKEFLAGS; do \
-	  case $$f in \
-	    *=* | --[!k]*);; \
-	    *k*) failcom='fail=yes';; \
-	  esac; \
-	done; \
-	dot_seen=no; \
-	target=`echo $@ | sed s/-recursive//`; \
-	list='$(SUBDIRS)'; for subdir in $$list; do \
-	  echo "Making $$target in $$subdir"; \
-	  if test "$$subdir" = "."; then \
-	    dot_seen=yes; \
-	    local_target="$$target-am"; \
-	  else \
-	    local_target="$$target"; \
-	  fi; \
-	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
-	  || eval $$failcom; \
-	done; \
-	if test "$$dot_seen" = "no"; then \
-	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
-	fi; test -z "$$fail"
-
-$(RECURSIVE_CLEAN_TARGETS):
-	@failcom='exit 1'; \
-	for f in x $$MAKEFLAGS; do \
-	  case $$f in \
-	    *=* | --[!k]*);; \
-	    *k*) failcom='fail=yes';; \
-	  esac; \
-	done; \
-	dot_seen=no; \
-	case "$@" in \
-	  distclean-* | maintainer-clean-*) list='$(DIST_SUBDIRS)' ;; \
-	  *) list='$(SUBDIRS)' ;; \
-	esac; \
-	rev=''; for subdir in $$list; do \
-	  if test "$$subdir" = "."; then :; else \
-	    rev="$$subdir $$rev"; \
-	  fi; \
-	done; \
-	rev="$$rev ."; \
-	target=`echo $@ | sed s/-recursive//`; \
-	for subdir in $$rev; do \
-	  echo "Making $$target in $$subdir"; \
-	  if test "$$subdir" = "."; then \
-	    local_target="$$target-am"; \
-	  else \
-	    local_target="$$target"; \
-	  fi; \
-	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
-	  || eval $$failcom; \
-	done && test -z "$$fail"
-tags-recursive:
-	list='$(SUBDIRS)'; for subdir in $$list; do \
-	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
-	done
-ctags-recursive:
-	list='$(SUBDIRS)'; for subdir in $$list; do \
-	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) ctags); \
-	done
-
-ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
-	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \
-	unique=`for i in $$list; do \
-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
-	  done | \
-	  $(AWK) '    { files[$$0] = 1; } \
-	       END { for (i in files) print i; }'`; \
-	mkid -fID $$unique
 tags: TAGS
+TAGS:
 
-TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
-		$(TAGS_FILES) $(LISP)
-	tags=; \
-	here=`pwd`; \
-	if ($(ETAGS) --etags-include --version) >/dev/null 2>&1; then \
-	  include_option=--etags-include; \
-	  empty_fix=.; \
-	else \
-	  include_option=--include; \
-	  empty_fix=; \
-	fi; \
-	list='$(SUBDIRS)'; for subdir in $$list; do \
-	  if test "$$subdir" = .; then :; else \
-	    test ! -f $$subdir/TAGS || \
-	      tags="$$tags $$include_option=$$here/$$subdir/TAGS"; \
-	  fi; \
-	done; \
-	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \
-	unique=`for i in $$list; do \
-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
-	  done | \
-	  $(AWK) '    { files[$$0] = 1; } \
-	       END { for (i in files) print i; }'`; \
-	if test -z "$(ETAGS_ARGS)$$tags$$unique"; then :; else \
-	  test -n "$$unique" || unique=$$empty_fix; \
-	  $(ETAGS) $(ETAGSFLAGS) $(AM_ETAGSFLAGS) $(ETAGS_ARGS) \
-	    $$tags $$unique; \
-	fi
 ctags: CTAGS
-CTAGS: ctags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
-		$(TAGS_FILES) $(LISP)
-	tags=; \
-	here=`pwd`; \
-	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \
-	unique=`for i in $$list; do \
-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
-	  done | \
-	  $(AWK) '    { files[$$0] = 1; } \
-	       END { for (i in files) print i; }'`; \
-	test -z "$(CTAGS_ARGS)$$tags$$unique" \
-	  || $(CTAGS) $(CTAGSFLAGS) $(AM_CTAGSFLAGS) $(CTAGS_ARGS) \
-	     $$tags $$unique
+CTAGS:
 
-GTAGS:
-	here=`$(am__cd) $(top_builddir) && pwd` \
-	  && cd $(top_srcdir) \
-	  && gtags -i $(GTAGS_ARGS) $$here
 
-distclean-tags:
-	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
-
-distdir: $(DISTFILES)
+#>- distdir: $(DISTFILES)
+#>+ 1
+distdir: distdir-nls  $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
 	list='$(DISTFILES)'; \
@@ -523,37 +385,21 @@ distdir: $(DISTFILES)
 	    || exit 1; \
 	  fi; \
 	done
-	list='$(DIST_SUBDIRS)'; for subdir in $$list; do \
-	  if test "$$subdir" = .; then :; else \
-	    test -d "$(distdir)/$$subdir" \
-	    || $(MKDIR_P) "$(distdir)/$$subdir" \
-	    || exit 1; \
-	    distdir=`$(am__cd) $(distdir) && pwd`; \
-	    top_distdir=`$(am__cd) $(top_distdir) && pwd`; \
-	    (cd $$subdir && \
-	      $(MAKE) $(AM_MAKEFLAGS) \
-	        top_distdir="$$top_distdir" \
-	        distdir="$$distdir/$$subdir" \
-		am__remove_distdir=: \
-		am__skip_length_check=: \
-	        distdir) \
-	      || exit 1; \
-	  fi; \
-	done
 check-am: all-am
-check: check-recursive
+check: check-am
 all-am: Makefile
-installdirs: installdirs-recursive
-installdirs-am:
-install: install-recursive
-install-exec: install-exec-recursive
-install-data: install-data-recursive
-uninstall: uninstall-recursive
+installdirs:
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+#>- uninstall: uninstall-am
+#>+ 1
+uninstall: uninstall-nls  uninstall-am
 
 install-am: all-am
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
 
-installcheck: installcheck-recursive
+installcheck: installcheck-am
 install-strip:
 	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
 	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \
@@ -569,98 +415,163 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
-#>- clean: clean-recursive
+#>- clean: clean-am
 #>+ 1
-clean: kde-rpo-clean  clean-recursive
+clean: kde-rpo-clean  clean-am
 
 #>- clean-am: clean-generic clean-libtool mostlyclean-am
 #>+ 1
 clean-am: clean-bcheck  clean-generic clean-libtool mostlyclean-am
 
-distclean: distclean-recursive
+distclean: distclean-am
 	-rm -f Makefile
-distclean-am: clean-am distclean-generic distclean-tags
+distclean-am: clean-am distclean-generic
 
-dvi: dvi-recursive
+dvi: dvi-am
 
 dvi-am:
 
-html: html-recursive
+html: html-am
 
-info: info-recursive
+info: info-am
 
 info-am:
 
-install-data-am:
+#>- install-data-am:
+#>+ 1
+install-data-am: install-nls 
 
-install-dvi: install-dvi-recursive
+install-dvi: install-dvi-am
 
 install-exec-am:
 
-install-html: install-html-recursive
+install-html: install-html-am
 
-install-info: install-info-recursive
+install-info: install-info-am
 
 install-man:
 
-install-pdf: install-pdf-recursive
+install-pdf: install-pdf-am
 
-install-ps: install-ps-recursive
+install-ps: install-ps-am
 
 installcheck-am:
 
-maintainer-clean: maintainer-clean-recursive
+#>- maintainer-clean: maintainer-clean-am
+#>+ 1
+maintainer-clean: clean-nls  maintainer-clean-am
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
-mostlyclean: mostlyclean-recursive
+mostlyclean: mostlyclean-am
 
 mostlyclean-am: mostlyclean-generic mostlyclean-libtool
 
-pdf: pdf-recursive
+pdf: pdf-am
 
 pdf-am:
 
-ps: ps-recursive
+ps: ps-am
 
 ps-am:
 
 uninstall-am:
 
-.MAKE: $(RECURSIVE_CLEAN_TARGETS) $(RECURSIVE_TARGETS) install-am \
-	install-strip
+.MAKE: install-am install-strip
 
-.PHONY: $(RECURSIVE_CLEAN_TARGETS) $(RECURSIVE_TARGETS) CTAGS GTAGS \
-	all all-am check check-am clean clean-generic clean-libtool \
-	ctags ctags-recursive distclean distclean-generic \
-	distclean-libtool distclean-tags distdir dvi dvi-am html \
-	html-am info info-am install install-am install-data \
-	install-data-am install-dvi install-dvi-am install-exec \
-	install-exec-am install-html install-html-am install-info \
-	install-info-am install-man install-pdf install-pdf-am \
-	install-ps install-ps-am install-strip installcheck \
-	installcheck-am installdirs installdirs-am maintainer-clean \
+.PHONY: all all-am check check-am clean clean-generic clean-libtool \
+	distclean distclean-generic distclean-libtool distdir dvi \
+	dvi-am html html-am info info-am install install-am \
+	install-data install-data-am install-dvi install-dvi-am \
+	install-exec install-exec-am install-html install-html-am \
+	install-info install-info-am install-man install-pdf \
+	install-pdf-am install-ps install-ps-am install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-generic \
-	mostlyclean-libtool pdf pdf-am ps ps-am tags tags-recursive \
-	uninstall uninstall-am
+	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am
 
-
-merge:
-	cd $(top_srcdir)/po; \
-	for subdir in $(SUBDIRS); do \
-		for potfile in *.pot; do \
-			if test "$$subdir" = "."; then :; else \
-				subname=$$(basename $$potfile .pot); \
-				$(MAKE) -f $(top_srcdir)/admin/Makefile.common package-merge POFILES="$$subdir/$$subname.po" PACKAGE="$$subname"; \
-			fi; \
-		done; \
-	done;
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxccsoftware.pot kionetwork.pot siduxcc.pot Makefile.in siduxccnetwork.pot siduxcchardware.pot siduxcckmain.pot siduxcckernel.pot siduxcchermes.pot siduxccinfo.pot siduxccdisplay.pot siduxccservices.pot Makefile.am 
+KDE_DIST=siduxcchardware.po siduxccservices.po Makefile.in siduxcckmain.po siduxcc.po siduxcckernel.po siduxccsoftware.po siduxccinfo.po siduxcchermes.po kionetwork.po siduxccdisplay.po siduxccnetwork.po Makefile.am 
+
+#>+ 34
+siduxccservices.gmo: siduxccservices.po
+	rm -f siduxccservices.gmo; $(GMSGFMT) -o siduxccservices.gmo $(srcdir)/siduxccservices.po
+	test ! -f siduxccservices.gmo || touch siduxccservices.gmo
+siduxcchardware.gmo: siduxcchardware.po
+	rm -f siduxcchardware.gmo; $(GMSGFMT) -o siduxcchardware.gmo $(srcdir)/siduxcchardware.po
+	test ! -f siduxcchardware.gmo || touch siduxcchardware.gmo
+kionetwork.gmo: kionetwork.po
+	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
+	test ! -f kionetwork.gmo || touch kionetwork.gmo
+siduxccsoftware.gmo: siduxccsoftware.po
+	rm -f siduxccsoftware.gmo; $(GMSGFMT) -o siduxccsoftware.gmo $(srcdir)/siduxccsoftware.po
+	test ! -f siduxccsoftware.gmo || touch siduxccsoftware.gmo
+siduxccdisplay.gmo: siduxccdisplay.po
+	rm -f siduxccdisplay.gmo; $(GMSGFMT) -o siduxccdisplay.gmo $(srcdir)/siduxccdisplay.po
+	test ! -f siduxccdisplay.gmo || touch siduxccdisplay.gmo
+siduxcc.gmo: siduxcc.po
+	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
+	test ! -f siduxcc.gmo || touch siduxcc.gmo
+siduxccnetwork.gmo: siduxccnetwork.po
+	rm -f siduxccnetwork.gmo; $(GMSGFMT) -o siduxccnetwork.gmo $(srcdir)/siduxccnetwork.po
+	test ! -f siduxccnetwork.gmo || touch siduxccnetwork.gmo
+siduxccinfo.gmo: siduxccinfo.po
+	rm -f siduxccinfo.gmo; $(GMSGFMT) -o siduxccinfo.gmo $(srcdir)/siduxccinfo.po
+	test ! -f siduxccinfo.gmo || touch siduxccinfo.gmo
+siduxcckmain.gmo: siduxcckmain.po
+	rm -f siduxcckmain.gmo; $(GMSGFMT) -o siduxcckmain.gmo $(srcdir)/siduxcckmain.po
+	test ! -f siduxcckmain.gmo || touch siduxcckmain.gmo
+siduxcckernel.gmo: siduxcckernel.po
+	rm -f siduxcckernel.gmo; $(GMSGFMT) -o siduxcckernel.gmo $(srcdir)/siduxcckernel.po
+	test ! -f siduxcckernel.gmo || touch siduxcckernel.gmo
+siduxcchermes.gmo: siduxcchermes.po
+	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
+	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
+
+#>+ 3
+clean-nls:
+	-rm -f  siduxccservices.gmo siduxcchardware.gmo kionetwork.gmo siduxccsoftware.gmo siduxccdisplay.gmo siduxcc.gmo siduxccnetwork.gmo siduxccinfo.gmo siduxcckmain.gmo siduxcckernel.gmo siduxcchermes.gmo
+
+#>+ 10
+install-nls:
+	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
+	@for base in siduxccservices siduxcchardware kionetwork siduxccsoftware siduxccdisplay siduxcc siduxccnetwork siduxccinfo siduxcckmain siduxcckernel siduxcchermes ; do \
+	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  fi ;\
+	done
+
+
+#>+ 13
+uninstall-nls:
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccservices.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchardware.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccsoftware.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccdisplay.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccnetwork.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccinfo.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckmain.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckernel.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
+
+#>+ 2
+all-nls: $(GMOFILES)
+
+#>+ 8
+distdir-nls:$(GMOFILES)
+	for file in $(POFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
+	for file in $(GMOFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
 
 #>+ 2
 docs-am:
@@ -675,17 +586,17 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ru/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/Makefile.in
+	  $(AUTOMAKE) --gnu  po/ru/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/ru/Makefile.in
 
 
 #>+ 21
 clean-bcheck: 
 	rm -f *.bchecktest.cc *.bchecktest.cc.class a.out
 
-bcheck: bcheck-recursive
+bcheck: bcheck-am
 
 bcheck-am:
 	@for i in ; do \
