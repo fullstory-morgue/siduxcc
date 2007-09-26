@@ -6,9 +6,10 @@ siduxcc (0.5.8.3) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
   * hook additional languages into the buildsystem.
-  * fix up syntax error in russian translation.
+  * fix up syntax errors in russian translation.
+  * fix up syntax errors in romanian translation.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Sep 2007 14:00:43 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Sep 2007 14:19:01 +0200
 
 siduxcc (0.5.8.2) unstable; urgency=low
 

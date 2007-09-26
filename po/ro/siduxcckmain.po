@@ -19,11 +19,13 @@ msgstr ""
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
+"Your names"
 msgstr "Mrs. Bluewater"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
+"Your emails"
 msgstr "trwaw@ozemail.com.au"
 
 #. i18n: file ./kmaindialog.ui line 24
