@@ -50,15 +50,11 @@ msgstr "Alt+C"
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
-"_: Имя переводчика\n"
-""
+msgstr "Mikhail Burov"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
-"_: EMAIL переводчика\n"
-""
+msgstr "<vonselbst@gmail.com>"
 

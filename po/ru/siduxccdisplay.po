@@ -45,7 +45,7 @@ msgstr "Дисплей"
 #: rc.cpp:6 rc.cpp:148
 #, no-c-format
 msgid "&X-Server"
-msgstr "Х-Сервер"
+msgstr "&Х-Сервер"
 
 #. i18n: file displaydialog.ui line 50
 #. i18n: file displaydialog.ui line 514
