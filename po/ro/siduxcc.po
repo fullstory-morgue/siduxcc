@@ -1,0 +1,342 @@
+# translation of siduxcc.po to
+# translation of siduxcc-console.po to
+# translation of siduxccconsole.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"PO-Revision-Date: 2007-08-24 14:08+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: modules/dialog.bm:27
+#, sh-format
+msgid "sidux-Control-Center"
+msgstr "Centrul de control sidux"
+
+#: modules/display.bm:9 modules/display.bm:232
+#, sh-format
+msgid "Display"
+msgstr "Arata"
+
+#: modules/display.bm:38
+#, sh-format
+msgid "Select new Resolution"
+msgstr "Alegeti noua rezolutie"
+
+#: modules/display.bm:42
+#, sh-format
+msgid "Enter new Resolution:"
+msgstr "Introduceti noua rezolutie"
+
+#: modules/display.bm:81
+#, sh-format
+msgid "Do you have a TFT-monitor?"
+msgstr "Aveti un monitor TFT?"
+
+#: modules/display.bm:85
+#, sh-format
+msgid "Enter new vertical refresh rate:"
+msgstr "Intoduceti o noua rata verticala improspatata"
+
+#: modules/display.bm:94
+#, sh-format
+msgid "Enter new horizontal sync rate:"
+msgstr "Introduceti o noua rata orizontala sync"
+
+#: modules/display.bm:124
+#, sh-format
+msgid "Enter new DPI-Settings:"
+msgstr "Introduceti cadre noi DPI"
+
+#: modules/display.bm:158
+#, sh-format
+msgid "Default Color Depth"
+msgstr "Profunzime de culoare in absenta "
+
+#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
+#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Apasati tasta <Enter> ca sa continuati..."
+
+#: modules/display.bm:200
+#, sh-format
+msgid "Select the file that should be restore"
+msgstr "Selectati dosarul care trebuie restaurat"
+
+#: modules/display.bm:233
+#, sh-format
+msgid "Change Resolution"
+msgstr "Schimbati rezolutia"
+
+#: modules/display.bm:234
+#, sh-format
+msgid "Set Scanning Frequenz"
+msgstr "Stabiliti scanarea Frequenz"
+
+#: modules/display.bm:235
+#, sh-format
+msgid "Change DPI-Settings"
+msgstr "Schimbati aranjamentul DPI"
+
+#: modules/display.bm:236
+#, sh-format
+msgid "Change ColorDepth"
+msgstr "Schimbati profunzimea culorii"
+
+#: modules/display.bm:237
+#, sh-format
+msgid "Remove Modelines"
+msgstr "Eliminati liniile modului"
+
+#: modules/display.bm:238
+#, sh-format
+msgid "Register/Repair Fonts"
+msgstr "Inregistrati/Reparati Fonturile"
+
+#: modules/display.bm:239
+#, sh-format
+msgid "Install Ati/nVidia 3d Drivers"
+msgstr "Instalati Ati/nVidia 3d Drivers"
+
+#: modules/display.bm:240
+#, sh-format
+msgid "Restart X-Server"
+msgstr "Reporniti X-Server"
+
+#: modules/display.bm:241
+#, sh-format
+msgid "Restore X-Server"
+msgstr "Porniti din nou X-Server "
+
+#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
+#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:138
+#, sh-format
+msgid "Return to main Menu"
+msgstr "Reveniti la Menu-ul Initial"
+
+#: modules/display.bm:259
+#, sh-format
+msgid "Error: This module is not implemented yet!"
+msgstr "Eroare: Acest modul nu este implementat inca"
+
+#: modules/hardware.bm:9 modules/hardware.bm:158
+#, sh-format
+msgid "Hardware"
+msgstr "Hardware"
+
+#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
+#: modules/software.bm:73 modules/software.bm:84
+#, sh-format
+msgid "Process done!"
+msgstr "Procedeul terminat"
+
+#: modules/info.bm:10 modules/info.bm:21
+#, sh-format
+msgid "Infos"
+msgstr "Informatii"
+
+#: modules/info.bm:22
+#, sh-format
+msgid "sidux Version"
+msgstr "Versiunea sidux"
+
+#: modules/info.bm:23
+#, sh-format
+msgid "Infobash"
+msgstr "Infobash"
+
+#: modules/info.bm:27
+#, sh-format
+msgid "You are using "
+msgstr "Acum folositi "
+
+#: modules/kernel.bm:9 modules/kernel.bm:144
+#, sh-format
+msgid "Kernel"
+msgstr "Kernel"
+
+#: modules/kernel.bm:16
+#, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr "Kernel-ul lipseste! Vreti sa il instalati?"
+
+#: modules/kernel.bm:91
+#, sh-format
+msgid "The installation is finished!"
+msgstr "Instalarea este terminata!"
+
+#: modules/kernel.bm:104
+#, sh-format
+msgid "Select a kernel"
+msgstr "Alegeti un kernel"
+
+#: modules/kernel.bm:114
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "Versiunile acestui nou kernel sint aceleasi"
+
+#: modules/kernel.bm:145
+#, sh-format
+msgid "Run kernel-remover"
+msgstr "Run kernel-remover"
+
+#: modules/kernel.bm:146
+#, sh-format
+msgid "Update kernel"
+msgstr "Update kernel"
+
+#: modules/services.bm:10
+#, sh-format
+msgid "Services"
+msgstr "Servicii"
+
+#: modules/services.bm:15
+#, sh-format
+msgid "Webserver"
+msgstr "Webserver"
+
+#: modules/services.bm:16
+#, sh-format
+msgid "Printserver"
+msgstr "Printserver"
+
+#: modules/services.bm:17
+#, sh-format
+msgid "SQL Databaseserver"
+msgstr "SQL Databaseserver"
+
+#: modules/services.bm:18
+#, sh-format
+msgid "Secure-shell-server"
+msgstr "Secure-shell-server"
+
+#: modules/services.bm:19
+#, sh-format
+msgid "Samabaserver"
+msgstr "Samabaserver"
+
+#: modules/services.bm:30
+#, sh-format
+msgid "Start now"
+msgstr "Incepe acum"
+
+#: modules/services.bm:31
+#, sh-format
+msgid "Stop now"
+msgstr "Termina acum"
+
+#: modules/services.bm:32
+#, sh-format
+msgid "Restart now"
+msgstr "Reincepe acum"
+
+#: modules/services.bm:33
+#, sh-format
+msgid "Reload now"
+msgstr "Reincarca acum"
+
+#: modules/services.bm:34
+#, sh-format
+msgid "Add a Runlevel-Entry"
+msgstr "Adaoga o intrare-Runlevel"
+
+#: modules/services.bm:35
+#, sh-format
+msgid "Delete Runlevel-Entry"
+msgstr "Anuleaza  Runlevel-Entry"
+
+#: modules/services.bm:51
+#, sh-format
+msgid "Boot"
+msgstr "Boot"
+
+#: modules/services.bm:52
+#, sh-format
+msgid "Enable/Disable Services at Boot"
+msgstr "Enable/Disable Services at Boot"
+
+#: modules/services.bm:53
+#, sh-format
+msgid "Manage Services"
+msgstr "Directioneaza serviciile"
+
+#: modules/software.bm:10 modules/software.bm:134
+#, sh-format
+msgid "Software"
+msgstr "Software"
+
+#: modules/software.bm:30
+#, sh-format
+msgid "You must be in runlevel 3 and out of X to run this script."
+msgstr "Trebuie sa fii in nivelul 3 run si in afara lui X ca sa poti efectua acest script"
+
+#: modules/software.bm:36 modules/software.bm:107
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there are any Dist-"
+"Upgrade Warnings. Do you want to continuo anyway?"
+msgstr ""
+"Nici o conectiune la sidux.com. Nu a fost posibil sa testati daca sunt "
+"Niste Atentionaru de Imbunatatiri Dist. Vrei sa continui oricum? "
+
+#: modules/software.bm:40 modules/software.bm:110
+#, sh-format
+msgid ""
+"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
+"com for more information!"
+msgstr ""
+"Exista atentionari-DU, va rog. Nu efectuati un dist-upgrade!Va gugam sa vizitati sidux. "
+"com pentru mai multe informatii"
+
+#: modules/software.bm:43 modules/software.bm:112
+#, sh-format
+msgid "At the moment there are no DU-warnings!"
+msgstr "Nu sint DU-Atentionari pentru moment1"
+
+#: modules/software.bm:118
+#, sh-format
+msgid "Please choose a date..."
+msgstr "Selectati o data"
+
+#: modules/software.bm:135
+#, sh-format
+msgid "Run Dist-Upgrade"
+msgstr "Run Dist-Upgrade"
+
+#: modules/software.bm:136
+#, sh-format
+msgid "Show DU-Warnings"
+msgstr "Arata Atentionarile-DU"
+
+#: modules/software.bm:137
+#, sh-format
+msgid "Show DU-Log"
+msgstr "Arata DU-Log"
+
+#: modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr "Eroare:Trebuie sa fi root ca sa folosest acest script"
+
+#: modules/interface:18
+#, sh-format
+msgid "Main Menu"
+msgstr "Menu-ul de Baza"
+
+#: modules/interface:19
+#, sh-format
+msgid "Exit"
+msgstr "Iesire"
+

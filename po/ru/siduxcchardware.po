@@ -1,0 +1,81 @@
+# translation of siduxcchardware.po to russian
+# translation of siduxcchardware.po to
+# This file is put in the public domain.
+#
+# Mikhail Burov <vonselbst@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcchardware\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"PO-Revision-Date: 2007-09-13 17:11+0400\n"
+"Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
+"Language-Team: russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file hardwaredialog.ui line 463
+#: siduxcc_hardware.cpp:67 rc.cpp:16 rc.cpp:47
+#, no-c-format
+msgid "detected"
+msgstr "обнаружено"
+
+#: siduxcc_hardware.cpp:117 siduxcc_hardware.cpp:143
+msgid ""
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
+msgstr "Пожалуйста, не закрывайте окно или нажмите кнопку Ok/Cancel до появления сообщения об " "окончании процесса"
+
+#. i18n: file hardwaredialog.ui line 17
+#: rc.cpp:3 rc.cpp:34
+#, no-c-format
+msgid "Hardware"
+msgstr "Оборудование"
+
+#. i18n: file hardwaredialog.ui line 72
+#: rc.cpp:6 rc.cpp:37
+#, no-c-format
+msgid "Non-Free Fir&mware"
+msgstr "Несвободный драйвер"
+
+#. i18n: file hardwaredialog.ui line 152
+#: rc.cpp:10 rc.cpp:41
+#, no-c-format
+msgid "I&nstall"
+msgstr "Установка"
+
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#: rc.cpp:13 rc.cpp:31 rc.cpp:44 rc.cpp:62
+#, no-c-format
+msgid "Alt+N"
+msgstr "Alt+N"
+
+#. i18n: file hardwaredialog.ui line 468
+#: rc.cpp:19 rc.cpp:50
+#, no-c-format
+msgid "all"
+msgstr "все"
+
+#. i18n: file hardwaredialog.ui line 490
+#: rc.cpp:22 rc.cpp:53
+#, no-c-format
+msgid "Gr&aphiccard"
+msgstr "Графическая карта"
+
+#. i18n: file hardwaredialog.ui line 516
+#: rc.cpp:25 rc.cpp:56
+#, no-c-format
+msgid "ATI/Nvidia (Non-Free)"
+msgstr "ATI/Nvidia (несвободное ПО))"
+
+#. i18n: file hardwaredialog.ui line 537
+#: rc.cpp:28 rc.cpp:59
+#, no-c-format
+msgid "I&nstall driver"
+msgstr "Установка драйвера"
+

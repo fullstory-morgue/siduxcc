@@ -1,0 +1,341 @@
+# translation of siduxcc.po to russian
+# translation of siduxcc.po to
+# translation of siduxcc-console.po to
+# translation of siduxccconsole.po to
+# This file is put in the public domain.
+#
+# Mikhail Burov <vonselbst@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"PO-Revision-Date: 2007-09-13 18:09+0400\n"
+"Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
+"Language-Team: russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: modules/dialog.bm:27
+#, sh-format
+msgid "sidux-Control-Center"
+msgstr "Цетр управления sidux"
+
+#: modules/display.bm:9 modules/display.bm:232
+#, sh-format
+msgid "Display"
+msgstr "Экран"
+
+#: modules/display.bm:38
+#, sh-format
+msgid "Select new Resolution"
+msgstr "Выбрать новое разрешение"
+
+#: modules/display.bm:42
+#, sh-format
+msgid "Enter new Resolution:"
+msgstr "Введите новое разрешение"
+
+#: modules/display.bm:81
+#, sh-format
+msgid "Do you have a TFT-monitor?"
+msgstr "У Вас TFT-монитор?"
+
+#: modules/display.bm:85
+#, sh-format
+msgid "Enter new vertical refresh rate:"
+msgstr "Введите новое значение для вертикальной частоты"
+
+#: modules/display.bm:94
+#, sh-format
+msgid "Enter new horizontal sync rate:"
+msgstr "Введите новое значение для горизонтальной частоты"
+
+#: modules/display.bm:124
+#, sh-format
+msgid "Enter new DPI-Settings:"
+msgstr "Введите новое значение для DPI"
+
+#: modules/display.bm:158
+#, sh-format
+msgid "Default Color Depth"
+msgstr "Количество цветов по умолчанию"
+
+#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
+#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Чтобы продолжить нажмите <Enter> "
+
+#: modules/display.bm:200
+#, sh-format
+msgid "Select the file that should be restore"
+msgstr "Выбор файла для восстановления"
+
+#: modules/display.bm:233
+#, sh-format
+msgid "Change Resolution"
+msgstr "Сменить разрешение"
+
+#: modules/display.bm:234
+#, sh-format
+msgid "Set Scanning Frequenz"
+msgstr "Установить частоту"
+
+#: modules/display.bm:235
+#, sh-format
+msgid "Change DPI-Settings"
+msgstr "Сменить значение DPI"
+
+#: modules/display.bm:236
+#, sh-format
+msgid "Change ColorDepth"
+msgstr "Изменить количество цветов"
+
+#: modules/display.bm:237
+#, sh-format
+msgid "Remove Modelines"
+msgstr "Очистить файл конфигурации "
+
+#: modules/display.bm:238
+#, sh-format
+msgid "Register/Repair Fonts"
+msgstr "Обновить/восстановить шрифты"
+
+#: modules/display.bm:239
+#, sh-format
+msgid "Install Ati/nVidia 3d Drivers"
+msgstr "Установить драйвер Ati/nVidia 3d "
+
+#: modules/display.bm:240
+#, sh-format
+msgid "Restart X-Server"
+msgstr "Перезапустить Х-Сервер"
+
+#: modules/display.bm:241
+#, sh-format
+msgid "Restore X-Server"
+msgstr "Восстановить Х-Сервер"
+
+#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
+#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:138
+#, sh-format
+msgid "Return to main Menu"
+msgstr "Возврат к основному меню"
+
+#: modules/display.bm:259
+#, sh-format
+msgid "Error: This module is not implemented yet!"
+msgstr "Ошибка: Данный модуль пока не реализован!"
+
+#: modules/hardware.bm:9 modules/hardware.bm:158
+#, sh-format
+msgid "Hardware"
+msgstr "Оборудование"
+
+#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
+#: modules/software.bm:73 modules/software.bm:84
+#, sh-format
+msgid "Process done!"
+msgstr "Процесс завершен!"
+
+#: modules/info.bm:10 modules/info.bm:21
+#, sh-format
+msgid "Infos"
+msgstr "Информация"
+
+#: modules/info.bm:22
+#, sh-format
+msgid "sidux Version"
+msgstr "Версия sidux"
+
+#: modules/info.bm:23
+#, sh-format
+msgid "Infobash"
+msgstr "Infobash"
+
+#: modules/info.bm:27
+#, sh-format
+msgid "You are using "
+msgstr "Вы используете "
+
+#: modules/kernel.bm:9 modules/kernel.bm:144
+#, sh-format
+msgid "Kernel"
+msgstr "Ядро"
+
+#: modules/kernel.bm:16
+#, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr "Отсутствует Kernel-remover! Хотите установить?"
+
+#: modules/kernel.bm:91
+#, sh-format
+msgid "The installation is finished!"
+msgstr "Установка завершена!"
+
+#: modules/kernel.bm:104
+#, sh-format
+msgid "Select a kernel"
+msgstr "Выбор ядра"
+
+#: modules/kernel.bm:114
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "Новая и установленная версии ядра совпадают!"
+
+#: modules/kernel.bm:145
+#, sh-format
+msgid "Run kernel-remover"
+msgstr "Запустить kernel-remover"
+
+#: modules/kernel.bm:146
+#, sh-format
+msgid "Update kernel"
+msgstr "Обновить ядро"
+
+#: modules/services.bm:10
+#, sh-format
+msgid "Services"
+msgstr "Сервисы"
+
+#: modules/services.bm:15
+#, sh-format
+msgid "Webserver"
+msgstr "Вебсервер"
+
+#: modules/services.bm:16
+#, sh-format
+msgid "Printserver"
+msgstr "Сервер печати"
+
+#: modules/services.bm:17
+#, sh-format
+msgid "SQL Databaseserver"
+msgstr "Сервер баз данных SQL"
+
+#: modules/services.bm:18
+#, sh-format
+msgid "Secure-shell-server"
+msgstr "SSH cервер"
+
+#: modules/services.bm:19
+#, sh-format
+msgid "Samabaserver"
+msgstr "Сервер Samba"
+
+#: modules/services.bm:30
+#, sh-format
+msgid "Start now"
+msgstr "Пуск"
+
+#: modules/services.bm:31
+#, sh-format
+msgid "Stop now"
+msgstr "Остановить"
+
+#: modules/services.bm:32
+#, sh-format
+msgid "Restart now"
+msgstr "Перезапустить"
+
+#: modules/services.bm:33
+#, sh-format
+msgid "Reload now"
+msgstr "Перегрузить"
+
+#: modules/services.bm:34
+#, sh-format
+msgid "Add a Runlevel-Entry"
+msgstr "Добавить Runlevel-Entry"
+
+#: modules/services.bm:35
+#, sh-format
+msgid "Delete Runlevel-Entry"
+msgstr "Удалить Runlevel-Entry"
+
+#: modules/services.bm:51
+#, sh-format
+msgid "Boot"
+msgstr "Загрузка"
+
+#: modules/services.bm:52
+#, sh-format
+msgid "Enable/Disable Services at Boot"
+msgstr "Включение/Отключение cервисов при загрузке"
+
+#: modules/services.bm:53
+#, sh-format
+msgid "Manage Services"
+msgstr "Управление сервисами"
+
+#: modules/software.bm:10 modules/software.bm:134
+#, sh-format
+msgid "Software"
+msgstr "Програмное обеспечение"
+
+#: modules/software.bm:30
+#, sh-format
+msgid "You must be in runlevel 3 and out of X to run this script."
+msgstr "Данный скрипт необходимо запускать вне оболочки Х на runlevel 3"
+
+#: modules/software.bm:36 modules/software.bm:107
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"Нет соединения с sidux.com.Предупреждения по dist-upgrade недоступны. Хотите все равно " "продолжить? "
+
+
+#: modules/software.bm:40 modules/software.bm:110
+#, sh-format
+msgid ""
+"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
+"com for more information!"
+msgstr "Предупреждение DU: Не делайте dist-upgrade! Посетите sidux.com для дополнительной " "информации "
+
+#: modules/software.bm:43 modules/software.bm:112
+#, sh-format
+msgid "At the moment there are no DU-warnings!"
+msgstr "В настоящий момент нет DU-предупреждений!"
+
+#: modules/software.bm:118
+#, sh-format
+msgid "Please choose a date..."
+msgstr "Выбор даты"
+
+#: modules/software.bm:135
+#, sh-format
+msgid "Run Dist-Upgrade"
+msgstr "Запуск dist-upgrade"
+
+#: modules/software.bm:136
+#, sh-format
+msgid "Show DU-Warnings"
+msgstr "Показать DU-предупреждения "
+
+#: modules/software.bm:137
+#, sh-format
+msgid "Show DU-Log"
+msgstr "Показать DU-log"
+
+#: modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr "Ошибка: только root может запустить этот скрипт!"
+
+#: modules/interface:18
+#, sh-format
+msgid "Main Menu"
+msgstr "Главное меню"
+
+#: modules/interface:19
+#, sh-format
+msgid "Exit"
+msgstr "Выход"
+

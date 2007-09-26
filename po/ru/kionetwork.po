@@ -1,0 +1,23 @@
+# translation of kionetwork.po to russian
+# translation of kionetwork.po to
+# This file is put in the public domain.
+#
+# Fabian Wuertz <xadras@sidux.com>, 2007.
+# Mikhail Burov <vonselbst@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: kionetwork\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-07-04 19:49+0200\n"
+"PO-Revision-Date: 2007-09-13 16:08+0400\n"
+"Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
+"Language-Team: russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: kio_network.cpp:215
+msgid "More Options"
+msgstr "Дополнительные опции"
+

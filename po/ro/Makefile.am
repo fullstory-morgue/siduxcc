@@ -1,0 +1,2 @@
+KDE_LANG = ro 
+POFILES = AUTO
