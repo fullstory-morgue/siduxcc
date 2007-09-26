@@ -311,7 +311,7 @@ xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
 POFILES = AUTO
-SUBDIRS = de es fr nl hr ru ro da
+SUBDIRS = da de es fr nl hr ro ru
 #>- all: all-recursive
 #>+ 1
 all: docs-am  all-recursive

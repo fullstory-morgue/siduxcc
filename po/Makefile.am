@@ -1,5 +1,5 @@
 POFILES = AUTO
-SUBDIRS = de es fr nl hr ru ro da
+SUBDIRS = da de es fr nl hr ro ru
 SHELL = /bin/sh
 
 merge:
