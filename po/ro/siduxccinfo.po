@@ -48,9 +48,11 @@ msgstr "Alt+C"
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
+"Your names"
 msgstr "Mrs.Bluewater"
 
 #: _translatorinfo.cpp:3
 msgid ""
+"Your emails"
 "_: EMAIL OF TRANSLATORS\n"
 msgstr "trwaw@ozemail.com.au"
