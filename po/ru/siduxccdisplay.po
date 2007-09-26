@@ -67,8 +67,8 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
-"Х-Сервер не работает с ошибочными установками! Для восстановления прежней конфигурации ""
-нажмите Ctr+Alt+F1, как root выполните команду siduxcc и осуществите последовательный выбор: " "option-Display-restoreX "
+"Х-Сервер не работает с ошибочными установками! Для восстановления прежней конфигурации "
+"нажмите Ctr+Alt+F1, как root выполните команду siduxcc и осуществите последовательный выбор: " "option-Display-restoreX "
 
 
 #. i18n: file displaydialog.ui line 96
