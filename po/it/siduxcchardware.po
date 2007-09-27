@@ -1,0 +1,81 @@
+# translation of siduxcchardware.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcchardware\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"PO-Revision-Date: 2007-08-28 15:20+0200\n"
+"Last-Translator: Salvo 'LtWorf' Tomaselli\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file hardwaredialog.ui line 463
+#: siduxcc_hardware.cpp:67 rc.cpp:16 rc.cpp:47
+#, no-c-format
+msgid "detected"
+msgstr "rilevato"
+
+#: siduxcc_hardware.cpp:117 siduxcc_hardware.cpp:143
+msgid ""
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
+msgstr ""
+"Per favere non chiudere la finestra e non premere Ok/Annulla prima che "
+"il processo stato completato!"
+
+#. i18n: file hardwaredialog.ui line 17
+#: rc.cpp:3 rc.cpp:34
+#, no-c-format
+msgid "Hardware"
+msgstr "Hardware"
+
+#. i18n: file hardwaredialog.ui line 72
+#: rc.cpp:6 rc.cpp:37
+#, no-c-format
+msgid "Non-Free Fir&mware"
+msgstr "Firmware non libero"
+
+#. i18n: file hardwaredialog.ui line 152
+#: rc.cpp:10 rc.cpp:41
+#, no-c-format
+msgid "I&nstall"
+msgstr "Installa"
+
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#. i18n: file hardwaredialog.ui line 155
+#. i18n: file hardwaredialog.ui line 540
+#: rc.cpp:13 rc.cpp:31 rc.cpp:44 rc.cpp:62
+#, no-c-format
+msgid "Alt+N"
+msgstr "Alt+N"
+
+#. i18n: file hardwaredialog.ui line 468
+#: rc.cpp:19 rc.cpp:50
+#, no-c-format
+msgid "all"
+msgstr "tutti"
+
+#. i18n: file hardwaredialog.ui line 490
+#: rc.cpp:22 rc.cpp:53
+#, no-c-format
+msgid "Gr&aphiccard"
+msgstr "Scheda video"
+
+#. i18n: file hardwaredialog.ui line 516
+#: rc.cpp:25 rc.cpp:56
+#, no-c-format
+msgid "ATI/Nvidia (Non-Free)"
+msgstr "ATI/Nvidia (non libero)"
+
+#. i18n: file hardwaredialog.ui line 537
+#: rc.cpp:28 rc.cpp:59
+#, no-c-format
+msgid "I&nstall driver"
+msgstr "Installa driver"

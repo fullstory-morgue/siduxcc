@@ -1,8 +1,12 @@
 siduxcc (0.5.8.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Sep 2007 14:41:06 +0200
+  [ Ferdinand Thommes ]
+  * added it
+
+ -- Ferdinand Thommes <devil@sidux.com>  Thu, 27 Sep 2007 15:46:02 +0200
 
 siduxcc (0.5.8.3) unstable; urgency=low
 

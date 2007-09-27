@@ -1,0 +1,180 @@
+# translation of siduxccservices.po to Italiano
+# translation of siduxccservices.po to
+# translation of siduxcc-services.po to
+# This file is put in the public domain.
+#
+# Salvo Tomaselli <ltworf@galileo.dmi.unict.it>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxccservices\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"PO-Revision-Date: 2007-09-26 19:12+0200\n"
+"Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
+"Language-Team: Italiano <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: siduxcc_services.cpp:142 siduxcc_services.cpp:147
+msgid "Status: %1"
+msgstr "Stato: %1"
+
+#: siduxcc_services.cpp:142
+msgid "not running..."
+msgstr "non in esecuzione..."
+
+#: siduxcc_services.cpp:147
+msgid "running..."
+msgstr "in esecuzione..."
+
+#: siduxcc_services.cpp:153
+msgid "Apache v2 is the next generation of the omnipresent Apache web server."
+msgstr "Apache v2 è la prossima generazione dell'onnipresente web server Apache."
+
+#: siduxcc_services.cpp:154
+msgid ""
+"The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
+"general replacement for lpd and the like."
+msgstr "Common UNIX Printing System (o CUPS(tm)) è un sistema di stampa"
+
+#: siduxcc_services.cpp:155
+msgid ""
+"MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
+"server."
+msgstr "MySQL è un database SQL veloce, stabile e realmente multi-utente e multi-threaded"
+
+#: siduxcc_services.cpp:156
+msgid ""
+"The Samba software suite is a collection of programs that implements the SMB/"
+"CIFS protocol for unix systems, allowing you to serve files and printers to "
+"Windows, NT, OS/2 and DOS clients."
+msgstr "Samba è un insieme di programmi che implementano i protocolli SMB/CIFS per i sistemi " "unix, permettendo di condividere file e stampanti con computer Windows, NT, OS/2 e DOS"
+
+#: siduxcc_services.cpp:157
+msgid ""
+"SSH is the portable version of OpenSSH, a free implementation of the Secure "
+"Shell protocol as specified by the IETF secsh working group."
+msgstr ""
+"SSH è il porting di OpenSSH, una implementazione libera del protocollo"
+"Secure Shell, come specificato dall'IETF secsh working group."
+
+#. i18n: file servicesdialog.ui line 17
+#. i18n: file servicesdialog.ui line 341
+#. i18n: file servicesdialog.ui line 17
+#. i18n: file servicesdialog.ui line 341
+#: rc.cpp:3 rc.cpp:52 rc.cpp:69 rc.cpp:118
+#, no-c-format
+msgid "Services"
+msgstr "Servizi"
+
+#. i18n: file servicesdialog.ui line 32
+#: rc.cpp:6 rc.cpp:72
+#, no-c-format
+msgid "&Main"
+msgstr "Principale"
+
+#. i18n: file servicesdialog.ui line 58
+#: rc.cpp:9 rc.cpp:75
+#, no-c-format
+msgid "Select service"
+msgstr "Seleziona dispositivo"
+
+#. i18n: file servicesdialog.ui line 98
+#: rc.cpp:12 rc.cpp:78
+#, no-c-format
+msgid "Status"
+msgstr "Stato"
+
+#. i18n: file servicesdialog.ui line 147
+#: rc.cpp:15 rc.cpp:81
+#, no-c-format
+msgid "Status: not running..."
+msgstr "Stato: non in esecuzione..."
+
+#. i18n: file servicesdialog.ui line 172
+#: rc.cpp:18 rc.cpp:84
+#, no-c-format
+msgid "Description"
+msgstr "Descrizione"
+
+#. i18n: file servicesdialog.ui line 195
+#: rc.cpp:21 rc.cpp:87
+#, no-c-format
+msgid "Description Text"
+msgstr "Descrizione"
+
+#. i18n: file servicesdialog.ui line 215
+#: rc.cpp:24 rc.cpp:90
+#, no-c-format
+msgid "Action"
+msgstr "Azione"
+
+#. i18n: file servicesdialog.ui line 246
+#: rc.cpp:30 rc.cpp:96
+#, no-c-format
+msgid "S&top"
+msgstr "Ferma"
+
+#. i18n: file servicesdialog.ui line 262
+#: rc.cpp:33 rc.cpp:99
+#, no-c-format
+msgid "Restart"
+msgstr "Riavvia"
+
+#. i18n: file servicesdialog.ui line 281
+#: rc.cpp:37 rc.cpp:103
+#, no-c-format
+msgid "Reloa&d"
+msgstr "Ricarica"
+
+#. i18n: file servicesdialog.ui line 297
+#: rc.cpp:40 rc.cpp:106
+#, no-c-format
+msgid "Delete Ru&nlevel-Entry"
+msgstr "Elimina voce dal runlevel"
+
+#. i18n: file servicesdialog.ui line 313
+#: rc.cpp:43 rc.cpp:109
+#, no-c-format
+msgid "&Add a Runlevel-Entry (Start service at Boot)"
+msgstr "Aggiungi voce nel runlevel (Carica il servizio all'avvio)"
+
+#. i18n: file servicesdialog.ui line 316
+#: rc.cpp:46 rc.cpp:112
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file servicesdialog.ui line 326
+#: rc.cpp:49 rc.cpp:115
+#, no-c-format
+msgid "B&oot"
+msgstr "Avvio"
+
+#. i18n: file servicesdialog.ui line 366
+#: rc.cpp:55 rc.cpp:121
+#, no-c-format
+msgid "Active Services:"
+msgstr "Servizi attivi:"
+
+#. i18n: file servicesdialog.ui line 406
+#: rc.cpp:58 rc.cpp:124
+#, no-c-format
+msgid ">"
+msgstr ">"
+
+#. i18n: file servicesdialog.ui line 434
+#: rc.cpp:62 rc.cpp:128
+#, no-c-format
+msgid "<"
+msgstr "<"
+
+#. i18n: file servicesdialog.ui line 472
+#: rc.cpp:66 rc.cpp:132
+#, no-c-format
+msgid "Disabled Services:"
+msgstr "Servizi disabilitati:"
+

@@ -1,0 +1,344 @@
+# translation of siduxcc.po to Italiano
+# translation of siduxcc.po to
+# translation of siduxcc-console.po to
+# translation of siduxccconsole.po to
+# This file is put in the public domain.
+#
+# Salvo Tomaselli <ltworf@galileo.dmi.unict.it>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"PO-Revision-Date: 2007-09-26 19:15+0200\n"
+"Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
+"Language-Team: Italiano <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: modules/dialog.bm:27
+#, sh-format
+msgid "sidux-Control-Center"
+msgstr "Centro di controllo di sidux"
+
+#: modules/display.bm:9 modules/display.bm:232
+#, sh-format
+msgid "Display"
+msgstr "Display"
+
+#: modules/display.bm:38
+#, sh-format
+msgid "Select new Resolution"
+msgstr "Seleziona nuova risoluzione"
+
+#: modules/display.bm:42
+#, sh-format
+msgid "Enter new Resolution:"
+msgstr "Inserisci nuova risoluzione:"
+
+#: modules/display.bm:81
+#, sh-format
+msgid "Do you have a TFT-monitor?"
+msgstr "Stai usando un monitor TFT?"
+
+#: modules/display.bm:85
+#, sh-format
+msgid "Enter new vertical refresh rate:"
+msgstr "Inserisci la frequenza di aggiornamento verticale:"
+
+#: modules/display.bm:94
+#, sh-format
+msgid "Enter new horizontal sync rate:"
+msgstr "Inserisci una nuova frequenza di sincronizzazione orizzontale:"
+
+#: modules/display.bm:124
+#, sh-format
+msgid "Enter new DPI-Settings:"
+msgstr "Inserisci le nuove impostazioni per i DPI:"
+
+#: modules/display.bm:158
+#, sh-format
+msgid "Default Color Depth"
+msgstr "Profondità colore di default"
+
+#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
+#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Premere <Eter> per continuare..."
+
+#: modules/display.bm:200
+#, sh-format
+msgid "Select the file that should be restore"
+msgstr "Seleziona il file che si deve ripristinare"
+
+#: modules/display.bm:233
+#, sh-format
+msgid "Change Resolution"
+msgstr "Cambia risoluzione"
+
+#: modules/display.bm:234
+#, sh-format
+msgid "Set Scanning Frequenz"
+msgstr "Imposta frequenze di scansione"
+
+#: modules/display.bm:235
+#, sh-format
+msgid "Change DPI-Settings"
+msgstr "Cambia impostazioni DPI"
+
+#: modules/display.bm:236
+#, sh-format
+msgid "Change ColorDepth"
+msgstr "Cambia profondità colore"
+
+#: modules/display.bm:237
+#, sh-format
+msgid "Remove Modelines"
+msgstr ""
+
+#: modules/display.bm:238
+#, sh-format
+msgid "Register/Repair Fonts"
+msgstr "Registra/aggiusta i font"
+
+#: modules/display.bm:239
+#, sh-format
+msgid "Install Ati/nVidia 3d Drivers"
+msgstr "Installa driver 3d Ati/nVidia"
+
+#: modules/display.bm:240
+#, sh-format
+msgid "Restart X-Server"
+msgstr "Riavvia il server X"
+
+#: modules/display.bm:241
+#, sh-format
+msgid "Restore X-Server"
+msgstr "Ripristina il server X"
+
+#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
+#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:138
+#, sh-format
+msgid "Return to main Menu"
+msgstr "Ritorna al menu principale"
+
+#: modules/display.bm:259
+#, sh-format
+msgid "Error: This module is not implemented yet!"
+msgstr "Errore: Questo modulo non è stato ancora implementato!"
+
+#: modules/hardware.bm:9 modules/hardware.bm:158
+#, sh-format
+msgid "Hardware"
+msgstr "Hardware"
+
+#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
+#: modules/software.bm:73 modules/software.bm:84
+#, sh-format
+msgid "Process done!"
+msgstr "Processo completato!"
+
+#: modules/info.bm:10 modules/info.bm:21
+#, sh-format
+msgid "Infos"
+msgstr "Informazioni"
+
+#: modules/info.bm:22
+#, sh-format
+msgid "sidux Version"
+msgstr "Versione di sidux"
+
+#: modules/info.bm:23
+#, sh-format
+msgid "Infobash"
+msgstr "Infobash"
+
+#: modules/info.bm:27
+#, sh-format
+msgid "You are using "
+msgstr "Stai usando "
+
+#: modules/kernel.bm:9 modules/kernel.bm:144
+#, sh-format
+msgid "Kernel"
+msgstr "Kernel"
+
+#: modules/kernel.bm:16
+#, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr "Kernel-remover non è installato! Vuoi installarlo?"
+
+#: modules/kernel.bm:91
+#, sh-format
+msgid "The installation is finished!"
+msgstr "L'installazione è completa!"
+
+#: modules/kernel.bm:104
+#, sh-format
+msgid "Select a kernel"
+msgstr "Seleziona un kernel"
+
+#: modules/kernel.bm:114
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "La versione del kernel corrente coincide con quella del nuovo kernel!"
+
+#: modules/kernel.bm:145
+#, sh-format
+msgid "Run kernel-remover"
+msgstr "Esegui rimozione kernel"
+
+#: modules/kernel.bm:146
+#, sh-format
+msgid "Update kernel"
+msgstr "Aggiorna kernel"
+
+#: modules/services.bm:10
+#, sh-format
+msgid "Services"
+msgstr "Servizi"
+
+#: modules/services.bm:15
+#, sh-format
+msgid "Webserver"
+msgstr "Webserver"
+
+#: modules/services.bm:16
+#, sh-format
+msgid "Printserver"
+msgstr "Server di stampa"
+
+#: modules/services.bm:17
+#, sh-format
+msgid "SQL Databaseserver"
+msgstr "Server Database SQL"
+
+#: modules/services.bm:18
+#, sh-format
+msgid "Secure-shell-server"
+msgstr "Server SSH"
+
+#: modules/services.bm:19
+#, sh-format
+msgid "Samabaserver"
+msgstr "Server Samba"
+
+#: modules/services.bm:30
+#, sh-format
+msgid "Start now"
+msgstr "Avvia adesso"
+
+#: modules/services.bm:31
+#, sh-format
+msgid "Stop now"
+msgstr "Ferma adesso"
+
+#: modules/services.bm:32
+#, sh-format
+msgid "Restart now"
+msgstr "Riavvia adesso"
+
+#: modules/services.bm:33
+#, sh-format
+msgid "Reload now"
+msgstr "Ricarica adesso"
+
+#: modules/services.bm:34
+#, sh-format
+msgid "Add a Runlevel-Entry"
+msgstr "Aggiungi una voce nel runlevel"
+
+#: modules/services.bm:35
+#, sh-format
+msgid "Delete Runlevel-Entry"
+msgstr "Elimina una voce dal runlevel"
+
+#: modules/services.bm:51
+#, sh-format
+msgid "Boot"
+msgstr "Avvio"
+
+#: modules/services.bm:52
+#, sh-format
+msgid "Enable/Disable Services at Boot"
+msgstr "Abilita/disabilita servizi all'avvio"
+
+#: modules/services.bm:53
+#, sh-format
+msgid "Manage Services"
+msgstr "Amministra servizi"
+
+#: modules/software.bm:10 modules/software.bm:134
+#, sh-format
+msgid "Software"
+msgstr "Software"
+
+#: modules/software.bm:30
+#, sh-format
+msgid "You must be in runlevel 3 and out of X to run this script."
+msgstr "Devi essere nel runlevel3 e non in X per eseguire questo script."
+
+#: modules/software.bm:36 modules/software.bm:107
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"Impossibile connettersi a sidux.com. Non è possibile verificare la presenza"
+"di problemi riguardo il dist-upgrade. Continuare ugualmente?"
+
+#: modules/software.bm:40 modules/software.bm:110
+#, sh-format
+msgid ""
+"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
+"com for more information!"
+msgstr ""
+"Ci sono problemi riguardo l'aggiornamento. Non effettuare il dist-upgrade!"
+"Visitare sidux.com per ulteriori informazioni!"
+
+#: modules/software.bm:43 modules/software.bm:112
+#, sh-format
+msgid "At the moment there are no DU-warnings!"
+msgstr "Al momento non ci sono problemi con il dist-upgrade!"
+
+#: modules/software.bm:118
+#, sh-format
+msgid "Please choose a date..."
+msgstr "Selezionare una data..."
+
+#: modules/software.bm:135
+#, sh-format
+msgid "Run Dist-Upgrade"
+msgstr "Esegui dist-upgrade"
+
+#: modules/software.bm:136
+#, sh-format
+msgid "Show DU-Warnings"
+msgstr "Mostra problemi del dist-upgrade"
+
+#: modules/software.bm:137
+#, sh-format
+msgid "Show DU-Log"
+msgstr "Mostra il registro del dist-upgrade"
+
+#: modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr "Errore: Devi essere root per eseguire questo script!"
+
+#: modules/interface:18
+#, sh-format
+msgid "Main Menu"
+msgstr "Menu principale"
+
+#: modules/interface:19
+#, sh-format
+msgid "Exit"
+msgstr "Esci"
+
