@@ -33280,6 +33280,8 @@ ac_config_files="$ac_config_files po/fr/Makefile"
 
 ac_config_files="$ac_config_files po/hr/Makefile"
 
+ac_config_files="$ac_config_files po/it/Makefile"
+
 ac_config_files="$ac_config_files po/nl/Makefile"
 
 ac_config_files="$ac_config_files po/ro/Makefile"
@@ -33927,6 +33929,7 @@ do
     "po/es/Makefile") CONFIG_FILES="$CONFIG_FILES po/es/Makefile" ;;
     "po/fr/Makefile") CONFIG_FILES="$CONFIG_FILES po/fr/Makefile" ;;
     "po/hr/Makefile") CONFIG_FILES="$CONFIG_FILES po/hr/Makefile" ;;
+    "po/it/Makefile") CONFIG_FILES="$CONFIG_FILES po/it/Makefile" ;;
     "po/nl/Makefile") CONFIG_FILES="$CONFIG_FILES po/nl/Makefile" ;;
     "po/ro/Makefile") CONFIG_FILES="$CONFIG_FILES po/ro/Makefile" ;;
     "po/ru/Makefile") CONFIG_FILES="$CONFIG_FILES po/ru/Makefile" ;;
