@@ -1,10 +1,5 @@
-siduxcc (0.5.8.5) UNRELEASED; urgency=low
+siduxcc (0.5.9) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * menu: siduxcc --> sidux Control Center
   * icons: images/ added
   * siduxcc_hermes: .desktop: siduxcc-hermes -> Hermes (upgrade sentinel)
