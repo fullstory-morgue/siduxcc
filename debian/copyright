@@ -85,6 +85,7 @@ Copyright:
 	siduxcc/icons/hi48-app-siduxcc_lan_up.png
 	siduxcc/icons/hi32-app-siduxcc_lan_down.png
 	siduxcc/icons/hi48-app-siduxcc_lan_down.png
+	
 	eraser.png                  (in siduxcc/siduxcc_display/displaydialog.ui)
 	fonts.png                   (in siduxcc/siduxcc_display/displaydialog.ui)
 	view_text.png               (in siduxcc/siduxcc_display/displaydialog.ui)
@@ -95,6 +96,7 @@ Copyright:
 	penguin.png                 (in siduxcc/siduxcc_kernel/kerneldialog.ui)
 	                            (in siduxcc/siduxcc_kmain/kmaindialog.ui)
 	button_cancel.png           (in siduxcc/siduxcc_kmain/kmaindialog.ui)
+	adept_commit.png            (siduxcc/icons/hi48-app-siduxcc_lan_down.png/ok.png)
 
 
 	The following icons are from kdebase-data

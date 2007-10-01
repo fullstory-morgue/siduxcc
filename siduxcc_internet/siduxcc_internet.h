@@ -1,5 +1,5 @@
 /*
- * siduxcc_network.h
+ * siduxcc_internet.h
  *
  * Copyright (c) 2007 Fabian Wuertz
  *
@@ -17,18 +17,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef SIDUXCC_NETWORK_H_
-#define SIDUXCC_NETWORK_H_
+#ifndef SIDUXCC_INTERNET_H_
+#define SIDUXCC_INTERNET_H_
 
-#include "networkdialog.h"
+#include "internetdialog.h"
 #include "../libsiduxcc/process.h"
 
-class siduxcc_network : public NetworkDialog
+class siduxcc_internet : public InternetDialog
 {
 	Q_OBJECT
 
 	public:
-		siduxcc_network(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
+		siduxcc_internet(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
 		void save();
 	
@@ -36,16 +36,16 @@ class siduxcc_network : public NetworkDialog
 		Process* shell;
 	
 	public slots:
-		virtual void nwSlot();
-		virtual void nwlSlot();
+		virtual void m1Slot();
+		virtual void m2Slot();
+		virtual void m3Slot();
+		virtual void m4Slot();
+		virtual void d1Slot();
+		virtual void d2Slot();
+		virtual void d3Slot();
+		virtual void i1Slot();
 
-		virtual void getNetworkcards();
-
-		virtual void ncInfoSlot();
-		virtual void ncConfigSlot();
-		virtual void ncEnableSlot();
-		virtual void ncDisableSlot();
-	
+		virtual void getBrowsers();
 };
 
 #endif

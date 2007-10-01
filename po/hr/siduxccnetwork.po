@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccnetwork\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-01 15:08+0200\n"
 "PO-Revision-Date: 2007-09-10 05:17+0200\n"
 "Last-Translator: cobra <cobra@sidux.com>\n"
 "Language-Team:  <de@li.org>\n"
@@ -16,111 +16,106 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: file networkdialog.ui line 17
-#. i18n: file networkdialog.ui line 434
+#. i18n: file networkdialog.ui line 364
 #. i18n: file networkdialog.ui line 17
-#. i18n: file networkdialog.ui line 434
-#: rc.cpp:3 rc.cpp:73 rc.cpp:163 rc.cpp:233
+#. i18n: file networkdialog.ui line 364
+#: rc.cpp:3 rc.cpp:67 rc.cpp:83 rc.cpp:147
 #, no-c-format
 msgid "Network"
 msgstr "Mreža"
 
 #. i18n: file networkdialog.ui line 35
-#: rc.cpp:6 rc.cpp:166
+#: rc.cpp:6 rc.cpp:86
 #, no-c-format
 msgid "&Netcardconfig"
 msgstr "Netcardconfig"
 
 #. i18n: file networkdialog.ui line 40
-#: rc.cpp:9 rc.cpp:169
+#: rc.cpp:9 rc.cpp:89
 #, no-c-format
 msgid "Interface"
 msgstr "Međusklop"
 
 #. i18n: file networkdialog.ui line 51
-#: rc.cpp:12 rc.cpp:172
+#: rc.cpp:12 rc.cpp:92
 #, no-c-format
 msgid "Ip Address    "
 msgstr "Ip Adresa"
 
 #. i18n: file networkdialog.ui line 62
-#: rc.cpp:15 rc.cpp:175
+#: rc.cpp:15 rc.cpp:95
 #, no-c-format
 msgid "Method"
 msgstr "Metoda"
 
 #. i18n: file networkdialog.ui line 73
-#: rc.cpp:18 rc.cpp:178
+#: rc.cpp:18 rc.cpp:98
 #, no-c-format
 msgid "Boot"
 msgstr "Autostart"
 
 #. i18n: file networkdialog.ui line 84
-#: rc.cpp:21 rc.cpp:181
+#: rc.cpp:21 rc.cpp:101
 #, no-c-format
 msgid "Driver"
 msgstr "Pogonitelj"
 
 #. i18n: file networkdialog.ui line 95
-#: rc.cpp:24 rc.cpp:184
+#: rc.cpp:24 rc.cpp:104
 #, no-c-format
 msgid "Slot"
 msgstr "Utičnica"
 
 #. i18n: file networkdialog.ui line 139
-#: rc.cpp:27 rc.cpp:187
+#: rc.cpp:27 rc.cpp:107
 #, no-c-format
 msgid "List of configured network devices"
 msgstr "Lista konfiguriranih mrežnih kartica"
 
 #. i18n: file networkdialog.ui line 169
-#. i18n: file networkdialog.ui line 677
-#. i18n: file networkdialog.ui line 1019
-#. i18n: file networkdialog.ui line 169
-#. i18n: file networkdialog.ui line 677
-#. i18n: file networkdialog.ui line 1019
-#: rc.cpp:33 rc.cpp:107 rc.cpp:153 rc.cpp:193 rc.cpp:267 rc.cpp:313
+#: rc.cpp:33 rc.cpp:113
 #, no-c-format
 msgid "Alt+C"
 msgstr "Alt+C"
 
 #. i18n: file networkdialog.ui line 172
-#: rc.cpp:36 rc.cpp:196
+#: rc.cpp:36 rc.cpp:116
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "Promjeni postavke izabranog uređaja"
 
 #. i18n: file networkdialog.ui line 199
-#: rc.cpp:39 rc.cpp:199
+#: rc.cpp:39 rc.cpp:119
 #, no-c-format
 msgid "En&able"
 msgstr "Aktivirati"
 
 #. i18n: file networkdialog.ui line 202
-#: rc.cpp:42 rc.cpp:202
+#: rc.cpp:42 rc.cpp:122
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file networkdialog.ui line 229
-#: rc.cpp:45 rc.cpp:205
+#: rc.cpp:45 rc.cpp:125
 #, no-c-format
 msgid "Disa&ble"
 msgstr "Deaktivirati"
 
 #. i18n: file networkdialog.ui line 232
-#: rc.cpp:48 rc.cpp:208
+#: rc.cpp:48 rc.cpp:128
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
 
 #. i18n: file networkdialog.ui line 277
-#: rc.cpp:52 rc.cpp:212
+#: rc.cpp:52 rc.cpp:132
 #, no-c-format
 msgid "<b>Mac Address:</b>"
 msgstr "<b>MAC-Adresa:</b>"
 
 #. i18n: file networkdialog.ui line 293
-#: rc.cpp:55 rc.cpp:215
+#: rc.cpp:55 rc.cpp:135
 #, no-c-format
 msgid "<b>Description:</b>"
 msgstr "<b>Opis:</b>"
@@ -129,162 +124,91 @@ msgstr "<b>Opis:</b>"
 #. i18n: file networkdialog.ui line 325
 #. i18n: file networkdialog.ui line 309
 #. i18n: file networkdialog.ui line 325
-#: rc.cpp:58 rc.cpp:61 rc.cpp:218 rc.cpp:221
+#: rc.cpp:58 rc.cpp:61 rc.cpp:138 rc.cpp:141
 #, no-c-format
 msgid "xxx"
 msgstr "xxx"
 
 #. i18n: file networkdialog.ui line 338
-#: rc.cpp:64 rc.cpp:224
-#, no-c-format
-msgid "Br&owser"
-msgstr "Webbrowser"
-
-#. i18n: file networkdialog.ui line 364
-#: rc.cpp:67 rc.cpp:227
-#, no-c-format
-msgid "sidux-Browser (require root access)"
-msgstr "sidux-Browser (potrebne su root-privilegije)"
-
-#. i18n: file networkdialog.ui line 408
-#: rc.cpp:70 rc.cpp:230
+#: rc.cpp:64 rc.cpp:144
 #, no-c-format
 msgid "Ndiswr&apper"
 msgstr "Ndiswrapper"
 
-#. i18n: file networkdialog.ui line 468
-#: rc.cpp:76 rc.cpp:236
+#. i18n: file networkdialog.ui line 398
+#: rc.cpp:70 rc.cpp:150
 #, no-c-format
 msgid "Ndiswrapper"
 msgstr "Ndiswrapper"
 
-#. i18n: file networkdialog.ui line 499
-#: rc.cpp:80 rc.cpp:240
+#. i18n: file networkdialog.ui line 429
+#: rc.cpp:74 rc.cpp:154
 #, no-c-format
 msgid "Cards known to work"
 msgstr "Kartice koje su poznate da rade"
 
-#. i18n: file networkdialog.ui line 536
-#: rc.cpp:83 rc.cpp:243
+#. i18n: file networkdialog.ui line 466
+#: rc.cpp:77 rc.cpp:157
 #, no-c-format
 msgid "Show lis&t"
 msgstr "Pokaži listu"
 
-#. i18n: file networkdialog.ui line 539
-#: rc.cpp:86 rc.cpp:246
+#. i18n: file networkdialog.ui line 469
+#: rc.cpp:80 rc.cpp:160
 #, no-c-format
 msgid "Alt+T"
 msgstr "Alt+T"
 
-#. i18n: file networkdialog.ui line 549
-#: rc.cpp:89 rc.cpp:249
-#, no-c-format
-msgid "&Modem"
-msgstr "Modem"
+#~ msgid "Br&owser"
+#~ msgstr "Webbrowser"
 
-#. i18n: file networkdialog.ui line 575
-#. i18n: file networkdialog.ui line 640
-#. i18n: file networkdialog.ui line 705
-#. i18n: file networkdialog.ui line 770
-#. i18n: file networkdialog.ui line 575
-#. i18n: file networkdialog.ui line 640
-#. i18n: file networkdialog.ui line 705
-#. i18n: file networkdialog.ui line 770
-#: rc.cpp:92 rc.cpp:101 rc.cpp:110 rc.cpp:119 rc.cpp:252 rc.cpp:261 rc.cpp:270
-#: rc.cpp:279
-#, no-c-format
-msgid "Modem"
-msgstr "Modem"
+#~ msgid "sidux-Browser (require root access)"
+#~ msgstr "sidux-Browser (potrebne su root-privilegije)"
 
-#. i18n: file networkdialog.ui line 609
-#: rc.cpp:95 rc.cpp:255
-#, no-c-format
-msgid "/de&v/modem"
-msgstr "/dev/modem"
+#~ msgid "&Modem"
+#~ msgstr "Modem"
 
-#. i18n: file networkdialog.ui line 612
-#: rc.cpp:98 rc.cpp:258
-#, no-c-format
-msgid "Alt+V"
-msgstr "Alt+V"
+#~ msgid "Modem"
+#~ msgstr "Modem"
 
-#. i18n: file networkdialog.ui line 674
-#: rc.cpp:104 rc.cpp:264
-#, no-c-format
-msgid "GPRS &connection"
-msgstr "GPRS Spoj"
+#~ msgid "/de&v/modem"
+#~ msgstr "/dev/modem"
 
-#. i18n: file networkdialog.ui line 739
-#: rc.cpp:113 rc.cpp:273
-#, no-c-format
-msgid "M&y PPP Conf"
-msgstr "My PPP Conf"
+#~ msgid "Alt+V"
+#~ msgstr "Alt+V"
 
-#. i18n: file networkdialog.ui line 742
-#. i18n: file networkdialog.ui line 954
-#. i18n: file networkdialog.ui line 742
-#. i18n: file networkdialog.ui line 954
-#: rc.cpp:116 rc.cpp:144 rc.cpp:276 rc.cpp:304
-#, no-c-format
-msgid "Alt+Y"
-msgstr "Alt+Y"
+#~ msgid "GPRS &connection"
+#~ msgstr "GPRS Spoj"
 
-#. i18n: file networkdialog.ui line 807
-#: rc.cpp:122 rc.cpp:282
-#, no-c-format
-msgid "Modem Dialer"
-msgstr "Modem Dialer"
+#~ msgid "M&y PPP Conf"
+#~ msgstr "My PPP Conf"
 
-#. i18n: file networkdialog.ui line 820
-#: rc.cpp:126 rc.cpp:286
-#, no-c-format
-msgid "DS&L/ISDN"
-msgstr "DSL/ISDN"
+#~ msgid "Alt+Y"
+#~ msgstr "Alt+Y"
 
-#. i18n: file networkdialog.ui line 846
-#. i18n: file networkdialog.ui line 914
-#. i18n: file networkdialog.ui line 1047
-#. i18n: file networkdialog.ui line 846
-#. i18n: file networkdialog.ui line 914
-#. i18n: file networkdialog.ui line 1047
-#: rc.cpp:129 rc.cpp:138 rc.cpp:156 rc.cpp:289 rc.cpp:298 rc.cpp:316
-#, no-c-format
-msgid "DSL"
-msgstr "DSL"
+#~ msgid "Modem Dialer"
+#~ msgstr "Modem Dialer"
 
-#. i18n: file networkdialog.ui line 883
-#: rc.cpp:132 rc.cpp:292
-#, no-c-format
-msgid "Frit&z!Card DSL PPPoE"
-msgstr "Fritz!Card DSL PPPoE"
+#~ msgid "DS&L/ISDN"
+#~ msgstr "DSL/ISDN"
 
-#. i18n: file networkdialog.ui line 886
-#: rc.cpp:135 rc.cpp:295
-#, no-c-format
-msgid "Alt+Z"
-msgstr "Alt+Z"
+#~ msgid "DSL"
+#~ msgstr "DSL"
 
-#. i18n: file networkdialog.ui line 951
-#: rc.cpp:141 rc.cpp:301
-#, no-c-format
-msgid "M&y PPPoE Conf"
-msgstr "My PPPoE Conf"
+#~ msgid "Frit&z!Card DSL PPPoE"
+#~ msgstr "Fritz!Card DSL PPPoE"
 
-#. i18n: file networkdialog.ui line 982
-#: rc.cpp:147 rc.cpp:307
-#, no-c-format
-msgid "ISDN"
-msgstr "ISDN"
+#~ msgid "Alt+Z"
+#~ msgstr "Alt+Z"
 
-#. i18n: file networkdialog.ui line 1016
-#: rc.cpp:150 rc.cpp:310
-#, no-c-format
-msgid "&CAPI ISDN Conf"
-msgstr "CAPI ISDN Conf"
+#~ msgid "M&y PPPoE Conf"
+#~ msgstr "My PPPoE Conf"
 
-#. i18n: file networkdialog.ui line 1084
-#: rc.cpp:159 rc.cpp:319
-#, no-c-format
-msgid "PPPoE Conf"
-msgstr "PPPoE Conf"
+#~ msgid "ISDN"
+#~ msgstr "ISDN"
 
+#~ msgid "&CAPI ISDN Conf"
+#~ msgstr "CAPI ISDN Conf"
+
+#~ msgid "PPPoE Conf"
+#~ msgstr "PPPoE Conf"

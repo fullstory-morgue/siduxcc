@@ -27,6 +27,7 @@
 #include <kprocess.h>
 #include <qwidgetstack.h>
 #include <qcombobox.h>
+#include <qtabwidget.h>
 
 #include "siduxcc_kernel.h"
 
@@ -43,6 +44,8 @@ siduxcc_kernel::siduxcc_kernel(QWidget *parent, const char *name, const QStringL
 	if (getuid() == 0)
 	{
 		removeButton->setEnabled(true);
+		installPushButton2->setEnabled(true);
+		clearPushButton->setEnabled(true);
 	}
 
 	load();
@@ -50,9 +53,11 @@ siduxcc_kernel::siduxcc_kernel(QWidget *parent, const char *name, const QStringL
 
 void siduxcc_kernel::load()
 {
-	getCurrentKernel();
-	getNewKernels();
+	//currentKernel->setText( getCurrentKernel() );
+
+	getKernels();
 	getOldKernels();
+	getKernelDirs();
 
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
@@ -62,43 +67,37 @@ void siduxcc_kernel::load()
 //------------------------------------------------------------------------------
 // get Kernels
 
-void siduxcc_kernel::getCurrentKernel()
+QString siduxcc_kernel::getCurrentKernel()
 {
 	this->shell->setCommand("uname -r");
 	this->shell->start(true);
-	currentKernel->setText(this->shell->getBuffer().stripWhiteSpace());
+	return this->shell->getBuffer().stripWhiteSpace();
 }
 
-void siduxcc_kernel::getNewKernels()
+void siduxcc_kernel::getKernels()
 {
 
 	//QPixmap kernelImg("/usr/share/icons/hicolor/32x32/apps/siduxcc_hardware.png");
 	QPixmap kernelImg("/usr/share/siduxcc/images/spacer.png");
-	installList->clear();
 
-	if(comboBox->currentText() == i18n("default"))
-	{ 
-		this->shell->setCommand("siduxcc kernel newestKernel");
-		this->shell->start(true);
-	}
-	else
-	{
-		this->shell->setCommand("siduxcc kernel experimentalKernel");
-		this->shell->start(true);
-	}
-	QString selectedKernel= this->shell->getBuffer().stripWhiteSpace();
-	if(selectedKernel != "")
-	{
-		installList->insertItem(kernelImg,selectedKernel);
-		if(getuid() == 0) // root access
-		{
-			installButton->setEnabled(true);
-		}
-	}
-	else
-	{
-		installButton->setEnabled(false);
-	}
+	installListBox->clear();
+
+	// get currentKernel
+	this->shell->setCommand("uname -r");
+	this->shell->start(true);
+	installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("local kernel")+")");
+
+	// get newestKernel
+	this->shell->setCommand("siduxcc kernel newestKernel");
+	this->shell->start(true);
+	if(this->shell->getBuffer().stripWhiteSpace() != "" )
+		installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("newest")+")");
+
+	// get newestKernel
+	this->shell->setCommand("siduxcc kernel experimentalKernel");
+	this->shell->start(true);
+	if(this->shell->getBuffer().stripWhiteSpace() != "" )
+		installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("experimental")+")");
 
 
 }
@@ -146,44 +145,148 @@ void siduxcc_kernel::loadKonsole()
 //------------------------------------------------------------------------------
 // kernel-installation
 
+void siduxcc_kernel::enableInstallButton()
+{
+	int i = installListBox->currentItem();
+
+	if (getuid() == 0 && i > 0)
+		installPushButton1->setEnabled(true);
+	else
+		installPushButton1->setEnabled(false);
+}
+
 void siduxcc_kernel::install()
 {
 
-	if (installList->currentText() == currentKernel->text() )
+	installKernel =  QStringList::split( " ", installListBox->currentText() )[0];
+
+	if (installKernel == getCurrentKernel() )
 	{
 		KMessageBox::information(this, i18n("The versions of the new and the current Kernel are the same!") );
+		return;
 	}
-	else
+
+
+	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
 	{
+		KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );	
 
-		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
-		{
-			KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );	
+		// change widget
+		widgetStack->raiseWidget(1);
 
-			// change widget
-			widgetStack->raiseWidget(1);
-	
-			// run command
-			QStrList run; run.append( "siduxcc" ); 
-				run.append( "kernel" );
-				run.append( "installKernel" );
-				run.append( installList->currentText() );
-				if(comboBox->currentText() == i18n("experimental"))
-				{
-					run.append( "exp" );
-				}
-			terminal()->startProgram( "siduxcc", run );
-	
-			connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
-	
-		}
+		// run command
+		QStrList run; run.append( "siduxcc" ); 
+			run.append( "kernel" );
+			run.append( "installKernel" );
+			run.append( installKernel );
+			if( QStringList::split( " ", installListBox->currentText() )[1] == "("+i18n("experimental")+")" )
+			{
+				run.append( "exp" );
+			}
+		terminal()->startProgram( "siduxcc", run );
 
+	
+
+		connect( konsole, SIGNAL(destroyed()), SLOT( back1() ) );
+
+	}
+
+}
+
+
+void siduxcc_kernel::back1()
+{
+	widgetStack->raiseWidget(0);
+	tabWidget->setCurrentPage(2);
+	load();
+	comboBox->setCurrentText("kernel-"+installKernel);
+}
+
+
+//------------------------------------------------------------------------------
+// kernelModules
+
+
+void siduxcc_kernel::getKernelDirs()
+{
+
+	comboBox->clear();
+	this->shell->setCommand("siduxcc kernel getKernelDirs");
+	this->shell->start(true);
+	comboBox->insertStringList( QStringList::split( "/\n", this->shell->getBuffer() ) );
+	showModules(comboBox->currentText() );
+
+}
+
+void siduxcc_kernel::showModules(const QString& kernel)
+{
+
+	modulesListBox->clear();
+	this->shell->setCommand("ls /usr/src/kernel-downloads/"+kernel+"/*.deb  | cut -f6 -d/" );
+	this->shell->start(true);
+	QStringList mods = QStringList::split( "\n", this->shell->getBuffer() );
+	QPixmap okImg = QPixmap( "/usr/share/siduxcc/images/ok.png");
+	QPixmap notokImg = QPixmap( "/usr/share/siduxcc/images/notok.png");
+	QStringList tmp;
+	for(int i = 0; i < mods.count(); i++)
+	{
+		tmp = QStringList::split( "_", mods[i] );
+		if(isInstalled(tmp[0]))
+			modulesListBox->insertItem(okImg,mods[i]);
+		else	
+			modulesListBox->insertItem(notokImg,mods[i]);
 	}
 }
 
-void siduxcc_kernel::back()
+void siduxcc_kernel::installModules()
+{
+
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
+
+	QStrList run;
+	run.append( "siduxcc" );
+	run.append( "kernel" );
+	run.append( "installModules" );
+
+	for(int i = 0; i < modulesListBox->count(); i++)
+	{
+		if ( modulesListBox->isSelected(i) )
+		{
+			run.append( comboBox->currentText()+"/"+modulesListBox->text(i) );
+		}
+	}
+
+	//if (run.count() > 4) return;
+
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	// run command
+	terminal()->startProgram( "siduxcc", run );
+
+	connect( konsole, SIGNAL(destroyed()), SLOT( back2() ) );
+}
+
+
+void siduxcc_kernel::clear()
+{
+
+	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to remove the stored kernel files?") ) )
+	{
+		this->shell->setCommand("rm -rf /usr/src/kernel-downloads/"+comboBox->currentText() );
+		this->shell->start(true);
+		this->shell->setCommand("rm -f /usr/src/kernel-downloads/"+comboBox->currentText()+".zip" );
+		this->shell->start(true);
+		getKernelDirs();
+	}
+
+}
+
+void siduxcc_kernel::back2()
 {
 	widgetStack->raiseWidget(0);
+	tabWidget->setCurrentPage(2);
 	load();
 }
 
@@ -206,12 +309,27 @@ void siduxcc_kernel::remove()
 		run.append( removeList->currentText() );
 	terminal()->startProgram( "siduxcc", run );
 			
-	connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+	connect( konsole, SIGNAL(destroyed()), SLOT( back1() ) );
 
 	//this->shell->setCommand("kernel-remover -x "+removeList->currentText());
 	//this->shell->start(true);
 	//KMessageBox::information(this, removeList->currentText()+" "+i18n("removed")+"" );
 	//getOldKernels();
+}
+
+//------------------------------------------------------------------------------
+// functions
+
+
+bool siduxcc_kernel::isInstalled(QString package)
+{
+	this->shell->setCommand("LANG=C apt-cache policy "+package+" | grep Installed | gawk '{print $2}'");
+	this->shell->start(true);
+
+	if(this->shell->getBuffer().stripWhiteSpace() == "(none)"  || this->shell->getBuffer().stripWhiteSpace() == "" )
+		return FALSE;
+	else
+		return TRUE;
 }
 
 

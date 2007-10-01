@@ -1,8 +1,19 @@
 siduxcc (0.5.8.5) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 28 Sep 2007 09:12:08 +0200
+  [ Fabian Wuertz ]
+  * NOT RELEASED YET
+  * menu: siduxcc --> sidux Control Center
+  * icons: images/ added
+  * siduxcc_hermes: .desktop: siduxcc-hermes -> Hermes (upgrade sentinel)
+  * siduxcc_info: .desktop: SysInfo -> System Info
+  * siduxcc_network: split into siduxcc_network and siduxcc_internet
+  * siduxcc_kernel: module installation added
+  * siduxcc_kmain: .destop: iduxcc -> siduxcc (overview)
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 01 Oct 2007 18:19:42 +0200
 
 siduxcc (0.5.8.4) unstable; urgency=low
 

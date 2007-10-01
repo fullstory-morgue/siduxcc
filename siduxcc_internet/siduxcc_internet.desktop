@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Icon=internet
+Type=Application
+Exec=kcmshell siduxcc_internet
+
+X-KDE-RootOnly=true
+X-KDE-Library=siduxcc_internet
+X-KDE-FactoryName=siduxcc_internet
+X-KDE-ParentApp=kcontrol
+
+Name=Internet
+Name[de]=Internet
+Comment=Configure your Internet
+Comment[de]=Internet-Einstellungen
+
+Categories=Qt;KDE;X-KDE-settings-sidux;siduxcc

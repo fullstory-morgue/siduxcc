@@ -34,9 +34,14 @@ class siduxcc_kernel : public KernelDialog
 	public:
 		siduxcc_kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
-		void getCurrentKernel();
-		void getNewKernels();
+		QString getCurrentKernel();
+		QString installKernel;
+		void getKernels();
 		void getOldKernels();
+		void getKernelDirs();
+		bool isInstalled(QString);
+
+
 
 		ExtTerminalInterface *terminal()
 		{
@@ -51,19 +56,13 @@ class siduxcc_kernel : public KernelDialog
 	
 	public slots:
 		virtual void remove();
+		virtual void clear();
 		virtual void install();
-		virtual void back();
-
-		/* virtual void update1();
-		virtual void update2();
-		virtual void download();
-		virtual void unzip();
-		virtual void install();
-		virtual void finish();
+		virtual void showModules(const QString&);
+		virtual void installModules();
 		virtual void back1();
 		virtual void back2();
-		virtual void details(); */
-		//virtual void getOutput(KProcess *, char *, int);
+		virtual void enableInstallButton();
 
 	protected:
 		void loadKonsole();

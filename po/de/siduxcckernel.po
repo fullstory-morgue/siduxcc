@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckernel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-24 14:19+0200\n"
-"PO-Revision-Date: 2007-08-24 14:20+0200\n"
+"POT-Creation-Date: 2007-10-01 15:08+0200\n"
+"PO-Revision-Date: 2007-10-01 16:44+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,21 +16,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#. i18n: file kerneldialog.ui line 81
-#: siduxcc_kernel.cpp:79 rc.cpp:10 rc.cpp:45
-#, no-c-format
-msgid "default"
-msgstr "standard"
+#: siduxcc_kernel.cpp:88
+msgid "local kernel"
+msgstr "Lokaler Kernel"
 
-#: siduxcc_kernel.cpp:154
+#: siduxcc_kernel.cpp:94
+msgid "newest"
+msgstr "neuster"
+
+#: siduxcc_kernel.cpp:100 siduxcc_kernel.cpp:182
+msgid "experimental"
+msgstr "experimentell"
+
+#: siduxcc_kernel.cpp:165
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: siduxcc_kernel.cpp:159
+#: siduxcc_kernel.cpp:170
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Wollen Sie wirklich einen neuen Kernel installieren?"
 
-#: siduxcc_kernel.cpp:161 siduxcc_kernel.cpp:197
+#: siduxcc_kernel.cpp:172 siduxcc_kernel.cpp:301
 msgid ""
 "Please don't close the window or press the Ok/Cancel button, before it's "
 "written, that the  process is done!"
@@ -39,63 +45,67 @@ msgstr ""
 "drücken, bevor die Nachricht erscheint, dass die Installation abgeschlossen "
 "ist!"
 
-#. i18n: file kerneldialog.ui line 86
-#: siduxcc_kernel.cpp:171 rc.cpp:13 rc.cpp:48
-#, no-c-format
-msgid "experimental"
-msgstr "experimentel"
+#: siduxcc_kernel.cpp:276
+msgid "Are you sure you want to remove the stored kernel files?"
+msgstr "Wollen Sie wirklich edie archivierten Kernel Dateien löschen?"
 
 #. i18n: file kerneldialog.ui line 17
-#: rc.cpp:3 rc.cpp:38
+#: rc.cpp:3 rc.cpp:39
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
 #. i18n: file kerneldialog.ui line 61
-#: rc.cpp:6 rc.cpp:41
+#: rc.cpp:6 rc.cpp:42
 #, no-c-format
 msgid "&New Kernels"
 msgstr "Neue Kernels"
 
-#. i18n: file kerneldialog.ui line 152
-#: rc.cpp:16 rc.cpp:51
-#, no-c-format
-msgid "Lokal Kernel:"
-msgstr "Lokaler Kernel:"
-
-#. i18n: file kerneldialog.ui line 168
-#: rc.cpp:19 rc.cpp:54
-#, no-c-format
-msgid "xxx"
-msgstr "xxx"
-
-#. i18n: file kerneldialog.ui line 187
-#: rc.cpp:22 rc.cpp:57
+#. i18n: file kerneldialog.ui line 137
+#. i18n: file kerneldialog.ui line 292
+#. i18n: file kerneldialog.ui line 137
+#. i18n: file kerneldialog.ui line 292
+#: rc.cpp:10 rc.cpp:29 rc.cpp:46 rc.cpp:65
 #, no-c-format
 msgid "inst&all"
 msgstr "installieren"
 
-#. i18n: file kerneldialog.ui line 190
-#: rc.cpp:25 rc.cpp:60
+#. i18n: file kerneldialog.ui line 140
+#. i18n: file kerneldialog.ui line 295
+#. i18n: file kerneldialog.ui line 140
+#. i18n: file kerneldialog.ui line 295
+#: rc.cpp:13 rc.cpp:32 rc.cpp:49 rc.cpp:68
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
-#. i18n: file kerneldialog.ui line 216
-#: rc.cpp:28 rc.cpp:63
+#. i18n: file kerneldialog.ui line 150
+#: rc.cpp:16 rc.cpp:52
 #, no-c-format
 msgid "&Old Kernels"
 msgstr "Alte Kernels"
 
-#. i18n: file kerneldialog.ui line 279
-#: rc.cpp:32 rc.cpp:67
+#. i18n: file kerneldialog.ui line 194
+#: rc.cpp:20 rc.cpp:56
 #, no-c-format
 msgid "re&move"
 msgstr "löschen"
 
-#. i18n: file kerneldialog.ui line 282
-#: rc.cpp:35 rc.cpp:70
+#. i18n: file kerneldialog.ui line 197
+#: rc.cpp:23 rc.cpp:59
 #, no-c-format
 msgid "Alt+M"
 msgstr "Alt+M"
+
+#. i18n: file kerneldialog.ui line 242
+#: rc.cpp:26 rc.cpp:62
+#, no-c-format
+msgid "&Modules"
+msgstr "Module"
+
+#. i18n: file kerneldialog.ui line 306
+#: rc.cpp:35 rc.cpp:71
+#, no-c-format
+msgid "clear"
+msgstr "löschen"
 

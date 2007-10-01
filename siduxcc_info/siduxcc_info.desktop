@@ -1,10 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
-Icon=siduxcc
+Icon=info
 Type=Application
 Exec=siduxcc_info
 
-Name=SysInfo
+Name=System Info
 Comment=Information about sidux
 Comment[de]=Informationen über sidux
 

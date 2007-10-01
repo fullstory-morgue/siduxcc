@@ -1,0 +1,163 @@
+# translation of siduxccinternet.po to
+# translation of siduxccnetwork.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxccinternet\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-01 15:08+0200\n"
+"PO-Revision-Date: 2007-10-01 16:46+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file internetdialog.ui line 17
+#: rc.cpp:3 rc.cpp:88
+#, no-c-format
+msgid "Internet"
+msgstr "Schnittstelle"
+
+#. i18n: file internetdialog.ui line 35
+#: rc.cpp:6 rc.cpp:91
+#, no-c-format
+msgid "Br&owser"
+msgstr "Webbrowser"
+
+#. i18n: file internetdialog.ui line 61
+#: rc.cpp:9 rc.cpp:94
+#, no-c-format
+msgid "sidux-Browser (require root access)"
+msgstr "sidux-Browser (benötigt Root-Rechte)"
+
+#. i18n: file internetdialog.ui line 105
+#: rc.cpp:12 rc.cpp:97
+#, no-c-format
+msgid "&Modem"
+msgstr "Modem"
+
+#. i18n: file internetdialog.ui line 131
+#. i18n: file internetdialog.ui line 196
+#. i18n: file internetdialog.ui line 261
+#. i18n: file internetdialog.ui line 326
+#. i18n: file internetdialog.ui line 131
+#. i18n: file internetdialog.ui line 196
+#. i18n: file internetdialog.ui line 261
+#. i18n: file internetdialog.ui line 326
+#: rc.cpp:15 rc.cpp:24 rc.cpp:33 rc.cpp:42 rc.cpp:100 rc.cpp:109 rc.cpp:118
+#: rc.cpp:127
+#, no-c-format
+msgid "Modem"
+msgstr "Modem"
+
+#. i18n: file internetdialog.ui line 165
+#: rc.cpp:18 rc.cpp:103
+#, no-c-format
+msgid "/de&v/modem"
+msgstr "/dev/modem"
+
+#. i18n: file internetdialog.ui line 168
+#: rc.cpp:21 rc.cpp:106
+#, no-c-format
+msgid "Alt+V"
+msgstr "Alt+V"
+
+#. i18n: file internetdialog.ui line 230
+#: rc.cpp:27 rc.cpp:112
+#, no-c-format
+msgid "GPRS &connection"
+msgstr "GPRS Einwahl"
+
+#. i18n: file internetdialog.ui line 233
+#: rc.cpp:30 rc.cpp:115
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file internetdialog.ui line 295
+#: rc.cpp:36 rc.cpp:121
+#, no-c-format
+msgid "M&y PPP Conf"
+msgstr "My PPP Conf"
+
+#. i18n: file internetdialog.ui line 298
+#. i18n: file internetdialog.ui line 510
+#. i18n: file internetdialog.ui line 298
+#. i18n: file internetdialog.ui line 510
+#: rc.cpp:39 rc.cpp:69 rc.cpp:124 rc.cpp:154
+#, no-c-format
+msgid "Alt+Y"
+msgstr "Alt+Y"
+
+#. i18n: file internetdialog.ui line 363
+#: rc.cpp:45 rc.cpp:130
+#, no-c-format
+msgid "Modem Di&aler"
+msgstr "Modem Dialer"
+
+#. i18n: file internetdialog.ui line 366
+#. i18n: file internetdialog.ui line 575
+#. i18n: file internetdialog.ui line 366
+#. i18n: file internetdialog.ui line 575
+#: rc.cpp:48 rc.cpp:78 rc.cpp:133 rc.cpp:163
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file internetdialog.ui line 376
+#: rc.cpp:51 rc.cpp:136
+#, no-c-format
+msgid "DSL/ISD&N"
+msgstr "DSL/ISDN"
+
+#. i18n: file internetdialog.ui line 402
+#. i18n: file internetdialog.ui line 470
+#. i18n: file internetdialog.ui line 603
+#. i18n: file internetdialog.ui line 402
+#. i18n: file internetdialog.ui line 470
+#. i18n: file internetdialog.ui line 603
+#: rc.cpp:54 rc.cpp:63 rc.cpp:81 rc.cpp:139 rc.cpp:148 rc.cpp:166
+#, no-c-format
+msgid "DSL"
+msgstr "DSL"
+
+#. i18n: file internetdialog.ui line 439
+#: rc.cpp:57 rc.cpp:142
+#, no-c-format
+msgid "Frit&z!Card DSL PPPoE"
+msgstr "Fritz!Card DSL PPPoE"
+
+#. i18n: file internetdialog.ui line 442
+#: rc.cpp:60 rc.cpp:145
+#, no-c-format
+msgid "Alt+Z"
+msgstr "Alt+Z"
+
+#. i18n: file internetdialog.ui line 507
+#: rc.cpp:66 rc.cpp:151
+#, no-c-format
+msgid "M&y PPPoE Conf"
+msgstr "My PPPoE Conf"
+
+#. i18n: file internetdialog.ui line 538
+#: rc.cpp:72 rc.cpp:157
+#, no-c-format
+msgid "ISDN"
+msgstr "ISDN"
+
+#. i18n: file internetdialog.ui line 572
+#: rc.cpp:75 rc.cpp:160
+#, no-c-format
+msgid "C&API ISDN Conf"
+msgstr "CAPI ISDN Conf"
+
+#. i18n: file internetdialog.ui line 640
+#: rc.cpp:84 rc.cpp:169
+#, no-c-format
+msgid "PPPoE Conf"
+msgstr "PPPoE Conf"
+

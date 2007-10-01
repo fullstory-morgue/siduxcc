@@ -69,7 +69,10 @@ installKernel()
 	# $2: exp (experimental)
 
 	# download
-	cd /tmp
+	if [ ! -d /usr/src/kernel-downloads ]; then
+		mkdir /usr/src/kernel-downloads
+	fi
+	cd /usr/src/kernel-downloads
 	if [ ! -w kernel-$1.zip ]; then
 		if [ -z $2 ]; then
 			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/kernel-$1.zip
@@ -80,19 +83,30 @@ installKernel()
 
 	# unzip
 	unzip kernel-$1.zip -d kernel-$1
-	rm -f kernel-$1.zip
+	#rm -f kernel-$1.zip
 
 	#install
 	cd kernel-$1
 	./install-kernel-sidux.sh
 	cd ..
-	rm -rf kernel-$1
+	#rm -rf kernel-$1
 
 	echo ""
 	echo "$(eval_gettext "The installation is finished!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 
+}
+
+installModules()
+{
+	cd /usr/src/kernel-downloads
+	dpkg -i $@
+
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
 }
 
 dlgInstallKernel()
@@ -125,7 +139,6 @@ dlgInstallKernel()
 }
 
 
-
 function getOldKernels()
 {
 	pushd /boot 2>&1 >>/dev/null
@@ -136,6 +149,15 @@ function getOldKernels()
 		fi
 	done
 	popd 2>&1 >> /dev/null
+}
+
+
+function getKernelDirs()
+{
+	if [ -d /usr/src/kernel-downloads ]; then
+		cd /usr/src/kernel-downloads
+		ls -d */
+	fi
 }
 
 function kernel_interface()
@@ -154,4 +176,6 @@ function kernel_interface()
 		esac
 	done
 }
+
+
 

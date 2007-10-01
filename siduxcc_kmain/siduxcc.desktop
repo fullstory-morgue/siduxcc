@@ -4,7 +4,8 @@ Icon=siduxcc
 Type=Application
 Exec=siduxcc-kmain
 
-Name=siduxcc
+Name=siduxcc (overview)
+Name[de]=siduxcc (Überblick)
 Comment=Information about sidux
 Comment[de]=Informationen über sidux
 
