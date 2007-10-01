@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Icon=internet
+Icon=siduxcc_internet
 Type=Application
 Exec=kcmshell siduxcc_internet
 
