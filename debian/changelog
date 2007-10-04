@@ -1,12 +1,7 @@
-siduxcc (0.5.11) UNRELEASED; urgency=low
+siduxcc (0.5.11) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * siduxcc_network: nameservers function added
-  * .desktop: translations added
+  * *.desktop: translations added
 
  -- Fabian Wuertz <xadras@sidux.com>  Thu, 04 Oct 2007 21:48:01 +0200
 
