@@ -9,8 +9,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>1004</width>
-            <height>544</height>
+            <width>752</width>
+            <height>455</height>
         </rect>
     </property>
     <property name="caption">
@@ -406,7 +406,7 @@
                                         </rect>
                                     </property>
                                     <property name="text">
-                                        <string>I&amp;nstall Metapackes</string>
+                                        <string>I&amp;nstall Metapackages</string>
                                     </property>
                                     <property name="accel">
                                         <string>Alt+N</string>

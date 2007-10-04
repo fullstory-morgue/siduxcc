@@ -8,8 +8,9 @@ siduxcc (0.5.10) UNRELEASED; urgency=low
   * po: Makefile.in: remove *.gmo by distclean
   * po: Makefile.am: remove *.gmo by clean
   * po: po files for all languages updated
+  * siduxcc_software: metapackages typo fixed 
 
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 04 Oct 2007 16:47:15 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 04 Oct 2007 16:53:28 +0200
 
 siduxcc (0.5.9) unstable; urgency=low
 

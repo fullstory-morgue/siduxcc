@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 15:50+0200\n"
+"POT-Creation-Date: 2007-10-04 16:50+0200\n"
 "PO-Revision-Date: 2007-08-22 21:08+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -149,6 +149,6 @@ msgstr "Metapachete"
 
 #. i18n: file softwaredialog.ui line 409
 #: rc.cpp:51 rc.cpp:105
-#, no-c-format
-msgid "I&nstall Metapackes"
+#, fuzzy, no-c-format
+msgid "I&nstall Metapackages"
 msgstr "Instaleaza Metapachete"

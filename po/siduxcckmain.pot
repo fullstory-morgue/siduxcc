@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 15:57+0200\n"
+"POT-Creation-Date: 2007-10-04 16:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,75 +28,9 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kmaindialog.ui line 24
-#: kmaindialog.cpp:4671 main.cpp:38 rc.cpp:3
+#: main.cpp:38 rc.cpp:3
 #, no-c-format
 msgid "sidux Control Center"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 214
-#: kmaindialog.cpp:4673 rc.cpp:6 siduxcc_kmain.cpp:55
-#, no-c-format
-msgid "Display"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 222
-#: kmaindialog.cpp:4674 rc.cpp:9 siduxcc_kmain.cpp:61
-#, no-c-format
-msgid "Drivers"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 230
-#: kmaindialog.cpp:4675 rc.cpp:12 siduxcc_kmain.cpp:68
-#, no-c-format
-msgid "Kernel"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 238
-#: kmaindialog.cpp:4676 rc.cpp:15
-#, no-c-format
-msgid "Network"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 303
-#: kmaindialog.cpp:4678 rc.cpp:18 siduxcc_kmain.cpp:85
-#, no-c-format
-msgid "Services"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 311
-#: kmaindialog.cpp:4679 rc.cpp:21 siduxcc_kmain.cpp:91
-#, no-c-format
-msgid "Software"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 319
-#: kmaindialog.cpp:4680 rc.cpp:24 siduxcc_kmain.cpp:97
-#, no-c-format
-msgid "SysInfo"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 327
-#: kmaindialog.cpp:4681 rc.cpp:27
-#, no-c-format
-msgid "Hermes"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 392
-#: kmaindialog.cpp:4683 rc.cpp:30 siduxcc_kmain.cpp:115
-#, no-c-format
-msgid "Metapackages"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 400
-#: kmaindialog.cpp:4684 rc.cpp:33 siduxcc_kmain.cpp:123
-#, no-c-format
-msgid "Manual"
-msgstr ""
-
-#. i18n: file ./kmaindialog.ui line 416
-#: kmaindialog.cpp:4686 rc.cpp:39
-#, no-c-format
-msgid "Exit"
 msgstr ""
 
 #: main.cpp:41
@@ -113,6 +47,72 @@ msgstr ""
 
 #: main.cpp:50
 msgid "Developer of the knxcc"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 214
+#: rc.cpp:6 siduxcc_kmain.cpp:55
+#, no-c-format
+msgid "Display"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 222
+#: rc.cpp:9 siduxcc_kmain.cpp:61
+#, no-c-format
+msgid "Drivers"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 230
+#: rc.cpp:12 siduxcc_kmain.cpp:68
+#, no-c-format
+msgid "Kernel"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 238
+#: rc.cpp:15
+#, no-c-format
+msgid "Network"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 303
+#: rc.cpp:18 siduxcc_kmain.cpp:85
+#, no-c-format
+msgid "Services"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 311
+#: rc.cpp:21 siduxcc_kmain.cpp:91
+#, no-c-format
+msgid "Software"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 319
+#: rc.cpp:24 siduxcc_kmain.cpp:97
+#, no-c-format
+msgid "SysInfo"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 327
+#: rc.cpp:27
+#, no-c-format
+msgid "Hermes"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 392
+#: rc.cpp:30 siduxcc_kmain.cpp:115
+#, no-c-format
+msgid "Metapackages"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 400
+#: rc.cpp:33 siduxcc_kmain.cpp:123
+#, no-c-format
+msgid "Manual"
+msgstr ""
+
+#. i18n: file ./kmaindialog.ui line 416
+#: rc.cpp:39
+#, no-c-format
+msgid "Exit"
 msgstr ""
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
