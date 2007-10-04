@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccnetwork\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-01 15:08+0200\n"
+"POT-Creation-Date: 2007-10-04 21:41+0200\n"
 "PO-Revision-Date: 2007-08-28 15:17+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -16,148 +16,175 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: file networkdialog.ui line 17
-#. i18n: file networkdialog.ui line 364
-#. i18n: file networkdialog.ui line 17
-#. i18n: file networkdialog.ui line 364
-#: rc.cpp:3 rc.cpp:67 rc.cpp:83 rc.cpp:147
+#: rc.cpp:3 rc.cpp:92
 #, no-c-format
 msgid "Network"
 msgstr "Netzwerk"
 
 #. i18n: file networkdialog.ui line 35
-#: rc.cpp:6 rc.cpp:86
+#: rc.cpp:6 rc.cpp:95
 #, no-c-format
 msgid "&Netcardconfig"
 msgstr "Netcardconfig"
 
-#. i18n: file networkdialog.ui line 40
-#: rc.cpp:9 rc.cpp:89
+#. i18n: file networkdialog.ui line 61
+#: rc.cpp:9 rc.cpp:98
 #, no-c-format
-msgid "Interface"
-msgstr "Schnittstelle"
+msgid "C&onfigure"
+msgstr ""
 
-#. i18n: file networkdialog.ui line 51
-#: rc.cpp:12 rc.cpp:92
-#, no-c-format
-msgid "Ip Address    "
-msgstr "Ip Adresse"
-
-#. i18n: file networkdialog.ui line 62
-#: rc.cpp:15 rc.cpp:95
-#, no-c-format
-msgid "Method"
-msgstr "Methode"
-
-#. i18n: file networkdialog.ui line 73
-#: rc.cpp:18 rc.cpp:98
-#, no-c-format
-msgid "Boot"
-msgstr "Autostart"
-
-#. i18n: file networkdialog.ui line 84
-#: rc.cpp:21 rc.cpp:101
-#, no-c-format
-msgid "Driver"
-msgstr "Treiber"
-
-#. i18n: file networkdialog.ui line 95
-#: rc.cpp:24 rc.cpp:104
-#, no-c-format
-msgid "Slot"
-msgstr "Steckplatz"
-
-#. i18n: file networkdialog.ui line 139
-#: rc.cpp:27 rc.cpp:107
-#, no-c-format
-msgid "List of configured network devices"
-msgstr "Liste der konfigurierten Netzwerkkarten"
-
-#. i18n: file networkdialog.ui line 169
-#: rc.cpp:33 rc.cpp:113
-#, no-c-format
-msgid "Alt+C"
+#. i18n: file networkdialog.ui line 64
+#. i18n: file networkdialog.ui line 491
+#. i18n: file networkdialog.ui line 64
+#. i18n: file networkdialog.ui line 491
+#: rc.cpp:12 rc.cpp:82 rc.cpp:101 rc.cpp:171
+#, fuzzy, no-c-format
+msgid "Alt+O"
 msgstr "Alt+C"
 
-#. i18n: file networkdialog.ui line 172
-#: rc.cpp:36 rc.cpp:116
+#. i18n: file networkdialog.ui line 67
+#: rc.cpp:15 rc.cpp:104
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "Verändert die Einstellungen der ausgewählten Schnittstelle"
 
-#. i18n: file networkdialog.ui line 199
-#: rc.cpp:39 rc.cpp:119
+#. i18n: file networkdialog.ui line 94
+#: rc.cpp:18 rc.cpp:107
 #, no-c-format
 msgid "En&able"
 msgstr "Aktivieren"
 
-#. i18n: file networkdialog.ui line 202
-#: rc.cpp:42 rc.cpp:122
+#. i18n: file networkdialog.ui line 97
+#: rc.cpp:21 rc.cpp:110
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
-#. i18n: file networkdialog.ui line 229
-#: rc.cpp:45 rc.cpp:125
+#. i18n: file networkdialog.ui line 124
+#: rc.cpp:24 rc.cpp:113
 #, no-c-format
 msgid "Disa&ble"
 msgstr "Deaktivieren"
 
-#. i18n: file networkdialog.ui line 232
-#: rc.cpp:48 rc.cpp:128
+#. i18n: file networkdialog.ui line 127
+#: rc.cpp:27 rc.cpp:116
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
 
-#. i18n: file networkdialog.ui line 277
-#: rc.cpp:52 rc.cpp:132
-#, no-c-format
-msgid "<b>Mac Address:</b>"
-msgstr "<b>MAC-Adresse:</b>"
-
-#. i18n: file networkdialog.ui line 293
-#: rc.cpp:55 rc.cpp:135
-#, no-c-format
-msgid "<b>Description:</b>"
-msgstr "<b>Beschreibung:</b>"
-
-#. i18n: file networkdialog.ui line 309
-#. i18n: file networkdialog.ui line 325
-#. i18n: file networkdialog.ui line 309
-#. i18n: file networkdialog.ui line 325
-#: rc.cpp:58 rc.cpp:61 rc.cpp:138 rc.cpp:141
+#. i18n: file networkdialog.ui line 172
+#. i18n: file networkdialog.ui line 207
+#. i18n: file networkdialog.ui line 172
+#. i18n: file networkdialog.ui line 207
+#: rc.cpp:31 rc.cpp:37 rc.cpp:120 rc.cpp:126
 #, no-c-format
 msgid "xxx"
 msgstr "xxx"
 
+#. i18n: file networkdialog.ui line 191
+#: rc.cpp:34 rc.cpp:123
+#, no-c-format
+msgid "<b>Description:</b>"
+msgstr "<b>Beschreibung:</b>"
+
+#. i18n: file networkdialog.ui line 223
+#: rc.cpp:40 rc.cpp:129
+#, no-c-format
+msgid "<b>Mac Address:</b>"
+msgstr "<b>MAC-Adresse:</b>"
+
+#. i18n: file networkdialog.ui line 230
+#: rc.cpp:43 rc.cpp:132
+#, no-c-format
+msgid "Interface"
+msgstr "Schnittstelle"
+
+#. i18n: file networkdialog.ui line 241
+#: rc.cpp:46 rc.cpp:135
+#, no-c-format
+msgid "Ip Address    "
+msgstr "Ip Adresse"
+
+#. i18n: file networkdialog.ui line 252
+#: rc.cpp:49 rc.cpp:138
+#, no-c-format
+msgid "Method"
+msgstr "Methode"
+
+#. i18n: file networkdialog.ui line 263
+#: rc.cpp:52 rc.cpp:141
+#, no-c-format
+msgid "Boot"
+msgstr "Autostart"
+
+#. i18n: file networkdialog.ui line 274
+#: rc.cpp:55 rc.cpp:144
+#, no-c-format
+msgid "Driver"
+msgstr "Treiber"
+
+#. i18n: file networkdialog.ui line 285
+#: rc.cpp:58 rc.cpp:147
+#, no-c-format
+msgid "Slot"
+msgstr "Steckplatz"
+
+#. i18n: file networkdialog.ui line 329
+#: rc.cpp:61 rc.cpp:150
+#, no-c-format
+msgid "List of configured network devices"
+msgstr "Liste der konfigurierten Netzwerkkarten"
+
 #. i18n: file networkdialog.ui line 338
-#: rc.cpp:64 rc.cpp:144
+#: rc.cpp:64 rc.cpp:153
+#, no-c-format
+msgid "Na&meserver"
+msgstr ""
+
+#. i18n: file networkdialog.ui line 356
+#: rc.cpp:67 rc.cpp:156
+#, no-c-format
+msgid "DNS Servers"
+msgstr ""
+
+#. i18n: file networkdialog.ui line 375
+#: rc.cpp:70 rc.cpp:159
+#, no-c-format
+msgid "Hostname"
+msgstr ""
+
+#. i18n: file networkdialog.ui line 425
+#: rc.cpp:73 rc.cpp:162
 #, no-c-format
 msgid "Ndiswr&apper"
 msgstr "Ndiswrapper"
 
-#. i18n: file networkdialog.ui line 398
-#: rc.cpp:70 rc.cpp:150
-#, no-c-format
-msgid "Ndiswrapper"
-msgstr "Ndiswrapper"
-
-#. i18n: file networkdialog.ui line 429
-#: rc.cpp:74 rc.cpp:154
+#. i18n: file networkdialog.ui line 451
+#: rc.cpp:76 rc.cpp:165
 #, no-c-format
 msgid "Cards known to work"
 msgstr "Funktionierende Karten"
 
-#. i18n: file networkdialog.ui line 466
-#: rc.cpp:77 rc.cpp:157
-#, no-c-format
-msgid "Show lis&t"
+#. i18n: file networkdialog.ui line 488
+#: rc.cpp:79 rc.cpp:168
+#, fuzzy, no-c-format
+msgid "Sh&ow list"
 msgstr "Liste anzeigen"
 
-#. i18n: file networkdialog.ui line 469
-#: rc.cpp:80 rc.cpp:160
+#. i18n: file networkdialog.ui line 519
+#: rc.cpp:85 rc.cpp:174
 #, no-c-format
-msgid "Alt+T"
-msgstr "Alt+T"
+msgid "Install wlan card"
+msgstr ""
+
+#. i18n: file networkdialog.ui line 553
+#: rc.cpp:88 rc.cpp:177
+#, no-c-format
+msgid "Ndiswrapper"
+msgstr "Ndiswrapper"
+
+#~ msgid "Alt+T"
+#~ msgstr "Alt+T"
 
 #~ msgid "Br&owser"
 #~ msgstr "Webbrowser"

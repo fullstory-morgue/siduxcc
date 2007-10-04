@@ -1,0 +1,36 @@
+# siduxcc-module: network
+# Copyright (c) 2007 Fabian Wuertz
+# License GPL 2
+# siduxcc is based on knxcc from Andreas Loibl
+
+
+#run gettext
+. /usr/bin/gettext.sh
+
+register_module services $(eval_gettext "Network")
+
+
+function getHostname()
+{
+	hostname
+}
+
+function setHostname()
+{
+	hostname $1
+}
+
+function getNameservers()
+{
+	awk '{if($1=="nameserver"){print $2}}' /etc/resolv.conf
+}
+
+function setNameservers()
+{
+	> /etc/resolv.conf
+	while (($#))
+	do
+		echo nameserver "$1" >> /etc/resolv.conf
+		shift
+	done
+}

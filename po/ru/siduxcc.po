@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 15:50+0200\n"
+"POT-Creation-Date: 2007-10-04 21:41+0200\n"
 "PO-Revision-Date: 2007-09-13 18:09+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -199,6 +199,11 @@ msgstr "Запустить kernel-remover"
 #, sh-format
 msgid "Update kernel"
 msgstr "Обновить ядро"
+
+#: modules/network.bm:10
+#, sh-format
+msgid "Network"
+msgstr ""
 
 #: modules/services.bm:10
 #, sh-format

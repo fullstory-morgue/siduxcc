@@ -11,6 +11,11 @@ X-KDE-ParentApp=kcontrol
 
 Name=Drivers
 Name[de]=Treiber
+Name[fr]=Pilotes
+Name[hr]=Pogonitelj
+Name[ro]=driver-ul
+Name[ru]=драйвера
+
 Comment=Drivers Settings
 Comment[de]=Treiber Einstellungen
 

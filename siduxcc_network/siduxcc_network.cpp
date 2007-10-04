@@ -2,6 +2,7 @@
  * siduxcc_network.cpp
  *
  * Copyright (c) 2007 Fabian Wuertz
+ * siduxcc_network is based on knxcc_network from Andreas Loible
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -21,6 +22,10 @@
 #include <kpushbutton.h>
 #include <klistview.h>
 #include <qlabel.h>
+#include <qlineedit.h>
+#include <keditlistbox.h>
+#include <qgroupbox.h>
+
 
 #include "siduxcc_network.h"
 
@@ -34,11 +39,14 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 	this->setUseRootOnlyMsg(true);
 	load();
 	
-	if (getuid() != 0)
+	if (getuid() == 0)
 	{
-		ncEnableButton->setDisabled(true);
-		ncDisableButton->setDisabled(true);
-		nwlButton->setDisabled(false);
+		ncEnableButton->setEnabled(true);
+		ncDisableButton->setEnabled(true);
+		hostnameGroupBox->setEnabled(true);
+		hostnameLineEdit->setEnabled(true);
+		dnsServers->setEnabled(true);
+		nwlButton->setEnabled(false);
 	}
 }
 
@@ -47,10 +55,21 @@ void siduxcc_network::load()
 {
 	getNetworkcards();
 	ncInfoSlot();
+
+	getHostname();
+	getNameservers();
 }
 
 
-void siduxcc_network::save() {}
+void siduxcc_network::save()
+{
+	setHostname();
+	setNameservers();
+}
+
+
+//------------------------------------------------------------------------------
+// netcardconfig
 
 
 void siduxcc_network::getNetworkcards()
@@ -104,14 +123,11 @@ void siduxcc_network::getNetworkcards()
 		if(nicInfo[1] == "wireless") {
 			if(nicStatus[0] != "") {item->setPixmap(0,activeWirelessDeviceImg);}
 			else {item->setPixmap(0,inactiveWirelessDeviceImg);} }
-
 	}
-
 }
 
 void siduxcc_network::ncInfoSlot()
 {
-
 	QListViewItem *item = ncList->currentItem();
 	this->shell->setCommand("nicinfo "+item->text(0));
 	this->shell->start(true);
@@ -121,24 +137,10 @@ void siduxcc_network::ncInfoSlot()
 
 	macText2->setText(nicInfo[4]);         // mac-address (xx:xx:...)
 	descriptionText2->setText(nicInfo[5]); // description
-
 }
-
 
 
 // start button commands
-
-void siduxcc_network::nwSlot()
-{
-	this->shell->setCommand("su-me configure-ndiswrapper&");
-	this->shell->start(true);
-}
-void siduxcc_network::nwlSlot()
-{
-	this->shell->setCommand("x-www-browser http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/&");
-	this->shell->start(true);
-}
-
 
 void siduxcc_network::ncConfigSlot()
 {
@@ -167,5 +169,59 @@ void siduxcc_network::ncDisableSlot()
 	this->shell->start(true);
 	getNetworkcards();
 }
+
+
+
+//------------------------------------------------------------------------------
+// nameservers
+
+void siduxcc_network::getHostname()
+{
+	this->shell->setCommand("siduxcc network getHostname");
+	this->shell->start(true);
+	hostnameLineEdit->setText( this->shell->getBuffer() );
+}
+
+void siduxcc_network::setHostname()
+{
+	this->shell->setCommand("siduxcc network setHostname "+hostnameLineEdit->text());
+	this->shell->start(true);
+}
+
+void siduxcc_network::setNameservers()
+{
+	QString command = "siduxcc network setNameservers ";
+	QStringList nameserverList = dnsServers->items();
+	for ( QStringList::Iterator it = nameserverList.begin(); it != nameserverList.end(); ++it )
+		command+=(*it) + " ";
+	this->shell->setCommand(command);
+	this->shell->start(true);
+}
+
+void siduxcc_network::getNameservers()
+{
+	this->shell->setCommand("siduxcc network getNameservers");
+	this->shell->start(true);
+	QStringList nameserverList = QStringList::split( "\n", this->shell->getBuffer() );
+	dnsServers->clear();
+	for ( QStringList::Iterator it = nameserverList.begin(); it != nameserverList.end(); ++it )
+		dnsServers->insertItem(*it);
+}
+
+//------------------------------------------------------------------------------
+// ndiswrapper
+
+void siduxcc_network::nwSlot()
+{
+	this->shell->setCommand("su-me configure-ndiswrapper&");
+	this->shell->start(true);
+}
+
+void siduxcc_network::nwlSlot()
+{
+	this->shell->setCommand("x-www-browser http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/&");
+	this->shell->start(true);
+}
+
 
 #include "siduxcc_network.moc"

@@ -11,6 +11,12 @@ X-KDE-ParentApp=kcontrol
 
 Name=Display
 Name[de]=Anzeige
+Name[es]=Pantalla
+Name[fr]=Affichage
+Name[nl]=Beeld
+Name[ro]=Arata
+Name[ru]=Дисплей
+
 Comment=Display Settings
 Comment[de]=Anzeige-Einstellungen
 

@@ -10,7 +10,16 @@ X-KDE-FactoryName=siduxcc_network
 X-KDE-ParentApp=kcontrol
 
 Name=Network
+Name[da]=Netværk
 Name[de]=Netzwerk
+Name[es]=Red
+Name[fr]=Réseau
+Name[hr]=Mreža
+Name[it]=Rete
+Name[nl]=Netwerk
+Name[ro]=Retea
+Name[ru]=Сеть
+
 Comment=Configure your Network
 Comment[de]=Netzwerk-Einstellungen
 
