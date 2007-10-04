@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchardware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-28 15:20+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,11 +22,13 @@ msgid "detected"
 msgstr "gevonden"
 
 #: siduxcc_hardware.cpp:117 siduxcc_hardware.cpp:143
+#, fuzzy
 msgid ""
 "Please don't close the window or press the Ok/Cancel button, before it's "
-"written that the process is done!"
-msgstr "Sluit de venster a.u.b. of druk de OK/Annuleer knop voordat het "
-"geschreven dat het klaar is."
+"written, that the  process is done!"
+msgstr ""
+"Sluit de venster a.u.b. of druk de OK/Annuleer knop voordat het geschreven "
+"dat het klaar is."
 
 #. i18n: file hardwaredialog.ui line 17
 #: rc.cpp:3 rc.cpp:34

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 20:04+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-11 05:29+0200\n"
 "Last-Translator: cobra <cobra@sidux.com>\n"
 "Language-Team:  <de@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: siduxcc_software.cpp:106 siduxcc_software.cpp:123
+#: siduxcc_software.cpp:106 siduxcc_software.cpp:122
 msgid "Apt-show-versions is missing!"
 msgstr "Apt-show-version fali!"
 
@@ -25,38 +25,40 @@ msgstr "Apt-show-version fali!"
 msgid "Do you want to install it?"
 msgstr "Hočete li da instalirate taj paket?"
 
-#: siduxcc_software.cpp:123
+#: siduxcc_software.cpp:122
 msgid "Switch to the Administration to install it!"
-msgstr "Za instaliranje tog paketa, premjestite se u modus za menadžment sistema!"
+msgstr ""
+"Za instaliranje tog paketa, premjestite se u modus za menadžment sistema!"
 
 #. i18n: file softwaredialog.ui line 143
-#: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
+#: siduxcc_software.cpp:137 rc.cpp:18 rc.cpp:72
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Ne postoju upozorenja"
 
-#: siduxcc_software.cpp:143
+#: siduxcc_software.cpp:142
 msgid "No internet connection!"
 msgstr "Ne postoji internet-spoj!"
 
-#: siduxcc_software.cpp:150
+#: siduxcc_software.cpp:149
 msgid "Don't make a dist-Upgrade!"
 msgstr "Ne obavite Dist-Upgrade!"
 
-#: siduxcc_software.cpp:183
+#: siduxcc_software.cpp:182
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
-"Da izvodite Dist-Upgrade morate napustiti grafički modus. Pritisnite CTR+ALT+F1, i prijavite " "se kao root i upišite init 3. Poslje toga izvodite "
-"siduxcc i izaberite opciju Softver->Dist-upgrade."
+"Da izvodite Dist-Upgrade morate napustiti grafički modus. Pritisnite CTR+ALT"
+"+F1, i prijavite se kao root i upišite init 3. Poslje toga izvodite siduxcc "
+"i izaberite opciju Softver->Dist-upgrade."
 
-#: siduxcc_software.cpp:220
+#: siduxcc_software.cpp:219
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Hoćete li stvarno da očistim lokalni repozitorij?"
 
-#: siduxcc_software.cpp:224
+#: siduxcc_software.cpp:223
 msgid "The local repository was cleaned."
 msgstr "Lokalni repozitorij je oćišćen."
 
@@ -66,7 +68,7 @@ msgstr "Lokalni repozitorij je oćišćen."
 msgid "Software"
 msgstr "Softver"
 
-#. i18n: file softwaredialog.ui line 64
+#. i18n: file softwaredialog.ui line 58
 #: rc.cpp:6 rc.cpp:60
 #, no-c-format
 msgid "Upgrada&ble Packages"
@@ -152,4 +154,3 @@ msgstr "Metapaketi"
 #, no-c-format
 msgid "I&nstall Metapackes"
 msgstr "Instalirati Metapakete"
-

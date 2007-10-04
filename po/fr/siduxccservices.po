@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccservices\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-08-28 17:20+0200\n"
 "PO-Revision-Date: 2007-08-28 15:18+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -37,32 +37,35 @@ msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
 msgstr ""
-"Le Common UNIX Printing System (ou CUPS(tm)) est un système d'impression "
-"qui gérérament remplace lpd et ses substituts."
+"Le Common UNIX Printing System (ou CUPS(tm)) est un système d'impression qui "
+"gérérament remplace lpd et ses substituts."
 
 #: siduxcc_services.cpp:155
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr "MySQL est un serveur de bases de données vraiment multi-utilisateurs, "
-"fiable, rapide et stable." 
+msgstr ""
+"MySQL est un serveur de bases de données vraiment multi-utilisateurs, "
+"fiable, rapide et stable."
+
 #: siduxcc_services.cpp:156
 msgid ""
 "The Samba software suite is a collection of programs that implements the SMB/"
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
-msgstr "La suite logicielle Samba est une collection de programmes qui agrège "
-"le protocole SMB/CIFS pour les systèmes unix, vous permettant de servir des "
-"fichiers et des imprimantes pour les clients Windows, NT, OS/2 et DOS." 
+msgstr ""
+"La suite logicielle Samba est une collection de programmes qui agrège le "
+"protocole SMB/CIFS pour les systèmes unix, vous permettant de servir des "
+"fichiers et des imprimantes pour les clients Windows, NT, OS/2 et DOS."
 
 #: siduxcc_services.cpp:157
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
 msgstr ""
-"SSH est la version opérationnelle d'OpenSSH, une implémentation libre du protocole "
-"sécurisé de commandes répondant au spécifications du groupe de travail secsh de "
-"l'IETF"
+"SSH est la version opérationnelle d'OpenSSH, une implémentation libre du "
+"protocole sécurisé de commandes répondant au spécifications du groupe de "
+"travail secsh de l'IETF"
 
 #. i18n: file servicesdialog.ui line 17
 #. i18n: file servicesdialog.ui line 341
@@ -143,8 +146,9 @@ msgstr "Effacer l'entrée dans les &niveaux du démarrage"
 #: rc.cpp:43 rc.cpp:109
 #, no-c-format
 msgid "&Add a Runlevel-Entry (Start service at Boot)"
-msgstr "Ajoûter une entrée dans les &niveaux du démarrage "
-"(démarrer le service au boot)"
+msgstr ""
+"Ajoûter une entrée dans les &niveaux du démarrage (démarrer le service au "
+"boot)"
 
 #. i18n: file servicesdialog.ui line 316
 #: rc.cpp:46 rc.cpp:112

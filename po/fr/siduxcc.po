@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-24 14:08+0200\n"
 "Last-Translator: LjanA\n"
 "Language-Team: \n"
@@ -63,8 +63,9 @@ msgid "Default Color Depth"
 msgstr "Profondeur de couleur par défaut"
 
 #: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
-#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
-#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
+#: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
+#: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
+#: modules/software.bm:74 modules/software.bm:85
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Pour continuer, appuyez sur <Entrée>..."
@@ -119,8 +120,8 @@ msgstr "Redémarrer le serveur X"
 msgid "Restore X-Server"
 msgstr "Restaurer le serveur X"
 
-#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
-#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/display.bm:242 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
 #: modules/services.bm:54 modules/software.bm:138
 #, sh-format
 msgid "Return to main Menu"
@@ -131,13 +132,14 @@ msgstr "Revenir au menu principal"
 msgid "Error: This module is not implemented yet!"
 msgstr "Erreur : ce module n'est pas encore intégré !"
 
-#: modules/hardware.bm:9 modules/hardware.bm:158
+#: modules/hardware.bm:9 modules/hardware.bm:170
 #, sh-format
 msgid "Hardware"
 msgstr "Matériel"
 
-#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
-#: modules/software.bm:73 modules/software.bm:84
+#: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
+#: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
+#: modules/software.bm:84
 #, sh-format
 msgid "Process done!"
 msgstr "Processus achevé !"
@@ -162,38 +164,38 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Vous utilisez "
 
-#: modules/kernel.bm:9 modules/kernel.bm:144
+#: modules/kernel.bm:9 modules/kernel.bm:167
 #, sh-format
 msgid "Kernel"
 msgstr "Noyau"
 
 #: modules/kernel.bm:16
-#, sh-format
-msgid "Kernel-remover is missing! Do you want do install it? "
-msgstr "L'outil d'effacement des noyaux est manquant !"
-"Voulez-vous l'installer ?"
+#, fuzzy, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr ""
+"L'outil d'effacement des noyaux est manquant !Voulez-vous l'installer ?"
 
-#: modules/kernel.bm:91
+#: modules/kernel.bm:95
 #, sh-format
 msgid "The installation is finished!"
 msgstr "L'installation est terminée !"
 
-#: modules/kernel.bm:104
+#: modules/kernel.bm:119
 #, sh-format
 msgid "Select a kernel"
 msgstr "Sélectionnez un noyau"
 
-#: modules/kernel.bm:114
+#: modules/kernel.bm:129
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "La version à jour du noyau et celle que vous utilisez sont les mêmes !"
 
-#: modules/kernel.bm:145
+#: modules/kernel.bm:168
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Activer le nettoyeur de noyaux"
 
-#: modules/kernel.bm:146
+#: modules/kernel.bm:169
 #, sh-format
 msgid "Update kernel"
 msgstr "Mettre-à-jour le noyau"
@@ -224,8 +226,8 @@ msgid "Secure-shell-server"
 msgstr "Serveur de sécurisation ssh"
 
 #: modules/services.bm:19
-#, sh-format
-msgid "Sambaserver"
+#, fuzzy, sh-format
+msgid "Samabaserver"
 msgstr "Serveur Samba"
 
 #: modules/services.bm:30
@@ -281,14 +283,15 @@ msgstr "Logiciels"
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr "Vous devez vous trouver en niveau d'exécution 3,"
-"soit, sorti du serveur X, pour exécuter ce script."
+msgstr ""
+"Vous devez vous trouver en niveau d'exécution 3,soit, sorti du serveur X, "
+"pour exécuter ce script."
 
 #: modules/software.bm:36 modules/software.bm:107
-#, sh-format
+#, fuzzy, sh-format
 msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist- "
-"Upgrade Warnings. Do you want to continue anyway?"
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
 msgstr ""
 "Auncune connexion à sidux.com. Il n'a pas été possible d'y détecter "
 "d'éventuelles alertes de Dist-upgrade. Voulez-vous procéder quand-même ?"
@@ -299,8 +302,8 @@ msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
 "com for more information!"
 msgstr ""
-"Des alertes DU sont publiées. SVP, ne faites pas de dist-upgrade! "
-"SVP, rendez-vous sur sidux.com; pour plus d'information. "
+"Des alertes DU sont publiées. SVP, ne faites pas de dist-upgrade! SVP, "
+"rendez-vous sur sidux.com; pour plus d'information. "
 
 #: modules/software.bm:43 modules/software.bm:112
 #, sh-format
@@ -341,4 +344,3 @@ msgstr "Menu Principal"
 #, sh-format
 msgid "Exit"
 msgstr "Quitter"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckmain\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 22:11+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-08-28 22:13+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -19,13 +19,13 @@ msgstr ""
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
-"Your name"
+"Your names"
 msgstr ""
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
-"Your email"
+"Your emails"
 msgstr ""
 
 #. i18n: file ./kmaindialog.ui line 24
@@ -113,10 +113,11 @@ msgid "Packaging"
 msgstr "Packaging"
 
 #: main.cpp:50
-msgid "Developer of the siduxcc"
+#, fuzzy
+msgid "Developer of the knxcc"
 msgstr "Ontwerper van de siduxcc"
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
-#: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
+#: siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "nl"

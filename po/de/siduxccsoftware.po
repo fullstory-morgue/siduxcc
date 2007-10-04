@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 20:04+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-22 21:08+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: siduxcc_software.cpp:106 siduxcc_software.cpp:123
+#: siduxcc_software.cpp:106 siduxcc_software.cpp:122
 msgid "Apt-show-versions is missing!"
 msgstr "Apt-show-version fehlt!"
 
@@ -24,25 +24,26 @@ msgstr "Apt-show-version fehlt!"
 msgid "Do you want to install it?"
 msgstr "Soll das Paket installiert werden?"
 
-#: siduxcc_software.cpp:123
+#: siduxcc_software.cpp:122
 msgid "Switch to the Administration to install it!"
-msgstr "Zum installieren des Pakets bitte in den Systemverwatungsmodus wechseln!"
+msgstr ""
+"Zum installieren des Pakets bitte in den Systemverwatungsmodus wechseln!"
 
 #. i18n: file softwaredialog.ui line 143
-#: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
+#: siduxcc_software.cpp:137 rc.cpp:18 rc.cpp:72
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Keine Warnungen bekannt"
 
-#: siduxcc_software.cpp:143
+#: siduxcc_software.cpp:142
 msgid "No internet connection!"
 msgstr "Keine Internetverbindung!"
 
-#: siduxcc_software.cpp:150
+#: siduxcc_software.cpp:149
 msgid "Don't make a dist-Upgrade!"
 msgstr "Bitte keinen Dis-Upgrade durchgeführen."
 
-#: siduxcc_software.cpp:183
+#: siduxcc_software.cpp:182
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
@@ -52,11 +53,11 @@ msgstr ""
 "+ALT+F1 drücken, sich als root einloggen und init 3 eingeben. Dannach "
 "siduxcc ausführen und die Option Software->Dist-upgrade auswählen."
 
-#: siduxcc_software.cpp:220
+#: siduxcc_software.cpp:219
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Soll das lokale Repository wirklick geleert werden?"
 
-#: siduxcc_software.cpp:224
+#: siduxcc_software.cpp:223
 msgid "The local repository was cleaned."
 msgstr "Das lokale Repository wurde geleert."
 
@@ -66,7 +67,7 @@ msgstr "Das lokale Repository wurde geleert."
 msgid "Software"
 msgstr "Software"
 
-#. i18n: file softwaredialog.ui line 64
+#. i18n: file softwaredialog.ui line 58
 #: rc.cpp:6 rc.cpp:60
 #, no-c-format
 msgid "Upgrada&ble Packages"
@@ -152,4 +153,3 @@ msgstr "Metapakete"
 #, no-c-format
 msgid "I&nstall Metapackes"
 msgstr "Metapakete installieren"
-

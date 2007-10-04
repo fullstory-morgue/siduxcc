@@ -74,14 +74,14 @@ static void addAtom(KIO::UDSEntry &entry, unsigned int ID, long l,
 extern "C"
 {
 
-    int kdemain( int argc, char **argv )
-    {
-        KInstance instance("kio_network");
-        (void) KGlobal::locale();
-        NetworkProtocol slave( argv[2], argv[3] );
-        slave.dispatchLoop();
-        return 0;
-    }
+	int kdemain( int argc, char **argv )
+	{
+		KInstance instance("kionetwork");
+		(void) KGlobal::locale();
+		NetworkProtocol slave( argv[2], argv[3] );
+		slave.dispatchLoop();
+		return 0;
+	}
 }
 
 NetworkProtocol::NetworkProtocol( const QCString & pool, const QCString & app )
@@ -90,64 +90,63 @@ NetworkProtocol::NetworkProtocol( const QCString & pool, const QCString & app )
 	this->shell = new Process();
 }
 
-void NetworkProtocol::get
-    ( const KURL & url )
+void NetworkProtocol::get( const KURL & url )
 {
-    ResourceInfo s;
-    if ( !decodeURL( url, s ) )
-        return;
-
-    if ( !s.exists )
-        error( ERR_DOES_NOT_EXIST, url.prettyURL() );
-    else if ( s.isDir )
-        error( ERR_IS_DIRECTORY, url.prettyURL() );
-    else
-    {
-        redirection( KURL( s.path ) );
-    }
-
-    finished();
+	ResourceInfo s;
+	if ( !decodeURL( url, s ) )
+		return;
+	
+	if ( !s.exists )
+		error( ERR_DOES_NOT_EXIST, url.prettyURL() );
+	else if ( s.isDir )
+		error( ERR_IS_DIRECTORY, url.prettyURL() );
+	else
+	{
+		redirection( KURL( s.path ) );
+	}
+	
+	finished();
 }
 
 void NetworkProtocol::put( const KURL& url, int permissions, bool overwrite, bool resume )
 {
-    ResourceInfo s;
-    if ( !decodeURL( url, s ) )
-        return;
+	ResourceInfo s;
+	if ( !decodeURL( url, s ) )
+		return;
 
-    if ( s.exists && s.isDir )
-        error( ERR_IS_DIRECTORY, url.prettyURL() );
-    else if ( s.exists && !overwrite )
-        error( ERR_FILE_ALREADY_EXIST, url.prettyURL() );
-    // Trying to save to the root
-    else if ( !s.resType )
-        error( ERR_SLAVE_DEFINED, i18n("You cannot save to the root of network:/") );
-    else
-    {
-        locateLocal(s.resType, s.relPath, true);     // Just to create the dirs
-        redirection( KURL( s.localPath ) );
-    }
+	if ( s.exists && s.isDir )
+		error( ERR_IS_DIRECTORY, url.prettyURL() );
+	else if ( s.exists && !overwrite )
+		error( ERR_FILE_ALREADY_EXIST, url.prettyURL() );
+	// Trying to save to the root
+	else if ( !s.resType )
+		error( ERR_SLAVE_DEFINED, i18n("You cannot save to the root of network:/") );
+	else
+	{
+		locateLocal(s.resType, s.relPath, true);     // Just to create the dirs
+		redirection( KURL( s.localPath ) );
+	}
 
-    finished();
+	finished();
 }
 
 void NetworkProtocol::stat( const KURL & url )
 {
 
-    ResourceInfo s;
-    if ( !decodeURL( url, s ) )
-        return;
+	ResourceInfo s;
+	if ( !decodeURL( url, s ) )
+		return;
 
-    if ( !s.exists )
-        error( ERR_DOES_NOT_EXIST, url.prettyURL() );
-    else if ( s.isDir )
-        statEntry( createDirEntry( s.name ) );
-    else
-        //redirection(s.path);
-        statEntry( createEntry( s.path ) ); 
+	if ( !s.exists )
+		error( ERR_DOES_NOT_EXIST, url.prettyURL() );
+	else if ( s.isDir )
+		statEntry( createDirEntry( s.name ) );
+	else
+		//redirection(s.path);
+		statEntry( createEntry( s.path ) ); 
 
 
-    finished();
+	finished();
 }
 
 void NetworkProtocol::listDir( const KURL & url )
@@ -247,125 +246,125 @@ void NetworkProtocol::listDir( const KURL & url )
 
 bool NetworkProtocol::decodeURL( const KURL & url, ResourceInfo & s )
 {
-    QString urlPath = url.path(-1);
-    s.exists = true;
-    s.isDir = false;
+	QString urlPath = url.path(-1);
+	s.exists = true;
+	s.isDir = false;
 
-    // Error if empty or relative path
-    if ( KURL::isRelativeURL( url.url()) )
-    {
-        error(ERR_MALFORMED_URL, url.prettyURL() );
-        finished();
-        return false;
-    }
+	// Error if empty or relative path
+	if ( KURL::isRelativeURL( url.url()) )
+	{
+		error(ERR_MALFORMED_URL, url.prettyURL() );
+		finished();
+		return false;
+	}
 
-    s.resType = urlPath.section('/', 1, 1);
-    s.name = urlPath.section('/', -1);
-    s.relPath = urlPath.section('/', 2);
+	s.resType = urlPath.section('/', 1, 1);
+	s.name = urlPath.section('/', -1);
+	s.relPath = urlPath.section('/', 2);
 
-    // If we are browsing the root
-    if ( s.resType.isEmpty() )
-    {
-        s.name =  "/";
-        s.isDir = true;
-        return true;
-    }
+	// If we are browsing the root
+	if ( s.resType.isEmpty() )
+	{
+		s.name =  "/";
+		s.isDir = true;
+		return true;
+	}
 
-    // If we are browsing a top-level resource folder
-    if ( s.relPath.isEmpty() )
-    {
-        if ( m_dirs->allTypes().contains(s.resType) )
-        {
-            s.isDir = true;
-            s.name = s.resType;
-            return true;
-        }
-    }
+	// If we are browsing a top-level resource folder
+	if ( s.relPath.isEmpty() )
+	{
+		if ( m_dirs->allTypes().contains(s.resType) )
+		{
+			s.isDir = true;
+			s.name = s.resType;
+			return true;
+		}
+	}
 
-    // Otherwise
-    s.path = locate( s.resType, s.relPath );
-    if ( !s.path )
-    {
-        s.path = locate( s.resType, s.relPath + '/' );
-        if ( !s.path )
-            s.exists = false;
-        else
-            s.isDir = true;
-    }
-    else
-    {
-        s.exists = true;
-        s.isDir = false;
-    }
+	// Otherwise
+	s.path = locate( s.resType, s.relPath );
+	if ( !s.path )
+	{
+		s.path = locate( s.resType, s.relPath + '/' );
+		if ( !s.path )
+			s.exists = false;
+		else
+			s.isDir = true;
+	}
+	else
+	{
+		s.exists = true;
+		s.isDir = false;
+	}
 
-    // Make sure the path exists
-    if ( !locate(s.resType, s.relPath.section('/', 0, -2 ) + '/' ) )
-    {
-        error(ERR_DOES_NOT_EXIST, url.prettyURL() );
-        finished();
-        return false;
-    }
+	// Make sure the path exists
+	if ( !locate(s.resType, s.relPath.section('/', 0, -2 ) + '/' ) )
+	{
+		error(ERR_DOES_NOT_EXIST, url.prettyURL() );
+		finished();
+		return false;
+	}
 
-    s.localPath = locateLocal( s.resType, s.relPath + (s.isDir ? "/" : ""), false );
+	s.localPath = locateLocal( s.resType, s.relPath + (s.isDir ? "/" : ""), false );
 
-    int count = s.isDir ?  m_dirs->findDirs(s.resType, s.relPath).size() : m_dirs->findAllResources(s.resType, s.relPath ).size();
-    s.isLocal = count <= 1 && s.path == s.localPath;
+	int count = s.isDir ?  m_dirs->findDirs(s.resType, s.relPath).size() : m_dirs->findAllResources(s.resType, s.relPath ).size();
+	s.isLocal = count <= 1 && s.path == s.localPath;
 
-    return true;
+	return true;
 }
 
 
 static UDSEntry createEntry( const QString & path )
 {
-    UDSEntry entry;
-    UDSAtom atom;
-    QFileInfo info(path);
+	UDSEntry entry;
+	UDSAtom atom;
+	QFileInfo info(path);
 
-    // Add name
-    entry.append( createAtom( UDS_NAME, path.section( '/', -1 ) ) );
+	// Add name
+	entry.append( createAtom( UDS_NAME, path.section( '/', -1 ) ) );
 
-    // Add mode
-    entry.append( createAtom( UDS_FILE_TYPE, info.isDir() ? S_IFDIR : 0 ) );
+	// Add mode
+	entry.append( createAtom( UDS_FILE_TYPE, info.isDir() ? S_IFDIR : 0 ) );
 
-    // Add size
-    entry.append( createAtom( UDS_SIZE, info.size() ) );
+	// Add size
+	entry.append( createAtom( UDS_SIZE, info.size() ) );
 
-    // Add modification time
-    entry.append( createAtom( UDS_MODIFICATION_TIME, info.lastModified().toTime_t() ) );
-    entry.append( createAtom( UDS_ACCESS_TIME, info.lastRead().toTime_t() ) );
-    //entry.append( createAtom( UDS_CREATION_TIME, info.created().toTime_t() ) );
+	// Add modification time
+	entry.append( createAtom( UDS_MODIFICATION_TIME, info.lastModified().toTime_t() ) );
+	entry.append( createAtom( UDS_ACCESS_TIME, info.lastRead().toTime_t() ) );
+	//entry.append( createAtom( UDS_CREATION_TIME, info.created().toTime_t() ) );
 
-    // Add mimetype
-    KMimeType::Ptr pMimetype = KMimeType::findByPath( path, info.isDir() ? S_IFDIR : 0 );
-    entry.append( createAtom( UDS_MIME_TYPE, pMimetype->name() ) );
+	// Add mimetype
+	KMimeType::Ptr pMimetype = KMimeType::findByPath( path, info.isDir() ? S_IFDIR : 0 );
+	entry.append( createAtom( UDS_MIME_TYPE, pMimetype->name() ) );
 
-    return entry;
+	return entry;
 }
 
 static UDSEntry createDirEntry( const QString & fileName )
 {
-    UDSEntry entry;
+	UDSEntry entry;
 
-    entry.append( createAtom( UDS_FILE_TYPE, S_IFDIR ) );
-    entry.append( createAtom( UDS_NAME, fileName ) );
+	entry.append( createAtom( UDS_FILE_TYPE, S_IFDIR ) );
+	entry.append( createAtom( UDS_NAME, fileName ) );
 
-    return entry;
+	return entry;
 }
 
 static UDSAtom createAtom( uint uds, long lng )
 {
-    UDSAtom atom;
-    atom.m_uds = uds;
-    atom.m_long = lng;
+	UDSAtom atom;
+	atom.m_uds = uds;
+	atom.m_long = lng;
 
-    return atom;
+	return atom;
 }
 
 static UDSAtom createAtom( uint uds, const QString & str )
 {
-    UDSAtom atom;
-    atom.m_uds = uds;
-    atom.m_str = str;
+	UDSAtom atom;
+	atom.m_uds = uds;
+	atom.m_str = str;
 
-    return atom;
+	return atom;
 }

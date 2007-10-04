@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccdisplay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-13 17:06+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: file displaydialog.ui line 155
-#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:39 rc.cpp:181
+#: siduxcc_display.cpp:157 siduxcc_display.cpp:211 rc.cpp:39 rc.cpp:181
 #, no-c-format
 msgid "custom"
 msgstr "настроеный пользователем"
 
-#: siduxcc_display.cpp:199
+#: siduxcc_display.cpp:200
 msgid "Modelines removed"
 msgstr "Файл конфигурации очищен"
 
-#: siduxcc_display.cpp:250
+#: siduxcc_display.cpp:251
 msgid "Process is running!"
 msgstr "Процесс запущен"
 
-#: siduxcc_display.cpp:271 siduxcc_display.cpp:272
+#: siduxcc_display.cpp:272 siduxcc_display.cpp:273
 msgid "Process finished"
 msgstr "Процесс завершен"
 
@@ -67,9 +67,9 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
-"Х-Сервер не работает с ошибочными установками! Для восстановления прежней конфигурации "
-"нажмите Ctr+Alt+F1, как root выполните команду siduxcc и осуществите последовательный выбор: " "option-Display-restoreX "
-
+"Х-Сервер не работает с ошибочными установками! Для восстановления прежней "
+"конфигурации нажмите Ctr+Alt+F1, как root выполните команду siduxcc и "
+"осуществите последовательный выбор: option-Display-restoreX "
 
 #. i18n: file displaydialog.ui line 96
 #: rc.cpp:15 rc.cpp:157
@@ -254,7 +254,9 @@ msgstr "24 bit"
 msgid ""
 "<b>Note:</b> If you are using the ATI-Driver (fglrx) you can not change the "
 "Color-Depth (it has to be 24 bit then)"
-msgstr "Замечание: если Вы пользуетесь ATI драйвером (fglrx) изменить значение количества цветов невозможно ( будет установленно в 24bit)"
+msgstr ""
+"Замечание: если Вы пользуетесь ATI драйвером (fglrx) изменить значение "
+"количества цветов невозможно ( будет установленно в 24bit)"
 
 #. i18n: file displaydialog.ui line 650
 #: rc.cpp:113 rc.cpp:255
@@ -295,6 +297,8 @@ msgstr "Alt+O"
 #. i18n: file displaydialog.ui line 896
 #: rc.cpp:140 rc.cpp:282
 #, no-c-format
-msgid "This process takes a while. <b>Don't close the window</b> during the process!"
-msgstr "Идет процесс обновления системных шрифтов. Не закрывайте окно во время процесса!"
-
+msgid ""
+"This process takes a while. <b>Don't close the window</b> during the process!"
+msgstr ""
+"Идет процесс обновления системных шрифтов. Не закрывайте окно во время "
+"процесса!"

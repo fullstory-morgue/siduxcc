@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 16:59+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. i18n: file displaydialog.ui line 155
-#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:39 rc.cpp:181
+#: siduxcc_display.cpp:157 siduxcc_display.cpp:211 rc.cpp:39 rc.cpp:181
 #, no-c-format
 msgid "custom"
 msgstr ""
 
-#: siduxcc_display.cpp:199
+#: siduxcc_display.cpp:200
 msgid "Modelines removed"
 msgstr ""
 
-#: siduxcc_display.cpp:250
+#: siduxcc_display.cpp:251
 msgid "Process is running!"
 msgstr ""
 
-#: siduxcc_display.cpp:271 siduxcc_display.cpp:272
+#: siduxcc_display.cpp:272 siduxcc_display.cpp:273
 msgid "Process finished"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 #. i18n: file displaydialog.ui line 356
 #: rc.cpp:60 rc.cpp:202
 #, no-c-format
-msgid "Scanning Frequency"
+msgid "Scanning Frequenz"
 msgstr ""
 
 #. i18n: file displaydialog.ui line 380
@@ -198,13 +198,13 @@ msgstr ""
 #. i18n: file displaydialog.ui line 467
 #: rc.cpp:79 rc.cpp:221
 #, no-c-format
-msgid "Horizontal Freqency"
+msgid "Horizontal Frequenz"
 msgstr ""
 
 #. i18n: file displaydialog.ui line 489
 #: rc.cpp:83 rc.cpp:225
 #, no-c-format
-msgid "Vertical Frequency"
+msgid "Vertical Frequenz"
 msgstr ""
 
 #. i18n: file displaydialog.ui line 499

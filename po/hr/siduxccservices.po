@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccservices_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-08-28 17:20+0200\n"
 "PO-Revision-Date: 2007-09-11 05:19+0200\n"
 "Last-Translator: cobra <cobra@sidux.com>\n"
 "Language-Team:  <de@li.org>\n"
@@ -56,7 +56,9 @@ msgstr "Samba vam omoguči korištaj Windows-mrežne odsluge."
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
-msgstr "Secure Shell je mrežni protokol koji vam omoguči, da se druga računala mogu spojiti " "kriptografski, sa vlastitim računalom."
+msgstr ""
+"Secure Shell je mrežni protokol koji vam omoguči, da se druga računala mogu "
+"spojiti kriptografski, sa vlastitim računalom."
 
 #. i18n: file servicesdialog.ui line 17
 #. i18n: file servicesdialog.ui line 341
@@ -174,4 +176,3 @@ msgstr "<"
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Neaktivni servisi"
-

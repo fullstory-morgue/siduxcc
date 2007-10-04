@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-06-18 13:17+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-04-04 20:00+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -29,26 +29,26 @@ msgid ""
 msgstr "xadras@sidux.com"
 
 #. i18n: file ./legendbase.ui line 34
-#: legendbase.cpp:464 rc.cpp:7
+#: legendbase.cpp:464 rc.cpp:4
 #, no-c-format
 msgid "Legend"
 msgstr "Legende"
 
 #. i18n: file ./legendbase.ui line 106
-#: legendbase.cpp:465 rc.cpp:10
+#: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 125
-#: legendbase.cpp:466 rc.cpp:13
+#: legendbase.cpp:466 rc.cpp:10
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Keine Verbindung zu sidux.com"
 
 #. i18n: file ./legendbase.ui line 141
-#: legendbase.cpp:467 rc.cpp:16
+#: legendbase.cpp:467 rc.cpp:13
 #, no-c-format
 msgid "No dist-upgrade warnings."
 msgstr "Keine dist-upgrade Warnungen."
@@ -57,64 +57,48 @@ msgstr "Keine dist-upgrade Warnungen."
 msgid "A KDE tray application for sidux"
 msgstr "Ein KDE Tray-Programm für sidux"
 
-#. i18n: file ./gui.rc line 4
-#: rc.cpp:3
-#, no-c-format
-msgid "C&ustom"
-msgstr "Spezifisch"
-
-#. i18n: file ./upgradablebase.ui line 16
-#: rc.cpp:19 upgradablebase.cpp:57
-#, no-c-format
-msgid "Upgradable packages"
-msgstr "Neue Pakete"
-
-#. i18n: file ./upgradablebase.ui line 25
-#: rc.cpp:22 upgradablebase.cpp:33 upgradablebase.cpp:58
-#, no-c-format
-msgid "Name"
-msgstr "Name"
-
-#. i18n: file ./upgradablebase.ui line 36
-#: rc.cpp:25 upgradablebase.cpp:34 upgradablebase.cpp:59
-#, no-c-format
-msgid "Installed Version"
-msgstr "Installierte Version"
-
-#. i18n: file ./upgradablebase.ui line 47
-#: rc.cpp:28 upgradablebase.cpp:35 upgradablebase.cpp:60
-#, no-c-format
-msgid "Latest Version"
-msgstr "Neuste Version:"
-
-#: systray.cpp:42
+#: systray.cpp:41
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
 
-#: systray.cpp:45
+#: systray.cpp:44
 msgid "Forum - Upgrade Warnings"
 msgstr "Forum - Dist-Upgrade Warnungen"
 
-#: systray.cpp:46
+#: systray.cpp:45
 msgid "Manual - Upgrade of an Installed System"
 msgstr "Aktualisierung des installierten Systems"
 
-#: systray.cpp:47
-msgid "Show upgradable packages"
-msgstr "Neuere Pakete anzeigen"
+#: systray.cpp:46
+msgid "Upgradable packages"
+msgstr "Neue Pakete"
 
 #: systray.cpp:48
-msgid "Update (apt-get update)"
-msgstr "Update (apt-get update)"
-
-#: systray.cpp:50
 msgid "Show Legend"
 msgstr "Legende anzeigen"
 
-#: systray.cpp:51
+#: systray.cpp:49
 msgid "&About siduxcc-hermes"
 msgstr "Über siduxcc-hermes"
 
-#: systray.cpp:64
+#: systray.cpp:62
 msgid "en"
 msgstr "de"
+
+#~ msgid "C&ustom"
+#~ msgstr "Spezifisch"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Installed Version"
+#~ msgstr "Installierte Version"
+
+#~ msgid "Latest Version"
+#~ msgstr "Neuste Version:"
+
+#~ msgid "Show upgradable packages"
+#~ msgstr "Neuere Pakete anzeigen"
+
+#~ msgid "Update (apt-get update)"
+#~ msgstr "Update (apt-get update)"

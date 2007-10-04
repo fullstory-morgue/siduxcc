@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchardware_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-10 04:51+0200\n"
 "Last-Translator: cobra <cobra@sidux.com>\n"
 "Language-Team:  <de@li.org>\n"
@@ -26,7 +26,9 @@ msgstr "pronađen"
 msgid ""
 "Please don't close the window or press the Ok/Cancel button, before it's "
 "written, that the  process is done!"
-msgstr "Molimo da ne zatvorite Prozor, ili da pritisnite OK ili Odustati-tipku, dok se pojavi " "vijest da je instalacija sređena!"
+msgstr ""
+"Molimo da ne zatvorite Prozor, ili da pritisnite OK ili Odustati-tipku, dok "
+"se pojavi vijest da je instalacija sređena!"
 
 #. i18n: file hardwaredialog.ui line 17
 #: rc.cpp:3 rc.cpp:34
@@ -78,4 +80,3 @@ msgstr "ATI/Nvidia (ne-slobodni)"
 #, no-c-format
 msgid "I&nstall driver"
 msgstr "Instalirati Pogonitelj"
-

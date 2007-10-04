@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 16:59+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: siduxcc_hardware.cpp:117 siduxcc_hardware.cpp:143
 msgid ""
-"Please don't close the window or press the Ok/Cancel button, until you "
-"get notice, that the  process is done!"
+"Please don't close the window or press the Ok/Cancel button, before it's "
+"written, that the  process is done!"
 msgstr ""
 
 #. i18n: file hardwaredialog.ui line 17

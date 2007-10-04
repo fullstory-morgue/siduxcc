@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 20:04+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-13 18:33+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: siduxcc_software.cpp:106 siduxcc_software.cpp:123
+#: siduxcc_software.cpp:106 siduxcc_software.cpp:122
 msgid "Apt-show-versions is missing!"
 msgstr "Пакет apt-show-version пропущен!"
 
@@ -25,38 +25,40 @@ msgstr "Пакет apt-show-version пропущен!"
 msgid "Do you want to install it?"
 msgstr "Хотите его установить?"
 
-#: siduxcc_software.cpp:123
+#: siduxcc_software.cpp:122
 msgid "Switch to the Administration to install it!"
-msgstr "Зарегистрируйтесь с правами администратора, чтобы продолжить установку!"
+msgstr ""
+"Зарегистрируйтесь с правами администратора, чтобы продолжить установку!"
 
 #. i18n: file softwaredialog.ui line 143
-#: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
+#: siduxcc_software.cpp:137 rc.cpp:18 rc.cpp:72
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Нет предупреждений"
 
-#: siduxcc_software.cpp:143
+#: siduxcc_software.cpp:142
 msgid "No internet connection!"
 msgstr "Нет соединения!"
 
-#: siduxcc_software.cpp:150
+#: siduxcc_software.cpp:149
 msgid "Don't make a dist-Upgrade!"
 msgstr "Не делайте dist-upgrade!"
 
-#: siduxcc_software.cpp:183
+#: siduxcc_software.cpp:182
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
-" runlevel 3 необходим для запуска dist-upgrade. Нажмите CTR+ALT"
-"+F1, зарегистрируйтесь как root и выполните команду init 3. Затем выполните siduxcc и " "используйте опции:Software->Dist-Upgrade"
+" runlevel 3 необходим для запуска dist-upgrade. Нажмите CTR+ALT+F1, "
+"зарегистрируйтесь как root и выполните команду init 3. Затем выполните "
+"siduxcc и используйте опции:Software->Dist-Upgrade"
 
-#: siduxcc_software.cpp:220
+#: siduxcc_software.cpp:219
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Вы уверены, что хотите стереть локальный репозиторий?"
 
-#: siduxcc_software.cpp:224
+#: siduxcc_software.cpp:223
 msgid "The local repository was cleaned."
 msgstr "Локальный репозиторий удален."
 
@@ -66,7 +68,7 @@ msgstr "Локальный репозиторий удален."
 msgid "Software"
 msgstr "Програмное обеспечение"
 
-#. i18n: file softwaredialog.ui line 64
+#. i18n: file softwaredialog.ui line 58
 #: rc.cpp:6 rc.cpp:60
 #, no-c-format
 msgid "Upgrada&ble Packages"
@@ -152,4 +154,3 @@ msgstr "Мета-пакеты"
 #, no-c-format
 msgid "I&nstall Metapackes"
 msgstr "Установить мета-пакеты"
-

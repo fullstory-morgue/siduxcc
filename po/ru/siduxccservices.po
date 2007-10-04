@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccservices\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-08-28 17:20+0200\n"
 "PO-Revision-Date: 2007-09-13 18:24+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -37,27 +37,35 @@ msgstr "Apache v2 - следующая версия широкораспрост
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr "Common UNIX Printing System (или CUPS(tm)) система печати и замена для lpd и подобных " "прежних разработок"
+msgstr ""
+"Common UNIX Printing System (или CUPS(tm)) система печати и замена для lpd и "
+"подобных прежних разработок"
 
 #: siduxcc_services.cpp:155
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr "MySQL быстрый , стабильный, реально многопотоковый и многопользовательский сервер баз " "данных SQL"
+msgstr ""
+"MySQL быстрый , стабильный, реально многопотоковый и многопользовательский "
+"сервер баз данных SQL"
 
 #: siduxcc_services.cpp:156
 msgid ""
 "The Samba software suite is a collection of programs that implements the SMB/"
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
-msgstr " Samba представляет из себя коллекцию програмного обеспечения , реализующего SMB/CIFS " "протокол для юникс систем и предоставляющего доступ к принтерам и файлам для Windows, NT, "
-"OS/2  и DOS машин-клиентов."
+msgstr ""
+" Samba представляет из себя коллекцию програмного обеспечения , реализующего "
+"SMB/CIFS протокол для юникс систем и предоставляющего доступ к принтерам и "
+"файлам для Windows, NT, OS/2  и DOS машин-клиентов."
 
 #: siduxcc_services.cpp:157
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
-msgstr "SSH - портированная версия OpenSSH, свободная реализация Secure-Shell протокола как " "указано рабочей группой IETF secsh"
+msgstr ""
+"SSH - портированная версия OpenSSH, свободная реализация Secure-Shell "
+"протокола как указано рабочей группой IETF secsh"
 
 #. i18n: file servicesdialog.ui line 17
 #. i18n: file servicesdialog.ui line 341
@@ -175,4 +183,3 @@ msgstr "<"
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Отключенные сервисы"
-

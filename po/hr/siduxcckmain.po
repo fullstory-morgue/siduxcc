@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckmain_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 22:11+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-09-10 05:11+0200\n"
 "Last-Translator: cobra <cobra@sidux.com>\n"
 "Language-Team:  <de@li.org>\n"
@@ -118,7 +118,6 @@ msgid "Developer of the knxcc"
 msgstr "Razvojnik knxcc"
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
-#: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
+#: siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "hr"
-

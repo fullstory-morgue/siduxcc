@@ -108,4 +108,3 @@ msgstr "Module"
 #, no-c-format
 msgid "clear"
 msgstr "löschen"
-

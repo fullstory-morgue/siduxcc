@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kionetwork\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-04 19:49+0200\n"
+"POT-Creation-Date: 2007-10-04 16:10+0200\n"
 "PO-Revision-Date: 2007-09-13 16:08+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -17,7 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kio_network.cpp:215
+#: kio_network.cpp:123
+msgid "You cannot save to the root of network:/"
+msgstr ""
+
+#: kio_network.cpp:218
 msgid "More Options"
 msgstr "Дополнительные опции"
-

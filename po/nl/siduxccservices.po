@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccservices\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-08-28 17:20+0200\n"
 "PO-Revision-Date: 2007-08-28 15:18+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -30,30 +30,38 @@ msgstr "actief"
 
 #: siduxcc_services.cpp:153
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
-msgstr "Apache v2 is de volgende generatie van de overal te vinden Apache web server"
+msgstr ""
+"Apache v2 is de volgende generatie van de overal te vinden Apache web server"
 
 #: siduxcc_services.cpp:154
-msgid "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
+msgid ""
+"The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr "The Common UNIX Printing System (CUPS) is een afdruking systeem en "
-"de vervanger van lpd en zo"
+msgstr ""
+"The Common UNIX Printing System (CUPS) is een afdruking systeem en de "
+"vervanger van lpd en zo"
 
 #: siduxcc_services.cpp:155
-msgid "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
+msgid ""
+"MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr "MYSQL is een snelle stabiel multi-gebruiker, multi-threaded SQL database"
+msgstr ""
+"MYSQL is een snelle stabiel multi-gebruiker, multi-threaded SQL database"
 
 #: siduxcc_services.cpp:156
-msgid "The Samba software suite is a collection of programs that implements the SMB/ "
+msgid ""
+"The Samba software suite is a collection of programs that implements the SMB/"
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
 msgstr ""
 
 #: siduxcc_services.cpp:157
-msgid "SSH is the portable version of OpenSSH, a free implementation of the Secure "
+msgid ""
+"SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
-msgstr"SSH is een fraai en gratis impementatie van de Shell protocol als gedefinieerd "
-"door de IETF secsh working group"
+msgstr ""
+"SSH is een fraai en gratis impementatie van de Shell protocol als "
+"gedefinieerd door de IETF secsh working group"
 
 #. i18n: file servicesdialog.ui line 17
 #. i18n: file servicesdialog.ui line 341

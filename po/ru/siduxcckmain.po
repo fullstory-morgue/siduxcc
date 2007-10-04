@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckmain\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 22:11+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-09-13 17:36+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -18,15 +18,17 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: _translatorinfo.cpp:1
+#, fuzzy
 msgid ""
 "_: NAME OF TRANSLATORS\n"
-"Your name"
+"Your names"
 msgstr "Mikhail Burov"
 
 #: _translatorinfo.cpp:3
+#, fuzzy
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
-"Your email"
+"Your emails"
 msgstr "vonselbst@gmail.com"
 
 #. i18n: file ./kmaindialog.ui line 24
@@ -118,7 +120,6 @@ msgid "Developer of the knxcc"
 msgstr "Разработчик knxcc"
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
-#: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
+#: siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "en"
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckmain\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 22:11+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-08-28 22:13+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -117,6 +117,6 @@ msgid "Developer of the knxcc"
 msgstr "Producatorul lui knxcc"
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
-#: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
+#: siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "ro"

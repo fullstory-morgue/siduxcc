@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccsoftware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-22 20:04+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-22 21:08+0200\n"
 "Last-Translator: LjanA\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: siduxcc_software.cpp:106 siduxcc_software.cpp:123
+#: siduxcc_software.cpp:106 siduxcc_software.cpp:122
 msgid "Apt-show-versions is missing!"
 msgstr "Apt-show-versions est manquant!"
 
@@ -24,39 +24,40 @@ msgstr "Apt-show-versions est manquant!"
 msgid "Do you want to install it?"
 msgstr "Voulez-vous l'installer ?"
 
-#: siduxcc_software.cpp:123
+#: siduxcc_software.cpp:122
 msgid "Switch to the Administration to install it!"
 msgstr "Passez en mode d'administration pour l'installer!"
 
 #. i18n: file softwaredialog.ui line 143
-#: siduxcc_software.cpp:136 rc.cpp:18 rc.cpp:72
+#: siduxcc_software.cpp:137 rc.cpp:18 rc.cpp:72
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Pas d'alerte signalée"
 
-#: siduxcc_software.cpp:143
+#: siduxcc_software.cpp:142
 msgid "No internet connection!"
 msgstr "Pas de connexion internet!"
 
-#: siduxcc_software.cpp:150
+#: siduxcc_software.cpp:149
 msgid "Don't make a dist-Upgrade!"
 msgstr "Ne procédez pas à un dist-Upgrade!"
 
-#: siduxcc_software.cpp:183
+#: siduxcc_software.cpp:182
+#, fuzzy
 msgid ""
-"To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT "
+"To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
-"Pour effectuer un dist-upgrade vous devez basculer vers le niveau 3 d'exécution. "
-"Appuyez sur CTR+ALT+F1, devenez root et entrez init 3. lancez ensuite siduxcc et "
-"choisissez l'option Logiciels->Dist-Upgrade"
+"Pour effectuer un dist-upgrade vous devez basculer vers le niveau 3 "
+"d'exécution. Appuyez sur CTR+ALT+F1, devenez root et entrez init 3. lancez "
+"ensuite siduxcc et choisissez l'option Logiciels->Dist-Upgrade"
 
-#: siduxcc_software.cpp:220
+#: siduxcc_software.cpp:219
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Êtes-vous sûr de vouloir nettoyer votre dépot local ?"
 
-#: siduxcc_software.cpp:224
+#: siduxcc_software.cpp:223
 msgid "The local repository was cleaned."
 msgstr "Le dépot local a été nettoyé"
 
@@ -66,7 +67,7 @@ msgstr "Le dépot local a été nettoyé"
 msgid "Software"
 msgstr "Logiciels"
 
-#. i18n: file softwaredialog.ui line 64
+#. i18n: file softwaredialog.ui line 58
 #: rc.cpp:6 rc.cpp:60
 #, no-c-format
 msgid "Upgrada&ble Packages"
@@ -152,4 +153,3 @@ msgstr "Métapaquets"
 #, no-c-format
 msgid "I&nstall Metapackes"
 msgstr "Installer des Métapaquets"
-

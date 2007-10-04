@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-24 14:06+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-13 18:09+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -64,8 +64,9 @@ msgid "Default Color Depth"
 msgstr "Количество цветов по умолчанию"
 
 #: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
-#: modules/info.bm:32 modules/kernel.bm:27 modules/kernel.bm:92
-#: modules/software.bm:65 modules/software.bm:74 modules/software.bm:85
+#: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
+#: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
+#: modules/software.bm:74 modules/software.bm:85
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Чтобы продолжить нажмите <Enter> "
@@ -120,8 +121,8 @@ msgstr "Перезапустить Х-Сервер"
 msgid "Restore X-Server"
 msgstr "Восстановить Х-Сервер"
 
-#: modules/display.bm:242 modules/hardware.bm:159 modules/info.bm:24
-#: modules/kernel.bm:147 modules/services.bm:20 modules/services.bm:36
+#: modules/display.bm:242 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
 #: modules/services.bm:54 modules/software.bm:138
 #, sh-format
 msgid "Return to main Menu"
@@ -132,13 +133,14 @@ msgstr "Возврат к основному меню"
 msgid "Error: This module is not implemented yet!"
 msgstr "Ошибка: Данный модуль пока не реализован!"
 
-#: modules/hardware.bm:9 modules/hardware.bm:158
+#: modules/hardware.bm:9 modules/hardware.bm:170
 #, sh-format
 msgid "Hardware"
 msgstr "Оборудование"
 
-#: modules/hardware.bm:128 modules/kernel.bm:26 modules/software.bm:64
-#: modules/software.bm:73 modules/software.bm:84
+#: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
+#: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
+#: modules/software.bm:84
 #, sh-format
 msgid "Process done!"
 msgstr "Процесс завершен!"
@@ -163,7 +165,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Вы используете "
 
-#: modules/kernel.bm:9 modules/kernel.bm:144
+#: modules/kernel.bm:9 modules/kernel.bm:167
 #, sh-format
 msgid "Kernel"
 msgstr "Ядро"
@@ -173,27 +175,27 @@ msgstr "Ядро"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "Отсутствует Kernel-remover! Хотите установить?"
 
-#: modules/kernel.bm:91
+#: modules/kernel.bm:95
 #, sh-format
 msgid "The installation is finished!"
 msgstr "Установка завершена!"
 
-#: modules/kernel.bm:104
+#: modules/kernel.bm:119
 #, sh-format
 msgid "Select a kernel"
 msgstr "Выбор ядра"
 
-#: modules/kernel.bm:114
+#: modules/kernel.bm:129
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Новая и установленная версии ядра совпадают!"
 
-#: modules/kernel.bm:145
+#: modules/kernel.bm:168
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Запустить kernel-remover"
 
-#: modules/kernel.bm:146
+#: modules/kernel.bm:169
 #, sh-format
 msgid "Update kernel"
 msgstr "Обновить ядро"
@@ -289,15 +291,17 @@ msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
 "Upgrade Warnings. Dou want to continuo anyway?"
 msgstr ""
-"Нет соединения с sidux.com.Предупреждения по dist-upgrade недоступны. Хотите все равно " "продолжить? "
-
+"Нет соединения с sidux.com.Предупреждения по dist-upgrade недоступны. Хотите "
+"все равно продолжить? "
 
 #: modules/software.bm:40 modules/software.bm:110
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
 "com for more information!"
-msgstr "Предупреждение DU: Не делайте dist-upgrade! Посетите sidux.com для дополнительной " "информации "
+msgstr ""
+"Предупреждение DU: Не делайте dist-upgrade! Посетите sidux.com для "
+"дополнительной информации "
 
 #: modules/software.bm:43 modules/software.bm:112
 #, sh-format
@@ -338,4 +342,3 @@ msgstr "Главное меню"
 #, sh-format
 msgid "Exit"
 msgstr "Выход"
-

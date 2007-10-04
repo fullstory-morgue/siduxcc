@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccdisplay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-26 19:23+0200\n"
 "Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
 "Language-Team: Italiano <it@li.org>\n"
@@ -19,20 +19,20 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. i18n: file displaydialog.ui line 155
-#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:39 rc.cpp:181
+#: siduxcc_display.cpp:157 siduxcc_display.cpp:211 rc.cpp:39 rc.cpp:181
 #, no-c-format
 msgid "custom"
 msgstr "personalizzato"
 
-#: siduxcc_display.cpp:199
+#: siduxcc_display.cpp:200
 msgid "Modelines removed"
 msgstr "Modelines rimosso"
 
-#: siduxcc_display.cpp:250
+#: siduxcc_display.cpp:251
 msgid "Process is running!"
 msgstr "Processo in esecuzione!"
 
-#: siduxcc_display.cpp:271 siduxcc_display.cpp:272
+#: siduxcc_display.cpp:272 siduxcc_display.cpp:273
 msgid "Process finished"
 msgstr "Processo completato"
 
@@ -68,9 +68,9 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
-"Con una configurazione errata il server X non funziona! Per ripristinare una"
-"vecchia configurazione premere CTRL+ALT+F!, eseguire come root il comando siduxcc e"
-"scegliere l'opzione Display->restoreX."
+"Con una configurazione errata il server X non funziona! Per ripristinare "
+"unavecchia configurazione premere CTRL+ALT+F!, eseguire come root il comando "
+"siduxcc escegliere l'opzione Display->restoreX."
 
 #. i18n: file displaydialog.ui line 96
 #: rc.cpp:15 rc.cpp:157
@@ -256,8 +256,8 @@ msgid ""
 "<b>Note:</b> If you are using the ATI-Driver (fglrx) you can not change the "
 "Color-Depth (it has to be 24 bit then)"
 msgstr ""
-"<b>Nota:</b> Se stai usando i driver ATI (fglrx) non puoi cambiare la"
-"profondità del colore (deve essere 24 bit)"
+"<b>Nota:</b> Se stai usando i driver ATI (fglrx) non puoi cambiare "
+"laprofondità del colore (deve essere 24 bit)"
 
 #. i18n: file displaydialog.ui line 650
 #: rc.cpp:113 rc.cpp:255
@@ -298,6 +298,8 @@ msgstr "Alt+O"
 #. i18n: file displaydialog.ui line 896
 #: rc.cpp:140 rc.cpp:282
 #, no-c-format
-msgid "This process takes a while. <b>Don't close the window</b> during the process!"
-msgstr "Questo processo impiega un po' di tempo. <b>Non chiudere la finestra</b> durante il " "processo"
-
+msgid ""
+"This process takes a while. <b>Don't close the window</b> during the process!"
+msgstr ""
+"Questo processo impiega un po' di tempo. <b>Non chiudere la finestra</b> "
+"durante il processo"

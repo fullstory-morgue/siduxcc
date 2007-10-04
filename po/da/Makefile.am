@@ -1,2 +1,5 @@
 KDE_LANG = da
-POFILES = AUTO 
+POFILES = AUTO
+
+clean: 
+	rm -f *.gmo

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccservices\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-08-28 17:20+0200\n"
 "PO-Revision-Date: 2007-08-28 15:18+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -36,28 +36,34 @@ msgstr "Apache v2 es la nueva generacion del omnipresente Apache servidor"
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr "El Commin Unix Printing System ( o CUPS(tm)) es un sistema de impresoras que "
+msgstr ""
+"El Commin Unix Printing System ( o CUPS(tm)) es un sistema de impresoras que "
 "reemplaza lpd y otros"
 
 #: siduxcc_services.cpp:155
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr "MySQL es rapido, flexible y multi-usuario,\"multi-theared SQL database server"
+msgstr ""
+"MySQL es rapido, flexible y multi-usuario,\"multi-theared SQL database server"
 
 #: siduxcc_services.cpp:156
 msgid ""
 "The Samba software suite is a collection of programs that implements the SMB/"
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
-msgstr " El paquete de samba es una coleccion de programbas que implementa el SMB/CIFS " "protocolo para sistemas de linux, permitiendo servir archivos e impresoras a Windows, " 
-"NT, OS/2 y DOS clients."
+msgstr ""
+" El paquete de samba es una coleccion de programbas que implementa el SMB/"
+"CIFS protocolo para sistemas de linux, permitiendo servir archivos e "
+"impresoras a Windows, NT, OS/2 y DOS clients."
 
 #: siduxcc_services.cpp:157
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
-msgstr "SSH es una portable version de OpenSSH. Una implementacion del Secure Shell protocolo " "especificado por grupo IETC sechsh working"
+msgstr ""
+"SSH es una portable version de OpenSSH. Una implementacion del Secure Shell "
+"protocolo especificado por grupo IETC sechsh working"
 
 #. i18n: file servicesdialog.ui line 17
 #. i18n: file servicesdialog.ui line 341
@@ -175,4 +181,3 @@ msgstr "<"
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Servicios Desactivados"
-

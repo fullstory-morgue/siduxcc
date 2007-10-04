@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-16 15:09+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-09-13 17:27+0400\n"
 "Last-Translator: Mikhail Burov <vonselbst@gmail.com>\n"
 "Language-Team: russian <ru@li.org>\n"
@@ -15,36 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#. i18n: file infodialog.ui line 17
-#: rc.cpp:3 rc.cpp:23
-#, no-c-format
-msgid "SysInfo"
-msgstr "Системная информация"
-
-#. i18n: file infodialog.ui line 31
-#: rc.cpp:6 rc.cpp:26
-#, no-c-format
-msgid "About sidux"
-msgstr "О sidux"
-
-#. i18n: file infodialog.ui line 42
-#: rc.cpp:9 rc.cpp:29
-#, no-c-format
-msgid "sidux Version:"
-msgstr "dерсия sidux"
-
-#. i18n: file infodialog.ui line 80
-#: rc.cpp:13 rc.cpp:33
-#, no-c-format
-msgid "Infobash"
-msgstr "Infobash"
-
-#. i18n: file infodialog.ui line 143
-#: rc.cpp:20 rc.cpp:40
-#, no-c-format
-msgid "Alt+C"
-msgstr "Alt+C"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -58,3 +28,32 @@ msgid ""
 "Your emails"
 msgstr "<vonselbst@gmail.com>"
 
+#. i18n: file ./infodialog.ui line 17
+#: rc.cpp:3
+#, no-c-format
+msgid "SysInfo"
+msgstr "Системная информация"
+
+#. i18n: file ./infodialog.ui line 31
+#: rc.cpp:6
+#, no-c-format
+msgid "About sidux"
+msgstr "О sidux"
+
+#. i18n: file ./infodialog.ui line 42
+#: rc.cpp:9
+#, no-c-format
+msgid "sidux Version:"
+msgstr "dерсия sidux"
+
+#. i18n: file ./infodialog.ui line 80
+#: rc.cpp:13
+#, no-c-format
+msgid "Infobash"
+msgstr "Infobash"
+
+#. i18n: file ./infodialog.ui line 143
+#: rc.cpp:20
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxccdisplay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-28 15:17+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -17,20 +17,20 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: file displaydialog.ui line 155
-#: siduxcc_display.cpp:156 siduxcc_display.cpp:210 rc.cpp:39 rc.cpp:181
+#: siduxcc_display.cpp:157 siduxcc_display.cpp:211 rc.cpp:39 rc.cpp:181
 #, no-c-format
 msgid "custom"
 msgstr "custom"
 
-#: siduxcc_display.cpp:199
+#: siduxcc_display.cpp:200
 msgid "Modelines removed"
 msgstr "Modelines verwijderd"
 
-#: siduxcc_display.cpp:250
+#: siduxcc_display.cpp:251
 msgid "Process is running!"
 msgstr "Process is in gebruik!"
 
-#: siduxcc_display.cpp:271 siduxcc_display.cpp:272
+#: siduxcc_display.cpp:272 siduxcc_display.cpp:273
 msgid "Process finished"
 msgstr "Process klaar"
 
@@ -66,9 +66,9 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
-"Met de verkeerde opties de x-server werkt niet. Om een oud "
-"configuratie, press CTRL-ALT-F1, inloggen as root en uitvoer siduxcc "
-"dan kies Beeld -> Herstel X"
+"Met de verkeerde opties de x-server werkt niet. Om een oud configuratie, "
+"press CTRL-ALT-F1, inloggen as root en uitvoer siduxcc dan kies Beeld -> "
+"Herstel X"
 
 #. i18n: file displaydialog.ui line 96
 #: rc.cpp:15 rc.cpp:157
@@ -165,8 +165,8 @@ msgstr "Alt+A"
 
 #. i18n: file displaydialog.ui line 356
 #: rc.cpp:60 rc.cpp:202
-#, no-c-format
-msgid "Scanning Frequency"
+#, fuzzy, no-c-format
+msgid "Scanning Frequenz"
 msgstr "Scanning Frequentie"
 
 #. i18n: file displaydialog.ui line 380
@@ -201,14 +201,14 @@ msgstr "VertRefresh:"
 
 #. i18n: file displaydialog.ui line 467
 #: rc.cpp:79 rc.cpp:221
-#, no-c-format
-msgid "Horizontal Frequency"
+#, fuzzy, no-c-format
+msgid "Horizontal Frequenz"
 msgstr "Horizontaal Frequentie"
 
 #. i18n: file displaydialog.ui line 489
 #: rc.cpp:83 rc.cpp:225
-#, no-c-format
-msgid "Vertical Frequency"
+#, fuzzy, no-c-format
+msgid "Vertical Frequenz"
 msgstr "Verticaal Frequentie"
 
 #. i18n: file displaydialog.ui line 499
@@ -298,6 +298,4 @@ msgstr "Alt+O"
 #, no-c-format
 msgid ""
 "This process takes a while. <b>Don't close the window</b> during the process!"
-msgstr ""
-"Dit duurt een beetje. <b>Sluit de venster niet</b> tijdens de proces"
-""
+msgstr "Dit duurt een beetje. <b>Sluit de venster niet</b> tijdens de proces"

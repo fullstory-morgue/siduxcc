@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchardware\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 15:16+0200\n"
+"POT-Creation-Date: 2007-10-04 15:50+0200\n"
 "PO-Revision-Date: 2007-08-29 14:03+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -80,4 +80,3 @@ msgstr "ATI/Nvidia (nicht-frei)"
 #, no-c-format
 msgid "I&nstall driver"
 msgstr "Treiber installieren"
-

@@ -160,4 +160,3 @@ msgstr "CAPI ISDN Conf"
 #, no-c-format
 msgid "PPPoE Conf"
 msgstr "PPPoE Conf"
-

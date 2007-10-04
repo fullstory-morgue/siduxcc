@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckmain\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 22:11+0200\n"
+"POT-Creation-Date: 2007-10-04 15:57+0200\n"
 "PO-Revision-Date: 2007-09-26 19:20+0200\n"
 "Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
 "Language-Team: Italiano <it@li.org>\n"
@@ -19,15 +19,17 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: _translatorinfo.cpp:1
+#, fuzzy
 msgid ""
 "_: NAME OF TRANSLATORS\n"
-"Your name"
+"Your names"
 msgstr "Salvo 'LtWorf' Tomaselli"
 
 #: _translatorinfo.cpp:3
+#, fuzzy
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
-"Your email"
+"Your emails"
 msgstr "tiposchi@tiscali.it"
 
 #. i18n: file ./kmaindialog.ui line 24
@@ -119,7 +121,6 @@ msgid "Developer of the knxcc"
 msgstr "Sviluppatore del knxcc"
 
 #: siduxcc_kmain.cpp:57 siduxcc_kmain.cpp:63 siduxcc_kmain.cpp:70
-#: siduxcc_kmain.cpp:74 siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
+#: siduxcc_kmain.cpp:87 siduxcc_kmain.cpp:93
 msgid "en"
 msgstr "it"
-

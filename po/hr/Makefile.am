@@ -1,3 +1,5 @@
- KDE_LANG = hr
+KDE_LANG = hr
 POFILES = AUTO
 
+clean:
+	rm -f *.gmo
