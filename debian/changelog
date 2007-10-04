@@ -1,10 +1,5 @@
-siduxcc (0.5.10) UNRELEASED; urgency=low
+siduxcc (0.5.10) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * po: Makefile.in: remove *.gmo by distclean
   * po: Makefile.am: remove *.gmo by clean
   * po: po files for all languages updated
