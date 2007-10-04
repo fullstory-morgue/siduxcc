@@ -707,7 +707,7 @@ clean-metasources:
 	-rm -f  siduxcc_kmain.moc
 
 #>+ 2
-KDE_DIST=Makefile.in siduxcc.desktop kmaindialog.ui Makefile.am 
+KDE_DIST=kmaindialog.ui siduxcc.desktop Makefile.in Makefile.am 
 
 #>+ 4
 clean-ui:

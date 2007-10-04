@@ -33298,6 +33298,8 @@ ac_config_files="$ac_config_files siduxcc_hermes/Makefile"
 
 ac_config_files="$ac_config_files siduxcc_info/Makefile"
 
+ac_config_files="$ac_config_files siduxcc_internet/Makefile"
+
 ac_config_files="$ac_config_files siduxcc_kernel/Makefile"
 
 ac_config_files="$ac_config_files siduxcc_kmain/Makefile"
@@ -33938,6 +33940,7 @@ do
     "siduxcc_hardware/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hardware/Makefile" ;;
     "siduxcc_hermes/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hermes/Makefile" ;;
     "siduxcc_info/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_info/Makefile" ;;
+    "siduxcc_internet/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_internet/Makefile" ;;
     "siduxcc_kernel/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kernel/Makefile" ;;
     "siduxcc_kmain/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kmain/Makefile" ;;
     "siduxcc_network/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_network/Makefile" ;;

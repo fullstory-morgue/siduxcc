@@ -702,7 +702,7 @@ clean-metasources:
 	-rm -f  siduxcc_services.moc
 
 #>+ 2
-KDE_DIST=Makefile.in siduxcc_services.desktop servicesdialog.ui Makefile.am 
+KDE_DIST=siduxcc_services.desktop servicesdialog.ui Makefile.in Makefile.am 
 
 #>+ 4
 clean-ui:

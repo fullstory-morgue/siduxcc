@@ -699,7 +699,7 @@ clean-metasources:
 	-rm -f  siduxcc_kernel.moc
 
 #>+ 2
-KDE_DIST=Makefile.in siduxcc_kernel.desktop kerneldialog.ui Makefile.am 
+KDE_DIST=kerneldialog.ui Makefile.in siduxcc_kernel.desktop Makefile.am 
 
 #>+ 4
 clean-ui:

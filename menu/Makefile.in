@@ -558,7 +558,7 @@ uninstall-am: uninstall-applnkDATA uninstall-xdg_directoryDATA \
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=Makefile.in kde-settings-sidux.directory kde-sidux.menu siduxcc.menu siduxcc.directory Makefile.am 
+KDE_DIST=kde-settings-sidux.directory kde-sidux.menu Makefile.in siduxcc.menu siduxcc.directory Makefile.am 
 
 #>+ 2
 docs-am:

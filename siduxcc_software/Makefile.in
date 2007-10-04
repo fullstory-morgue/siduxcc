@@ -702,7 +702,7 @@ clean-metasources:
 	-rm -f  siduxcc_software.moc
 
 #>+ 2
-KDE_DIST=siduxcc_software.desktop Makefile.in softwaredialog.ui Makefile.am 
+KDE_DIST=siduxcc_software.desktop softwaredialog.ui Makefile.in Makefile.am 
 
 #>+ 4
 clean-ui:

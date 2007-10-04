@@ -707,7 +707,7 @@ clean-metasources:
 	-rm -f  siduxcc_info.moc
 
 #>+ 2
-KDE_DIST=infodialog.ui Makefile.in siduxcc_info.desktop Makefile.am 
+KDE_DIST=siduxcc_info.desktop infodialog.ui Makefile.in Makefile.am 
 
 #>+ 4
 clean-ui:

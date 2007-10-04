@@ -699,7 +699,7 @@ clean-metasources:
 	-rm -f  siduxcc_network.moc
 
 #>+ 2
-KDE_DIST=Makefile.in networkdialog.ui siduxcc_network.desktop Makefile.am 
+KDE_DIST=networkdialog.ui Makefile.in siduxcc_network.desktop Makefile.am 
 
 #>+ 4
 clean-ui:
