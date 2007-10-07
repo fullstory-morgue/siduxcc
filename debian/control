@@ -4,8 +4,8 @@ Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: cdbs, debhelper (>= 5), automake1.10, kdelibs4-dev, gettext
 Standards-Version: 3.7.2
-XS-Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
-XS-Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
+Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
+Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
 Package: siduxcc
 Architecture: any
