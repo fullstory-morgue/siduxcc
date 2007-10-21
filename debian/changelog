@@ -1,11 +1,9 @@
-siduxcc (0.5.12) UNRELEASED; urgency=low
+siduxcc (0.5.12) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
   * update syntax for Vcs headers in debian/control
 
   [ Fabian Wuertz ]
-  * NOT RELEASED YET
   * siduxcc_network: new design
   * siduxcc_network: fwdetect added
   * nicstatus: running/not_running argument added
