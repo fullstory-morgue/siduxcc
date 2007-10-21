@@ -24,6 +24,9 @@
 #include "networkdialog.h"
 #include "../libsiduxcc/process.h"
 
+#include <kde_terminal_interface.h>
+#include <kparts/part.h>
+
 class siduxcc_network : public NetworkDialog
 {
 	Q_OBJECT
@@ -32,25 +35,45 @@ class siduxcc_network : public NetworkDialog
 		siduxcc_network(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
 		void save();
+
+		void fwDetect();
+
+		ExtTerminalInterface *terminal()
+		{
+			return static_cast<ExtTerminalInterface*>(konsole->qt_cast( "ExtTerminalInterface" ) );
+		}
+		virtual bool eventFilter( QObject *o, QEvent *e );
 	
 	private:
 		Process* shell;
 	
 	public slots:
-		virtual void nwSlot();
-		virtual void nwlSlot();
-
-		virtual void getHostname();
-		virtual void setHostname();
-		virtual void getNameservers();
-		virtual void setNameservers();
+		virtual void loadTab(QListBoxItem*);
+		virtual void closeTabs();
+		virtual void viewOverview(QWidget*);
 
 		virtual void getNetworkcards();
-
 		virtual void ncInfoSlot();
 		virtual void ncConfigSlot();
 		virtual void ncEnableSlot();
 		virtual void ncDisableSlot();
+
+		virtual void getHostname();
+		virtual void setHostname();
+
+		virtual void getNameservers();
+		virtual void setNameservers();
+
+		virtual void nwSlot();
+		virtual void nwlSlot();
+
+		virtual void fwInstall();
+
+		virtual void back();
+
+	protected:
+		void loadKonsole();
+		KParts::Part *konsole;
 	
 };
 

@@ -686,6 +686,7 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 3
 siduxcc_info.moc: $(srcdir)/siduxcc_info.h
 	$(MOC) $(srcdir)/siduxcc_info.h -o siduxcc_info.moc
@@ -698,7 +699,7 @@ clean-metasources:
 	-rm -f  siduxcc_info.moc
 
 #>+ 2
-KDE_DIST=siduxcc_info.desktop infodialog.ui Makefile.in Makefile.am 
+KDE_DIST=siduxcc_info.desktop Makefile.am infodialog.ui Makefile.in 
 
 #>+ 4
 clean-ui:

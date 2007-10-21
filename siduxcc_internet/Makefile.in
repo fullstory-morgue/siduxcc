@@ -685,6 +685,7 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 8
 kcm_siduxcc_internet.la.closure: $(kcm_siduxcc_internet_la_OBJECTS) $(kcm_siduxcc_internet_la_DEPENDENCIES)
 	@echo "int main() {return 0;}" > kcm_siduxcc_internet_la_closure.cpp
@@ -706,7 +707,7 @@ clean-metasources:
 	-rm -f  siduxcc_internet.moc
 
 #>+ 2
-KDE_DIST=siduxcc_internet.desktop Makefile.in internetdialog.ui Makefile.am 
+KDE_DIST=siduxcc_internet.desktop Makefile.am Makefile.in internetdialog.ui 
 
 #>+ 4
 clean-ui:

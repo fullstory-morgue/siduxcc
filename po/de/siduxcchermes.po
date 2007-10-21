@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 16:50+0200\n"
+"POT-Creation-Date: 2007-10-21 22:09+0200\n"
 "PO-Revision-Date: 2007-04-04 20:00+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -28,34 +28,34 @@ msgid ""
 "Your emails"
 msgstr "xadras@sidux.com"
 
-#: main.cpp:39
-msgid "A KDE tray application for sidux"
-msgstr "Ein KDE Tray-Programm für sidux"
-
 #. i18n: file ./legendbase.ui line 34
-#: rc.cpp:4
+#: legendbase.cpp:464 rc.cpp:4
 #, no-c-format
 msgid "Legend"
 msgstr "Legende"
 
 #. i18n: file ./legendbase.ui line 106
-#: rc.cpp:7
+#: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 125
-#: rc.cpp:10
+#: legendbase.cpp:466 rc.cpp:10
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Keine Verbindung zu sidux.com"
 
 #. i18n: file ./legendbase.ui line 141
-#: rc.cpp:13
+#: legendbase.cpp:467 rc.cpp:13
 #, no-c-format
 msgid "No dist-upgrade warnings."
 msgstr "Keine dist-upgrade Warnungen."
+
+#: main.cpp:39
+msgid "A KDE tray application for sidux"
+msgstr "Ein KDE Tray-Programm für sidux"
 
 #: systray.cpp:41
 msgid "siduxcc-hermes"

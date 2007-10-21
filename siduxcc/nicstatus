@@ -10,10 +10,16 @@ else
 	ip=$(/sbin/ifconfig $interface | grep "inet addr" | gawk -F: '{print $2}' | gawk '{print $1}')
 	method=$(awk '/^\s*iface/{if($2=="'"$interface"'"){print $4}}' /etc/network/interfaces)
 	boot=$(grep auto /etc/network/interfaces | grep -q $interface && echo auto)
+	run=$(grep $interface /etc/network/run/ifstate)
 
 	if [ -z $ip ];     then ip="-"; fi
 	if [ -z $method ]; then method="-"; fi
 	if [ -z $boot ];   then boot="-"; fi
+	if [ -z $run ]; then 
+		run="not_running"; 
+	else
+		run="running"; 
+	fi
 
-	echo "$ip $method $boot"
+	echo "$ip $method $boot $run "
 fi

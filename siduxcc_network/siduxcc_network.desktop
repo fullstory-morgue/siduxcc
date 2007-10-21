@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Icon=network
 Type=Application
-Exec=kcmshell siduxcc_network
+Exec=su-me kcmshell siduxcc_network
 
 X-KDE-RootOnly=true
 X-KDE-Library=siduxcc_network

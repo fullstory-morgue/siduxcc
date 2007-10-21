@@ -557,8 +557,9 @@ uninstall-am: uninstall-applnkDATA uninstall-info-am \
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=kde-settings-sidux.directory kde-sidux.menu Makefile.in siduxcc.menu siduxcc.directory Makefile.am 
+KDE_DIST=siduxcc.directory Makefile.am Makefile.in kde-settings-sidux.directory kde-sidux.menu siduxcc.menu 
 
 #>+ 2
 docs-am:

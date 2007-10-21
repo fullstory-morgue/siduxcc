@@ -25,6 +25,12 @@
 #include <qlineedit.h>
 #include <keditlistbox.h>
 #include <qgroupbox.h>
+#include <qtabwidget.h>
+#include <qwidgetstack.h>
+#include <qcombobox.h>
+#include <kmessagebox.h>
+#include <kaboutdata.h>
+
 
 
 #include "siduxcc_network.h"
@@ -37,6 +43,19 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 {
 	this->shell = new Process();
 	this->setUseRootOnlyMsg(true);
+
+	KAboutData* about = new KAboutData("siduxccnetwork", I18N_NOOP("sidux Control Center"), "");
+	about->setProgramLogo( QImage("/usr/share/icons/hicolor/32x32/apps/siduxcc.png") );
+	about->setShortDescription( I18N_NOOP("Frontend for managing sidux.") );
+	about->setLicense(KAboutData::License_GPL_V2);
+   about->setHomepage("http://www.sidux.com");
+   about->setBugAddress("xadras@sidux.com");
+	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
+	about->addAuthor("Fabian Würtz (xadras)", I18N_NOOP("Developer"), "xadras@sidux.com", "http://xadras.wordpress.com/");
+	about->addCredit("Stefan Lippers-Hollmann (slh)", I18N_NOOP("Packaging") );
+	about->addCredit("Andreas Loibl (Acritox)", I18N_NOOP("Developer of the knxcc") , "andreas@andreas-loibl.de", "http://www.andreas-loibl.de/");
+	setAboutData(about);
+
 	load();
 	
 	if (getuid() == 0)
@@ -46,19 +65,19 @@ siduxcc_network::siduxcc_network(QWidget *parent, const char *name, const QStrin
 		hostnameGroupBox->setEnabled(true);
 		hostnameLineEdit->setEnabled(true);
 		dnsServers->setEnabled(true);
-		nwlButton->setEnabled(false);
+		fwInstallPushButton->setEnabled(true);
 	}
 }
 
 
 void siduxcc_network::load()
 {
-	getNetworkcards();
-	ncInfoSlot();
-
-	getHostname();
-	getNameservers();
+	closeTabs();
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
 }
+
+
 
 
 void siduxcc_network::save()
@@ -68,8 +87,109 @@ void siduxcc_network::save()
 }
 
 
+
 //------------------------------------------------------------------------------
-// netcardconfig
+//--- console ------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+
+void siduxcc_network::loadKonsole()
+{
+	KLibFactory* factory = KLibLoader::self()->factory( "libsanekonsolepart" );
+	if (!factory)
+		factory = KLibLoader::self()->factory( "libkonsolepart" );
+	konsole = static_cast<KParts::Part*>( factory->create( konsoleFrame, "konsolepart", "QObject", "KParts::ReadOnlyPart" ) );
+	terminal()->setAutoDestroy( true );
+	terminal()->setAutoStartShell( false );
+	konsole->widget()->setGeometry(0, 0, konsoleFrame->width(), konsoleFrame->height());	
+}
+
+
+bool siduxcc_network::eventFilter( QObject *o, QEvent *e )
+{
+	// This function makes the console emulator expanding
+	if ( e->type() == QEvent::Resize )
+	{
+		QResizeEvent *re = dynamic_cast< QResizeEvent * >( e );
+		if ( !re ) return false;
+		konsole->widget()->setGeometry( 0, 0, re->size().width(), re->size().height() );
+	}
+	return false;
+};
+
+
+void siduxcc_network::back()
+{
+	widgetStack->raiseWidget(0);
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
+}
+
+
+//------------------------------------------------------------------------------
+//--- overview -----------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+
+
+void siduxcc_network::closeTabs()
+{
+	tabWidget->removePage(tab1);
+	tabWidget->removePage(tab2);
+	tabWidget->removePage(tab3);
+	tabWidget->removePage(tab4);
+	tabWidget->removePage(tab5);
+
+}
+
+
+void siduxcc_network::loadTab(QListBoxItem* entry)
+{
+
+	if(entry->text() == i18n("Configure Networkcards"))
+	{
+		getNetworkcards();
+		ncInfoSlot();
+		tabWidget->addTab(tab1, i18n("Netcardconfig") );
+		tabWidget->showPage(tab1);
+	}
+	else if(entry->text() == i18n("Set Hostname") )
+	{
+		getHostname();
+		tabWidget->addTab(tab2, i18n("Hostname") );
+		tabWidget->showPage(tab2);
+	}
+	else if(entry->text() == i18n("Set Nameservers") )
+	{
+		getNameservers();
+		tabWidget->addTab(tab3, i18n("Nameservers") );
+		tabWidget->showPage(tab3);
+	}
+	else if(entry->text() == i18n("Install Wlan-Cards (Ndiswrapper)") )
+	{
+		tabWidget->addTab(tab4, i18n("Ndiswrapper") );
+		tabWidget->showPage(tab4);
+	}
+	else if(entry->text() == i18n("Install Wlan-Cards (fwdetect)") )
+	{
+		fwDetect();
+		tabWidget->addTab(tab5, i18n("fwdetect") );
+		tabWidget->showPage(tab5);
+	}
+}
+
+
+void siduxcc_network::viewOverview(QWidget* entry)
+{
+	if(entry == tab0)
+	{
+		closeTabs();
+	}
+}
+
+//------------------------------------------------------------------------------
+//--- netcardconfig ------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 
 void siduxcc_network::getNetworkcards()
@@ -116,12 +236,13 @@ void siduxcc_network::getNetworkcards()
 		//item->setText(6, nicInfo[4]);   // mac-address (xx:xx:...)
 		//item->setText(7, nicInfo[5]);   // description
 
+
 		// set image
 		if(nicInfo[1] == "ethernet") {
-			if(nicStatus[0] != "") {item->setPixmap(0,activeEthernetDeviceImg);}
+			if(nicStatus[3] == "running") {item->setPixmap(0,activeEthernetDeviceImg);}
 			else {item->setPixmap(0,inactiveEthernetDeviceImg);} }
 		if(nicInfo[1] == "wireless") {
-			if(nicStatus[0] != "") {item->setPixmap(0,activeWirelessDeviceImg);}
+			if(nicStatus[3] == "running") {item->setPixmap(0,activeWirelessDeviceImg);}
 			else {item->setPixmap(0,inactiveWirelessDeviceImg);} }
 	}
 }
@@ -171,9 +292,10 @@ void siduxcc_network::ncDisableSlot()
 }
 
 
-
 //------------------------------------------------------------------------------
-// nameservers
+//--- hostname -----------------------------------------------------------------
+//------------------------------------------------------------------------------
+
 
 void siduxcc_network::getHostname()
 {
@@ -182,11 +304,18 @@ void siduxcc_network::getHostname()
 	hostnameLineEdit->setText( this->shell->getBuffer() );
 }
 
+
 void siduxcc_network::setHostname()
 {
 	this->shell->setCommand("siduxcc network setHostname "+hostnameLineEdit->text());
 	this->shell->start(true);
 }
+
+
+//------------------------------------------------------------------------------
+//--- nameservers --------------------------------------------------------------
+//------------------------------------------------------------------------------
+
 
 void siduxcc_network::setNameservers()
 {
@@ -198,6 +327,7 @@ void siduxcc_network::setNameservers()
 	this->shell->start(true);
 }
 
+
 void siduxcc_network::getNameservers()
 {
 	this->shell->setCommand("siduxcc network getNameservers");
@@ -208,8 +338,11 @@ void siduxcc_network::getNameservers()
 		dnsServers->insertItem(*it);
 }
 
+
 //------------------------------------------------------------------------------
-// ndiswrapper
+//--- ndiswrapper --------------------------------------------------------------
+//------------------------------------------------------------------------------
+
 
 void siduxcc_network::nwSlot()
 {
@@ -219,9 +352,57 @@ void siduxcc_network::nwSlot()
 
 void siduxcc_network::nwlSlot()
 {
-	this->shell->setCommand("x-www-browser http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/&");
+	this->shell->setCommand("su wuertz -c \"x-www-browser http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/\"");
 	this->shell->start(true);
 }
 
+
+//------------------------------------------------------------------------------
+//--- fwdetect -----------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+
+void siduxcc_network::fwDetect()
+{
+	// show firmware
+	QPixmap hardwareImg("/usr/share/icons/hicolor/32x32/apps/siduxcc_hardware.png");
+	hardwareList->clear();
+	if(fwComboBox->currentText() == i18n("detected"))
+	{ 
+		this->shell->setCommand("siduxcc hardware detect");
+	}
+	else
+	{
+		this->shell->setCommand("siduxcc hardware allDevices");
+	}
+	this->shell->start(true);
+	QStringList hardwareName = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
+	for(int i = 0; i < hardwareName.count(); i++)
+	{
+		hardwareList->insertItem(hardwareImg,hardwareName[i]);
+	}
+}
+
+
+void siduxcc_network::fwInstall()
+{
+	KMessageBox::information(this, i18n("Please don't close the window or press the Ok/Cancel button, before it's written, that the  process is done!") );
+
+	// add non-free sources to /etc/apt/sources.list
+	this->shell->setCommand("siduxcc hardware addSources");
+	this->shell->start(true);
+
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	// run command
+	QStrList run; run.append( "siduxcc" ); 
+		run.append( "hardware" );
+		run.append( "install" );
+		run.append( hardwareList->currentText() );
+	terminal()->startProgram( "siduxcc", run );
+
+	 connect( konsole, SIGNAL(destroyed()), SLOT( back() ) );
+}
 
 #include "siduxcc_network.moc"

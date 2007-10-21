@@ -1,9 +1,16 @@
 siduxcc (0.5.12) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
   * update syntax for Vcs headers in debian/control
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 07 Oct 2007 14:48:29 +0200
+  [ Fabian Wuertz ]
+  * NOT RELEASED YET
+  * siduxcc_network: new design
+  * siduxcc_network: fwdetect added
+  * nicstatus: running/not_running argument added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 21 Oct 2007 22:25:03 +0200
 
 siduxcc (0.5.11) unstable; urgency=low
 

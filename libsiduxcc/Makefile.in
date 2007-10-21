@@ -615,6 +615,7 @@ uninstall-am: uninstall-info-am
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 8
 libsiduxcc.la.closure: $(libsiduxcc_la_OBJECTS) $(libsiduxcc_la_DEPENDENCIES)
 	@echo "int main() {return 0;}" > libsiduxcc_la_closure.cpp
@@ -636,7 +637,7 @@ clean-metasources:
 	-rm -f  process.moc.cpp
 
 #>+ 2
-KDE_DIST=Makefile.in process.h Makefile.am 
+KDE_DIST=process.h Makefile.am Makefile.in 
 
 #>+ 3
 clean-closures:

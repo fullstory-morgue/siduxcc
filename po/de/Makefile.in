@@ -495,8 +495,9 @@ clean: kde-rpo-clean
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=siduxccservices.po siduxcckmain.po siduxcc.po siduxcckernel.po siduxccinfo.po kionetwork.po siduxccinternet.po siduxccnetwork.po siduxcchardware.po Makefile.in siduxccsoftware.po siduxcchermes.po siduxccdisplay.po Makefile.am 
+KDE_DIST=siduxcchardware.po siduxcchermes.po kionetwork.po siduxccservices.po Makefile.in siduxcckmain.po siduxcc.po siduxccinternet.po siduxccsoftware.po siduxcckernel.po siduxccdisplay.po siduxccnetwork.po Makefile.am siduxccinfo.po 
 
 #>+ 37
 siduxcc.gmo: siduxcc.po

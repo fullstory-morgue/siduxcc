@@ -685,6 +685,7 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 8
 kcm_siduxcc_services.la.closure: $(kcm_siduxcc_services_la_OBJECTS) $(kcm_siduxcc_services_la_DEPENDENCIES)
 	@echo "int main() {return 0;}" > kcm_siduxcc_services_la_closure.cpp
@@ -706,7 +707,7 @@ clean-metasources:
 	-rm -f  siduxcc_services.moc
 
 #>+ 2
-KDE_DIST=siduxcc_services.desktop servicesdialog.ui Makefile.in Makefile.am 
+KDE_DIST=servicesdialog.ui Makefile.am Makefile.in siduxcc_services.desktop 
 
 #>+ 4
 clean-ui:
