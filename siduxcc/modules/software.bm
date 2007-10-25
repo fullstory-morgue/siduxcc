@@ -76,6 +76,16 @@ function update()
 }
 
 
+function clean()
+{
+	apt-get clean
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+
 function installASV()
 {
 	apt-get update

@@ -163,6 +163,74 @@ function dlgColorDepth()
 	fi
 }
 
+# Driver
+# ----------
+
+
+function getSection()
+{
+	[ $# -ne 1 ] && return 1
+	Section="$1"
+		
+sedScript="$(cat <<ENDE
+    # search for Section
+    /^\s*Section "$Section"/!bc
+    :a
+    # get the next line
+    N
+    /\s*EndSection/!ba
+    p
+    :c
+    d
+ENDE
+)"
+
+	sed -e "$sedScript" < $X_CONF
+}
+
+
+function getDriver()
+{
+    getSection "Device" | awk "(\$1==\"Driver\"){print \$2}" | sed -e 's/^"\(.*\)"$/\1/;'
+}
+
+function setDriver()
+{
+	if [ $1 -eq $(getDriver) ]; then
+		echo "Driver-Settings unchanged."
+		return 128
+	else
+		backupX
+		perl -pi -e 's/^[\s]*#*[\s]*Option\s*"RENDER".*/#\tOption\t"RENDER"\t"1"/' $X_CONF
+		perl -pi -e "s/^[\s]*Driver\s*\"$(getDriver)\"/\tDriver         \"$1\"/g;" $X_CONF
+	fi
+}
+
+
+function getComposite()
+{
+    if ! grep -i Option[[:space:]]*\"Composite\" $X_CONF | egrep -qv ^\s*#; then
+        echo "NOT USED"
+        return 128
+    elif [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | cut -d\  -f3)" -eq 0 ]; then
+        echo "NOT USED"
+        return 128
+    else
+        echo "USED"
+        return 0
+    fi
+}
+
+function setComposite()
+{
+    	if [ $1 = "true" ]; then
+			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/\tOption\t"Composite"\t"1"/' $X_CONF
+		else
+			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/#\tOption\t"Composite"\t"1"/' $X_CONF
+		fi
+}
+
+
 # Fonts
 # -----
 
@@ -213,7 +281,7 @@ function restartX()
 
 function binaryGfx()
 {
-	clear
+	#clear
 	get-sidux-binary-gfx
 	install-binary-gfx -a
 	echo "$(eval_gettext "Press <Enter> to continue...")"
