@@ -1,10 +1,14 @@
 siduxcc (0.6.0) unstable; urgency=low
 
+  [ Fabian Wuertz ]
   * siduxcc: display: gfx-function added
   * siduxcc: software: clean-function added
-  * KCONTROL-UIS --> KDE-UI 
+  * KCONTROL-UIS --> KDE-UI
 
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 25 Oct 2007 19:21:25 +0200
+  [ Stefan Lippers-Hollmann ]
+  * remove execautable bit from simple images.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 25 Oct 2007 20:31:12 +0200
 
 siduxcc (0.5.12) unstable; urgency=low
 
