@@ -660,7 +660,7 @@ merge:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxcc.pot siduxcckde.pot siduxcckmain.pot siduxcckernel.pot siduxcchermes.pot siduxccdisplay.pot siduxccsoftware.pot kionetwork.pot Makefile.in siduxccnetwork.pot siduxcchardware.pot siduxccinternet.pot siduxccinfo.pot Makefile.am siduxccservices.pot 
+KDE_DIST=siduxcckde.pot kionetwork.pot Makefile.am siduxcc.pot Makefile.in siduxcchermes.pot 
 
 #>+ 2
 docs-am:

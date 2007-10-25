@@ -1,58 +1,57 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of siduxcckde.po to
 # This file is put in the public domain.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-25 21:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2007-10-25 22:16+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
+msgstr "Mikhail Burov"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
+msgstr "vonselbst@gmail.com"
 
 #. i18n: file ./displaydialog.ui line 511
 #: display.cpp:185 display.cpp:240 rc.cpp:129
 #, no-c-format
 msgid "custom"
-msgstr ""
+msgstr "настроеный пользователем"
 
 #: display.cpp:228
 msgid "Modelines removed"
-msgstr ""
+msgstr "Файл конфигурации очищен"
 
 #: display.cpp:233
-msgid ""
-"Are you sure you want to restart the X-Server? All windows will be closed."
+msgid "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
 
 #: display.cpp:385
 msgid "Process is running!"
-msgstr ""
+msgstr "Процесс запущен"
 
 #: display.cpp:404
 msgid "Process done!"
-msgstr ""
+msgstr "Процесс завершен"
 
 #: kernel.cpp:94
 msgid "local kernel"
-msgstr ""
+msgstr "Используемое ядро"
 
 #: kernel.cpp:100
 msgid "newest"
@@ -60,54 +59,54 @@ msgstr ""
 
 #: kernel.cpp:106 kernel.cpp:156
 msgid "experimental"
-msgstr ""
+msgstr "Экспериментальный"
 
 #: kernel.cpp:142
 msgid "The versions of the new and the current Kernel are the same!"
-msgstr ""
+msgstr "Новая и текущая версии ядра совпадают"
 
 #: kernel.cpp:146
 msgid "Are you sure you want to install a new kernel?"
-msgstr ""
+msgstr "Вы действительно хотите установить новое ядро?"
 
 #: kernel.cpp:266
 msgid "Are you sure you want to remove the stored kernel files?"
-msgstr ""
+msgstr "Вы действительно хотите установить новое ядро?"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
-msgstr ""
+msgstr "Интерфейс для управления sidux"
 
 #: main.cpp:46
 msgid "Developer"
-msgstr ""
+msgstr "Разработчик"
 
 #: main.cpp:47
 msgid "Packaging"
-msgstr ""
+msgstr "Пакетирование"
 
 #: main.cpp:48
 msgid "Developer of the knxcc"
-msgstr ""
+msgstr "Разработчик knxcc"
 
 #. i18n: file ./networkdialog.ui line 833
 #: network.cpp:280 rc.cpp:442
 #, no-c-format
 msgid "detected"
-msgstr ""
+msgstr "обнаружено"
 
 #. i18n: file ./startdialog.ui line 17
 #: rc.cpp:3
 #, no-c-format
 msgid "sidux Control Center"
-msgstr ""
+msgstr "Центр управления sidux"
 
 #. i18n: file ./startdialog.ui line 29
 #. i18n: file ./displaydialog.ui line 17
 #: rc.cpp:6 rc.cpp:34 start.cpp:46
 #, no-c-format
 msgid "Display"
-msgstr ""
+msgstr "Дисплей"
 
 #. i18n: file ./startdialog.ui line 37
 #. i18n: file ./internetdialog.ui line 17
@@ -121,14 +120,14 @@ msgstr ""
 #: rc.cpp:12 rc.cpp:528 start.cpp:76
 #, no-c-format
 msgid "Kernel"
-msgstr ""
+msgstr "Ядро"
 
 #. i18n: file ./startdialog.ui line 53
 #. i18n: file ./networkdialog.ui line 17
 #: rc.cpp:15 rc.cpp:329 start.cpp:52
 #, no-c-format
 msgid "Network"
-msgstr ""
+msgstr "Сеть"
 
 #. i18n: file ./startdialog.ui line 61
 #. i18n: file ./servicesdialog.ui line 17
@@ -136,26 +135,26 @@ msgstr ""
 #: rc.cpp:18 rc.cpp:233 rc.cpp:300 start.cpp:58
 #, no-c-format
 msgid "Services"
-msgstr ""
+msgstr "Сервисы"
 
 #. i18n: file ./startdialog.ui line 69
 #. i18n: file ./softwaredialog.ui line 17
 #: rc.cpp:21 rc.cpp:454 start.cpp:64
 #, no-c-format
 msgid "Software"
-msgstr ""
+msgstr "Програмное обеспечение"
 
 #. i18n: file ./startdialog.ui line 85
 #: rc.cpp:25 start.cpp:82
 #, no-c-format
 msgid "System Info"
-msgstr ""
+msgstr "Системная информация"
 
 #. i18n: file ./startdialog.ui line 101
 #: rc.cpp:31 start.cpp:93
 #, no-c-format
 msgid "Exit"
-msgstr ""
+msgstr "Выход"
 
 #. i18n: file ./displaydialog.ui line 65
 #. i18n: file ./servicesdialog.ui line 96
@@ -175,7 +174,7 @@ msgstr ""
 #: rc.cpp:40 rc.cpp:245 rc.cpp:323 rc.cpp:341 rc.cpp:505
 #, no-c-format
 msgid "Alt+Y"
-msgstr ""
+msgstr "Alt+Y"
 
 #. i18n: file ./displaydialog.ui line 96
 #. i18n: file ./servicesdialog.ui line 85
@@ -197,19 +196,19 @@ msgstr ""
 #: rc.cpp:46 rc.cpp:186 rc.cpp:239 rc.cpp:335 rc.cpp:401 rc.cpp:499 rc.cpp:584
 #, no-c-format
 msgid "Alt+B"
-msgstr ""
+msgstr "Alt+B"
 
 #. i18n: file ./displaydialog.ui line 110
 #: rc.cpp:49
 #, no-c-format
 msgid "restart &X-Server"
-msgstr ""
+msgstr "Перезапустить Х-сервер"
 
 #. i18n: file ./displaydialog.ui line 113
 #: rc.cpp:52
 #, no-c-format
 msgid "Alt+X"
-msgstr ""
+msgstr "Alt+X"
 
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 120
@@ -254,49 +253,49 @@ msgstr ""
 #: rc.cpp:73
 #, no-c-format
 msgid "Scanning Frequence"
-msgstr ""
+msgstr "Определение частоты"
 
 #. i18n: file ./displaydialog.ui line 290
 #: rc.cpp:76
 #, no-c-format
 msgid "HorizSync:"
-msgstr ""
+msgstr "HorizSync:"
 
 #. i18n: file ./displaydialog.ui line 306
 #: rc.cpp:79
 #, no-c-format
 msgid "VertRefresh:"
-msgstr ""
+msgstr "VertRefresh:"
 
 #. i18n: file ./displaydialog.ui line 328
 #: rc.cpp:83
 #, no-c-format
 msgid "Vertical Frequenz"
-msgstr ""
+msgstr "Частота вертикальной развертки"
 
 #. i18n: file ./displaydialog.ui line 334
 #: rc.cpp:86
 #, no-c-format
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #. i18n: file ./displaydialog.ui line 339
 #: rc.cpp:89
 #, no-c-format
 msgid "TFT"
-msgstr ""
+msgstr "TFT"
 
 #. i18n: file ./displaydialog.ui line 344
 #: rc.cpp:92
 #, no-c-format
 msgid "CRT"
-msgstr ""
+msgstr "CRT"
 
 #. i18n: file ./displaydialog.ui line 389
 #: rc.cpp:96
 #, no-c-format
 msgid "Horizontal Frequenz"
-msgstr ""
+msgstr "Частота горизонтальной развертки"
 
 #. i18n: file ./displaydialog.ui line 406
 #. i18n: file ./displaydialog.ui line 605
@@ -305,7 +304,7 @@ msgstr ""
 #: rc.cpp:99 rc.cpp:138 rc.cpp:165 rc.cpp:207
 #, no-c-format
 msgid "WARNING!"
-msgstr ""
+msgstr "ПРЕДУПРЕЖДЕНИЕ!"
 
 #. i18n: file ./displaydialog.ui line 421
 #. i18n: file ./displaydialog.ui line 620
@@ -318,54 +317,57 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
+"Х-Сервер не работает с ошибочными установками! Для восстановления прежней "
+"конфигурации нажмите Ctr+Alt+F1, как root выполните команду siduxcc и "
+"осуществите последовательный выбор: option-Display-restoreX "
 
 #. i18n: file ./displaydialog.ui line 452
 #: rc.cpp:105
 #, no-c-format
 msgid "Resolution"
-msgstr ""
+msgstr "Разрешение экрана"
 
 #. i18n: file ./displaydialog.ui line 476
 #: rc.cpp:108
 #, no-c-format
 msgid "640x480"
-msgstr ""
+msgstr "640x480"
 
 #. i18n: file ./displaydialog.ui line 481
 #: rc.cpp:111
 #, no-c-format
 msgid "800x600"
-msgstr ""
+msgstr "800x600"
 
 #. i18n: file ./displaydialog.ui line 486
 #: rc.cpp:114
 #, no-c-format
 msgid "1024x768"
-msgstr ""
+msgstr "1024x768"
 
 #. i18n: file ./displaydialog.ui line 491
 #: rc.cpp:117
 #, no-c-format
 msgid "1152x864"
-msgstr ""
+msgstr "1152x864"
 
 #. i18n: file ./displaydialog.ui line 496
 #: rc.cpp:120
 #, no-c-format
 msgid "1280x1024"
-msgstr ""
+msgstr "1280x1024"
 
 #. i18n: file ./displaydialog.ui line 501
 #: rc.cpp:123
 #, no-c-format
 msgid "1400x1050"
-msgstr ""
+msgstr "1400x1050"
 
 #. i18n: file ./displaydialog.ui line 506
 #: rc.cpp:126
 #, no-c-format
 msgid "1600x1200"
-msgstr ""
+msgstr "1600x1200"
 
 #. i18n: file ./displaydialog.ui line 570
 #: rc.cpp:132
@@ -376,63 +378,64 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 587
 #: rc.cpp:135
 #, no-c-format
-msgid ""
-"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
+"Замечание: если Вы пользуетесь ATI драйвером (fglrx) изменить значение "
+"количества цветов невозможно"
 
 #. i18n: file ./displaydialog.ui line 640
 #: rc.cpp:144
 #, no-c-format
 msgid "Color-Depth"
-msgstr ""
+msgstr "Количество цветов"
 
 #. i18n: file ./displaydialog.ui line 664
 #: rc.cpp:147
 #, no-c-format
 msgid "8 bit"
-msgstr ""
+msgstr "8 bit"
 
 #. i18n: file ./displaydialog.ui line 669
 #: rc.cpp:150
 #, no-c-format
 msgid "15 bit"
-msgstr ""
+msgstr "15 bit"
 
 #. i18n: file ./displaydialog.ui line 674
 #: rc.cpp:153
 #, no-c-format
 msgid "16 bit"
-msgstr ""
+msgstr "16 bit"
 
 #. i18n: file ./displaydialog.ui line 679
 #: rc.cpp:156
 #, no-c-format
 msgid "24 bit"
-msgstr ""
+msgstr "24 bit"
 
 #. i18n: file ./displaydialog.ui line 725
 #: rc.cpp:159
 #, no-c-format
 msgid "DPI-Settings"
-msgstr ""
+msgstr "Установки DPI"
 
 #. i18n: file ./displaydialog.ui line 762
 #: rc.cpp:162
 #, no-c-format
 msgid " dpi"
-msgstr ""
+msgstr " dpi"
 
 #. i18n: file ./displaydialog.ui line 882
 #: rc.cpp:171
 #, no-c-format
 msgid "Modelines"
-msgstr ""
+msgstr "Modelines"
 
 #. i18n: file ./displaydialog.ui line 922
 #: rc.cpp:174
 #, no-c-format
 msgid "Rem&ove Modelines"
-msgstr ""
+msgstr "Очистка файла конфигурации Х"
 
 #. i18n: file ./displaydialog.ui line 925
 #. i18n: file ./displaydialog.ui line 1232
@@ -442,7 +445,7 @@ msgstr ""
 #: rc.cpp:177 rc.cpp:228 rc.cpp:386 rc.cpp:481 rc.cpp:566
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./displaydialog.ui line 953
 #: rc.cpp:180
@@ -460,49 +463,49 @@ msgstr ""
 #: rc.cpp:189
 #, no-c-format
 msgid "VESA"
-msgstr ""
+msgstr "VESA"
 
 #. i18n: file ./displaydialog.ui line 1004
 #: rc.cpp:192
 #, no-c-format
 msgid "FBdev"
-msgstr ""
+msgstr "FBdev"
 
 #. i18n: file ./displaydialog.ui line 1009
 #: rc.cpp:195
 #, no-c-format
 msgid "nv"
-msgstr ""
+msgstr "nv"
 
 #. i18n: file ./displaydialog.ui line 1014
 #: rc.cpp:198
 #, no-c-format
 msgid "nvidia"
-msgstr ""
+msgstr "nvidia"
 
 #. i18n: file ./displaydialog.ui line 1019
 #: rc.cpp:201
 #, no-c-format
 msgid "ati"
-msgstr ""
+msgstr "ati"
 
 #. i18n: file ./displaydialog.ui line 1024
 #: rc.cpp:204
 #, no-c-format
 msgid "fglrx"
-msgstr ""
+msgstr "fglrx"
 
 #. i18n: file ./displaydialog.ui line 1113
 #: rc.cpp:213
 #, no-c-format
 msgid "ATI/Nvidia (Non-Free)"
-msgstr ""
+msgstr "ATI/Nvidia (несвободное ПО))"
 
 #. i18n: file ./displaydialog.ui line 1153
 #: rc.cpp:216
 #, no-c-format
 msgid "I&nstall driver"
-msgstr ""
+msgstr "Установка драйвера"
 
 #. i18n: file ./displaydialog.ui line 1156
 #. i18n: file ./servicesdialog.ui line 442
@@ -512,25 +515,25 @@ msgstr ""
 #: rc.cpp:219 rc.cpp:291 rc.cpp:429 rc.cpp:559 rc.cpp:578
 #, no-c-format
 msgid "Alt+N"
-msgstr ""
+msgstr "Alt+N"
 
 #. i18n: file ./displaydialog.ui line 1192
 #: rc.cpp:222
 #, no-c-format
 msgid "Fonts (fix-fonts)"
-msgstr ""
+msgstr "Шрифты (fix-fonts)"
 
 #. i18n: file ./displaydialog.ui line 1229
 #: rc.cpp:225
 #, no-c-format
 msgid "Register F&onts"
-msgstr ""
+msgstr "Регистрация установленных шрифтов"
 
 #. i18n: file ./servicesdialog.ui line 119
 #: rc.cpp:248
 #, no-c-format
 msgid "Manage services"
-msgstr ""
+msgstr "Выбор службы"
 
 #. i18n: file ./servicesdialog.ui line 127
 #: rc.cpp:251
@@ -542,67 +545,67 @@ msgstr ""
 #: rc.cpp:254
 #, no-c-format
 msgid "Select service"
-msgstr ""
+msgstr "Выбор службы"
 
 #. i18n: file ./servicesdialog.ui line 237
 #: rc.cpp:257
 #, no-c-format
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #. i18n: file ./servicesdialog.ui line 286
 #: rc.cpp:260
 #, no-c-format
 msgid "Status: not running..."
-msgstr ""
+msgstr "Статус: не запущен"
 
 #. i18n: file ./servicesdialog.ui line 311
 #: rc.cpp:263
 #, no-c-format
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #. i18n: file ./servicesdialog.ui line 334
 #: rc.cpp:266
 #, no-c-format
 msgid "Description Text"
-msgstr ""
+msgstr "Текст описания"
 
 #. i18n: file ./servicesdialog.ui line 354
 #: rc.cpp:269
 #, no-c-format
 msgid "Action"
-msgstr ""
+msgstr "Действие"
 
 #. i18n: file ./servicesdialog.ui line 401
 #: rc.cpp:278
 #, no-c-format
 msgid "Restart"
-msgstr ""
+msgstr "Рестартовать"
 
 #. i18n: file ./servicesdialog.ui line 420
 #: rc.cpp:282
 #, no-c-format
 msgid "Reloa&d"
-msgstr ""
+msgstr "Перегрузить"
 
 #. i18n: file ./servicesdialog.ui line 423
 #: rc.cpp:285
 #, no-c-format
 msgid "Alt+D"
-msgstr ""
+msgstr "Alt+D"
 
 #. i18n: file ./servicesdialog.ui line 439
 #: rc.cpp:288
 #, no-c-format
 msgid "Delete Ru&nlevel-Entry"
-msgstr ""
+msgstr "Удалить Ru&nlevel-Entry"
 
 #. i18n: file ./servicesdialog.ui line 458
 #: rc.cpp:294
 #, no-c-format
 msgid "&Add a Runlevel-Entry (Start service at Boot)"
-msgstr ""
+msgstr "Добавить Runlevel-Entry (стартовать сервис призагрузке)"
 
 #. i18n: file ./servicesdialog.ui line 461
 #. i18n: file ./networkdialog.ui line 383
@@ -612,44 +615,44 @@ msgstr ""
 #: rc.cpp:297 rc.cpp:395 rc.cpp:451 rc.cpp:493 rc.cpp:572
 #, no-c-format
 msgid "Alt+A"
-msgstr ""
+msgstr "Alt+A"
 
 #. i18n: file ./servicesdialog.ui line 511
 #: rc.cpp:303
 #, no-c-format
 msgid "Active Services:"
-msgstr ""
+msgstr "Активные сервисы:"
 
 #. i18n: file ./servicesdialog.ui line 551
 #: rc.cpp:306
 #, no-c-format
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #. i18n: file ./servicesdialog.ui line 579
 #: rc.cpp:310
 #, no-c-format
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #. i18n: file ./servicesdialog.ui line 617
 #: rc.cpp:314
 #, no-c-format
 msgid "Disabled Services:"
-msgstr ""
+msgstr "Отключенные сервисы"
 
 #. i18n: file ./internetdialog.ui line 118
 #: rc.cpp:326
 #, no-c-format
 msgid "sidux-Browser (require root access)"
-msgstr ""
+msgstr "sidux-броузер ( требуются права root)"
 
 #. i18n: file ./networkdialog.ui line 140
 #. i18n: file ./kerneldialog.ui line 26
 #: rc.cpp:347 rc.cpp:531
 #, no-c-format
 msgid "Configure Networkcards"
-msgstr ""
+msgstr "Перечень сконфигурированных сетевых адапторов"
 
 #. i18n: file ./networkdialog.ui line 148
 #. i18n: file ./kerneldialog.ui line 34
@@ -683,43 +686,43 @@ msgstr ""
 #: rc.cpp:362
 #, no-c-format
 msgid "Interface"
-msgstr ""
+msgstr "Интерфейс"
 
 #. i18n: file ./networkdialog.ui line 232
 #: rc.cpp:365
 #, no-c-format
 msgid "Ip Address    "
-msgstr ""
+msgstr "IP адрес"
 
 #. i18n: file ./networkdialog.ui line 243
 #: rc.cpp:368
 #, no-c-format
 msgid "Method"
-msgstr ""
+msgstr "Метод"
 
 #. i18n: file ./networkdialog.ui line 254
 #: rc.cpp:371
 #, no-c-format
 msgid "Boot"
-msgstr ""
+msgstr "Загрузка"
 
 #. i18n: file ./networkdialog.ui line 265
 #: rc.cpp:374
 #, no-c-format
 msgid "Driver"
-msgstr ""
+msgstr "Драйвер"
 
 #. i18n: file ./networkdialog.ui line 276
 #: rc.cpp:377
 #, no-c-format
 msgid "Slot"
-msgstr ""
+msgstr "Слот"
 
 #. i18n: file ./networkdialog.ui line 320
 #: rc.cpp:380
 #, no-c-format
 msgid "List of configured network devices"
-msgstr ""
+msgstr "Перечень сконфигурированных сетевых адапторов"
 
 #. i18n: file ./networkdialog.ui line 347
 #: rc.cpp:383
@@ -731,38 +734,38 @@ msgstr ""
 #: rc.cpp:389
 #, no-c-format
 msgid "Change the settings of the selected device"
-msgstr ""
+msgstr "Изменить настройки выбранного устройства"
 
 #. i18n: file ./networkdialog.ui line 380
 #: rc.cpp:392
 #, no-c-format
 msgid "En&able"
-msgstr ""
+msgstr "Включить"
 
 #. i18n: file ./networkdialog.ui line 410
 #: rc.cpp:398
 #, no-c-format
 msgid "Disa&ble"
-msgstr ""
+msgstr "Отключить"
 
 #. i18n: file ./networkdialog.ui line 458
 #: rc.cpp:405
 #, no-c-format
 msgid "<b>Description:</b>"
-msgstr ""
+msgstr "<b>Описание:</b>"
 
 #. i18n: file ./networkdialog.ui line 474
 #: rc.cpp:408
 #, no-c-format
 msgid "<b>Mac Address:</b>"
-msgstr ""
+msgstr "<b>MAC адрес</b>"
 
 #. i18n: file ./networkdialog.ui line 490
 #. i18n: file ./networkdialog.ui line 506
 #: rc.cpp:411 rc.cpp:414
 #, no-c-format
 msgid "xxx"
-msgstr ""
+msgstr "xxx"
 
 #. i18n: file ./networkdialog.ui line 537
 #: rc.cpp:417
@@ -786,13 +789,13 @@ msgstr ""
 #: rc.cpp:426
 #, no-c-format
 msgid "&Ndiswrapper"
-msgstr ""
+msgstr "Ndiswrapper"
 
 #. i18n: file ./networkdialog.ui line 692
 #: rc.cpp:432
 #, no-c-format
 msgid "Cards known to work"
-msgstr ""
+msgstr "Поддерживаемые карты"
 
 #. i18n: file ./networkdialog.ui line 726
 #. i18n: file ./networkdialog.ui line 741
@@ -802,108 +805,110 @@ msgid ""
 "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
 "com_openwiki/Itemid,33/id,list/"
 msgstr ""
+"http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
+"com_openwiki/Itemid,33/id,list/"
 
 #. i18n: file ./networkdialog.ui line 838
 #: rc.cpp:445
 #, no-c-format
 msgid "all"
-msgstr ""
+msgstr "все"
 
 #. i18n: file ./networkdialog.ui line 881
 #: rc.cpp:448
 #, no-c-format
 msgid "Inst&all"
-msgstr ""
+msgstr "Установка"
 
 #. i18n: file ./softwaredialog.ui line 48
 #: rc.cpp:457
 #, no-c-format
 msgid "Upgradable packages"
-msgstr ""
+msgstr "Обновляемые пакеты"
 
 #. i18n: file ./softwaredialog.ui line 111
 #: rc.cpp:460 software.cpp:119
 #, no-c-format
 msgid "There are no warnings"
-msgstr ""
+msgstr "Нет предупреждений"
 
 #. i18n: file ./softwaredialog.ui line 133
 #: rc.cpp:463
 #, no-c-format
 msgid "Name"
-msgstr ""
+msgstr "Название"
 
 #. i18n: file ./softwaredialog.ui line 144
 #: rc.cpp:466
 #, no-c-format
 msgid "Installed Version"
-msgstr ""
+msgstr "Установленная версия"
 
 #. i18n: file ./softwaredialog.ui line 155
 #: rc.cpp:469
 #, no-c-format
 msgid "Latest Version"
-msgstr ""
+msgstr "Последняя версия"
 
 #. i18n: file ./softwaredialog.ui line 233
 #: rc.cpp:472
 #, no-c-format
 msgid "&Clean"
-msgstr ""
+msgstr "Очистить"
 
 #. i18n: file ./softwaredialog.ui line 236
 #: rc.cpp:475
 #, no-c-format
 msgid "Alt+C"
-msgstr ""
+msgstr "Alt+C"
 
 #. i18n: file ./softwaredialog.ui line 278
 #: rc.cpp:478
 #, no-c-format
 msgid "D&ownload"
-msgstr ""
+msgstr "Загрузить"
 
 #. i18n: file ./softwaredialog.ui line 322
 #: rc.cpp:487
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file ./softwaredialog.ui line 364
 #: rc.cpp:490
 #, no-c-format
 msgid "Upgr&ade"
-msgstr ""
+msgstr "Обновить"
 
 #. i18n: file ./infodialog.ui line 17
 #: rc.cpp:511
 #, no-c-format
 msgid "SysInfo"
-msgstr ""
+msgstr "Системная информация"
 
 #. i18n: file ./infodialog.ui line 31
 #: rc.cpp:514
 #, no-c-format
 msgid "About sidux"
-msgstr ""
+msgstr "О sidux"
 
 #. i18n: file ./infodialog.ui line 42
 #: rc.cpp:517
 #, no-c-format
 msgid "sidux Version:"
-msgstr ""
+msgstr "dерсия sidux"
 
 #. i18n: file ./infodialog.ui line 80
 #: rc.cpp:521
 #, no-c-format
 msgid "Infobash"
-msgstr ""
+msgstr "Infobash"
 
 #. i18n: file ./consoledialog.ui line 16
 #: rc.cpp:525
 #, no-c-format
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 #. i18n: file ./kerneldialog.ui line 113
 #: rc.cpp:546
@@ -928,13 +933,13 @@ msgstr ""
 #: rc.cpp:556 rc.cpp:575
 #, no-c-format
 msgid "i&nstall"
-msgstr ""
+msgstr "Установка"
 
 #. i18n: file ./kerneldialog.ui line 344
 #: rc.cpp:563
 #, no-c-format
 msgid "rem&ove"
-msgstr ""
+msgstr "удалить"
 
 #. i18n: file ./kerneldialog.ui line 393
 #: rc.cpp:569
@@ -944,31 +949,35 @@ msgstr ""
 
 #: services.cpp:165 services.cpp:170
 msgid "Status: %1"
-msgstr ""
+msgstr "Статус: %1"
 
 #: services.cpp:165
 msgid "not running..."
-msgstr ""
+msgstr "не запущен"
 
 #: services.cpp:170
 msgid "running..."
-msgstr ""
+msgstr "работает"
 
 #: services.cpp:176
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
-msgstr ""
+msgstr "Apache v2 - следующая версия широкораспространенного вебсервера Apache"
 
 #: services.cpp:177
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
 msgstr ""
+"Common UNIX Printing System (или CUPS(tm)) система печати и замена для lpd и "
+"подобных прежних разработок"
 
 #: services.cpp:178
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
 msgstr ""
+"MySQL быстрый , стабильный, реально многопотоковый и многопользовательский "
+"сервер баз данных SQL"
 
 #: services.cpp:179
 msgid ""
@@ -976,28 +985,33 @@ msgid ""
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
 msgstr ""
+" Samba представляет из себя коллекцию програмного обеспечения , реализующего "
+"SMB/CIFS протокол для юникс систем и предоставляющего доступ к принтерам и "
+"файлам для Windows, NT, OS/2  и DOS машин-клиентов."
 
 #: services.cpp:180
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
 msgstr ""
+"SSH - портированная версия OpenSSH, свободная реализация Secure-Shell "
+"протокола как указано рабочей группой IETF secsh"
 
 #: software.cpp:84
 msgid "Apt-show-versions is missing!"
-msgstr ""
+msgstr "Пакет apt-show-version пропущен!"
 
 #: software.cpp:84
 msgid "Do you want to install it?"
-msgstr ""
+msgstr "Хотите его установить?"
 
 #: software.cpp:124
 msgid "No internet connection!"
-msgstr ""
+msgstr "Нет соединения!"
 
 #: software.cpp:131
 msgid "Don't make a dist-Upgrade!"
-msgstr ""
+msgstr "Не делайте dist-upgrade!"
 
 #: software.cpp:168
 msgid ""
@@ -1005,7 +1019,11 @@ msgid ""
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
 msgstr ""
+" runlevel 3 необходим для запуска dist-upgrade. Нажмите CTR+ALT+F1, "
+"зарегистрируйтесь как root и выполните команду init 3. Затем выполните "
+"siduxcc и используйте опции:Software->Dist-Upgrade"
 
 #: software.cpp:208
 msgid "Are you sure you want to clear your local repository?"
-msgstr ""
+msgstr "Вы уверены, что хотите стереть локальный репозиторий?"
+

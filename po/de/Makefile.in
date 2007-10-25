@@ -295,8 +295,8 @@ xdg_menudir = @xdg_menudir@
 KDE_LANG = de
 #>- POFILES = AUTO
 #>+ 2
-POFILES = siduxcc.po siduxcchermes.po kionetwork.po siduxcckde.po
-GMOFILES = siduxcc.gmo siduxcchermes.gmo kionetwork.gmo siduxcckde.gmo
+POFILES = siduxcc.po siduxcchermes.po siduxcckde.po kionetwork.po
+GMOFILES = siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo kionetwork.gmo
 #>- all: all-am
 #>+ 1
 all: all-nls docs-am  all-am
@@ -495,8 +495,9 @@ clean: kde-rpo-clean
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=siduxcckde.po siduxcc.po kionetwork.po Makefile.in siduxcchermes.po Makefile.am 
+KDE_DIST=siduxcchermes.po siduxcckde.po siduxcc.po kionetwork.po Makefile.am Makefile.in 
 
 #>+ 13
 siduxcc.gmo: siduxcc.po
@@ -505,21 +506,21 @@ siduxcc.gmo: siduxcc.po
 siduxcchermes.gmo: siduxcchermes.po
 	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
 	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
-kionetwork.gmo: kionetwork.po
-	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
-	test ! -f kionetwork.gmo || touch kionetwork.gmo
 siduxcckde.gmo: siduxcckde.po
 	rm -f siduxcckde.gmo; $(GMSGFMT) -o siduxcckde.gmo $(srcdir)/siduxcckde.po
 	test ! -f siduxcckde.gmo || touch siduxcckde.gmo
+kionetwork.gmo: kionetwork.po
+	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
+	test ! -f kionetwork.gmo || touch kionetwork.gmo
 
 #>+ 3
 clean-nls:
-	-rm -f  siduxcc.gmo siduxcchermes.gmo kionetwork.gmo siduxcckde.gmo
+	-rm -f  siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo kionetwork.gmo
 
 #>+ 10
 install-nls:
 	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
-	@for base in siduxcc siduxcchermes kionetwork siduxcckde ; do \
+	@for base in siduxcc siduxcchermes siduxcckde kionetwork ; do \
 	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
@@ -531,8 +532,8 @@ install-nls:
 uninstall-nls:
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckde.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
 
 #>+ 2
 all-nls: $(GMOFILES)
