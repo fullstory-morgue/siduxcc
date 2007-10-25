@@ -295,8 +295,8 @@ xdg_menudir = @xdg_menudir@
 KDE_LANG = ro
 #>- POFILES = AUTO
 #>+ 2
-POFILES = siduxcckernel.po siduxccservices.po siduxccdisplay.po siduxccinternet.po kionetwork.po siduxccnetwork.po siduxccsoftware.po siduxccinfo.po siduxcchardware.po siduxcckde.po siduxcc.po siduxcchermes.po siduxcckmain.po
-GMOFILES = siduxcckernel.gmo siduxccservices.gmo siduxccdisplay.gmo siduxccinternet.gmo kionetwork.gmo siduxccnetwork.gmo siduxccsoftware.gmo siduxccinfo.gmo siduxcchardware.gmo siduxcckde.gmo siduxcc.gmo siduxcchermes.gmo siduxcckmain.gmo
+POFILES = siduxcc.po siduxcchermes.po siduxcckde.po kionetwork.po
+GMOFILES = siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo kionetwork.gmo
 #>- all: all-am
 #>+ 1
 all: all-nls docs-am  all-am
@@ -495,59 +495,31 @@ clean: kde-rpo-clean
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 2
-KDE_DIST=siduxcchermes.po siduxcchardware.po kionetwork.po siduxccservices.po Makefile.in siduxcckmain.po siduxcc.po siduxcckde.po siduxccinternet.po siduxccsoftware.po siduxcckernel.po siduxccdisplay.po Makefile.am siduxccnetwork.po siduxccinfo.po 
+KDE_DIST=siduxcckde.po siduxcc.po kionetwork.po Makefile.in siduxcchermes.po Makefile.am 
 
-#>+ 40
-siduxcckernel.gmo: siduxcckernel.po
-	rm -f siduxcckernel.gmo; $(GMSGFMT) -o siduxcckernel.gmo $(srcdir)/siduxcckernel.po
-	test ! -f siduxcckernel.gmo || touch siduxcckernel.gmo
-siduxccservices.gmo: siduxccservices.po
-	rm -f siduxccservices.gmo; $(GMSGFMT) -o siduxccservices.gmo $(srcdir)/siduxccservices.po
-	test ! -f siduxccservices.gmo || touch siduxccservices.gmo
-siduxccdisplay.gmo: siduxccdisplay.po
-	rm -f siduxccdisplay.gmo; $(GMSGFMT) -o siduxccdisplay.gmo $(srcdir)/siduxccdisplay.po
-	test ! -f siduxccdisplay.gmo || touch siduxccdisplay.gmo
-siduxccinternet.gmo: siduxccinternet.po
-	rm -f siduxccinternet.gmo; $(GMSGFMT) -o siduxccinternet.gmo $(srcdir)/siduxccinternet.po
-	test ! -f siduxccinternet.gmo || touch siduxccinternet.gmo
-kionetwork.gmo: kionetwork.po
-	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
-	test ! -f kionetwork.gmo || touch kionetwork.gmo
-siduxccnetwork.gmo: siduxccnetwork.po
-	rm -f siduxccnetwork.gmo; $(GMSGFMT) -o siduxccnetwork.gmo $(srcdir)/siduxccnetwork.po
-	test ! -f siduxccnetwork.gmo || touch siduxccnetwork.gmo
-siduxccsoftware.gmo: siduxccsoftware.po
-	rm -f siduxccsoftware.gmo; $(GMSGFMT) -o siduxccsoftware.gmo $(srcdir)/siduxccsoftware.po
-	test ! -f siduxccsoftware.gmo || touch siduxccsoftware.gmo
-siduxccinfo.gmo: siduxccinfo.po
-	rm -f siduxccinfo.gmo; $(GMSGFMT) -o siduxccinfo.gmo $(srcdir)/siduxccinfo.po
-	test ! -f siduxccinfo.gmo || touch siduxccinfo.gmo
-siduxcchardware.gmo: siduxcchardware.po
-	rm -f siduxcchardware.gmo; $(GMSGFMT) -o siduxcchardware.gmo $(srcdir)/siduxcchardware.po
-	test ! -f siduxcchardware.gmo || touch siduxcchardware.gmo
-siduxcckde.gmo: siduxcckde.po
-	rm -f siduxcckde.gmo; $(GMSGFMT) -o siduxcckde.gmo $(srcdir)/siduxcckde.po
-	test ! -f siduxcckde.gmo || touch siduxcckde.gmo
+#>+ 13
 siduxcc.gmo: siduxcc.po
 	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
 	test ! -f siduxcc.gmo || touch siduxcc.gmo
 siduxcchermes.gmo: siduxcchermes.po
 	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
 	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
-siduxcckmain.gmo: siduxcckmain.po
-	rm -f siduxcckmain.gmo; $(GMSGFMT) -o siduxcckmain.gmo $(srcdir)/siduxcckmain.po
-	test ! -f siduxcckmain.gmo || touch siduxcckmain.gmo
+siduxcckde.gmo: siduxcckde.po
+	rm -f siduxcckde.gmo; $(GMSGFMT) -o siduxcckde.gmo $(srcdir)/siduxcckde.po
+	test ! -f siduxcckde.gmo || touch siduxcckde.gmo
+kionetwork.gmo: kionetwork.po
+	rm -f kionetwork.gmo; $(GMSGFMT) -o kionetwork.gmo $(srcdir)/kionetwork.po
+	test ! -f kionetwork.gmo || touch kionetwork.gmo
 
 #>+ 3
 clean-nls:
-	-rm -f  siduxcckernel.gmo siduxccservices.gmo siduxccdisplay.gmo siduxccinternet.gmo kionetwork.gmo siduxccnetwork.gmo siduxccsoftware.gmo siduxccinfo.gmo siduxcchardware.gmo siduxcckde.gmo siduxcc.gmo siduxcchermes.gmo siduxcckmain.gmo
+	-rm -f  siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo kionetwork.gmo
 
 #>+ 10
 install-nls:
 	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
-	@for base in siduxcckernel siduxccservices siduxccdisplay siduxccinternet kionetwork siduxccnetwork siduxccsoftware siduxccinfo siduxcchardware siduxcckde siduxcc siduxcchermes siduxcckmain ; do \
+	@for base in siduxcc siduxcchermes siduxcckde kionetwork ; do \
 	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
@@ -555,21 +527,12 @@ install-nls:
 	done
 
 
-#>+ 15
+#>+ 6
 uninstall-nls:
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckernel.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccservices.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccdisplay.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccinternet.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccnetwork.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccsoftware.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxccinfo.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchardware.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckde.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckmain.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckde.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/kionetwork.mo
 
 #>+ 2
 all-nls: $(GMOFILES)

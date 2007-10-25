@@ -33254,8 +33254,6 @@ done
 
 ac_config_files="$ac_config_files Makefile"
 
-ac_config_files="$ac_config_files common/Makefile"
-
 ac_config_files="$ac_config_files doc/Makefile"
 
 ac_config_files="$ac_config_files doc/en/Makefile"
@@ -33900,7 +33898,6 @@ do
     "config.h") CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
-    "common/Makefile") CONFIG_FILES="$CONFIG_FILES common/Makefile" ;;
     "doc/Makefile") CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
     "doc/en/Makefile") CONFIG_FILES="$CONFIG_FILES doc/en/Makefile" ;;
     "icons/Makefile") CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;

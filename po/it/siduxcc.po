@@ -1,4 +1,3 @@
-# translation of siduxcc.po to Italiano
 # translation of siduxcc.po to
 # translation of siduxcc-console.po to
 # translation of siduxccconsole.po to
@@ -10,9 +9,9 @@ msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-04 21:41+0200\n"
-"PO-Revision-Date: 2007-09-26 19:15+0200\n"
-"Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
-"Language-Team: Italiano <it@li.org>\n"
+"PO-Revision-Date: 2007-10-25 22:44+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -100,7 +99,7 @@ msgstr "Cambia profondità colore"
 #: modules/display.bm:237
 #, sh-format
 msgid "Remove Modelines"
-msgstr ""
+msgstr "Modelines rimosso"
 
 #: modules/display.bm:238
 #, sh-format
@@ -204,7 +203,7 @@ msgstr "Aggiorna kernel"
 #: modules/network.bm:10
 #, sh-format
 msgid "Network"
-msgstr ""
+msgstr "Rete"
 
 #: modules/services.bm:10
 #, sh-format
@@ -348,3 +347,4 @@ msgstr "Menu principale"
 #, sh-format
 msgid "Exit"
 msgstr "Esci"
+

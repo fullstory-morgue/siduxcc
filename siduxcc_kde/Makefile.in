@@ -742,7 +742,6 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 3
 info.moc: $(srcdir)/info.h
 	$(MOC) $(srcdir)/info.h -o info.moc
@@ -811,7 +810,7 @@ clean-metasources:
 	-rm -f  info.moc internet.moc network.moc services.moc console.moc display.moc software.moc kernel.moc start.moc
 
 #>+ 2
-KDE_DIST=startdialog.ui infodialog.ui Makefile.in displaydialog.ui softwaredialog.ui internetdialog.ui kerneldialog.ui networkdialog.ui siduxcc.desktop servicesdialog.ui consoledialog.ui Makefile.am 
+KDE_DIST=startdialog.ui softwaredialog.ui kerneldialog.ui networkdialog.ui siduxcc.desktop servicesdialog.ui infodialog.ui Makefile.in displaydialog.ui internetdialog.ui consoledialog.ui Makefile.am 
 
 #>+ 12
 clean-ui:

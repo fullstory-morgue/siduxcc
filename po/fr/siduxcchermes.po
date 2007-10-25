@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-25 21:59+0200\n"
-"PO-Revision-Date: 2007-04-04 20:00+0200\n"
-"Last-Translator: LjanA\n"
+"PO-Revision-Date: 2007-10-25 22:41+0200\n"
+"Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Kate 3.5.7.\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -40,9 +40,8 @@ msgstr "Légende"
 
 #. i18n: file ./legendbase.ui line 106
 #: rc.cpp:7
-#, fuzzy, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+#, no-c-format
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Des alertes prévenant le dist-upgrade sont publiées. Consultez sidux.com "
 "pour plus d'information!"
@@ -87,20 +86,3 @@ msgstr "À propos de siduxcc-hermes"
 msgid "en"
 msgstr "fr"
 
-#~ msgid "C&ustom"
-#~ msgstr "Personnalisé"
-
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgid "Installed Version"
-#~ msgstr "Version installée"
-
-#~ msgid "Latest Version"
-#~ msgstr "Dernière version"
-
-#~ msgid "Show upgradable packages"
-#~ msgstr "Montrer les paquets pouvant être mis-à-jour"
-
-#~ msgid "Update (apt-get update)"
-#~ msgstr "Actualisation de la base (apt-get update)"

@@ -7,12 +7,12 @@
 # cobra <cobra@sidux.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: siduxcc_hr\n"
+"Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-04 21:41+0200\n"
-"PO-Revision-Date: 2007-09-11 05:07+0200\n"
-"Last-Translator: cobra <cobra@sidux.com>\n"
-"Language-Team:  <de@li.org>\n"
+"PO-Revision-Date: 2007-10-25 22:43+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -203,7 +203,7 @@ msgstr "aktualizirati Kernel"
 #: modules/network.bm:10
 #, sh-format
 msgid "Network"
-msgstr ""
+msgstr "Mreža"
 
 #: modules/services.bm:10
 #, sh-format
@@ -347,3 +347,4 @@ msgstr "Glavni meni"
 #, sh-format
 msgid "Exit"
 msgstr "Kraj"
+

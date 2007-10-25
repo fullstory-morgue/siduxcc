@@ -700,7 +700,6 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 3
 systray.moc.cpp: $(srcdir)/systray.h
 	$(MOC) $(srcdir)/systray.h -o systray.moc.cpp

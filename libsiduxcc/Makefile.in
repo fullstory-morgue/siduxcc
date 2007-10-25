@@ -619,7 +619,6 @@ uninstall-am:
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 3
 process.moc.cpp: $(srcdir)/process.h
 	$(MOC) $(srcdir)/process.h -o process.moc.cpp
@@ -632,7 +631,7 @@ clean-metasources:
 	-rm -f  process.moc.cpp
 
 #>+ 2
-KDE_DIST=process.h Makefile.am Makefile.in 
+KDE_DIST=Makefile.in process.h Makefile.am 
 
 #>+ 2
 docs-am:
