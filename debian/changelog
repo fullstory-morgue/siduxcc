@@ -1,9 +1,5 @@
-siduxcc (0.5.13) UNRELEASED; urgency=low
+siduxcc (0.6.0) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc: display: gfx-function added
   * siduxcc: software: clean-function added
   * KCONTROL-UIS --> KDE-UI 
