@@ -1,0 +1,571 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>SoftwareDialog</class>
+<author>Fabian Wuertz</author>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>SoftwareDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>681</width>
+            <height>484</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Software</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>widgetStack2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <widget class="QListBox">
+                    <item>
+                        <property name="text">
+                            <string>Upgradable packages</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image0</pixmap>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>overviewListBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>80</x>
+                            <y>80</y>
+                            <width>290</width>
+                            <height>214</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>290</width>
+                            <height>214</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>290</width>
+                            <height>214</height>
+                        </size>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="1" rowspan="1" colspan="9">
+                        <property name="name">
+                            <cstring>warningLabel</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="text">
+                            <string>There are no warnings</string>
+                        </property>
+                        <property name="alignment">
+                            <set>AlignVCenter</set>
+                        </property>
+                    </widget>
+                    <widget class="KLed" row="0" column="0">
+                        <property name="name">
+                            <cstring>warningLed</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                    </widget>
+                    <widget class="QListView" row="1" column="0" rowspan="1" colspan="10">
+                        <column>
+                            <property name="text">
+                                <string>Name</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Installed Version</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Latest Version</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>uList</cstring>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>Single</enum>
+                        </property>
+                        <property name="allColumnsShowFocus">
+                            <bool>true</bool>
+                        </property>
+                        <property name="itemMargin">
+                            <number>2</number>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>spacer1</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>278</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLabel" row="2" column="2">
+                        <property name="name">
+                            <cstring>cleanPixmap</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="3">
+                        <property name="name">
+                            <cstring>cleanButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Clean</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+C</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="4">
+                        <property name="name">
+                            <cstring>downloadPixmap</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image2</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="5">
+                        <property name="name">
+                            <cstring>downloadButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>D&amp;ownload</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+O</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="6">
+                        <property name="name">
+                            <cstring>updatePixmap</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image3</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="7">
+                        <property name="name">
+                            <cstring>updateButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Update</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+U</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="8">
+                        <property name="name">
+                            <cstring>upgradePixmap</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image4</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="9">
+                        <property name="name">
+                            <cstring>upgradeButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Upgr&amp;ade</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
+                        </property>
+                    </widget>
+                    <widget class="Line" row="3" column="0" rowspan="1" colspan="10">
+                        <property name="name">
+                            <cstring>line3</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidgetStack" row="1" column="0">
+            <property name="name">
+                <cstring>widgetStack3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>35</height>
+                </size>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer row="0" column="0">
+                        <property name="name">
+                            <cstring>spacer1_2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>330</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QPushButton" row="0" column="1">
+                        <property name="name">
+                            <cstring>backPushButton</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="text">
+                            <string>&amp;back</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+B</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="0" column="2">
+                        <property name="name">
+                            <cstring>applyPushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>appl&amp;y</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+Y</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>2</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Don't close the window, before you see the message "Process done!".</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1838">89504e470d0a1a0a0000000d494844520000002a0000002a0806000000c5c3c95b000006f5494441545885ed975d6c14d715c7fff7de99ddd94f2fd8f80bdb800dc19400815291481014c94aab4a2d24a9da9796b46e15a905454215a554ad22d43ea4792112a10951ab56f01235aadab8b46a01f1502c4a64f315ec821178c1df59ecf57aeddd99d9fb71fa60700183761393f6a1fe4b473bda39e79edf9e73e6de1d605ef39ad7bce63517b1b92ef0b3e453765addda62c87c198c5693410500308e5110ebe68cff75a1b5e4f4cf975d94ff13d0dd37ea239ec9ee2e4c9add137d66a13b642161ea11440c82dbf0d924b27c0056551e650d3c1d88f1030e8f1f38d0d49ffbaf817eff5aa245e6f591db97754df9d493d8b0f4392c59b412825bf7f911190c8cf5a2a3f7386e473ec2a23562d80e8b1d6f3f9139f99983bed21ddfe58eea03d90b31eb8b9ffb0e962e5a55525c32d58dbf5ff91dcad64fa95085d8fdeeeaec5b9f19e8f72ec6bf35f5b13e62ae57e3c5cfef42345836cb47a300ce04188959f7b26e1a7f387710f613a38856891dbf7e2a7bf4b1837eb733bed1cfead3f92b09e7c5f5bb100ec600005698211066b0420c101a1fdd3c0b22c2fac6cd300a501e41e609851c010026dd71fcf1c25b88ad9ef28271b1e5371bb39da5e4e7a538b50dbec6a46f0ea67be03cb7eaebb02c1b2ce22352af10ae56b0e212b07c5c1e68c78e55afe3a5a69fe062b21db00bb06212a12a8558838288fa08061c6c6d7e09633de448df1c6c1b7cada462cdeecf43646fbff042eeb6f96163e80b68ac5c8d780d436821c0840661daaea43ab1bd7e1f6aa22b90701621820a740efd05e589721034c035ec08c10a1b701546ce9dc2b8375277ddfff0d2a5dffa578b319454512d75abcc70acacdd80b27a821dd530903396cc5cc6b315ad58125f3b13b3b6e659ac8d7e05bd4357615098312ba4b0a09ef064c326c80c8796bab51486a2a02f1faf8cca3cb5d4c697a3a2ce81e5e8fb128fe47ab132d48275e52db362b7367d0d95723d8647fbeffb613ca051d510416d7c39649e5a5e3e5e199d33a8577037290f4e53dd0a44e20020672c5b482181266caddaf1c8f817d6ed82495520931d0541ce583062b062c90a280f8e577037cd19544bd3c88cc0e29a4a109333e69a2c64c1c2576bf7165b02df7e7a3f86af49b8de24c0e48cd5d75683190e2d4de3630045d4b123884405000540419387b4378e6fd4be01c68a8f39e7023bb7be89cbe76e62c8bb00cfa441900887399c40185a62eead37123e170c96a5672ad13575064dce169c9f3886b363ef63dc1f7a64fce8d4104e5dfd3ddaaffd196b2abe84d327ae62cc74412203c61502010123e117e3b08a3990a4819c978567c6e088e993a839b606693a833401bef120333eb6547df3a1f1e7fa4ea23bf02682110b88014f2fae85cd05723408c6aae1fa7990a4813983c2884ee92b1af592ac2ab20c01168523ec99db8c2914ab4759348450c87ee0db02323289fc94241851f4742adafab6d6c9219943c7f0681a12b791a73e7818818761b8340097068b2d019b5b08707b968d8c6550c851475bebe4a367a75450002089f77aae7f0c63081667e04c823305c109162f7eb8d9dc9a650c1cffea190649bc570a4349a08e881d1eebf3072fdcea85cd6d04c43dc61f6ce96c051e8c1136ba076e6124991b7444ecf06303fd60672aaf3cb6afebfc083afb7b60b1ffb4d2e6c5c7fcded6dbcc46d770121d1ff641796cdf073b53f9c7060a00a7f6ba472707e89d4b970670aab7136ea13093bc38e8b49f540affb87511673b7b313940ef9cdaeb96fc7fb47839ee5145a4f6d554f760b55163dbd3f2349627ead0bc70297afdb7d19d3c0ca301a301d20452d3d75a6bace295e81cb98a6be37d18e9f231d6a3ff5459b6f855a0b7e4dc9ff855e407efb6f04b37db7f11a9c18fab37582c58c610b543a80957201e88c0110130c6e0a90226651e23f9514c1472f0270823e715e586f1fabaa59b7ffaab574e9a4f92f753bf856ede1b79c630f546a2916f4e2ce388d6723cb801180d4c0d19649206995ed3cec9fa51fb2f73fffc34f94a063d74e810ebe8e860376edce0131313cc755d56501eaf787ef419e1986d9683e79d856cb9e5301b009447d24bd375e5e1b8f678dbedbf959fb1ad20398e63128904d5d5d599e6e666dabf7f3fcd0974cf9e3dfcc4891322954a59aeebda4a294b6b6d1b632c22b288c802601191b8732d441076b80a7110904f6152fb90003400cd39d70014634c32c614634c0921a46559ca711cb960c102b571e34675f4e8d1878ec42377eb4422c1fbfbfb452e97b3b5d677216d22b2892870f713c05d0b9286ed67085e860886714c3fac020027227ea7308c8818630c44d3c5242218630c00eaebeb7b2868d1d61f3972841d3b768c2593493e3e3ecef3f9bc28140a5c29258c31dc18230030630cc3f47677774d02408c31628c19ceb9e19c1b21840e0402face0898868606b36ddb36d3dada5ad208cc6b5ef3fa7fd1bf01326a5847c13a66c50000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="988">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003a349444154388d8d95df6b1c5514c73ff7de99d9ececcf6e924d5a1b8d6d95a0883558ad524a2a943c54c1b7b614958220faa2fe03bef807f8e31f68401051d0481fa4556940db0721d056d34aaaf96163139a6c934cb2c96477e61e1fd695cd6ed87860eec0e19c0fe77ccfe15e2522349a520a80f4e9ab7981571179434486c40a5604892d220256c6ac956f111989bf3bb902d0c8523b81d367ae0e89f08df612a9f4debe07dd7bf704dd3d6e944b42ce8784a2637d29f0e7a6160a376e2c945756c3f3727978b42d3873f6da9008577a1e3bf4b7d75b0cac406f0eaf3b83ef198cabf08cc2263da29e3d84bead24bff8fc66f7f8afa513f2e3f0589da36932112e1c78e2d092bfaf1800f4a6c8eecbd0d9e19274141e8058f45625f282a09add126dce9f7972b52bef5e68e4b4809fee4ff7bf365cac00149264f21da40440a0de9b349c56445bc7916cda7da42d38e73beccfd52acb27f0eb7edb1cd860c5b463ace8a82d7871ad523a3b40f69da314b4da51aa6d76ec6137f1e75f6138732fac36fa9de6c4cdaaadccc1c5b79fe1c5d70f93fdfe0e95db25a2c5107b7f1ddb9b42f7a4d147f7bb6e8f0f1f8e2e2f7ef673b08648aa2d586261054ab3152e0e7a9c3cf538fe29e888c0dd8860698d787ca61a7ef0e5cae24f931b6154d7a8a9955670434015c24d0817ab30b10cbf4dc74c4c9799980999be176e4f6c1a428b8648eb98a49e28b54f768869aeb87538569a5d751e2252cbafef5f1b708b14767b802b3119a9e2ab4a6c9c6883842d939432491d6f44b82b60aaff0b2c0206bca2c79081fefa722a048d6094c55196840a7d63c2ae10b311909e23de450a4fe3e5e1150ffa15a03458011185521aad5d8c71d0cad45a52b19f75828360b7b15a2aee4cbb9d2eb0568150c35615e20844344a19b436b84e023fa9719d9872b8496463e33aeba66dc544115dc07a50adc9a26b556bad504aa195461b85311ac775e9cc2639dd779b9ed42e1a97cb5b2c2cac32d89b438020061dd7e135a8529a030561201f70a4b0c0f1e75ee2fa9d89f6e0f1df036e4d2db3b555259f4f93cb7590f3e1511f8e1513040309ba4d99cdd025912890cb3ec5fc03e1976bf3db38ad52c432f2d6a77f70732a2008cacccfaf522a95895643527195be9490c9a428767792cb66b8351b72fccdcb00238d981d9f269e1ffd0891f7869e2df0f20b454e0c7671f0a1349e67701c87bbf743ae8c2ff2d50f77b9746916e06326cfbdbfeb9b07c091affbb1f22eb10c21f6f0bf3bc77f7f91eb58c6804f983c3703dbef997f00a69db0fa13ddd1ee0000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="1162">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000045149444154388d5d943b6c1d551086bf9973f6eede87df602718123084880824408040088104848a121189023a24a880928e0aea50215151d2d15100e2155e1204481129100241891347b6af1d7bef63cf0cc5ee7512565aedd9a3d53fdff9e79f15d5f7d8b73cc3e67ac9ee4e499665af1f79f2f0bbdd9be7f2e0e6bd02a6e8b36fca701477e7ff9792f863adc54e36233e1cd8c9cf4e7f1c014484d9852ebb3b7d0ede7bfbdbcbaf3cdfbbb40db74ec1d13be196ea3cf72d95248f3708b6226810aac1900fbeea727ee1369617a137571c8b66c67867305f74f2984934cf42f1f7852117578de1b47372c3d9ceb7c8d6b7195ba006816e2e9c3b5f5256c2e30fb4d9eae7f415a63b30b334a3b13355bc7bdb2377bd2a45912d3fb492e6e7f2a9a5f55f989b5714c8b7c0b21167078e59852a58659cbe249cdbecb0bd51325794cccde65c54c814c6a3e4f1c853f7bc71d3b1e75a57366165111e5b8495749a7bf6c328290930179209ed1c54616b73c84f5fcc32fff03207e390ef4e9ca07720d19a81a06006b1b7381baf6cc3fa06ac09fc3bae98eec0c56cc8c874efe8e2891ffe1ed3ca849545a7aae6180da0339b33bd308d25238b75e16410ab71f29640a70524e3f25ae2fe43394b8b39e558983437c890378fe72c4c3befbfb54b91055c40537dfcbc1db804440503a2598d9f054809ae6c182a816e5761784d380667348878c7e9765b84a80481560617d6a1da0d140b10a4b122396402598434822b6b099148b79b617a1db10a77df316661068aa2208bca48a115607527a37deb34f3450d9926c241eb4c56bbcee5b5443b0ff4665b74ba40330fee810fde8904158a0079ae0c1aba8529e7a547479459ceaffd486510bdb142154606db03e1fb338a1663c66390eb0622660105ca41c5e64e8b62b1f6b3db129e5951ce961527fbb1b6c21be20074e703478e4ef37509dffc082a10030471542084e65b81ee7e218ff5da5da8889495d71e3bc4ca0085a70f5c65b9b38385888a2022a82a41051545556eb8f320ac5e0dfcb6194906e0a494d0d008d79b70a8b7c1b3873352c808c10941090a51851084a0bad748544112df9e499cdc8898038ddf3a49c5e4659804c967306dd702013480077005c28d7ec3986135428586586a62203944f3c9b4388881c3d8c01ddc9aea93316d3c9e5cc96aefcd0177ccec3a62a7a96a04f13d912a3531931b9f78dd44dc6b616d3cd57aaf9581c420718f283922d79290ae139f68ee59a110f01a46a132b86ae045643c82feda558fc96ada2a192a4e08b505484d3911c7eb5999342a08a4ca6817f0e75f7d5e78f9cbcada3d39bf257eeec4a94f623293d57fce62872a8a966011aa662c934155d57e4b93df498ec17133ba6de8f7cbf2e74f7f7f0442096688fe1547dbc3b4ffc01daabd0bec9ad7de896302a675a1e44205545e0f5205445168b72887b0db1f8e61780a22c449aa3ac73f5a7ae2c1176f9e71b9291bbb116a42a97fc4d2344ea8d7228a08043536ab4c56d786f6cfe73f7f68a3f23570883900ff01203709dcc07f560d0000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="1422">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000055549444154388d85947f7054d515c73ff7beb76fdfbefc227149b2224a7581115b3b0e20a1528d4d2a8a42a94ab45a2ad8a9b55361680561b45a2a56ed8cb5c82f2144a982437fd84981161815816aca205a62a7a5118d6811324d22ec86cde6edee7bf7f48f8424d5da7e67ee1fe7ce3d9f7beeb9e71c252294ab99008468421cb27600b8e0f079a2fa37f8eeabc03d440c5801287b68c9808de6aca46bed30eb93f2328f24c757bc5973e9b88b71fc38761eac3ca8cf7619ae4f9d0a082a70fd96faa9931ed8bffd27d159332f05e9d15879c02410930093008aff17d81e7e438e6074e8c8c1158b6f4bdc7def37703d1b3b0c29f3ca667bb1d21416ba3f62add2bd6121eb678f01bf04bdfa932f51fd39be1e83a90c1dfdf6cf7efeedea9be6dfc84f77f7527381e6ab1786749dea436985a0fa83d0a0c380f7db4fb271730b3b5e7afb4410ea9b50f6c1b3395622424c5d4d8efcaaefce9bb5e0b1f54b99bfee381da70b9417292ccbc2b6344640f7733102b18862cad8226e9e5ccc5f5a5a99b7e8793fdd93bb15656f1b0497abe91882bac479f19d8d5b9639a7bd24f73ffb1e5f9b54c2ec2b2ac8050a410653a694a22b23bcf06a176dc7b2ac5a9824d7f12e5f9fb7f1b49fe762e97afa5f4a44a854d331d864c9ccad4e943fb3b1697184aaf15884648eb5f2dcaf0f108bc6c4a0112584a2d425e34771c7b76ad9b0bb87677676b077e56534366e6765e3be26f978d3771011127c8591d453413dc5d45e5f1aab4b3dba7cbde4731959b278bde05dbe8792fac9945c3383d26bafa574461da5376cbdfcaafbccd177dae5ca6fbe22b72f3d20afec7953dc73effa484486aa62e05b88e2fe31df17241f5abe65dba103ed5f8a161511c9969e08710e19a7188c0b1610067bde686d3beff73b0f4d5b777f0d1f9cc8724e85a23a5e5c3958150975755596c009d0c6a0d1b8051bdd5d20f3431b7785c2d9a1a121658f00184dc44e53303d18fff1aa44d97dc964a5285b91c919d5f64eb7dfd7b9c15322c28545d7654725aba34ec4228fe6fdf74e914af72d7260b585b940b01d1ff36ed6ae0043335e7015969e4f2fdbd0c128dc40a36d505a13ba79496feab0012e1a5be56cddf5a4ee8b78c4cb1c1e59b68e479fda3255427735e80f0d869c06740f3876be61666df9071d9dcd6f1c3ef25b82e25bc801daf417f840a36880eeae8e4c269d62cdeb86557b7dbebf603613c68c9ed3174dfdb8cfc94ccc79996978fe349c9eb1a8ce91b55726796dd783eaeeb9d73410f18fe1320e6c301ac2619d57a5bef0f2c38f2faa9f74db9ddcb9f2283f9a732e53e3a758bbe6771c39f291116589284b8568f1435f2fbbf76675fe6535442d61ef1ff6b2f081e77b7b7ba58efc40e76537f583c7a88913475496bedebcafc96d395dc5f20d6dcc9812a7a1368e431e6386668088c28b695ed8ff312dffe8e5a9ef8da5bdf530772d6c4af59c09a610e8a383e0f1ea0ab264167c6edcf92bd73cb742fbe72459d7fc4f0eb79d41508816542883f0d00888a12b55e0923131763d3999865b9f60c79e434f60ec2592deda0f1ea7a602e0939deb957a6b6fbf6366c9f41beb305e19b9706040c860b1533e224a6373272d7febe3d98726b0ffa5d758b6fcc593b95ef5458cee96c2e6ff0483218b5f992778306615cdaaac8ec7dd9298158a25068d414bdaf7a34b96ced1136abe8cab0376bcf8320fff627ba7c97993c03d0e06296c1eeabca1016d7782bd4087d60f8e9fe81ae5638a04db846802f4c99cceff2a9d2e5c37d23bc3a27b9ad8b9ffaf07edc2881bc0ee36b619c6f96c051afd61044d88c6c6268a8d671c7fdfaeb7d8d4b4bbf0f7f68e5516de621b8dffa900ff8f04b0b07170ce6ea5fefca7d6f600e79662bcb77c34e6bff8fd1b82645dbed25c43880000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="PNG" length="981">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000039c49444154388dd5956f6895551cc73fe73cf7b9777773d7b599ac4d2a7023cb2cb1dbb05b146d25412f24b2ec85d83f82b469f68732fb3397fd930a75c312418308f25510ccb281a0280e5be10bc3e845d0b0dc16cb6dbaed3ee79ce79cd38b7bf5b6ee24dff8a2030f3c3ccff3fb3c5fbebfeff91de1bde74a2c7945a840e2c28da8eb2a3d551ea218ac034842bcbbb171f68a4442ca8181d15e089e00c640423a01a9923e3fbafe7214fb0cc44757afbee5f16ff7afa8ea3df048babd3dbb1cdcf7e01b2f4b71d9721e880fae597b7bb67b7b2b633e208aa1bbeb3e6aeb2a9bdfee3c7a08dcadc0d44ce59756eccd978fae5c94ddb9a3954113f0d641d8d4ebf869c8d0b9f90ed6adcb3681ede112bd2f070b0193eac9252df356eeec6ee36c1cf0ee611818f70c8f1b3abecbf3eb50c4d60fee62d9034df712a94ec47f8105908f9b3399d48eee6d6d62ced5957cdaef1818f3a4bd21e91443a39a2dfbc7c8c796ae6d77d3302fb39109934314ebcbc0a12cbc88cc17af6e5a5a9dcb35b0ef94a7ef0f491a43945744794512cd0fbf4df151cf30372c984de7965c52c2e7782f49ca19c042c039f3ecfd0fce6fd9b07e09fd839ecf4e08626dd091462b8d893426aff15ab3f7d05fecea39c3d3ab9a786cd582f94c9af7906206706caf495787efbfd3712795e990fed38e1baf8a5958a37046a12355fc81e2a6b982ecb5217d3f8ff3fbe004afbdb898b90db39e27328b2fe02ec62d88edae8dafe76a5a6eab07606d4b80359a3f47e1b9af3423530a1b299cd1bcbcac8ee6fa0a0c02612d372fac61f39b2d151b5e39f209909b064ed556b48954c09e7da7d0d6122bcb3d2df55c7f5da660873238a5b15a53950a1839abf9e6c819bcf78449c1a4b654d75766cb1447b0bd636bdf52afadc67bc37993fdf0e3d686f6671615bd55b84861b5264c488eff38cc0b2f1d1e21298f2145482093321d9c2c033be7df403bb01e3c900ef6c8044f59ebd04a612245ac145e6b626b11019092c789dd72bc04e77061a965d3b774200afd0c0538919681c05a878e34513eba688535b610cd8a2089067c31c4ffc871f9ac484b901e8c104870b163fc5cc4d8589e58299cd698d816767280202c42f5744c09ec3d5448080057102ea5249d94ac69ad657c7216d618acb1ccc98485a006a2a0568ab2e15002a7287ce0295c92c4848a8962cbc3b95af0e09d27769e20109c8f2c2214a117457058ac2b0357fdcb15cf89dd5ffff2d08163a7896357f2cf4322900c8d46c2a71327f130d31012ffbb33ef6f17f1ae4c33c4d6c60000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>cleanButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>clean()</slot>
+    </connection>
+    <connection>
+        <sender>downloadButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>download()</slot>
+    </connection>
+    <connection>
+        <sender>updateButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>update()</slot>
+    </connection>
+    <connection>
+        <sender>upgradeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>upgrade()</slot>
+    </connection>
+    <connection>
+        <sender>applyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>save()</slot>
+    </connection>
+    <connection>
+        <sender>backPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>back()</slot>
+    </connection>
+    <connection>
+        <sender>overviewListBox</sender>
+        <signal>selected(int)</signal>
+        <receiver>SoftwareDialog</receiver>
+        <slot>loadWidget(int)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">kdialog.h</include>
+</includes>
+<slots>
+    <slot>update()</slot>
+    <slot>download()</slot>
+    <slot>back()</slot>
+    <slot>upgrade()</slot>
+    <slot>clean()</slot>
+    <slot>save()</slot>
+    <slot>loadWidget(int)</slot>
+</slots>
+<layoutdefaults spacing="3" margin="3"/>
+<includehints>
+    <includehint>kled.h</includehint>
+</includehints>
+</UI>

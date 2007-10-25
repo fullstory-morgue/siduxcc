@@ -6,5 +6,5 @@ Exec=siduxcc-hermes
 Icon=siduxcc_hermes
 Name=Hermes (upgrade sentinel)
 Name[de]=Hermes (upgrade Wächter)
-Categories=siduxcc;
+Categories=sidux;
 Type=Application

@@ -22,17 +22,17 @@ Copyright:
 	siduxcc/modules/interface
 	siduxcc/modules/services.bm
 	
-	siduxcc_display/siduxcc_display.cpp
-	siduxcc_display/siduxcc_display.h
-	siduxcc_display/siduxcc_display.ui
+	main/display.cpp
+	main/display.h
 
-	siduxcc_info/siduxcc_info.cpp
-	siduxcc_info/siduxcc_info.h
-	siduxcc_info/siduxcc_info.ui
+	main/info.cpp
+	main/info.h
 
-	siduxcc_services/siduxcc_services.cpp
-	siduxcc_services/siduxcc_services.h
-	siduxcc_services/siduxcc_services.ui
+	main/network.cpp
+	main/network.h
+
+	main/services.cpp
+	main/services.h
 
 
 	The following file is based on fw-detect from:
@@ -60,89 +60,100 @@ Copyright:
 
 	--- icons ---
 
+	The following icons are from kde-icons-nuovext
+	(C) 2005 Alexandre Moore <alexandre.moore@gmail.com>
+	display.png                  in main/startdialog.ui
+	browser.png                  in main/startdialog.ui
+	tux.png                      in main/startdialog.ui
+	network.png                  in main/startdialog.ui
+	kcmsystem.png                in main/startdialog.ui
+	package.png                  in main/startdialog.ui
+	info.png                     in main/startdialog.ui
+	knewstuff.png                in main/startdialog.ui
+	exit.png                     in main/startdialog.ui
+	reload.png                   in main/kerneldialog.ui
+	cancel.png                   in main/kerneldialog.ui
+	configure.png                in main/networkdialog.ui
+	edit.png                     in main/networkdialog.ui
+	stop.png                     in main/servicedialog.ui
+	player_play.png              in main/servicedialog.ui
+	up.png                       in main/softwaredialog.ui
+
+
 	The following icons are from adept-common
 	(c) 2004  David Vignoni <dave@icon-king.com>
-	adept_sourceseditor.png      in siduxcc/siduxcc_kernel/kerneldialog.ui
-	adept_reinstall.png          in siduxcc/siduxcc_display/displaydialog.ui
-	adept_update.png             in siduxcc/siduxcc_software/softwaredialog.ui
-	adept_upgrade.png            in siduxcc/siduxcc_software/softwaredialog.ui
-	adept_notifier_warning.png   in siduxcc/siduxcc_kmain/kmaindialog.ui
-	                             siduxcc/icons/hi22-app-siduxcc_warning.png
-	adept_notifier_ok.png        siduxcc/icons/hi22-app-siduxcc_ok.png
+	adept_sourceseditor.png      in main/softwaredialog.ui
+	adept_reinstall.png          in main/displaydialog.ui
+	adept_update.png             in main/kerneldialog.ui
+	                             in main/software/softwaredialog.ui
+	adept_upgrade.png            in main/software/softwaredialog.ui
+	adept_notifier_warning.png   icons/hi22-app-siduxcc_warning.png
+	                             icons/hi*-app-siduxcc_hermes.png
+	adept_notifier_ok.png        icons/hi22-app-siduxcc_ok.png
+	adept_commit.png             main/icons/ok.png
 
 
 	The following icons are from knetworkconf
 	(c) Bernhard Rosenkraenzer <bero@redhat.de> and many others.
-	siduxcc/icons/hi22-app-siduxcc_lan_down.png
-	siduxcc/icons/hi22-app-siduxcc_lan_up.png
-	siduxcc/icons/hi*-app-siduxcc_wlan_down.png
-	siduxcc/icons/hi*-app-siduxcc_wlan_up.png
+	network_connected_lan_knc.png  icons/hi22-app-siduxcc_lan_down.png
+	network_disconnected_lan.png   icons/hi22-app-siduxcc_lan_up.png
+	network_traffic_wlan.png       icons/hi*-app-siduxcc_wlan_down.png
+	network_disconnected_wlan.png  icons/hi*-app-siduxcc_wlan_up.png
+
 
 	The following icons are from kdelibs-data
 	(c) 2002 Kalle Dalheimer <kalle@kde.org> and many others
-	siduxcc/icons/hi22-app-siduxcc_disconnected.png
-	siduxcc/icons/hi32-app-siduxcc_lan_up.png
-	siduxcc/icons/hi48-app-siduxcc_lan_up.png
-	siduxcc/icons/hi32-app-siduxcc_lan_down.png
-	siduxcc/icons/hi48-app-siduxcc_lan_down.png
-
-	configure.png                in siduxcc/siduxcc_network/networkdialog.ui
-	edit.png                     in siduxcc/siduxcc_network/networkdialog.ui
-	eraser.png                   in siduxcc/siduxcc_display/displaydialog.ui
-	fonts.png                    in siduxcc/siduxcc_display/displaydialog.ui
-	view_text.png                in siduxcc/siduxcc_display/displaydialog.ui
-	colors.png                   in siduxcc/siduxcc_display/displaydialog.ui
-	randr.png                    in siduxcc/siduxcc_display/displaydialog.ui
-	html.png                     in siduxcc/siduxcc_network/networkdialog.ui
-	emptytrash.png               in siduxcc/siduxcc_kernel/kerneldialog.ui
-	penguin.png                  in siduxcc/siduxcc_kernel/kerneldialog.ui
-	                             in siduxcc/siduxcc_kmain/kmaindialog.ui
-	button_cancel.png            in siduxcc/siduxcc_kmain/kmaindialog.ui
-	adept_commit.png             siduxcc/icons/hi48-app-siduxcc_lan_down.png/ok.png
+	connect_no.png               icons/hi22-app-siduxcc_disconnected.png
+	kcmpci.png                   icons/hi32-app-siduxcc_lan_up.png
+	                             icons/hi48-app-siduxcc_lan_up.png
+	                             icons/hi32-app-siduxcc_lan_down.png
+	                             icons/hi48-app-siduxcc_lan_down.png
+	colorize.png                 in main/displaydialog.ui
+	wizard.png                   in main/displaydialog.ui
+	                             in main/networkdialog.ui
+	configure.png                in main/networkdialog.ui
+	eraser.png                   in main/displaydialog.ui
+	fonts.png                    in main/displaydialog.ui
+	view_text.png                in main/displaydialog.ui
+	colors.png                   in main/displaydialog.ui
+	randr.png                    in main/displaydialog.ui
+	html.png                     in main/networkdialog.ui
+	emptytrash.png               in main/softwaredialog.ui
+	button_cancel.png            in kmain/kerneldialog.ui
 
 
 	The following icons are from kdebase-data
 	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
-	kcontrol.png                 in siduxcc/siduxcc_kmain/kmaindialog.ui
-	package_development.png      in siduxcc/siduxcc_kmain/kmaindialog.ui
-	hwinfo.png                   in siduxcc/siduxcc_kmain/kmaindialog.ui
-	kcmsystem.png                in siduxcc/siduxcc_kmain/kmaindialog.ui
-
-
-	The following icons are from kdebase-data
-	(c) Rik Hemsley <rik@kde.org> and many others...
-	kontact_contacts.png         in siduxcc/siduxcc_kmain/kmaindialog.ui
+	kcontrol.png                 in main/displaydialog.ui
+	fifteenpieces.png            in main/kernel.ui
 
 
 	The following icons are from sidux-icons
 	(c) 2007 cathbard <cathbard@gmail.com>
-	sidux-net.png                in siduxcc/siduxcc_kmain/kmaindialog.ui
-	kmenu.png                    siduxcc/images/hi*-app-siduxcc.png
-	sidux-book2s.png             siduxcc/images/hi*-app-sidux_book.png
+	kmenu.png                    iconsimages/hi*-app-siduxcc.png
+	sidux-book2s.png             icons/hi*-app-sidux_book.png
 
 
 	The following icon is from krdc
 	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
-	krdc.png                     in siduxcc/siduxcc_display/displaydialog.ui
-	                             in siduxcc/siduxcc_kmain/kmaindialog.ui
+	krdc.png                     in main/display/displaydialog.ui
 
 
 	The following icon is from ksim
 	(c) 2002 Matthias Elter <elter@kde.org> and many others.
-	ksim.pnp                     siduxcc/icons/hi32-app-siduxcc_hardware.png
-	                             in siduxcc/siduxcc_network/networkdialog.ui
+	ksim.pnp                     main/icons/hardware.png
+	                             in main/network/networkdialog.ui
 
 
 	The following icon is from ksim
-	 cathbard <cathbard@gmail.com>
-	sidux-browser.png            siduxcc/images/hi*-app-siduxcc_internet.png
+	cathbard <cathbard@gmail.com>
+	sidux-browser.png            in main/internetdialog.ui
 
-	--- artwork ---
 
-	The follwing artwork is from  sidux_inmotion
-	(c) 2007 rodneyc <rodneyck@pacbell.net> & cathbard <cathbard@gmail.com>
-	logo.png                     in siduxcc/siduxcc_kmain/kmaindialog.ui
-	stripes.png                  in siduxcc/siduxcc_kmain/kmaindialog.ui
+	The following icon is from configure-ndiswrapper
+	(C) 2007 cathbard <cathbard@gmail.com>
+	sidux-ndiswrapper.png        in main/network/networkdialog.ui
+
 
 
 License:

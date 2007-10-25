@@ -1,0 +1,187 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>InternetDialog</class>
+<author>Fabian Wuertz</author>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>InternetDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>726</width>
+            <height>476</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Internet</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack" row="1" column="0">
+            <property name="name">
+                <cstring>widgetStack3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>35</height>
+                </size>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer row="0" column="0">
+                        <property name="name">
+                            <cstring>spacer1</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>330</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QPushButton" row="0" column="2">
+                        <property name="name">
+                            <cstring>applyPushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>appl&amp;y</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+Y</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>widgetStack2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>browserGroup</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>40</x>
+                            <y>40</y>
+                            <width>275</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>sidux-Browser (require root access)</string>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>browserPixmap</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>15</x>
+                                <y>30</y>
+                                <width>32</width>
+                                <height>32</height>
+                            </rect>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image0</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <property name="name">
+                            <cstring>browserSelect</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>70</x>
+                                <y>35</y>
+                                <width>158</width>
+                                <height>24</height>
+                            </rect>
+                        </property>
+                        <property name="currentItem">
+                            <number>0</number>
+                        </property>
+                    </widget>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="2433">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000948494441545885dd975b8c5d5779c77f6bad7d3b679ffb9933177b6c72739c9b9d18278194b80da28a1f40a9829028955a0a557940952af18254292a528540ea53d587aa08a4aabc945bd51691021108705d08896bc7893d8e9d71ec19cf7dce99739973f66d5dfa309308100951dba77ed27ada5bebffdb7fadb5bfff07ff9febf0fca3bff11df13fddfcd4131fe3bda7ffecfedb0f87bfeff2c9138bd76e3d70281c3644a9e464a5b9618cff4a66f8ee95d7875ffb87bff9e8adff5380bffefb9f3e74784a7c5198ddd3adc92214292b5b23ae2eacf2e041818ccaac268ae5498da3c78e9a975feefde3ca56f117dffca74fafffaf01beff8d339f0dc7af7dbeee8dd5b0b741cd0ed1c998d59d9ce7372206a9e1234fdcc6ab171738b7d1e07be70b1a8d80a95669c7f9731f3ffb832f7c3b2bb6df39c043ef7fdf078272f0410f7132f64b770607e60fcad979dad512337a4c6de526c1ad6d16ba16a904f79db89bc597aeb2d48397374a349b315af8f47a19a74edde656fbe1a7feebcc57bfb23b5a7000de5b091f7feca13f6ab43b7fd968b5ef28053e9d6a93d6ddf7d2e8cc23928c41bacb282fb370579b41bc4c73798539152084e1c06d339cb9b9455aecb2b66129577c8c731c3dd211f67aff4b771cffc8eac5b37ff5ecaf7560fa0fff74f650a3f2f5c8ea53d3ed1695d63407ab35e6a38076962076ba74875dec609bc0e4e44eb39ba56c14094bc38cb268f2e2c51e5684d4e23ac20bd9e90ef8ddd38ff2efdf7b99130fdfcefa7abad57697eefbce99ef6eff9203273ff9270fc87afbfbae569bf32a315525982945849e231976e9ad2e716877c05c3246a229748ad496a2c8e9160e74c172bac4d44c9356a385ef956937ab8cb2299e3cfd20459171f546176d83ce40cf3d13358efcf99b0e3cf25bef9d9e6eb62f541ab5395bab538b03e252897210524a53fc9d0d3ac990c3d6d241b2ab2dda1a6a0222ab49a5e4f944b3ab0bce5bc3724f50ae74b87ca98b368a994e1d3ff479fcb78ff3c31f5f278aa26cb7b736abde00b8e781bbbf33dd9c7aa0568f699b8ceab08fb7b34dbc7e93f78cfa1c4d128e39c7b413c499a186a38ee550e4d38a7c2a0e5a0852a399b696f522e5873fbb8a1728a2b04a5638823022cb324e3f798ccbd7363dcf140b0ae07d8f9dfc8346b3f199761c52329aaad5b4a44745483e1094393849a9e405322f6848413350d423452bf2093c90d292631867059eb1e4cee1078271a5c4e6669f34d55817109524dbbd8cdb6febd069452c2d6d390570e291f77c6bb6516bc752213128e79838c7aceff3aedd099173949da3e549aab18f2a29a427c11308674148b483c24152587a52b0a31d99efb87c7d8b5239c4981063023ce9b3b63d62b49b120732f5deffd4538f57ebf523f3718cb339c60a2a4e1008c1bdda51b5868ab054230f291d840a70e07b8005a51085219082b2078114f49ce08524a1daa8d06807e48926cbc6d41b2dc6e382dc16ecf4a11efb87658cf8d0ac90348ce128929332e077fc808785643ecf280592500aa49028614189bd252d58035221107808145089141d2999584d3f4b989ba9a3f5907bee6932331d628c65fe4015a30da9cedbb212941eaefb3e2dada93ae808455b1b0e9a82ae34649e400701288110128c0329c1f341a9bd3f89277138bcd0c35392394f325b2d915bcd543b663cce585fbb41ad21989d89796d7103292471e8ed7861543a10e619be92186b31ce92a409e7ac4119cb696711be8fb50667c0a5162b2c2a507b20c6027b00769f4d00535189bc90283fa4592fb3bd35646b7d9b52658ed248618dc113f29af4f2bc3231050248ad632bd70ca4221282a627e9051e1acbcf85e435e1c8ad4519056eef082024481081c41803b96553088ac2a22d54e22aad569599e906db9b5d1e79f40859ae69b56276faf959398aa261cf39966cc6328e35ab396f346b467328f0b8a104578464a370dcb2015fdbcdc8621f272cf8027038e7d0da311ee78cac63a80dd66a9a4188b192a9e9367e20b9ebc8618e1c996766aecd605230188cbea18e1cbbfff794d3775a0c9174a4ceb19965180481e7133bcbb74723b6d209d78b8c2cb74c4998649acb43c3483bac05a30d3d2d184878ad28d04a62a462d378f85e881082c71e7f8c56678a280eb8f6ca8d9faddcfae6e7bcbe173caf269327a505a1045991e30943dfc08d2c63ce17d4fd80a4c8f19d650c3cbb3dc0051e857164d6a2ace0eeb2cfbd25c5d880361e2af6e8783e57d6132ebdf82abbe38c99d9bbb8b194b2b8b042c5ef7d02c0cbc3d2bf658178466463329d53f214d65842e9d875066b14c79584b8422c04be048da1262523eb181b432f2fd80426a92176025b564c072103e7b8796509a114f71fbf9f8dcd8c9dd116f5a8f495f3579fbb02a096cfbdb03a7fe2dd1ff6c360c64947590a422128e108852205842e28032d4f102a49db5728bbd7432c901998149ac449fad24114e109584c5206994fbbd3a4de6c71e8ce7b0845e942d9f2b1c5a5e7b33703c9b8c89f9908f5af4ae70c3c9f48792821098da13096dc383685a3b006631da1522857900a495f1bb68da35718520f5a818fb4961d25599b285a530dac1318ca0cb726e7baebcb4f9ebbf0f5e11b4d5001acbc74f1d5e90f3efd6e35de391a14053887931e13e7288c25d1394e6b068566db6836b39c9eb1ac2539ab694ed7387c29a9878a4a29c24501b74c40b75f602c1436b6d0fad260ddfbe88b17be3cfac50cf26620593ef1c4c7c3a9e9b3edd75fba2f1a6c1326635c9652760e631d298224d7a4daa26d4e283d02e5e30b418043048a56bdc2442a6e3ac1a5c53ec95817c9647cb1bb79ed6f777ad7be0524bf9ac07e29921dfbbbaf1eb8ab527aee8ed56bf779db6ba8b525a2d108ab738ac2619cc33ab7679d9048a518094803c1a14615cff7587262eb9f9fbb7469bcd3efedee6e5dc7d90bc08f80b5fd23f3d600000ffee462f35d5b1b5f9e4f461f2ef5bbc8c116acafc0e60a83610f5c8e67054a481229c0f398f67da8475c1f4e2effcbb3fff1e334c90c3001168033c04d40ffaad6af05d82ff9c7cf9dff501df3b9381d9dd01b2b44458a974f088cc56029d2099e2908f284d76f5e5ff9d1cfcfff74e1cae21b5fb9b32ffe02700b28de42e76de7020944279f7afad49db7dff17459ca139eaf667ceb02e7293bc9f3d1eaeaad8d57fef3ec8df5a5e5febef00858d9177f15e802e66d34ded164e4034de0e0feea003520da7fae81f1bed80ab00c6c03297b2deb6deb9d8e6682bd2b1b013150de0713fb00c93e44c29eddbf51f88dfa6fe80697d050fdfc320000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>browserSelect</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>InternetDialog</receiver>
+        <slot>hasChanged()</slot>
+    </connection>
+    <connection>
+        <sender>applyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>InternetDialog</receiver>
+        <slot>save()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">kdialog.h</include>
+</includes>
+<slots>
+    <slot>hasChanged()</slot>
+    <slot>save()</slot>
+</slots>
+<layoutdefaults spacing="3" margin="3"/>
+</UI>

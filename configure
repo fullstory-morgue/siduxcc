@@ -33254,8 +33254,6 @@ ac_config_files="$ac_config_files icons/Makefile"
 
 ac_config_files="$ac_config_files libsiduxcc/Makefile"
 
-ac_config_files="$ac_config_files menu/Makefile"
-
 ac_config_files="$ac_config_files network_kioslave/Makefile"
 
 ac_config_files="$ac_config_files po/Makefile"
@@ -33280,25 +33278,9 @@ ac_config_files="$ac_config_files po/ru/Makefile"
 
 ac_config_files="$ac_config_files siduxcc/Makefile"
 
-ac_config_files="$ac_config_files siduxcc_display/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_hardware/Makefile"
-
 ac_config_files="$ac_config_files siduxcc_hermes/Makefile"
 
-ac_config_files="$ac_config_files siduxcc_info/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_internet/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_kernel/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_kmain/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_network/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_services/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_software/Makefile"
+ac_config_files="$ac_config_files siduxcc_kde/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -33912,7 +33894,6 @@ do
     "doc/en/Makefile") CONFIG_FILES="$CONFIG_FILES doc/en/Makefile" ;;
     "icons/Makefile") CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;
     "libsiduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES libsiduxcc/Makefile" ;;
-    "menu/Makefile") CONFIG_FILES="$CONFIG_FILES menu/Makefile" ;;
     "network_kioslave/Makefile") CONFIG_FILES="$CONFIG_FILES network_kioslave/Makefile" ;;
     "po/Makefile") CONFIG_FILES="$CONFIG_FILES po/Makefile" ;;
     "po/da/Makefile") CONFIG_FILES="$CONFIG_FILES po/da/Makefile" ;;
@@ -33925,16 +33906,8 @@ do
     "po/ro/Makefile") CONFIG_FILES="$CONFIG_FILES po/ro/Makefile" ;;
     "po/ru/Makefile") CONFIG_FILES="$CONFIG_FILES po/ru/Makefile" ;;
     "siduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc/Makefile" ;;
-    "siduxcc_display/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_display/Makefile" ;;
-    "siduxcc_hardware/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hardware/Makefile" ;;
     "siduxcc_hermes/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hermes/Makefile" ;;
-    "siduxcc_info/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_info/Makefile" ;;
-    "siduxcc_internet/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_internet/Makefile" ;;
-    "siduxcc_kernel/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kernel/Makefile" ;;
-    "siduxcc_kmain/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kmain/Makefile" ;;
-    "siduxcc_network/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_network/Makefile" ;;
-    "siduxcc_services/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_services/Makefile" ;;
-    "siduxcc_software/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_software/Makefile" ;;
+    "siduxcc_kde/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kde/Makefile" ;;
 
   *) { { echo "$as_me:$LINENO: error: invalid argument: $ac_config_target" >&5
 echo "$as_me: error: invalid argument: $ac_config_target" >&2;}
