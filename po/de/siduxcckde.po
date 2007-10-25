@@ -1,13 +1,14 @@
+# translation of siduxcckde.po to
 # translation of siduxcc_kde.po to
 # This file is put in the public domain.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: siduxcc_kde\n"
+"Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-25 21:59+0200\n"
-"PO-Revision-Date: 2007-10-25 02:34+0200\n"
+"PO-Revision-Date: 2007-10-25 22:57+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -38,8 +39,7 @@ msgid "Modelines removed"
 msgstr "Modelines gelöscht"
 
 #: display.cpp:233
-msgid ""
-"Are you sure you want to restart the X-Server? All windows will be closed."
+msgid "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
 "Sind Sie sicher, dass Sie den X-Server neustarten möchten? Sämtliche nicht "
 "gespeicherte Fortschritte gehen verloren!"
@@ -138,7 +138,7 @@ msgstr "Netzwerk"
 #: rc.cpp:18 rc.cpp:233 rc.cpp:300 start.cpp:58
 #, no-c-format
 msgid "Services"
-msgstr "Deinste"
+msgstr "Dienste"
 
 #. i18n: file ./startdialog.ui line 69
 #. i18n: file ./softwaredialog.ui line 17
@@ -384,8 +384,7 @@ msgstr "Bemerkung"
 #. i18n: file ./displaydialog.ui line 587
 #: rc.cpp:135
 #, no-c-format
-msgid ""
-"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
 "Wenn Sie den ATI-Treiber (fglrx) verwenden können Sie die Farbtiefe nicht "
 "verändern."
@@ -974,8 +973,7 @@ msgstr "Apache2 ist eine Weiterentwicklung des Apache Webservers."
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr ""
-"Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
+msgstr "Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
 
 #: services.cpp:178
 msgid ""
@@ -1028,8 +1026,3 @@ msgstr ""
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Soll das lokale Repository wirklick geleert werden?"
 
-#~ msgid "siduxcc"
-#~ msgstr "siduxcc"
-
-#~ msgid "Install metapackages"
-#~ msgstr "Metapakete installieren"
