@@ -1,9 +1,5 @@
-siduxcc (0.6.2) UNRELEASED; urgency=low
+siduxcc (0.6.2) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * de-typos fixed
   * icons: Makefile.am fixed
   * kernel: load problem solved
