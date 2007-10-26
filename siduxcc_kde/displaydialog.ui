@@ -9,8 +9,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>537</width>
-            <height>403</height>
+            <width>641</width>
+            <height>410</height>
         </rect>
     </property>
     <property name="caption">
@@ -987,10 +987,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Ena&amp;ble Composite</string>
+                            <string>Enable Composi&amp;te</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+B</string>
+                            <string>Alt+T</string>
                         </property>
                     </widget>
                     <widget class="QComboBox">
@@ -1150,10 +1150,10 @@
                             <bool>false</bool>
                         </property>
                         <property name="text">
-                            <string>I&amp;nstall driver</string>
+                            <string>Install dri&amp;ver</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+N</string>
+                            <string>Alt+V</string>
                         </property>
                     </widget>
                 </widget>

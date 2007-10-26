@@ -89,7 +89,7 @@ function clean()
 function installASV()
 {
 	apt-get update
-	apt-get -y install apt-show-versions
+	apt-get install apt-show-versions
 	echo ""
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"

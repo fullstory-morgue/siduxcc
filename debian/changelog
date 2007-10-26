@@ -8,9 +8,12 @@ siduxcc (0.6.2) UNRELEASED; urgency=low
   * icons: Makefile.am fixed
   * kernel: load problem solved
   * uint problem solved
-  * kernel: currentKernelTextLabel & messageTextLabel added 
+  * kernel: currentKernelTextLabel & messageTextLabel added
+  * de-typos fixed
+  * siduxcc: software: -y option removed by apt-show-versions install
+  * display: colorDepthComboBox for fglrx users disabled
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 26 Oct 2007 16:58:37 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 26 Oct 2007 17:41:30 +0200
 
 siduxcc (0.6.1) unstable; urgency=low
 

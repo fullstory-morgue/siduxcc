@@ -289,6 +289,8 @@ void display::getDriver()
 			break;
 		}
 	}
+	if(driver == "fglrx")
+		colorDepthList->setEnabled(FALSE);
 }
 
 
