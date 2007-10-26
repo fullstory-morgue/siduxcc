@@ -30,13 +30,14 @@ class kernel : public KernelDialog
 
 	public:
 		kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
-		void load();
+		void load(int);
 		QString getCurrentKernel();
 		QString installKernel;
 		void getKernels();
 		void getOldKernels();
 		void getKernelDirs();
 		bool isInstalled(QString);
+		QString currentKernel;
 
 	private:
 		Process* shell;
@@ -52,7 +53,6 @@ class kernel : public KernelDialog
 		virtual void install();
 		virtual void showModules(const QString&);
 		virtual void installModules();
-		virtual void enableInstallButton();
 
 		virtual void terminateConsole1();
 		virtual void terminateConsole2();

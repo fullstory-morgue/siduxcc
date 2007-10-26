@@ -172,7 +172,8 @@ msgstr "Noyau"
 #: modules/kernel.bm:16
 #, sh-format
 msgid "Kernel-remover is missing! Do you want do install it?"
-msgstr "L'outil d'effacement des noyaux est manquant !Voulez-vous l'installer ?"
+msgstr ""
+"L'outil d'effacement des noyaux est manquant !Voulez-vous l'installer ?"
 
 #: modules/kernel.bm:95
 #, sh-format
@@ -348,4 +349,3 @@ msgstr "Menu Principal"
 #, sh-format
 msgid "Exit"
 msgstr "Quitter"
-

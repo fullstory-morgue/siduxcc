@@ -489,8 +489,9 @@ install-data-local:
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=hi16-app-siduxcc_hermes.png hi22-app-siduxcc_ok.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-siduxcc_hermes.png hi22-app-siduxcc_lan_up.png hi16-app-siduxccinfo.png hi48-app-siduxcc_lan_down.png hi16-app-siduxcckmain.png hi32-app-siduxcc_lan_up.png hi16-app-siduxcc_internet.png hi32-app-siduxcc_wlan_down.png hi64-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi48-app-siduxcc_internet.png hi22-app-siduxcc_warning.png hi32-app-siduxcc_wlan_up.png hi96-app-siduxcc.png Makefile.in hi22-app-sidux_book.png hi48-app-siduxcc.png hi32-app-siduxcc.png hi48-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi32-app-siduxcc_lan_down.png hi32-app-siduxcc_internet.png hi22-app-siduxcc_internet.png hi32-app-siduxcc_hermes.png hi22-app-siduxcc_wlan_up.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcchermes.png Makefile.am 
+KDE_DIST=hi16-app-siduxcc_hermes.png hi22-app-siduxcc_ok.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-siduxcc_hermes.png hi22-app-siduxcc_lan_up.png hi16-app-siduxccinfo.png hi16-app-siduxcckmain.png hi48-app-siduxcc_lan_down.png hi32-app-siduxcc_lan_up.png hi16-app-siduxcc_internet.png hi32-app-siduxcc_wlan_down.png hi64-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi48-app-siduxcc_internet.png hi22-app-siduxcc_warning.png hi32-app-siduxcc_wlan_up.png hi96-app-siduxcc.png Makefile.in hi22-app-sidux_book.png hi48-app-siduxcc.png hi32-app-siduxcc.png hi48-app-siduxcc_lan_up.png hi128-app-siduxcc.png hi32-app-siduxcc_lan_down.png hi32-app-siduxcc_internet.png hi22-app-siduxcc_internet.png hi32-app-siduxcc_hermes.png hi22-app-siduxcc_wlan_up.png hi22-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcchermes.png Makefile.am 
 
 #>+ 2
 docs-am:

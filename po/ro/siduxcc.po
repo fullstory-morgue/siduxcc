@@ -348,4 +348,3 @@ msgstr "Menu-ul de Baza"
 #, sh-format
 msgid "Exit"
 msgstr "Iesire"
-

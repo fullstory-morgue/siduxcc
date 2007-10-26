@@ -346,4 +346,3 @@ msgstr "Menu Principal"
 #, sh-format
 msgid "Exit"
 msgstr "Salir"
-

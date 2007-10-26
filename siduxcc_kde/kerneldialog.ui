@@ -174,7 +174,7 @@
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>removeGroup_2</cstring>
+                        <cstring>installGroup</cstring>
                     </property>
                     <property name="enabled">
                         <bool>true</bool>
@@ -184,7 +184,7 @@
                             <x>40</x>
                             <y>40</y>
                             <width>350</width>
-                            <height>230</height>
+                            <height>260</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
@@ -198,17 +198,29 @@
                     <property name="title">
                         <string></string>
                     </property>
-                    <widget class="QListBox">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>installListBox</cstring>
+                            <cstring>installPushButton1</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>30</x>
-                                <y>30</y>
-                                <width>280</width>
-                                <height>140</height>
+                                <x>136</x>
+                                <y>211</y>
+                                <width>80</width>
+                                <height>30</height>
                             </rect>
+                        </property>
+                        <property name="autoMask">
+                            <bool>false</bool>
+                        </property>
+                        <property name="text">
+                            <string>ins&amp;tall</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+T</string>
                         </property>
                     </widget>
                     <widget class="QLabel">
@@ -218,7 +230,7 @@
                         <property name="geometry">
                             <rect>
                                 <x>105</x>
-                                <y>185</y>
+                                <y>215</y>
                                 <width>22</width>
                                 <height>22</height>
                             </rect>
@@ -230,31 +242,51 @@
                             <bool>true</bool>
                         </property>
                     </widget>
-                    <widget class="QPushButton">
+                    <widget class="QListBox">
                         <property name="name">
-                            <cstring>installPushButton1</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>true</bool>
+                            <cstring>installListBox</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>136</x>
-                                <y>181</y>
-                                <width>80</width>
-                                <height>30</height>
+                                <x>30</x>
+                                <y>50</y>
+                                <width>280</width>
+                                <height>150</height>
                             </rect>
                         </property>
-                        <property name="autoMask">
-                            <bool>false</bool>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>currentKernelTextLabel1</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>20</y>
+                                <width>280</width>
+                                <height>20</height>
+                            </rect>
                         </property>
                         <property name="text">
-                            <string>i&amp;nstall</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+N</string>
+                            <string>Current kernel</string>
                         </property>
                     </widget>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>messageTextLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>40</x>
+                            <y>315</y>
+                            <width>340</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -276,7 +308,7 @@
                             <x>40</x>
                             <y>40</y>
                             <width>350</width>
-                            <height>230</height>
+                            <height>260</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
@@ -290,6 +322,28 @@
                     <property name="title">
                         <string></string>
                     </property>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>removeButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>136</x>
+                                <y>211</y>
+                                <width>80</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>remo&amp;ve</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+V</string>
+                        </property>
+                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>removePixmap</cstring>
@@ -297,7 +351,7 @@
                         <property name="geometry">
                             <rect>
                                 <x>105</x>
-                                <y>185</y>
+                                <y>215</y>
                                 <width>22</width>
                                 <height>22</height>
                             </rect>
@@ -319,34 +373,28 @@
                         <property name="geometry">
                             <rect>
                                 <x>30</x>
-                                <y>30</y>
+                                <y>50</y>
                                 <width>280</width>
-                                <height>140</height>
+                                <height>150</height>
                             </rect>
                         </property>
                     </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>removeButton</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>true</bool>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>136</x>
-                                <y>181</y>
-                                <width>80</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>rem&amp;ove</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+O</string>
-                        </property>
-                    </widget>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>currentKernelTextLabel2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>70</x>
+                            <y>60</y>
+                            <width>280</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Current kernel</string>
+                    </property>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -390,10 +438,10 @@
                             <bool>true</bool>
                         </property>
                         <property name="text">
-                            <string>cle&amp;ar</string>
+                            <string>&amp;clear</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+A</string>
+                            <string>Alt+C</string>
                         </property>
                     </widget>
                     <widget class="QPushButton" row="1" column="3">
@@ -404,10 +452,10 @@
                             <bool>true</bool>
                         </property>
                         <property name="text">
-                            <string>i&amp;nstall</string>
+                            <string>ins&amp;tall</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+N</string>
+                            <string>Alt+T</string>
                         </property>
                     </widget>
                     <widget class="QListBox" row="0" column="0" rowspan="1" colspan="4">
@@ -581,12 +629,6 @@
         <slot>install()</slot>
     </connection>
     <connection>
-        <sender>installListBox</sender>
-        <signal>selectionChanged()</signal>
-        <receiver>KernelDialog</receiver>
-        <slot>enableInstallButton()</slot>
-    </connection>
-    <connection>
         <sender>removeButton</sender>
         <signal>clicked()</signal>
         <receiver>KernelDialog</receiver>
@@ -613,7 +655,6 @@
     <slot>install()</slot>
     <slot>getNewKernels()</slot>
     <slot>installModules()</slot>
-    <slot>enableInstallButton()</slot>
     <slot>back()</slot>
     <slot>showModules(const QString&amp;)</slot>
     <slot>clear()</slot>

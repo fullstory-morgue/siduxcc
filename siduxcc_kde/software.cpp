@@ -121,7 +121,7 @@ void software::warning()
 	}
 	else if ( status == "disconnected")
  	{
-		warningLabel->setText(i18n("No internet connection!"));
+		warningLabel->setText(i18n("Couldn't connect to sidux.com!"));
 		warningLed->setColor(QColor(0xffa858));
 		updateButton->setEnabled(false);
 		downloadButton->setEnabled(false);
@@ -147,13 +147,15 @@ void software::showPackages()
 	QStringList upgrade = QStringList::split( "\n", this->shell->getBuffer() );
 
 	QStringList tmp;
-	for(int i = 0; i < upgrade.count(); i++) {
+	for ( QStringList::Iterator it = upgrade.begin(); it != upgrade.end(); ++it )
+	{
 		QListViewItem * item = new QListViewItem( uList, 0 );
-		tmp = QStringList::split( "/", upgrade[i] );
+		tmp = QStringList::split( "/", *it );
 		item->setText(0,tmp[0]);
-		tmp = QStringList::split( " ", upgrade[i] ); 
+		tmp = QStringList::split( " ", *it ); 
 		item->setText(1,tmp[3]);
-		item->setText(2,tmp[5]); }
+		item->setText(2,tmp[5]); 
+	}
 }
 
 

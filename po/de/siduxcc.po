@@ -50,7 +50,8 @@ msgstr "Neue Bildwiederholfrequenz eingeben:"
 #: modules/display.bm:94
 #, sh-format
 msgid "Enter new horizontal sync rate:"
-msgstr "Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
+msgstr ""
+"Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
 
 #: modules/display.bm:124
 #, sh-format
@@ -287,7 +288,8 @@ msgstr "Software"
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr "Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
+msgstr ""
+"Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
 
 #: modules/software.bm:36 modules/software.bm:107
 #, sh-format
@@ -347,4 +349,3 @@ msgstr "Hauptmenü"
 #, sh-format
 msgid "Exit"
 msgstr "Ende"
-

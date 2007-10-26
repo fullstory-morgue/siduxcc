@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-25 21:59+0200\n"
+"POT-Creation-Date: 2007-10-26 16:56+0200\n"
 "PO-Revision-Date: 2007-10-25 20:30+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -50,27 +50,30 @@ msgstr "Proceso en ejecución"
 msgid "Process done!"
 msgstr "Proceso terminado"
 
-#: kernel.cpp:94
-msgid "local kernel"
-msgstr "Kernel local"
-
-#: kernel.cpp:100
-msgid "newest"
+#. i18n: file ./kerneldialog.ui line 271
+#. i18n: file ./kerneldialog.ui line 396
+#: kernel.cpp:101 kernel.cpp:102 rc.cpp:562 rc.cpp:573
+#, no-c-format
+msgid "Current kernel"
 msgstr ""
 
-#: kernel.cpp:106 kernel.cpp:156
+#: kernel.cpp:118 kernel.cpp:170
 msgid "experimental"
 msgstr "experimental"
 
-#: kernel.cpp:142
-msgid "The versions of the new and the current Kernel are the same!"
-msgstr "¡La version del nuevo y del actual Kernel son los mismos!"
+#: kernel.cpp:124
+msgid "There is no newer kernel available!"
+msgstr ""
 
-#: kernel.cpp:146
+#: kernel.cpp:129 software.cpp:124
+msgid "Couldn't connect to sidux.com!"
+msgstr ""
+
+#: kernel.cpp:160
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Esta seguro que quiere instalar un nuevo kernel?"
 
-#: kernel.cpp:266
+#: kernel.cpp:279
 msgid "Are you sure you want to remove the stored kernel files?"
 msgstr "Esta seguro que quiere instalar un nuevo kernel?"
 
@@ -91,7 +94,7 @@ msgid "Developer of the knxcc"
 msgstr "Autor de knxcc"
 
 #. i18n: file ./networkdialog.ui line 833
-#: network.cpp:280 rc.cpp:442
+#: network.cpp:284 rc.cpp:442
 #, no-c-format
 msgid "detected"
 msgstr "detectado"
@@ -181,8 +184,8 @@ msgstr "Alt+Y"
 #. i18n: file ./servicesdialog.ui line 85
 #. i18n: file ./networkdialog.ui line 85
 #. i18n: file ./softwaredialog.ui line 449
-#. i18n: file ./kerneldialog.ui line 500
-#: rc.cpp:43 rc.cpp:236 rc.cpp:332 rc.cpp:496 rc.cpp:581
+#. i18n: file ./kerneldialog.ui line 548
+#: rc.cpp:43 rc.cpp:236 rc.cpp:332 rc.cpp:496 rc.cpp:588
 #, no-c-format
 msgid "&back"
 msgstr ""
@@ -193,8 +196,8 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 413
 #. i18n: file ./softwaredialog.ui line 452
-#. i18n: file ./kerneldialog.ui line 503
-#: rc.cpp:46 rc.cpp:186 rc.cpp:239 rc.cpp:335 rc.cpp:401 rc.cpp:499 rc.cpp:584
+#. i18n: file ./kerneldialog.ui line 551
+#: rc.cpp:46 rc.cpp:186 rc.cpp:239 rc.cpp:335 rc.cpp:401 rc.cpp:499 rc.cpp:591
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -214,8 +217,8 @@ msgstr "Alt+X"
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 120
 #. i18n: file ./softwaredialog.ui line 484
-#. i18n: file ./kerneldialog.ui line 524
-#: rc.cpp:55 rc.cpp:344 rc.cpp:508 rc.cpp:587
+#. i18n: file ./kerneldialog.ui line 572
+#: rc.cpp:55 rc.cpp:344 rc.cpp:508 rc.cpp:594
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -443,8 +446,7 @@ msgstr "Remover Modelines"
 #. i18n: file ./displaydialog.ui line 1232
 #. i18n: file ./networkdialog.ui line 350
 #. i18n: file ./softwaredialog.ui line 281
-#. i18n: file ./kerneldialog.ui line 347
-#: rc.cpp:177 rc.cpp:228 rc.cpp:386 rc.cpp:481 rc.cpp:566
+#: rc.cpp:177 rc.cpp:228 rc.cpp:386 rc.cpp:481
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -512,9 +514,7 @@ msgstr "Instalar controlador (driver)"
 #. i18n: file ./displaydialog.ui line 1156
 #. i18n: file ./servicesdialog.ui line 442
 #. i18n: file ./networkdialog.ui line 664
-#. i18n: file ./kerneldialog.ui line 255
-#. i18n: file ./kerneldialog.ui line 410
-#: rc.cpp:219 rc.cpp:291 rc.cpp:429 rc.cpp:559 rc.cpp:578
+#: rc.cpp:219 rc.cpp:291 rc.cpp:429
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -613,8 +613,7 @@ msgstr "Agregar un Runlevel ( Iniciar el servicio al iniciar la PC)"
 #. i18n: file ./networkdialog.ui line 383
 #. i18n: file ./networkdialog.ui line 884
 #. i18n: file ./softwaredialog.ui line 367
-#. i18n: file ./kerneldialog.ui line 396
-#: rc.cpp:297 rc.cpp:395 rc.cpp:451 rc.cpp:493 rc.cpp:572
+#: rc.cpp:297 rc.cpp:395 rc.cpp:451 rc.cpp:493
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
@@ -859,7 +858,8 @@ msgid "&Clean"
 msgstr "Limpliar"
 
 #. i18n: file ./softwaredialog.ui line 236
-#: rc.cpp:475
+#. i18n: file ./kerneldialog.ui line 444
+#: rc.cpp:475 rc.cpp:579
 #, no-c-format
 msgid "Alt+C"
 msgstr "Alt+C"
@@ -930,24 +930,37 @@ msgstr ""
 msgid "Install kernel modules"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 252
-#. i18n: file ./kerneldialog.ui line 407
-#: rc.cpp:556 rc.cpp:575
-#, no-c-format
-msgid "i&nstall"
+#. i18n: file ./kerneldialog.ui line 220
+#. i18n: file ./kerneldialog.ui line 455
+#: rc.cpp:556 rc.cpp:582
+#, fuzzy, no-c-format
+msgid "ins&tall"
 msgstr "Instalar"
 
-#. i18n: file ./kerneldialog.ui line 344
-#: rc.cpp:563
-#, no-c-format
-msgid "rem&ove"
+#. i18n: file ./kerneldialog.ui line 223
+#. i18n: file ./kerneldialog.ui line 458
+#: rc.cpp:559 rc.cpp:585
+#, fuzzy, no-c-format
+msgid "Alt+T"
+msgstr "Alt+Y"
+
+#. i18n: file ./kerneldialog.ui line 341
+#: rc.cpp:567
+#, fuzzy, no-c-format
+msgid "remo&ve"
 msgstr "remover"
 
-#. i18n: file ./kerneldialog.ui line 393
-#: rc.cpp:569
-#, no-c-format
-msgid "cle&ar"
-msgstr ""
+#. i18n: file ./kerneldialog.ui line 344
+#: rc.cpp:570
+#, fuzzy, no-c-format
+msgid "Alt+V"
+msgstr "Alt+Y"
+
+#. i18n: file ./kerneldialog.ui line 441
+#: rc.cpp:576
+#, fuzzy, no-c-format
+msgid "&clear"
+msgstr "Limpliar"
 
 #: services.cpp:165 services.cpp:170
 msgid "Status: %1"
@@ -1006,15 +1019,11 @@ msgstr "Apt-show-versions no se puedo encontar! "
 msgid "Do you want to install it?"
 msgstr "Desea instalarlo?"
 
-#: software.cpp:124
-msgid "No internet connection!"
-msgstr "¡No hay coneccion al internet!"
-
 #: software.cpp:131
 msgid "Don't make a dist-Upgrade!"
 msgstr "No haga un dist-upgrade!"
 
-#: software.cpp:168
+#: software.cpp:170
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
@@ -1024,6 +1033,15 @@ msgstr ""
 "+CTRL+F1, login como root y digite init 3. Despues corra el commando siduxcc "
 "y seleccione Software -> Dist-Upgrade"
 
-#: software.cpp:208
+#: software.cpp:210
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Seguro que quiere limpiar su reporsorio local?"
+
+#~ msgid "local kernel"
+#~ msgstr "Kernel local"
+
+#~ msgid "The versions of the new and the current Kernel are the same!"
+#~ msgstr "¡La version del nuevo y del actual Kernel son los mismos!"
+
+#~ msgid "No internet connection!"
+#~ msgstr "¡No hay coneccion al internet!"

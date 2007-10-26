@@ -37,7 +37,7 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 :KernelDialog(parent, name)
 {
 	this->shell = new Process();
-	load();
+	load(0);
 }
 
 
@@ -46,17 +46,22 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 //------------------------------------------------------------------------------
 
 
-void kernel::load()
+void kernel::load(int i)
 {
-	getKernels();
-	getOldKernels();
-	getKernelDirs();
+	if(i == 0)
+		getKernels();
+	else if(i == 2)
+		getOldKernels();	
+	else if(i == 3)
+		getKernelDirs();
 }
 
 
 void kernel::loadWidget(int i)
 {
-	widgetStack2->raiseWidget(i+1);
+	i = i+1;
+	load(i);
+	widgetStack2->raiseWidget(i);
 	widgetStack3->raiseWidget(1);
 }
 
@@ -91,20 +96,39 @@ void kernel::getKernels()
 	// get currentKernel
 	this->shell->setCommand("uname -r");
 	this->shell->start(true);
-	installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("local kernel")+")");
+	currentKernel =  this->shell->getBuffer().stripWhiteSpace();
+
+	currentKernelTextLabel1->setText(i18n("Current kernel")+": "+currentKernel);
+	currentKernelTextLabel2->setText(i18n("Current kernel")+": "+currentKernel);
 
 	// get newestKernel
 	this->shell->setCommand("siduxcc kernel newestKernel");
 	this->shell->start(true);
-	if(this->shell->getBuffer().stripWhiteSpace() != "" )
-		installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("newest")+")");
+	QString newestKernel =  this->shell->getBuffer().stripWhiteSpace();
 
-	// get newestKernel
+	if(newestKernel != "" and newestKernel != currentKernel)
+		installListBox->insertItem(kernelImg, newestKernel);
+
+	// get experimentalKernel
 	this->shell->setCommand("siduxcc kernel experimentalKernel");
 	this->shell->start(true);
-	if(this->shell->getBuffer().stripWhiteSpace() != "" )
-		installListBox->insertItem(kernelImg, this->shell->getBuffer().stripWhiteSpace()+" ("+i18n("experimental")+")");
+	QString experimentalKernel =  this->shell->getBuffer().stripWhiteSpace();
 
+	if(experimentalKernel != "" and experimentalKernel != currentKernel)
+		installListBox->insertItem(kernelImg, experimentalKernel+" ("+i18n("experimental")+")");
+
+
+	if(newestKernel == currentKernel)
+		if(experimentalKernel == "" or experimentalKernel == currentKernel)
+		{
+			messageTextLabel->setText("<b>"+i18n("There is no newer kernel available!")+"</b>");
+			installPushButton1->setEnabled(FALSE);
+		}
+	if(newestKernel == "" and experimentalKernel == "")
+	{
+		messageTextLabel->setText("<b>"+i18n("Couldn't connect to sidux.com!")+"</b>");
+		installPushButton1->setEnabled(FALSE);
+	}
 }
 
 
@@ -115,8 +139,14 @@ void kernel::getOldKernels()
 	this->shell->setCommand("siduxcc kernel getOldKernels");
 	this->shell->start(true);
 	QStringList oldKernels = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
-	for(int i = 0; i < oldKernels.count(); i++) {
-		removeList->insertItem(kernelImg,oldKernels[i]); }
+
+	if(oldKernels.count() == 0)
+		removeButton->setEnabled(FALSE); 
+	else
+		for ( QStringList::Iterator it = oldKernels.begin(); it != oldKernels.end(); ++it )
+			removeList->insertItem(kernelImg,*it);
+
+		
 }
 
 
@@ -124,24 +154,8 @@ void kernel::getOldKernels()
 //--- kernel-installation ------------------------------------------------------
 //------------------------------------------------------------------------------
 
-
-void kernel::enableInstallButton()
-{
-	int i = installListBox->currentItem();
-
-	if (i > 0)
-		installPushButton1->setEnabled(true);
-	else
-		installPushButton1->setEnabled(false);
-}
-
 void kernel::install()
 {
-	if (installKernel == getCurrentKernel() )
-	{
-		KMessageBox::information(this, i18n("The versions of the new and the current Kernel are the same!") );
-		return;
-	}
 
 	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
 	{
@@ -183,7 +197,6 @@ void kernel::remove()
 		run.append( "kernel" );
 		run.append( "removeKernel" );
 		run.append( removeList->currentText() );
-	
 
 	// change widget
 	QWidget *consoleWidget = new console(this, run );
@@ -224,14 +237,16 @@ void kernel::showModules(const QString& kernel)
 	QPixmap okImg = QPixmap( "/usr/share/siduxcc/icons/ok.png");
 	QPixmap notokImg = QPixmap( "/usr/share/siduxcc/icons/notok.png");
 	QStringList tmp;
-	for(int i = 0; i < mods.count(); i++)
+	for ( QStringList::Iterator it = mods.begin(); it != mods.end(); ++it )
 	{
-		tmp = QStringList::split( "_", mods[i] );
+		tmp = QStringList::split( "_", *it);
 		if(isInstalled(tmp[0]))
-			modulesListBox->insertItem(okImg,mods[i]);
+			modulesListBox->insertItem(okImg, *it);
 		else	
-			modulesListBox->insertItem(notokImg,mods[i]);
+			modulesListBox->insertItem(notokImg, *it);
 	}
+
+
 }
 
 void kernel::installModules()
@@ -241,11 +256,9 @@ void kernel::installModules()
 		run.append( "kernel" );
 		run.append( "installModules" );
 
-	for(int i = 0; i < modulesListBox->count(); i++)
-	{
+	for(uint i = 0; i < modulesListBox->count(); i++)
 		if ( modulesListBox->isSelected(i) )
 			run.append( comboBox->currentText()+"/"+modulesListBox->text(i) );
-	}	
 
 	if (run.count() < 4) return;
 
@@ -308,12 +321,14 @@ void kernel::terminateConsole1()
 
 void kernel::terminateConsole2()
 {
+	load(2);
 	widgetStack2->raiseWidget(2);
 	widgetStack3->raiseWidget(1);
 }
 
 void kernel::terminateConsole3()
 {
+	load(3);
 	widgetStack2->raiseWidget(3);
 	widgetStack3->raiseWidget(1);
 }

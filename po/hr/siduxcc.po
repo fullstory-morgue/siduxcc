@@ -347,4 +347,3 @@ msgstr "Glavni meni"
 #, sh-format
 msgid "Exit"
 msgstr "Kraj"
-

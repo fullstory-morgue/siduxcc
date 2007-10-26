@@ -161,11 +161,12 @@ void NetworkProtocol::listDir( const KURL & url )
 	QString ip;
 	QStringList valueList;
 
-	for(int i = 0; i < deviceList.count(); i++) {
+	for ( QStringList::Iterator it = deviceList.begin(); it != deviceList.end(); ++it )
+	{
 
 		// get device properties
-		valueList = QStringList::split( " ", deviceList[i] );
-		for(int j = 6; j < valueList.count(); j++) {
+		valueList = QStringList::split( " ", *it );
+		for(uint j = 6; j < valueList.count(); j++) {
 				valueList[5] = valueList[5]+" "+valueList[j]; }
 		// valueList[0] device name (E.g. eth0)
 		// valueList[1] type (ethernet/wirless)
@@ -194,18 +195,17 @@ void NetworkProtocol::listDir( const KURL & url )
 		addAtom(entry, KIO::UDS_MIME_TYPE, 0, "application/x-desktop");
 
 		// set icon
-		if(valueList[1] == "ethernet") {
-			if(ip != "") {
-				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_lan_up"); }
-			else {
-				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_lan_up"); }
-		}
-		if(valueList[1] == "wireless") {
-			if(ip != "") {
-				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_wlan_up"); }
-			else {
-				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_wlan_up"); }
-		}
+		if(valueList[1] == "ethernet")
+			if(ip != "")
+				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_lan_up");
+			else
+				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_lan_up");
+
+		if(valueList[1] == "wireless")
+			if(ip != "")
+				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_wlan_up");
+			else
+				addAtom(entry, KIO::UDS_ICON_NAME, 0, "siduxcc_wlan_up");
 
 		// add device
 		listEntry(entry, false);

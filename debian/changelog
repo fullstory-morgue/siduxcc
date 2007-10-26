@@ -1,8 +1,16 @@
 siduxcc (0.6.2) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 26 Oct 2007 00:29:03 +0200
+  [ Fabian Wuertz ]
+  * de-typos fixed
+  * icons: Makefile.am fixed
+  * kernel: load problem solved
+  * uint problem solved
+  * kernel: currentKernelTextLabel & messageTextLabel added 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 26 Oct 2007 16:58:37 +0200
 
 siduxcc (0.6.1) unstable; urgency=low
 

@@ -121,21 +121,21 @@ void network::getNetworkcards()
 	QStringList nicInfo;
 	QStringList nicStatus;
 
-	for(int i = 0; i < deviceList.count(); i++) {
+	for ( QStringList::Iterator it = deviceList.begin(); it != deviceList.end(); ++it )
+	{
 		QListViewItem * item = new QListViewItem( ncList, 0 );
-		nicInfo = QStringList::split( " ", deviceList[i] );
+		nicInfo = QStringList::split( " ", *it );
 
 		// get device info
-		nicInfo = QStringList::split( " ", deviceList[i] );
-		//for(int j = 6; j < nicInfo.count(); j++) {
-		//		nicInfo[5] = nicInfo[5]+" "+nicInfo[j]; }
+		nicInfo = QStringList::split( " ", *it );
 
 		// get device status
 		this->shell->setCommand("nicstatus "+nicInfo[0]);
 		this->shell->start(true);
 		nicStatus = QStringList::split( " ", this->shell->getBuffer() );
-		for(int j = 0; j < nicStatus.count(); j++) {
-				if(nicStatus[j] == "-") {nicStatus[j] = ""; }}
+		for(uint j = 0; j < nicStatus.count(); j++)
+			if(nicStatus[j] == "-")
+				nicStatus[j] = "";
 
 		item->setText(0, nicInfo[0]);   // device name (E.g. eth0)
 		item->setText(1, nicStatus[0]); // ip-address
@@ -148,12 +148,16 @@ void network::getNetworkcards()
 
 
 		// set image
-		if(nicInfo[1] == "ethernet") {
-			if(nicStatus[3] == "running") {item->setPixmap(0,activeEthernetDeviceImg);}
-			else {item->setPixmap(0,inactiveEthernetDeviceImg);} }
-		if(nicInfo[1] == "wireless") {
-			if(nicStatus[3] == "running") {item->setPixmap(0,activeWirelessDeviceImg);}
-			else {item->setPixmap(0,inactiveWirelessDeviceImg);} }
+		if(nicInfo[1] == "ethernet")
+			if(nicStatus[3] == "running")
+				item->setPixmap(0,activeEthernetDeviceImg);
+			else
+				item->setPixmap(0,inactiveEthernetDeviceImg);
+		if(nicInfo[1] == "wireless")
+			if(nicStatus[3] == "running")
+				item->setPixmap(0,activeWirelessDeviceImg);
+			else
+				item->setPixmap(0,inactiveWirelessDeviceImg);
 	}
 }
 
@@ -163,7 +167,7 @@ void network::ncInfoSlot()
 	this->shell->setCommand("nicinfo "+item->text(0));
 	this->shell->start(true);
 	QStringList nicInfo = QStringList::split( " ", this->shell->getBuffer());
-	for(int j = 6; j < nicInfo.count(); j++) {
+	for(uint j = 6; j < nicInfo.count(); j++) {
 		nicInfo[5] = nicInfo[5]+" "+nicInfo[j]; }
 
 	macText2->setText(nicInfo[4]);         // mac-address (xx:xx:...)
@@ -278,19 +282,13 @@ void network::fwDetect()
 	QPixmap hardwareImg("/usr/share/siduxcc/icons/hardware.png");
 	hardwareList->clear();
 	if(fwComboBox->currentText() == i18n("detected"))
-	{ 
 		this->shell->setCommand("siduxcc hardware detect");
-	}
 	else
-	{
 		this->shell->setCommand("siduxcc hardware allDevices");
-	}
 	this->shell->start(true);
 	QStringList hardwareName = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
-	for(int i = 0; i < hardwareName.count(); i++)
-	{
-		hardwareList->insertItem(hardwareImg,hardwareName[i]);
-	}
+	for ( QStringList::Iterator it = hardwareName.begin(); it != hardwareName.end(); ++it )
+		hardwareList->insertItem(hardwareImg, *it);
 }
 
 

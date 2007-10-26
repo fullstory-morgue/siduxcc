@@ -78,7 +78,7 @@ void internet::getBrowsers()
 	this->shell->start(true);
 	QStringList browserList = QStringList::split( "\n", this->shell->getBuffer() );
 
-	for(int i = 0; i < browserList.count(); i++)
+	for(uint i = 0; i < browserList.count(); i++)
 	{
 		QStringList browser = QStringList::split( "/", browserList[i] );
 		browserSelect->insertItem(browser[2]);
