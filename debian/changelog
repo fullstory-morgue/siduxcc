@@ -1,9 +1,5 @@
-siduxcc (0.6.3) UNRELEASED; urgency=low
+siduxcc (0.6.3) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * new naming for the x.org backupfile in accord with sidux-binary-gfx and change-res
 
  -- Fabian Wuertz <xadras@sidux.com>  Sat, 27 Oct 2007 02:08:06 +0200
