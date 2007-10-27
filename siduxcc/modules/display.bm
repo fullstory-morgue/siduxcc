@@ -257,14 +257,16 @@ function removeModelines()
 
 function backupX()
 {
-	tmp=`date +%d.%m.%y-%H:%M`
-	cp $X_CONF $X_CONF-$tmp.save
+	tmp=`date -u +%Y%m%d%H%M`
+	cp $X_CONF $X_CONF.$tmp
 }
 
 function restoreX()
 {
-	tmp=`ls $X_CONF-*.save`
-	tmp=`echo ${tmp//"save"/'save ""'}`
+	tmp=`ls $X_CONF.*`
+	tmp=`echo ${tmp//" "/' "" '}`
+	tmp=`echo ${tmp//" "/' "" '}`
+	tmp=$tmp" \"\" "
 	newres=$(dlg --menu "$(eval_gettext "Select the file that should be restore")" 0 0 0 $tmp)
 	cp -f $newres $X_CONF
 }

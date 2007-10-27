@@ -1,8 +1,12 @@
 siduxcc (0.6.3) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 26 Oct 2007 18:52:09 +0200
+  [ Fabian Wuertz ]
+  * new naming for the x.org backupfile in accord with sidux-binary-gfx and change-res
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 27 Oct 2007 02:08:06 +0200
 
 siduxcc (0.6.2) unstable; urgency=low
 
