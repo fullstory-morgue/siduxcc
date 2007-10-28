@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	about->setProgramLogo( QImage("/usr/share/icons/hicolor/32x32/apps/siduxcc.png") );
 	about->setShortDescription( I18N_NOOP("Frontend for managing sidux.") );
 	about->setLicense(KAboutData::License_GPL_V2);
-   about->setHomepage("http://www.sidux.com");
+   about->setHomepage("http://sidux.com");
    about->setBugAddress("xadras@sidux.com");
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
 
