@@ -1,9 +1,5 @@
-siduxcc (0.6.5) UNRELEASED; urgency=low
+siduxcc (0.6.5) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc-hermes: ugradable packages problem fixed
   * siduxcc-kde: network: netcardconfig functions included
 
