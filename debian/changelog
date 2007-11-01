@@ -1,23 +1,8 @@
-siduxcc (0.6.5) UNRELEASED; urgency=low
+siduxcc (0.6.5) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * siduxcc-hermes: ugradable packages problem fixed
   * siduxcc-kde: network: netcardconfig functions included
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-  * FTBS:
-  /usr/share/qt3/bin/uic -L /usr/lib/kde3/plugins/designer -nounload
-  /tmp/buildd/siduxcc-0.6.5/./siduxcc_hermes/legendbase.ui | /usr/bin/perl -pi
-  -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include
-  <kwizard.h>,g" >> legendbase.h ;
-  make[3]: *** No rule to make target `upbase.ui', needed by `upbase.h'.
-  Stop.
-  make[3]: Leaving directory
-  `/tmp/buildd/siduxcc-0.6.5/obj-x86_64-linux-gnu/siduxcc_hermes'
-  make[2]: *** [all-recursive] Error 1
-
-  [ Fabian Wuertz ]
   * siduxcc-hermes: ugradable packages problem fixed again 
 
  -- Fabian Wuertz <xadras@sidux.com>  Thu, 01 Nov 2007 17:45:46 -0400
