@@ -1,0 +1,88 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>upBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>upBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>653</width>
+            <height>534</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>upBase</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QListView" row="0" column="0">
+            <column>
+                <property name="text">
+                    <string>Name</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Installed Version</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Latest Version</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>uList</cstring>
+            </property>
+            <property name="selectionMode">
+                <enum>Single</enum>
+            </property>
+            <property name="allColumnsShowFocus">
+                <bool>true</bool>
+            </property>
+            <property name="itemMargin">
+                <number>2</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;More options&lt;/b&gt;: KMenu&gt;sidux&gt;siduxcc Control Center&gt;Software&gt;Show upgradable packages</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="803">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ea49444154388d75935d48536118c7ffefd999eee8d887da54ca34c1b46815067d61485f5817a904e54de54d1411548415d14d60d05d30e8a608c3422212528c20a1408bd44ce943a7534cd766b639f7e13c3b67efcedeb78bd432edb97c9efff3e3f92458c12e0a422a002b00c30a6106c0e3608c0380f877a44e920e9696975dceb0984b530462d511a207e7e00b826412b181cfbc7d68bc06c0b325803a493a545b77e9c53a73ba4e1b1d069b8d0094026c311d34aee2feb49f688464b7b4b40ad5d5556c11b065dbd62b399ceabccdade898f263584920c1ff240380ca3986148a93a74e1c974cd6da9e8ffd4de27ccf44d2ebec811117def8437816988385c367b6d9cc119f2fccf96f52e69eb2ecd3bb770a7ca8cf2ac414a17bc899bd5081a0a9aa612e3a0b8503856969a11b5dbd1f3c2e67e79373e71b0d5e6f5c5f7160636e6e5657be7b00712e6f6aba7ded73f78c7a8bcc5700fbfa027791cdba361a9c819869839293879474e33c9f635255d13e3e0a12f021333d05df62f1e6f691a96302009c750e1a926b0a02ce1f3f314335c495188c721852641ae9a93aac3a5c89cd17ae232fbf0863318a1e5f6492eaf5f500207e1d184c3399b31ea795ef6b6879f7ae705c27588c41193bf28b5176e4284c0545686c7c0074bcc22e2109bd28e2a73fdaf7682af40500c8c8f88f8772340225167d2abbbf572a72eccc2afb16e29e98f07e6a6b718e3c6fd6a02a62bec55861cf3091ae60049311d9fd926a050020cecd86e550385a45697c4f58d08f790281fa7b37aebc9ee8ecec3f40693ceff7108cc5251b7ca0b154793a880487e9a2201007639c4892841a4a6ddbf7ef9d30e7644b494a97ec9e1002d16080d59605d78b56b4b9bdd0a99ab784f13c0763101545815910a49454bdc4130ad45070f9f16b0978badfc2ebf3c14335d8397fef600c4b4ed9f5b1175fa2738824b465000060e008330e0b83b69ae3ce827f011076fb83ae24f8e2e657b24c10ff3a8e9b0ec67a165bfc9fb8e1eed525a3009997fef31fbf000d7b5e47e553ca410000000049454e44ae426082</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
