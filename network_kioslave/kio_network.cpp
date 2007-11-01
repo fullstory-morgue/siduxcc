@@ -120,7 +120,7 @@ void NetworkProtocol::put( const KURL& url, int permissions, bool overwrite, boo
 		error( ERR_FILE_ALREADY_EXIST, url.prettyURL() );
 	// Trying to save to the root
 	else if ( !s.resType )
-		error( ERR_SLAVE_DEFINED, i18n("You cannot save to the root of network:/") );
+		error( ERR_SLAVE_DEFINED, "You cannot save to the root of network:/" );
 	else
 	{
 		locateLocal(s.resType, s.relPath, true);     // Just to create the dirs

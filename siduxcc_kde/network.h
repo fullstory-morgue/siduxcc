@@ -31,10 +31,16 @@ class network : public NetworkDialog
 	public:
 		network(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
-		void fwDetect();
+		void connections();
+
+		void setNetworkcardSettings(QString, QString);
+		void updateNetworkcardStatus();
+
 
 	private:
 		Process* shell;
+		bool isValidIP(QString ip);
+		QString toValidIP(QString ip);
 	
 	public slots:
 
@@ -44,11 +50,12 @@ class network : public NetworkDialog
 		virtual void save();
 		virtual void hasChanged();
 
+		virtual void getNetworkcardSettings();
+
 		virtual void getNetworkcards();
-		virtual void ncInfoSlot();
-		virtual void ncConfigSlot();
-		virtual void ncEnableSlot();
-		virtual void ncDisableSlot();
+		virtual void showNetworkcardInfo();
+		virtual void enableNetworkcard();
+		virtual void disableNetworkcard();
 
 		virtual void getHostname();
 		virtual void setHostname();
@@ -56,14 +63,13 @@ class network : public NetworkDialog
 		virtual void getNameservers();
 		virtual void setNameservers();
 
-		virtual void nwSlot();
-		virtual void nwlSlot();
+		virtual void ndiswrapper();
 
 		virtual void fwInstall();
+		virtual void fwDetect();
 
 		virtual void terminateConsole();
 
-	
 };
 
 #endif

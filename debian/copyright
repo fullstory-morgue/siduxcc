@@ -21,6 +21,7 @@ Copyright:
 	siduxcc/modules/info.bm
 	siduxcc/modules/interface
 	siduxcc/modules/services.bm
+	siduxcc/modules/network.bm
 	
 	main/display.cpp
 	main/display.h
@@ -34,6 +35,12 @@ Copyright:
 	main/services.cpp
 	main/services.h
 
+
+	The following file is based on netcardconfig from:
+	(c) 2006 Niall Walsh to integrate wlan cards
+	(c) 2004-2007 by Stefan Lippers-Hollmann <s.l-h@gmx.de>
+	(c) 2007 by Horst Tritremmel <hjt@sidux.com>
+	siduxcc/modules/network.bm
 
 	The following file is based on fw-detect from:
 	(c) 2007 Kel Modderman <kel@otaku42.de>

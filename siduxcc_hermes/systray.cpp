@@ -19,6 +19,7 @@
 
 #include "systray.h"
 #include "legend.h"
+#include "up.h"
 
 #include <kaboutapplication.h>
 #include <kiconloader.h>
@@ -44,6 +45,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
 	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
 	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
+	menu->insertItem ( SmallIcon ( "kcmsystem" ), i18n("Update (apt-get)"), this, SLOT ( update() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
@@ -71,7 +73,16 @@ void SysTray::showAbout()
 
 void SysTray::upgradablePackages()
 {
-	this->shell->setCommand ( "su-me \"kcmshell siduxcc_software\"" );
+	//this->shell->setCommand ( "su-me \"kcmshell siduxcc_software\"" );
+	//this->shell->start ( true );
+
+	up* dialog = new up();
+	dialog->show();
+}
+
+void SysTray::update()
+{
+	this->shell->setCommand ( "su-me konsole -T \"apt-get update ("+i18n("siduxcc Control Center")+"\" --nomenubar --notabbar -e apt-get update" );
 	this->shell->start ( true );
 }
 
@@ -80,6 +91,7 @@ void SysTray::showLegend()
 	legend* dialog = new legend();
 	dialog->show();
 }
+
 
 void SysTray::updateIcon()
 {

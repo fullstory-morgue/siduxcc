@@ -31,9 +31,10 @@ class kernel : public KernelDialog
 	public:
 		kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load(int);
-		QString getCurrentKernel();
+		//QString getCurrentKernel();
 		QString installKernel;
-		void getKernels();
+		void getCurrentKernel();
+		void getNewKernels();
 		void getOldKernels();
 		void getKernelDirs();
 		bool isInstalled(QString);

@@ -52,12 +52,12 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
 am_siduxcc_hermes_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) hermes.$(OBJEXT)
+	legend.$(OBJEXT) hermes.$(OBJEXT) up.$(OBJEXT)
 #>- siduxcc_hermes_OBJECTS = $(am_siduxcc_hermes_OBJECTS)
 #>+ 6
 siduxcc_hermes_final_OBJECTS = siduxcc_hermes.all_cpp.o 
 siduxcc_hermes_nofinal_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) hermes.$(OBJEXT) legendbase.$(OBJEXT)\
+	legend.$(OBJEXT) hermes.$(OBJEXT) up.$(OBJEXT) legendbase.$(OBJEXT) upbase.$(OBJEXT)\
 systray.moc.o hermes.moc.o 
 @KDE_USE_FINAL_FALSE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_nofinal_OBJECTS)
 @KDE_USE_FINAL_TRUE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_final_OBJECTS)
@@ -357,16 +357,16 @@ xdg_menudir = @xdg_menudir@
 INCLUDES = $(all_includes)
 
 # these are the headers for your project
-noinst_HEADERS = systray.h legend.h hermes.h
+noinst_HEADERS = systray.h legend.h hermes.h up.h
 
 # let automoc handle all of the meta source files (moc)
 #>- METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui hermes.cpp
+#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui hermes.cpp up.cpp upbase.ui
 #>+ 1
-siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  hermes.cpp legendbase.cpp
+siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  hermes.cpp up.cpp  legendbase.cpp upbase.cpp
 siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
@@ -462,6 +462,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/legend.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/systray.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/up.Po@am__quote@
 
 .cpp.o:
 @am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -700,7 +701,6 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 3
 systray.moc.cpp: $(srcdir)/systray.h
 	$(MOC) $(srcdir)/systray.h -o systray.moc.cpp
@@ -716,6 +716,13 @@ legend.moc: $(srcdir)/legend.h
 mocs: legend.moc
 
 #>+ 3
+up.moc: $(srcdir)/up.h
+	$(MOC) $(srcdir)/up.h -o up.moc
+
+#>+ 2
+mocs: up.moc
+
+#>+ 3
 hermes.moc.cpp: $(srcdir)/hermes.h
 	$(MOC) $(srcdir)/hermes.h -o hermes.moc.cpp
 
@@ -724,15 +731,16 @@ mocs: hermes.moc.cpp
 
 #>+ 3
 clean-metasources:
-	-rm -f  systray.moc.cpp legend.moc hermes.moc.cpp
+	-rm -f  systray.moc.cpp legend.moc up.moc hermes.moc.cpp
 
 #>+ 2
-KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop Makefile.am 
+KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop upbase.ui legendbase.h Makefile.am siduxcc-hermes 
 
-#>+ 4
+#>+ 5
 clean-ui:
 	-rm -f \
-	legendbase.cpp legendbase.h legendbase.moc 
+	legendbase.cpp legendbase.h legendbase.moc \
+	upbase.cpp upbase.h upbase.moc 
 
 #>+ 2
 docs-am:
@@ -776,11 +784,11 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/hermes.cpp legendbase.cpp systray.moc.cpp hermes.moc.cpp  legendbase.moc legend.moc
+siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/hermes.cpp $(srcdir)/up.cpp $(srcdir)/legendbase.cpp upbase.cpp $(srcdir)/systray.moc.cpp $(srcdir)/hermes.moc.cpp  legendbase.moc legend.moc up.moc upbase.moc
 	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
 	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \
-	for file in main.cpp systray.cpp legend.cpp hermes.cpp legendbase.cpp systray.moc.cpp hermes.moc.cpp ; do \
+	for file in main.cpp systray.cpp legend.cpp hermes.cpp up.cpp legendbase.cpp upbase.cpp systray.moc.cpp hermes.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> siduxcc_hermes.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_hermes.all_cpp.final; \
 	done; \
@@ -811,17 +819,20 @@ no-final-install:
 kde-rpo-clean:
 	-rm -f *.rpo
 
-#>+ 9
+#>+ 12
 nmcheck: 
 legend.o: legend.moc 
 legend.lo: legend.moc 
-$(srcdir)/legend.cpp: legendbase.h 
+$(srcdir)/legend.cpp: legendbase.h upbase.h 
+$(srcdir)/up.cpp: legendbase.h upbase.h 
 nmcheck-am: nmcheck
-$(srcdir)/main.cpp: legendbase.h 
-$(srcdir)/hermes.cpp: legendbase.h 
-$(srcdir)/systray.cpp: legendbase.h 
+up.lo: up.moc 
+$(srcdir)/main.cpp: legendbase.h upbase.h 
+up.o: up.moc 
+$(srcdir)/hermes.cpp: legendbase.h upbase.h 
+$(srcdir)/systray.cpp: legendbase.h upbase.h 
 
-#>+ 15
+#>+ 30
 legendbase.cpp: $(srcdir)/legendbase.ui legendbase.h legendbase.moc
 	rm -f legendbase.cpp
 	echo '#include <kdialog.h>' > legendbase.cpp
@@ -836,3 +847,18 @@ legendbase.h: $(srcdir)/legendbase.ui
 	$(UIC) $(srcdir)/legendbase.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> legendbase.h ;
 legendbase.moc: legendbase.h
 	$(MOC) legendbase.h -o legendbase.moc
+
+upbase.cpp: $(srcdir)/upbase.ui upbase.h upbase.moc
+	rm -f upbase.cpp
+	echo '#include <kdialog.h>' > upbase.cpp
+	echo '#include <klocale.h>' >> upbase.cpp
+	$(UIC) -tr ${UIC_TR} -i upbase.h $(srcdir)/upbase.ui > upbase.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" upbase.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_upbase,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> upbase.cpp ;\
+	rm -f upbase.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "upbase.moc"' >> upbase.cpp; else rm -f upbase.cpp ; exit $$ret ; fi
+
+upbase.h: $(srcdir)/upbase.ui
+	rm -rf upbase.h;
+	$(UIC) $(srcdir)/upbase.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> upbase.h ;
+upbase.moc: upbase.h
+	$(MOC) upbase.h -o upbase.moc

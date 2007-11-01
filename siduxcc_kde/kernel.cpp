@@ -49,7 +49,9 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 void kernel::load(int i)
 {
 	if(i == 0)
-		getKernels();
+		getCurrentKernel();
+	else if(i == 2)
+		getNewKernels();	
 	else if(i == 2)
 		getOldKernels();	
 	else if(i == 3)
@@ -77,29 +79,33 @@ void kernel::back()
 //--- get Kernels --------------------------------------------------------------
 //------------------------------------------------------------------------------
 
-
+/*
 QString kernel::getCurrentKernel()
 {
 	this->shell->setCommand("uname -r");
 	this->shell->start(true);
 	return this->shell->getBuffer().stripWhiteSpace();
 }
+*/
 
 
-void kernel::getKernels()
+void kernel::getCurrentKernel()
 {
-
-	QPixmap kernelImg("/usr/share/siduxcc/icons/spacer.png");
-
-	installListBox->clear();
-
-	// get currentKernel
 	this->shell->setCommand("uname -r");
 	this->shell->start(true);
 	currentKernel =  this->shell->getBuffer().stripWhiteSpace();
 
 	currentKernelTextLabel1->setText(i18n("Current kernel")+": "+currentKernel);
 	currentKernelTextLabel2->setText(i18n("Current kernel")+": "+currentKernel);
+}
+
+
+void kernel::getNewKernels()
+{
+
+	QPixmap kernelImg("/usr/share/siduxcc/icons/spacer.png");
+
+	installListBox->clear();
 
 	// get newestKernel
 	this->shell->setCommand("siduxcc kernel newestKernel");

@@ -45,7 +45,7 @@
                 <widget class="QListBox">
                     <item>
                         <property name="text">
-                            <string>Upgradable packages</string>
+                            <string>Show upgradable packages</string>
                         </property>
                         <property name="pixmap">
                             <pixmap>image0</pixmap>
@@ -230,10 +230,10 @@
                             </font>
                         </property>
                         <property name="text">
-                            <string>&amp;Clean</string>
+                            <string>Clea&amp;n</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+C</string>
+                            <string>Alt+N</string>
                         </property>
                     </widget>
                     <widget class="QLabel" row="2" column="4">

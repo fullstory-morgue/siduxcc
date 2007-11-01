@@ -2,7 +2,7 @@
 INCLUDES = $(all_includes)
 
 # these are the headers for your project
-noinst_HEADERS = systray.h legend.h hermes.h
+noinst_HEADERS = systray.h legend.h hermes.h up.h
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
@@ -10,7 +10,7 @@ METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui hermes.cpp
+siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui hermes.cpp up.cpp upbase.ui
 siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
