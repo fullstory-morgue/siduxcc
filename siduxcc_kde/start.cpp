@@ -48,12 +48,14 @@ void start::menu(QListBoxItem* entry)
 		QWidget *displayWidget = new display(this);
 		widgetStack->addWidget(displayWidget, 0);
 		widgetStack->raiseWidget(0);
+		connect( displayWidget, SIGNAL( menuLocked(bool) ), this, SLOT( menuStatus(bool) ));
 	}
 	else if( entry->text() == i18n("Network") )
 	{
 		QWidget *networkWidget = new network(this);
 		widgetStack->addWidget(networkWidget, 0);
 		widgetStack->raiseWidget(0);
+		connect( networkWidget, SIGNAL( menuLocked(bool) ), this, SLOT( menuStatus(bool) ));
 	}
 	else if( entry->text() == i18n("Services") )
 	{
@@ -66,6 +68,7 @@ void start::menu(QListBoxItem* entry)
 		QWidget *softwareWidget = new software(this);
 		widgetStack->addWidget(softwareWidget, 0);
 		widgetStack->raiseWidget(0);
+		connect( softwareWidget, SIGNAL( menuLocked(bool) ), this, SLOT( menuStatus(bool) ));
 	}
 	else if( entry->text() == i18n("Internet") )
 	{
@@ -78,6 +81,7 @@ void start::menu(QListBoxItem* entry)
 		QWidget *kernelWidget = new kernel(this);
 		widgetStack->addWidget(kernelWidget, 0);
 		widgetStack->raiseWidget(0);
+		connect( kernelWidget, SIGNAL( menuLocked(bool) ), this, SLOT( menuStatus(bool) ));
 	}
 	else if( entry->text() == i18n("System Info") )
 	{
@@ -93,6 +97,14 @@ void start::menu(QListBoxItem* entry)
 	else if( entry->text() == i18n("Exit") )
 		close();
 
+}
+
+void start::menuStatus(bool b)
+{
+	if( b )
+		menuListBox->setEnabled(FALSE);
+	else
+		menuListBox->setEnabled(TRUE);
 }
 
 #include "start.moc"

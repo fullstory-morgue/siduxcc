@@ -32,6 +32,7 @@ class start : public StartDialog
 
 	public slots:
 		virtual void menu(QListBoxItem*);
+		virtual void menuStatus(bool);
 };
 
 #endif

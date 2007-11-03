@@ -47,8 +47,11 @@ class software : public SoftwareDialog
 		virtual void download();
 		virtual void clean();
 
+		virtual void startConsole(QStringList input);
 		virtual void terminateConsole();
 
+	signals:
+		void menuLocked(bool);
 	
 };
 

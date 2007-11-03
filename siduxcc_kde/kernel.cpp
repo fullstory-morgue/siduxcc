@@ -168,24 +168,11 @@ void kernel::install()
 
 		installKernel =  QStringList::split( " ", installListBox->currentText() )[0];
 	
-		QStrList run; run.append( "siduxcc" );
-			run.append( "kernel" );
-			run.append( "installKernel" );
-			run.append( installKernel );
 
+		QStringList run; run << "installKernel" << installKernel;
 		if( QStringList::split( " ", installListBox->currentText() )[1] == "("+i18n("experimental")+")" )
 			run.append( "exp" );
-		
-	
-	
-		// change widget
-		QWidget *consoleWidget = new console(this, run );
-		widgetStack2->addWidget(consoleWidget, 4);
-		widgetStack2->raiseWidget(4);
-		widgetStack3->raiseWidget(2);
-		widgetStack2->removeWidget(consoleWidget);
-	
-		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole1() ));
+		startConsole(run);
 
 	}
 
@@ -199,19 +186,8 @@ void kernel::install()
 
 void kernel::remove()
 {
-	QStrList run; run.append( "siduxcc" );
-		run.append( "kernel" );
-		run.append( "removeKernel" );
-		run.append( removeList->currentText() );
-
-	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 4);
-	widgetStack2->raiseWidget(4);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
-
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole2() ));
+		QStringList run; run << "removeKernel" << removeList->currentText();
+		startConsole(run);
 }
 
 
@@ -258,9 +234,7 @@ void kernel::showModules(const QString& kernel)
 void kernel::installModules()
 {
 
-	QStrList run; run.append( "siduxcc" );
-		run.append( "kernel" );
-		run.append( "installModules" );
+	QStringList run; run << "installModules";
 
 	for(uint i = 0; i < modulesListBox->count(); i++)
 		if ( modulesListBox->isSelected(i) )
@@ -268,14 +242,7 @@ void kernel::installModules()
 
 	if (run.count() < 4) return;
 
-	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 4);
-	widgetStack2->raiseWidget(4);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
-
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole3() ));
+	startConsole(run);
 }
 
 
@@ -316,6 +283,25 @@ bool kernel::isInstalled(QString package)
 //--- console ------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
+
+void kernel::startConsole(QStringList input)
+{
+	emit menuLocked(TRUE);
+
+	QStrList run; run.append( "siduxcc" );
+	run.append( "software" );
+	for ( QStringList::Iterator it = input.begin(); it != input.end(); ++it )
+		run.append(*it);
+
+	// change widget
+	QWidget *consoleWidget = new console(this, run );
+	widgetStack2->addWidget(consoleWidget, 6);
+	widgetStack2->raiseWidget(6);
+	widgetStack3->raiseWidget(2);
+	widgetStack2->removeWidget(consoleWidget);
+
+	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+}
 
 void kernel::terminateConsole1()
 {

@@ -55,9 +55,13 @@ class kernel : public KernelDialog
 		virtual void showModules(const QString&);
 		virtual void installModules();
 
+		virtual void startConsole(QStringList input);
 		virtual void terminateConsole1();
 		virtual void terminateConsole2();
 		virtual void terminateConsole3();
+
+	signals:
+		void menuLocked(bool);
 
 };
 

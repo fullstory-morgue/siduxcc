@@ -70,6 +70,9 @@ class network : public NetworkDialog
 
 		virtual void terminateConsole();
 
+	signals:
+		void menuLocked(bool);
+
 };
 
 #endif

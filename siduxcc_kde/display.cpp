@@ -353,12 +353,12 @@ void display::setComposite()
 
 void display::gfx()
 {
+	emit menuLocked(TRUE);
 
 	QStrList run; run.append( "siduxcc" ); 
 		run.append( "display" );
 		run.append( "binaryGfx" );
 	
-
 	// change widget
 	QWidget *consoleWidget = new console(this, run );
 	widgetStack2->addWidget(consoleWidget, 6);
@@ -374,6 +374,7 @@ void display::terminateConsole()
 {
 	widgetStack2->raiseWidget(4);
 	widgetStack3->raiseWidget(1);
+	emit menuLocked(FALSE);
 }
 
 

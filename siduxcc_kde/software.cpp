@@ -83,18 +83,8 @@ void software::checkASV()
 	{
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Apt-show-versions is missing!")+" "+i18n("Do you want to install it?") ) )
 		{
-			QStrList run; run.append( "siduxcc" );
-				run.append( "software" );
-				run.append( "installASV" );
-	
-			// change widget
-			QWidget *consoleWidget = new console(this, run );
-			widgetStack2->addWidget(consoleWidget, 6);
-			widgetStack2->raiseWidget(6);
-			widgetStack3->raiseWidget(2);
-			widgetStack2->removeWidget(consoleWidget);
-		
-			connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+			QStringList run; run << "installASV";
+			startConsole(run);
 		}
 	}
 	else
@@ -173,35 +163,15 @@ void software::upgrade()
 
 void software::update()
 {
-	QStrList run; run.append( "siduxcc" );
-	run.append( "software" );
-	run.append( "update" );
-
-	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 6);
-	widgetStack2->raiseWidget(6);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
-
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+	QStringList run; run << "update";
+	startConsole(run);
 }
 
 
 void software::download()
 {
-	QStrList run; run.append( "siduxcc" );
-	run.append( "software" );
-	run.append( "download" );
-
-	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 6);
-	widgetStack2->raiseWidget(6);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
-
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+	QStringList run; run << "download";
+	startConsole(run);
 }
 
 
@@ -209,26 +179,34 @@ void software::clean()
 {
 	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to clear your local repository?") ) )
 	{
-		QStrList run; run.append( "siduxcc" );
-			run.append( "software" );
-			run.append( "clean" );
-	
-		// change widget
-		QWidget *consoleWidget = new console(this, run );
-		widgetStack2->addWidget(consoleWidget, 6);
-		widgetStack2->raiseWidget(6);
-		widgetStack3->raiseWidget(2);
-		widgetStack2->removeWidget(consoleWidget);
-
-		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+		QStringList run; run << "clean";
+		startConsole(run);
 	}
-//apt-get clean
 }
 
 
 //------------------------------------------------------------------------------
 //--- console ------------------------------------------------------------------
 //------------------------------------------------------------------------------
+
+void software::startConsole(QStringList input)
+{
+	emit menuLocked(TRUE);
+
+	QStrList run; run.append( "siduxcc" );
+	run.append( "software" );
+	for ( QStringList::Iterator it = input.begin(); it != input.end(); ++it )
+		run.append(*it);
+
+	// change widget
+	QWidget *consoleWidget = new console(this, run );
+	widgetStack2->addWidget(consoleWidget, 6);
+	widgetStack2->raiseWidget(6);
+	widgetStack3->raiseWidget(2);
+	widgetStack2->removeWidget(consoleWidget);
+
+	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+}
 
 
 void software::terminateConsole()
@@ -237,6 +215,7 @@ void software::terminateConsole()
 	warning();
 	widgetStack2->raiseWidget(1);
 	widgetStack3->raiseWidget(1);
+	emit menuLocked(FALSE);
 }
 
 

@@ -87,6 +87,9 @@ class display : public DisplayDialog
 		virtual void fixFonts();
 		virtual void fixFonts_END();
 		virtual void getOutput(KProcess *, char *, int);
+
+	signals:
+		void menuLocked(bool);
 };
 
 #endif

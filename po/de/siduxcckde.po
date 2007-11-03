@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-31 20:54+0100\n"
-"PO-Revision-Date: 2007-10-31 20:58+0100\n"
+"PO-Revision-Date: 2007-11-03 11:01-0400\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -45,8 +45,7 @@ msgid "Modelines removed"
 msgstr "Modelines gelöscht"
 
 #: display.cpp:233
-msgid ""
-"Are you sure you want to restart the X-Server? All windows will be closed."
+msgid "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
 "Sind Sie sicher, dass Sie den X-Server neustarten möchten? Sämtliche nicht "
 "gespeicherte Fortschritte gehen verloren!"
@@ -138,7 +137,7 @@ msgstr "Alt+X"
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
-"Das Fenster nicht schliessen, bevor die Nachtricht \"Prozess abgschlossen!\" "
+"Das Fenster nicht schliessen, bevor die Nachricht \"Prozess abgeschlossen!\" "
 "erschienen ist!"
 
 #. i18n: file ./displaydialog.ui line 154
@@ -303,8 +302,7 @@ msgstr "Bemerkung"
 #. i18n: file ./displaydialog.ui line 587
 #: displaydialog.cpp:2394 rc.cpp:135
 #, no-c-format
-msgid ""
-"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
 "Wenn Sie den ATI-Treiber (fglrx) verwenden können Sie die Farbtiefe nicht "
 "verändern."
@@ -505,7 +503,7 @@ msgstr "sidux-Browser (benötigt Root-Rechte)"
 #: rc.cpp:710 rc.cpp:721
 #, no-c-format
 msgid "Current kernel"
-msgstr "Lockaler Kernel"
+msgstr "Lokaler Kernel"
 
 #: kernel.cpp:124 kernel.cpp:176
 msgid "experimental"
@@ -525,7 +523,7 @@ msgstr "Wollen Sie wirklich einen neuen Kernel installieren?"
 
 #: kernel.cpp:285
 msgid "Are you sure you want to remove the stored kernel files?"
-msgstr "Wollen Sie wirklich edie archivierten Kernel Dateien löschen?"
+msgstr "Wollen Sie wirklich die archivierten Kernel-Dateien löschen?"
 
 #. i18n: file ./startdialog.ui line 45
 #. i18n: file ./kerneldialog.ui line 17
@@ -667,7 +665,7 @@ msgstr "Schnittstelle"
 #: networkdialog.cpp:1161 networkdialog.cpp:1560 rc.cpp:393
 #, no-c-format
 msgid "Ip Address    "
-msgstr "Ip Adresse"
+msgstr "IP Adresse"
 
 #. i18n: file ./networkdialog.ui line 410
 #: networkdialog.cpp:1162 networkdialog.cpp:1561 rc.cpp:396
@@ -843,7 +841,7 @@ msgstr "Automatisch (DHCP)"
 #: networkdialog.cpp:1591 rc.cpp:470
 #, no-c-format
 msgid "&Manual"
-msgstr "Manuel"
+msgstr "Manuell"
 
 #. i18n: file ./networkdialog.ui line 1320
 #: networkdialog.cpp:1592 rc.cpp:473
@@ -867,7 +865,7 @@ msgstr "Broadcast Adresse:"
 #: networkdialog.cpp:1595 rc.cpp:482
 #, no-c-format
 msgid "Default Gateway:"
-msgstr "Standart Gateway"
+msgstr "Standard Gateway"
 
 #. i18n: file ./networkdialog.ui line 1387
 #. i18n: file ./networkdialog.ui line 1398
@@ -1273,8 +1271,7 @@ msgstr "Apache2 ist eine Weiterentwicklung des Apache Webservers."
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr ""
-"Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
+msgstr "Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
 
 #: services.cpp:178
 msgid ""
@@ -1316,9 +1313,10 @@ msgid ""
 "choose the option Software->Dist-Upgrade"
 msgstr ""
 "Für ein dist-upgrade muss der graphische Modus verlassen werden. Hierzu CTR"
-"+ALT+F1 drücken, sich als root einloggen und init 3 eingeben. Dannach "
+"+ALT+F1 drücken, sich als root einloggen und init 3 eingeben. Danach "
 "siduxcc ausführen und die Option Software->Dist-upgrade auswählen."
 
 #: software.cpp:210
 msgid "Are you sure you want to clear your local repository?"
-msgstr "Soll das lokale Repository wirklick geleert werden?"
+msgstr "Soll das lokale Repository wirklich geleert werden?"
+

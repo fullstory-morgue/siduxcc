@@ -173,16 +173,13 @@ void network::hasChanged()
 
 void network::getNetworkcards()
 {
-	
 	ncList->clear();
-
 
 	// add networkcards to list
 
 	this->shell->setCommand("nicinfo");
 	this->shell->start(true);
 	QStringList devices = QStringList::split( "\n", this->shell->getBuffer() );
-
 
 	for(uint i = 0; i < devices.count(); i++ )
 	{
@@ -400,7 +397,6 @@ void network::getNetworkcardSettings()
 			wpaCheckBox->setChecked(FALSE);
 			wpaLineEdit->setText(key);
 		}
-
 	}
 
 	applyPushButton->setEnabled(FALSE);
@@ -573,6 +569,7 @@ void network::fwDetect()
 
 void network::fwInstall()
 {
+	emit menuLocked(TRUE);
 
 	// add non-free sources to /etc/apt/sources.list
 	this->shell->setCommand("siduxcc hardware addSources");
@@ -582,7 +579,6 @@ void network::fwInstall()
 		run.append( "hardware" );
 		run.append( "install" );
 		run.append( hardwareList->currentText() );
-	
 
 	// change widget
 	QWidget *consoleWidget = new console(this, run );
@@ -598,6 +594,7 @@ void network::terminateConsole()
 {
 	widgetStack2->raiseWidget(5);
 	widgetStack3->raiseWidget(1);
+	emit menuLocked(FALSE);
 }
 
 #include "network.moc"
