@@ -85,6 +85,7 @@ Copyright:
 	stop.png                     in main/servicedialog.ui
 	player_play.png              in main/servicedialog.ui
 	up.png                       in main/softwaredialog.ui
+	advancedsettings.png         icons/hi*-app-siduxcc.png
 
 
 	The following icons are from adept-common
@@ -137,7 +138,7 @@ Copyright:
 
 	The following icons are from sidux-icons
 	(c) 2007 cathbard <cathbard@gmail.com>
-	kmenu.png                    iconsimages/hi*-app-siduxcc.png
+	kmenu.png                    icons/hi*-app-siduxcc.png
 	sidux-book2s.png             icons/hi*-app-sidux_book.png
 
 
