@@ -1,9 +1,5 @@
-siduxcc (0.6.7) UNRELEASED; urgency=low
+siduxcc (0.6.7) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc icon changed 
 
  -- Fabian Wuertz <xadras@sidux.com>  Sun, 04 Nov 2007 17:26:19 -0500
