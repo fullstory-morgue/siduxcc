@@ -1,8 +1,12 @@
 siduxcc (0.6.8) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 05 Nov 2007 01:26:59 +0100
+  [ Fabian Wuertz ]
+  * siduxcc_kde: kernel: console bug fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 07 Nov 2007 10:32:41 -0500
 
 siduxcc (0.6.7) unstable; urgency=low
 

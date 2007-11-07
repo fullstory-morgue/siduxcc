@@ -38,7 +38,7 @@ class kernel : public KernelDialog
 		void getOldKernels();
 		void getKernelDirs();
 		bool isInstalled(QString);
-		QString currentKernel;
+		QString currentKernel;;
 
 	private:
 		Process* shell;
@@ -58,7 +58,6 @@ class kernel : public KernelDialog
 		virtual void startConsole(QStringList input);
 		virtual void terminateConsole1();
 		virtual void terminateConsole2();
-		virtual void terminateConsole3();
 
 	signals:
 		void menuLocked(bool);

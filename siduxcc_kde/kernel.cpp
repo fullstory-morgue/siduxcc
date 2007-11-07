@@ -146,11 +146,12 @@ void kernel::getOldKernels()
 	this->shell->start(true);
 	QStringList oldKernels = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
 
-	if(oldKernels.count() == 0)
-		removeButton->setEnabled(FALSE); 
-	else
+	if(oldKernels.count() > 0)
+	{
 		for ( QStringList::Iterator it = oldKernels.begin(); it != oldKernels.end(); ++it )
 			removeList->insertItem(kernelImg,*it);
+		removeButton->setEnabled(TRUE);
+	}
 
 		
 }
@@ -240,7 +241,7 @@ void kernel::installModules()
 		if ( modulesListBox->isSelected(i) )
 			run.append( comboBox->currentText()+"/"+modulesListBox->text(i) );
 
-	if (run.count() < 4) return;
+	if (run.count() < 2) return;
 
 	startConsole(run);
 }
@@ -289,7 +290,7 @@ void kernel::startConsole(QStringList input)
 	emit menuLocked(TRUE);
 
 	QStrList run; run.append( "siduxcc" );
-	run.append( "software" );
+	run.append( "kernel" );
 	for ( QStringList::Iterator it = input.begin(); it != input.end(); ++it )
 		run.append(*it);
 
@@ -300,31 +301,24 @@ void kernel::startConsole(QStringList input)
 	widgetStack3->raiseWidget(2);
 	widgetStack2->removeWidget(consoleWidget);
 
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+	if( input[0] == "removeKernel" )
+		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole2() ));
+	else
+		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole1() ));
 }
+
 
 void kernel::terminateConsole1()
 {
-	comboBox->setCurrentText("kernel-"+installKernel);
-	widgetStack2->raiseWidget(3);
-	widgetStack3->raiseWidget(1);
+	loadWidget(2);
+	emit menuLocked(FALSE);
 }
-
 
 void kernel::terminateConsole2()
 {
-	load(2);
-	widgetStack2->raiseWidget(2);
-	widgetStack3->raiseWidget(1);
+	loadWidget(1);
+	emit menuLocked(FALSE);
 }
-
-void kernel::terminateConsole3()
-{
-	load(3);
-	widgetStack2->raiseWidget(3);
-	widgetStack3->raiseWidget(1);
-}
-
 
 //------------------------------------------------------------------------------
 //--- END ----------------------------------------------------------------------

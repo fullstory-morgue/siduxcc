@@ -322,28 +322,6 @@
                     <property name="title">
                         <string></string>
                     </property>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>removeButton</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>true</bool>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>136</x>
-                                <y>211</y>
-                                <width>80</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>remo&amp;ve</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+V</string>
-                        </property>
-                    </widget>
                     <widget class="QLabel">
                         <property name="name">
                             <cstring>removePixmap</cstring>
@@ -377,6 +355,28 @@
                                 <width>280</width>
                                 <height>150</height>
                             </rect>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>removeButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>136</x>
+                                <y>211</y>
+                                <width>80</width>
+                                <height>30</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>re&amp;move</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+M</string>
                         </property>
                     </widget>
                 </widget>
@@ -429,6 +429,12 @@
                         <property name="name">
                             <cstring>comboBox</cstring>
                         </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>200</width>
+                                <height>0</height>
+                            </size>
+                        </property>
                     </widget>
                     <widget class="QPushButton" row="1" column="2">
                         <property name="name">
@@ -438,10 +444,10 @@
                             <bool>true</bool>
                         </property>
                         <property name="text">
-                            <string>&amp;clear</string>
+                            <string>cle&amp;ar</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+C</string>
+                            <string>Alt+A</string>
                         </property>
                     </widget>
                     <widget class="QPushButton" row="1" column="3">
@@ -452,10 +458,10 @@
                             <bool>true</bool>
                         </property>
                         <property name="text">
-                            <string>ins&amp;tall</string>
+                            <string>i&amp;nstall</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+T</string>
+                            <string>Alt+N</string>
                         </property>
                     </widget>
                     <widget class="QListBox" row="0" column="0" rowspan="1" colspan="4">
