@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-18 01:04+0100\n"
+"POT-Creation-Date: 2007-11-18 21:30+0100\n"
 "PO-Revision-Date: 2007-10-25 22:06+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -57,8 +57,7 @@ msgid "Process done!"
 msgstr "Procedure este terminata"
 
 #. i18n: file ./displaydialog.ui line 17
-#. i18n: file ./startdialog2.ui line 29
-#: displaydialog.cpp:2354 rc.cpp:3 rc.cpp:719 start.cpp:55 start.cpp:97
+#: displaydialog.cpp:2354 rc.cpp:3 start.cpp:54 start.cpp:96
 #, no-c-format
 msgid "Display"
 msgstr "Arata"
@@ -479,8 +478,7 @@ msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./internetdialog.ui line 17
-#. i18n: file ./startdialog2.ui line 37
-#: internetdialog.cpp:306 rc.cpp:286 rc.cpp:722 start.cpp:59 start.cpp:124
+#: internetdialog.cpp:306 rc.cpp:286 start.cpp:58 start.cpp:123
 #, no-c-format
 msgid "Internet"
 msgstr "Internet"
@@ -520,8 +518,7 @@ msgid "Are you sure you want to remove the stored kernel files?"
 msgstr "Sinteti siguri ca vreti sa instalati un nou kernel?"
 
 #. i18n: file ./kerneldialog.ui line 17
-#. i18n: file ./startdialog2.ui line 45
-#: kerneldialog.cpp:1329 rc.cpp:647 rc.cpp:725 start.cpp:63 start.cpp:130
+#: kerneldialog.cpp:1329 rc.cpp:647 start.cpp:62 start.cpp:129
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -719,8 +716,7 @@ msgid "Slot"
 msgstr "Deschidere"
 
 #. i18n: file ./networkdialog.ui line 17
-#. i18n: file ./startdialog2.ui line 53
-#: networkdialog.cpp:1533 rc.cpp:298 rc.cpp:728 start.cpp:67 start.cpp:104
+#: networkdialog.cpp:1533 rc.cpp:298 start.cpp:66 start.cpp:103
 #, no-c-format
 msgid "Network"
 msgstr "Retea"
@@ -1055,9 +1051,8 @@ msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 486
-#. i18n: file ./startdialog2.ui line 61
-#: rc.cpp:202 rc.cpp:269 rc.cpp:731 servicesdialog.cpp:516
-#: servicesdialog.cpp:540 start.cpp:71 start.cpp:111
+#: rc.cpp:202 rc.cpp:269 servicesdialog.cpp:516 servicesdialog.cpp:540
+#: start.cpp:70 start.cpp:110
 #, no-c-format
 msgid "Services"
 msgstr "Servicii"
@@ -1159,8 +1154,7 @@ msgid "Disabled Services:"
 msgstr "Servicii Disabled:"
 
 #. i18n: file ./softwaredialog.ui line 17
-#. i18n: file ./startdialog2.ui line 69
-#: rc.cpp:573 rc.cpp:734 softwaredialog.cpp:769 start.cpp:75 start.cpp:117
+#: rc.cpp:573 softwaredialog.cpp:769 start.cpp:74 start.cpp:116
 #, no-c-format
 msgid "Software"
 msgstr "Software"
@@ -1219,36 +1213,20 @@ msgstr "Alt+U"
 msgid "Upgr&ade"
 msgstr "Upgrade"
 
-#. i18n: file ./startdialog2.ui line 17
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:716 rc.cpp:746 startdialog.cpp:3424
+#: rc.cpp:716 startdialog.cpp:3424
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "Centrul de control sidux"
 
-#. i18n: file ./startdialog2.ui line 77
-#: rc.cpp:737 start.cpp:79 start.cpp:137
-#, no-c-format
-msgid "System Info"
-msgstr "System Info"
-
-#. i18n: file ./startdialog2.ui line 93
-#. i18n: file ./startdialog.ui line 523
-#. i18n: file ./startdialog.ui line 526
-#: rc.cpp:743 rc.cpp:781 rc.cpp:784 start.cpp:148 startdialog.cpp:3439
-#: startdialog.cpp:3440
-#, no-c-format
-msgid "Exit"
-msgstr "Iesire"
-
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:749 startdialog.cpp:3270 startdialog.cpp:3425
+#: rc.cpp:719 startdialog.cpp:3270 startdialog.cpp:3425
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:752 startdialog.cpp:3426
+#: rc.cpp:722 startdialog.cpp:3426
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1258,28 +1236,36 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 469
 #. i18n: file ./startdialog.ui line 472
-#: rc.cpp:757 rc.cpp:760 startdialog.cpp:3429 startdialog.cpp:3430
+#: rc.cpp:727 rc.cpp:730 startdialog.cpp:3429 startdialog.cpp:3430
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 486
 #. i18n: file ./startdialog.ui line 489
-#: rc.cpp:764 rc.cpp:767 startdialog.cpp:3432 startdialog.cpp:3433
+#: rc.cpp:734 rc.cpp:737 startdialog.cpp:3432 startdialog.cpp:3433
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 506
 #. i18n: file ./startdialog.ui line 509
-#: rc.cpp:774 rc.cpp:777 startdialog.cpp:3436 startdialog.cpp:3437
+#: rc.cpp:744 rc.cpp:747 startdialog.cpp:3436 startdialog.cpp:3437
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "Despre sidux"
 
+#. i18n: file ./startdialog.ui line 523
+#. i18n: file ./startdialog.ui line 526
+#: rc.cpp:751 rc.cpp:754 start.cpp:147 startdialog.cpp:3439
+#: startdialog.cpp:3440
+#, no-c-format
+msgid "Exit"
+msgstr "Iesire"
+
 #. i18n: file ./startdialog.ui line 537
 #. i18n: file ./startdialog.ui line 540
-#: rc.cpp:787 rc.cpp:790 startdialog.cpp:3441 startdialog.cpp:3442
+#: rc.cpp:757 rc.cpp:760 startdialog.cpp:3441 startdialog.cpp:3442
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "Despre sidux"
@@ -1359,6 +1345,10 @@ msgstr ""
 #: software.cpp:180
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Sunteti siguri ca vreti sa curatati repozitoriul local?"
+
+#: start.cpp:78 start.cpp:136
+msgid "System Info"
+msgstr "System Info"
 
 #~ msgid ""
 #~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"

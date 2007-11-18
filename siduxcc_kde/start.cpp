@@ -27,7 +27,6 @@
 #include <klistview.h>
 #include <qheader.h>
 #include <kprocess.h>
-
 #include <kapp.h>
 
 

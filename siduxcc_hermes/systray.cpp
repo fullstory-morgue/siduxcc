@@ -24,14 +24,13 @@
 #include <kaboutapplication.h>
 #include <kiconloader.h>
 #include <kkeydialog.h>
-
 #include <qclipboard.h>
 #include <qevent.h>
 #include <qpixmap.h>
 #include <qtooltip.h>
-
 #include <qtimer.h>
 #include <klocale.h>
+#include <kapplication.h>
 
 
 
@@ -56,13 +55,11 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 
 void SysTray::forum()
 {
-	this->shell->setCommand ("x-www-browser http://sidux.com/PNphpBB2-viewforum-f-29.html&");
-	this->shell->start ( true );
+	kapp->invokeBrowser( "http://sidux.com/PNphpBB2-viewforum-f-29.html" );
 }
 void SysTray::manual()
 {
-	this->shell->setCommand ("x-www-browser http://manual.sidux.com/"+i18n("en")+"/sys-admin-apt-"+i18n("en")+".htm#apt-upgrade&");
-	this->shell->start ( true );
+	kapp->invokeBrowser( "http://manual.sidux.com/" + i18n("en") + "/sys-admin-apt-" + i18n("en") + ".htm#apt-upgrade" );
 }
 
 void SysTray::showAbout()
@@ -73,9 +70,6 @@ void SysTray::showAbout()
 
 void SysTray::upgradablePackages()
 {
-	//this->shell->setCommand ( "su-me \"kcmshell siduxcc_software\"" );
-	//this->shell->start ( true );
-
 	up* dialog = new up();
 	dialog->show();
 }

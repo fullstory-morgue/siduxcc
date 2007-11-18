@@ -6,8 +6,9 @@ siduxcc (0.6.9) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * siduxcc_kde: start: Menubar added
   * siduxcc_kde: start: startpage designed
+  * polish languages files added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 18 Nov 2007 01:11:09 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 18 Nov 2007 21:50:58 +0100
 
 siduxcc (0.6.8) unstable; urgency=low
 
