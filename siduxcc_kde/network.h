@@ -64,6 +64,7 @@ class network : public NetworkDialog
 		virtual void setNameservers();
 
 		virtual void ndiswrapper();
+		virtual void ndiswrapperList();
 
 		virtual void fwInstall();
 		virtual void fwDetect();

@@ -31,8 +31,12 @@ class start : public StartDialog
 		start(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 
 	public slots:
-		virtual void menu(QListBoxItem*);
+		virtual void menu();
 		virtual void menuStatus(bool);
+		virtual void about();
+		virtual void aboutKDE();
+		virtual void manual();
+		virtual void homepage();
 };
 
 #endif

@@ -115,7 +115,7 @@
                         </sizepolicy>
                     </property>
                     <property name="title">
-                        <string>sidux-Browser (require root access)</string>
+                        <string>sidux-Browser</string>
                     </property>
                     <widget class="QLabel">
                         <property name="name">

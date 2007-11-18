@@ -687,35 +687,23 @@
                             <bool>true</bool>
                         </property>
                     </widget>
-                    <widget class="QLineEdit">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>lineEdit6</cstring>
+                            <cstring>nwlButton</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
                                 <x>80</x>
                                 <y>30</y>
                                 <width>150</width>
-                                <height>31</height>
+                                <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/</string>
+                            <string>Sh&amp;ow list</string>
                         </property>
-                        <property name="cursorPosition">
-                            <number>0</number>
-                        </property>
-                        <property name="alignment">
-                            <set>AlignAuto</set>
-                        </property>
-                        <property name="dragEnabled">
-                            <bool>true</bool>
-                        </property>
-                        <property name="readOnly">
-                            <bool>true</bool>
-                        </property>
-                        <property name="toolTip" stdset="0">
-                            <string>http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/</string>
+                        <property name="accel">
+                            <string>Alt+O</string>
                         </property>
                     </widget>
                 </widget>

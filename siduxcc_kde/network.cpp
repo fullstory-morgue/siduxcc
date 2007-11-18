@@ -33,6 +33,7 @@
 #include <qradiobutton.h>
 #include <qspinbox.h>
 #include <qregexp.h>
+#include <kapp.h>
 
 
 
@@ -100,7 +101,8 @@ void network::connections()
 	//nameserver
 		connect( dnsServers, SIGNAL( changed() ), this, SLOT( hasChanged() ));
 	//ndiswrapper
-		connect( nwButton, SIGNAL( clicked() ), this, SLOT( ndiswrapper() ));
+		connect( nwButton,  SIGNAL( clicked() ), this, SLOT( ndiswrapper() ));
+		connect( nwlButton, SIGNAL( clicked() ), this, SLOT( ndiswrapperList() ));
 	//fwdetect
 		connect( fwInstallPushButton, SIGNAL( clicked() ), this, SLOT( fwInstall() ));
 	connect( fwComboBox, SIGNAL( activated(int) ), this, SLOT( fwDetect() ));
@@ -545,6 +547,10 @@ void network::ndiswrapper()
 	this->shell->start(true);
 }
 
+void network::ndiswrapperList()
+{
+		kapp->invokeBrowser( "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,com_openwiki/Itemid,33/id,list/" );
+}
 
 //------------------------------------------------------------------------------
 //--- fwdetect -----------------------------------------------------------------

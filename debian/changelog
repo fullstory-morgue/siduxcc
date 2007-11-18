@@ -1,8 +1,13 @@
 siduxcc (0.6.9) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 09 Nov 2007 02:42:17 +0100
+  [ Fabian Wuertz ]
+  * siduxcc_kde: start: Menubar added
+  * siduxcc_kde: start: startpage designed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 18 Nov 2007 01:11:09 +0100
 
 siduxcc (0.6.8) unstable; urgency=low
 
