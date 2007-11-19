@@ -6,8 +6,9 @@ siduxcc (0.6.11) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * console.* moved form siduxcc_kde to libsiduxcc
   * hermes enlarged part 1/2
+  * hermes enlarged part 2/2 
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 19 Nov 2007 23:56:40 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 20 Nov 2007 00:19:34 +0100
 
 siduxcc (0.6.10) unstable; urgency=low
 

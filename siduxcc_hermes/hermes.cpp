@@ -1,5 +1,5 @@
 /*
- * up.cpp
+ * hermes.cpp
  *
  * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
  *
@@ -18,7 +18,7 @@
  */
 
 
-#include "up.h"
+#include "hermes.h"
 
 #include <qlabel.h>
 #include <qlistview.h>
@@ -32,9 +32,11 @@
 
 #include <../libsiduxcc/console.h>
 
-up::up(QWidget* parent, const char* name)
-        : upBase(parent,name)
+hermes::hermes(const int &init,  QWidget* parent, const char* name )
+        : hermesBase(parent,name)
 {
+
+	tabWidget->setCurrentPage(init);
 
 	this->shell = new Process();
 
@@ -59,7 +61,7 @@ up::up(QWidget* parent, const char* name)
 
 }
 
-void up::getPackages()
+void hermes::getPackages()
 {
 	packageListView->clear();
 	this->shell->setCommand("LANG=C apt-show-versions | grep upgradeable");
@@ -81,7 +83,7 @@ void up::getPackages()
 
 }
 
-void up::tabChanged()
+void hermes::tabChanged()
 {
 	if(tabWidget->currentPageIndex() == 1)
 		updatePushButton->setHidden(FALSE);
@@ -89,12 +91,12 @@ void up::tabChanged()
 		updatePushButton->setHidden(TRUE);
 }
 
-void up::openLink(int i)
+void hermes::openLink(int i)
 {
 	kapp->invokeBrowser( link[i] );
 }
 
-void up::update()
+void hermes::update()
 {
 
 	QStrList run; run.append( "siduxcc" ); 
@@ -110,7 +112,7 @@ void up::update()
 	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
 }
 
-void up::terminateConsole()
+void hermes::terminateConsole()
 {
 	widgetStack->raiseWidget(0);
 	updatePushButton->setHidden(FALSE);
@@ -120,4 +122,4 @@ void up::terminateConsole()
 
 
 
-#include "up.moc"
+#include "hermes.moc"

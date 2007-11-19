@@ -1,5 +1,5 @@
 /*
- * up.h
+ * hermes.h
  *
  * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
  *
@@ -18,19 +18,19 @@
  */
 
 
-#ifndef UP_H
-#define UP_H
+#ifndef HERMES_H
+#define HERMES_H
 
-#include "upbase.h"
+#include "hermesbase.h"
 
 #include "../libsiduxcc/process.h"
 
-class up : public upBase
+class hermes : public hermesBase
 {
 	Q_OBJECT
 
 	public:
-		up(QWidget* parent = 0, const char* name = 0 );
+		hermes(const int  &init = int(), QWidget* parent = 0, const char* name = 0);
 		void getPackages();
 		QStringList link;
 

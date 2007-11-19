@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-19 23:52+0100\n"
-"PO-Revision-Date: 2007-10-31 20:58+0100\n"
+"POT-Creation-Date: 2007-11-20 00:18+0100\n"
+"PO-Revision-Date: 2007-11-20 00:19+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,6 +28,70 @@ msgid ""
 "Your emails"
 msgstr "xadras@sidux.com"
 
+#: hermes.cpp:46 systray.cpp:62
+msgid "en"
+msgstr "de"
+
+#. i18n: file ./hermesbase.ui line 76
+#: hermesbase.cpp:133 hermesbase.cpp:191 rc.cpp:25
+#, no-c-format
+msgid "Name"
+msgstr "Name"
+
+#. i18n: file ./hermesbase.ui line 87
+#: hermesbase.cpp:134 hermesbase.cpp:192 rc.cpp:28
+#, no-c-format
+msgid "Installed Version"
+msgstr "Installierte Version"
+
+#. i18n: file ./hermesbase.ui line 98
+#: hermesbase.cpp:135 hermesbase.cpp:193 rc.cpp:31
+#, no-c-format
+msgid "Latest Version"
+msgstr "Neuste Version:"
+
+#. i18n: file ./hermesbase.ui line 16
+#: hermesbase.cpp:189 rc.cpp:16 systray.cpp:41
+#, no-c-format
+msgid "siduxcc-hermes"
+msgstr "siduxcc-hermes"
+
+#. i18n: file ./hermesbase.ui line 49
+#: hermesbase.cpp:190 rc.cpp:19
+#, no-c-format
+msgid "War&nings"
+msgstr "Warnungen"
+
+#. i18n: file ./hermesbase.ui line 67
+#: hermesbase.cpp:194 rc.cpp:22
+#, no-c-format
+msgid "Upgradable pac&kages"
+msgstr "Neue Pakete"
+
+#. i18n: file ./hermesbase.ui line 142
+#: hermesbase.cpp:195 rc.cpp:34
+#, no-c-format
+msgid "cl&ose"
+msgstr "schliessen"
+
+#. i18n: file ./hermesbase.ui line 145
+#: hermesbase.cpp:196 rc.cpp:37
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file ./hermesbase.ui line 170
+#: hermesbase.cpp:197 rc.cpp:40
+#, no-c-format
+msgid "&update (apt-get)"
+msgstr "update (apt-get)"
+
+#. i18n: file ./hermesbase.ui line 173
+#: hermesbase.cpp:198 rc.cpp:43
+#, no-c-format
+msgid "Alt+U"
+msgstr "Alt+U"
+
 #. i18n: file ./legendbase.ui line 34
 #: legendbase.cpp:464 rc.cpp:4
 #, no-c-format
@@ -37,8 +101,7 @@ msgstr "Legende"
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 125
@@ -57,64 +120,6 @@ msgstr "Keine dist-upgrade Warnungen."
 msgid "A KDE tray application for sidux"
 msgstr "Ein KDE Tray-Programm für sidux"
 
-#. i18n: file ./upbase.ui line 16
-#: rc.cpp:16 upbase.cpp:189
-#, fuzzy, no-c-format
-msgid "sidux-hermes"
-msgstr "siduxcc-hermes"
-
-#. i18n: file ./upbase.ui line 49
-#: rc.cpp:19 upbase.cpp:190
-#, no-c-format
-msgid "War&nings"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 67
-#: rc.cpp:22 upbase.cpp:194
-#, fuzzy, no-c-format
-msgid "Upgradable pac&kages"
-msgstr "Neue Pakete"
-
-#. i18n: file ./upbase.ui line 76
-#: rc.cpp:25 upbase.cpp:133 upbase.cpp:191
-#, no-c-format
-msgid "Name"
-msgstr "Name"
-
-#. i18n: file ./upbase.ui line 87
-#: rc.cpp:28 upbase.cpp:134 upbase.cpp:192
-#, no-c-format
-msgid "Installed Version"
-msgstr "Installierte Version"
-
-#. i18n: file ./upbase.ui line 98
-#: rc.cpp:31 upbase.cpp:135 upbase.cpp:193
-#, no-c-format
-msgid "Latest Version"
-msgstr "Neuste Version:"
-
-#. i18n: file ./upbase.ui line 142
-#: rc.cpp:34 upbase.cpp:195
-#, no-c-format
-msgid "cl&ose"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 145
-#: rc.cpp:37 upbase.cpp:196
-#, no-c-format
-msgid "Alt+O"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 170
-#: rc.cpp:40 upbase.cpp:197
-#, fuzzy, no-c-format
-msgid "update (apt-get)"
-msgstr "Update (apt-get)"
-
-#: systray.cpp:41
-msgid "siduxcc-hermes"
-msgstr "siduxcc-hermes"
-
 #: systray.cpp:44
 msgid "Forum - Upgrade Warnings"
 msgstr "Forum - Dist-Upgrade Warnungen"
@@ -128,8 +133,8 @@ msgid "Upgradable packages"
 msgstr "Neue Pakete"
 
 #: systray.cpp:47
-msgid "Update (apt-get)"
-msgstr "Update (apt-get)"
+msgid "Warnings"
+msgstr "Warnungen"
 
 #: systray.cpp:49
 msgid "Show Legend"
@@ -139,20 +144,3 @@ msgstr "Legende anzeigen"
 msgid "&About siduxcc-hermes"
 msgstr "Über siduxcc-hermes"
 
-#: systray.cpp:62 up.cpp:44
-msgid "en"
-msgstr "de"
-
-#: systray.cpp:79
-msgid "siduxcc Control Center"
-msgstr "siduxcc Kontrollzentrum"
-
-#~ msgid "upBase"
-#~ msgstr "upBase"
-
-#~ msgid ""
-#~ "<b>More options</b>: KMenu>sidux>siduxcc Control Center>Software>Show "
-#~ "upgradable packages"
-#~ msgstr ""
-#~ "<b>Weiter Optionen</b>: KMenu>sidux>siduxcc Kontrollzentrum>Software> "
-#~ "Aktualisierbare Pakete anzeigen"

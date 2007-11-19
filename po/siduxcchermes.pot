@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-19 23:52+0100\n"
+"POT-Creation-Date: 2007-11-20 00:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,70 @@ msgstr ""
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
+msgstr ""
+
+#: hermes.cpp:46 systray.cpp:62
+msgid "en"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 76
+#: hermesbase.cpp:133 hermesbase.cpp:191 rc.cpp:25
+#, no-c-format
+msgid "Name"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 87
+#: hermesbase.cpp:134 hermesbase.cpp:192 rc.cpp:28
+#, no-c-format
+msgid "Installed Version"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 98
+#: hermesbase.cpp:135 hermesbase.cpp:193 rc.cpp:31
+#, no-c-format
+msgid "Latest Version"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 16
+#: hermesbase.cpp:189 rc.cpp:16 systray.cpp:41
+#, no-c-format
+msgid "siduxcc-hermes"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 49
+#: hermesbase.cpp:190 rc.cpp:19
+#, no-c-format
+msgid "War&nings"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 67
+#: hermesbase.cpp:194 rc.cpp:22
+#, no-c-format
+msgid "Upgradable pac&kages"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 142
+#: hermesbase.cpp:195 rc.cpp:34
+#, no-c-format
+msgid "cl&ose"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 145
+#: hermesbase.cpp:196 rc.cpp:37
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 170
+#: hermesbase.cpp:197 rc.cpp:40
+#, no-c-format
+msgid "&update (apt-get)"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 173
+#: hermesbase.cpp:198 rc.cpp:43
+#, no-c-format
+msgid "Alt+U"
 msgstr ""
 
 #. i18n: file ./legendbase.ui line 34
@@ -56,64 +120,6 @@ msgstr ""
 msgid "A KDE tray application for sidux"
 msgstr ""
 
-#. i18n: file ./upbase.ui line 16
-#: rc.cpp:16 upbase.cpp:189
-#, no-c-format
-msgid "sidux-hermes"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 49
-#: rc.cpp:19 upbase.cpp:190
-#, no-c-format
-msgid "War&nings"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 67
-#: rc.cpp:22 upbase.cpp:194
-#, no-c-format
-msgid "Upgradable pac&kages"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 76
-#: rc.cpp:25 upbase.cpp:133 upbase.cpp:191
-#, no-c-format
-msgid "Name"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 87
-#: rc.cpp:28 upbase.cpp:134 upbase.cpp:192
-#, no-c-format
-msgid "Installed Version"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 98
-#: rc.cpp:31 upbase.cpp:135 upbase.cpp:193
-#, no-c-format
-msgid "Latest Version"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 142
-#: rc.cpp:34 upbase.cpp:195
-#, no-c-format
-msgid "cl&ose"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 145
-#: rc.cpp:37 upbase.cpp:196
-#, no-c-format
-msgid "Alt+O"
-msgstr ""
-
-#. i18n: file ./upbase.ui line 170
-#: rc.cpp:40 upbase.cpp:197
-#, no-c-format
-msgid "update (apt-get)"
-msgstr ""
-
-#: systray.cpp:41
-msgid "siduxcc-hermes"
-msgstr ""
-
 #: systray.cpp:44
 msgid "Forum - Upgrade Warnings"
 msgstr ""
@@ -127,7 +133,7 @@ msgid "Upgradable packages"
 msgstr ""
 
 #: systray.cpp:47
-msgid "Update (apt-get)"
+msgid "Warnings"
 msgstr ""
 
 #: systray.cpp:49
@@ -136,12 +142,4 @@ msgstr ""
 
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
-msgstr ""
-
-#: systray.cpp:62 up.cpp:44
-msgid "en"
-msgstr ""
-
-#: systray.cpp:79
-msgid "siduxcc Control Center"
 msgstr ""

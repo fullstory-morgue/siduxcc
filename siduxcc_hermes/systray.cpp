@@ -19,7 +19,7 @@
 
 #include "systray.h"
 #include "legend.h"
-#include "up.h"
+#include "hermes.h"
 
 #include <kaboutapplication.h>
 #include <kiconloader.h>
@@ -44,7 +44,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
 	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
 	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
-	menu->insertItem ( SmallIcon ( "kcmsystem" ), i18n("Update (apt-get)"), this, SLOT ( update() ) );
+	menu->insertItem ( SmallIcon ( "siduxcc_hermes" ), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
@@ -68,21 +68,21 @@ void SysTray::showAbout()
 	about->show();
 }
 
-void SysTray::upgradablePackages()
+void SysTray::warnings()
 {
-	up* dialog = new up();
+	hermes* dialog = new hermes( 0 );
 	dialog->show();
 }
 
-void SysTray::update()
+void SysTray::upgradablePackages()
 {
-	this->shell->setCommand ( "su-me konsole -T \"apt-get update ("+i18n("siduxcc Control Center")+"\" --nomenubar --notabbar -e apt-get update" );
-	this->shell->start ( true );
+	hermes* dialog = new hermes( 1);
+	dialog->show();
 }
 
 void SysTray::showLegend()
 {
-	legend* dialog = new legend();
+	legend* dialog = new legend( );
 	dialog->show();
 }
 
@@ -116,8 +116,7 @@ void SysTray::updateIcon()
 
 void SysTray::mousePressEvent(QMouseEvent* e)
 {
-    KSystemTray::mousePressEvent(e);
-    
-    if(e->button() == LeftButton)
-        upgradablePackages();
+	KSystemTray::mousePressEvent(e);
+	if(e->button() == LeftButton)
+		warnings();
 }

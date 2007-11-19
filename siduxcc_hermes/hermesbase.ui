@@ -1,8 +1,8 @@
 <!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>upBase</class>
+<class>hermesBase</class>
 <widget class="QWidget">
     <property name="name">
-        <cstring>upBase</cstring>
+        <cstring>hermesBase</cstring>
     </property>
     <property name="geometry">
         <rect>
@@ -13,7 +13,7 @@
         </rect>
     </property>
     <property name="caption">
-        <string>sidux-hermes</string>
+        <string>siduxcc-hermes</string>
     </property>
     <property name="icon">
         <pixmap>image0</pixmap>
@@ -167,10 +167,10 @@
                             <cstring>updatePushButton</cstring>
                         </property>
                         <property name="text">
-                            <string>update (apt-get)</string>
+                            <string>&amp;update (apt-get)</string>
                         </property>
                         <property name="accel">
-                            <string></string>
+                            <string>Alt+U</string>
                         </property>
                     </widget>
                 </grid>
@@ -187,25 +187,25 @@
     <connection>
         <sender>updatePushButton</sender>
         <signal>clicked()</signal>
-        <receiver>upBase</receiver>
+        <receiver>hermesBase</receiver>
         <slot>update()</slot>
     </connection>
     <connection>
         <sender>tabWidget</sender>
         <signal>currentChanged(QWidget*)</signal>
-        <receiver>upBase</receiver>
+        <receiver>hermesBase</receiver>
         <slot>tabChanged()</slot>
     </connection>
     <connection>
         <sender>warningListBox</sender>
         <signal>selected(int)</signal>
-        <receiver>upBase</receiver>
+        <receiver>hermesBase</receiver>
         <slot>openLink(int)</slot>
     </connection>
     <connection>
         <sender>closePushButton</sender>
         <signal>clicked()</signal>
-        <receiver>upBase</receiver>
+        <receiver>hermesBase</receiver>
         <slot>close()</slot>
     </connection>
 </connections>

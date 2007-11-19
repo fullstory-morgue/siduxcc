@@ -43,7 +43,7 @@ class SysTray : public KSystemTray
 		void updateIcon();
 		void upgradablePackages();
 		void showLegend();
-		void update();
+		void warnings();
 	
 	private:
 		KPopupMenu* menu;
