@@ -449,6 +449,7 @@ menu to load a configuration module.</string>
         <action name="helpManualAction"/>
         <action name="helpHomepageAction"/>
         <separator/>
+        <action name="helpLanguageAction"/>
         <action name="helpAboutAction"/>
         <action name="helpAboutKDEAction"/>
     </item>
@@ -540,6 +541,20 @@ menu to load a configuration module.</string>
             <string>About KDE</string>
         </property>
     </action>
+    <action>
+        <property name="name">
+            <cstring>helpLanguageAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image8</iconset>
+        </property>
+        <property name="text">
+            <string>Language</string>
+        </property>
+        <property name="menuText">
+            <string>Language</string>
+        </property>
+    </action>
 </actions>
 <images>
     <image name="image0">
@@ -565,6 +580,9 @@ menu to load a configuration module.</string>
     </image>
     <image name="image7">
         <data format="PNG" length="841">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000031049444154388d5593cb6b5c6500c57fdfe3cebd73c799496626d609d8a631586aa5526c4274a1355871e14e4a37a25d147555c4857f8182280a0a2ab8122c52d465f1419385c522b6b4b4b68568623b3669673293645e993b33f7f17d2e66615d1c3867f383c3e188cca3efbe37373bf3b6e3280f01ff49fccfdbfbb24560ac19defe6bf553b1f0ca99e4e56373b234ee91180380b096c4588689c50a81d6128b6090580c02474beaed905f96ae58ed675c297c17b7e093c4066b2dd682272dcf4de7e80e122e57ba200487766771b5e4562ba4d16fe1a553426b2da9ed2434ef0684d108104586c99ce2e8fe029d20e6eadf2d8e3c5ea4e429ba61c2e5d5361bcd218e1248ed485a43586d8494730ec70f97c8fa9a20b24801bd414c29eb30bb378f10f0cd852a376eb7e904315a4bb4d6925e2ca8760d83181e7bc863dfae49ce5cac13258672dee5f87c19470b4e2faef1db1f0d94ab712ce4b4442a2d09517442c97757bbdcd91af2f1e206e76e74f01dc9442ec5ae319724b15c5969116cf568ae6ed26feca01d89d45ae269c913138ad7e7c7a86c859cfebd8d3002ad0437ffe9f0e3a51a455f71eaa5bd88ee10d30e484b505a229182420ade5928f0ea5345ee6e473856a390006829f9e2ec3a95469fd9993c278fed2334e0588b9002898042c6e1db4b6d7ebed6a49c558c67145e4a01904d4bea3bf0e1f7152c70e2c5299e9d9f241c26580bda5a18f735f742c3d2729f379fc9f3f4548ad5da802fcf55b9b6d62793f5383833c6d74bebacd77a546a7db4a3b036415a209756147dc9e1871d1e2ca579eb8522cf1f78800b9510ab1d3e7a6d0f6f1c2db37f2acf0f1737a96d8548ad3042a02d90f52449acc83986f55a8f5f57fa4c4fa4f8eae46e6aed884f7eaa53dd0e79723a4371dc63a31f6210a30a4249c67c85ab1c1a6d585cee530f24779a01470e6439bfdce5ecf580f337dba489e877239412c486d14f5add010689eb6832be204263744c7347f0f9d2362b9b098f9433108598414826a588034da990a61356117b16deffe0d0dcc153d96cda058b150023fa20b6282950a341eebb330ce3385cfbf3fa67ff02fd625329e03e11300000000049454e44ae426082</data>
+    </image>
+    <image name="image8">
+        <data format="PNG" length="795">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002e249444154388db5924d68146700869f99f97666b3ff26468dd90d4934126334d6953611db40494c2c2cc15645aa57ff408452413d88b6278960a12d0515090aa5a5ada96d51a3187a286ea14d6c7551d0ba4d1335d1e826eb6e766733b3b35f2fbd34eda5873ee7f77d790e2ffc4fa8efd0dedd1f7bf7d3ec37df4d4e1e3af6f8085aaf1f2afe251b75a9ae1ddb1007da84bfafb529707cdf35c2df9b1daf4b997a22a594d24e3e90ceb6edf2b0e23935b72d6058ede83cf8be3754535fd224d18535da2b1d6710ab57c3e4348c3c82f10972eff592d5177839ffc1df55a1dcc859eea027a06b9ea05bd31796a3fd7a0bb1fd6d181880fbf7111f7d88bfbd95506a22da148d7ea668da2740e75f065595fe902f50e615147d1ec2f706294b0ee0ecda8db27e3da82ab32fb7617f7d85c5d7af34ae5a1b6dbc9b4880e3ec06f68b15d1c6c8ab9b571853299b4575419654c530a7ea91fd1751ae5ea564db14efdc65fa8d2d785bdbd97ae3124b6d9b73a03e8456513b7a7bd1fef4978a19a9c13d328238f7034ef20fd49e1ef4580c7c3e72893b18bd27692839d461d12e259d0aec944c88054d4dd5e2e225dca967108e607575218ebe863b9140edeb834c1677730b13274e933b7e94fccf717240838406782e22cb97854b278e90731c443e8f27fe239e3d7b290e0d333d6b613b363e24f36b9bc9bc19a1a2b6887d13324390b29852be2278f9ad25151ba9ac847496cc4c96b17481479a8dac560935ba98bf2a80ef9e85b9a19cfa6559488d33133769fb586e12279939fb20f9c21623e3fa4f8631dcb26e766d77b5dd55e3f751b5c64fb0791e6a6508471a943205b08ae00da2af2c4aabcc7a2ee23817e270815201cc02b1a59c5fd3e38140080215e09b07c1009aaea258164f1fdba666a2784bbafb59de4a8bb9d7f468785104b85c5066806130366ae63fffe2f7c1fe6f47fb13bfcdfee272a1c45ad4ae428eb43277206850d7fd92ba3912f6d63bba21930fadb11b4399c194c91020e7c4ffd1ffcffc09a7cb1b322656a06a0000000049454e44ae426082</data>
     </image>
 </images>
 <connections>
@@ -604,6 +622,12 @@ menu to load a configuration module.</string>
         <receiver>StartDialog</receiver>
         <slot>aboutKDE()</slot>
     </connection>
+    <connection>
+        <sender>helpLanguageAction</sender>
+        <signal>activated()</signal>
+        <receiver>StartDialog</receiver>
+        <slot>language()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>homepage()</slot>
@@ -611,6 +635,7 @@ menu to load a configuration module.</string>
     <slot>about()</slot>
     <slot>menu()</slot>
     <slot>aboutKDE()</slot>
+    <slot>language()</slot>
 </slots>
 <layoutdefaults spacing="6" margin="6"/>
 <includehints>

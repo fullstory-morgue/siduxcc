@@ -37,6 +37,7 @@ class start : public StartDialog
 		virtual void aboutKDE();
 		virtual void manual();
 		virtual void homepage();
+		virtual void language();
 };
 
 #endif

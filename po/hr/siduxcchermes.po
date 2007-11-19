@@ -6,12 +6,12 @@
 # cobra <cobra@sidux.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: siduxcchermes_hr\n"
+"Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-18 00:57+0100\n"
-"PO-Revision-Date: 2007-09-10 05:01+0200\n"
-"Last-Translator: cobra <cobra@sidux.com>\n"
-"Language-Team:  <de@li.org>\n"
+"PO-Revision-Date: 2007-11-18 21:55+0100\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -62,7 +62,7 @@ msgstr "KDE Tray-Program za sidux"
 #: rc.cpp:16 upbase.cpp:142
 #, no-c-format
 msgid "upBase"
-msgstr ""
+msgstr "upBase"
 
 #. i18n: file ./upbase.ui line 28
 #: rc.cpp:19 upbase.cpp:111 upbase.cpp:143
@@ -125,13 +125,3 @@ msgstr "hr"
 #: systray.cpp:85
 msgid "siduxcc Control Center"
 msgstr ""
-
-#, fuzzy
-#~ msgid "apt-get update"
-#~ msgstr "Update (apt-get update)"
-
-#~ msgid "C&ustom"
-#~ msgstr "Specifčno"
-
-#~ msgid "Show upgradable packages"
-#~ msgstr "Pokaži novije pakete"

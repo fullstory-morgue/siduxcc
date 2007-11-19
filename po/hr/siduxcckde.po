@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-18 21:30+0100\n"
-"PO-Revision-Date: 2007-10-25 21:06+0200\n"
+"POT-Creation-Date: 2007-11-19 17:21+0100\n"
+"PO-Revision-Date: 2007-11-18 21:55+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -57,7 +57,7 @@ msgid "Process done!"
 msgstr "Proces sređen"
 
 #. i18n: file ./displaydialog.ui line 17
-#: displaydialog.cpp:2354 rc.cpp:3 start.cpp:54 start.cpp:96
+#: displaydialog.cpp:2354 rc.cpp:3 start.cpp:56 start.cpp:97
 #, no-c-format
 msgid "Display"
 msgstr "Display"
@@ -382,9 +382,9 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 993
 #. i18n: file ./kerneldialog.ui line 223
 #: displaydialog.cpp:2413 kerneldialog.cpp:1342 rc.cpp:155 rc.cpp:678
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+T"
-msgstr "Alt+Y"
+msgstr "Alt+T"
 
 #. i18n: file ./displaydialog.ui line 999
 #: displaydialog.cpp:2415 rc.cpp:158
@@ -430,15 +430,15 @@ msgstr "ATI/Nvidia (ne-slobodni)"
 
 #. i18n: file ./displaydialog.ui line 1153
 #: displaydialog.cpp:2425 rc.cpp:185
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install dri&ver"
 msgstr "Instalirati Pogonitelj"
 
 #. i18n: file ./displaydialog.ui line 1156
 #: displaydialog.cpp:2426 rc.cpp:188
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+V"
-msgstr "Alt+Y"
+msgstr "Alt+V"
 
 #. i18n: file ./displaydialog.ui line 1192
 #: displaydialog.cpp:2427 rc.cpp:191
@@ -477,7 +477,7 @@ msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./internetdialog.ui line 17
-#: internetdialog.cpp:306 rc.cpp:286 start.cpp:58 start.cpp:123
+#: internetdialog.cpp:306 rc.cpp:286 start.cpp:60 start.cpp:124
 #, no-c-format
 msgid "Internet"
 msgstr "Internet"
@@ -517,7 +517,7 @@ msgid "Are you sure you want to remove the stored kernel files?"
 msgstr "Jesti li sigurni da hočete instalirati novi Kernel?"
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:1329 rc.cpp:647 start.cpp:62 start.cpp:129
+#: kerneldialog.cpp:1329 rc.cpp:647 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -577,22 +577,22 @@ msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 220
 #: kerneldialog.cpp:1341 rc.cpp:675
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "ins&tall"
 msgstr "Instalirati"
 
 #. i18n: file ./kerneldialog.ui line 376
 #: kerneldialog.cpp:1346 rc.cpp:686
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "re&move"
 msgstr "izbrisati"
 
 #. i18n: file ./networkdialog.ui line 1289
 #. i18n: file ./kerneldialog.ui line 379
 #: kerneldialog.cpp:1347 networkdialog.cpp:1586 rc.cpp:438 rc.cpp:689
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+M"
-msgstr "Alt+Y"
+msgstr "Alt+M"
 
 #. i18n: file ./kerneldialog.ui line 447
 #: kerneldialog.cpp:1349 rc.cpp:695
@@ -618,7 +618,7 @@ msgstr "Alt+A"
 
 #. i18n: file ./kerneldialog.ui line 461
 #: kerneldialog.cpp:1351 rc.cpp:701
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "i&nstall"
 msgstr "Instalirati"
 
@@ -652,9 +652,9 @@ msgstr "Razvojnik knxcc"
 
 #. i18n: file ./networkdialog.ui line 362
 #: network.cpp:225 network.cpp:235 networkdialog.cpp:1553 rc.cpp:353
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Mac Address"
-msgstr "<b>MAC-Adresa:</b>"
+msgstr "MAC-Adresa:"
 
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 378
@@ -715,7 +715,7 @@ msgid "Slot"
 msgstr "Utičnica"
 
 #. i18n: file ./networkdialog.ui line 17
-#: networkdialog.cpp:1533 rc.cpp:298 start.cpp:66 start.cpp:103
+#: networkdialog.cpp:1533 rc.cpp:298 start.cpp:68 start.cpp:104
 #, no-c-format
 msgid "Network"
 msgstr "Mreža"
@@ -830,9 +830,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1332
 #: networkdialog.cpp:1587 rc.cpp:441
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Network Mask:"
-msgstr "Mreža"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1340
 #: networkdialog.cpp:1588 rc.cpp:444
@@ -870,9 +870,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1378
 #: networkdialog.cpp:1594 rc.cpp:462
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "IP Address:"
-msgstr "Ip Adresa"
+msgstr "Ip Adresa:"
 
 #. i18n: file ./networkdialog.ui line 1389
 #: networkdialog.cpp:1596 rc.cpp:468
@@ -948,9 +948,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1520
 #: networkdialog.cpp:1613 rc.cpp:512
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Auto"
-msgstr "Definirano od Korisnika"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1548
 #: networkdialog.cpp:1614 rc.cpp:515
@@ -972,9 +972,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1586
 #: networkdialog.cpp:1617 rc.cpp:524
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "iwspy:"
-msgstr "Display"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1594
 #: networkdialog.cpp:1618 rc.cpp:527
@@ -990,15 +990,15 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1640
 #: networkdialog.cpp:1620 rc.cpp:533
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Channel/ Frequency"
-msgstr "Frekvencija Monitora"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1654
 #: networkdialog.cpp:1621 rc.cpp:536
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&Auto"
-msgstr "Definirano od Korisnika"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1668
 #: networkdialog.cpp:1623 rc.cpp:542
@@ -1014,9 +1014,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1682
 #: networkdialog.cpp:1626 rc.cpp:551
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+Q"
-msgstr "Alt+Y"
+msgstr "Alt+Q"
 
 #. i18n: file ./networkdialog.ui line 1701
 #: networkdialog.cpp:1627 rc.cpp:554
@@ -1051,7 +1051,7 @@ msgstr ""
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 486
 #: rc.cpp:202 rc.cpp:269 servicesdialog.cpp:516 servicesdialog.cpp:540
-#: start.cpp:70 start.cpp:110
+#: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "Servisi"
@@ -1153,14 +1153,14 @@ msgid "Disabled Services:"
 msgstr "Neaktivni servisi"
 
 #. i18n: file ./softwaredialog.ui line 17
-#: rc.cpp:573 softwaredialog.cpp:769 start.cpp:74 start.cpp:116
+#: rc.cpp:573 softwaredialog.cpp:769 start.cpp:76 start.cpp:117
 #, no-c-format
 msgid "Software"
 msgstr "Softver"
 
 #. i18n: file ./softwaredialog.ui line 48
 #: rc.cpp:576 softwaredialog.cpp:771
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Show upgradable packages"
 msgstr "Noviji paketi"
 
@@ -1213,19 +1213,19 @@ msgid "Upgr&ade"
 msgstr "Upgrade"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:716 startdialog.cpp:3424
+#: rc.cpp:716 startdialog.cpp:3500
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Kontrolni Centar"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:719 startdialog.cpp:3270 startdialog.cpp:3425
+#: rc.cpp:719 startdialog.cpp:3342 startdialog.cpp:3501
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:722 startdialog.cpp:3426
+#: rc.cpp:722 startdialog.cpp:3502
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1233,41 +1233,48 @@ msgid ""
 "menu to load a configuration module."
 msgstr ""
 
-#. i18n: file ./startdialog.ui line 469
-#. i18n: file ./startdialog.ui line 472
-#: rc.cpp:727 rc.cpp:730 startdialog.cpp:3429 startdialog.cpp:3430
+#. i18n: file ./startdialog.ui line 470
+#. i18n: file ./startdialog.ui line 473
+#: rc.cpp:727 rc.cpp:730 startdialog.cpp:3505 startdialog.cpp:3506
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
-#. i18n: file ./startdialog.ui line 486
-#. i18n: file ./startdialog.ui line 489
-#: rc.cpp:734 rc.cpp:737 startdialog.cpp:3432 startdialog.cpp:3433
+#. i18n: file ./startdialog.ui line 487
+#. i18n: file ./startdialog.ui line 490
+#: rc.cpp:734 rc.cpp:737 startdialog.cpp:3508 startdialog.cpp:3509
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
-#. i18n: file ./startdialog.ui line 506
-#. i18n: file ./startdialog.ui line 509
-#: rc.cpp:744 rc.cpp:747 startdialog.cpp:3436 startdialog.cpp:3437
-#, fuzzy, no-c-format
+#. i18n: file ./startdialog.ui line 507
+#. i18n: file ./startdialog.ui line 510
+#: rc.cpp:744 rc.cpp:747 startdialog.cpp:3512 startdialog.cpp:3513
+#, no-c-format
 msgid "About siduxcc"
 msgstr "O sidux"
 
-#. i18n: file ./startdialog.ui line 523
-#. i18n: file ./startdialog.ui line 526
-#: rc.cpp:751 rc.cpp:754 start.cpp:147 startdialog.cpp:3439
-#: startdialog.cpp:3440
+#. i18n: file ./startdialog.ui line 524
+#. i18n: file ./startdialog.ui line 527
+#: rc.cpp:751 rc.cpp:754 start.cpp:148 startdialog.cpp:3515
+#: startdialog.cpp:3516
 #, no-c-format
 msgid "Exit"
 msgstr "Zatvori"
 
-#. i18n: file ./startdialog.ui line 537
-#. i18n: file ./startdialog.ui line 540
-#: rc.cpp:757 rc.cpp:760 startdialog.cpp:3441 startdialog.cpp:3442
-#, fuzzy, no-c-format
+#. i18n: file ./startdialog.ui line 538
+#. i18n: file ./startdialog.ui line 541
+#: rc.cpp:757 rc.cpp:760 startdialog.cpp:3517 startdialog.cpp:3518
+#, no-c-format
 msgid "About KDE"
-msgstr "O sidux"
+msgstr "O KDE"
+
+#. i18n: file ./startdialog.ui line 552
+#. i18n: file ./startdialog.ui line 555
+#: rc.cpp:763 rc.cpp:766 startdialog.cpp:3519 startdialog.cpp:3520
+#, no-c-format
+msgid "Language"
+msgstr ""
 
 #: services.cpp:165 services.cpp:170
 msgid "Status: %1"
@@ -1338,70 +1345,6 @@ msgstr ""
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Hoćete li stvarno da očistim lokalni repozitorij?"
 
-#: start.cpp:78 start.cpp:136
+#: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "Informacija o sistemu"
-
-#~ msgid ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-#~ msgstr ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-
-#~ msgid "sidux-Browser (require root access)"
-#~ msgstr "sidux-Browser (potrebne su root-privilegije)"
-
-#~ msgid "Alt+C"
-#~ msgstr "Alt+C"
-
-#~ msgid "xxx"
-#~ msgstr "xxx"
-
-#~ msgid "<b>Description:</b>"
-#~ msgstr "<b>Opis:</b>"
-
-#, fuzzy
-#~ msgid "Alt+G"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "I&nterface"
-#~ msgstr "Međusklop"
-
-#, fuzzy
-#~ msgid "Alt+S"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "&IP address"
-#~ msgstr "Ip Adresa"
-
-#, fuzzy
-#~ msgid "pri&vate"
-#~ msgstr "Upgrade"
-
-#, fuzzy
-#~ msgid "64 bit"
-#~ msgstr "16 bit"
-
-#, fuzzy
-#~ msgid "128 bit"
-#~ msgstr "8 bit"
-
-#, fuzzy
-#~ msgid "152 bit"
-#~ msgstr "15 bit"
-
-#, fuzzy
-#~ msgid "256 bit"
-#~ msgstr "15 bit"
-
-#~ msgid "local kernel"
-#~ msgstr "Lokalni Kernel:"
-
-#~ msgid "The versions of the new and the current Kernel are the same!"
-#~ msgstr "Verzija novog Kernela i sadašnjeg Kernela su identične!"
-
-#~ msgid "No internet connection!"
-#~ msgstr "Ne postoji internet-spoj!"

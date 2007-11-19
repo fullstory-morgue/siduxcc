@@ -28,6 +28,8 @@
 #include <qheader.h>
 #include <kprocess.h>
 #include <kapp.h>
+#include <kswitchlanguagedialog.h>
+
 
 
 #include "display.h"
@@ -91,7 +93,6 @@ void start::menu()
 	QString open = menuListView->selectedItems().first()->text(0);
 
 	widgetStack->removeWidget(widgetStack->widget(0));
-		
 
 	if( open == i18n("Display") )
 	{
@@ -177,6 +178,12 @@ void start::manual()
 void start::homepage()
 {
 	kapp->invokeBrowser( "http://www.sidux.com/" );
+}
+
+void start::language()
+{
+	KSwitchLanguageDialog *lang = new KSwitchLanguageDialog( this );
+	lang->show();
 }
 
 

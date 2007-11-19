@@ -50,10 +50,10 @@ void kernel::load(int i)
 {
 	if(i == 0)
 		getCurrentKernel();
+	else if(i == 1)
+		getNewKernels();
 	else if(i == 2)
-		getNewKernels();	
-	else if(i == 2)
-		getOldKernels();	
+		getOldKernels();
 	else if(i == 3)
 		getKernelDirs();
 }

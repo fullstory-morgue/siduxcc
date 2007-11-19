@@ -1,8 +1,13 @@
 siduxcc (0.6.10) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 18 Nov 2007 22:12:53 +0100
+  [ Fabian Wuertz ]
+  * siduxcc-kde: start: switch language menuitem added
+  * siduxcc-kde: kernel: show new kernels bug fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 19 Nov 2007 17:34:49 +0100
 
 siduxcc (0.6.9) unstable; urgency=low
 
