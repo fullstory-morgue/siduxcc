@@ -1,12 +1,8 @@
-siduxcc (0.6.10) UNRELEASED; urgency=low
+siduxcc (0.6.10) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc-kde: start: switch language menuitem added
   * siduxcc-kde: kernel: show new kernels bug fixed
-  * siduxcc-kde: "to small window" bug solved
+  * siduxcc-kde: "too small window" bug solved
   * siduxcc-kde: po: it activated 
 
  -- Fabian Wuertz <xadras@sidux.com>  Mon, 19 Nov 2007 18:09:23 +0100
