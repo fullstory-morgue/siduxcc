@@ -1,5 +1,5 @@
-KDE_LANG = IT
-POFILES = AUTO 
+KDE_LANG = it
+POFILES = AUTO
 
 clean: 
 	rm -f *.gmo

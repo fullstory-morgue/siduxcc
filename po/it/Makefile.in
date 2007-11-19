@@ -298,8 +298,8 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-KDE_LANG = IT
-#>- POFILES = AUTO 
+KDE_LANG = it
+#>- POFILES = AUTO
 #>+ 2
 POFILES = siduxcc.po siduxcchermes.po siduxcckde.po kionetwork.po
 GMOFILES = siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo kionetwork.gmo
@@ -496,7 +496,7 @@ clean: kde-rpo-clean
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxcckde.gmo Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po siduxcc.gmo kionetwork.po siduxcchermes.gmo kionetwork.gmo Makefile.am 
+KDE_DIST=siduxcchermes.po siduxcc.gmo siduxcckde.gmo kionetwork.po Makefile.in siduxcchermes.gmo siduxcc.po siduxcckde.po kionetwork.gmo Makefile.am 
 
 #>+ 13
 siduxcc.gmo: siduxcc.po
