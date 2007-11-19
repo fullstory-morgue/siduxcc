@@ -30,7 +30,7 @@
 #include <qtabwidget.h>
 
 #include "kernel.h"
-#include "console.h"
+#include "../libsiduxcc/console.h"
 
 
 kernel::kernel(QWidget *parent, const char *name, const QStringList &)

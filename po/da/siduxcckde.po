@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-19 17:21+0100\n"
+"POT-Creation-Date: 2007-11-19 23:52+0100\n"
 "PO-Revision-Date: 2007-10-25 20:13+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -26,12 +26,6 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "zonker@greenin.dk"
-
-#. i18n: file ./consoledialog.ui line 16
-#: consoledialog.cpp:67 rc.cpp:644
-#, no-c-format
-msgid "Widget"
-msgstr "Widget"
 
 #. i18n: file ./displaydialog.ui line 511
 #: display.cpp:185 display.cpp:240 displaydialog.cpp:2391 rc.cpp:98
@@ -92,7 +86,7 @@ msgstr "Alt+Y"
 #. i18n: file ./softwaredialog.ui line 449
 #. i18n: file ./kerneldialog.ui line 554
 #: displaydialog.cpp:2357 kerneldialog.cpp:1353 networkdialog.cpp:1534
-#: rc.cpp:12 rc.cpp:205 rc.cpp:301 rc.cpp:615 rc.cpp:707
+#: rc.cpp:12 rc.cpp:205 rc.cpp:301 rc.cpp:615 rc.cpp:704
 #: servicesdialog.cpp:517 softwaredialog.cpp:784
 #, no-c-format
 msgid "&back"
@@ -107,7 +101,7 @@ msgstr ""
 #. i18n: file ./kerneldialog.ui line 557
 #: displaydialog.cpp:2358 kerneldialog.cpp:1354 networkdialog.cpp:1535
 #: networkdialog.cpp:1551 networkdialog.cpp:1600 rc.cpp:15 rc.cpp:208
-#: rc.cpp:304 rc.cpp:349 rc.cpp:480 rc.cpp:618 rc.cpp:710
+#: rc.cpp:304 rc.cpp:349 rc.cpp:480 rc.cpp:618 rc.cpp:707
 #: servicesdialog.cpp:518 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+B"
@@ -130,7 +124,7 @@ msgstr "Alt+X"
 #. i18n: file ./softwaredialog.ui line 484
 #. i18n: file ./kerneldialog.ui line 578
 #: displaydialog.cpp:2361 kerneldialog.cpp:1355 networkdialog.cpp:1538
-#: rc.cpp:24 rc.cpp:313 rc.cpp:627 rc.cpp:713 softwaredialog.cpp:788
+#: rc.cpp:24 rc.cpp:313 rc.cpp:627 rc.cpp:710 softwaredialog.cpp:788
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -381,7 +375,7 @@ msgstr ""
 
 #. i18n: file ./displaydialog.ui line 993
 #. i18n: file ./kerneldialog.ui line 223
-#: displaydialog.cpp:2413 kerneldialog.cpp:1342 rc.cpp:155 rc.cpp:678
+#: displaydialog.cpp:2413 kerneldialog.cpp:1342 rc.cpp:155 rc.cpp:675
 #, fuzzy, no-c-format
 msgid "Alt+T"
 msgstr "Alt+Y"
@@ -453,25 +447,25 @@ msgid "Register F&onts"
 msgstr "Registrer Fonte"
 
 #. i18n: file ./infodialog.ui line 17
-#: infodialog.cpp:91 rc.cpp:630
+#: infodialog.cpp:93 rc.cpp:630
 #, no-c-format
 msgid "SysInfo"
 msgstr "Sysinfo"
 
 #. i18n: file ./infodialog.ui line 31
-#: infodialog.cpp:92 rc.cpp:633
+#: infodialog.cpp:94 rc.cpp:633
 #, no-c-format
 msgid "About sidux"
 msgstr "Om sidux"
 
 #. i18n: file ./infodialog.ui line 42
-#: infodialog.cpp:93 rc.cpp:636
+#: infodialog.cpp:95 rc.cpp:636
 #, no-c-format
 msgid "sidux Version:"
 msgstr "sidux Version:"
 
-#. i18n: file ./infodialog.ui line 80
-#: infodialog.cpp:95 rc.cpp:640
+#. i18n: file ./infodialog.ui line 94
+#: infodialog.cpp:97 rc.cpp:640
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
@@ -491,7 +485,7 @@ msgstr ""
 #. i18n: file ./kerneldialog.ui line 271
 #. i18n: file ./kerneldialog.ui line 396
 #: kernel.cpp:98 kernel.cpp:99 kerneldialog.cpp:1343 kerneldialog.cpp:1348
-#: rc.cpp:681 rc.cpp:692
+#: rc.cpp:678 rc.cpp:689
 #, no-c-format
 msgid "Current kernel"
 msgstr ""
@@ -517,85 +511,85 @@ msgid "Are you sure you want to remove the stored kernel files?"
 msgstr "Er du sikker på at du vil installere en ny kernel?"
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:1329 rc.cpp:647 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:1329 rc.cpp:644 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
 #. i18n: file ./networkdialog.ui line 149
 #. i18n: file ./kerneldialog.ui line 26
-#: kerneldialog.cpp:1331 networkdialog.cpp:1540 rc.cpp:316 rc.cpp:650
+#: kerneldialog.cpp:1331 networkdialog.cpp:1540 rc.cpp:316 rc.cpp:647
 #, no-c-format
 msgid "Configure Networkcards"
 msgstr "Liste over konfigurerede netværks enheder"
 
 #. i18n: file ./networkdialog.ui line 157
 #. i18n: file ./kerneldialog.ui line 34
-#: kerneldialog.cpp:1332 networkdialog.cpp:1541 rc.cpp:319 rc.cpp:653
+#: kerneldialog.cpp:1332 networkdialog.cpp:1541 rc.cpp:319 rc.cpp:650
 #, no-c-format
 msgid "Set Hostname"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 165
 #. i18n: file ./kerneldialog.ui line 42
-#: kerneldialog.cpp:1333 networkdialog.cpp:1542 rc.cpp:322 rc.cpp:656
+#: kerneldialog.cpp:1333 networkdialog.cpp:1542 rc.cpp:322 rc.cpp:653
 #, no-c-format
 msgid "Set Nameservers"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 173
 #. i18n: file ./kerneldialog.ui line 50
-#: kerneldialog.cpp:1334 networkdialog.cpp:1543 rc.cpp:325 rc.cpp:659
+#: kerneldialog.cpp:1334 networkdialog.cpp:1543 rc.cpp:325 rc.cpp:656
 #, no-c-format
 msgid "Install Wlan-Cards (Ndiswrapper)"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 181
 #. i18n: file ./kerneldialog.ui line 58
-#: kerneldialog.cpp:1335 networkdialog.cpp:1544 rc.cpp:328 rc.cpp:662
+#: kerneldialog.cpp:1335 networkdialog.cpp:1544 rc.cpp:328 rc.cpp:659
 #, no-c-format
 msgid "Install Wlan-Cards (fwdetect)"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 113
-#: kerneldialog.cpp:1337 rc.cpp:665
+#: kerneldialog.cpp:1337 rc.cpp:662
 #, no-c-format
 msgid "Install new kernel"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 121
-#: kerneldialog.cpp:1338 rc.cpp:668
+#: kerneldialog.cpp:1338 rc.cpp:665
 #, no-c-format
 msgid "Remove old kernels"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 129
-#: kerneldialog.cpp:1339 rc.cpp:671
+#: kerneldialog.cpp:1339 rc.cpp:668
 #, no-c-format
 msgid "Install kernel modules"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 220
-#: kerneldialog.cpp:1341 rc.cpp:675
+#: kerneldialog.cpp:1341 rc.cpp:672
 #, fuzzy, no-c-format
 msgid "ins&tall"
 msgstr "installer"
 
 #. i18n: file ./kerneldialog.ui line 376
-#: kerneldialog.cpp:1346 rc.cpp:686
+#: kerneldialog.cpp:1346 rc.cpp:683
 #, fuzzy, no-c-format
 msgid "re&move"
 msgstr "fjern"
 
 #. i18n: file ./networkdialog.ui line 1289
 #. i18n: file ./kerneldialog.ui line 379
-#: kerneldialog.cpp:1347 networkdialog.cpp:1586 rc.cpp:438 rc.cpp:689
+#: kerneldialog.cpp:1347 networkdialog.cpp:1586 rc.cpp:438 rc.cpp:686
 #, fuzzy, no-c-format
 msgid "Alt+M"
 msgstr "Alt+Y"
 
 #. i18n: file ./kerneldialog.ui line 447
-#: kerneldialog.cpp:1349 rc.cpp:695
+#: kerneldialog.cpp:1349 rc.cpp:692
 #, fuzzy, no-c-format
 msgid "cle&ar"
 msgstr "Ryd"
@@ -611,13 +605,13 @@ msgstr "Ryd"
 #: kerneldialog.cpp:1350 networkdialog.cpp:1549 networkdialog.cpp:1572
 #: networkdialog.cpp:1584 networkdialog.cpp:1622 networkdialog.cpp:1630
 #: rc.cpp:266 rc.cpp:343 rc.cpp:408 rc.cpp:432 rc.cpp:539 rc.cpp:563
-#: rc.cpp:612 rc.cpp:698 servicesdialog.cpp:539 softwaredialog.cpp:783
+#: rc.cpp:612 rc.cpp:695 servicesdialog.cpp:539 softwaredialog.cpp:783
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./kerneldialog.ui line 461
-#: kerneldialog.cpp:1351 rc.cpp:701
+#: kerneldialog.cpp:1351 rc.cpp:698
 #, fuzzy, no-c-format
 msgid "i&nstall"
 msgstr "installer"
@@ -628,7 +622,7 @@ msgstr "installer"
 #. i18n: file ./softwaredialog.ui line 236
 #. i18n: file ./kerneldialog.ui line 464
 #: kerneldialog.cpp:1352 networkdialog.cpp:1566 networkdialog.cpp:1624
-#: rc.cpp:260 rc.cpp:392 rc.cpp:545 rc.cpp:594 rc.cpp:704
+#: rc.cpp:260 rc.cpp:392 rc.cpp:545 rc.cpp:594 rc.cpp:701
 #: servicesdialog.cpp:537 softwaredialog.cpp:777
 #, no-c-format
 msgid "Alt+N"
@@ -1213,19 +1207,19 @@ msgid "Upgr&ade"
 msgstr "Upgrade"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:716 startdialog.cpp:3500
+#: rc.cpp:713 startdialog.cpp:3500
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux kontrolcenter"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:719 startdialog.cpp:3342 startdialog.cpp:3501
+#: rc.cpp:716 startdialog.cpp:3342 startdialog.cpp:3501
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:722 startdialog.cpp:3502
+#: rc.cpp:719 startdialog.cpp:3502
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1235,28 +1229,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:727 rc.cpp:730 startdialog.cpp:3505 startdialog.cpp:3506
+#: rc.cpp:724 rc.cpp:727 startdialog.cpp:3505 startdialog.cpp:3506
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:734 rc.cpp:737 startdialog.cpp:3508 startdialog.cpp:3509
+#: rc.cpp:731 rc.cpp:734 startdialog.cpp:3508 startdialog.cpp:3509
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:744 rc.cpp:747 startdialog.cpp:3512 startdialog.cpp:3513
+#: rc.cpp:741 rc.cpp:744 startdialog.cpp:3512 startdialog.cpp:3513
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "Om sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:751 rc.cpp:754 start.cpp:148 startdialog.cpp:3515
+#: rc.cpp:748 rc.cpp:751 start.cpp:148 startdialog.cpp:3515
 #: startdialog.cpp:3516
 #, no-c-format
 msgid "Exit"
@@ -1264,14 +1258,14 @@ msgstr "Afslut"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:757 rc.cpp:760 startdialog.cpp:3517 startdialog.cpp:3518
+#: rc.cpp:754 rc.cpp:757 startdialog.cpp:3517 startdialog.cpp:3518
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "Om sidux"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:763 rc.cpp:766 startdialog.cpp:3519 startdialog.cpp:3520
+#: rc.cpp:760 rc.cpp:763 startdialog.cpp:3519 startdialog.cpp:3520
 #, no-c-format
 msgid "Language"
 msgstr ""
@@ -1355,6 +1349,9 @@ msgstr "Er du sikker på at du vil rydde dit lokale opbevaringssted?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "System Info"
+
+#~ msgid "Widget"
+#~ msgstr "Widget"
 
 #~ msgid ""
 #~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"

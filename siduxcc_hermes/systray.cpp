@@ -112,3 +112,12 @@ void SysTray::updateIcon()
 	connect ( timer, SIGNAL ( timeout() ), this, SLOT ( updateIcon() ) );
 	timer->start ( 300000, TRUE ); // 30 seconds single-shot timer
 }
+
+
+void SysTray::mousePressEvent(QMouseEvent* e)
+{
+    KSystemTray::mousePressEvent(e);
+    
+    if(e->button() == LeftButton)
+        upgradablePackages();
+}

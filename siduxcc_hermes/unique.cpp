@@ -1,5 +1,5 @@
 /*
- * hermes.h
+ * unique.cpp
  *
  * Copyright (c) 2007 Fabian Wuertz <xadras@sidux.com>
  *
@@ -18,16 +18,27 @@
  */
 
 
-#ifndef HERMES_H
-#define HERMES_H
+#include "unique.h"
+#include "systray.h"
 
-#include <kuniqueapplication.h>
+#include <kcmdlineargs.h>
+#include <kdebug.h>
 
-class Hermes : public KUniqueApplication
+#include <qstring.h>
+
+
+
+int Unique::newInstance()
 {
-	Q_OBJECT
-	public:
-		virtual int newInstance();
-};
+	KUniqueApplication::newInstance();
+	
+	kdDebug() << "newInstance" << endl;
+	
+	// handle command line arguments
+	KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
-#endif
+	args->clear();
+
+	// exit value for the calling process
+	return 0;
+}

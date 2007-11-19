@@ -1,5 +1,6 @@
 noinst_LTLIBRARIES = libsiduxcc.la
-libsiduxcc_la_SOURCES = process.cpp
+noinst_HEADERS = console.h
+libsiduxcc_la_SOURCES = process.cpp console.cpp consoledialog.ui
 
 libsiduxcc_la_LDFLAGS  = $(all_libraries) -module -avoid-version -no-undefined
 libsiduxcc_la_LIBADD = @LIBOBJS@ 

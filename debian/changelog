@@ -1,8 +1,13 @@
 siduxcc (0.6.11) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 19 Nov 2007 18:18:02 +0100
+  [ Fabian Wuertz ]
+  * console.* moved form siduxcc_kde to libsiduxcc
+  * hermes enlarged part 1/2
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 19 Nov 2007 23:56:40 +0100
 
 siduxcc (0.6.10) unstable; urgency=low
 

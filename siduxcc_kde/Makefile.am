@@ -4,7 +4,6 @@ AM_CPPFLAGS = $(all_includes)
 # these are the headers for your project
 noinst_HEADERS = \
 	start.h     \
-	console.h   \
 	display.h   \
 	network.h   \
 	services.h  \
@@ -22,7 +21,6 @@ KDE_ICON = AUTO
 siduxcc_kde_SOURCES = \
 	main.cpp \
 	start.cpp     startdialog.ui     \
-	console.cpp   consoledialog.ui   \
 	display.cpp   displaydialog.ui   \
 	network.cpp   networkdialog.ui   \
 	services.cpp  servicesdialog.ui  \

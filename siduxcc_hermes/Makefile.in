@@ -17,6 +17,7 @@
 
 
 
+
 srcdir = @srcdir@
 top_srcdir = @top_srcdir@
 VPATH = @srcdir@
@@ -52,22 +53,25 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
-am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"
+am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(bindir)" \
+	"$(DESTDIR)$(xdg_appsdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
 am_siduxcc_hermes_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) hermes.$(OBJEXT) up.$(OBJEXT)
+	legend.$(OBJEXT) unique.$(OBJEXT) up.$(OBJEXT)
 #>- siduxcc_hermes_OBJECTS = $(am_siduxcc_hermes_OBJECTS)
 #>+ 6
 siduxcc_hermes_final_OBJECTS = siduxcc_hermes.all_cpp.o 
 siduxcc_hermes_nofinal_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
-	legend.$(OBJEXT) hermes.$(OBJEXT) up.$(OBJEXT) legendbase.$(OBJEXT) upbase.$(OBJEXT)\
-systray.moc.o hermes.moc.o 
+	legend.$(OBJEXT) unique.$(OBJEXT) up.$(OBJEXT) legendbase.$(OBJEXT) upbase.$(OBJEXT)\
+unique.moc.o systray.moc.o 
 @KDE_USE_FINAL_FALSE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_nofinal_OBJECTS)
 @KDE_USE_FINAL_TRUE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_final_OBJECTS)
 am__DEPENDENCIES_1 =
 siduxcc_hermes_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	../libsiduxcc/libsiduxcc.la
+binSCRIPT_INSTALL = $(INSTALL_SCRIPT)
+SCRIPTS = $(bin_SCRIPTS)
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/admin/depcomp
 am__depfiles_maybe = depfiles
@@ -354,21 +358,22 @@ xdg_menudir = @xdg_menudir@
 INCLUDES = $(all_includes)
 
 # these are the headers for your project
-noinst_HEADERS = systray.h legend.h hermes.h up.h
+noinst_HEADERS = systray.h legend.h unique.h up.h
 
 # let automoc handle all of the meta source files (moc)
 #>- METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui hermes.cpp up.cpp upbase.ui
+#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui unique.cpp up.cpp upbase.ui
 #>+ 1
-siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  hermes.cpp up.cpp  legendbase.cpp upbase.cpp
+siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  unique.cpp up.cpp  legendbase.cpp upbase.cpp
 siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
 xdg_apps_DATA = siduxcc-hermes.desktop
+bin_SCRIPTS = siduxccHermesUpdate
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -448,6 +453,25 @@ clean-binPROGRAMS:
 siduxcc-hermes$(EXEEXT): $(siduxcc_hermes_OBJECTS) $(siduxcc_hermes_DEPENDENCIES) 
 	@rm -f siduxcc-hermes$(EXEEXT)
 	$(CXXLINK) $(siduxcc_hermes_LDFLAGS) $(siduxcc_hermes_OBJECTS) $(siduxcc_hermes_LDADD) $(LIBS)
+install-binSCRIPTS: $(bin_SCRIPTS)
+	@$(NORMAL_INSTALL)
+	test -z "$(bindir)" || $(mkdir_p) "$(DESTDIR)$(bindir)"
+	@list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  if test -f $$d$$p; then \
+	    f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
+	    echo " $(binSCRIPT_INSTALL) '$$d$$p' '$(DESTDIR)$(bindir)/$$f'"; \
+	    $(binSCRIPT_INSTALL) "$$d$$p" "$(DESTDIR)$(bindir)/$$f"; \
+	  else :; fi; \
+	done
+
+uninstall-binSCRIPTS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
+	  echo " rm -f '$(DESTDIR)$(bindir)/$$f'"; \
+	  rm -f "$(DESTDIR)$(bindir)/$$f"; \
+	done
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -455,10 +479,10 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/hermes.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/legend.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/systray.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/unique.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/up.Po@am__quote@
 
 .cpp.o:
@@ -586,9 +610,9 @@ distdir: $(DISTFILES)
 	done
 check-am: all-am
 check: check-am
-all-am: Makefile $(PROGRAMS) $(DATA) $(HEADERS)
+all-am: Makefile $(PROGRAMS) $(SCRIPTS) $(DATA) $(HEADERS)
 installdirs:
-	for dir in "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"; do \
+	for dir in "$(DESTDIR)$(bindir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"; do \
 	  test -z "$$dir" || $(mkdir_p) "$$dir"; \
 	done
 install: install-am
@@ -641,7 +665,7 @@ info-am:
 
 install-data-am: install-xdg_appsDATA
 
-install-exec-am: install-binPROGRAMS
+install-exec-am: install-binPROGRAMS install-binSCRIPTS
 
 install-info: install-info-am
 
@@ -667,21 +691,21 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-binPROGRAMS uninstall-info-am \
-	uninstall-xdg_appsDATA
+uninstall-am: uninstall-binPROGRAMS uninstall-binSCRIPTS \
+	uninstall-info-am uninstall-xdg_appsDATA
 
 .PHONY: CTAGS GTAGS all all-am check check-am clean clean-binPROGRAMS \
 	clean-generic clean-libtool ctags distclean distclean-compile \
 	distclean-generic distclean-libtool distclean-tags distdir dvi \
 	dvi-am html html-am info info-am install install-am \
-	install-binPROGRAMS install-data install-data-am install-exec \
-	install-exec-am install-info install-info-am install-man \
-	install-strip install-xdg_appsDATA installcheck \
-	installcheck-am installdirs maintainer-clean \
+	install-binPROGRAMS install-binSCRIPTS install-data \
+	install-data-am install-exec install-exec-am install-info \
+	install-info-am install-man install-strip install-xdg_appsDATA \
+	installcheck installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
 	tags uninstall uninstall-am uninstall-binPROGRAMS \
-	uninstall-info-am uninstall-xdg_appsDATA
+	uninstall-binSCRIPTS uninstall-info-am uninstall-xdg_appsDATA
 
 
 # translation
@@ -691,6 +715,13 @@ messages: rc.cpp
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
+
+#>+ 3
+unique.moc.cpp: $(srcdir)/unique.h
+	$(MOC) $(srcdir)/unique.h -o unique.moc.cpp
+
+#>+ 2
+mocs: unique.moc.cpp
 
 #>+ 3
 systray.moc.cpp: $(srcdir)/systray.h
@@ -714,18 +745,11 @@ up.moc: $(srcdir)/up.h
 mocs: up.moc
 
 #>+ 3
-hermes.moc.cpp: $(srcdir)/hermes.h
-	$(MOC) $(srcdir)/hermes.h -o hermes.moc.cpp
-
-#>+ 2
-mocs: hermes.moc.cpp
-
-#>+ 3
 clean-metasources:
-	-rm -f  systray.moc.cpp legend.moc up.moc hermes.moc.cpp
+	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc up.moc
 
 #>+ 2
-KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop legendbase.h upbase.h upbase.ui Makefile.am siduxcc-hermes 
+KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop legendbase.h upbase.h Makefile.am upbase.ui siduxccHermesUpdate siduxcc-hermes 
 
 #>+ 5
 clean-ui:
@@ -775,11 +799,11 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/hermes.cpp $(srcdir)/up.cpp $(srcdir)/legendbase.cpp $(srcdir)/upbase.cpp $(srcdir)/systray.moc.cpp $(srcdir)/hermes.moc.cpp  legendbase.moc legend.moc up.moc upbase.moc
+siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/up.cpp $(srcdir)/legendbase.cpp $(srcdir)/upbase.cpp $(srcdir)/unique.moc.cpp $(srcdir)/systray.moc.cpp  legendbase.moc legend.moc up.moc upbase.moc
 	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
 	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \
-	for file in main.cpp systray.cpp legend.cpp hermes.cpp up.cpp legendbase.cpp upbase.cpp systray.moc.cpp hermes.moc.cpp ; do \
+	for file in main.cpp systray.cpp legend.cpp unique.cpp up.cpp legendbase.cpp upbase.cpp unique.moc.cpp systray.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> siduxcc_hermes.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_hermes.all_cpp.final; \
 	done; \
@@ -819,8 +843,8 @@ $(srcdir)/up.cpp: legendbase.h upbase.h
 nmcheck-am: nmcheck
 up.lo: up.moc 
 $(srcdir)/main.cpp: legendbase.h upbase.h 
+$(srcdir)/unique.cpp: legendbase.h upbase.h 
 up.o: up.moc 
-$(srcdir)/hermes.cpp: legendbase.h upbase.h 
 $(srcdir)/systray.cpp: legendbase.h upbase.h 
 
 #>+ 30

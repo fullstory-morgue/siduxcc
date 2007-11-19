@@ -31,9 +31,17 @@ class up : public upBase
 
 	public:
 		up(QWidget* parent = 0, const char* name = 0 );
+		void getPackages();
+		QStringList link;
 
 	private:
 		Process* shell;
+
+	public slots:
+		virtual void tabChanged();
+		virtual void update();
+		virtual void terminateConsole();
+		virtual void openLink(int);
 
 };
 

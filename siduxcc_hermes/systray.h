@@ -51,6 +51,9 @@ class SysTray : public KSystemTray
 		KHelpMenu* help;
 		Process* shell;
 		QString test;
+
+	protected:
+		void mousePressEvent(QMouseEvent*);
 };
 
 #endif

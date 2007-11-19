@@ -56,16 +56,16 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
 am_siduxcc_kde_OBJECTS = main.$(OBJEXT) start.$(OBJEXT) \
-	console.$(OBJEXT) display.$(OBJEXT) network.$(OBJEXT) \
-	services.$(OBJEXT) software.$(OBJEXT) internet.$(OBJEXT) \
-	kernel.$(OBJEXT) info.$(OBJEXT)
+	display.$(OBJEXT) network.$(OBJEXT) services.$(OBJEXT) \
+	software.$(OBJEXT) internet.$(OBJEXT) kernel.$(OBJEXT) \
+	info.$(OBJEXT)
 #>- siduxcc_kde_OBJECTS = $(am_siduxcc_kde_OBJECTS)
 #>+ 7
 siduxcc_kde_final_OBJECTS = siduxcc_kde.all_cpp.o 
 siduxcc_kde_nofinal_OBJECTS = main.$(OBJEXT) start.$(OBJEXT) \
-	console.$(OBJEXT) display.$(OBJEXT) network.$(OBJEXT) \
-	services.$(OBJEXT) software.$(OBJEXT) internet.$(OBJEXT) \
-	kernel.$(OBJEXT) info.$(OBJEXT) startdialog.$(OBJEXT) consoledialog.$(OBJEXT) displaydialog.$(OBJEXT) networkdialog.$(OBJEXT) servicesdialog.$(OBJEXT) softwaredialog.$(OBJEXT) internetdialog.$(OBJEXT) kerneldialog.$(OBJEXT) infodialog.$(OBJEXT)
+	display.$(OBJEXT) network.$(OBJEXT) services.$(OBJEXT) \
+	software.$(OBJEXT) internet.$(OBJEXT) kernel.$(OBJEXT) \
+	info.$(OBJEXT) startdialog.$(OBJEXT) displaydialog.$(OBJEXT) networkdialog.$(OBJEXT) servicesdialog.$(OBJEXT) softwaredialog.$(OBJEXT) internetdialog.$(OBJEXT) kerneldialog.$(OBJEXT) infodialog.$(OBJEXT)
 @KDE_USE_FINAL_FALSE@siduxcc_kde_OBJECTS = $(siduxcc_kde_nofinal_OBJECTS)
 @KDE_USE_FINAL_TRUE@siduxcc_kde_OBJECTS = $(siduxcc_kde_final_OBJECTS)
 am__DEPENDENCIES_1 =
@@ -359,7 +359,6 @@ AM_CPPFLAGS = $(all_includes)
 # these are the headers for your project
 noinst_HEADERS = \
 	start.h     \
-	console.h   \
 	display.h   \
 	network.h   \
 	services.h  \
@@ -377,7 +376,6 @@ KDE_ICON = AUTO
 #>- siduxcc_kde_SOURCES = \
 #>- 	main.cpp \
 #>- 	start.cpp     startdialog.ui     \
-#>- 	console.cpp   consoledialog.ui   \
 #>- 	display.cpp   displaydialog.ui   \
 #>- 	network.cpp   networkdialog.ui   \
 #>- 	services.cpp  servicesdialog.ui  \
@@ -385,18 +383,17 @@ KDE_ICON = AUTO
 #>- 	internet.cpp  internetdialog.ui  \
 #>- 	kernel.cpp    kerneldialog.ui    \
 #>- 	info.cpp      infodialog.ui
-#>+ 11
+#>+ 10
 siduxcc_kde_SOURCES=\
 	main.cpp \
 	start.cpp          \
-	console.cpp      \
 	display.cpp      \
 	network.cpp      \
 	services.cpp    \
 	software.cpp    \
 	internet.cpp    \
 	kernel.cpp        \
-	info.cpp       startdialog.cpp consoledialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp
+	info.cpp       startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp
 
 siduxcc_kde_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_kde_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
@@ -488,7 +485,6 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/console.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/display.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/info.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/internet.Po@am__quote@
@@ -762,13 +758,6 @@ services.moc: $(srcdir)/services.h
 mocs: services.moc
 
 #>+ 3
-console.moc: $(srcdir)/console.h
-	$(MOC) $(srcdir)/console.h -o console.moc
-
-#>+ 2
-mocs: console.moc
-
-#>+ 3
 display.moc: $(srcdir)/display.h
 	$(MOC) $(srcdir)/display.h -o display.moc
 
@@ -798,16 +787,15 @@ mocs: start.moc
 
 #>+ 3
 clean-metasources:
-	-rm -f  info.moc internet.moc network.moc services.moc console.moc display.moc software.moc kernel.moc start.moc
+	-rm -f  info.moc internet.moc network.moc services.moc display.moc software.moc kernel.moc start.moc
 
 #>+ 2
-KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui siduxcc.desktop servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde internetdialog.h servicesdialog.h Makefile.in infodialog.ui consoledialog.h displaydialog.ui internetdialog.ui softwaredialog.h consoledialog.ui startdialog.h Makefile.am 
+KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui siduxcc.desktop servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde servicesdialog.h internetdialog.h Makefile.in infodialog.ui displaydialog.ui internetdialog.ui softwaredialog.h startdialog.h Makefile.am 
 
-#>+ 12
+#>+ 11
 clean-ui:
 	-rm -f \
 	startdialog.cpp startdialog.h startdialog.moc \
-	consoledialog.cpp consoledialog.h consoledialog.moc \
 	displaydialog.cpp displaydialog.h displaydialog.moc \
 	networkdialog.cpp networkdialog.h networkdialog.moc \
 	servicesdialog.cpp servicesdialog.h servicesdialog.moc \
@@ -858,11 +846,11 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_kde.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/start.cpp $(srcdir)/console.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp $(srcdir)/startdialog.cpp $(srcdir)/consoledialog.cpp $(srcdir)/displaydialog.cpp $(srcdir)/networkdialog.cpp $(srcdir)/servicesdialog.cpp $(srcdir)/softwaredialog.cpp $(srcdir)/internetdialog.cpp $(srcdir)/kerneldialog.cpp $(srcdir)/infodialog.cpp  network.moc internetdialog.moc infodialog.moc displaydialog.moc display.moc kernel.moc kerneldialog.moc info.moc internet.moc services.moc softwaredialog.moc console.moc consoledialog.moc servicesdialog.moc startdialog.moc networkdialog.moc software.moc start.moc
+siduxcc_kde.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/start.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp $(srcdir)/startdialog.cpp $(srcdir)/displaydialog.cpp $(srcdir)/networkdialog.cpp $(srcdir)/servicesdialog.cpp $(srcdir)/softwaredialog.cpp $(srcdir)/internetdialog.cpp $(srcdir)/kerneldialog.cpp $(srcdir)/infodialog.cpp  info.moc network.moc internet.moc internetdialog.moc services.moc softwaredialog.moc infodialog.moc servicesdialog.moc displaydialog.moc display.moc startdialog.moc software.moc networkdialog.moc kernel.moc kerneldialog.moc start.moc
 	@echo 'creating siduxcc_kde.all_cpp.cpp ...'; \
 	rm -f siduxcc_kde.all_cpp.files siduxcc_kde.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_kde.all_cpp.final; \
-	for file in main.cpp start.cpp console.cpp display.cpp network.cpp services.cpp software.cpp internet.cpp kernel.cpp info.cpp startdialog.cpp consoledialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp ; do \
+	for file in main.cpp start.cpp display.cpp network.cpp services.cpp software.cpp internet.cpp kernel.cpp info.cpp startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp ; do \
 	  echo "#include \"$$file\"" >> siduxcc_kde.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_kde.all_cpp.final; \
 	done; \
@@ -893,39 +881,36 @@ no-final-install:
 kde-rpo-clean:
 	-rm -f *.rpo
 
-#>+ 31
-$(srcdir)/services.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
-$(srcdir)/network.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+#>+ 28
+$(srcdir)/services.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/network.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 kernel.o: kernel.moc 
 display.lo: display.moc 
-$(srcdir)/main.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
-$(srcdir)/internet.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/main.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/internet.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 internet.o: internet.moc 
 kernel.lo: kernel.moc 
 display.o: display.moc 
-$(srcdir)/software.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
-$(srcdir)/display.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/software.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/display.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 software.o: software.moc 
 software.lo: software.moc 
 nmcheck: 
-$(srcdir)/start.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/start.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 services.lo: services.moc 
-$(srcdir)/kernel.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/kernel.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 services.o: services.moc 
-console.o: console.moc 
 nmcheck-am: nmcheck
-start.o: start.moc 
 info.lo: info.moc 
+start.o: start.moc 
 network.lo: network.moc 
 network.o: network.moc 
 start.lo: start.moc 
-$(srcdir)/console.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 info.o: info.moc 
-console.lo: console.moc 
-$(srcdir)/info.cpp: startdialog.h consoledialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
+$(srcdir)/info.cpp: startdialog.h displaydialog.h networkdialog.h servicesdialog.h softwaredialog.h internetdialog.h kerneldialog.h infodialog.h 
 internet.lo: internet.moc 
 
-#>+ 135
+#>+ 120
 kerneldialog.cpp: $(srcdir)/kerneldialog.ui kerneldialog.h kerneldialog.moc
 	rm -f kerneldialog.cpp
 	echo '#include <kdialog.h>' > kerneldialog.cpp
@@ -1015,21 +1000,6 @@ servicesdialog.h: $(srcdir)/servicesdialog.ui
 	$(UIC) $(srcdir)/servicesdialog.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> servicesdialog.h ;
 servicesdialog.moc: servicesdialog.h
 	$(MOC) servicesdialog.h -o servicesdialog.moc
-
-consoledialog.cpp: $(srcdir)/consoledialog.ui consoledialog.h consoledialog.moc
-	rm -f consoledialog.cpp
-	echo '#include <kdialog.h>' > consoledialog.cpp
-	echo '#include <klocale.h>' >> consoledialog.cpp
-	$(UIC) -tr ${UIC_TR} -i consoledialog.h $(srcdir)/consoledialog.ui > consoledialog.cpp.temp ; ret=$$?; \
-	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" consoledialog.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_consoledialog,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> consoledialog.cpp ;\
-	rm -f consoledialog.cpp.temp ;\
-	if test "$$ret" = 0; then echo '#include "consoledialog.moc"' >> consoledialog.cpp; else rm -f consoledialog.cpp ; exit $$ret ; fi
-
-consoledialog.h: $(srcdir)/consoledialog.ui
-	rm -rf consoledialog.h;
-	$(UIC) $(srcdir)/consoledialog.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> consoledialog.h ;
-consoledialog.moc: consoledialog.h
-	$(MOC) consoledialog.h -o consoledialog.moc
 
 infodialog.cpp: $(srcdir)/infodialog.ui infodialog.h infodialog.moc
 	rm -f infodialog.cpp

@@ -76,6 +76,20 @@ function update()
 }
 
 
+function updateHermes()
+{
+	SELF="siduxcc"
+	if ((UID)); then
+		exec su -c "$0 software updateHermes --uid $UID $*"
+	fi
+	
+	
+	apt-get update
+	echo ""
+	echo "<Enter> druecken um fortzufahren..."
+	read
+}
+
 function clean()
 {
 	apt-get clean
@@ -108,6 +122,23 @@ function duWarnings()
 	fi
 	rm -f $TMP
 }
+
+function duWarningsEn()
+{
+	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
+	wget --timeout=3 -O $TMP -q http://sidux.com/backend.php
+	grep -A 1 Warning $TMP
+	rm -f $TMP
+}
+
+function duWarningsDe()
+{
+	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
+	wget --timeout=3 -O $TMP -q http://sidux.com/backend.php?newlang=deu
+	grep -A 1 Warning $TMP
+	rm -f $TMP
+}
+
 
 function dlgDuWarnings()
 {

@@ -35,7 +35,7 @@
 
 
 #include <display.h>
-#include <console.h>
+#include <../libsiduxcc/console.h>
 
 
 display::display(QWidget *parent, const char *name, const QStringList &)

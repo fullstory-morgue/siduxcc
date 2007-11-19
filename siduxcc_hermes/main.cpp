@@ -19,7 +19,7 @@
 
 
 #include <systray.h>
-#include <hermes.h>
+#include <unique.h>
 
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	KCmdLineArgs::init(argc, argv, about);
 	KCmdLineArgs::addCmdLineOptions(options);
 
-	Hermes app;
+	Unique app;
 
 	// start program
 	kdDebug() << "creating first instance" << endl;
