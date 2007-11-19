@@ -32,11 +32,9 @@
 
 #include <../libsiduxcc/console.h>
 
-hermes::hermes(const int &init,  QWidget* parent, const char* name )
+hermes::hermes(QWidget* parent, const char* name )
         : hermesBase(parent,name)
 {
-
-	tabWidget->setCurrentPage(init);
 
 	this->shell = new Process();
 
@@ -59,6 +57,11 @@ hermes::hermes(const int &init,  QWidget* parent, const char* name )
 	for ( QStringList::Iterator it = title.begin(); it != title.end(); ++it )
 		warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"), *it);
 
+}
+
+void hermes::init(int i)
+{
+	tabWidget->setCurrentPage(i);
 }
 
 void hermes::getPackages()

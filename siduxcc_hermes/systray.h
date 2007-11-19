@@ -26,6 +26,7 @@
 #include <ksystemtray.h>
 #include <qstring.h>
 
+#include "hermes.h"
 #include "../libsiduxcc/process.h"
 
 
@@ -44,6 +45,7 @@ class SysTray : public KSystemTray
 		void upgradablePackages();
 		void showLegend();
 		void warnings();
+		void showHermes();
 	
 	private:
 		KPopupMenu* menu;
@@ -51,6 +53,7 @@ class SysTray : public KSystemTray
 		KHelpMenu* help;
 		Process* shell;
 		QString test;
+		hermes* dialog;
 
 	protected:
 		void mousePressEvent(QMouseEvent*);

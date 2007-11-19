@@ -19,7 +19,6 @@
 
 #include "systray.h"
 #include "legend.h"
-#include "hermes.h"
 
 #include <kaboutapplication.h>
 #include <kiconloader.h>
@@ -50,6 +49,8 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
 
 	updateIcon();
+
+	dialog = new hermes( );
 }
 
 
@@ -68,17 +69,27 @@ void SysTray::showAbout()
 	about->show();
 }
 
+void SysTray::showHermes()
+{
+   if(dialog->isVisible() )
+		dialog->hide();
+	else
+		dialog->show();
+}
+
 void SysTray::warnings()
 {
-	hermes* dialog = new hermes( 0 );
+	dialog->init(0);
 	dialog->show();
 }
 
+
 void SysTray::upgradablePackages()
 {
-	hermes* dialog = new hermes( 1);
+	dialog->init(1);
 	dialog->show();
 }
+
 
 void SysTray::showLegend()
 {
@@ -118,5 +129,5 @@ void SysTray::mousePressEvent(QMouseEvent* e)
 {
 	KSystemTray::mousePressEvent(e);
 	if(e->button() == LeftButton)
-		warnings();
+		showHermes();
 }

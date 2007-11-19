@@ -30,9 +30,10 @@ class hermes : public hermesBase
 	Q_OBJECT
 
 	public:
-		hermes(const int  &init = int(), QWidget* parent = 0, const char* name = 0);
+		hermes(QWidget* parent = 0, const char* name = 0);
 		void getPackages();
 		QStringList link;
+		virtual void init(int i);
 
 	private:
 		Process* shell;
