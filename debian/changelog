@@ -1,3 +1,9 @@
+siduxcc (0.6.12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 20 Nov 2007 20:44:13 +0100
+
 siduxcc (0.6.11) unstable; urgency=low
 
   * console.* moved form siduxcc_kde to libsiduxcc
