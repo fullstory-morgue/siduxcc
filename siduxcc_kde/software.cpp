@@ -28,7 +28,7 @@
 #include <kled.h>
 
 #include "software.h"
-#include "../libsiduxcc/console.h"
+#include "console.h"
 
 
 software::software(QWidget *parent, const char *name, const QStringList &)

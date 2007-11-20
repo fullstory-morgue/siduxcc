@@ -38,7 +38,7 @@
 
 
 #include "network.h"
-#include "../libsiduxcc/console.h"
+#include "console.h"
 
 
 

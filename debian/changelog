@@ -18,8 +18,9 @@ siduxcc (0.6.11) UNRELEASED; urgency=low
   * hermes enlarged part 2/2
   * hermes: unique mode for right click
   * siduxcc: software: language bug in function updateHermes fixed
+  * consoledialog.h problem fixed. 
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 20 Nov 2007 01:17:52 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 20 Nov 2007 20:18:50 +0100
 
 siduxcc (0.6.10) unstable; urgency=low
 

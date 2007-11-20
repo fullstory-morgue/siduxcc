@@ -20,6 +20,7 @@
 
 #include "hermes.h"
 
+#include <kgenericfactory.h>
 #include <qlabel.h>
 #include <qlistview.h>
 #include <qwidgetstack.h>
@@ -29,8 +30,6 @@
 #include <kapp.h>
 #include <klocale.h>
 
-
-#include <../libsiduxcc/console.h>
 
 hermes::hermes(QWidget* parent, const char* name )
         : hermesBase(parent,name)
@@ -56,6 +55,9 @@ hermes::hermes(QWidget* parent, const char* name )
 	link  = link.gres(  "</link>"  , "" );
 	for ( QStringList::Iterator it = title.begin(); it != title.end(); ++it )
 		warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"), *it);
+
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
 
 }
 
@@ -107,12 +109,11 @@ void hermes::update()
 		run.append( "updateHermes" );
 	
 	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack->addWidget(consoleWidget, 1);
 	widgetStack->raiseWidget(1);
-	widgetStack->removeWidget(consoleWidget);
 
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+	terminal()->startProgram( "siduxcc", run );
+
+	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
 }
 
 void hermes::terminateConsole()
@@ -120,9 +121,38 @@ void hermes::terminateConsole()
 	widgetStack->raiseWidget(0);
 	updatePushButton->setHidden(FALSE);
 	getPackages();
+
+	loadKonsole();
+	konsoleFrame->installEventFilter( this );
 }
 
 
+//------------------------------------------------------------------------------
+//--- load console -------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+void hermes::loadKonsole()
+{
+	KLibFactory* factory = KLibLoader::self()->factory( "libsanekonsolepart" );
+	if (!factory)
+		factory = KLibLoader::self()->factory( "libkonsolepart" );
+	konsole = static_cast<KParts::Part*>( factory->create( konsoleFrame, "konsolepart", "QObject", "KParts::ReadOnlyPart" ) );
+	terminal()->setAutoDestroy( true );
+	terminal()->setAutoStartShell( false );
+	konsole->widget()->setGeometry(0, 0, konsoleFrame->width(), konsoleFrame->height());	
+}
+
+bool hermes::eventFilter( QObject *o, QEvent *e )
+{
+	// This function makes the console emulator expanding
+	if ( e->type() == QEvent::Resize )
+	{
+		QResizeEvent *re = dynamic_cast< QResizeEvent * >( e );
+		if ( !re ) return false;
+		konsole->widget()->setGeometry( 0, 0, re->size().width(), re->size().height() );
+	}
+	return false;
+};
 
 
 #include "hermes.moc"

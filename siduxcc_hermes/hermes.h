@@ -25,6 +25,9 @@
 
 #include "../libsiduxcc/process.h"
 
+#include <kde_terminal_interface.h>
+#include <kparts/part.h>
+
 class hermes : public hermesBase
 {
 	Q_OBJECT
@@ -34,6 +37,12 @@ class hermes : public hermesBase
 		void getPackages();
 		QStringList link;
 		virtual void init(int i);
+		// console
+		ExtTerminalInterface *terminal()
+		{
+			return static_cast<ExtTerminalInterface*>(konsole->qt_cast( "ExtTerminalInterface" ) );
+		}
+		virtual bool eventFilter( QObject *o, QEvent *e );
 
 	private:
 		Process* shell;
@@ -43,6 +52,10 @@ class hermes : public hermesBase
 		virtual void update();
 		virtual void terminateConsole();
 		virtual void openLink(int);
+
+	protected slots:
+		void loadKonsole();
+		KParts::Part *konsole;
 
 };
 

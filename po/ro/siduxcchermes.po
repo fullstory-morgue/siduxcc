@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-20 00:18+0100\n"
-"PO-Revision-Date: 2007-04-04 20:00+0200\n"
+"PO-Revision-Date: 2007-11-20 01:24+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgstr ""
 #: hermesbase.cpp:196 rc.cpp:37
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 170
 #: hermesbase.cpp:197 rc.cpp:40
@@ -90,7 +90,7 @@ msgstr ""
 #: hermesbase.cpp:198 rc.cpp:43
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file ./legendbase.ui line 34
 #: legendbase.cpp:464 rc.cpp:4
@@ -101,8 +101,7 @@ msgstr "Legenda"
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Exista atentionari de dist-upgrade. Va rugam sa vizitati sidux.com pentru "
 "informatii aditionale"
@@ -147,16 +146,3 @@ msgstr "Arata Legenda"
 msgid "&About siduxcc-hermes"
 msgstr "Despre siduxcc-hermes"
 
-#, fuzzy
-#~ msgid "sidux-hermes"
-#~ msgstr "siduxcc-hermes"
-
-#, fuzzy
-#~ msgid "apt-get update"
-#~ msgstr "Imbunatateste (apt-get imbunatatire)"
-
-#~ msgid "C&ustom"
-#~ msgstr "Special"
-
-#~ msgid "Show upgradable packages"
-#~ msgstr "Arata pachetele ce pot fi imbunatatite"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-20 00:18+0100\n"
-"PO-Revision-Date: 2007-10-25 22:41+0200\n"
+"PO-Revision-Date: 2007-11-20 01:26+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "fr"
 #: hermesbase.cpp:133 hermesbase.cpp:191 rc.cpp:25
 #, no-c-format
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. i18n: file ./hermesbase.ui line 87
 #: hermesbase.cpp:134 hermesbase.cpp:192 rc.cpp:28
@@ -60,7 +60,7 @@ msgstr "siduxcc-hermes"
 #: hermesbase.cpp:190 rc.cpp:19
 #, no-c-format
 msgid "War&nings"
-msgstr ""
+msgstr "Alertes"
 
 #. i18n: file ./hermesbase.ui line 67
 #: hermesbase.cpp:194 rc.cpp:22
@@ -78,7 +78,7 @@ msgstr ""
 #: hermesbase.cpp:196 rc.cpp:37
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 170
 #: hermesbase.cpp:197 rc.cpp:40
@@ -90,7 +90,7 @@ msgstr ""
 #: hermesbase.cpp:198 rc.cpp:43
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file ./legendbase.ui line 34
 #: legendbase.cpp:464 rc.cpp:4
@@ -101,8 +101,7 @@ msgstr "Légende"
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Des alertes prévenant le dist-upgrade sont publiées. Consultez sidux.com "
 "pour plus d'information!"
@@ -137,7 +136,7 @@ msgstr "Paquets actualisables"
 
 #: systray.cpp:47
 msgid "Warnings"
-msgstr ""
+msgstr "Alertes"
 
 #: systray.cpp:49
 msgid "Show Legend"
@@ -147,6 +146,3 @@ msgstr "Montrer les légendes"
 msgid "&About siduxcc-hermes"
 msgstr "À propos de siduxcc-hermes"
 
-#, fuzzy
-#~ msgid "sidux-hermes"
-#~ msgstr "siduxcc-hermes"
