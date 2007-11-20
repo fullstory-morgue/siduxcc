@@ -86,7 +86,8 @@ function updateHermes()
 	
 	apt-get update
 	echo ""
-	echo "<Enter> druecken um fortzufahren..."
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 }
 
