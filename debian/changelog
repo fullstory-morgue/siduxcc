@@ -1,18 +1,5 @@
-siduxcc (0.6.11) UNRELEASED; urgency=low
+siduxcc (0.6.11) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-  * FTBS:
-    ./siduxcc_hermes/../libsiduxcc/console.h:25:27: error: consoledialog.h: No
-    such file or directory
-    ./siduxcc_hermes/../libsiduxcc/console.h:31: error: expected class-name
-    before '{' token
-    ./siduxcc_hermes/hermes.cpp: In member function 'virtual void
-    hermes::update()':
-    ./siduxcc_hermes/hermes.cpp:110: error: cannot convert 'console*' to
-    'QWidget*' in initialization
-
-  [ Fabian Wuertz ]
   * console.* moved form siduxcc_kde to libsiduxcc
   * hermes enlarged part 1/2
   * hermes enlarged part 2/2
