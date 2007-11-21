@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 21:41+0200\n"
+"POT-Creation-Date: 2007-11-21 14:55+0100\n"
 "PO-Revision-Date: 2007-10-25 22:46+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "Centrul de control sidux"
 
-#: modules/display.bm:9 modules/display.bm:232
+#: modules/display.bm:9 modules/display.bm:302
 #, sh-format
 msgid "Display"
 msgstr "Arata"
@@ -62,72 +62,73 @@ msgstr "Introduceti cadre noi DPI"
 msgid "Default Color Depth"
 msgstr "Profunzime de culoare in absenta "
 
-#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:85
+#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
+#: modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Apasati tasta <Enter> ca sa continuati..."
 
-#: modules/display.bm:200
+#: modules/display.bm:270
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Selectati dosarul care trebuie restaurat"
 
-#: modules/display.bm:233
-#, sh-format
-msgid "Change Resolution"
+#: modules/display.bm:303
+#, fuzzy, sh-format
+msgid "Change resolution"
 msgstr "Schimbati rezolutia"
 
-#: modules/display.bm:234
-#, sh-format
-msgid "Set Scanning Frequenz"
+#: modules/display.bm:304
+#, fuzzy, sh-format
+msgid "Set scanning frequency"
 msgstr "Stabiliti scanarea Frequenz"
 
-#: modules/display.bm:235
-#, sh-format
-msgid "Change DPI-Settings"
+#: modules/display.bm:305
+#, fuzzy, sh-format
+msgid "Change DPI-settings"
 msgstr "Schimbati aranjamentul DPI"
 
-#: modules/display.bm:236
-#, sh-format
-msgid "Change ColorDepth"
+#: modules/display.bm:306
+#, fuzzy, sh-format
+msgid "Change color-depth"
 msgstr "Schimbati profunzimea culorii"
 
-#: modules/display.bm:237
-#, sh-format
-msgid "Remove Modelines"
+#: modules/display.bm:307
+#, fuzzy, sh-format
+msgid "Remove modelines"
 msgstr "Eliminati liniile modului"
 
-#: modules/display.bm:238
-#, sh-format
-msgid "Register/Repair Fonts"
+#: modules/display.bm:308
+#, fuzzy, sh-format
+msgid "Register/Repair fonts"
 msgstr "Inregistrati/Reparati Fonturile"
 
-#: modules/display.bm:239
-#, sh-format
-msgid "Install Ati/nVidia 3d Drivers"
+#: modules/display.bm:309
+#, fuzzy, sh-format
+msgid "Install Ati/nVidia 3d drivers"
 msgstr "Instalati Ati/nVidia 3d Drivers"
 
-#: modules/display.bm:240
+#: modules/display.bm:310
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Reporniti X-Server"
 
-#: modules/display.bm:241
+#: modules/display.bm:311
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Porniti din nou X-Server "
 
-#: modules/display.bm:242 modules/hardware.bm:171 modules/info.bm:24
+#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
 #: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:138
+#: modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Reveniti la Menu-ul Initial"
 
-#: modules/display.bm:259
+#: modules/display.bm:329
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Eroare: Acest modul nu este implementat inca"
@@ -139,7 +140,7 @@ msgstr "Hardware"
 
 #: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
 #: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:84
+#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "Procedeul terminat"
@@ -199,7 +200,7 @@ msgstr "Run kernel-remover"
 msgid "Update kernel"
 msgstr "Update kernel"
 
-#: modules/network.bm:10
+#: modules/network.bm:15
 #, sh-format
 msgid "Network"
 msgstr "Retea"
@@ -279,7 +280,7 @@ msgstr "Enable/Disable Services at Boot"
 msgid "Manage Services"
 msgstr "Directioneaza serviciile"
 
-#: modules/software.bm:10 modules/software.bm:134
+#: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
 msgstr "Software"
@@ -291,7 +292,7 @@ msgstr ""
 "Trebuie sa fii in nivelul 3 run si in afara lui X ca sa poti efectua acest "
 "script"
 
-#: modules/software.bm:36 modules/software.bm:107
+#: modules/software.bm:36 modules/software.bm:149
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -300,7 +301,7 @@ msgstr ""
 "Nici o conectiune la sidux.com. Nu a fost posibil sa testati daca sunt Niste "
 "Atentionaru de Imbunatatiri Dist. Vrei sa continui oricum? "
 
-#: modules/software.bm:40 modules/software.bm:110
+#: modules/software.bm:40 modules/software.bm:152
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -309,27 +310,27 @@ msgstr ""
 "Exista atentionari-DU, va rog. Nu efectuati un dist-upgrade!Va gugam sa "
 "vizitati sidux. com pentru mai multe informatii"
 
-#: modules/software.bm:43 modules/software.bm:112
+#: modules/software.bm:43 modules/software.bm:154
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Nu sint DU-Atentionari pentru moment1"
 
-#: modules/software.bm:118
+#: modules/software.bm:160
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Selectati o data"
 
-#: modules/software.bm:135
+#: modules/software.bm:177
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr "Run Dist-Upgrade"
 
-#: modules/software.bm:136
+#: modules/software.bm:178
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr "Arata Atentionarile-DU"
 
-#: modules/software.bm:137
+#: modules/software.bm:179
 #, sh-format
 msgid "Show DU-Log"
 msgstr "Arata DU-Log"

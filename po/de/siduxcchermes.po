@@ -101,7 +101,8 @@ msgstr "Legende"
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
-msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid ""
+"There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 125
@@ -143,4 +144,3 @@ msgstr "Legende anzeigen"
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
 msgstr "Über siduxcc-hermes"
-

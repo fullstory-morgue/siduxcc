@@ -101,7 +101,8 @@ msgstr "Legenda"
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
 #, no-c-format
-msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid ""
+"There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Exista atentionari de dist-upgrade. Va rugam sa vizitati sidux.com pentru "
 "informatii aditionale"
@@ -145,4 +146,3 @@ msgstr "Arata Legenda"
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
 msgstr "Despre siduxcc-hermes"
-

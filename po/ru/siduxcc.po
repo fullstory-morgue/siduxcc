@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-04 21:41+0200\n"
+"POT-Creation-Date: 2007-11-21 14:55+0100\n"
 "PO-Revision-Date: 2007-10-25 22:47+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "Цетр управления sidux"
 
-#: modules/display.bm:9 modules/display.bm:232
+#: modules/display.bm:9 modules/display.bm:302
 #, sh-format
 msgid "Display"
 msgstr "Экран"
@@ -62,72 +62,73 @@ msgstr "Введите новое значение для DPI"
 msgid "Default Color Depth"
 msgstr "Количество цветов по умолчанию"
 
-#: modules/display.bm:173 modules/display.bm:219 modules/hardware.bm:129
+#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:85
+#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
+#: modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Чтобы продолжить нажмите <Enter> "
 
-#: modules/display.bm:200
+#: modules/display.bm:270
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Выбор файла для восстановления"
 
-#: modules/display.bm:233
-#, sh-format
-msgid "Change Resolution"
+#: modules/display.bm:303
+#, fuzzy, sh-format
+msgid "Change resolution"
 msgstr "Сменить разрешение"
 
-#: modules/display.bm:234
-#, sh-format
-msgid "Set Scanning Frequenz"
+#: modules/display.bm:304
+#, fuzzy, sh-format
+msgid "Set scanning frequency"
 msgstr "Установить частоту"
 
-#: modules/display.bm:235
-#, sh-format
-msgid "Change DPI-Settings"
+#: modules/display.bm:305
+#, fuzzy, sh-format
+msgid "Change DPI-settings"
 msgstr "Сменить значение DPI"
 
-#: modules/display.bm:236
-#, sh-format
-msgid "Change ColorDepth"
+#: modules/display.bm:306
+#, fuzzy, sh-format
+msgid "Change color-depth"
 msgstr "Изменить количество цветов"
 
-#: modules/display.bm:237
-#, sh-format
-msgid "Remove Modelines"
+#: modules/display.bm:307
+#, fuzzy, sh-format
+msgid "Remove modelines"
 msgstr "Очистить файл конфигурации "
 
-#: modules/display.bm:238
-#, sh-format
-msgid "Register/Repair Fonts"
+#: modules/display.bm:308
+#, fuzzy, sh-format
+msgid "Register/Repair fonts"
 msgstr "Обновить/восстановить шрифты"
 
-#: modules/display.bm:239
-#, sh-format
-msgid "Install Ati/nVidia 3d Drivers"
+#: modules/display.bm:309
+#, fuzzy, sh-format
+msgid "Install Ati/nVidia 3d drivers"
 msgstr "Установить драйвер Ati/nVidia 3d "
 
-#: modules/display.bm:240
+#: modules/display.bm:310
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Перезапустить Х-Сервер"
 
-#: modules/display.bm:241
+#: modules/display.bm:311
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Восстановить Х-Сервер"
 
-#: modules/display.bm:242 modules/hardware.bm:171 modules/info.bm:24
+#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
 #: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:138
+#: modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Возврат к основному меню"
 
-#: modules/display.bm:259
+#: modules/display.bm:329
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Ошибка: Данный модуль пока не реализован!"
@@ -139,7 +140,7 @@ msgstr "Оборудование"
 
 #: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
 #: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:84
+#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "Процесс завершен!"
@@ -199,7 +200,7 @@ msgstr "Запустить kernel-remover"
 msgid "Update kernel"
 msgstr "Обновить ядро"
 
-#: modules/network.bm:10
+#: modules/network.bm:15
 #, sh-format
 msgid "Network"
 msgstr "Сеть"
@@ -279,7 +280,7 @@ msgstr "Включение/Отключение cервисов при загр�
 msgid "Manage Services"
 msgstr "Управление сервисами"
 
-#: modules/software.bm:10 modules/software.bm:134
+#: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
 msgstr "Програмное обеспечение"
@@ -289,7 +290,7 @@ msgstr "Програмное обеспечение"
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "Данный скрипт необходимо запускать вне оболочки Х на runlevel 3"
 
-#: modules/software.bm:36 modules/software.bm:107
+#: modules/software.bm:36 modules/software.bm:149
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -298,7 +299,7 @@ msgstr ""
 "Нет соединения с sidux.com.Предупреждения по dist-upgrade недоступны. Хотите "
 "все равно продолжить? "
 
-#: modules/software.bm:40 modules/software.bm:110
+#: modules/software.bm:40 modules/software.bm:152
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -307,27 +308,27 @@ msgstr ""
 "Предупреждение DU: Не делайте dist-upgrade! Посетите sidux.com для "
 "дополнительной информации "
 
-#: modules/software.bm:43 modules/software.bm:112
+#: modules/software.bm:43 modules/software.bm:154
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "В настоящий момент нет DU-предупреждений!"
 
-#: modules/software.bm:118
+#: modules/software.bm:160
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Выбор даты"
 
-#: modules/software.bm:135
+#: modules/software.bm:177
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr "Запуск dist-upgrade"
 
-#: modules/software.bm:136
+#: modules/software.bm:178
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr "Показать DU-предупреждения "
 
-#: modules/software.bm:137
+#: modules/software.bm:179
 #, sh-format
 msgid "Show DU-Log"
 msgstr "Показать DU-log"

@@ -300,13 +300,13 @@ function display_interface()
 	while true;
 	do
 		display=$(dlg --menu "$(eval_gettext "Display")" 0 0 0 \
-			"resolution" "$(eval_gettext "Change Resolution")" \
-			"frequenz"   "$(eval_gettext "Set Scanning Frequenz")" \
-			"dpi"        "$(eval_gettext "Change DPI-Settings")" \
-			"cdepth"     "$(eval_gettext "Change ColorDepth")" \
-			"rmml"       "$(eval_gettext "Remove Modelines")" \
-			"fix-fonts"  "$(eval_gettext "Register/Repair Fonts")" \
-			"binary-gfx" "$(eval_gettext "Install Ati/nVidia 3d Drivers")" \
+			"resolution" "$(eval_gettext "Change resolution")" \
+			"frequency"  "$(eval_gettext "Set scanning frequency")" \
+			"dpi"        "$(eval_gettext "Change DPI-settings")" \
+			"cdepth"     "$(eval_gettext "Change color-depth")" \
+			"rmml"       "$(eval_gettext "Remove modelines")" \
+			"fix-fonts"  "$(eval_gettext "Register/Repair fonts")" \
+			"binary-gfx" "$(eval_gettext "Install Ati/nVidia 3d drivers")" \
 			"restartX"   "$(eval_gettext "Restart X-Server")" \
 			"restoreX"   "$(eval_gettext "Restore X-Server")" \
 			"return"     "$(eval_gettext "Return to main Menu")" )
