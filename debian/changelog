@@ -1,9 +1,5 @@
-siduxcc (0.6.12) UNRELEASED; urgency=low
+siduxcc (0.6.12) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * typos 
 
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 21 Nov 2007 14:58:01 +0100
