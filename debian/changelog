@@ -1,8 +1,8 @@
-siduxcc (0.6.13) UNRELEASED; urgency=low
+siduxcc (0.6.13) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * build with -Wl,--as-needed to shut up dpkg-shlibdeps.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Nov 2007 01:48:28 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 Nov 2007 14:36:03 +0100
 
 siduxcc (0.6.12) unstable; urgency=low
 
