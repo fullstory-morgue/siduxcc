@@ -8,8 +8,15 @@ Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
 Package: siduxcc
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, configure-networkcard (>= 0.6.31), gettext-base
 Recommends: apt-show-versions
 Description: sidux control center
+ Frontend for managing sidux.
+
+Package: siduxcc-kde
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc (= ${source:Version})
+Replaces: siduxcc (<< 0.7)
+Description: sidux control center (KDE frontend)
  Frontend for managing sidux.

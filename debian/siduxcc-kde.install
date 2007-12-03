@@ -1,0 +1,7 @@
+debian/tmp/usr/bin/siduxcc-kde		usr/bin/
+debian/tmp/usr/bin/siduxcc-hermes	usr/bin/
+debian/tmp/usr/share/applications	usr/share/
+debian/tmp/usr/share/doc/kde		usr/share/doc/
+debian/tmp/usr/share/icons		usr/share/
+debian/tmp/usr/share/siduxcc/icons	usr/share/siduxcc/
+debian/tmp/usr/lib			usr/
