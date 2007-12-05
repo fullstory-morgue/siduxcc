@@ -1,0 +1,6 @@
+debian/tmp/usr/bin/nicstatus		usr/bin/
+debian/tmp/usr/bin/siduxcc		usr/bin/
+debian/tmp/usr/share/pixmaps		usr/share/
+debian/tmp/usr/share/siduxcc/modules	usr/share/siduxcc/
+debian/tmp/usr/share/siduxcc/scripts	usr/share/siduxcc/
+network_kioslave/generic_interface	usr/share/siduxcc/scripts/

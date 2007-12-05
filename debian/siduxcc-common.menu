@@ -1,4 +1,4 @@
-?package(siduxcc): \
+?package(siduxcc-common): \
 	needs="X11" \
 	section="Applications/System/Administration" \
 	hints="sidux,Config" \

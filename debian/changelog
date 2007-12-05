@@ -5,8 +5,10 @@ siduxcc (0.7.0) UNRELEASED; urgency=low
 
   [ Stefan Lippers-Hollmann ]
   * initial packaging split into siduxcc and siduxcc-kde.
+  * change the split into siduxcc (kde) and siduxcc-common (backend + cli
+    tools).
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 04 Dec 2007 16:42:32 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 05 Dec 2007 23:31:38 +0100
 
 siduxcc (0.6.14) unstable; urgency=low
 
