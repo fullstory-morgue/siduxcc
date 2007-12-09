@@ -8,8 +8,9 @@ siduxcc (0.7.0) UNRELEASED; urgency=low
   * change the split into siduxcc (kde) and siduxcc-common (backend + cli
     tools).
   * fix arch distribution.
+  * fix package build.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 05 Dec 2007 23:34:49 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 09 Dec 2007 02:05:29 +0100
 
 siduxcc (0.6.14) unstable; urgency=low
 
