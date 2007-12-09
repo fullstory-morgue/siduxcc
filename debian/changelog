@@ -1,7 +1,4 @@
-siduxcc (0.7.0) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-  * DO NOT RELEASE YET!
+siduxcc (0.7.0) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
   * initial packaging split into siduxcc and siduxcc-kde.
@@ -9,11 +6,12 @@ siduxcc (0.7.0) UNRELEASED; urgency=low
     tools).
   * fix arch distribution.
   * fix package build.
+  * move network_kioslave/generic_interface and friends to siduxcc.
 
   [ Fabian Wuertz ]
   * sidux-kde: display: vboxvideo added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 09 Dec 2007 13:43:24 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 09 Dec 2007 14:44:56 +0100
 
 siduxcc (0.6.14) unstable; urgency=low
 

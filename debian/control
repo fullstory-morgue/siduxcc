@@ -12,7 +12,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version})
 Recommends: apt-show-versions
 Description: sidux control center (KDE frontend)
- Frontend for managing sidux.
+ KDE based frontend for managing sidux
 
 Package: siduxcc-common
 Architecture: all

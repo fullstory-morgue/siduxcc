@@ -5,3 +5,4 @@ debian/tmp/usr/share/doc/kde		usr/share/doc/
 debian/tmp/usr/share/icons		usr/share/
 debian/tmp/usr/share/siduxcc/icons	usr/share/siduxcc/
 debian/tmp/usr/lib			usr/
+network_kioslave/generic_interface	usr/share/siduxcc/scripts/
