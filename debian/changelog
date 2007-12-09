@@ -10,7 +10,10 @@ siduxcc (0.7.0) UNRELEASED; urgency=low
   * fix arch distribution.
   * fix package build.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 09 Dec 2007 02:05:29 +0100
+  [ Fabian Wuertz ]
+  * sidux-kde: display: vboxvideo added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 09 Dec 2007 13:43:24 +0100
 
 siduxcc (0.6.14) unstable; urgency=low
 

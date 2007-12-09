@@ -281,14 +281,22 @@ void display::getDriver()
 	this->shell->setCommand("siduxcc display getDriver");
 	this->shell->start(true);
 	driver = this->shell->getBuffer().stripWhiteSpace();
+	bool done = FALSE;
 	for(int i = 0; i < driverComboBox->count(); i++)
 	{
 		if(driverComboBox->text(i) == driver)
 		{
 			driverComboBox->setCurrentItem(i);
+			done = TRUE;
 			break;
 		}
 	}
+	if( !done )
+	{
+		driverComboBox->insertItem( driver, driverComboBox->count() );
+		driverComboBox->setCurrentItem( driverComboBox->count()-1 );
+	}
+
 	if(driver == "fglrx")
 		colorDepthList->setEnabled(FALSE);
 }

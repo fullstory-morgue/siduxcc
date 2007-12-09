@@ -1024,6 +1024,11 @@
                                 <string>fglrx</string>
                             </property>
                         </item>
+                        <item>
+                            <property name="text">
+                                <string>vboxvideo</string>
+                            </property>
+                        </item>
                         <property name="name">
                             <cstring>driverComboBox</cstring>
                         </property>
