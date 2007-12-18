@@ -1,10 +1,12 @@
 [Desktop Entry]
 Comment=sidux dist-upgrade alerter
 Comment[de]=sidux dist-upgrade Warner
+Comment[ru]=служба оповещения dist-upgrade   
 Encoding=UTF-8
 Exec=siduxcc-hermes
 Icon=siduxcc_hermes
 Name=Hermes (upgrade sentinel)
 Name[de]=Hermes (upgrade Wächter)
+Name[ru]=Гермес (служба оповещения)
 Categories=sidux;
 Type=Application
