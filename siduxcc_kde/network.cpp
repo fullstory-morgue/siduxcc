@@ -543,7 +543,7 @@ void network::getNameservers()
 
 void network::ndiswrapper()
 {
-	this->shell->setCommand("su-me configure-ndiswrapper&");
+	this->shell->setCommand("su-to-root -X -c /usr/sbin/configure-ndiswrapper&");
 	this->shell->start(true);
 }
 

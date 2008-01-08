@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=su-me siduxcc-kde
+Exec=su-to-root -X -c /usr/bin/siduxcc-kde
 Icon=siduxcc
 Name=sidux Control Center
 Name[da]=sidux kontrolcenter
@@ -11,5 +11,5 @@ Name[it]=Centro di controllo di sidux
 Name[nl]=sidux-Kontrol Center
 Name[ro]=Centrul de control sidux
 Name[ru]=Цетр управления sidux
-Categories=sidux;
+Categories=System;
 Type=Application

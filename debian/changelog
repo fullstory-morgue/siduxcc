@@ -1,8 +1,12 @@
-siduxcc (0.7.3) UNRELEASED; urgency=low
+siduxcc (0.7.3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch from custom su-me to generic su-to-root, adapt dependencies and
+    menu files accordingly.
+  * move desktop file into standard XDG hierarchy.
+  * add suggests on configure-ndiswrapper.
+  * nicinfo is now part of ceni, depend on it instead on configure-networkcard.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Dec 2007 00:16:08 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 08 Jan 2008 13:02:47 +0100
 
 siduxcc (0.7.2) unstable; urgency=low
 
