@@ -8,5 +8,6 @@ Icon=siduxcc_hermes
 Name=Hermes (upgrade sentinel)
 Name[de]=Hermes (upgrade Wächter)
 Name[ru]=Гермес (служба оповещения)
-Categories=Network;Applet;
+Categories=Qt;KDE;Network;Applet;
+OnlyShowIn=KDE;
 Type=Application
