@@ -12,7 +12,7 @@
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module services $(eval_gettext "Network")
+register_module network $(eval_gettext "Network")
 
 
 IFS_SP=" "

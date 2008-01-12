@@ -11,5 +11,5 @@ Name[it]=Centro di controllo di sidux
 Name[nl]=sidux-Kontrol Center
 Name[ro]=Centrul de control sidux
 Name[ru]=Цетр управления sidux
-Categories=System;
-Type=Categories=Qt;KDE;Core;
+Categories=Qt;KDE;Core;
+Type=Application
