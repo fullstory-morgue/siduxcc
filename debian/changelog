@@ -1,8 +1,8 @@
-siduxcc (0.8.4) UNRELEASED; urgency=low
+siduxcc (0.8.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * siduxcc is not Core, but needs to be part of a main categorie.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jan 2008 00:11:11 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jan 2008 00:18:05 +0100
 
 siduxcc (0.8.3) unstable; urgency=low
 
