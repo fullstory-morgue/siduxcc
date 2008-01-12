@@ -131,6 +131,7 @@ function setDpi()
 		fix-dpi-kdm $1
 	fi
 }
+
 function dlgDpi()
 {
 	defaultdpi="$(getDpi)" || defaultdpi="72"

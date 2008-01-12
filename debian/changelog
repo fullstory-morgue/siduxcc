@@ -8,8 +8,11 @@ siduxcc (0.8.3) UNRELEASED; urgency=low
   * siduxcc.desktop: category changed to core
   * siduxcc.desktop: category changed to core II
   * siduxcc: network module name fixed
+  * console: network: interface function added
+  * console: network: dlgHostname function added
+  * console: smxi-module added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jan 2008 03:53:01 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jan 2008 17:02:40 +0100
 
 siduxcc (0.8.2) unstable; urgency=low
 

@@ -39,6 +39,17 @@ function setHostname()
 }
 
 
+function dlgHostname()
+{
+	oldHostname="$(getHostname)"
+	newHostname=$(dlg --inputbox "$(eval_gettext "Enter a new hostname:")" 0 0 "$oldHostname")
+	if [ $? -eq 0 ]; then
+		setHostname $newHostname \
+		&& dlg --msgbox "$(eval_gettext "The hostname have been changed successfully to $newHostname.")" \
+		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the hosntame to $newHostname!")"
+	fi
+}
+
 #------------------------------------------------------------------------------#
 #--- nameservers --------------------------------------------------------------#
 #------------------------------------------------------------------------------#
@@ -333,4 +344,30 @@ function setNetworkcardConfig()
 		rm -f "$TMP"
 
 	fi
+}
+
+
+
+#------------------------------------------------------------------------------#
+#--- console interface --------------------------------------------------------#
+#------------------------------------------------------------------------------#
+
+
+function network_interface()
+{
+	while true;
+	do
+		network=$(dlg --menu "$(eval_gettext "Network")" 0 0 0 \
+			"ceni"       "$(eval_gettext "Configure Networkcars")" \
+			"hostname"  "$(eval_gettext "Set Hostname")" \
+			"return"     "$(eval_gettext "Return to main Menu")" )
+	
+		case $network in
+			ceni)      ceni;;
+			hostname)  dlgHostname;;
+
+			return|"") break;;
+			*) dlg --msgbox "$(eval_gettext "Error: This module is not implemented yet!")";;
+		esac
+	done
 }
