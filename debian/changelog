@@ -1,7 +1,4 @@
-siduxcc (0.8.3) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.8.3) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * siduxcc: display: getDpi fixed (xdpyinfo)
@@ -12,7 +9,10 @@ siduxcc (0.8.3) UNRELEASED; urgency=low
   * console: network: dlgHostname function added
   * console: smxi-module added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jan 2008 17:02:40 +0100
+  [ Stefan Lippers-Hollmann ]
+  * don't use Applet as Categorie.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jan 2008 00:05:35 +0100
 
 siduxcc (0.8.2) unstable; urgency=low
 
