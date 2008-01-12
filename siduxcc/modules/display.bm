@@ -106,7 +106,20 @@ function dlgFrequenz()
 
 function getDpi()
 {
-	sed -ne 's/^.*ServerArgsLocal=-nolisten tcp.*-dpi \([^ ]*\).*$/\1/p' < /etc/kde3/kdm/kdmrc
+	DPI=$(xdpyinfo | grep resolution | cut -f7 -d" " | cut -f2 -d"x")
+
+	if [ "$DPI" != "" ]; then
+		echo $DPI
+	else
+		DPI=$(sed -ne 's/^.*ServerArgsLocal=-nolisten tcp.*-dpi \([^ ]*\).*$/\1/p' < /etc/kde3/kdm/kdmrc)
+	fi
+
+	if [ "$DPI" != "" ]; then
+		echo $DPI
+	else
+		echo "96"
+	fi
+	
 }
 
 function setDpi()
