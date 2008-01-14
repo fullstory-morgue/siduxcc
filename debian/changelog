@@ -1,8 +1,10 @@
-siduxcc (0.8.7) UNRELEASED; urgency=low
+siduxcc (0.8.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * re- add accidentally removed ru/siduxcc.po.
+  * remove kiosidux/ kionetwork remains.
+  * relibtoolize/ regenerate auto-foo.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 14 Jan 2008 21:06:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Jan 2008 00:41:33 +0100
 
 siduxcc (0.8.6) unstable; urgency=low
 
