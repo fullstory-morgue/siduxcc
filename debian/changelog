@@ -28,14 +28,10 @@ siduxcc (0.8.3) unstable; urgency=low
   * console: smxi-module added
   * sidux-kioslave added
 
-<<<<<<< .mine
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 14 Jan 2008 02:09:06 +0100
-=======
   [ Stefan Lippers-Hollmann ]
   * don't use Applet as Categorie.
->>>>>>> .r14136
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jan 2008 00:05:35 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 14 Jan 2008 02:09:06 +0100
 
 siduxcc (0.8.2) unstable; urgency=low
 
