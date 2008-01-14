@@ -1,2 +1,0 @@
-#!/bin/sh
-konsole -T "Ceni" --nomenubar --notabbar -e ceni

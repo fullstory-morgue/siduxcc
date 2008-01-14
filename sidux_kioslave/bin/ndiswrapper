@@ -1,2 +1,0 @@
-#!/bin/sh
-su-to-root -X -c /usr/sbin/configure-ndiswrapper
