@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 14:55+0100\n"
+"POT-Creation-Date: 2008-01-14 02:11+0100\n"
 "PO-Revision-Date: 2007-10-25 22:45+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux-Kontrol Center"
 
-#: modules/display.bm:9 modules/display.bm:302
+#: modules/display.bm:9 modules/display.bm:316
 #, sh-format
 msgid "Display"
 msgstr "Beeld"
@@ -52,17 +52,17 @@ msgstr "Verticaal refresh rate:"
 msgid "Enter new horizontal sync rate:"
 msgstr "Horizontaal sync rate"
 
-#: modules/display.bm:124
+#: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Nieuw DPI settings:"
 
-#: modules/display.bm:158
+#: modules/display.bm:172
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Kleur diepte:"
 
-#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
+#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
@@ -71,64 +71,64 @@ msgstr "Kleur diepte:"
 msgid "Press <Enter> to continue..."
 msgstr "Kies <Enter> om door te gaan"
 
-#: modules/display.bm:270
+#: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Kies de bestand om te restoreren"
 
-#: modules/display.bm:303
+#: modules/display.bm:317
 #, fuzzy, sh-format
 msgid "Change resolution"
 msgstr "Verander Resolutie"
 
-#: modules/display.bm:304
+#: modules/display.bm:318
 #, fuzzy, sh-format
 msgid "Set scanning frequency"
 msgstr "Scanning Frequentie"
 
-#: modules/display.bm:305
+#: modules/display.bm:319
 #, fuzzy, sh-format
 msgid "Change DPI-settings"
 msgstr "Verander DPI Settings"
 
-#: modules/display.bm:306
+#: modules/display.bm:320
 #, fuzzy, sh-format
 msgid "Change color-depth"
 msgstr "Verander Kleurdiepte"
 
-#: modules/display.bm:307
+#: modules/display.bm:321
 #, fuzzy, sh-format
 msgid "Remove modelines"
 msgstr "Verdwijderen Modelines"
 
-#: modules/display.bm:308
+#: modules/display.bm:322
 #, fuzzy, sh-format
 msgid "Register/Repair fonts"
 msgstr "Registreer/Repareer Fonts"
 
-#: modules/display.bm:309
+#: modules/display.bm:323
 #, fuzzy, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Installeer ATI/nVidia 3D Drivers"
 
-#: modules/display.bm:310
+#: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Herstart X-Server"
 
-#: modules/display.bm:311
+#: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Herstel X-Server"
 
-#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
+#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Terug naar main Menu"
 
-#: modules/display.bm:329
+#: modules/display.bm:343 modules/network.bm:370
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Error: Dit module is nog niet verkrijkbaar"
@@ -200,10 +200,25 @@ msgstr "Uitvoer kernel-remover"
 msgid "Update kernel"
 msgstr "Update kernel"
 
-#: modules/network.bm:15
+#: modules/network.bm:15 modules/network.bm:360
 #, sh-format
 msgid "Network"
 msgstr "Netwerk"
+
+#: modules/network.bm:45
+#, fuzzy, sh-format
+msgid "Enter a new hostname:"
+msgstr "Niewe resolutie:"
+
+#: modules/network.bm:361
+#, sh-format
+msgid "Configure Networkcars"
+msgstr ""
+
+#: modules/network.bm:362
+#, sh-format
+msgid "Set Hostname"
+msgstr ""
 
 #: modules/services.bm:10
 #, sh-format
@@ -280,6 +295,20 @@ msgstr "Aanzetten/Uitzetten Servives op Boot"
 msgid "Manage Services"
 msgstr "Manage Services"
 
+#: modules/smxi.bm:9
+#, sh-format
+msgid "sidux-update"
+msgstr ""
+
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"Geen verbinding naar sidux.com.  Het was niet mogelijk te testen als er  "
+"Dist-upgrade Wanings waren. Wilt u nog steeds doorgaan? "
+
 #: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
@@ -289,15 +318,6 @@ msgstr "Software"
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "U moet in runlevel 3 en uit van X zijn om dit script te gebruiken"
-
-#: modules/software.bm:36 modules/software.bm:149
-#, sh-format
-msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
-msgstr ""
-"Geen verbinding naar sidux.com.  Het was niet mogelijk te testen als er  "
-"Dist-upgrade Wanings waren. Wilt u nog steeds doorgaan? "
 
 #: modules/software.bm:40 modules/software.bm:152
 #, sh-format

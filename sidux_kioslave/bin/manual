@@ -1,0 +1,2 @@
+#!/bin/sh
+x-www-browser /usr/share/sidux-manual/index.html

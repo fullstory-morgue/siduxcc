@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 14:55+0100\n"
+"POT-Creation-Date: 2008-01-14 02:11+0100\n"
 "PO-Revision-Date: 2007-10-25 22:43+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux-Kontrolni Centar"
 
-#: modules/display.bm:9 modules/display.bm:302
+#: modules/display.bm:9 modules/display.bm:316
 #, sh-format
 msgid "Display"
 msgstr "Display"
@@ -53,17 +53,17 @@ msgstr "Upišite novu vertikalnu frekvenciju monitora:"
 msgid "Enter new horizontal sync rate:"
 msgstr "Upišite novu horizontalnu frekvenciju monitora:"
 
-#: modules/display.bm:124
+#: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Upišite nove DPI-postavke:"
 
-#: modules/display.bm:158
+#: modules/display.bm:172
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Standardna Dubina boja"
 
-#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
+#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
@@ -72,64 +72,64 @@ msgstr "Standardna Dubina boja"
 msgid "Press <Enter> to continue..."
 msgstr "Pritisnite <Enter> da idete dalje..."
 
-#: modules/display.bm:270
+#: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Izaberite datoteku za vračanje postavka"
 
-#: modules/display.bm:303
+#: modules/display.bm:317
 #, fuzzy, sh-format
 msgid "Change resolution"
 msgstr "Promjeni rezoluciju"
 
-#: modules/display.bm:304
+#: modules/display.bm:318
 #, fuzzy, sh-format
 msgid "Set scanning frequency"
 msgstr "Postavi skening frekvenciju"
 
-#: modules/display.bm:305
+#: modules/display.bm:319
 #, fuzzy, sh-format
 msgid "Change DPI-settings"
 msgstr "Promjeni DPI-postavke"
 
-#: modules/display.bm:306
+#: modules/display.bm:320
 #, fuzzy, sh-format
 msgid "Change color-depth"
 msgstr "Promjeni dubinu boja"
 
-#: modules/display.bm:307
+#: modules/display.bm:321
 #, fuzzy, sh-format
 msgid "Remove modelines"
 msgstr "Izbriši Modelinije"
 
-#: modules/display.bm:308
+#: modules/display.bm:322
 #, fuzzy, sh-format
 msgid "Register/Repair fonts"
 msgstr "Tip Slova registrirati/reparirati"
 
-#: modules/display.bm:309
+#: modules/display.bm:323
 #, fuzzy, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Instalirati Ati/Nvidia 3D Pogonitelj"
 
-#: modules/display.bm:310
+#: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
 msgstr "X-Poslužitelj ponovo startati"
 
-#: modules/display.bm:311
+#: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
 msgstr "X-Poslužitelj vratiti u početno stanje"
 
-#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
+#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Natrag u glavni meni"
 
-#: modules/display.bm:329
+#: modules/display.bm:343 modules/network.bm:370
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Pogreška: Taj modul još nije implementiran!"
@@ -201,10 +201,25 @@ msgstr "Startati kernel-remover"
 msgid "Update kernel"
 msgstr "aktualizirati Kernel"
 
-#: modules/network.bm:15
+#: modules/network.bm:15 modules/network.bm:360
 #, sh-format
 msgid "Network"
 msgstr "Mreža"
+
+#: modules/network.bm:45
+#, fuzzy, sh-format
+msgid "Enter a new hostname:"
+msgstr "Upišite novu Rezoluciju:"
+
+#: modules/network.bm:361
+#, sh-format
+msgid "Configure Networkcars"
+msgstr ""
+
+#: modules/network.bm:362
+#, sh-format
+msgid "Set Hostname"
+msgstr ""
 
 #: modules/services.bm:10
 #, sh-format
@@ -281,6 +296,20 @@ msgstr "Systemservise aktivirati/deaktivirati"
 msgid "Manage Services"
 msgstr "Menadžment servisa"
 
+#: modules/smxi.bm:9
+#, sh-format
+msgid "sidux-update"
+msgstr ""
+
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"Nema spoja do sidux.com! Ne mogu provjeriti dali postoje Dist-Upgrade "
+"upozorenja. Hočete li nastaviti?"
+
 #: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
@@ -290,15 +319,6 @@ msgstr "Softver"
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "Morate biti u Runlevel 3, da izvodite ovaj skript!"
-
-#: modules/software.bm:36 modules/software.bm:149
-#, sh-format
-msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
-msgstr ""
-"Nema spoja do sidux.com! Ne mogu provjeriti dali postoje Dist-Upgrade "
-"upozorenja. Hočete li nastaviti?"
 
 #: modules/software.bm:40 modules/software.bm:152
 #, sh-format

@@ -1,0 +1,16 @@
+[Protocol]
+exec=kio_sidux
+protocol=sidux
+input=none
+output=filesystem
+reading=true
+renaming=false
+writing=false
+makedir=false
+deleting=false
+Icon=sidux_kioslave
+linking=false
+moving=false
+Class=:local
+ShowPreviews=false
+listing=Name

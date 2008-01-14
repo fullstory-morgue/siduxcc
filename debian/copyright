@@ -55,6 +55,8 @@ Copyright:
 	The following files are based on kio_resources from Luke Sandell <lasandell@gmail.com>
 	network_kioslave/kio_network.cpp
 	network_kioslave/kio_network.h
+    sidux_kioslave/sidux.cpp
+    sidux_kioslave/sidux.h
 
 
 	The following file is based on configure-networkcard, formerly known as 
@@ -140,6 +142,8 @@ Copyright:
 	(c) 2007 cathbard <cathbard@gmail.com>
 	kmenu.png                    icons/hi*-app-siduxcc.png
 	sidux-book2s.png             icons/hi*-app-sidux_book.png
+    sidux-net.png                icons/hi*-app-sidux_net.png
+
 
 
 	The following icon is from krdc

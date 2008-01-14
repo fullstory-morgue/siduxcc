@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 14:55+0100\n"
+"POT-Creation-Date: 2008-01-14 02:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr ""
 
-#: modules/display.bm:9 modules/display.bm:302
+#: modules/display.bm:9 modules/display.bm:316
 #, sh-format
 msgid "Display"
 msgstr ""
@@ -50,17 +50,17 @@ msgstr ""
 msgid "Enter new horizontal sync rate:"
 msgstr ""
 
-#: modules/display.bm:124
+#: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr ""
 
-#: modules/display.bm:158
+#: modules/display.bm:172
 #, sh-format
 msgid "Default Color Depth"
 msgstr ""
 
-#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
+#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
@@ -69,64 +69,64 @@ msgstr ""
 msgid "Press <Enter> to continue..."
 msgstr ""
 
-#: modules/display.bm:270
+#: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr ""
 
-#: modules/display.bm:303
+#: modules/display.bm:317
 #, sh-format
 msgid "Change resolution"
 msgstr ""
 
-#: modules/display.bm:304
+#: modules/display.bm:318
 #, sh-format
 msgid "Set scanning frequency"
 msgstr ""
 
-#: modules/display.bm:305
+#: modules/display.bm:319
 #, sh-format
 msgid "Change DPI-settings"
 msgstr ""
 
-#: modules/display.bm:306
+#: modules/display.bm:320
 #, sh-format
 msgid "Change color-depth"
 msgstr ""
 
-#: modules/display.bm:307
+#: modules/display.bm:321
 #, sh-format
 msgid "Remove modelines"
 msgstr ""
 
-#: modules/display.bm:308
+#: modules/display.bm:322
 #, sh-format
 msgid "Register/Repair fonts"
 msgstr ""
 
-#: modules/display.bm:309
+#: modules/display.bm:323
 #, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr ""
 
-#: modules/display.bm:310
+#: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
 msgstr ""
 
-#: modules/display.bm:311
+#: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
 msgstr ""
 
-#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
+#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr ""
 
-#: modules/display.bm:329
+#: modules/display.bm:343 modules/network.bm:370
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr ""
@@ -198,9 +198,24 @@ msgstr ""
 msgid "Update kernel"
 msgstr ""
 
-#: modules/network.bm:15
+#: modules/network.bm:15 modules/network.bm:360
 #, sh-format
 msgid "Network"
+msgstr ""
+
+#: modules/network.bm:45
+#, sh-format
+msgid "Enter a new hostname:"
+msgstr ""
+
+#: modules/network.bm:361
+#, sh-format
+msgid "Configure Networkcars"
+msgstr ""
+
+#: modules/network.bm:362
+#, sh-format
+msgid "Set Hostname"
 msgstr ""
 
 #: modules/services.bm:10
@@ -278,6 +293,18 @@ msgstr ""
 msgid "Manage Services"
 msgstr ""
 
+#: modules/smxi.bm:9
+#, sh-format
+msgid "sidux-update"
+msgstr ""
+
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+
 #: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
@@ -286,13 +313,6 @@ msgstr ""
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr ""
-
-#: modules/software.bm:36 modules/software.bm:149
-#, sh-format
-msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
 msgstr ""
 
 #: modules/software.bm:40 modules/software.bm:152

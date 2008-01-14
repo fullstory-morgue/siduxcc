@@ -1,0 +1,2 @@
+#!/bin/sh
+konsole -T "Register Fonts (fix-fonts)" --nomenubar --notabbar -e su-to-root -c /usr/sbin/fix-fonts

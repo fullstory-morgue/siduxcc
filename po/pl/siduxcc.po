@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-21 14:55+0100\n"
+"POT-Creation-Date: 2008-01-14 02:11+0100\n"
 "PO-Revision-Date: 2007-11-18 21:37+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "Centrum kontroli siduksa"
 
-#: modules/display.bm:9 modules/display.bm:302
+#: modules/display.bm:9 modules/display.bm:316
 #, sh-format
 msgid "Display"
 msgstr "Ekran"
@@ -52,17 +52,17 @@ msgstr "Wprowadź częstotliwość odświeżania pionowego:"
 msgid "Enter new horizontal sync rate:"
 msgstr "Wprowadź częstotliwość odświeżania poziomego:"
 
-#: modules/display.bm:124
+#: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Wprowadź ustawienia DPI:"
 
-#: modules/display.bm:158
+#: modules/display.bm:172
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Domyślna głębia kolorów"
 
-#: modules/display.bm:241 modules/display.bm:289 modules/hardware.bm:129
+#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
 #: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
 #: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
@@ -71,64 +71,64 @@ msgstr "Domyślna głębia kolorów"
 msgid "Press <Enter> to continue..."
 msgstr "Wciśnij  <Enter>, aby kontynuować..."
 
-#: modules/display.bm:270
+#: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Wybierz plik, który ma zostać przywrócony"
 
-#: modules/display.bm:303
+#: modules/display.bm:317
 #, fuzzy, sh-format
 msgid "Change resolution"
 msgstr "Zmień rozdzielczość"
 
-#: modules/display.bm:304
+#: modules/display.bm:318
 #, fuzzy, sh-format
 msgid "Set scanning frequency"
 msgstr "Ustaw częstotliwość skanowania"
 
-#: modules/display.bm:305
+#: modules/display.bm:319
 #, fuzzy, sh-format
 msgid "Change DPI-settings"
 msgstr "Zmień ustawienia DPI"
 
-#: modules/display.bm:306
+#: modules/display.bm:320
 #, fuzzy, sh-format
 msgid "Change color-depth"
 msgstr "Zmień głębię kolorów"
 
-#: modules/display.bm:307
+#: modules/display.bm:321
 #, fuzzy, sh-format
 msgid "Remove modelines"
 msgstr "Usuń modelines"
 
-#: modules/display.bm:308
+#: modules/display.bm:322
 #, fuzzy, sh-format
 msgid "Register/Repair fonts"
 msgstr "Zarejestruj/Napraw fonty"
 
-#: modules/display.bm:309
+#: modules/display.bm:323
 #, fuzzy, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Instaluj sterowniki 3D Ati/Nvidia"
 
-#: modules/display.bm:310
+#: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Uruchom ponownie serwer X"
 
-#: modules/display.bm:311
+#: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Przywróć serwer X"
 
-#: modules/display.bm:312 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
+#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
+#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Powrót do głównego menu"
 
-#: modules/display.bm:329
+#: modules/display.bm:343 modules/network.bm:370
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Błąd: Ten moduł nie jest jeszcze zaimplementowany!"
@@ -200,10 +200,25 @@ msgstr "Uruchom kernel-remover"
 msgid "Update kernel"
 msgstr "Aktualizuj kernel"
 
-#: modules/network.bm:15
+#: modules/network.bm:15 modules/network.bm:360
 #, sh-format
 msgid "Network"
 msgstr "Sieć"
+
+#: modules/network.bm:45
+#, fuzzy, sh-format
+msgid "Enter a new hostname:"
+msgstr "Wprowadź nową rozdzielczość:"
+
+#: modules/network.bm:361
+#, sh-format
+msgid "Configure Networkcars"
+msgstr ""
+
+#: modules/network.bm:362
+#, sh-format
+msgid "Set Hostname"
+msgstr ""
 
 #: modules/services.bm:10
 #, sh-format
@@ -280,6 +295,20 @@ msgstr "Uruchom/Wyłącz usługi przy starcie systemu"
 msgid "Manage Services"
 msgstr "Zarządzaj usługami"
 
+#: modules/smxi.bm:9
+#, sh-format
+msgid "sidux-update"
+msgstr ""
+
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"Brak połączenia z sidux.com. Nie ma możliwości sprawdzenia, czy są "
+"ostrzeżenia przed aktualizacją. Czy chcesz mimo to kontynuować?"
+
 #: modules/software.bm:10 modules/software.bm:176
 #, sh-format
 msgid "Software"
@@ -289,15 +318,6 @@ msgstr "Oprogramowanie"
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "Musisz być w trybie tekstowym i poza X, aby uruchomić ten skrypt."
-
-#: modules/software.bm:36 modules/software.bm:149
-#, sh-format
-msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
-msgstr ""
-"Brak połączenia z sidux.com. Nie ma możliwości sprawdzenia, czy są "
-"ostrzeżenia przed aktualizacją. Czy chcesz mimo to kontynuować?"
 
 #: modules/software.bm:40 modules/software.bm:152
 #, sh-format
