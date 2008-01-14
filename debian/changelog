@@ -5,8 +5,9 @@ siduxcc (0.8.6) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * sidux and network kioslave removed
+  * sidux and network kioslave removed II
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 14 Jan 2008 20:03:06 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 14 Jan 2008 20:16:59 +0100
 
 siduxcc (0.8.5) unstable; urgency=low
 
