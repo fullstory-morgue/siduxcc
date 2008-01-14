@@ -657,7 +657,7 @@ merge:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=kionetwork.pot siduxcc.pot Makefile.in siduxcckde.pot siduxcchermes.pot Makefile.am 
+KDE_DIST=kionetwork.pot siduxcc.pot Makefile.in siduxcckde.pot kiosidux.pot siduxcchermes.pot Makefile.am 
 
 #>+ 2
 docs-am:

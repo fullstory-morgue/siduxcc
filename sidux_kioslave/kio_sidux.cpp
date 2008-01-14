@@ -224,7 +224,7 @@ void SiduxProtocol::put( const KURL& url, int permissions, bool overwrite, bool 
 void SiduxProtocol::listDir( const KURL & url )
 {
 
-	QString p = "/usr/share/sidux_kioslave/bin/"; // bin path
+	QString p = "/usr/share/siduxcc/bin/"; // bin path
 
 	KIO::UDSEntry entry;
 
@@ -266,7 +266,7 @@ void SiduxProtocol::listDir( const KURL & url )
 		// network menu
 		addAtom(entry, KIO::UDS_NAME, 0, i18n("Network"));
 		addAtom(entry, KIO::UDS_FILE_TYPE, S_IFDIR);
-		addAtom(entry, KIO::UDS_ICON_NAME, 0, "sidux-network");
+		addAtom(entry, KIO::UDS_ICON_NAME, 0, "sidux_net");
 		listEntry(entry, false);
 		entry.clear();
 
@@ -293,7 +293,7 @@ void SiduxProtocol::listDir( const KURL & url )
 		addAtom(entry, KIO::UDS_LOCAL_PATH, 0, url.path());
 		addAtom(entry, KIO::UDS_ACCESS, 0500);
 		addAtom(entry, KIO::UDS_MIME_TYPE, 0, "application/x-desktop");
-		addAtom(entry, KIO::UDS_ICON_NAME, 0, "home");
+		addAtom(entry, KIO::UDS_ICON_NAME, 0, "html");
 		listEntry(entry, false);
 		entry.clear();
 	

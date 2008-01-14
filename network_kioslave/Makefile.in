@@ -734,7 +734,7 @@ bcheck-am:
 
 
 #>+ 11
-kio_network_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/kio_network.cpp $(srcdir)/process.cpp $(srcdir)/process.moc.cpp 
+kio_network_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/kio_network.cpp $(srcdir)/process.cpp process.moc.cpp 
 	@echo 'creating kio_network_la.all_cpp.cpp ...'; \
 	rm -f kio_network_la.all_cpp.files kio_network_la.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> kio_network_la.all_cpp.final; \

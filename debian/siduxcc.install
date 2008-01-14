@@ -11,3 +11,4 @@ debian/tmp/usr/share/locale/*/LC_MESSAGES/kiosidux.mo
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcchermes.mo
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcckde.mo
 network_kioslave/generic_interface	usr/share/siduxcc/scripts/
+debian/tmp/usr/share/siduxcc/bin    usr/share/siduxcc/

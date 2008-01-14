@@ -681,7 +681,7 @@ messages: rc.cpp
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=sidux.protocol Makefile.am Makefile.in 
+KDE_DIST=Makefile.in sidux.protocol Makefile.am 
 
 #>+ 2
 docs-am:
