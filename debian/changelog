@@ -1,8 +1,13 @@
 siduxcc (0.8.8) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 15 Jan 2008 00:59:30 +0100
+  [ Fabian Wuertz ]
+  * copyright file updated
+  * typos fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 17 Jan 2008 19:11:23 +0100
 
 siduxcc (0.8.7) unstable; urgency=low
 

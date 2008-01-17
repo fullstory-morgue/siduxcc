@@ -52,13 +52,6 @@ Copyright:
 	siduxcc/modules/hardware.bm
 
 
-	The following files are based on kio_resources from Luke Sandell <lasandell@gmail.com>
-	network_kioslave/kio_network.cpp
-	network_kioslave/kio_network.h
-    sidux_kioslave/sidux.cpp
-    sidux_kioslave/sidux.h
-
-
 	The following file is based on configure-networkcard, formerly known as 
 	netcardconfig and netcardconfig-kanotix, from:
 	(C) 2001-2004 Klaus Knopper <knoppix@knopper.net>

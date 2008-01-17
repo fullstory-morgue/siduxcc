@@ -701,6 +701,7 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 3
 unique.moc.cpp: $(srcdir)/unique.h
 	$(MOC) $(srcdir)/unique.h -o unique.moc.cpp
@@ -734,7 +735,7 @@ clean-metasources:
 	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc hermes.moc
 
 #>+ 2
-KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop hermesbase.ui Makefile.am 
+KDE_DIST=hermesbase.ui legendbase.ui Makefile.in siduxcc-hermes.desktop Makefile.am 
 
 #>+ 5
 clean-ui:
