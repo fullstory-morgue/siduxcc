@@ -1,9 +1,5 @@
-siduxcc (0.8.8) UNRELEASED; urgency=low
+siduxcc (0.8.8) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * copyright file updated
   * typos fixed
 
