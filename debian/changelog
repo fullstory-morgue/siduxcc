@@ -1,9 +1,5 @@
-siduxcc (0.8.10) UNRELEASED; urgency=low
+siduxcc (0.8.10) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * nl languages files updated 
 
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 23 Jan 2008 16:58:24 +0100
