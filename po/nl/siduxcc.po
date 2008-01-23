@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-14 02:11+0100\n"
-"PO-Revision-Date: 2007-10-25 22:45+0200\n"
+"PO-Revision-Date: 2008-01-23 16:50+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -30,12 +30,12 @@ msgstr "Beeld"
 #: modules/display.bm:38
 #, sh-format
 msgid "Select new Resolution"
-msgstr "Selecterr een nieuwe Resolutie"
+msgstr "Selecter een nieuwe resolutie"
 
 #: modules/display.bm:42
 #, sh-format
 msgid "Enter new Resolution:"
-msgstr "Niewe resolutie:"
+msgstr "Nieuwe resolutie:"
 
 #: modules/display.bm:81
 #, sh-format
@@ -55,7 +55,7 @@ msgstr "Horizontaal sync rate"
 #: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
-msgstr "Nieuw DPI settings:"
+msgstr "Nieuwe DPI instelling:"
 
 #: modules/display.bm:172
 #, sh-format
@@ -74,86 +74,86 @@ msgstr "Kies <Enter> om door te gaan"
 #: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
-msgstr "Kies de bestand om te restoreren"
+msgstr "Kies het bestand om te herstellen"
 
 #: modules/display.bm:317
-#, fuzzy, sh-format
+#, sh-format
 msgid "Change resolution"
-msgstr "Verander Resolutie"
+msgstr "Verander resolutie"
 
 #: modules/display.bm:318
-#, fuzzy, sh-format
+#, sh-format
 msgid "Set scanning frequency"
-msgstr "Scanning Frequentie"
+msgstr "Scanning frequentie"
 
 #: modules/display.bm:319
-#, fuzzy, sh-format
+#, sh-format
 msgid "Change DPI-settings"
-msgstr "Verander DPI Settings"
+msgstr "Verander DPI settings"
 
 #: modules/display.bm:320
-#, fuzzy, sh-format
+#, sh-format
 msgid "Change color-depth"
-msgstr "Verander Kleurdiepte"
+msgstr "Verander kleurdiepte"
 
 #: modules/display.bm:321
-#, fuzzy, sh-format
+#, sh-format
 msgid "Remove modelines"
-msgstr "Verdwijderen Modelines"
+msgstr "Verdwijderen modelines"
 
 #: modules/display.bm:322
-#, fuzzy, sh-format
+#, sh-format
 msgid "Register/Repair fonts"
 msgstr "Registreer/Repareer Fonts"
 
 #: modules/display.bm:323
-#, fuzzy, sh-format
+#, sh-format
 msgid "Install Ati/nVidia 3d drivers"
-msgstr "Installeer ATI/nVidia 3D Drivers"
+msgstr "Installeer ATI/nVidia 3D drivers"
 
 #: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
-msgstr "Herstart X-Server"
+msgstr "Herstart X-server"
 
 #: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
-msgstr "Herstel X-Server"
+msgstr "Herstel X-server"
 
 #: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
 #: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
 #: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
 #, sh-format
 msgid "Return to main Menu"
-msgstr "Terug naar main Menu"
+msgstr "Terug naar hoofdmenu"
 
 #: modules/display.bm:343 modules/network.bm:370
 #, sh-format
 msgid "Error: This module is not implemented yet!"
-msgstr "Error: Dit module is nog niet verkrijkbaar"
+msgstr "Error: Module is nog niet verkrijkbaar"
 
 #: modules/hardware.bm:9 modules/hardware.bm:170
 #, sh-format
 msgid "Hardware"
-msgstr "Hardware"
+msgstr "hardware"
 
 #: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
 #: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
 #: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
-msgstr "Klaar"
+msgstr "klaar"
 
 #: modules/info.bm:10 modules/info.bm:21
 #, sh-format
 msgid "Infos"
-msgstr "Info's"
+msgstr "info's"
 
 #: modules/info.bm:22
 #, sh-format
 msgid "sidux Version"
-msgstr "sidux Versie"
+msgstr "sidux versie"
 
 #: modules/info.bm:23
 #, sh-format
@@ -163,7 +163,7 @@ msgstr "Infobash"
 #: modules/info.bm:27
 #, sh-format
 msgid "You are using "
-msgstr "U gebruikt "
+msgstr "u gebruikt "
 
 #: modules/kernel.bm:9 modules/kernel.bm:167
 #, sh-format
@@ -193,7 +193,7 @@ msgstr "De nieuwe kernel is de zelfde dat nu in gebruik is."
 #: modules/kernel.bm:168
 #, sh-format
 msgid "Run kernel-remover"
-msgstr "Uitvoer kernel-remover"
+msgstr "Uitvoeren kernel-remover"
 
 #: modules/kernel.bm:169
 #, sh-format
@@ -206,19 +206,19 @@ msgid "Network"
 msgstr "Netwerk"
 
 #: modules/network.bm:45
-#, fuzzy, sh-format
+#, sh-format
 msgid "Enter a new hostname:"
-msgstr "Niewe resolutie:"
+msgstr "Nieuwe hostname:"
 
 #: modules/network.bm:361
 #, sh-format
 msgid "Configure Networkcars"
-msgstr ""
+msgstr "Configureren netwerkcard"
 
 #: modules/network.bm:362
 #, sh-format
 msgid "Set Hostname"
-msgstr ""
+msgstr "Vastleggen hostname"
 
 #: modules/services.bm:10
 #, sh-format
@@ -228,12 +228,12 @@ msgstr "Services"
 #: modules/services.bm:15
 #, sh-format
 msgid "Webserver"
-msgstr "Web Server"
+msgstr "Webserver"
 
 #: modules/services.bm:16
 #, sh-format
 msgid "Printserver"
-msgstr "Print Server"
+msgstr "Printerserver"
 
 #: modules/services.bm:17
 #, sh-format
@@ -248,7 +248,7 @@ msgstr "SSH Server"
 #: modules/services.bm:19
 #, sh-format
 msgid "Samabaserver"
-msgstr "Samba Server"
+msgstr "Samba server"
 
 #: modules/services.bm:30
 #, sh-format
@@ -268,17 +268,17 @@ msgstr "Herstart nu"
 #: modules/services.bm:33
 #, sh-format
 msgid "Reload now"
-msgstr "Opniew load"
+msgstr "Opniew laden"
 
 #: modules/services.bm:34
 #, sh-format
 msgid "Add a Runlevel-Entry"
-msgstr "Nog n Runlevel-Entry"
+msgstr "Voeg Runlevel-Entry toe"
 
 #: modules/services.bm:35
 #, sh-format
 msgid "Delete Runlevel-Entry"
-msgstr "Verwijder Runlevel-Entry"
+msgstr "Verwijder runlevel-Entry"
 
 #: modules/services.bm:51
 #, sh-format
@@ -288,7 +288,7 @@ msgstr "Boot"
 #: modules/services.bm:52
 #, sh-format
 msgid "Enable/Disable Services at Boot"
-msgstr "Aanzetten/Uitzetten Servives op Boot"
+msgstr "Aanzetten/Uitzetten Services bij boot/opstarten"
 
 #: modules/services.bm:53
 #, sh-format
@@ -298,7 +298,7 @@ msgstr "Manage Services"
 #: modules/smxi.bm:9
 #, sh-format
 msgid "sidux-update"
-msgstr ""
+msgstr "sidux-update"
 
 #: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
 #, sh-format
@@ -306,8 +306,8 @@ msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
 "Upgrade Warnings. Dou want to continuo anyway?"
 msgstr ""
-"Geen verbinding naar sidux.com.  Het was niet mogelijk te testen als er  "
-"Dist-upgrade Wanings waren. Wilt u nog steeds doorgaan? "
+"Geen verbinding met sidux.com.  Het was niet mogelijk te controleren of er  "
+"dist-upgrade wanings waren. Wilt u nog steeds doorgaan? "
 
 #: modules/software.bm:10 modules/software.bm:176
 #, sh-format
@@ -325,7 +325,7 @@ msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
 "com for more information!"
 msgstr ""
-"Er zihn DU-warnings.  A.U.B. geen dist-upgrade maken. Ga naar sidux.com voor "
+"Er zijn DU-warnings.  A.U.B. geen dist-upgrade maken. Ga naar sidux.com voor "
 "meer infomatie"
 
 #: modules/software.bm:43 modules/software.bm:154
@@ -341,7 +341,7 @@ msgstr "Kies een datum..."
 #: modules/software.bm:177
 #, sh-format
 msgid "Run Dist-Upgrade"
-msgstr "Uitvoer Dist-Upgrade"
+msgstr "Uitvoeren dist-upgrade"
 
 #: modules/software.bm:178
 #, sh-format
@@ -361,7 +361,7 @@ msgstr "Error: U moet root zijn om dit script te gebruiken"
 #: modules/interface:18
 #, sh-format
 msgid "Main Menu"
-msgstr "Hoofd Menu"
+msgstr "Hoofdmenu"
 
 #: modules/interface:19
 #, sh-format

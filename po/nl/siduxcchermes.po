@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-17 16:11+0100\n"
-"PO-Revision-Date: 2007-04-04 20:00+0200\n"
+"PO-Revision-Date: 2008-01-23 16:51+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr ""
+msgstr "HarzG"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -48,13 +48,13 @@ msgstr "Legenda"
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
-"Er zijn dist-upgrade waarshuwingen!  Ga naar sidux.com voor meer informatie."
+"Er zijn dist-upgrade waarschuwingen!  Ga naar sidux.com voor meer informatie."
 
 #. i18n: file ./legendbase.ui line 125
 #: rc.cpp:10
 #, no-c-format
 msgid "No connection to sidux.com."
-msgstr "Geen connectie naar sidux.com"
+msgstr "Geen verbinding met sidux.com"
 
 #. i18n: file ./legendbase.ui line 141
 #: rc.cpp:13
@@ -72,13 +72,13 @@ msgstr "siduxcc-hermes"
 #: rc.cpp:19
 #, no-c-format
 msgid "War&nings"
-msgstr ""
+msgstr "waarschuwingen"
 
 #. i18n: file ./hermesbase.ui line 67
 #: rc.cpp:22
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Upgradable pac&kages"
-msgstr "Upgradable packages"
+msgstr ""
 
 #. i18n: file ./hermesbase.ui line 76
 #: rc.cpp:25
@@ -90,7 +90,7 @@ msgstr "Naam"
 #: rc.cpp:28
 #, no-c-format
 msgid "Installed Version"
-msgstr "Versie installeerd"
+msgstr "Ge&#239;nstalleerde versie"
 
 #. i18n: file ./hermesbase.ui line 98
 #: rc.cpp:31
@@ -108,7 +108,7 @@ msgstr ""
 #: rc.cpp:37
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 170
 #: rc.cpp:40
@@ -120,15 +120,15 @@ msgstr ""
 #: rc.cpp:43
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
-msgstr "Forum - Upgrade Warnings"
+msgstr "Forum - upgrade waarschuwingen"
 
 #: systray.cpp:44
 msgid "Manual - Upgrade of an Installed System"
-msgstr "Handleiding"
+msgstr "handleiding"
 
 #: systray.cpp:45
 msgid "Upgradable packages"
@@ -144,18 +144,4 @@ msgstr "Legenda"
 
 #: systray.cpp:49
 msgid "&About siduxcc-hermes"
-msgstr "About siduxcc-hermes"
-
-#, fuzzy
-#~ msgid "sidux-hermes"
-#~ msgstr "siduxcc-hermes"
-
-#, fuzzy
-#~ msgid "apt-get update"
-#~ msgstr "Update (apt-get update)"
-
-#~ msgid "C&ustom"
-#~ msgstr "Custom"
-
-#~ msgid "Show upgradable packages"
-#~ msgstr "Upgradable packages in beeld brengen"
+msgstr "Over siduxcc-hermes"

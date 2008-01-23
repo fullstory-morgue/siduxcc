@@ -578,7 +578,7 @@ void network::fwInstall()
 	emit menuLocked(TRUE);
 
 	// add non-free sources to /etc/apt/sources.list
-	this->shell->setCommand("siduxcc hardware addSources");
+	this->shell->setCommand("siduxcc software addSources");
 	this->shell->start(true);
 
 	QStrList run; run.append( "siduxcc" );

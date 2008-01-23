@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-17 16:11+0100\n"
-"PO-Revision-Date: 2007-10-25 22:00+0200\n"
+"PO-Revision-Date: 2008-01-23 16:55+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "nl"
+msgstr "HarzG"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -41,6 +41,8 @@ msgstr "Modelines verwijderd"
 msgid ""
 "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
+"Bent u zeker om de X server herstart moet worden? Alle applicaties worden "
+"gesloten!"
 
 #: display.cpp:396
 msgid "Process is running!"
@@ -55,7 +57,7 @@ msgstr "Process klaar"
 #: kernel.cpp:98 kernel.cpp:99 rc.cpp:684 rc.cpp:695
 #, no-c-format
 msgid "Current kernel"
-msgstr ""
+msgstr "huidige locale kernel"
 
 #: kernel.cpp:124 kernel.cpp:174
 msgid "experimental"
@@ -63,23 +65,23 @@ msgstr "experimentaal"
 
 #: kernel.cpp:130
 msgid "There is no newer kernel available!"
-msgstr ""
+msgstr "Er is een nieuwe kernel beschikbaar!"
 
 #: kernel.cpp:135 software.cpp:114
 msgid "Couldn't connect to sidux.com!"
-msgstr ""
+msgstr "Kan geen verbinding met sidux.com maken!"
 
 #: kernel.cpp:167
 msgid "Are you sure you want to install a new kernel?"
-msgstr "Bent u zeker u een nieuwe kernel installeren wilt?"
+msgstr "Bent u zeker dat u een nieuwe kernel wilt installeren?"
 
 #: kernel.cpp:253
 msgid "Are you sure you want to remove the stored kernel files?"
-msgstr "Bent u zeker u een nieuwe kernel installeren wilt?"
+msgstr "Bent u zeker u een kernel verwijdern wilt?"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
-msgstr "Frontend voor sidux manageren"
+msgstr "Frontend om sidux te beheren"
 
 #: main.cpp:46
 msgid "Developer"
@@ -95,9 +97,9 @@ msgstr "Ontwerper van de siduxcc"
 
 #. i18n: file ./networkdialog.ui line 362
 #: network.cpp:225 network.cpp:235 rc.cpp:356
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Mac Address"
-msgstr "<b>MAC Adres</b>"
+msgstr "MAC Adres"
 
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 378
@@ -108,11 +110,11 @@ msgstr "Descriptie"
 
 #: network.cpp:345
 msgid "Encryption key for "
-msgstr ""
+msgstr "Encryption key voor"
 
 #: network.cpp:346
 msgid "WPA Passphrase for "
-msgstr ""
+msgstr "WPA Passphrase voor "
 
 #. i18n: file ./networkdialog.ui line 1107
 #: network.cpp:565 rc.cpp:414
@@ -134,7 +136,7 @@ msgstr "Beeld"
 #: rc.cpp:6 rc.cpp:214 rc.cpp:292 rc.cpp:310 rc.cpp:624
 #, no-c-format
 msgid "appl&y"
-msgstr ""
+msgstr "toepassen"
 
 #. i18n: file ./displaydialog.ui line 68
 #. i18n: file ./servicesdialog.ui line 99
@@ -154,7 +156,7 @@ msgstr "Alt+Y"
 #: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:618 rc.cpp:710
 #, no-c-format
 msgid "&back"
-msgstr ""
+msgstr "terug"
 
 #. i18n: file ./displaydialog.ui line 99
 #. i18n: file ./servicesdialog.ui line 88
@@ -172,7 +174,7 @@ msgstr "Alt+B"
 #: rc.cpp:18
 #, no-c-format
 msgid "restart &X-Server"
-msgstr "Herstart X-Sever"
+msgstr "Herstart &X-Sever"
 
 #. i18n: file ./displaydialog.ui line 113
 #: rc.cpp:21
@@ -187,37 +189,37 @@ msgstr "Alt+X"
 #: rc.cpp:24 rc.cpp:316 rc.cpp:630 rc.cpp:716
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
-msgstr ""
+msgstr "Venster niet sluiten totdat \"Process done!\". verschijnt."
 
 #. i18n: file ./displaydialog.ui line 154
 #: rc.cpp:27
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Change resolution & frequency"
-msgstr "Scanning Frequentie"
+msgstr "Scanning frequentie"
 
 #. i18n: file ./displaydialog.ui line 162
 #: rc.cpp:30
 #, no-c-format
 msgid "Configure color-depth & DPI"
-msgstr ""
+msgstr "Instellen kleur-diepte en DPI"
 
 #. i18n: file ./displaydialog.ui line 170
 #: rc.cpp:33
 #, no-c-format
 msgid "Configure X-Server"
-msgstr ""
+msgstr "Instellen X server"
 
 #. i18n: file ./displaydialog.ui line 178
 #: rc.cpp:36
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install graphiccard-drivers"
-msgstr "Installeer driver"
+msgstr ""
 
 #. i18n: file ./displaydialog.ui line 186
 #: rc.cpp:39
 #, no-c-format
 msgid "Font-Settings"
-msgstr ""
+msgstr "Font-instellingen"
 
 #. i18n: file ./displaydialog.ui line 245
 #. i18n: file ./displaydialog.ui line 605
@@ -239,9 +241,9 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
-"Met de verkeerde opties de x-server werkt niet. Om een oud configuratie, "
-"press CTRL-ALT-F1, inloggen as root en uitvoer siduxcc dan kies Beeld -> "
-"Herstel X"
+"Met een verkeerde optie werkt de x-server niet. Om een oude configuratie te "
+"herstellen druk CTRL-ALT-F1, inloggen als root en start siduxcc en kies dan "
+"beeld -> herstel X"
 
 #. i18n: file ./displaydialog.ui line 291
 #: rc.cpp:48
@@ -293,7 +295,7 @@ msgstr "1600x1200"
 
 #. i18n: file ./displaydialog.ui line 412
 #: rc.cpp:75
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Scanning Frequency"
 msgstr "Scanning Frequentie"
 
@@ -337,7 +339,7 @@ msgstr "CRT"
 #: rc.cpp:98
 #, no-c-format
 msgid "Horizontal Frequenz"
-msgstr "Horizontaal Frequentie"
+msgstr "Horizontale frequentie"
 
 #. i18n: file ./displaydialog.ui line 570
 #: rc.cpp:101
@@ -351,14 +353,14 @@ msgstr "NB"
 msgid ""
 "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
-"A;s u de ATI driver (fglrx) zijn gebruiken, u mag de kleurdiepte niet "
-"veranderen"
+"Als u de ATI driver (fglrx) gebruikt, kan de kleurdiepte niet veranderd "
+"worden."
 
 #. i18n: file ./displaydialog.ui line 640
 #: rc.cpp:113
 #, no-c-format
 msgid "Color-Depth"
-msgstr "Kleurdiepte"
+msgstr "kleurdiepte"
 
 #. i18n: file ./displaydialog.ui line 664
 #: rc.cpp:116
@@ -406,7 +408,7 @@ msgstr "Modelijnen"
 #: rc.cpp:143
 #, no-c-format
 msgid "Rem&ove Modelines"
-msgstr "Verwijder Modelijnen"
+msgstr "Verwijder modelijnen"
 
 #. i18n: file ./displaydialog.ui line 925
 #. i18n: file ./displaydialog.ui line 1237
@@ -417,13 +419,14 @@ msgstr "Verwijder Modelijnen"
 #: rc.cpp:146 rc.cpp:200 rc.cpp:337 rc.cpp:404 rc.cpp:493 rc.cpp:603
 #, no-c-format
 msgid "Alt+O"
-msgstr "Dit duurt een beetje. <b>Sluit de venster niet</b> tijdens de proces"
+msgstr ""
+"Dit duurt een beetje. <b>Sluit het venster niet</b> tijdens het proces."
 
 #. i18n: file ./displaydialog.ui line 953
 #: rc.cpp:149
 #, no-c-format
 msgid "Selecet X-Module"
-msgstr ""
+msgstr "kies x-module"
 
 #. i18n: file ./displaydialog.ui line 990
 #: rc.cpp:152
@@ -484,7 +487,7 @@ msgstr "fglrx"
 #: rc.cpp:176
 #, no-c-format
 msgid "vboxvideo"
-msgstr ""
+msgstr "vboxvideo"
 
 #. i18n: file ./displaydialog.ui line 1118
 #: rc.cpp:185
@@ -494,7 +497,7 @@ msgstr "ATI/nVidia (non-free)"
 
 #. i18n: file ./displaydialog.ui line 1158
 #: rc.cpp:188
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "I&nstall driver"
 msgstr "Installeer driver"
 
@@ -508,7 +511,7 @@ msgstr "Fonts (fix-fonts)"
 #: rc.cpp:197
 #, no-c-format
 msgid "Register F&onts"
-msgstr "Registreer Fonts"
+msgstr "Registreer f&onts"
 
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 486
@@ -521,25 +524,25 @@ msgstr "Services"
 #: rc.cpp:220
 #, no-c-format
 msgid "Manage services"
-msgstr "Kies Service"
+msgstr "Kies service"
 
 #. i18n: file ./servicesdialog.ui line 127
 #: rc.cpp:223
 #, no-c-format
 msgid "Start services at boot"
-msgstr ""
+msgstr "Diensten activeren tijdens opstarten."
 
 #. i18n: file ./servicesdialog.ui line 197
 #: rc.cpp:226
 #, no-c-format
 msgid "Select service"
-msgstr "Kies Service"
+msgstr "Kies service"
 
 #. i18n: file ./servicesdialog.ui line 237
 #: rc.cpp:229
 #, no-c-format
 msgid "Status"
-msgstr "Status"
+msgstr "status"
 
 #. i18n: file ./servicesdialog.ui line 286
 #: rc.cpp:232
@@ -551,25 +554,25 @@ msgstr "Status: niet actief"
 #: rc.cpp:238
 #, no-c-format
 msgid "Description Text"
-msgstr "Descriptie Tekst"
+msgstr "Descriptie tekst"
 
 #. i18n: file ./servicesdialog.ui line 354
 #: rc.cpp:241
 #, no-c-format
 msgid "Action"
-msgstr "Actie"
+msgstr "actie"
 
 #. i18n: file ./servicesdialog.ui line 401
 #: rc.cpp:250
 #, no-c-format
 msgid "Restart"
-msgstr "Herstart"
+msgstr "herstarten"
 
 #. i18n: file ./servicesdialog.ui line 420
 #: rc.cpp:254
 #, no-c-format
 msgid "Reloa&d"
-msgstr "Herload"
+msgstr "opnieuw laden"
 
 #. i18n: file ./servicesdialog.ui line 423
 #: rc.cpp:257
@@ -581,13 +584,13 @@ msgstr "Alt+D"
 #: rc.cpp:260
 #, no-c-format
 msgid "Delete Ru&nlevel-Entry"
-msgstr "Vervijder Runlevel Entry"
+msgstr "Verwijder runlevel entry"
 
 #. i18n: file ./servicesdialog.ui line 458
 #: rc.cpp:266
 #, no-c-format
 msgid "&Add a Runlevel-Entry (Start service at Boot)"
-msgstr "Draag een Runlevel-Entry bij (Start service op Boot)"
+msgstr "Voeg een runlevel-Entry toe (start dienst tijdens booten)"
 
 #. i18n: file ./servicesdialog.ui line 461
 #. i18n: file ./networkdialog.ui line 287
@@ -607,7 +610,7 @@ msgstr "Alt+A"
 #: rc.cpp:275
 #, no-c-format
 msgid "Active Services:"
-msgstr "Actief Services:"
+msgstr "Actieve diensten:"
 
 #. i18n: file ./servicesdialog.ui line 551
 #: rc.cpp:278
@@ -625,7 +628,7 @@ msgstr "<"
 #: rc.cpp:286
 #, no-c-format
 msgid "Disabled Services:"
-msgstr "Non-actief Services:"
+msgstr "Niet-actieve diensten:"
 
 #. i18n: file ./internetdialog.ui line 17
 #: rc.cpp:289 start.cpp:60 start.cpp:124
@@ -637,7 +640,7 @@ msgstr "Internet"
 #: rc.cpp:298
 #, no-c-format
 msgid "sidux-Browser"
-msgstr ""
+msgstr "sidux-browser"
 
 #. i18n: file ./networkdialog.ui line 17
 #: rc.cpp:301 start.cpp:68 start.cpp:104
@@ -650,35 +653,35 @@ msgstr "Netwerk"
 #: rc.cpp:319 rc.cpp:653
 #, no-c-format
 msgid "Configure Networkcards"
-msgstr "Lijst van geconfigureerd netwerk devices"
+msgstr "netwerkkaart configureren"
 
 #. i18n: file ./networkdialog.ui line 157
 #. i18n: file ./kerneldialog.ui line 34
 #: rc.cpp:322 rc.cpp:656
 #, no-c-format
 msgid "Set Hostname"
-msgstr ""
+msgstr "Hostname vastleggen"
 
 #. i18n: file ./networkdialog.ui line 165
 #. i18n: file ./kerneldialog.ui line 42
 #: rc.cpp:325 rc.cpp:659
 #, no-c-format
 msgid "Set Nameservers"
-msgstr ""
+msgstr "Nameservers vastleggen"
 
 #. i18n: file ./networkdialog.ui line 173
 #. i18n: file ./kerneldialog.ui line 50
 #: rc.cpp:328 rc.cpp:662
 #, no-c-format
 msgid "Install Wlan-Cards (Ndiswrapper)"
-msgstr ""
+msgstr "Wlan-Cards met Ndiswrapper installeren"
 
 #. i18n: file ./networkdialog.ui line 181
 #. i18n: file ./kerneldialog.ui line 58
 #: rc.cpp:331 rc.cpp:665
 #, no-c-format
 msgid "Install Wlan-Cards (fwdetect)"
-msgstr ""
+msgstr "Wlan-Cards met fwdetect installeren"
 
 #. i18n: file ./networkdialog.ui line 251
 #: rc.cpp:334
@@ -690,19 +693,19 @@ msgstr ""
 #: rc.cpp:340
 #, no-c-format
 msgid "Change the settings of the selected device"
-msgstr "Verander de settings voor de geselecteerde device"
+msgstr "Verander de instellingen voor de geselecteerde device"
 
 #. i18n: file ./networkdialog.ui line 284
 #: rc.cpp:343
 #, no-c-format
 msgid "En&able"
-msgstr ""
+msgstr "activeren"
 
 #. i18n: file ./networkdialog.ui line 314
 #: rc.cpp:349
 #, no-c-format
 msgid "Disa&ble"
-msgstr ""
+msgstr "deactiveren"
 
 #. i18n: file ./networkdialog.ui line 388
 #: rc.cpp:362
@@ -744,25 +747,25 @@ msgstr "Slot"
 #: rc.cpp:380
 #, no-c-format
 msgid "List of configured network devices"
-msgstr "Lijst van geconfigureerd netwerk devices"
+msgstr "Lijst van geconfigureerde netwerk devices"
 
 #. i18n: file ./networkdialog.ui line 514
 #: rc.cpp:383
 #, no-c-format
 msgid "Hostname"
-msgstr ""
+msgstr "hostname"
 
 #. i18n: file ./networkdialog.ui line 569
 #: rc.cpp:386
 #, no-c-format
 msgid "DNS Servers"
-msgstr ""
+msgstr "DNS Servers"
 
 #. i18n: file ./networkdialog.ui line 604
 #: rc.cpp:389
 #, no-c-format
 msgid "Install wlan card"
-msgstr ""
+msgstr "Installeer wlan card"
 
 #. i18n: file ./networkdialog.ui line 638
 #: rc.cpp:392
@@ -774,19 +777,19 @@ msgstr "Ndiswrapper"
 #: rc.cpp:398
 #, no-c-format
 msgid "Cards known to work"
-msgstr "Kaarten de zeker werken"
+msgstr "Kaarten die zeker werken"
 
 #. i18n: file ./networkdialog.ui line 703
 #: rc.cpp:401
 #, no-c-format
 msgid "Sh&ow list"
-msgstr ""
+msgstr "toon lijst"
 
 #. i18n: file ./networkdialog.ui line 1044
 #: rc.cpp:408
 #, no-c-format
 msgid "Inst&all"
-msgstr "Installeer"
+msgstr "Inst&alleer"
 
 #. i18n: file ./networkdialog.ui line 1112
 #: rc.cpp:417
@@ -798,44 +801,44 @@ msgstr "alle"
 #: rc.cpp:421
 #, no-c-format
 msgid "LAN settings"
-msgstr ""
+msgstr "LAN instellingen"
 
 #. i18n: file ./networkdialog.ui line 1162
 #: rc.cpp:424
 #, no-c-format
 msgid "WLAN settings"
-msgstr ""
+msgstr "WLAN instellingen"
 
 #. i18n: file ./networkdialog.ui line 1167
 #: rc.cpp:427
 #, no-c-format
 msgid "WLAN security"
-msgstr ""
+msgstr "WLAN beveiliging"
 
 #. i18n: file ./networkdialog.ui line 1264
 #: rc.cpp:432
 #, no-c-format
 msgid "&Automatic (DHCP)"
-msgstr ""
+msgstr "&Automatisch (DHCP)"
 
 #. i18n: file ./networkdialog.ui line 1286
 #: rc.cpp:438
 #, no-c-format
 msgid "&Manual"
-msgstr ""
+msgstr "handleiding"
 
 #. i18n: file ./networkdialog.ui line 1289
 #. i18n: file ./kerneldialog.ui line 379
 #: rc.cpp:441 rc.cpp:692
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+M"
-msgstr "Alt+Y"
+msgstr "Alt+M"
 
 #. i18n: file ./networkdialog.ui line 1332
 #: rc.cpp:444
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Network Mask:"
-msgstr "Netwerk"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1340
 #: rc.cpp:447
@@ -892,7 +895,7 @@ msgstr ""
 #: rc.cpp:480
 #, no-c-format
 msgid "Ena&ble \"allow-hotplug\""
-msgstr ""
+msgstr "a&bctiveren \"allow-hotplug\""
 
 #. i18n: file ./networkdialog.ui line 1425
 #: rc.cpp:486
@@ -905,12 +908,18 @@ msgid ""
 "adapters, since it will only configure the interface when a cable is really "
 "connected."
 msgstr ""
+"<b>allow-hotplug</b>: Deze optie is zinvol met <b>ifplugd</b>/n, dat is een "
+"daemon waarmee automatisch configuraties voor de ethernet device vastgelegd "
+"worden als een kabelverbinding bestaat. Hiermee wordt het tevens automatisch "
+"platgelegd als geen kabelverbinding actief is./n Dat is handig voor laptops "
+"met onboard network adapters. De configuratie van de interface wordt alleen "
+"uitgevoerd als er een kabelverbinding aanwezig is."
 
 #. i18n: file ./networkdialog.ui line 1441
 #: rc.cpp:490
 #, no-c-format
 msgid "Activate when the c&omputer starts"
-msgstr ""
+msgstr "Activeren als de pc wordt gestart."
 
 #. i18n: file ./networkdialog.ui line 1468
 #: rc.cpp:496
@@ -950,21 +959,21 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1520
 #: rc.cpp:515
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Auto"
-msgstr "custom"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1548
 #: rc.cpp:518
 #, no-c-format
 msgid "Mode:"
-msgstr ""
+msgstr "modus"
 
 #. i18n: file ./networkdialog.ui line 1564
 #: rc.cpp:521
 #, no-c-format
 msgid "Advanced options"
-msgstr ""
+msgstr "Geavanceerde instellingen"
 
 #. i18n: file ./networkdialog.ui line 1578
 #: rc.cpp:524
@@ -998,15 +1007,15 @@ msgstr "Scanning Frequentie"
 
 #. i18n: file ./networkdialog.ui line 1654
 #: rc.cpp:539
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&Auto"
-msgstr "custom"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1668
 #: rc.cpp:545
 #, no-c-format
 msgid "Cha&nnel:"
-msgstr ""
+msgstr "ka&naal"
 
 #. i18n: file ./networkdialog.ui line 1679
 #: rc.cpp:551
@@ -1036,13 +1045,13 @@ msgstr ""
 #: rc.cpp:563
 #, no-c-format
 msgid "En&able WPA support"
-msgstr ""
+msgstr "&activeerWPA support"
 
 #. i18n: file ./networkdialog.ui line 1752
 #: rc.cpp:569
 #, no-c-format
 msgid "Encryption key for"
-msgstr ""
+msgstr "Encryption key voor"
 
 #. i18n: file ./networkdialog.ui line 1768
 #: rc.cpp:572
@@ -1058,15 +1067,15 @@ msgstr "Software"
 
 #. i18n: file ./softwaredialog.ui line 48
 #: rc.cpp:579
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Show upgradable packages"
-msgstr "Upgragable Packages"
+msgstr "Toon upgradable packages"
 
 #. i18n: file ./softwaredialog.ui line 111
 #: rc.cpp:582 software.cpp:109
 #, no-c-format
 msgid "There are no warnings"
-msgstr "Er zijn geen warschuwingen"
+msgstr "Er zijn geen warschuwingen."
 
 #. i18n: file ./softwaredialog.ui line 133
 #: rc.cpp:585
@@ -1078,25 +1087,25 @@ msgstr "Naam"
 #: rc.cpp:588
 #, no-c-format
 msgid "Installed Version"
-msgstr "Installerde Versie"
+msgstr "G&#239;nstallerde versie"
 
 #. i18n: file ./softwaredialog.ui line 155
 #: rc.cpp:591
 #, no-c-format
 msgid "Latest Version"
-msgstr "Nieuwste Versie"
+msgstr "Nieuwste versie"
 
 #. i18n: file ./softwaredialog.ui line 233
 #: rc.cpp:594
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Clea&n"
-msgstr "Schoonmaken"
+msgstr "Schoo&nmaken"
 
 #. i18n: file ./softwaredialog.ui line 278
 #: rc.cpp:600
 #, no-c-format
 msgid "D&ownload"
-msgstr "Download"
+msgstr "D&ownload"
 
 #. i18n: file ./softwaredialog.ui line 322
 #: rc.cpp:609
@@ -1108,7 +1117,7 @@ msgstr "Alt+U"
 #: rc.cpp:612
 #, no-c-format
 msgid "Upgr&ade"
-msgstr "Upgrade"
+msgstr "Upgr&ade"
 
 #. i18n: file ./infodialog.ui line 17
 #: rc.cpp:633
@@ -1126,7 +1135,7 @@ msgstr "Over sidux"
 #: rc.cpp:639
 #, no-c-format
 msgid "sidux Version:"
-msgstr "sidux Versie"
+msgstr "sidux versie"
 
 #. i18n: file ./infodialog.ui line 94
 #: rc.cpp:643
@@ -1150,25 +1159,25 @@ msgstr "Kernel"
 #: rc.cpp:668
 #, no-c-format
 msgid "Install new kernel"
-msgstr ""
+msgstr "installeer een nieuwe kernel"
 
 #. i18n: file ./kerneldialog.ui line 121
 #: rc.cpp:671
 #, no-c-format
 msgid "Remove old kernels"
-msgstr ""
+msgstr "verwijder kernel modules"
 
 #. i18n: file ./kerneldialog.ui line 129
 #: rc.cpp:674
 #, no-c-format
 msgid "Install kernel modules"
-msgstr ""
+msgstr "installeer kernel modules"
 
 #. i18n: file ./kerneldialog.ui line 220
 #: rc.cpp:678
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "ins&tall"
-msgstr "Installeer"
+msgstr "installeer"
 
 #. i18n: file ./kerneldialog.ui line 223
 #: rc.cpp:681
@@ -1204,7 +1213,7 @@ msgstr "sidux Control Center"
 #: rc.cpp:722
 #, no-c-format
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #. i18n: file ./startdialog.ui line 316
 #: rc.cpp:725
@@ -1214,27 +1223,30 @@ msgid ""
 "to configure your distribution. Select an item from the \n"
 "menu to load a configuration module."
 msgstr ""
+"Welkom in het sidux Control Center (systeembeheer), \n"
+" het adres om instellingen van uw Linuxdistributie te regelen.\n"
+" Kies een onderwerp in het menu en start een module voor de instellingen."
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
 #: rc.cpp:730 rc.cpp:733
 #, no-c-format
 msgid "sidux manual"
-msgstr ""
+msgstr "sidux handleiding"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
 #: rc.cpp:737 rc.cpp:740
 #, no-c-format
 msgid "sidux Homepage"
-msgstr ""
+msgstr "sidux Homepage"
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
 #: rc.cpp:747 rc.cpp:750
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "About siduxcc"
-msgstr "Over sidux"
+msgstr "Over siduxcc"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
@@ -1246,16 +1258,16 @@ msgstr "Sluiten"
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
 #: rc.cpp:760 rc.cpp:763
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "About KDE"
-msgstr "Over sidux"
+msgstr "Over KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
 #: rc.cpp:766 rc.cpp:769
 #, no-c-format
 msgid "Language"
-msgstr ""
+msgstr "taal"
 
 #: services.cpp:165 services.cpp:170
 msgid "Status: %1"
@@ -1271,23 +1283,22 @@ msgstr "actief"
 
 #: services.cpp:176
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
-msgstr ""
-"Apache v2 is de volgende generatie van de overal te vinden Apache web server"
+msgstr "Apache v2 is de volgende generatie van de bekende Apache web server."
 
 #: services.cpp:177
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
 msgstr ""
-"The Common UNIX Printing System (CUPS) is een afdruking systeem en de "
-"vervanger van lpd en zo"
+"Het Common UNIX Printing System (CUPS) is een afdruk-systeem en de vervanger "
+"van lpd en anderen."
 
 #: services.cpp:178
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
 msgstr ""
-"MYSQL is een snelle stabiel multi-gebruiker, multi-threaded SQL database"
+"MYSQL is een snelle stabiele multi-gebruiker, multi-threaded SQL database."
 
 #: services.cpp:179
 msgid ""
@@ -1295,13 +1306,16 @@ msgid ""
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
 msgstr ""
+"De Samba software suite is een verzameling van programma's dat het SMB/CIFS "
+"protocol beschikbaar maakt voor unix systemen, hiermee kunnen bestanden en "
+"printers met  Windows, NT, OS/2 en DOS clients worden gedeeld."
 
 #: services.cpp:180
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
 msgstr ""
-"SSH is een fraai en gratis impementatie van de Shell protocol als "
+"SSH is een free/gratis impementatie van het secure shell protocol zoals "
 "gedefinieerd door de IETF secsh working group"
 
 #: software.cpp:84
@@ -1310,7 +1324,7 @@ msgstr "Apt-show-versions is niet te vinden!"
 
 #: software.cpp:84
 msgid "Do you want to install it?"
-msgstr "Wilt u hem installeren"
+msgstr "Wilt u het installeren?"
 
 #: software.cpp:121
 msgid "Don't make a dist-Upgrade!"
@@ -1323,86 +1337,17 @@ msgid ""
 "choose the option Software->Dist-Upgrade"
 msgstr ""
 "Om een dist-upgrade te maaken moet u in runlevel 3 zijn.  Toets CTRL-ALT-F1, "
-"inloggen als root en toets: init 3.  Daarna toets: siduxcc en kies Software-"
-">Dist-Upgrade"
+"inloggen als root en toets: init 3.  Daarna toets: siduxcc en kies software-"
+">dist-upgrade"
 
 #: software.cpp:180
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Bent u zeker dat u uw locale repository wilt schoonmaken?"
 
 #: start.cpp:80
-#, fuzzy
 msgid "System-Info"
-msgstr "System Info"
+msgstr "Systeem informatie"
 
 #: start.cpp:137
 msgid "System Info"
-msgstr "System Info"
-
-#, fuzzy
-#~ msgid "Alt+V"
-#~ msgstr "Alt+Y"
-
-#~ msgid ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-#~ msgstr ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-
-#~ msgid "sidux-Browser (require root access)"
-#~ msgstr "sidux-Browser (root nodig)"
-
-#~ msgid "Alt+C"
-#~ msgstr "Alt+C"
-
-#~ msgid "xxx"
-#~ msgstr "xxx"
-
-#~ msgid "<b>Description:</b>"
-#~ msgstr "<b>Descriptie</b>"
-
-#, fuzzy
-#~ msgid "Alt+G"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "I&nterface"
-#~ msgstr "Interface"
-
-#, fuzzy
-#~ msgid "Alt+S"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "&IP address"
-#~ msgstr "IP Adres"
-
-#, fuzzy
-#~ msgid "pri&vate"
-#~ msgstr "Upgrade"
-
-#, fuzzy
-#~ msgid "64 bit"
-#~ msgstr "16 bit"
-
-#, fuzzy
-#~ msgid "128 bit"
-#~ msgstr "8 bit"
-
-#, fuzzy
-#~ msgid "152 bit"
-#~ msgstr "15 bit"
-
-#, fuzzy
-#~ msgid "256 bit"
-#~ msgstr "15 bit"
-
-#~ msgid "local kernel"
-#~ msgstr "Gebruikte Kernel:"
-
-#~ msgid "The versions of the new and the current Kernel are the same!"
-#~ msgstr "De versies van de gebruikte en de nieuwe zijn hetzelfde"
-
-#~ msgid "No internet connection!"
-#~ msgstr "Geen interent connectie"
+msgstr "Systeem informatie"

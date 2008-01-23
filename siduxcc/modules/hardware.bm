@@ -131,37 +131,6 @@ function install()
 
 }
 
-function addSources()
-{
-	# this function adds sources to install non-free firmware
-	# this function is based on install-meta from Horst Tritremmel <hjt@sidux.com>
-
-	[ -z "$(grep deb\ .*debian\.org.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb \(.*\)debian.org\/debian unstable \(.*\)/deb \1debian.org\/debian unstable main contrib non-free/' /etc/apt/sources.list || echo found deb *contrib in sources.list for debian
-
-	[ -z "$(grep deb\ .*debian\.org.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb \(.*\)debian.org\/debian\/ sid \(.*\)/deb \1debian.org\/debian\/ sid main contrib non-free/' /etc/apt/sources.list || echo found deb *contrib in sources.list for debian
-
-	[ -z "$(grep deb-src\ .*debian\.org.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)debian.org\/debian unstable \(.*\)/deb-src \1debian.org\/debian unstable main contrib non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for debian
-
-	[ -z "$(grep deb-src\ .*debian\.org.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)debian.org\/debian\/ sid \(.*\)/deb-src \1debian.org\/debian\/ sid main contrib non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for debian
-
-	[ -z "$(grep deb\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb \(.*\)sidux.com\/debian\/ sid \(.*\)/deb \1sidux.com\/debian\/ sid main contrib non-free firmware fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb *contrib in sources.list for sidux
-
-	[ -z "$(grep deb-src\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)sidux.com\/debian\/ sid \(.*\)/deb-src \1sidux.com\/debian\/ sid main contrib non-free firmware fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for sidux
-}
-
-function gfx()
-{
-	# Binary, non-free drivers for: Nvidia / ATI
-	get-sidux-binary-gfx
-	install-binary-gfx -a
-
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
-
-
 
 function hardware_interface()
 {
