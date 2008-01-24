@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-14 02:11+0100\n"
+"POT-Creation-Date: 2008-01-24 21:07+0100\n"
 "PO-Revision-Date: 2007-10-25 22:39+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -62,11 +62,10 @@ msgstr "indtast ny DPI-indstilling:"
 msgid "Default Color Depth"
 msgstr "Standard farve dybde"
 
-#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
-#: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
-#: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
-#: modules/software.bm:110
+#: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:96 modules/kernel.bm:108
+#: modules/network.bm:111 modules/software.bm:65 modules/software.bm:74
+#: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Tast <retur> for at fortsætte..."
@@ -121,29 +120,17 @@ msgstr "Genstart X-Serveren"
 msgid "Restore X-Server"
 msgstr "Gendan X-Serveren"
 
-#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
-#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:170
+#: modules/network.bm:128 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:199
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Retur til hovedmenuen"
 
-#: modules/display.bm:343 modules/network.bm:370
+#: modules/display.bm:343 modules/network.bm:135
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Fejl: Dette modul er endnu ikke implementeret!"
-
-#: modules/hardware.bm:9 modules/hardware.bm:170
-#, sh-format
-msgid "Hardware"
-msgstr "Hardware"
-
-#: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
-#: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
-#, sh-format
-msgid "Process done!"
-msgstr "Process færdig!"
 
 #: modules/info.bm:10 modules/info.bm:21
 #, sh-format
@@ -175,6 +162,13 @@ msgstr "Kernel"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "Kernel-remover mangler! Vil du installere den?"
 
+#: modules/kernel.bm:27 modules/kernel.bm:107 modules/network.bm:110
+#: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
+#: modules/software.bm:98 modules/software.bm:109
+#, sh-format
+msgid "Process done!"
+msgstr "Process færdig!"
+
 #: modules/kernel.bm:95
 #, sh-format
 msgid "The installation is finished!"
@@ -200,7 +194,7 @@ msgstr "Kør kernel-remover"
 msgid "Update kernel"
 msgstr "Opdater kernel"
 
-#: modules/network.bm:15 modules/network.bm:360
+#: modules/network.bm:15 modules/network.bm:125
 #, sh-format
 msgid "Network"
 msgstr "Netværk"
@@ -210,12 +204,12 @@ msgstr "Netværk"
 msgid "Enter a new hostname:"
 msgstr "indtast ny opløsning:"
 
-#: modules/network.bm:361
+#: modules/network.bm:126
 #, sh-format
 msgid "Configure Networkcars"
 msgstr ""
 
-#: modules/network.bm:362
+#: modules/network.bm:127
 #, sh-format
 msgid "Set Hostname"
 msgstr ""
@@ -309,7 +303,7 @@ msgstr ""
 "ingen forbindelse til sidux.com. Det var ikke muligt at teste om der var "
 "nogen dist-upgrade advarsler. vil du fortsætte alligevel?"
 
-#: modules/software.bm:10 modules/software.bm:176
+#: modules/software.bm:10 modules/software.bm:195
 #, sh-format
 msgid "Software"
 msgstr "Software"
@@ -338,17 +332,17 @@ msgstr "I øjeblikket er der ingen dist-upgrade advarsler!"
 msgid "Please choose a date..."
 msgstr "Vælg venligst en dato..."
 
-#: modules/software.bm:177
+#: modules/software.bm:196
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr "Kør Dist-Upgrade"
 
-#: modules/software.bm:178
+#: modules/software.bm:197
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr "Vis dist-upgrade Advarsler"
 
-#: modules/software.bm:179
+#: modules/software.bm:198
 #, sh-format
 msgid "Show DU-Log"
 msgstr "Vis dist-upgrade log"
@@ -367,3 +361,6 @@ msgstr "Hovedmenu"
 #, sh-format
 msgid "Exit"
 msgstr "Afslut"
+
+#~ msgid "Hardware"
+#~ msgstr "Hardware"

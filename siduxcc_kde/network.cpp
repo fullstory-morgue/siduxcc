@@ -34,8 +34,8 @@
 #include <qspinbox.h>
 #include <qregexp.h>
 #include <kapp.h>
-
-
+#include <qfile.h>
+#include <string.h>
 
 #include "network.h"
 #include "console.h"
@@ -111,15 +111,17 @@ void network::connections()
 	//netcardconfig
 		connect( networkcardComboBox, SIGNAL( activated(int) ), networkcardWidget, SLOT( raiseWidget(int) ));
 		// tab 1
-			connect( dhcpRadioButton, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( dhcpRadioButton, SIGNAL( toggled(bool) ), staticFrame, SLOT( setDisabled(bool) ));
-			connect( staticRadioButton, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
+			connect( methodComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
+			connect( methodComboBox, SIGNAL( activated(int) ), this, SLOT( enableStaticFrame() ));
 			connect( ipLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
 			connect( netmaskLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
 			connect( broadcastLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
 			connect( gatewayLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( bootCheckBox, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( hotplugCheckBox, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
+			connect( classComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
+			connect( classPushButton,  SIGNAL( clicked() ), this, SLOT( classHelp() ));
+			connect( methodPushButton, SIGNAL( clicked() ), this, SLOT( methodHelp() ));
+
+
 		// tab 2
 			connect( essidLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
 			connect( modeComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
@@ -191,31 +193,30 @@ void network::getNetworkcards()
 		QStringList info = QStringList::split( ",", devices[i] );
 
 		// get device status
-		this->shell->setCommand("siduxcc network getStatus "+info[0]);
+		this->shell->setCommand("siduxcc network getOverview "+info[0]);
 		this->shell->start(true);
-		QStringList status = QStringList::split( ",", this->shell->getBuffer(), TRUE );
-		status[0] = status[0].mid(1); // remove +
+		QStringList overview = QStringList::split( ",", this->shell->getBuffer(), TRUE );
 
 		QListViewItem * item = new QListViewItem( ncList, 0 );
-		item->setText(0, info[0]);     // device name (E.g. eth0)
-		item->setText(1, status[0]);   // ip:      xxx.xxx.xxx.xxx
-		item->setText(2, status[1]);   // method:  dhcp/static)
-		item->setText(3, status[2]);   // boot:    enable/disable)
-		item->setText(4, info[2]);     // driver   e.g. e1000
-		item->setText(5, info[3]);     // slot:    e.g. pci
+		item->setText(0, info[0]);      // device name (E.g. eth0)
+		item->setText(1, overview[1]);  // ip:      xxx.xxx.xxx.xxx
+		item->setText(2, overview[2]);  // method:  dhcp/static
+		item->setText(3, overview[3]);  // class:   auto/hotplug
+		item->setText(4, info[2]);      // driver   e.g. e1000
+		item->setText(5, info[3]);      // slot:    e.g. pci
 
-		item->setText(6, info[1]);     // type:    wireless/ethernet
-		item->setText(7, info[4]);     // mac-address (xx:xx:...)
-		item->setText(8, info[5]);     // description
+		item->setText(6, info[1]);      // type:    wireless/ethernet
+		item->setText(7, info[4]);      // mac-address (xx:xx:...)
+		item->setText(8, info[5]);      // description
 
 		// set image
 		if(info[1] == "ethernet")
-			if(status[3].left(7) == "running")
+			if(overview[0] == "activ")
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_up.png"));
 			else
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_down.png"));
 		if(info[1] == "wireless")
-			if(status[3].left(7) == "running")
+			if(overview[0] == "activ")
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_up.png"));
 			else
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png"));
@@ -260,22 +261,21 @@ void network::updateNetworkcardStatus()
 {
 	QString networkcard = ncList->currentItem()->text(0);
 	QString type = ncList->currentItem()->text(6);
-	this->shell->setCommand("siduxcc network getStatus "+networkcard);
+	this->shell->setCommand("siduxcc network getOverview "+networkcard);
 	this->shell->start(true);
-	QStringList status = QStringList::split( "\n+", this->shell->getBuffer(), TRUE );
-	status[0] = status[0].mid(1); // remove +
+	QStringList overview = QStringList::split( ",", this->shell->getBuffer(), TRUE );
 
-	ncList->currentItem()->setText(1, status[0]);     // ip:      xxx.xxx.xxx.xxx
-	ncList->currentItem()->setText(2, status[1]);     // method:  dhcp/static)
-	ncList->currentItem()->setText(3, status[2]);     // boot:    enable/disable)
+	ncList->currentItem()->setText(1, overview[1]);     // ip:      xxx.xxx.xxx.xxx
+	ncList->currentItem()->setText(2, overview[2]);     // method:  dhcp/static
+	ncList->currentItem()->setText(3, overview[3]);     // class:    auto/hotplug
 
 	if(type == "ethernet")
-		if(status[3].left(7) == "running")
+		if(overview[0] == "activ")
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_up.png"));
 		else
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_down.png"));
 	if(type == "wireless")
-		if(status[3].left(7) == "running")
+		if(overview[0] == "activ")
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_up.png"));
 		else
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png"));
@@ -292,79 +292,76 @@ void network::getNetworkcardSettings()
 
 	
 	widgetStack2->raiseWidget(6);
-
-	QString networkcard = ncList->currentItem()->text(0);
-	QString description =  QStringList::split( " ", ncList->currentItem()->text(8) )[0]+")";
-	networkcardTextLabel->setText(networkcard+" "+description);
-
-	// get Networkcard settings
-	this->shell->setCommand("siduxcc network getNetworkcardConfig "+networkcard);
-	this->shell->start(true);
-	QStringList settings = QStringList::split( "\n+", this->shell->getBuffer(), TRUE );
-	settings[0] = settings[0].mid(1); // remove +
-	QStringList::Iterator it = settings.begin();
-
-	networkcardComboBox->setHidden(TRUE);
 	networkcardWidget->raiseWidget(0);
 
-	// type: lan | wlan
-	QString type = *it++;
+	QString networkcard = ncList->currentItem()->text(0); // eth0
+	QString type        = ncList->currentItem()->text(6); // ethernet | wireless
+	networkcardTextLabel->setText("Card: "+networkcard);
 
-	// mode: "" | auto | allow-hotplug | auto allow-hotplug
-	bootCheckBox->setChecked(FALSE);
-	hotplugCheckBox->setChecked(FALSE);
-	if( (*it).contains("auto") )
-		bootCheckBox->setChecked(TRUE);
-	if( (*it).contains("allow-hotplug"))
-		hotplugCheckBox->setChecked(TRUE);
-	*it++;
+	// get Networkcard settings
+	this->shell->setCommand("Ceni_read_config --iface "+networkcard);
+	this->shell->start(true);
+	QStringList cardsettings = QStringList::split( "\n", this->shell->getBuffer(), TRUE );
 
 
-	//method: static | dhcp
-	if( (*it).left(6) == "static" )
-		staticRadioButton->setChecked(TRUE);
-	else if( (*it).left(4) == "dhcp" )
-		dhcpRadioButton->setChecked(TRUE);
-	*it++;
+	// mode: "" | allow-hotplug | auto
+	if( cardsettings.grep("class,allow-hotplug").count() == 1 )
+		classComboBox->setCurrentItem(1);
+	else if (  cardsettings.grep("class,auto").count() == 1 )
+		classComboBox->setCurrentItem(2);
 
-	ipLineEdit->setText(*it++);         // xxx.xxx.xxx.xxx
-	netmaskLineEdit->setText(*it++);    // xxx.xxx.xxx.xxx
-	broadcastLineEdit->setText(*it++);  // xxx.xxx.xxx.xxx
-	gatewayLineEdit->setText(*it++);    // xxx.xxx.xxx.xxx
+	//method: "" | static | dhcp
+	if( cardsettings.grep("method,dhcp").count() == 1 )
+		methodComboBox->setCurrentItem(0);
+	else if (  cardsettings.grep("method,static").count() == 1 )
+		methodComboBox->setCurrentItem(1);
+	enableStaticFrame();
+
+	ipLineEdit->setText(        QStringList::split(",", cardsettings.grep( "address,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	netmaskLineEdit->setText(   QStringList::split(",", cardsettings.grep( "netmask,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	broadcastLineEdit->setText( QStringList::split(",", cardsettings.grep( "broadcast," )[0] )[1] );  // xxx.xxx.xxx.xxx
+	networkLineEdit->setText(   QStringList::split(",", cardsettings.grep( "network,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	gatewayLineEdit->setText(   QStringList::split(",", cardsettings.grep( "gateway,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
 
 
-	// wlan
-	if(type == "wlan")
+		
+
+	if(type == "wireless")
 	{
-		networkcardComboBox->setHidden(FALSE);
+		networkcardComboBox->show();
+		networkcardComboBox->setCurrentItem(0);
+		networkcardComboBox->removeItem(2); // disable security tab
 	
+
+		QString essid = QStringList::split(",", cardsettings.grep( "ssid," )[0] )[1];
+
 		// essid
-		essidLineEdit->setText(*it);
+		essidLineEdit->setText( essid );  // E.g. myWlanNetwork
+			
 
 		// securitexte
 		securityTextLabel1->setText(i18n("Encryption key for ")+networkcard);
-		securityTextLabel2->setText(i18n("WPA Passphrase for ")+*it++);
+		securityTextLabel2->setText(i18n("WPA Passphrase for ")+essid);
 
-		//mode
-		if( *it == "Managed" )
-			modeComboBox->setCurrentItem(1);
-		else if( *it == "Ad-Hoc" )
-			modeComboBox->setCurrentItem(2);
-		else if( *it == "Master" )
-			modeComboBox->setCurrentItem(3);
-		else if( *it == "Repeater" )
-			modeComboBox->setCurrentItem(4);
-		else if( *it == "Secondary" )
-			modeComboBox->setCurrentItem(5);
-		else if( *it == "Auto" )
-			modeComboBox->setCurrentItem(6);
-		else
-			modeComboBox->setCurrentItem(0);
-		*it++;
+
+		//wlan mode:
+		if( cardsettings.grep("wireless-mode,managed").count() == 1 )
+			methodComboBox->setCurrentItem(1);
+		else if (  cardsettings.grep("wireless-mode,ad-hoc").count() == 1 )
+			methodComboBox->setCurrentItem(2);
+		else if (  cardsettings.grep("wireless-mode,master").count() == 1 )
+			methodComboBox->setCurrentItem(3);
+		else if (  cardsettings.grep("wireless-mode,repeater").count() == 1 )
+			methodComboBox->setCurrentItem(4);
+		else if (  cardsettings.grep("wireless-mode,second").count() == 1 )
+			methodComboBox->setCurrentItem(5);
+		else if (  cardsettings.grep("wireless-mode,auto").count() == 1 )
+			methodComboBox->setCurrentItem(6);
+
 
 		// channel/ frequency
-		QString channel = *it++;
-		QString frequency = *it++;
+		QString channel   = QStringList::split(",", cardsettings.grep( "wireless-channel," )[0] )[1];
+		QString frequency = QStringList::split(",", cardsettings.grep( "wireless-freq,"    )[0] )[1];
 		if( channel )
 		{
 			channelRadioButton->setChecked(TRUE);
@@ -379,14 +376,14 @@ void network::getNetworkcardSettings()
 			autoRadioButton->setChecked(TRUE);
 
 		// advanced options
-		nwidLineEdit->setText(*it++);
-		iwconfigLineEdit->setText(*it++);
-		iwspyLineEdit->setText(*it++);
-		iwprivLineEdit->setText(*it++);
+		nwidLineEdit->setText(     QStringList::split(",", cardsettings.grep( "wireless-nwid," )[0] )[1] );
+		iwconfigLineEdit->setText( QStringList::split(",", cardsettings.grep( "iwconfig,"      )[0] )[1] );
+		iwspyLineEdit->setText(    QStringList::split(",", cardsettings.grep( "iwspy,"         )[0] )[1] );
+		iwprivLineEdit->setText(   QStringList::split(",", cardsettings.grep( "iwpriv,"        )[0] )[1] );
 		
 		// security
-		QString key = *it++;
-		QString wpa = *it++;
+		QString key = QStringList::split(",", cardsettings.grep( "wireless-key,")[0] )[1];
+		QString wpa = QStringList::split(",", cardsettings.grep( "wpa-psk,"     )[0] )[1];
 		if( wpa )
 		{
 			wpaLineEdit->setEnabled(TRUE);
@@ -400,75 +397,103 @@ void network::getNetworkcardSettings()
 			wpaLineEdit->setText(key);
 		}
 	}
+	else
+		networkcardComboBox->hide();
 
 	applyPushButton->setEnabled(FALSE);
 
 }
 
+
 void network::setNetworkcardSettings(QString networkcard, QString type)
 {
 
-	// set lan settings
-	QString cmdargs = "siduxcc network setNetworkcardConfig "+networkcard;
-	if(dhcpRadioButton->isChecked())
-	{
-		cmdargs += " +dhcp";
-		cmdargs += " +";
-		cmdargs += " +";
-		cmdargs += " +";
-	}
+	// example
+	// allow-hotplug eth1
+	// iface eth1 inet static
+   // 	address 10.0.0.1
+   // 	broadcast 10.0.0.255
+   // 	netmask 255.255.255.0
+   // 	network 10.0.0.0 
+
+
+
+	QString settings;
+
+	// set class
+	if(classComboBox->currentItem() == 1)
+		settings+=QString( "allow-hotplug "+networkcard+"\n" );
+	else if(classComboBox->currentItem() == 2)
+		settings+=QString( "auto "+networkcard+"\n" );
+
+	if(methodComboBox->currentItem() == 0)
+		settings += "iface "+networkcard+" inet dhcp\n";
 	else
 	{
-		cmdargs+=QString(" +"+toValidIP( ipLineEdit->text() ));
-		cmdargs+=QString(" +"+toValidIP( netmaskLineEdit->text() ));
-		cmdargs+=QString(" +"+toValidIP( broadcastLineEdit->text() ));
-		cmdargs+=QString(" +"+toValidIP( gatewayLineEdit->text() ));
+		settings+= "iface "+networkcard+" inet static\n";
+		settings+=QString("\taddress "  +toValidIP( ipLineEdit->text())       +"\n");
+		settings+=QString("\tbroadcast "+toValidIP( broadcastLineEdit->text())+"\n");
+		settings+=QString("\tnetmask "  +toValidIP( netmaskLineEdit->text())  +"\n");
+		settings+=QString("\tnetwork "  +toValidIP( networkLineEdit->text() ) +"\n");
+		settings+=QString("\tgateway "  +toValidIP( gatewayLineEdit->text() ) +"\n");
 	}
-	// set/unset autoboot
-	if(bootCheckBox->isChecked())
-		cmdargs+=QString(" +autoboot" );
-	else
-		cmdargs+=QString(" +" );
-	// set hotplug
-	if(hotplugCheckBox->isChecked())
-		cmdargs+=QString(" +allow-hotplug" );
-	else
-		cmdargs+=QString(" +" );
+
 
 
 	if( type == "wireless" )
 	{
-		cmdargs += " +"+essidLineEdit->text();
-		cmdargs += " +"+modeComboBox->currentText();
-		if ( channelRadioButton->isChecked() )
-			cmdargs += " +"+channelSpinBox->text();
-		else
-			cmdargs += " +";
-		if ( frequencyRadioButton->isChecked() )
-			cmdargs += " +"+frequencyLineEdit->text();
-		else
-			cmdargs += " +";
-		cmdargs += " +"+nwidLineEdit->text();
-		cmdargs += " +"+iwconfigLineEdit->text();
-		cmdargs += " +"+iwspyLineEdit->text();
-		cmdargs += " +"+iwprivLineEdit->text();
-		if ( wpaCheckBox->isChecked() )
-		{
-			cmdargs += " +";
-			cmdargs += " +"+wpaLineEdit->text();
-		}
-		else
-		{
-			cmdargs += " +"+keyLineEdit->text();
-			cmdargs += " +";
-		}
-			
-		
+		if( essidLineEdit->text() != "" )
+			settings += "\twireless-essid "+essidLineEdit->text()+"\n";
+		if( modeComboBox->currentText()  != "" )
+			settings += "\twireless-mode "+modeComboBox->currentText()+"\n";
 
+		if( nwidLineEdit->text()  != "" )
+			settings += "\twireless-nwid "+nwidLineEdit->text()+"\n";
+		if( iwconfigLineEdit->text()  != "" )
+			settings += "\tiwconfig "+iwconfigLineEdit->text()+"\n";
+		if( iwspyLineEdit->text()  != "" )
+			settings += "\tiwspy "+iwspyLineEdit->text()+"\n";
+		if( iwprivLineEdit->text()  != "" )
+			settings += "\tiwpriv "+iwprivLineEdit->text()+"\n";
+
+
+		if ( channelRadioButton->isChecked() )
+			settings += "\twireless-channel "+channelSpinBox->text()+"\n";
+		else if ( frequencyRadioButton->isChecked() )
+			settings += "\twireless-freq "+frequencyLineEdit->text()+"\n";
 
 	}
-	this->shell->setCommand(cmdargs);
-	this->shell->start();
+
+
+	char random[16];
+	int x = rand();
+	snprintf(random, 16, "%d", x);
+	QString filename = "/tmp/siduxcc-"+QString(random)+".tmp";
+
+
+	QFile f1(  filename );
+	f1.remove();
+	f1.open( IO_Raw | IO_ReadWrite | IO_Append );
+	f1.writeBlock( settings, qstrlen(settings) );
+
+	this->shell->setCommand("Ceni_write_config --iface "+networkcard+" --input "+filename);
+	this->shell->start(true);
+
+	f1.remove();
+
+	/*
+		if ( wpaCheckBox->isChecked() )
+		{
+			settings += " +";
+			settings += " +"+wpaLineEdit->text();
+		}
+		else
+		{
+			settings += " +"+keyLineEdit->text();
+			settings += " +";
+		}
+	*/
+
 
 }
 
@@ -487,6 +512,26 @@ QString network::toValidIP(QString ip)
 {
 	if(!isValidIP(ip)) return "";
 	return ip;
+}
+
+
+void network::classHelp()
+{
+	KMessageBox::information(this, i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the c&omputer starts"));
+}
+
+void network::methodHelp()
+{
+	KMessageBox::information(this, i18n("..."));
+}
+
+
+void network::enableStaticFrame()
+{
+	if( methodComboBox->currentItem() == 1 )
+		staticFrame->setEnabled(TRUE);
+	else
+		staticFrame->setEnabled(FALSE);
 }
 
 //------------------------------------------------------------------------------

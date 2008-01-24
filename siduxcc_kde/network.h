@@ -57,6 +57,10 @@ class network : public NetworkDialog
 		virtual void enableNetworkcard();
 		virtual void disableNetworkcard();
 
+		virtual void classHelp();
+		virtual void methodHelp();
+		virtual void enableStaticFrame();
+
 		virtual void getHostname();
 		virtual void setHostname();
 

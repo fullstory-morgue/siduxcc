@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-17 16:11+0100\n"
+"POT-Creation-Date: 2008-01-24 21:16+0100\n"
 "PO-Revision-Date: 2007-10-25 20:52+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -52,7 +52,7 @@ msgstr "Processus terminé!"
 
 #. i18n: file ./kerneldialog.ui line 271
 #. i18n: file ./kerneldialog.ui line 396
-#: kernel.cpp:98 kernel.cpp:99 rc.cpp:684 rc.cpp:695
+#: kernel.cpp:98 kernel.cpp:99 rc.cpp:689 rc.cpp:700
 #, no-c-format
 msgid "Current kernel"
 msgstr ""
@@ -93,29 +93,42 @@ msgstr "Mise en paquet"
 msgid "Developer of the knxcc"
 msgstr "Développeur de knxcc"
 
-#. i18n: file ./networkdialog.ui line 362
-#: network.cpp:225 network.cpp:235 rc.cpp:356
+#. i18n: file ./networkdialog.ui line 393
+#: network.cpp:226 network.cpp:236 rc.cpp:359
 #, fuzzy, no-c-format
 msgid "Mac Address"
 msgstr "<b>Addresse Mac:</b>"
 
 #. i18n: file ./servicesdialog.ui line 311
-#. i18n: file ./networkdialog.ui line 378
-#: network.cpp:226 network.cpp:236 rc.cpp:235 rc.cpp:359
+#. i18n: file ./networkdialog.ui line 374
+#: network.cpp:227 network.cpp:237 rc.cpp:235 rc.cpp:356
 #, no-c-format
 msgid "Description"
 msgstr "Description"
 
-#: network.cpp:345
+#: network.cpp:343
 msgid "Encryption key for "
 msgstr ""
 
-#: network.cpp:346
+#: network.cpp:344
 msgid "WPA Passphrase for "
 msgstr ""
 
+#: network.cpp:520
+msgid ""
+"<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
+"in and it will be deactivated if the cable is pulled. This is useful on "
+"laptops with onboard network adapters, since it will only configure the "
+"interface when a cable is really connected.<br><br><b>auto</b>: The "
+"networkcard will be activated, when the c&omputer starts"
+msgstr ""
+
+#: network.cpp:525
+msgid "..."
+msgstr ""
+
 #. i18n: file ./networkdialog.ui line 1107
-#: network.cpp:565 rc.cpp:414
+#: network.cpp:610 rc.cpp:414
 #, no-c-format
 msgid "detected"
 msgstr "détecté"
@@ -131,7 +144,7 @@ msgstr "Affichage"
 #. i18n: file ./internetdialog.ui line 74
 #. i18n: file ./networkdialog.ui line 105
 #. i18n: file ./softwaredialog.ui line 460
-#: rc.cpp:6 rc.cpp:214 rc.cpp:292 rc.cpp:310 rc.cpp:624
+#: rc.cpp:6 rc.cpp:214 rc.cpp:292 rc.cpp:310 rc.cpp:629
 #, no-c-format
 msgid "appl&y"
 msgstr ""
@@ -141,7 +154,7 @@ msgstr ""
 #. i18n: file ./internetdialog.ui line 77
 #. i18n: file ./networkdialog.ui line 108
 #. i18n: file ./softwaredialog.ui line 463
-#: rc.cpp:9 rc.cpp:217 rc.cpp:295 rc.cpp:313 rc.cpp:627
+#: rc.cpp:9 rc.cpp:217 rc.cpp:295 rc.cpp:313 rc.cpp:632
 #, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
@@ -151,7 +164,7 @@ msgstr "Alt+Y"
 #. i18n: file ./networkdialog.ui line 85
 #. i18n: file ./softwaredialog.ui line 449
 #. i18n: file ./kerneldialog.ui line 554
-#: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:618 rc.cpp:710
+#: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:623 rc.cpp:715
 #, no-c-format
 msgid "&back"
 msgstr ""
@@ -159,11 +172,11 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 99
 #. i18n: file ./servicesdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 88
-#. i18n: file ./networkdialog.ui line 317
-#. i18n: file ./networkdialog.ui line 1421
+#. i18n: file ./networkdialog.ui line 424
+#. i18n: file ./networkdialog.ui line 1872
 #. i18n: file ./softwaredialog.ui line 452
 #. i18n: file ./kerneldialog.ui line 557
-#: rc.cpp:15 rc.cpp:211 rc.cpp:307 rc.cpp:352 rc.cpp:483 rc.cpp:621 rc.cpp:713
+#: rc.cpp:15 rc.cpp:211 rc.cpp:307 rc.cpp:365 rc.cpp:578 rc.cpp:626 rc.cpp:718
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -184,7 +197,7 @@ msgstr "Alt+X"
 #. i18n: file ./networkdialog.ui line 129
 #. i18n: file ./softwaredialog.ui line 484
 #. i18n: file ./kerneldialog.ui line 578
-#: rc.cpp:24 rc.cpp:316 rc.cpp:630 rc.cpp:716
+#: rc.cpp:24 rc.cpp:316 rc.cpp:635 rc.cpp:721
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -410,11 +423,10 @@ msgstr "Effacer les Modelines"
 
 #. i18n: file ./displaydialog.ui line 925
 #. i18n: file ./displaydialog.ui line 1237
-#. i18n: file ./networkdialog.ui line 254
+#. i18n: file ./networkdialog.ui line 454
 #. i18n: file ./networkdialog.ui line 706
-#. i18n: file ./networkdialog.ui line 1444
 #. i18n: file ./softwaredialog.ui line 281
-#: rc.cpp:146 rc.cpp:200 rc.cpp:337 rc.cpp:404 rc.cpp:493 rc.cpp:603
+#: rc.cpp:146 rc.cpp:200 rc.cpp:371 rc.cpp:404 rc.cpp:608
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -435,11 +447,11 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 1161
 #. i18n: file ./servicesdialog.ui line 442
 #. i18n: file ./networkdialog.ui line 641
-#. i18n: file ./networkdialog.ui line 1671
+#. i18n: file ./networkdialog.ui line 1641
 #. i18n: file ./softwaredialog.ui line 236
 #. i18n: file ./kerneldialog.ui line 464
-#: rc.cpp:155 rc.cpp:191 rc.cpp:263 rc.cpp:395 rc.cpp:548 rc.cpp:597
-#: rc.cpp:707
+#: rc.cpp:155 rc.cpp:191 rc.cpp:263 rc.cpp:395 rc.cpp:528 rc.cpp:602
+#: rc.cpp:712
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -590,15 +602,12 @@ msgid "&Add a Runlevel-Entry (Start service at Boot)"
 msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 461
-#. i18n: file ./networkdialog.ui line 287
+#. i18n: file ./networkdialog.ui line 487
 #. i18n: file ./networkdialog.ui line 1047
-#. i18n: file ./networkdialog.ui line 1267
-#. i18n: file ./networkdialog.ui line 1657
-#. i18n: file ./networkdialog.ui line 1733
+#. i18n: file ./networkdialog.ui line 1627
 #. i18n: file ./softwaredialog.ui line 367
 #. i18n: file ./kerneldialog.ui line 450
-#: rc.cpp:269 rc.cpp:346 rc.cpp:411 rc.cpp:435 rc.cpp:542 rc.cpp:566
-#: rc.cpp:615 rc.cpp:701
+#: rc.cpp:269 rc.cpp:380 rc.cpp:411 rc.cpp:522 rc.cpp:620 rc.cpp:706
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
@@ -647,104 +656,104 @@ msgstr "Réseau"
 
 #. i18n: file ./networkdialog.ui line 149
 #. i18n: file ./kerneldialog.ui line 26
-#: rc.cpp:319 rc.cpp:653
+#: rc.cpp:319 rc.cpp:658
 #, no-c-format
 msgid "Configure Networkcards"
 msgstr "Liste des contrôleurs réseau configurés"
 
 #. i18n: file ./networkdialog.ui line 157
 #. i18n: file ./kerneldialog.ui line 34
-#: rc.cpp:322 rc.cpp:656
+#: rc.cpp:322 rc.cpp:661
 #, no-c-format
 msgid "Set Hostname"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 165
 #. i18n: file ./kerneldialog.ui line 42
-#: rc.cpp:325 rc.cpp:659
+#: rc.cpp:325 rc.cpp:664
 #, no-c-format
 msgid "Set Nameservers"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 173
 #. i18n: file ./kerneldialog.ui line 50
-#: rc.cpp:328 rc.cpp:662
+#: rc.cpp:328 rc.cpp:667
 #, no-c-format
 msgid "Install Wlan-Cards (Ndiswrapper)"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 181
 #. i18n: file ./kerneldialog.ui line 58
-#: rc.cpp:331 rc.cpp:665
+#: rc.cpp:331 rc.cpp:670
 #, no-c-format
 msgid "Install Wlan-Cards (fwdetect)"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 251
+#. i18n: file ./networkdialog.ui line 230
 #: rc.cpp:334
-#, no-c-format
-msgid "C&onfigure"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 257
-#: rc.cpp:340
-#, no-c-format
-msgid "Change the settings of the selected device"
-msgstr "Changer les réglages du contrôleur sélectionné"
-
-#. i18n: file ./networkdialog.ui line 284
-#: rc.cpp:343
-#, no-c-format
-msgid "En&able"
-msgstr "Activer"
-
-#. i18n: file ./networkdialog.ui line 314
-#: rc.cpp:349
-#, no-c-format
-msgid "Disa&ble"
-msgstr "Désactiver"
-
-#. i18n: file ./networkdialog.ui line 388
-#: rc.cpp:362
 #, no-c-format
 msgid "Interface"
 msgstr "Interface"
 
-#. i18n: file ./networkdialog.ui line 399
-#: rc.cpp:365
+#. i18n: file ./networkdialog.ui line 241
+#: rc.cpp:337
 #, no-c-format
 msgid "Ip Address    "
 msgstr "Adresse IP"
 
-#. i18n: file ./networkdialog.ui line 410
-#: rc.cpp:368
+#. i18n: file ./networkdialog.ui line 252
+#: rc.cpp:340
 #, no-c-format
 msgid "Method"
 msgstr "Méthode"
 
-#. i18n: file ./networkdialog.ui line 421
-#: rc.cpp:371
+#. i18n: file ./networkdialog.ui line 263
+#: rc.cpp:343
 #, no-c-format
-msgid "Boot"
-msgstr "Démarrage"
+msgid "Class"
+msgstr ""
 
-#. i18n: file ./networkdialog.ui line 432
-#: rc.cpp:374
+#. i18n: file ./networkdialog.ui line 274
+#: rc.cpp:346
 #, no-c-format
 msgid "Driver"
 msgstr "Pilote"
 
-#. i18n: file ./networkdialog.ui line 443
-#: rc.cpp:377
+#. i18n: file ./networkdialog.ui line 285
+#: rc.cpp:349
 #, no-c-format
 msgid "Slot"
 msgstr "Slot"
 
-#. i18n: file ./networkdialog.ui line 487
-#: rc.cpp:380
+#. i18n: file ./networkdialog.ui line 329
+#: rc.cpp:352
 #, no-c-format
 msgid "List of configured network devices"
 msgstr "Liste des contrôleurs réseau configurés"
+
+#. i18n: file ./networkdialog.ui line 421
+#: rc.cpp:362
+#, no-c-format
+msgid "Disa&ble"
+msgstr "Désactiver"
+
+#. i18n: file ./networkdialog.ui line 451
+#: rc.cpp:368
+#, no-c-format
+msgid "C&onfigure"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 457
+#: rc.cpp:374
+#, no-c-format
+msgid "Change the settings of the selected device"
+msgstr "Changer les réglages du contrôleur sélectionné"
+
+#. i18n: file ./networkdialog.ui line 484
+#: rc.cpp:377
+#, no-c-format
+msgid "En&able"
+msgstr "Activer"
 
 #. i18n: file ./networkdialog.ui line 514
 #: rc.cpp:383
@@ -794,420 +803,433 @@ msgstr "Installer"
 msgid "all"
 msgstr "tout"
 
-#. i18n: file ./networkdialog.ui line 1157
-#: rc.cpp:421
+#. i18n: file ./networkdialog.ui line 1193
+#: rc.cpp:422
 #, no-c-format
 msgid "LAN settings"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1162
-#: rc.cpp:424
+#. i18n: file ./networkdialog.ui line 1201
+#: rc.cpp:425
 #, no-c-format
 msgid "WLAN settings"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1167
-#: rc.cpp:427
+#. i18n: file ./networkdialog.ui line 1209
+#: rc.cpp:428
 #, no-c-format
 msgid "WLAN security"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1264
-#: rc.cpp:432
-#, no-c-format
-msgid "&Automatic (DHCP)"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1286
-#: rc.cpp:438
-#, no-c-format
-msgid "&Manual"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1289
-#. i18n: file ./kerneldialog.ui line 379
-#: rc.cpp:441 rc.cpp:692
+#. i18n: file ./networkdialog.ui line 1274
+#: rc.cpp:431
 #, fuzzy, no-c-format
-msgid "Alt+M"
-msgstr "Alt+Y"
+msgid "<b>Method:</b>"
+msgstr "<b>Description:</b>"
 
-#. i18n: file ./networkdialog.ui line 1332
-#: rc.cpp:444
-#, fuzzy, no-c-format
-msgid "Network Mask:"
-msgstr "Réseau"
-
-#. i18n: file ./networkdialog.ui line 1340
-#: rc.cpp:447
+#. i18n: file ./networkdialog.ui line 1290
+#: rc.cpp:434
 #, no-c-format
-msgid "Broadcast Address:"
+msgid "<b>Class:</b>"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1348
-#: rc.cpp:450
-#, no-c-format
-msgid "Default Gateway:"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1356
-#. i18n: file ./networkdialog.ui line 1367
-#. i18n: file ./networkdialog.ui line 1386
-#. i18n: file ./networkdialog.ui line 1397
-#: rc.cpp:453 rc.cpp:459 rc.cpp:468 rc.cpp:474
+#. i18n: file ./networkdialog.ui line 1370
+#. i18n: file ./networkdialog.ui line 1389
+#. i18n: file ./networkdialog.ui line 1416
+#. i18n: file ./networkdialog.ui line 1443
+#. i18n: file ./networkdialog.ui line 1454
+#: rc.cpp:441 rc.cpp:450 rc.cpp:462 rc.cpp:474 rc.cpp:480
 #, no-c-format
 msgid "000.000.000.000; "
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1359
-#: rc.cpp:456
+#. i18n: file ./networkdialog.ui line 1373
+#: rc.cpp:444
 #, no-c-format
-msgid "E.g. 192.168.0.254"
+msgid "E.g. 192.168.0.2"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1370
-#: rc.cpp:462
-#, no-c-format
-msgid "E.g. 192.168.0.255"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1378
-#: rc.cpp:465
+#. i18n: file ./networkdialog.ui line 1381
+#: rc.cpp:447
 #, fuzzy, no-c-format
-msgid "IP Address:"
+msgid "IP address:"
 msgstr "Adresse IP"
 
-#. i18n: file ./networkdialog.ui line 1389
-#: rc.cpp:471
+#. i18n: file ./networkdialog.ui line 1392
+#: rc.cpp:453
 #, no-c-format
 msgid "E.g. 255.255.255.0"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1400
-#: rc.cpp:477
+#: rc.cpp:456
+#, fuzzy, no-c-format
+msgid "Netmask:"
+msgstr "Réseau"
+
+#. i18n: file ./networkdialog.ui line 1408
+#: rc.cpp:459
 #, no-c-format
-msgid "E.g. 192.168.0.2"
+msgid "Gateway:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1418
-#: rc.cpp:480
+#. i18n: file ./networkdialog.ui line 1419
+#: rc.cpp:465
 #, no-c-format
-msgid "Ena&ble \"allow-hotplug\""
+msgid "E.g. 192.168.0.254"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1425
+#. i18n: file ./networkdialog.ui line 1427
+#: rc.cpp:468
+#, no-c-format
+msgid "Broadcast:"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1435
+#: rc.cpp:471
+#, fuzzy, no-c-format
+msgid "Network:"
+msgstr "Réseau"
+
+#. i18n: file ./networkdialog.ui line 1446
+#. i18n: file ./networkdialog.ui line 1457
+#: rc.cpp:477 rc.cpp:483
+#, no-c-format
+msgid "E.g. 192.168.0.255"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1465
 #: rc.cpp:486
 #, no-c-format
-msgid ""
-"<b>allow-hotplug</b>: this option is useful together with\n"
-"<b>ifplugd</b>, which is a daemon that automatically configures your "
-"ethernet device when a cable is plugged in and automatically unconfigures it "
-"if the cable is pulled. This is useful on laptops with onboard network "
-"adapters, since it will only configure the interface when a cable is really "
-"connected."
+msgid "dhcp"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1441
-#: rc.cpp:490
-#, no-c-format
-msgid "Activate when the c&omputer starts"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1468
-#: rc.cpp:496
-#, no-c-format
-msgid "ESSID:"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1495
-#: rc.cpp:500
-#, no-c-format
-msgid "Managed"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1500
-#: rc.cpp:503
-#, no-c-format
-msgid "Ad-Hoc"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1505
-#: rc.cpp:506
-#, no-c-format
-msgid "Master"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1510
-#: rc.cpp:509
-#, no-c-format
-msgid "Repeater"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1515
-#: rc.cpp:512
-#, no-c-format
-msgid "Secondary"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1520
-#: rc.cpp:515
+#. i18n: file ./networkdialog.ui line 1470
+#: rc.cpp:489
 #, fuzzy, no-c-format
-msgid "Auto"
+msgid "static"
+msgstr "ati"
+
+#. i18n: file ./networkdialog.ui line 1488
+#: rc.cpp:492
+#, no-c-format
+msgid "manual"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1493
+#: rc.cpp:495
+#, no-c-format
+msgid "allow hotplug"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1498
+#: rc.cpp:498
+#, fuzzy, no-c-format
+msgid "auto"
 msgstr "Action"
 
-#. i18n: file ./networkdialog.ui line 1548
-#: rc.cpp:518
-#, no-c-format
-msgid "Mode:"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1564
-#: rc.cpp:521
+#. i18n: file ./networkdialog.ui line 1534
+#: rc.cpp:501
 #, no-c-format
 msgid "Advanced options"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1578
-#: rc.cpp:524
+#. i18n: file ./networkdialog.ui line 1548
+#: rc.cpp:504
 #, no-c-format
 msgid "NWID:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1586
-#: rc.cpp:527
+#. i18n: file ./networkdialog.ui line 1556
+#: rc.cpp:507
 #, fuzzy, no-c-format
 msgid "iwspy:"
 msgstr "Affichage"
 
-#. i18n: file ./networkdialog.ui line 1594
-#: rc.cpp:530
+#. i18n: file ./networkdialog.ui line 1564
+#: rc.cpp:510
 #, no-c-format
 msgid "iwconfig:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1602
-#: rc.cpp:533
+#. i18n: file ./networkdialog.ui line 1572
+#: rc.cpp:513
 #, no-c-format
 msgid "iwpriv:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1640
-#: rc.cpp:536
+#. i18n: file ./networkdialog.ui line 1610
+#: rc.cpp:516
 #, fuzzy, no-c-format
 msgid "Channel/ Frequency"
 msgstr "Détecter les fréquences"
 
-#. i18n: file ./networkdialog.ui line 1654
-#: rc.cpp:539
+#. i18n: file ./networkdialog.ui line 1624
+#: rc.cpp:519
 #, fuzzy, no-c-format
 msgid "&Auto"
 msgstr "Action"
 
-#. i18n: file ./networkdialog.ui line 1668
-#: rc.cpp:545
+#. i18n: file ./networkdialog.ui line 1638
+#: rc.cpp:525
 #, no-c-format
 msgid "Cha&nnel:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1679
-#: rc.cpp:551
+#. i18n: file ./networkdialog.ui line 1649
+#: rc.cpp:531
 #, no-c-format
 msgid "Fre&quency:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1682
-#: rc.cpp:554
+#. i18n: file ./networkdialog.ui line 1652
+#: rc.cpp:534
 #, fuzzy, no-c-format
 msgid "Alt+Q"
 msgstr "Alt+Y"
 
-#. i18n: file ./networkdialog.ui line 1701
-#: rc.cpp:557
+#. i18n: file ./networkdialog.ui line 1671
+#: rc.cpp:537
 #, no-c-format
 msgid ".G"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1704
-#: rc.cpp:560
+#. i18n: file ./networkdialog.ui line 1674
+#: rc.cpp:540
 #, no-c-format
 msgid "9.999G;_"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1730
-#: rc.cpp:563
+#. i18n: file ./networkdialog.ui line 1692
+#: rc.cpp:543
 #, no-c-format
-msgid "En&able WPA support"
+msgid "Mode:"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1752
+#. i18n: file ./networkdialog.ui line 1708
+#: rc.cpp:546
+#, no-c-format
+msgid "ESSID:"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1735
+#: rc.cpp:550
+#, no-c-format
+msgid "Managed"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1740
+#: rc.cpp:553
+#, no-c-format
+msgid "Ad-Hoc"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1745
+#: rc.cpp:556
+#, no-c-format
+msgid "Master"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1750
+#: rc.cpp:559
+#, no-c-format
+msgid "Repeater"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1755
+#: rc.cpp:562
+#, no-c-format
+msgid "Secondary"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1760
+#: rc.cpp:565
+#, fuzzy, no-c-format
+msgid "Auto"
+msgstr "Action"
+
+#. i18n: file ./networkdialog.ui line 1818
 #: rc.cpp:569
-#, no-c-format
-msgid "Encryption key for"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1768
-#: rc.cpp:572
 #, no-c-format
 msgid "WPA Passphrase for"
 msgstr ""
 
+#. i18n: file ./networkdialog.ui line 1853
+#: rc.cpp:572
+#, no-c-format
+msgid "Encryption key for"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1869
+#: rc.cpp:575
+#, no-c-format
+msgid "Ena&ble WPA support"
+msgstr ""
+
 #. i18n: file ./softwaredialog.ui line 17
-#: rc.cpp:576 start.cpp:76 start.cpp:117
+#: rc.cpp:581 start.cpp:76 start.cpp:117
 #, no-c-format
 msgid "Software"
 msgstr "Logiciels"
 
 #. i18n: file ./softwaredialog.ui line 48
-#: rc.cpp:579
+#: rc.cpp:584
 #, fuzzy, no-c-format
 msgid "Show upgradable packages"
 msgstr "Paquetages actualisables"
 
 #. i18n: file ./softwaredialog.ui line 111
-#: rc.cpp:582 software.cpp:109
+#: rc.cpp:587 software.cpp:109
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Pas d'alerte signalée"
 
 #. i18n: file ./softwaredialog.ui line 133
-#: rc.cpp:585
+#: rc.cpp:590
 #, no-c-format
 msgid "Name"
 msgstr "Nom"
 
 #. i18n: file ./softwaredialog.ui line 144
-#: rc.cpp:588
+#: rc.cpp:593
 #, no-c-format
 msgid "Installed Version"
 msgstr "Version installée"
 
 #. i18n: file ./softwaredialog.ui line 155
-#: rc.cpp:591
+#: rc.cpp:596
 #, no-c-format
 msgid "Latest Version"
 msgstr "Dernière version"
 
 #. i18n: file ./softwaredialog.ui line 233
-#: rc.cpp:594
+#: rc.cpp:599
 #, fuzzy, no-c-format
 msgid "Clea&n"
 msgstr "Nettoyer"
 
 #. i18n: file ./softwaredialog.ui line 278
-#: rc.cpp:600
+#: rc.cpp:605
 #, no-c-format
 msgid "D&ownload"
 msgstr "Télécharger"
 
 #. i18n: file ./softwaredialog.ui line 322
-#: rc.cpp:609
+#: rc.cpp:614
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
 #. i18n: file ./softwaredialog.ui line 364
-#: rc.cpp:612
+#: rc.cpp:617
 #, no-c-format
 msgid "Upgr&ade"
 msgstr "Mettre-à-jour"
 
 #. i18n: file ./infodialog.ui line 17
-#: rc.cpp:633
+#: rc.cpp:638
 #, no-c-format
 msgid "SysInfo"
 msgstr "Info système"
 
 #. i18n: file ./infodialog.ui line 31
-#: rc.cpp:636
+#: rc.cpp:641
 #, no-c-format
 msgid "About sidux"
 msgstr "À propos de sidux"
 
 #. i18n: file ./infodialog.ui line 42
-#: rc.cpp:639
+#: rc.cpp:644
 #, no-c-format
 msgid "sidux Version:"
 msgstr "Version de sidux"
 
 #. i18n: file ./infodialog.ui line 94
-#: rc.cpp:643
+#: rc.cpp:648
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./consoledialog.ui line 16
-#: rc.cpp:647
+#: rc.cpp:652
 #, no-c-format
 msgid "Widget"
 msgstr "Widget"
 
 #. i18n: file ./kerneldialog.ui line 17
-#: rc.cpp:650 start.cpp:64 start.cpp:130
+#: rc.cpp:655 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Noyau"
 
 #. i18n: file ./kerneldialog.ui line 113
-#: rc.cpp:668
+#: rc.cpp:673
 #, no-c-format
 msgid "Install new kernel"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 121
-#: rc.cpp:671
+#: rc.cpp:676
 #, no-c-format
 msgid "Remove old kernels"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 129
-#: rc.cpp:674
+#: rc.cpp:679
 #, no-c-format
 msgid "Install kernel modules"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 220
-#: rc.cpp:678
+#: rc.cpp:683
 #, fuzzy, no-c-format
 msgid "ins&tall"
 msgstr "Installer"
 
 #. i18n: file ./kerneldialog.ui line 223
-#: rc.cpp:681
+#: rc.cpp:686
 #, fuzzy, no-c-format
 msgid "Alt+T"
 msgstr "Alt+Y"
 
 #. i18n: file ./kerneldialog.ui line 376
-#: rc.cpp:689
+#: rc.cpp:694
 #, fuzzy, no-c-format
 msgid "re&move"
 msgstr "effacer"
 
+#. i18n: file ./kerneldialog.ui line 379
+#: rc.cpp:697
+#, fuzzy, no-c-format
+msgid "Alt+M"
+msgstr "Alt+Y"
+
 #. i18n: file ./kerneldialog.ui line 447
-#: rc.cpp:698
+#: rc.cpp:703
 #, fuzzy, no-c-format
 msgid "cle&ar"
 msgstr "Nettoyer"
 
 #. i18n: file ./kerneldialog.ui line 461
-#: rc.cpp:704
+#: rc.cpp:709
 #, fuzzy, no-c-format
 msgid "i&nstall"
 msgstr "Installer"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:719
+#: rc.cpp:724
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "Centre de Contrôle de sidux"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:722
+#: rc.cpp:727
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:725
+#: rc.cpp:730
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1217,42 +1239,42 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:730 rc.cpp:733
+#: rc.cpp:735 rc.cpp:738
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:737 rc.cpp:740
+#: rc.cpp:742 rc.cpp:745
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:747 rc.cpp:750
+#: rc.cpp:752 rc.cpp:755
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:754 rc.cpp:757 start.cpp:148
+#: rc.cpp:759 rc.cpp:762 start.cpp:148
 #, no-c-format
 msgid "Exit"
 msgstr "Sortir"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:760 rc.cpp:763
+#: rc.cpp:765 rc.cpp:768
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:766 rc.cpp:769
+#: rc.cpp:771 rc.cpp:774
 #, no-c-format
 msgid "Language"
 msgstr ""
@@ -1343,6 +1365,9 @@ msgstr "Info système"
 msgid "System Info"
 msgstr "Info système"
 
+#~ msgid "Boot"
+#~ msgstr "Démarrage"
+
 #, fuzzy
 #~ msgid "Alt+V"
 #~ msgstr "Alt+Y"
@@ -1362,9 +1387,6 @@ msgstr "Info système"
 
 #~ msgid "xxx"
 #~ msgstr "xxx"
-
-#~ msgid "<b>Description:</b>"
-#~ msgstr "<b>Description:</b>"
 
 #, fuzzy
 #~ msgid "Alt+G"

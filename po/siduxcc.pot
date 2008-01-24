@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-14 02:11+0100\n"
+"POT-Creation-Date: 2008-01-24 21:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,11 +60,10 @@ msgstr ""
 msgid "Default Color Depth"
 msgstr ""
 
-#: modules/display.bm:255 modules/display.bm:303 modules/hardware.bm:129
-#: modules/hardware.bm:160 modules/info.bm:32 modules/kernel.bm:28
-#: modules/kernel.bm:96 modules/kernel.bm:108 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
-#: modules/software.bm:110
+#: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:96 modules/kernel.bm:108
+#: modules/network.bm:111 modules/software.bm:65 modules/software.bm:74
+#: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr ""
@@ -119,28 +118,16 @@ msgstr ""
 msgid "Restore X-Server"
 msgstr ""
 
-#: modules/display.bm:326 modules/hardware.bm:171 modules/info.bm:24
-#: modules/kernel.bm:170 modules/network.bm:363 modules/services.bm:20
-#: modules/services.bm:36 modules/services.bm:54 modules/software.bm:180
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:170
+#: modules/network.bm:128 modules/services.bm:20 modules/services.bm:36
+#: modules/services.bm:54 modules/software.bm:199
 #, sh-format
 msgid "Return to main Menu"
 msgstr ""
 
-#: modules/display.bm:343 modules/network.bm:370
+#: modules/display.bm:343 modules/network.bm:135
 #, sh-format
 msgid "Error: This module is not implemented yet!"
-msgstr ""
-
-#: modules/hardware.bm:9 modules/hardware.bm:170
-#, sh-format
-msgid "Hardware"
-msgstr ""
-
-#: modules/hardware.bm:128 modules/hardware.bm:159 modules/kernel.bm:27
-#: modules/kernel.bm:107 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
-#, sh-format
-msgid "Process done!"
 msgstr ""
 
 #: modules/info.bm:10 modules/info.bm:21
@@ -173,6 +160,13 @@ msgstr ""
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr ""
 
+#: modules/kernel.bm:27 modules/kernel.bm:107 modules/network.bm:110
+#: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
+#: modules/software.bm:98 modules/software.bm:109
+#, sh-format
+msgid "Process done!"
+msgstr ""
+
 #: modules/kernel.bm:95
 #, sh-format
 msgid "The installation is finished!"
@@ -198,7 +192,7 @@ msgstr ""
 msgid "Update kernel"
 msgstr ""
 
-#: modules/network.bm:15 modules/network.bm:360
+#: modules/network.bm:15 modules/network.bm:125
 #, sh-format
 msgid "Network"
 msgstr ""
@@ -208,12 +202,12 @@ msgstr ""
 msgid "Enter a new hostname:"
 msgstr ""
 
-#: modules/network.bm:361
+#: modules/network.bm:126
 #, sh-format
 msgid "Configure Networkcars"
 msgstr ""
 
-#: modules/network.bm:362
+#: modules/network.bm:127
 #, sh-format
 msgid "Set Hostname"
 msgstr ""
@@ -305,7 +299,7 @@ msgid ""
 "Upgrade Warnings. Dou want to continuo anyway?"
 msgstr ""
 
-#: modules/software.bm:10 modules/software.bm:176
+#: modules/software.bm:10 modules/software.bm:195
 #, sh-format
 msgid "Software"
 msgstr ""
@@ -332,17 +326,17 @@ msgstr ""
 msgid "Please choose a date..."
 msgstr ""
 
-#: modules/software.bm:177
+#: modules/software.bm:196
 #, sh-format
 msgid "Run Dist-Upgrade"
 msgstr ""
 
-#: modules/software.bm:178
+#: modules/software.bm:197
 #, sh-format
 msgid "Show DU-Warnings"
 msgstr ""
 
-#: modules/software.bm:179
+#: modules/software.bm:198
 #, sh-format
 msgid "Show DU-Log"
 msgstr ""
