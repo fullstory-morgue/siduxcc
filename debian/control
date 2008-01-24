@@ -9,9 +9,8 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
 Package: siduxcc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu
-Recommends: apt-show-versions
-Suggests: configure-ndiswrapper
+Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu, sidux-scripts
+Recommends: apt-show-versions, configure-ndiswrapper
 Description: sidux control center (KDE frontend)
  KDE based frontend for managing sidux
 

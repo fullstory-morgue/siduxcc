@@ -1,14 +1,19 @@
 siduxcc (0.8.11) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 23 Jan 2008 18:23:34 +0100
+  [ Fabian Wuertz ]
+  * fw-detect functions moved fw-detect 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 24 Jan 2008 02:04:20 +0100
 
 siduxcc (0.8.10) unstable; urgency=low
 
-  * nl languages files updated 
+  * nl languages files updated
+  * fw-detect functions moved fw-detect  
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 23 Jan 2008 16:58:24 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 24 Jan 2008 01:54:35 +0100
 
 siduxcc (0.8.9) unstable; urgency=low
 

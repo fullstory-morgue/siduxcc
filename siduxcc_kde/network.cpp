@@ -76,7 +76,9 @@ void network::loadWidget(int i)
 void network::back()
 {
 	if( widgetStack2->visibleWidget() == tab6)
+	{
 		widgetStack2->raiseWidget(1);
+	}
 	else
 	{
 		widgetStack2->raiseWidget(0);
@@ -563,11 +565,11 @@ void network::fwDetect()
 	QPixmap hardwareImg("/usr/share/siduxcc/icons/hardware.png");
 	hardwareList->clear();
 	if(fwComboBox->currentText() == i18n("detected"))
-		this->shell->setCommand("siduxcc hardware detect");
+		this->shell->setCommand("fw-detect -s");
 	else
-		this->shell->setCommand("siduxcc hardware allDevices");
+		this->shell->setCommand("fw-detect -a");
 	this->shell->start(true);
-	QStringList hardwareName = QStringList::split( "\n", this->shell->getBuffer().stripWhiteSpace() );
+	QStringList hardwareName = QStringList::split( "\n", this->shell->getBuffer() );
 	for ( QStringList::Iterator it = hardwareName.begin(); it != hardwareName.end(); ++it )
 		hardwareList->insertItem(hardwareImg, *it);
 }
@@ -582,8 +584,8 @@ void network::fwInstall()
 	this->shell->start(true);
 
 	QStrList run; run.append( "siduxcc" );
-		run.append( "hardware" );
-		run.append( "install" );
+		run.append( "network" );
+		run.append( "installWlanCard" );
 		run.append( hardwareList->currentText() );
 
 	// change widget
@@ -601,6 +603,7 @@ void network::terminateConsole()
 	widgetStack2->raiseWidget(5);
 	widgetStack3->raiseWidget(1);
 	emit menuLocked(FALSE);
+	fwDetect();
 }
 
 #include "network.moc"
