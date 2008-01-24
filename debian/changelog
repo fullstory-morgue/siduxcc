@@ -1,3 +1,9 @@
+siduxcc (0.8.13) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 24 Jan 2008 13:40:44 +0100
+
 siduxcc (0.8.12) unstable; urgency=low
 
   * kde: network: "read nicinfo" updated (depends on ceni 1.31) 
