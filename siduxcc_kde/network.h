@@ -61,6 +61,10 @@ class network : public NetworkDialog
 		virtual void methodHelp();
 		virtual void enableStaticFrame();
 
+		virtual void securityHelp();
+		virtual void controlKeyLength();
+		virtual void enableSecurityLineEdit();
+
 		virtual void getHostname();
 		virtual void setHostname();
 

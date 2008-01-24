@@ -42,22 +42,11 @@ Copyright:
 	(c) 2007 by Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/network.bm
 
-	The following file is based on fw-detect from:
-	(c) 2007 Kel Modderman <kel@otaku42.de>
-	siduxcc/modules/hardware.bm
-
 
 	The following file is based on install-meta from:
 	(c) 2007 Horst Tritremmel <hjt@sidux.com>
-	siduxcc/modules/hardware.bm
+	siduxcc/modules/software.bm
 
-
-	The following file is based on configure-networkcard, formerly known as 
-	netcardconfig and netcardconfig-kanotix, from:
-	(C) 2001-2004 Klaus Knopper <knoppix@knopper.net>
-	(C) 2004-2007 Stefan Lippers-Hollmann <s.l-h@gmx.de>
-	(C) 2005-2007 Niall Walsh <niallwalsh@users.berlios.de>
-	siduxcc/scripts/netcardconfig
 
 
 	--- icons ---
@@ -75,6 +64,7 @@ Copyright:
 	exit.png                     in siduxcc_kde/startdialog.ui
 	reload.png                   in siduxcc_kde/kerneldialog.ui
 	cancel.png                   in siduxcc_kde/kerneldialog.ui
+	                             in siduxcc_kde/icons/notok2.png
 	configure.png                in siduxcc_kde/networkdialog.ui
 	edit.png                     in siduxcc_kde/networkdialog.ui
 	stop.png                     in siduxcc_kde/servicedialog.ui
@@ -138,7 +128,6 @@ Copyright:
     sidux-net.png                icons/hi*-app-sidux_net.png
 
 
-
 	The following icon is from krdc
 	(c) 2002 Stephan Kulow <coolo@kde.org> and many others.
 	krdc.png                     in siduxcc_kde/displaydialog.ui
@@ -158,6 +147,16 @@ Copyright:
 	The following icon is from configure-ndiswrapper
 	(C) 2007 cathbard <cathbard@gmail.com>
 	sidux-ndiswrapper.png        in siduxcc_kde/network/networkdialog.ui
+
+
+	The following icon is from kde-icons-crystalproject
+	(C) 2005 Everaldo Coelho <everaldo@everaldo.com>
+	gpg.png                      in siduxcc_kde/network/networkdialog.ui
+
+
+	The following icon is from kde-icons-crystalproject
+	(C) 2005 Everaldo Coelho <everaldo@everaldo.com>
+	remote.png                      in siduxcc_kde/network/networkdialog.ui
 
 
 

@@ -10,7 +10,7 @@
             <x>0</x>
             <y>0</y>
             <width>586</width>
-            <height>681</height>
+            <height>466</height>
         </rect>
     </property>
     <property name="caption">
@@ -1135,7 +1135,7 @@
                 </attribute>
                 <widget class="QGroupBox">
                     <property name="name">
-                        <cstring>groupBox7</cstring>
+                        <cstring>topGroupBox</cstring>
                     </property>
                     <property name="geometry">
                         <rect>
@@ -1239,7 +1239,7 @@
                             <x>40</x>
                             <y>90</y>
                             <width>410</width>
-                            <height>290</height>
+                            <height>280</height>
                         </rect>
                     </property>
                     <property name="frameShape">
@@ -1258,22 +1258,6 @@
                         <attribute name="id">
                             <number>0</number>
                         </attribute>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>methodTextLabel</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>30</x>
-                                    <y>70</y>
-                                    <width>69</width>
-                                    <height>20</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>&lt;b&gt;Method:&lt;/b&gt;</string>
-                            </property>
-                        </widget>
                         <widget class="QLabel">
                             <property name="name">
                                 <cstring>textLabel1_2</cstring>
@@ -1312,6 +1296,73 @@
                                 <string></string>
                             </property>
                         </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>manual</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>allow hotplug</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>auto</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>classComboBox</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>110</x>
+                                    <y>20</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>methodTextLabel</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>30</x>
+                                    <y>60</y>
+                                    <width>69</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>&lt;b&gt;Method:&lt;/b&gt;</string>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>dhcp</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>static</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>methodComboBox</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>110</x>
+                                    <y>60</y>
+                                    <width>110</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                        </widget>
                         <widget class="QPushButton">
                             <property name="name">
                                 <cstring>methodPushButton</cstring>
@@ -1319,7 +1370,7 @@
                             <property name="geometry">
                                 <rect>
                                     <x>230</x>
-                                    <y>70</y>
+                                    <y>60</y>
                                     <width>30</width>
                                     <height>30</height>
                                 </rect>
@@ -1344,7 +1395,7 @@
                             <property name="geometry">
                                 <rect>
                                     <x>30</x>
-                                    <y>120</y>
+                                    <y>110</y>
                                     <width>310</width>
                                     <height>144</height>
                                 </rect>
@@ -1458,57 +1509,6 @@
                                     </property>
                                 </widget>
                             </grid>
-                        </widget>
-                        <widget class="QComboBox">
-                            <item>
-                                <property name="text">
-                                    <string>dhcp</string>
-                                </property>
-                            </item>
-                            <item>
-                                <property name="text">
-                                    <string>static</string>
-                                </property>
-                            </item>
-                            <property name="name">
-                                <cstring>methodComboBox</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>110</x>
-                                    <y>70</y>
-                                    <width>110</width>
-                                    <height>30</height>
-                                </rect>
-                            </property>
-                        </widget>
-                        <widget class="QComboBox">
-                            <item>
-                                <property name="text">
-                                    <string>manual</string>
-                                </property>
-                            </item>
-                            <item>
-                                <property name="text">
-                                    <string>allow hotplug</string>
-                                </property>
-                            </item>
-                            <item>
-                                <property name="text">
-                                    <string>auto</string>
-                                </property>
-                            </item>
-                            <property name="name">
-                                <cstring>classComboBox</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>110</x>
-                                    <y>20</y>
-                                    <width>110</width>
-                                    <height>30</height>
-                                </rect>
-                            </property>
                         </widget>
                     </widget>
                     <widget class="QWidget">
@@ -1780,18 +1780,37 @@
                         <attribute name="id">
                             <number>2</number>
                         </attribute>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>securityPushButton</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>345</x>
+                                    <y>75</y>
+                                    <width>31</width>
+                                    <height>31</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
                         <widget class="QLineEdit">
                             <property name="name">
-                                <cstring>wpaLineEdit</cstring>
+                                <cstring>securityLineEdit</cstring>
                             </property>
                             <property name="enabled">
                                 <bool>false</bool>
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>20</x>
-                                    <y>180</y>
-                                    <width>270</width>
+                                    <x>150</x>
+                                    <y>80</y>
+                                    <width>180</width>
                                     <height>24</height>
                                 </rect>
                             </property>
@@ -1804,75 +1823,62 @@
                         </widget>
                         <widget class="QLabel">
                             <property name="name">
-                                <cstring>securityTextLabel2</cstring>
+                                <cstring>keyTextLabel2</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
                                     <x>20</x>
-                                    <y>140</y>
-                                    <width>280</width>
+                                    <y>70</y>
+                                    <width>120</width>
                                     <height>31</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string>WPA Passphrase for</string>
-                            </property>
-                        </widget>
-                        <widget class="QLineEdit">
-                            <property name="name">
-                                <cstring>keyLineEdit</cstring>
-                            </property>
-                            <property name="enabled">
-                                <bool>false</bool>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>20</x>
-                                    <y>100</y>
-                                    <width>270</width>
-                                    <height>24</height>
-                                </rect>
-                            </property>
-                            <property name="maxLength">
-                                <number>63</number>
+                                <string>&lt;b&gt;Preshared Key:&lt;/b&gt;</string>
                             </property>
                         </widget>
                         <widget class="QLabel">
                             <property name="name">
-                                <cstring>securityTextLabel1</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>16</x>
-                                    <y>66</y>
-                                    <width>280</width>
-                                    <height>21</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>Encryption key for</string>
-                            </property>
-                        </widget>
-                        <widget class="QCheckBox">
-                            <property name="name">
-                                <cstring>wpaCheckBox</cstring>
+                                <cstring>keyTextLabel2_2</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
                                     <x>20</x>
-                                    <y>20</y>
-                                    <width>160</width>
-                                    <height>22</height>
+                                    <y>30</y>
+                                    <width>110</width>
+                                    <height>31</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string>Ena&amp;ble WPA support</string>
+                                <string>&lt;b&gt;Encryptiontype:&lt;/b&gt;</string>
                             </property>
-                            <property name="accel">
-                                <string>Alt+B</string>
+                        </widget>
+                        <widget class="QComboBox">
+                            <item>
+                                <property name="text">
+                                    <string>None</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>WEP</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>WPA-PSK</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>securityComboBox</cstring>
                             </property>
-                            <property name="checked">
-                                <bool>false</bool>
+                            <property name="geometry">
+                                <rect>
+                                    <x>150</x>
+                                    <y>30</y>
+                                    <width>111</width>
+                                    <height>31</height>
+                                </rect>
                             </property>
                         </widget>
                     </widget>
@@ -1918,9 +1924,20 @@
         <data format="PNG" length="1287">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000004ce49444154388db5955d4c544714c7ff33f7eeddbdbbecc26a5970513094483684dafa4144536bd20f6b28f5a3c6a6ada98d0f8634a42fc6c4446dfaa235316913adb6863ed0608ca4888610a2714512c4848f52415c835d026c77e563c57259d8af7b67a60fc816116b5f7a92f33099737ef3cf997366881002ff87c9ffb6e93d73c65e70f9f27bd66472839296962354157c6c2c1867eccef89a35de37ce9f9f7e512e594cb1f7f469b5f0d2a543196ef75796ad5b97d29212109b0d2004221e07efed45d2eb0d4ff7f67effe0d4a9efb66cd9927829f8faf5ebeecce9e9baa29e9e5269d326809045150900d1ac2c8ca96acbe4e4e49e929292f00bc14d4d4d4b9c4ee7ed65cb967932020158fbfac04d26183939604e2708003a350539180473bb91dcb0019c733c79f2e4f7c7e1f05ba51b37469e035fbb768da4737ed59197f7a1dd6e07e11ceaddbb4814174f08b3f92263ac43082164595e2f73fe19055e81c5024a08445b1bf4c3877f0d9d3cf9f1fa1d3b668142080821d0bb67cffbe32e9718be7851fcf1f0a1f0fbfdc2eff7d70d0d0d2d9d8b99739fcfe71c1e1eae7f343424260e1d1293e5e562dc6ee70197eb9db9183a27ddd1ddfd259d9941daf1e3506a6a108bc5bcb158ecd3bcbcbc8985f5f5783c7f8d8e8e7e12e7fcb61e89401f18803099089d99a9f8e71284407d6dad35e87269639224c62c16f1e0ec59d1dadafada42a50bbda7a76763a0b1513c52551192651194a4c9eeddbb2d29c5591d1db97472d2c11903330cc48a8b07a3d1e8bd45db619e8d8c8cb41b1ecf38531470c300e7dc61bd732707c02c588ec71ddc30c001305505d2d2464a4b4b5f3a92cb972f675492c678662638002e04218ab22405e6b21c6192040680c7e390743daba3a363f1069e67a15088524232b9a6cde602609aa6a5c0e1cd9b0386cd36cd01705d87e2f3e55bad56cf7f50bc960e0d65b3c78f67a1921449ae5efd670a5cbe6bd78cee74b6ce9d2a5fb840ec76fbc9969616e945d0aeae2e93dd6eff96ddb8310b05c008695b7deb562c050680b8dbfd13a3141c80181f8759d7cb5d2ed70fcdcdcdea42687b7bbb2d3333f3674551deb65456c2565d0d646521aeaa3f06020100f326eff8b163f2f62b579a94eddbdf257bf782984ca09c83733ec029fdc5308cbb9452a228ca5a4596bf6057afe65ab66d83e4748210824420d0e03d70e0a3cf3b3b8d67c05d5d5d181d1dcd2e2828685314259f520aa3b616aca606725919a455ab402409ccef47b2b111acbf1feabe7dc83871028cb1077d7d7d6fdaedf68975ebd63dab1800eaebeb919191f16a6e6e6e9d1a8dbe9e387204884480a703012120384fad05e7b01e3dfa5bc8e5dad9d9d919acacac4cc19e7b369b9a9a108944d28b9a9bbfb645a307ccd9d969c0ec8482f31430190c46a7efdfaf1a60ec9bf18307b58a8a8a6740a4a1a101555555b4bfbf5fd6344d4e2412b261180a63cc54e676bb77ae5cf9419ec7b3362d3d3d5b1886a469dac86077f7bdbac1c106efd4544892a4842ccb099bcd96282a2a4a565757b39c9c1c90c2c242251c0e9b138984993166e69c5b009838e71266bf2e699e93a78ea79dc900e8849024a534663299a656ac5831e5f3f9f45429ce9d3b476edebc4942a110d5348d46a351a2eb3a658c112104114210002084084aa99065999bcd66ee7038447e7e3e2b2b2b13fbf7ef4f95e36ff81f9e59a6a783a60000000049454e44ae426082</data>
     </image>
 </images>
+<connections>
+    <connection>
+        <sender>securityLineEdit</sender>
+        <signal>lostFocus()</signal>
+        <receiver>NetworkDialog</receiver>
+        <slot>test()</slot>
+    </connection>
+</connections>
 <includes>
     <include location="local" impldecl="in implementation">kdialog.h</include>
 </includes>
+<slots>
+    <slot>test()</slot>
+</slots>
 <layoutdefaults spacing="3" margin="3"/>
 <includehints>
     <includehint>klistview.h</includehint>

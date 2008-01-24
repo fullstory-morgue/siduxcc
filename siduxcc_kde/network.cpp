@@ -107,42 +107,46 @@ void network::connections()
 		connect( nwlButton, SIGNAL( clicked() ), this, SLOT( ndiswrapperList() ));
 	//fwdetect
 		connect( fwInstallPushButton, SIGNAL( clicked() ), this, SLOT( fwInstall() ));
-	connect( fwComboBox, SIGNAL( activated(int) ), this, SLOT( fwDetect() ));
+		connect( fwComboBox, SIGNAL( activated(int) ), this, SLOT( fwDetect() ));
 	//netcardconfig
-		connect( networkcardComboBox, SIGNAL( activated(int) ), networkcardWidget, SLOT( raiseWidget(int) ));
+		connect( networkcardComboBox,     SIGNAL( activated(int) ),              networkcardWidget, SLOT( raiseWidget(int) ));
 		// tab 1
-			connect( methodComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
-			connect( methodComboBox, SIGNAL( activated(int) ), this, SLOT( enableStaticFrame() ));
-			connect( ipLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( netmaskLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( broadcastLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( gatewayLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( classComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
-			connect( classPushButton,  SIGNAL( clicked() ), this, SLOT( classHelp() ));
-			connect( methodPushButton, SIGNAL( clicked() ), this, SLOT( methodHelp() ));
+			connect( methodComboBox,       SIGNAL( activated(int) ),              this,              SLOT( hasChanged() ));
+			connect( methodComboBox,       SIGNAL( activated(int) ),              this,              SLOT( enableStaticFrame() ));
+			connect( ipLineEdit,           SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( netmaskLineEdit,      SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( broadcastLineEdit,    SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( gatewayLineEdit,      SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( classComboBox,        SIGNAL( activated(int) ),              this,              SLOT( hasChanged() ));
+			connect( classPushButton,      SIGNAL( clicked() ),                   this,              SLOT( classHelp() ));
+			connect( methodPushButton,     SIGNAL( clicked() ),                   this,              SLOT( methodHelp() ));
 
 
 		// tab 2
-			connect( essidLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( modeComboBox, SIGNAL( activated(int) ), this, SLOT( hasChanged() ));
-			connect( autoRadioButton, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( channelRadioButton, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( channelRadioButton, SIGNAL( toggled(bool) ), channelSpinBox, SLOT( setEnabled(bool) ));
-			connect( frequencyRadioButton, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( frequencyRadioButton, SIGNAL( toggled(bool) ), frequencyLineEdit, SLOT( setEnabled(bool) ));
-			connect( channelSpinBox, SIGNAL( valueChanged(int) ), this, SLOT( hasChanged() ));
-			connect( frequencyLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( nwidLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( iwconfigLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( iwspyLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( iwprivLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
+			connect( essidLineEdit,        SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( modeComboBox,         SIGNAL( activated(int) ),              this,              SLOT( hasChanged() ));
+			connect( autoRadioButton,      SIGNAL( clicked() ),                   this,              SLOT( hasChanged() ));
+			connect( channelRadioButton,   SIGNAL( clicked() ),                   this,              SLOT( hasChanged() ));
+			connect( channelRadioButton,   SIGNAL( toggled(bool) ),               channelSpinBox,    SLOT( setEnabled(bool) ));
+			connect( frequencyRadioButton, SIGNAL( clicked() ),                   this,              SLOT( hasChanged() ));
+			connect( frequencyRadioButton, SIGNAL( toggled(bool) ),               frequencyLineEdit, SLOT( setEnabled(bool) ));
+			connect( channelSpinBox,       SIGNAL( valueChanged(int) ),           this,              SLOT( hasChanged() ));
+			connect( frequencyLineEdit,    SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( nwidLineEdit,         SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( iwconfigLineEdit,     SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( iwspyLineEdit,        SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( iwprivLineEdit,       SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
 		// tab 3
-			connect( wpaCheckBox, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( keyLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( wpaLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-			connect( wpaCheckBox, SIGNAL( clicked() ), this, SLOT( hasChanged() ));
-			connect( wpaCheckBox, SIGNAL( toggled(bool) ), keyLineEdit, SLOT( setDisabled(bool) ));
-			connect( wpaCheckBox, SIGNAL( toggled(bool) ), wpaLineEdit, SLOT( setEnabled(bool) ));
+			connect( securityLineEdit,     SIGNAL( textChanged(const QString&) ), this,              SLOT( hasChanged() ));
+			connect( securityLineEdit,     SIGNAL( textChanged(const QString&) ), this,              SLOT( controlKeyLength() ));
+			connect( securityPushButton,   SIGNAL( clicked() ),                   this,              SLOT( securityHelp() ));
+			connect( securityComboBox,     SIGNAL( activated(int) ),              this,              SLOT( hasChanged() ));
+			connect( securityComboBox,     SIGNAL( activated(int) ),              this,              SLOT( enableSecurityLineEdit() ));
+			connect( securityComboBox,     SIGNAL( activated(int) ),              this,              SLOT( controlKeyLength() ));
+ 
+
+	
+
 	//widget3
 		connect( applyPushButton, SIGNAL( clicked() ), this, SLOT( save() ));
 		connect( backPushButton, SIGNAL( clicked() ), this, SLOT( back() ));
@@ -330,18 +334,12 @@ void network::getNetworkcardSettings()
 	{
 		networkcardComboBox->show();
 		networkcardComboBox->setCurrentItem(0);
-		networkcardComboBox->removeItem(2); // disable security tab
-	
 
 		QString essid = QStringList::split(",", cardsettings.grep( "ssid," )[0] )[1];
 
+
 		// essid
 		essidLineEdit->setText( essid );  // E.g. myWlanNetwork
-			
-
-		// securitexte
-		securityTextLabel1->setText(i18n("Encryption key for ")+networkcard);
-		securityTextLabel2->setText(i18n("WPA Passphrase for ")+essid);
 
 
 		//wlan mode:
@@ -382,19 +380,25 @@ void network::getNetworkcardSettings()
 		iwprivLineEdit->setText(   QStringList::split(",", cardsettings.grep( "iwpriv,"        )[0] )[1] );
 		
 		// security
+		controlKeyLength();
 		QString key = QStringList::split(",", cardsettings.grep( "wireless-key,")[0] )[1];
 		QString wpa = QStringList::split(",", cardsettings.grep( "wpa-psk,"     )[0] )[1];
 		if( wpa )
 		{
-			wpaLineEdit->setEnabled(TRUE);
-			wpaCheckBox->setChecked(TRUE);
-			wpaLineEdit->setText(wpa);
+			securityComboBox->setCurrentItem(1);
+			securityLineEdit->setText(wpa);
+			securityLineEdit->setEnabled(TRUE);
+		}
+		else if( wpa )
+		{
+			securityComboBox->setCurrentItem(2);
+			securityLineEdit->setText(wpa);
+			securityLineEdit->setEnabled(TRUE);
 		}
 		else
 		{
-			keyLineEdit->setEnabled(TRUE);
-			wpaCheckBox->setChecked(FALSE);
-			wpaLineEdit->setText(key);
+			securityComboBox->setCurrentItem(0);
+			securityLineEdit->setEnabled(FALSE);
 		}
 	}
 	else
@@ -462,6 +466,15 @@ void network::setNetworkcardSettings(QString networkcard, QString type)
 		else if ( frequencyRadioButton->isChecked() )
 			settings += "\twireless-freq "+frequencyLineEdit->text()+"\n";
 
+
+		if ( securityComboBox->currentItem() == 1 and securityLineEdit->text().length() > 4)
+			settings += "\twireless-key "+securityLineEdit->text()+"\n";
+		else if ( securityComboBox->currentItem() == 2 and securityLineEdit->text().length() > 7 and securityLineEdit->text().length() < 64)
+		{
+			settings += "\twpa-ssid "+essidLineEdit->text()+"\n";
+			settings += "\twpa-psk "+securityLineEdit->text()+"\n";
+		}
+
 	}
 
 
@@ -481,18 +494,6 @@ void network::setNetworkcardSettings(QString networkcard, QString type)
 
 	f1.remove();
 
-	/*
-		if ( wpaCheckBox->isChecked() )
-		{
-			settings += " +";
-			settings += " +"+wpaLineEdit->text();
-		}
-		else
-		{
-			settings += " +"+keyLineEdit->text();
-			settings += " +";
-		}
-	*/
 
 
 }
@@ -517,7 +518,7 @@ QString network::toValidIP(QString ip)
 
 void network::classHelp()
 {
-	KMessageBox::information(this, i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the c&omputer starts"));
+	KMessageBox::information(this, i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the computer starts"));
 }
 
 void network::methodHelp()
@@ -533,6 +534,44 @@ void network::enableStaticFrame()
 	else
 		staticFrame->setEnabled(FALSE);
 }
+
+//------------------------------------------------------------------------------
+//--- security -----------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+
+void network::controlKeyLength()
+{
+	if( securityComboBox->currentItem() == 1 )
+		if( securityLineEdit->text().length() < 5  )
+			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/notok2.png") );
+		else
+			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/ok.png") );
+	else if( securityComboBox->currentItem() == 2 )
+		if( securityLineEdit->text().length() < 8 or securityLineEdit->text().length() > 63 )
+			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/notok2.png") );
+		else
+			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/ok.png") );
+}
+
+void network::securityHelp()
+{
+	if( securityComboBox->currentItem() == 1 )
+		KMessageBox::information(this, i18n("WEP encryption requires a key with at least 5 characters."));
+	else if( securityComboBox->currentItem() == 2 )
+		KMessageBox::information(this, i18n("WPA encryption requires a key with 8 to 63 characters."));
+	else
+		KMessageBox::information(this, i18n("..."));
+}
+
+void network::enableSecurityLineEdit()
+{
+	if( securityComboBox->currentItem() > 0 )
+		securityLineEdit->setEnabled(TRUE);
+	else
+		securityLineEdit->setEnabled(FALSE);
+}
+
 
 //------------------------------------------------------------------------------
 //--- hostname -----------------------------------------------------------------
