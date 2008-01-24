@@ -5,8 +5,9 @@ siduxcc (0.8.14) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * kde: network: wlan-encryption options added
+  * kde: network: layout updatet
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 25 Jan 2008 00:12:49 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 25 Jan 2008 00:21:52 +0100
 
 siduxcc (0.8.13) unstable; urgency=low
 

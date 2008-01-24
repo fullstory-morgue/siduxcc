@@ -1258,44 +1258,6 @@
                         <attribute name="id">
                             <number>0</number>
                         </attribute>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>textLabel1_2</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>30</x>
-                                    <y>20</y>
-                                    <width>69</width>
-                                    <height>20</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>&lt;b&gt;Class:&lt;/b&gt;</string>
-                            </property>
-                        </widget>
-                        <widget class="QPushButton">
-                            <property name="name">
-                                <cstring>classPushButton</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>230</x>
-                                    <y>20</y>
-                                    <width>30</width>
-                                    <height>30</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string></string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap>image10</pixmap>
-                            </property>
-                            <property name="accel">
-                                <string></string>
-                            </property>
-                        </widget>
                         <widget class="QComboBox">
                             <item>
                                 <property name="text">
@@ -1317,27 +1279,55 @@
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>110</x>
-                                    <y>20</y>
+                                    <x>100</x>
+                                    <y>25</y>
                                     <width>110</width>
                                     <height>30</height>
                                 </rect>
                             </property>
                         </widget>
-                        <widget class="QLabel">
+                        <widget class="QPushButton">
                             <property name="name">
-                                <cstring>methodTextLabel</cstring>
+                                <cstring>classPushButton</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>30</x>
-                                    <y>60</y>
-                                    <width>69</width>
-                                    <height>20</height>
+                                    <x>220</x>
+                                    <y>25</y>
+                                    <width>30</width>
+                                    <height>30</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string>&lt;b&gt;Method:&lt;/b&gt;</string>
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>image10</pixmap>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>methodPushButton</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>220</x>
+                                    <y>65</y>
+                                    <width>30</width>
+                                    <height>30</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap>image10</pixmap>
+                            </property>
+                            <property name="accel">
+                                <string></string>
                             </property>
                         </widget>
                         <widget class="QComboBox">
@@ -1356,33 +1346,43 @@
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>110</x>
-                                    <y>60</y>
+                                    <x>100</x>
+                                    <y>65</y>
                                     <width>110</width>
                                     <height>30</height>
                                 </rect>
                             </property>
                         </widget>
-                        <widget class="QPushButton">
+                        <widget class="QLabel">
                             <property name="name">
-                                <cstring>methodPushButton</cstring>
+                                <cstring>methodTextLabel</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>230</x>
-                                    <y>60</y>
-                                    <width>30</width>
-                                    <height>30</height>
+                                    <x>20</x>
+                                    <y>68</y>
+                                    <width>69</width>
+                                    <height>20</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string></string>
+                                <string>&lt;b&gt;Method:&lt;/b&gt;</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap>image10</pixmap>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1_2</cstring>
                             </property>
-                            <property name="accel">
-                                <string></string>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>28</y>
+                                    <width>69</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>&lt;b&gt;Class:&lt;/b&gt;</string>
                             </property>
                         </widget>
                         <widget class="QFrame">
@@ -1394,8 +1394,8 @@
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>30</x>
-                                    <y>110</y>
+                                    <x>20</x>
+                                    <y>115</y>
                                     <width>310</width>
                                     <height>144</height>
                                 </rect>
@@ -1525,7 +1525,7 @@
                             <property name="geometry">
                                 <rect>
                                     <x>220</x>
-                                    <y>90</y>
+                                    <y>110</y>
                                     <width>160</width>
                                     <height>140</height>
                                 </rect>
@@ -1601,7 +1601,7 @@
                             <property name="geometry">
                                 <rect>
                                     <x>20</x>
-                                    <y>90</y>
+                                    <y>110</y>
                                     <width>180</width>
                                     <height>140</height>
                                 </rect>
@@ -1676,6 +1676,22 @@
                                 </widget>
                             </grid>
                         </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>essidLineEdit</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>80</x>
+                                    <y>25</y>
+                                    <width>300</width>
+                                    <height>24</height>
+                                </rect>
+                            </property>
+                            <property name="maxLength">
+                                <number>32</number>
+                            </property>
+                        </widget>
                         <widget class="QLabel">
                             <property name="name">
                                 <cstring>wirelessModeLabel</cstring>
@@ -1683,45 +1699,13 @@
                             <property name="geometry">
                                 <rect>
                                     <x>20</x>
-                                    <y>50</y>
+                                    <y>65</y>
                                     <width>50</width>
                                     <height>24</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string>Mode:</string>
-                            </property>
-                        </widget>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>wirelessEssidLabel</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>20</x>
-                                    <y>10</y>
-                                    <width>50</width>
-                                    <height>24</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>ESSID:</string>
-                            </property>
-                        </widget>
-                        <widget class="QLineEdit">
-                            <property name="name">
-                                <cstring>essidLineEdit</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>70</x>
-                                    <y>10</y>
-                                    <width>310</width>
-                                    <height>24</height>
-                                </rect>
-                            </property>
-                            <property name="maxLength">
-                                <number>32</number>
+                                <string>&lt;b&gt;Mode:&lt;/b&gt;</string>
                             </property>
                         </widget>
                         <widget class="QComboBox">
@@ -1765,11 +1749,27 @@
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>70</x>
-                                    <y>50</y>
-                                    <width>310</width>
+                                    <x>80</x>
+                                    <y>65</y>
+                                    <width>300</width>
                                     <height>24</height>
                                 </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>wirelessEssidLabel</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>25</y>
+                                    <width>50</width>
+                                    <height>24</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>&lt;b&gt;ESSID:&lt;/b&gt;</string>
                             </property>
                         </widget>
                     </widget>
@@ -1780,25 +1780,6 @@
                         <attribute name="id">
                             <number>2</number>
                         </attribute>
-                        <widget class="QPushButton">
-                            <property name="name">
-                                <cstring>securityPushButton</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>345</x>
-                                    <y>75</y>
-                                    <width>31</width>
-                                    <height>31</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string></string>
-                            </property>
-                            <property name="accel">
-                                <string></string>
-                            </property>
-                        </widget>
                         <widget class="QLineEdit">
                             <property name="name">
                                 <cstring>securityLineEdit</cstring>
@@ -1809,7 +1790,7 @@
                             <property name="geometry">
                                 <rect>
                                     <x>150</x>
-                                    <y>80</y>
+                                    <y>70</y>
                                     <width>180</width>
                                     <height>24</height>
                                 </rect>
@@ -1821,36 +1802,23 @@
                                 <string></string>
                             </property>
                         </widget>
-                        <widget class="QLabel">
+                        <widget class="QPushButton">
                             <property name="name">
-                                <cstring>keyTextLabel2</cstring>
+                                <cstring>securityPushButton</cstring>
                             </property>
                             <property name="geometry">
                                 <rect>
-                                    <x>20</x>
-                                    <y>70</y>
-                                    <width>120</width>
+                                    <x>345</x>
+                                    <y>65</y>
+                                    <width>31</width>
                                     <height>31</height>
                                 </rect>
                             </property>
                             <property name="text">
-                                <string>&lt;b&gt;Preshared Key:&lt;/b&gt;</string>
+                                <string></string>
                             </property>
-                        </widget>
-                        <widget class="QLabel">
-                            <property name="name">
-                                <cstring>keyTextLabel2_2</cstring>
-                            </property>
-                            <property name="geometry">
-                                <rect>
-                                    <x>20</x>
-                                    <y>30</y>
-                                    <width>110</width>
-                                    <height>31</height>
-                                </rect>
-                            </property>
-                            <property name="text">
-                                <string>&lt;b&gt;Encryptiontype:&lt;/b&gt;</string>
+                            <property name="accel">
+                                <string></string>
                             </property>
                         </widget>
                         <widget class="QComboBox">
@@ -1875,10 +1843,42 @@
                             <property name="geometry">
                                 <rect>
                                     <x>150</x>
-                                    <y>30</y>
+                                    <y>25</y>
                                     <width>111</width>
                                     <height>31</height>
                                 </rect>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>keyTextLabel2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>65</y>
+                                    <width>120</width>
+                                    <height>31</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>&lt;b&gt;Preshared Key:&lt;/b&gt;</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>keyTextLabel2_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>20</x>
+                                    <y>23</y>
+                                    <width>125</width>
+                                    <height>31</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>&lt;b&gt;Encryptiontype:&lt;/b&gt;</string>
                             </property>
                         </widget>
                     </widget>
