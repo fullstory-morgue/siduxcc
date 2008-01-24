@@ -188,27 +188,25 @@ void network::getNetworkcards()
 	for(uint i = 0; i < devices.count(); i++ )
 	{
 
-		QStringList info = QStringList::split( " ", devices[i] );
-		for(uint j = 6; j < info.count(); j++)
-				info[5] = info[5]+" "+info[j]; 
+		QStringList info = QStringList::split( ",", devices[i] );
 
 		// get device status
 		this->shell->setCommand("siduxcc network getStatus "+info[0]);
 		this->shell->start(true);
-		QStringList status = QStringList::split( "\n+", this->shell->getBuffer(), TRUE );
+		QStringList status = QStringList::split( ",", this->shell->getBuffer(), TRUE );
 		status[0] = status[0].mid(1); // remove +
 
 		QListViewItem * item = new QListViewItem( ncList, 0 );
-		item->setText(0, info[0]);   // device name (E.g. eth0)
-		item->setText(1, status[0]);     // ip:      xxx.xxx.xxx.xxx
-		item->setText(2, status[1]);     // method:  dhcp/static)
-		item->setText(3, status[2]);     // boot:    enable/disable)
-		item->setText(4, info[2]);          // driver   e.g. e1000
-		item->setText(5, info[3]);          // slot:    e.g. pci
+		item->setText(0, info[0]);     // device name (E.g. eth0)
+		item->setText(1, status[0]);   // ip:      xxx.xxx.xxx.xxx
+		item->setText(2, status[1]);   // method:  dhcp/static)
+		item->setText(3, status[2]);   // boot:    enable/disable)
+		item->setText(4, info[2]);     // driver   e.g. e1000
+		item->setText(5, info[3]);     // slot:    e.g. pci
 
-		item->setText(6, info[1]);          // type:    wireless/ethernet
-		item->setText(7, info[4]);          // mac-address (xx:xx:...)
-		item->setText(8, info[5]);          // description
+		item->setText(6, info[1]);     // type:    wireless/ethernet
+		item->setText(7, info[4]);     // mac-address (xx:xx:...)
+		item->setText(8, info[5]);     // description
 
 		// set image
 		if(info[1] == "ethernet")

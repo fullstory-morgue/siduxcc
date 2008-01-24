@@ -82,15 +82,12 @@ function getStatus()
 	run=$(grep $DV /etc/network/run/ifstate)
 
 	if [ -z $run ]; then 
-		run="not_running"; 
+		run="not_running";
 	else
-		run="running"; 
+		run="running";
 	fi
 
-	echo "+"$ip
-	echo "+"$method
-	echo "+"$boot
-	echo "+"$run
+	echo $ip,$method,$boot,$run
 }
 
 #------------------------------------------------------------------------------#

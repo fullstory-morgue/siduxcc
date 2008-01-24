@@ -16,7 +16,7 @@ Description: sidux control center (KDE frontend)
 
 Package: siduxcc-common
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ceni (>= 1.17), gettext-base
+Depends: ${shlibs:Depends}, ${misc:Depends}, ceni (>= 1.31), gettext-base
 Replaces: siduxcc (<< 0.7)
 Description: sidux control center (backend and cli tools)
  Common tool backend and command line interface for the sidux control center
