@@ -1,9 +1,5 @@
-siduxcc (0.8.14) UNRELEASED; urgency=low
+siduxcc (0.9.0) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * kde: network: wlan-encryption options added
   * kde: network: layout updatet
 
