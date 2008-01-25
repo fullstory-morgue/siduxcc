@@ -77,7 +77,7 @@ start::start(QWidget *parent, const char *name, const QStringList &)
 	item5->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/package.png") );
 
 	KListViewItem * item6 = new KListViewItem( menuListView, 0 );
-	item6->setText(0, i18n("System-Info") );
+	item6->setText(0, i18n("System Info") );
 	item6->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/info.png") );
 
 }
