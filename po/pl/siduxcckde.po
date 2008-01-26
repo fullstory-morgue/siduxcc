@@ -81,7 +81,7 @@ msgstr "Jesteś pewien, że chcesz zainstalować nowy kernel?"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
-msgstr "Frontend do zarządzania siduksem."
+msgstr "Frontend do zarządzania sidux."
 
 #: main.cpp:46
 msgid "Developer"
@@ -652,7 +652,7 @@ msgstr "Interfejs"
 #: rc.cpp:298
 #, no-c-format
 msgid "sidux-Browser"
-msgstr "Przeglądarka siduksa"
+msgstr "Przeglądarka sidux"
 
 #. i18n: file ./networkdialog.ui line 17
 #: rc.cpp:301 start.cpp:68 start.cpp:104
@@ -1154,13 +1154,13 @@ msgstr "SysInfo"
 #: rc.cpp:646
 #, no-c-format
 msgid "About sidux"
-msgstr "O siduksie"
+msgstr "O sidux"
 
 #. i18n: file ./infodialog.ui line 42
 #: rc.cpp:649
 #, no-c-format
 msgid "sidux Version:"
-msgstr "Wersja siduksa"
+msgstr "Wersja sidux"
 
 #. i18n: file ./infodialog.ui line 94
 #: rc.cpp:653
@@ -1238,7 +1238,7 @@ msgstr "Instalacja"
 #: rc.cpp:729
 #, no-c-format
 msgid "sidux Control Center"
-msgstr "Centrum kontroli siduksa"
+msgstr "Centrum kontroli sidux"
 
 #. i18n: file ./startdialog.ui line 29
 #: rc.cpp:732
@@ -1274,7 +1274,7 @@ msgstr ""
 #: rc.cpp:757 rc.cpp:760
 #, no-c-format
 msgid "About siduxcc"
-msgstr "O siduksie"
+msgstr "O sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527

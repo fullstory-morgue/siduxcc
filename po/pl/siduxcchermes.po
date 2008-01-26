@@ -34,7 +34,7 @@ msgstr "pl"
 
 #: main.cpp:39
 msgid "A KDE tray application for sidux"
-msgstr "Aplet tacki systemowej KDE dla siduksa"
+msgstr "Aplet tacki systemowej KDE dla sidux"
 
 #. i18n: file ./legendbase.ui line 34
 #: rc.cpp:4

@@ -20,7 +20,7 @@ msgstr ""
 #: modules/dialog.bm:27
 #, sh-format
 msgid "sidux-Control-Center"
-msgstr "Centrum kontroli siduksa"
+msgstr "Centrum kontroli sidux"
 
 #: modules/display.bm:9 modules/display.bm:316
 #, sh-format
@@ -140,7 +140,7 @@ msgstr "Informacje"
 #: modules/info.bm:22
 #, sh-format
 msgid "sidux Version"
-msgstr "Wersja siduksa"
+msgstr "Wersja sidux"
 
 #: modules/info.bm:23
 #, sh-format
