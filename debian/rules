@@ -49,3 +49,11 @@ create-icons::
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-siduxcc_warning.png" \
 		 	"$(CURDIR)/icons/siduxcc_warning.svg"
+	inkscape --export-width=22 \
+		 --export-height=22 \
+		 --export-png="$(CURDIR)/icons/hi22-app-siduxcchermes.png" \
+		 	"$(CURDIR)/icons/siduxcchermes.svg"
+	inkscape --export-width=22 \
+		 --export-height=22 \
+		 --export-png="$(CURDIR)/icons/hi22-app-sidux_book.png" \
+		 	"$(CURDIR)/icons/sidux_book.svg"
