@@ -28,3 +28,24 @@ install/siduxcc-common::
 	convert icons/hi16-app-siduxcc.png \
 		debian/tmp/usr/share/pixmaps/siduxcc-16.xpm
 
+create-icons::
+	# requires inkscape and imagemagick to be installed
+	@if [ ! -x /usr/bin/inkscape ]; then \
+		echo "ERROR: inkscape not installed!" ; \
+		false ; \
+	fi
+	
+	# create XDG compatible icons from SVG
+	for i in 16 22 32 48 64 96; do \
+		mkdir -p "icons" ; \
+		inkscape --export-width=$${i} \
+			 --export-height=$${i} \
+			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcc.png" \
+				"$(CURDIR)/icons/siduxcc.svg" ; \
+	done
+	
+	# create GUI icons
+	inkscape --export-width=22 \
+		 --export-height=22 \
+		 --export-png="$(CURDIR)/icons/hi22-app-siduxcc_warning.png" \
+		 	"$(CURDIR)/icons/siduxcc_warning.svg"
