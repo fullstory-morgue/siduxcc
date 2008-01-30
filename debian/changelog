@@ -1,7 +1,6 @@
-siduxcc (0.9.4) UNRELEASED; urgency=low
+siduxcc (0.9.4) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
   * add temporary siduxcchermes.svg sidux_book.svg ressources.
   * refresh generated PNGs.
 
