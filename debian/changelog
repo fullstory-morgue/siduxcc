@@ -1,10 +1,15 @@
 siduxcc (0.9.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
   * add temporary siduxcchermes.svg sidux_book.svg ressources.
   * refresh generated PNGs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 29 Jan 2008 16:22:22 +0100
+  [ Fabian Wuertz ]
+  * couldn't connect bug fixed
+  * kde: network: iwlist tab added 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 30 Jan 2008 14:02:40 +0100
 
 siduxcc (0.9.3) unstable; urgency=low
 

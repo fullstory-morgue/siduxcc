@@ -37,12 +37,10 @@ function currentKernel()
 
 function kernelType()
 {
-	if [ -n "$(uname -r | grep slh-up)" ]; then
-		echo slh-up
-	elif [ -n "$(uname -r | grep slh-smp)" ]; then
+	if [ -n "$(uname -r | grep slh-smp)" ]; then
 		echo slh-smp
 	elif [ -n "$(uname -r | grep slh-64smp)" ]; then
-		echo slh64-up
+		echo slh64-smp
 	fi
 }
 

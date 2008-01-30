@@ -65,6 +65,11 @@ class network : public NetworkDialog
 		virtual void controlKeyLength();
 		virtual void enableSecurityLineEdit();
 
+		virtual void getWlanNetworks();
+		virtual void showWlanNetworks();
+
+		virtual void transmitWlanNetwork();
+
 		virtual void getHostname();
 		virtual void setHostname();
 
