@@ -712,7 +712,7 @@ void network::fwDetect()
 	// show firmware
 	QPixmap hardwareImg("/usr/share/siduxcc/icons/hardware.png");
 	hardwareList->clear();
-	if(fwComboBox->currentText() == i18n("detected"))
+	if(fwComboBox->currentText() == i18n("Detected"))
 		this->shell->setCommand("fw-detect -s");
 	else
 		this->shell->setCommand("fw-detect -a");

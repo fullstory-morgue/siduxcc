@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:07+0100\n"
+"POT-Creation-Date: 2008-01-31 15:01+0100\n"
 "PO-Revision-Date: 2007-11-18 21:55+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -101,11 +101,11 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 99
 #. i18n: file ./servicesdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 88
-#. i18n: file ./networkdialog.ui line 424
+#. i18n: file ./networkdialog.ui line 319
 #. i18n: file ./softwaredialog.ui line 452
 #. i18n: file ./kerneldialog.ui line 557
 #: displaydialog.cpp:2358 kerneldialog.cpp:1354 networkdialog.cpp:1952
-#: networkdialog.cpp:1973 rc.cpp:15 rc.cpp:211 rc.cpp:307 rc.cpp:365
+#: networkdialog.cpp:1966 rc.cpp:15 rc.cpp:211 rc.cpp:307 rc.cpp:344
 #: rc.cpp:652 rc.cpp:744 servicesdialog.cpp:518 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+B"
@@ -354,11 +354,11 @@ msgstr "Izbriši &Modelinije"
 
 #. i18n: file ./displaydialog.ui line 925
 #. i18n: file ./displaydialog.ui line 1237
-#. i18n: file ./networkdialog.ui line 454
+#. i18n: file ./networkdialog.ui line 349
 #. i18n: file ./networkdialog.ui line 706
 #. i18n: file ./softwaredialog.ui line 281
-#: displaydialog.cpp:2410 displaydialog.cpp:2430 networkdialog.cpp:1975
-#: networkdialog.cpp:1986 rc.cpp:146 rc.cpp:200 rc.cpp:371 rc.cpp:404
+#: displaydialog.cpp:2410 displaydialog.cpp:2430 networkdialog.cpp:1968
+#: networkdialog.cpp:1986 rc.cpp:146 rc.cpp:200 rc.cpp:350 rc.cpp:404
 #: rc.cpp:634 softwaredialog.cpp:779
 #, no-c-format
 msgid "Alt+O"
@@ -527,37 +527,32 @@ msgstr "Jesti li sigurni da hočete instalirati novi Kernel?"
 msgid "Kernel"
 msgstr "Kernel"
 
-#. i18n: file ./networkdialog.ui line 149
 #. i18n: file ./kerneldialog.ui line 26
-#: kerneldialog.cpp:1331 networkdialog.cpp:1957 rc.cpp:319 rc.cpp:684
+#: kerneldialog.cpp:1331 rc.cpp:684
 #, no-c-format
 msgid "Configure Networkcards"
 msgstr "Lista konfiguriranih mrežnih kartica"
 
-#. i18n: file ./networkdialog.ui line 157
 #. i18n: file ./kerneldialog.ui line 34
-#: kerneldialog.cpp:1332 networkdialog.cpp:1958 rc.cpp:322 rc.cpp:687
+#: kerneldialog.cpp:1332 rc.cpp:687
 #, no-c-format
 msgid "Set Hostname"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 165
 #. i18n: file ./kerneldialog.ui line 42
-#: kerneldialog.cpp:1333 networkdialog.cpp:1959 rc.cpp:325 rc.cpp:690
+#: kerneldialog.cpp:1333 rc.cpp:690
 #, no-c-format
 msgid "Set Nameservers"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 173
 #. i18n: file ./kerneldialog.ui line 50
-#: kerneldialog.cpp:1334 networkdialog.cpp:1960 rc.cpp:328 rc.cpp:693
+#: kerneldialog.cpp:1334 rc.cpp:693
 #, no-c-format
 msgid "Install Wlan-Cards (Ndiswrapper)"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 181
 #. i18n: file ./kerneldialog.ui line 58
-#: kerneldialog.cpp:1335 networkdialog.cpp:1961 rc.cpp:331 rc.cpp:696
+#: kerneldialog.cpp:1335 rc.cpp:696
 #, no-c-format
 msgid "Install Wlan-Cards (fwdetect)"
 msgstr ""
@@ -611,13 +606,13 @@ msgid "cle&ar"
 msgstr "Oćisti"
 
 #. i18n: file ./servicesdialog.ui line 461
-#. i18n: file ./networkdialog.ui line 487
-#. i18n: file ./networkdialog.ui line 1047
+#. i18n: file ./networkdialog.ui line 382
+#. i18n: file ./networkdialog.ui line 1101
 #. i18n: file ./networkdialog.ui line 1573
 #. i18n: file ./softwaredialog.ui line 367
 #. i18n: file ./kerneldialog.ui line 450
-#: kerneldialog.cpp:1350 networkdialog.cpp:1978 networkdialog.cpp:1989
-#: networkdialog.cpp:2030 rc.cpp:269 rc.cpp:380 rc.cpp:411 rc.cpp:510
+#: kerneldialog.cpp:1350 networkdialog.cpp:1971 networkdialog.cpp:1989
+#: networkdialog.cpp:2030 rc.cpp:269 rc.cpp:359 rc.cpp:411 rc.cpp:510
 #: rc.cpp:646 rc.cpp:732 servicesdialog.cpp:539 softwaredialog.cpp:783
 #, no-c-format
 msgid "Alt+A"
@@ -650,16 +645,14 @@ msgstr "Razvojnik knxcc"
 msgid "Developer of ceni and fw-detect"
 msgstr "Razvojnik knxcc"
 
-#. i18n: file ./networkdialog.ui line 393
-#: network.cpp:229 network.cpp:239 networkdialog.cpp:1971 rc.cpp:359
-#, no-c-format
+#: network.cpp:229 network.cpp:239
 msgid "Mac Address"
 msgstr "MAC-Adresa:"
 
 #. i18n: file ./servicesdialog.ui line 311
-#. i18n: file ./networkdialog.ui line 374
-#: network.cpp:230 network.cpp:240 networkdialog.cpp:1970 rc.cpp:235
-#: rc.cpp:356 servicesdialog.cpp:527
+#. i18n: file ./networkdialog.ui line 269
+#: network.cpp:230 network.cpp:240 networkdialog.cpp:1963 rc.cpp:235
+#: rc.cpp:335 servicesdialog.cpp:527
 #, no-c-format
 msgid "Description"
 msgstr "Opis"
@@ -687,42 +680,42 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1107
 #: network.cpp:715 networkdialog.cpp:1991 rc.cpp:414
-#, no-c-format
-msgid "detected"
+#, fuzzy, no-c-format
+msgid "Detected"
 msgstr "pronađen"
 
-#. i18n: file ./networkdialog.ui line 230
-#: networkdialog.cpp:1507 networkdialog.cpp:1962 rc.cpp:334
+#. i18n: file ./networkdialog.ui line 388
+#: networkdialog.cpp:1534 networkdialog.cpp:1972 rc.cpp:362
 #, no-c-format
 msgid "Interface"
 msgstr "Međusklop"
 
-#. i18n: file ./networkdialog.ui line 241
-#: networkdialog.cpp:1508 networkdialog.cpp:1963 rc.cpp:337
-#, no-c-format
-msgid "Ip Address    "
-msgstr "Ip Adresa"
+#. i18n: file ./networkdialog.ui line 399
+#: networkdialog.cpp:1535 networkdialog.cpp:1973 rc.cpp:365
+#, fuzzy, no-c-format
+msgid "IP address"
+msgstr "Ip Adresa:"
 
-#. i18n: file ./networkdialog.ui line 252
-#: networkdialog.cpp:1509 networkdialog.cpp:1964 rc.cpp:340
+#. i18n: file ./networkdialog.ui line 410
+#: networkdialog.cpp:1536 networkdialog.cpp:1974 rc.cpp:368
 #, no-c-format
 msgid "Method"
 msgstr "Metoda"
 
-#. i18n: file ./networkdialog.ui line 263
-#: networkdialog.cpp:1510 networkdialog.cpp:1965 rc.cpp:343
+#. i18n: file ./networkdialog.ui line 421
+#: networkdialog.cpp:1537 networkdialog.cpp:1975 rc.cpp:371
 #, no-c-format
 msgid "Class"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 274
-#: networkdialog.cpp:1511 networkdialog.cpp:1966 rc.cpp:346
+#. i18n: file ./networkdialog.ui line 432
+#: networkdialog.cpp:1538 networkdialog.cpp:1976 rc.cpp:374
 #, no-c-format
 msgid "Driver"
 msgstr "Pogonitelj"
 
-#. i18n: file ./networkdialog.ui line 285
-#: networkdialog.cpp:1512 networkdialog.cpp:1967 rc.cpp:349
+#. i18n: file ./networkdialog.ui line 443
+#: networkdialog.cpp:1539 networkdialog.cpp:1977 rc.cpp:377
 #, no-c-format
 msgid "Slot"
 msgstr "Utičnica"
@@ -763,35 +756,71 @@ msgstr ""
 msgid "Network"
 msgstr "Mreža"
 
-#. i18n: file ./networkdialog.ui line 329
-#: networkdialog.cpp:1968 rc.cpp:352
-#, no-c-format
-msgid "List of configured network devices"
+#. i18n: file ./networkdialog.ui line 149
+#: networkdialog.cpp:1957 rc.cpp:319
+#, fuzzy, no-c-format
+msgid "Configure network cards"
 msgstr "Lista konfiguriranih mrežnih kartica"
 
-#. i18n: file ./networkdialog.ui line 421
-#: networkdialog.cpp:1972 rc.cpp:362
+#. i18n: file ./networkdialog.ui line 157
+#: networkdialog.cpp:1958 rc.cpp:322
+#, no-c-format
+msgid "Set hostname"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 165
+#: networkdialog.cpp:1959 rc.cpp:325
+#, fuzzy, no-c-format
+msgid "Set nameservers"
+msgstr "Izaberite servis"
+
+#. i18n: file ./networkdialog.ui line 173
+#: networkdialog.cpp:1960 rc.cpp:328
+#, no-c-format
+msgid "Install WLAN cards (Ndiswrapper)"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 181
+#: networkdialog.cpp:1961 rc.cpp:331
+#, no-c-format
+msgid "Install WLAN cards (fwdetect)"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 288
+#: networkdialog.cpp:1964 rc.cpp:338
+#, fuzzy, no-c-format
+msgid "MAC address"
+msgstr "MAC-Adresa:"
+
+#. i18n: file ./networkdialog.ui line 316
+#: networkdialog.cpp:1965 rc.cpp:341
 #, no-c-format
 msgid "Disa&ble"
 msgstr "Deaktivirati"
 
-#. i18n: file ./networkdialog.ui line 451
-#: networkdialog.cpp:1974 rc.cpp:368
+#. i18n: file ./networkdialog.ui line 346
+#: networkdialog.cpp:1967 rc.cpp:347
 #, no-c-format
 msgid "C&onfigure"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 457
-#: networkdialog.cpp:1976 rc.cpp:374
+#. i18n: file ./networkdialog.ui line 352
+#: networkdialog.cpp:1969 rc.cpp:353
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "Promjeni postavke izabranog uređaja"
 
-#. i18n: file ./networkdialog.ui line 484
-#: networkdialog.cpp:1977 rc.cpp:377
+#. i18n: file ./networkdialog.ui line 379
+#: networkdialog.cpp:1970 rc.cpp:356
 #, no-c-format
 msgid "En&able"
 msgstr "Aktivirati"
+
+#. i18n: file ./networkdialog.ui line 487
+#: networkdialog.cpp:1978 rc.cpp:380
+#, no-c-format
+msgid "List of configured network devices"
+msgstr "Lista konfiguriranih mrežnih kartica"
 
 #. i18n: file ./networkdialog.ui line 514
 #: networkdialog.cpp:1979 rc.cpp:383
@@ -829,7 +858,7 @@ msgstr "Kartice koje su poznate da rade"
 msgid "Sh&ow list"
 msgstr ""
 
-#. i18n: file ./networkdialog.ui line 1044
+#. i18n: file ./networkdialog.ui line 1098
 #: networkdialog.cpp:1988 rc.cpp:408
 #, no-c-format
 msgid "Inst&all"
@@ -837,8 +866,8 @@ msgstr "Instalirati"
 
 #. i18n: file ./networkdialog.ui line 1112
 #: networkdialog.cpp:1992 rc.cpp:417
-#, no-c-format
-msgid "all"
+#, fuzzy, no-c-format
+msgid "All"
 msgstr "sve"
 
 #. i18n: file ./networkdialog.ui line 1193
@@ -1091,7 +1120,7 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 1794
 #: networkdialog.cpp:2051 rc.cpp:568
 #, no-c-format
-msgid "Show List"
+msgid "Sh&ow List"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1849
@@ -1430,6 +1459,10 @@ msgstr "Hoćete li stvarno da očistim lokalni repozitorij?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "Informacija o sistemu"
+
+#, fuzzy
+#~ msgid "IP address    "
+#~ msgstr "Ip Adresa"
 
 #, fuzzy
 #~ msgid "System-Info"

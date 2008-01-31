@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-24 21:07+0100\n"
+"POT-Creation-Date: 2008-01-31 15:06+0100\n"
 "PO-Revision-Date: 2007-10-25 22:41+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -63,8 +63,8 @@ msgid "Default Color Depth"
 msgstr "Default Color Depth"
 
 #: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
-#: modules/kernel.bm:28 modules/kernel.bm:96 modules/kernel.bm:108
-#: modules/network.bm:111 modules/software.bm:65 modules/software.bm:74
+#: modules/kernel.bm:28 modules/kernel.bm:94 modules/kernel.bm:106
+#: modules/network.bm:107 modules/software.bm:65 modules/software.bm:74
 #: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
@@ -120,14 +120,13 @@ msgstr "Reiniciar X-Server"
 msgid "Restore X-Server"
 msgstr "Restaurar X-Serer"
 
-#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:170
-#: modules/network.bm:128 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:199
-#, sh-format
-msgid "Return to main Menu"
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
+#, fuzzy, sh-format
+msgid "Return to main menu"
 msgstr "Regresar al Menu Principal"
 
-#: modules/display.bm:343 modules/network.bm:135
+#: modules/display.bm:343 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Error: ¡Este modulo no se a implementado todavia!"
@@ -152,7 +151,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr " Esta usando"
 
-#: modules/kernel.bm:9 modules/kernel.bm:167
+#: modules/kernel.bm:9 modules/kernel.bm:165
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -162,57 +161,57 @@ msgstr "Kernel"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "\"Kernel-remover\" no se puedo encontar, Desea instalarlo?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:107 modules/network.bm:110
+#: modules/kernel.bm:27 modules/kernel.bm:105 modules/network.bm:106
 #: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
 #: modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "¡Proceso terminado!"
 
-#: modules/kernel.bm:95
+#: modules/kernel.bm:93
 #, sh-format
 msgid "The installation is finished!"
 msgstr "La instalacion ha terminado"
 
-#: modules/kernel.bm:119
+#: modules/kernel.bm:117
 #, sh-format
 msgid "Select a kernel"
 msgstr "Seleccione un kernel"
 
-#: modules/kernel.bm:129
+#: modules/kernel.bm:127
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "¡La versiones del nuevo y el actual Kernel son los mismos!"
 
-#: modules/kernel.bm:168
+#: modules/kernel.bm:166
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Ejecute kernel-remover"
 
-#: modules/kernel.bm:169
+#: modules/kernel.bm:167
 #, sh-format
 msgid "Update kernel"
 msgstr "actualice kernel"
 
-#: modules/network.bm:15 modules/network.bm:125
+#: modules/network.bm:11 modules/network.bm:121
 #, sh-format
 msgid "Network"
 msgstr "Red"
 
-#: modules/network.bm:45
+#: modules/network.bm:41
 #, fuzzy, sh-format
 msgid "Enter a new hostname:"
 msgstr "Introduzca nueva resolución"
 
-#: modules/network.bm:126
+#: modules/network.bm:122
 #, sh-format
-msgid "Configure Networkcars"
+msgid "Configure network cards"
 msgstr ""
 
-#: modules/network.bm:127
-#, sh-format
-msgid "Set Hostname"
-msgstr ""
+#: modules/network.bm:123
+#, fuzzy, sh-format
+msgid "Set hostname"
+msgstr "Introduzca nueva resolución"
 
 #: modules/services.bm:10
 #, sh-format
@@ -220,28 +219,28 @@ msgid "Services"
 msgstr "Servicios"
 
 #: modules/services.bm:15
-#, sh-format
-msgid "Webserver"
+#, fuzzy, sh-format
+msgid "Web server"
 msgstr "Web servidor"
 
 #: modules/services.bm:16
-#, sh-format
-msgid "Printserver"
+#, fuzzy, sh-format
+msgid "Print server"
 msgstr "Servidor de impresores"
 
 #: modules/services.bm:17
-#, sh-format
-msgid "SQL Databaseserver"
+#, fuzzy, sh-format
+msgid "SQL database server"
 msgstr "Servidor de base de datos SQL"
 
 #: modules/services.bm:18
-#, sh-format
-msgid "Secure-shell-server"
+#, fuzzy, sh-format
+msgid "Secure shell server"
 msgstr "Servidor de ssh"
 
 #: modules/services.bm:19
-#, sh-format
-msgid "Samabaserver"
+#, fuzzy, sh-format
+msgid "Samaba server"
 msgstr "Servidor de Samba"
 
 #: modules/services.bm:30
@@ -273,6 +272,11 @@ msgstr "Agregar un Runlevel"
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr "Eliminar un Runlevel"
+
+#: modules/services.bm:36 modules/services.bm:54
+#, sh-format
+msgid "Return to main Menu"
+msgstr "Regresar al Menu Principal"
 
 #: modules/services.bm:51
 #, sh-format
@@ -333,18 +337,18 @@ msgid "Please choose a date..."
 msgstr "Por favor seleccione una fecha"
 
 #: modules/software.bm:196
-#, sh-format
-msgid "Run Dist-Upgrade"
+#, fuzzy, sh-format
+msgid "Run dist-upgrade"
 msgstr "Ejecutar Dist-Upgrade"
 
 #: modules/software.bm:197
-#, sh-format
-msgid "Show DU-Warnings"
+#, fuzzy, sh-format
+msgid "Show DU warnings"
 msgstr "Mostrar D-U advertencias"
 
 #: modules/software.bm:198
-#, sh-format
-msgid "Show DU-Log"
+#, fuzzy, sh-format
+msgid "Show DU log"
 msgstr "Mostrar DU-log"
 
 #: modules/interface:12

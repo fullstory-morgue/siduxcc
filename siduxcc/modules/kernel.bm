@@ -165,7 +165,7 @@ function kernel_interface()
 		kernel=$(dlg --menu "$(eval_gettext "Kernel"): $(currentKernel)" 0 0 0 \
 			"remover"  "$(eval_gettext "Run kernel-remover")" \
 			"update" "$(eval_gettext "Update kernel")" \
-			"return"   "$(eval_gettext "Return to main Menu")" )
+			"return"   "$(eval_gettext "Return to main menu")" )
 
 		case $kernel in
 			remover) kernel-remover;;

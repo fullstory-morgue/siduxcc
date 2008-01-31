@@ -323,7 +323,7 @@ function display_interface()
 			"binary-gfx" "$(eval_gettext "Install Ati/nVidia 3d drivers")" \
 			"restartX"   "$(eval_gettext "Restart X-Server")" \
 			"restoreX"   "$(eval_gettext "Restore X-Server")" \
-			"return"     "$(eval_gettext "Return to main Menu")" )
+			"return"     "$(eval_gettext "Return to main menu")" )
 
 		case $display in
 			binary-gfx) binaryGfx;;

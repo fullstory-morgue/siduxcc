@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-24 21:07+0100\n"
+"POT-Creation-Date: 2008-01-31 15:06+0100\n"
 "PO-Revision-Date: 2007-10-25 22:42+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -63,8 +63,8 @@ msgid "Default Color Depth"
 msgstr "Profondeur de couleur par défaut"
 
 #: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
-#: modules/kernel.bm:28 modules/kernel.bm:96 modules/kernel.bm:108
-#: modules/network.bm:111 modules/software.bm:65 modules/software.bm:74
+#: modules/kernel.bm:28 modules/kernel.bm:94 modules/kernel.bm:106
+#: modules/network.bm:107 modules/software.bm:65 modules/software.bm:74
 #: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
@@ -120,14 +120,13 @@ msgstr "Redémarrer le serveur X"
 msgid "Restore X-Server"
 msgstr "Restaurer le serveur X"
 
-#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:170
-#: modules/network.bm:128 modules/services.bm:20 modules/services.bm:36
-#: modules/services.bm:54 modules/software.bm:199
-#, sh-format
-msgid "Return to main Menu"
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
+#, fuzzy, sh-format
+msgid "Return to main menu"
 msgstr "Revenir au menu principal"
 
-#: modules/display.bm:343 modules/network.bm:135
+#: modules/display.bm:343 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Erreur : ce module n'est pas encore intégré !"
@@ -152,7 +151,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Vous utilisez "
 
-#: modules/kernel.bm:9 modules/kernel.bm:167
+#: modules/kernel.bm:9 modules/kernel.bm:165
 #, sh-format
 msgid "Kernel"
 msgstr "Noyau"
@@ -163,57 +162,57 @@ msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr ""
 "L'outil d'effacement des noyaux est manquant !Voulez-vous l'installer ?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:107 modules/network.bm:110
+#: modules/kernel.bm:27 modules/kernel.bm:105 modules/network.bm:106
 #: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
 #: modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "Processus achevé !"
 
-#: modules/kernel.bm:95
+#: modules/kernel.bm:93
 #, sh-format
 msgid "The installation is finished!"
 msgstr "L'installation est terminée !"
 
-#: modules/kernel.bm:119
+#: modules/kernel.bm:117
 #, sh-format
 msgid "Select a kernel"
 msgstr "Sélectionnez un noyau"
 
-#: modules/kernel.bm:129
+#: modules/kernel.bm:127
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "La version à jour du noyau et celle que vous utilisez sont les mêmes !"
 
-#: modules/kernel.bm:168
+#: modules/kernel.bm:166
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Activer le nettoyeur de noyaux"
 
-#: modules/kernel.bm:169
+#: modules/kernel.bm:167
 #, sh-format
 msgid "Update kernel"
 msgstr "Mettre-à-jour le noyau"
 
-#: modules/network.bm:15 modules/network.bm:125
+#: modules/network.bm:11 modules/network.bm:121
 #, sh-format
 msgid "Network"
 msgstr "Réseau"
 
-#: modules/network.bm:45
+#: modules/network.bm:41
 #, fuzzy, sh-format
 msgid "Enter a new hostname:"
 msgstr "Entrez la nouvelle définition"
 
-#: modules/network.bm:126
+#: modules/network.bm:122
 #, sh-format
-msgid "Configure Networkcars"
+msgid "Configure network cards"
 msgstr ""
 
-#: modules/network.bm:127
-#, sh-format
-msgid "Set Hostname"
-msgstr ""
+#: modules/network.bm:123
+#, fuzzy, sh-format
+msgid "Set hostname"
+msgstr "Entrez la nouvelle définition"
 
 #: modules/services.bm:10
 #, sh-format
@@ -221,28 +220,28 @@ msgid "Services"
 msgstr "Services"
 
 #: modules/services.bm:15
-#, sh-format
-msgid "Webserver"
+#, fuzzy, sh-format
+msgid "Web server"
 msgstr "Serveur Web"
 
 #: modules/services.bm:16
-#, sh-format
-msgid "Printserver"
+#, fuzzy, sh-format
+msgid "Print server"
 msgstr "Serveur d'impression"
 
 #: modules/services.bm:17
-#, sh-format
-msgid "SQL Databaseserver"
+#, fuzzy, sh-format
+msgid "SQL database server"
 msgstr "Serveur de Données SQL"
 
 #: modules/services.bm:18
-#, sh-format
-msgid "Secure-shell-server"
+#, fuzzy, sh-format
+msgid "Secure shell server"
 msgstr "Serveur de sécurisation ssh"
 
 #: modules/services.bm:19
-#, sh-format
-msgid "Samabaserver"
+#, fuzzy, sh-format
+msgid "Samaba server"
 msgstr "Serveur Samba"
 
 #: modules/services.bm:30
@@ -274,6 +273,11 @@ msgstr "Ajoûter une instruction de niveau d'entrée"
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr "Effacer l'instruction de niveau d'entrée"
+
+#: modules/services.bm:36 modules/services.bm:54
+#, sh-format
+msgid "Return to main Menu"
+msgstr "Revenir au menu principal"
 
 #: modules/services.bm:51
 #, sh-format
@@ -336,18 +340,18 @@ msgid "Please choose a date..."
 msgstr "Choisissez une date, svp..."
 
 #: modules/software.bm:196
-#, sh-format
-msgid "Run Dist-Upgrade"
+#, fuzzy, sh-format
+msgid "Run dist-upgrade"
 msgstr "Faire un Dist-Upgrade"
 
 #: modules/software.bm:197
-#, sh-format
-msgid "Show DU-Warnings"
+#, fuzzy, sh-format
+msgid "Show DU warnings"
 msgstr "Montrer les Alertes-DU"
 
 #: modules/software.bm:198
-#, sh-format
-msgid "Show DU-Log"
+#, fuzzy, sh-format
+msgid "Show DU log"
 msgstr "Voir les logs du DU"
 
 #: modules/interface:12

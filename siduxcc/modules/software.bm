@@ -193,10 +193,10 @@ function software_interface()
 	while true;
 	do
 		software=$(dlg --menu "$(eval_gettext "Software")" 0 0 0 \
-			"du"       "$(eval_gettext "Run Dist-Upgrade")" \
-			"warnings" "$(eval_gettext "Show DU-Warnings")" \
-			"duLog"    "$(eval_gettext "Show DU-Log")" \
-			"return"   "$(eval_gettext "Return to main Menu")" )
+			"du"       "$(eval_gettext "Run dist-upgrade")" \
+			"warnings" "$(eval_gettext "Show DU warnings")" \
+			"duLog"    "$(eval_gettext "Show DU log")" \
+			"return"   "$(eval_gettext "Return to main menu")" )
 
 		case $software in
 			du) dlgDu;;

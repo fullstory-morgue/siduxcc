@@ -21,7 +21,7 @@ function info_interface()
 		selection=$(dlg --menu "$(eval_gettext "Infos")" 0 0 0 \
 			"version" "$(eval_gettext "sidux Version")" \
 			"infobash" "$(eval_gettext "Infobash")" \
-			"return" "$(eval_gettext "Return to main Menu")" )
+			"return" "$(eval_gettext "Return to main menu")" )
 		
 		case $selection in
 			version) dlg --msgbox "$(eval_gettext "You are using ") $(siduxVersion)";;

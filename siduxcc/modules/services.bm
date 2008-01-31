@@ -12,12 +12,12 @@ register_module services $(eval_gettext "Services")
 function dlgService1()
 {
 	service=$(dlg --menu "$(eval_gettext "Services: $services")" 0 0 0 \
-		"apache2" "$(eval_gettext "Webserver")" \
-		"cupsys"  "$(eval_gettext "Printserver")" \
-		"mysql"   "$(eval_gettext "SQL Databaseserver")" \
-		"ssh"     "$(eval_gettext "Secure-shell-server")" \
-		"samba"   "$(eval_gettext "Samabaserver")" \
-		"return"  "$(eval_gettext "Return to main Menu")" )
+		"apache2" "$(eval_gettext "Web server")" \
+		"cupsys"  "$(eval_gettext "Print server")" \
+		"mysql"   "$(eval_gettext "SQL database server")" \
+		"ssh"     "$(eval_gettext "Secure shell server")" \
+		"samba"   "$(eval_gettext "Samaba server")" \
+		"return"  "$(eval_gettext "Return to main menu")" )
 	case $service in
 		apache2|cupsys|ssh|samba) dlgService2;;
 		return|"") break;;

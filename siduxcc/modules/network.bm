@@ -2,11 +2,7 @@
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
 # siduxcc is based on 
-# knxcc from Andreas Loibl 
-# and netcardconfig
-# (C) 2006 Niall Walsh to integrate wlan cards
-# (C) 2004-2007 by Stefan Lippers-Hollmann <s.l-h@gmx.de>
-# (C) 2007 by Horst Tritremmel <hjt@sidux.com>
+# knxcc from Andreas Loibl
 
 
 #run gettext
@@ -46,7 +42,7 @@ function dlgHostname()
 	if [ $? -eq 0 ]; then
 		setHostname $newHostname \
 		&& dlg --msgbox "$(eval_gettext "The hostname have been changed successfully to $newHostname.")" \
-		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the hosntame to $newHostname!")"
+		|| dlg --msgbox "$(eval_gettext "An error occurred while changing the hosntame to $newHostname!")"
 	fi
 }
 
@@ -123,9 +119,9 @@ function network_interface()
 	while true;
 	do
 		network=$(dlg --menu "$(eval_gettext "Network")" 0 0 0 \
-			"ceni"       "$(eval_gettext "Configure Networkcars")" \
-			"hostname"  "$(eval_gettext "Set Hostname")" \
-			"return"     "$(eval_gettext "Return to main Menu")" )
+			"ceni"       "$(eval_gettext "Configure network cards")" \
+			"hostname"  "$(eval_gettext "Set hostname")" \
+			"return"     "$(eval_gettext "Return to main menu")" )
 	
 		case $network in
 			ceni)      ceni;;
