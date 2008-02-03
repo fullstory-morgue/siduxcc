@@ -20,7 +20,7 @@ VPATH = @srcdir@
 pkgdatadir = $(datadir)/@PACKAGE@
 pkglibdir = $(libdir)/@PACKAGE@
 pkgincludedir = $(includedir)/@PACKAGE@
-top_builddir = ..
+top_builddir = ../..
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 INSTALL = @INSTALL@
 install_sh_DATA = $(install_sh) -c -m 644
@@ -37,7 +37,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = icons
+subdir = po/jp
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -51,7 +51,9 @@ SOURCES =
 DIST_SOURCES =
 #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 #>+ 1
-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+#>+ 1
+DISTFILES = $(GMOFILES) $(POFILES) $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
 ACLOCAL = @ACLOCAL@
 AMDEP_FALSE = @AMDEP_FALSE@
 AMDEP_TRUE = @AMDEP_TRUE@
@@ -296,10 +298,14 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-KDE_ICON = AUTO
+KDE_LANG = jp
+#>- POFILES = AUTO
+#>+ 2
+POFILES = siduxcc.po siduxcchermes.po siduxcckde.po
+GMOFILES = siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo
 #>- all: all-am
 #>+ 1
-all: docs-am  all-am
+all: all-nls docs-am  all-am
 
 .SUFFIXES:
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
@@ -311,9 +317,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  icons/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  icons/Makefile
+#>- 	  $(AUTOMAKE) --gnu  po/jp/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -323,10 +329,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  icons/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  icons/Makefile
-	cd $(top_srcdir) && perl admin/am_edit icons/Makefile.in
+	  $(AUTOMAKE) --gnu  po/jp/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/jp/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -361,7 +367,9 @@ ctags: CTAGS
 CTAGS:
 
 
-distdir: $(DISTFILES)
+#>- distdir: $(DISTFILES)
+#>+ 1
+distdir: distdir-nls  $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \
 	list='$(DISTFILES)'; for file in $$list; do \
@@ -395,7 +403,9 @@ installdirs:
 install: install-am
 install-exec: install-exec-am
 install-data: install-data-am
-uninstall: uninstall-am
+#>- uninstall: uninstall-am
+#>+ 1
+uninstall: uninstall-nls  uninstall-am
 
 install-am: all-am
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
@@ -416,10 +426,6 @@ distclean-generic:
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
-#>- clean: clean-am
-#>+ 1
-clean: kde-rpo-clean  clean-am
-
 #>- clean-am: clean-generic clean-libtool mostlyclean-am
 #>+ 1
 clean-am: clean-bcheck  clean-generic clean-libtool mostlyclean-am
@@ -440,7 +446,7 @@ info-am:
 
 #>- install-data-am:
 #>+ 1
-install-data-am: install-kde-icons 
+install-data-am: install-nls 
 
 install-exec-am:
 
@@ -450,7 +456,9 @@ install-man:
 
 installcheck-am:
 
-maintainer-clean: maintainer-clean-am
+#>- maintainer-clean: maintainer-clean-am
+#>+ 1
+maintainer-clean: clean-nls  maintainer-clean-am
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
@@ -466,9 +474,7 @@ ps: ps-am
 
 ps-am:
 
-#>- uninstall-am: uninstall-info-am
-#>+ 1
-uninstall-am: uninstall-kde-icons  uninstall-info-am
+uninstall-am: uninstall-info-am
 
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
 	distclean distclean-generic distclean-libtool distdir dvi \
@@ -480,59 +486,64 @@ uninstall-am: uninstall-kde-icons  uninstall-info-am
 	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
 	uninstall-info-am
 
+
+#>- clean:
+#>+ 1
+clean: kde-rpo-clean 
+	rm -f *.gmo
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=hi16-app-siduxcc_hermes.png siduxcc_warning.svg hi22-app-siduxcc_ok.png hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi22-app-siduxcc_hermes.png hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi32-app-siduxcc_hermes.png hi22-app-siduxcc_wlan_up.png siduxcchermes.svg siduxcc.svg sidux_book.svg hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi22-app-siduxcc_warning.png 
+KDE_DIST=Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po Makefile.am 
+
+#>+ 10
+siduxcc.gmo: siduxcc.po
+	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
+	test ! -f siduxcc.gmo || touch siduxcc.gmo
+siduxcchermes.gmo: siduxcchermes.po
+	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
+	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
+siduxcckde.gmo: siduxcckde.po
+	rm -f siduxcckde.gmo; $(GMSGFMT) -o siduxcckde.gmo $(srcdir)/siduxcckde.po
+	test ! -f siduxcckde.gmo || touch siduxcckde.gmo
+
+#>+ 3
+clean-nls:
+	-rm -f  siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo
+
+#>+ 10
+install-nls:
+	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
+	@for base in siduxcc siduxcchermes siduxcckde ; do \
+	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
+	  fi ;\
+	done
+
+
+#>+ 5
+uninstall-nls:
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckde.mo
+
+#>+ 2
+all-nls: $(GMOFILES)
+
+#>+ 8
+distdir-nls:$(GMOFILES)
+	for file in $(POFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
+	for file in $(GMOFILES); do \
+	  cp $(srcdir)/$$file $(distdir); \
+	done
 
 #>+ 2
 docs-am:
-
-#>+ 43
-install-kde-icons:
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps
-	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps
-	$(INSTALL_DATA) $(srcdir)/hi32-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps
-	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcc.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_disconnected.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps
-	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_ok.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_ok.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_hermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_hermes.png
-	$(INSTALL_DATA) $(srcdir)/hi32-app-siduxcc_hermes.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc_hermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-sidux_book.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
-	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcc_hermes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_hermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
-
-uninstall-kde-icons:
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_ok.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_hermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc_hermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_hermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
 
 #>+ 15
 force-reedit:
@@ -544,10 +555,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  icons/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  icons/Makefile
-	cd $(top_srcdir) && perl admin/am_edit icons/Makefile.in
+	  $(AUTOMAKE) --gnu  po/jp/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/jp/Makefile.in
 
 
 #>+ 21

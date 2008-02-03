@@ -1,0 +1,367 @@
+# translation of siduxcc.po to
+# translation of siduxcc-console.po to
+# translation of siduxccconsole.po to
+# This file is put in the public domain.
+# FIRST AUTHOR <sachs@infoseek.jp>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: siduxcc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-31 15:06+0100\n"
+"PO-Revision-Date: 2008-02-03 20:51+0100\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: modules/dialog.bm:27
+#, sh-format
+msgid "sidux-Control-Center"
+msgstr "sidux コントロールセンター"
+
+#: modules/display.bm:9 modules/display.bm:316
+#, sh-format
+msgid "Display"
+msgstr "ディスプレイ"
+
+#: modules/display.bm:38
+#, sh-format
+msgid "Select new Resolution"
+msgstr "新らしい解像度選択"
+
+#: modules/display.bm:42
+#, sh-format
+msgid "Enter new Resolution:"
+msgstr "新しい解像度入力:"
+
+#: modules/display.bm:81
+#, sh-format
+msgid "Do you have a TFT-monitor?"
+msgstr "TFTモニターを使っていますか?"
+
+#: modules/display.bm:85
+#, sh-format
+msgid "Enter new vertical refresh rate:"
+msgstr "新しい垂直リフレッシュレート入力:"
+
+#: modules/display.bm:94
+#, sh-format
+msgid "Enter new horizontal sync rate:"
+msgstr "新しい水平同期率入力:"
+
+#: modules/display.bm:138
+#, sh-format
+msgid "Enter new DPI-Settings:"
+msgstr "新しいDPI設定入力:"
+
+#: modules/display.bm:172
+#, sh-format
+msgid "Default Color Depth"
+msgstr "デフォルト色深度"
+
+#: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:94 modules/kernel.bm:106
+#: modules/network.bm:107 modules/software.bm:65 modules/software.bm:74
+#: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "<Enter>で続行..."
+
+#: modules/display.bm:284
+#, sh-format
+msgid "Select the file that should be restore"
+msgstr "レストアするファイルを選択してください"
+
+#: modules/display.bm:317
+#, sh-format
+msgid "Change resolution"
+msgstr "解像度変更"
+
+#: modules/display.bm:318
+#, sh-format
+msgid "Set scanning frequency"
+msgstr "操作周波数セット"
+
+#: modules/display.bm:319
+#, sh-format
+msgid "Change DPI-settings"
+msgstr "DPI-設定変更"
+
+#: modules/display.bm:320
+#, sh-format
+msgid "Change color-depth"
+msgstr "色深度変更"
+
+#: modules/display.bm:321
+#, sh-format
+msgid "Remove modelines"
+msgstr "モードライン削除"
+
+#: modules/display.bm:322
+#, sh-format
+msgid "Register/Repair fonts"
+msgstr "フォントの登録/修復"
+
+#: modules/display.bm:323
+#, sh-format
+msgid "Install Ati/nVidia 3d drivers"
+msgstr "Ati/Nvidia 3Dドライバーインストール"
+
+#: modules/display.bm:324
+#, sh-format
+msgid "Restart X-Server"
+msgstr "X-Serverの最始動"
+
+#: modules/display.bm:325
+#, sh-format
+msgid "Restore X-Server"
+msgstr "X-Serverのレストア"
+
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
+#, sh-format
+msgid "Return to main menu"
+msgstr "メインメニューへ戻る"
+
+#: modules/display.bm:343 modules/network.bm:131
+#, sh-format
+msgid "Error: This module is not implemented yet!"
+msgstr "エラー: このモジュールはまだ組み込まれていません!"
+
+#: modules/info.bm:10 modules/info.bm:21
+#, sh-format
+msgid "Infos"
+msgstr "Infos"
+
+#: modules/info.bm:22
+#, sh-format
+msgid "sidux Version"
+msgstr "siduxバージョン"
+
+#: modules/info.bm:23
+#, sh-format
+msgid "Infobash"
+msgstr "Infobash"
+
+#: modules/info.bm:27
+#, sh-format
+msgid "You are using "
+msgstr "使用中 "
+
+#: modules/kernel.bm:9 modules/kernel.bm:165
+#, sh-format
+msgid "Kernel"
+msgstr "カーネル"
+
+#: modules/kernel.bm:16
+#, sh-format
+msgid "Kernel-remover is missing! Do you want do install it?"
+msgstr "カーネルリムーバーがありません! インストールしますか?"
+
+#: modules/kernel.bm:27 modules/kernel.bm:105 modules/network.bm:106
+#: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
+#: modules/software.bm:98 modules/software.bm:109
+#, sh-format
+msgid "Process done!"
+msgstr "処理完了!"
+
+#: modules/kernel.bm:93
+#, sh-format
+msgid "The installation is finished!"
+msgstr "インストールが終了しました!"
+
+#: modules/kernel.bm:117
+#, sh-format
+msgid "Select a kernel"
+msgstr "カーネルを選択してください"
+
+#: modules/kernel.bm:127
+#, sh-format
+msgid "The versions of the new and the current Kernel are the same!"
+msgstr "新しいカーネルと現在のカーネルのバージョンは同じです!"
+
+#: modules/kernel.bm:166
+#, sh-format
+msgid "Run kernel-remover"
+msgstr "カーネルリムーバー実行"
+
+#: modules/kernel.bm:167
+#, sh-format
+msgid "Update kernel"
+msgstr "カーネル更新"
+
+#: modules/network.bm:11 modules/network.bm:121
+#, sh-format
+msgid "Network"
+msgstr "ネットワーク"
+
+#: modules/network.bm:41
+#, sh-format
+msgid "Enter a new hostname:"
+msgstr "新しいホストネーム:"
+
+#: modules/network.bm:122
+#, sh-format
+msgid "Configure network cards"
+msgstr "ネットワークカード設定"
+
+#: modules/network.bm:123
+#, sh-format
+msgid "Set hostname"
+msgstr "ホストネーム設定"
+
+#: modules/services.bm:10
+#, sh-format
+msgid "Services"
+msgstr "サービス"
+
+#: modules/services.bm:15
+#, sh-format
+msgid "Web server"
+msgstr "ウェブサーバー"
+
+#: modules/services.bm:16
+#, sh-format
+msgid "Print server"
+msgstr "プリントサーバー"
+
+#: modules/services.bm:17
+#, sh-format
+msgid "SQL database server"
+msgstr "SQLデータベースサーバー"
+
+#: modules/services.bm:18
+#, sh-format
+msgid "Secure shell server"
+msgstr "SSHサーバー"
+
+#: modules/services.bm:19
+#, sh-format
+msgid "Samaba server"
+msgstr "Samabaサーバー"
+
+#: modules/services.bm:30
+#, sh-format
+msgid "Start now"
+msgstr "ただちに開始"
+
+#: modules/services.bm:31
+#, sh-format
+msgid "Stop now"
+msgstr "ただちに停止"
+
+#: modules/services.bm:32
+#, sh-format
+msgid "Restart now"
+msgstr "ただちに再起動"
+
+#: modules/services.bm:33
+#, sh-format
+msgid "Reload now"
+msgstr "ただちにリロード"
+
+#: modules/services.bm:34
+#, sh-format
+msgid "Add a Runlevel-Entry"
+msgstr "ランレベルエントリーを追加"
+
+#: modules/services.bm:35
+#, sh-format
+msgid "Delete Runlevel-Entry"
+msgstr "ランレベルエントリーを削除"
+
+#: modules/services.bm:36 modules/services.bm:54
+#, sh-format
+msgid "Return to main Menu"
+msgstr "メインメニューへ戻る"
+
+#: modules/services.bm:51
+#, sh-format
+msgid "Boot"
+msgstr "ブート"
+
+#: modules/services.bm:52
+#, sh-format
+msgid "Enable/Disable Services at Boot"
+msgstr "ブート時サービス可/不可"
+
+#: modules/services.bm:53
+#, sh-format
+msgid "Manage Services"
+msgstr "管理サービス"
+
+#: modules/smxi.bm:9
+#, sh-format
+msgid "sidux-update"
+msgstr "siduxiアップデート"
+
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"sidux.comに接続できないためDist-Upgradeの警告が出ているか確認できません。それ"
+"でも続行しますか?"
+
+#: modules/software.bm:10 modules/software.bm:195
+#, sh-format
+msgid "Software"
+msgstr "ソフトウェア"
+
+#: modules/software.bm:30
+#, sh-format
+msgid "You must be in runlevel 3 and out of X to run this script."
+msgstr "このスクリプトはランレベル３でXの外側で実行しなければなりません!"
+
+#: modules/software.bm:40 modules/software.bm:152
+#, sh-format
+msgid ""
+"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
+"com for more information!"
+msgstr ""
+"Dist-Upgradeの警告があります! 今Dist-Upgradeをしないでください. sidux.comの"
+"フォーラムで詳しい情報を読んでください。"
+
+#: modules/software.bm:43 modules/software.bm:154
+#, sh-format
+msgid "At the moment there are no DU-warnings!"
+msgstr "Dist-Upgradeの警告はありません!"
+
+#: modules/software.bm:160
+#, sh-format
+msgid "Please choose a date..."
+msgstr "日付を選択してください。"
+
+#: modules/software.bm:196
+#, sh-format
+msgid "Run dist-upgrade"
+msgstr "Dist-Upgradeを実行"
+
+#: modules/software.bm:197
+#, sh-format
+msgid "Show DU warnings"
+msgstr "Dist-Upgradeの警告を表示"
+
+#: modules/software.bm:198
+#, sh-format
+msgid "Show DU log"
+msgstr "Dist-Upgradeのログを表示"
+
+#: modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr "エラー: このスクリプトはrootで実行しなければなりません!"
+
+#: modules/interface:18
+#, sh-format
+msgid "Main Menu"
+msgstr "メインメニュー"
+
+#: modules/interface:19
+#, sh-format
+msgid "Exit"
+msgstr "終了"

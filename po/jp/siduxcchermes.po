@@ -1,15 +1,15 @@
 # translation of hermes.po to
 # translation of siduxcchermes.po to
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Created by S.Sach <sachs@infoseek.jp>, 2007.
+# maintained for sidux by muchan <muchan.g@gmail.com> 2008.02
 msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-03 18:17+0100\n"
-"PO-Revision-Date: 2007-11-18 21:37+0100\n"
-"Last-Translator: Fabian Wuertz\n"
+"PO-Revision-Date: 2007-02-01 18:48+0100\n"
+"Last-Translator: muchan\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,35 +20,35 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "maslot"
+msgstr "s.sach"
 
 #: _translatorinfo.cpp:3
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr ""
+msgstr "sachs@infoseek.jp"
 
 #: hermes.cpp:43 systray.cpp:63
 msgid "en"
-msgstr "pl"
+msgstr "ja"
 
 #. i18n: file ./hermesbase.ui line 76
 #: hermesbase.cpp:133 hermesbase.cpp:212 rc.cpp:25
 #, no-c-format
 msgid "Name"
-msgstr "Nazwa"
+msgstr "Name"
 
 #. i18n: file ./hermesbase.ui line 87
 #: hermesbase.cpp:134 hermesbase.cpp:213 rc.cpp:28
 #, no-c-format
 msgid "Installed Version"
-msgstr "Zainstalowana wersja"
+msgstr "インストールバージョン"
 
 #. i18n: file ./hermesbase.ui line 98
 #: hermesbase.cpp:135 hermesbase.cpp:214 rc.cpp:31
 #, no-c-format
 msgid "Latest Version"
-msgstr "Najnowsza wersja"
+msgstr "最新バージョン:"
 
 #. i18n: file ./hermesbase.ui line 16
 #: hermesbase.cpp:210 rc.cpp:16 systray.cpp:40
@@ -60,43 +60,43 @@ msgstr "siduxcc-hermes"
 #: hermesbase.cpp:211 rc.cpp:19
 #, no-c-format
 msgid "War&nings"
-msgstr ""
+msgstr "警告"
 
 #. i18n: file ./hermesbase.ui line 67
 #: hermesbase.cpp:215 rc.cpp:22
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Upgradable pac&kages"
-msgstr "Pakiety do aktualizacji"
+msgstr "更新可能パッケージ"
 
 #. i18n: file ./hermesbase.ui line 142
 #: hermesbase.cpp:216 rc.cpp:34
 #, no-c-format
 msgid "cl&ose"
-msgstr ""
+msgstr "閉じる"
 
 #. i18n: file ./hermesbase.ui line 145
 #: hermesbase.cpp:217 rc.cpp:37
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 170
 #: hermesbase.cpp:218 rc.cpp:40
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&update (apt-get)"
-msgstr "Odśwież (apt-get update)"
+msgstr "update (apt-get)"
 
 #. i18n: file ./hermesbase.ui line 173
 #: hermesbase.cpp:219 rc.cpp:43
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file ./legendbase.ui line 34
 #: legendbase.cpp:464 rc.cpp:4
 #, no-c-format
 msgid "Legend"
-msgstr "Legenda"
+msgstr "レジェンド"
 
 #. i18n: file ./legendbase.ui line 106
 #: legendbase.cpp:465 rc.cpp:7
@@ -104,58 +104,45 @@ msgstr "Legenda"
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
-"Są ostrzeżenia przed aktualizacją. Odwiedź sidux.com, aby zdobyć więcej "
-"informacji"
+"dist-upgradeの警告があります. sidux.comのフォーラムで詳しい情報を読んでくださ"
+"い."
 
 #. i18n: file ./legendbase.ui line 125
 #: legendbase.cpp:466 rc.cpp:10
 #, no-c-format
 msgid "No connection to sidux.com."
-msgstr "Brak połączenia do sidux.com"
+msgstr "sidux.comに接続していません."
 
 #. i18n: file ./legendbase.ui line 141
 #: legendbase.cpp:467 rc.cpp:13
 #, no-c-format
 msgid "No dist-upgrade warnings."
-msgstr "Brak ostrzeżeń przed aktualizacją."
+msgstr "dist-upgradeの警告はありません."
 
 #: main.cpp:39
 msgid "A KDE tray application for sidux"
-msgstr "Aplet tacki systemowej KDE dla sidux"
+msgstr "siduxのKDEトレイアプリケーション"
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
-msgstr "Forum - ostrzeżenia przed aktualizacjami"
+msgstr "フォーラム - Dist-Upgradeの警告"
 
 #: systray.cpp:44
 msgid "Manual - Upgrade of an Installed System"
-msgstr "Instrukcja - Aktualizacja zainstalowanego systemu"
+msgstr "手動 - インストールしたシステムの更新"
 
 #: systray.cpp:45
 msgid "Upgradable packages"
-msgstr "Pakiety do aktualizacji"
+msgstr "更新可能パッケージ"
 
 #: systray.cpp:46
 msgid "Warnings"
-msgstr ""
+msgstr "警告"
 
 #: systray.cpp:48
 msgid "Show Legend"
-msgstr "Pokaż legendę"
+msgstr "レジェンド表示"
 
 #: systray.cpp:49
 msgid "&About siduxcc-hermes"
-msgstr "O siduxcc-hermes"
-
-#, fuzzy
-#~ msgid "sidux-hermes"
-#~ msgstr "siduxcc-hermes"
-
-#~ msgid "Update (apt-get)"
-#~ msgstr "Odśwież (apt-get update)"
-
-#~ msgid "siduxcc Control Center"
-#~ msgstr "siduxcc Control Center"
-
-#~ msgid "upBase"
-#~ msgstr "upBase"
+msgstr "siduxcc-hermesについて"
