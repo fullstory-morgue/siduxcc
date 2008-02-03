@@ -5,8 +5,9 @@ siduxcc (0.9.6) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * jp translation added
+  * jp -> ja 
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 03 Feb 2008 20:58:58 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 03 Feb 2008 21:27:57 +0100
 
 siduxcc (0.9.5) unstable; urgency=low
 

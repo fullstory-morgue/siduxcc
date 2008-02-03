@@ -1,4 +1,4 @@
-KDE_LANG = jp
+KDE_LANG = ja
 POFILES = AUTO
 
 clean:

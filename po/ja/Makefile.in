@@ -37,7 +37,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = po/jp
+subdir = po/ja
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -298,11 +298,11 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-KDE_LANG = jp
+KDE_LANG = ja
 #>- POFILES = AUTO
 #>+ 2
-POFILES = siduxcc.po siduxcchermes.po siduxcckde.po
-GMOFILES = siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo
+POFILES = siduxcchermes.po siduxcc.po siduxcckde.po
+GMOFILES = siduxcchermes.gmo siduxcc.gmo siduxcckde.gmo
 #>- all: all-am
 #>+ 1
 all: all-nls docs-am  all-am
@@ -317,9 +317,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ja/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  po/jp/Makefile
+#>- 	  $(AUTOMAKE) --gnu  po/ja/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -329,10 +329,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ja/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/jp/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/jp/Makefile.in
+	  $(AUTOMAKE) --gnu  po/ja/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/ja/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -496,27 +496,27 @@ clean: kde-rpo-clean
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po Makefile.am 
+KDE_DIST=siduxcchermes.po siduxcc.gmo siduxcckde.gmo Makefile.in siduxcchermes.gmo siduxcc.po siduxcckde.po Makefile.am 
 
 #>+ 10
-siduxcc.gmo: siduxcc.po
-	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
-	test ! -f siduxcc.gmo || touch siduxcc.gmo
 siduxcchermes.gmo: siduxcchermes.po
 	rm -f siduxcchermes.gmo; $(GMSGFMT) -o siduxcchermes.gmo $(srcdir)/siduxcchermes.po
 	test ! -f siduxcchermes.gmo || touch siduxcchermes.gmo
+siduxcc.gmo: siduxcc.po
+	rm -f siduxcc.gmo; $(GMSGFMT) -o siduxcc.gmo $(srcdir)/siduxcc.po
+	test ! -f siduxcc.gmo || touch siduxcc.gmo
 siduxcckde.gmo: siduxcckde.po
 	rm -f siduxcckde.gmo; $(GMSGFMT) -o siduxcckde.gmo $(srcdir)/siduxcckde.po
 	test ! -f siduxcckde.gmo || touch siduxcckde.gmo
 
 #>+ 3
 clean-nls:
-	-rm -f  siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo
+	-rm -f  siduxcchermes.gmo siduxcc.gmo siduxcckde.gmo
 
 #>+ 10
 install-nls:
 	$(mkinstalldirs) $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES
-	@for base in siduxcc siduxcchermes siduxcckde ; do \
+	@for base in siduxcchermes siduxcc siduxcckde ; do \
 	  echo $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  if test -f $$base.gmo; then $(INSTALL_DATA) $$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
 	  elif test -f $(srcdir)/$$base.gmo; then $(INSTALL_DATA) $(srcdir)/$$base.gmo $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/$$base.mo ;\
@@ -526,8 +526,8 @@ install-nls:
 
 #>+ 5
 uninstall-nls:
-	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcchermes.mo
+	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcc.mo
 	rm -f $(DESTDIR)$(kde_locale)/$(KDE_LANG)/LC_MESSAGES/siduxcckde.mo
 
 #>+ 2
@@ -555,10 +555,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/jp/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/ja/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/jp/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/jp/Makefile.in
+	  $(AUTOMAKE) --gnu  po/ja/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/ja/Makefile.in
 
 
 #>+ 21
