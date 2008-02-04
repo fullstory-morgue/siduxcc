@@ -1,9 +1,5 @@
-siduxcc (0.9.6) UNRELEASED; urgency=low
+siduxcc (0.9.6) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * jp translation added
   * jp -> ja 
 
