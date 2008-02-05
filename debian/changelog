@@ -1,8 +1,8 @@
-siduxcc (0.9.7) UNRELEASED; urgency=low
+siduxcc (0.9.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix dutch "verwijder oude kernels" localisation, thanks to HarzG.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 05 Feb 2008 01:01:58 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 05 Feb 2008 23:47:13 +0100
 
 siduxcc (0.9.6) unstable; urgency=low
 

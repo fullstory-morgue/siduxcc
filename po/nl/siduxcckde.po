@@ -572,7 +572,7 @@ msgstr "installeer een nieuwe kernel"
 #: kerneldialog.cpp:1338 rc.cpp:702
 #, no-c-format
 msgid "Remove old kernels"
-msgstr "verwijder kernel modules"
+msgstr "verwijder oude kernel"
 
 #. i18n: file ./kerneldialog.ui line 129
 #: kerneldialog.cpp:1339 rc.cpp:705
