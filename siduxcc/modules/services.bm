@@ -16,7 +16,7 @@ function dlgService1()
 		"cupsys"  "$(eval_gettext "Print server")" \
 		"mysql"   "$(eval_gettext "SQL database server")" \
 		"ssh"     "$(eval_gettext "Secure shell server")" \
-		"samba"   "$(eval_gettext "Samaba server")" \
+		"samba"   "$(eval_gettext "Samba server")" \
 		"return"  "$(eval_gettext "Return to main menu")" )
 	case $service in
 		apache2|cupsys|ssh|samba) dlgService2;;

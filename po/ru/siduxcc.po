@@ -240,7 +240,7 @@ msgstr "SSH cервер"
 
 #: modules/services.bm:19
 #, fuzzy, sh-format
-msgid "Samaba server"
+msgid "Samba server"
 msgstr "Сервер Samba"
 
 #: modules/services.bm:30

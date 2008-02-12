@@ -240,8 +240,8 @@ msgstr "Secure-shell-server"
 
 #: modules/services.bm:19
 #, fuzzy, sh-format
-msgid "Samaba server"
-msgstr "Samabaserver"
+msgid "Samba server"
+msgstr "Sambaserver"
 
 #: modules/services.bm:30
 #, sh-format

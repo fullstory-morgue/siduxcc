@@ -241,8 +241,8 @@ msgstr "Secure-shell-poslužitelj"
 
 #: modules/services.bm:19
 #, fuzzy, sh-format
-msgid "Samaba server"
-msgstr "Samabaposlužitelj"
+msgid "Samba server"
+msgstr "Sambaposlužitelj"
 
 #: modules/services.bm:30
 #, sh-format

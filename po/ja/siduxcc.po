@@ -240,8 +240,8 @@ msgstr "SSHサーバー"
 
 #: modules/services.bm:19
 #, sh-format
-msgid "Samaba server"
-msgstr "Samabaサーバー"
+msgid "Samba server"
+msgstr "Sambaサーバー"
 
 #: modules/services.bm:30
 #, sh-format

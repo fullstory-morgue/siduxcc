@@ -238,7 +238,7 @@ msgstr ""
 
 #: modules/services.bm:19
 #, sh-format
-msgid "Samaba server"
+msgid "Samba server"
 msgstr ""
 
 #: modules/services.bm:30
