@@ -1,3 +1,9 @@
+siduxcc (0.9.9) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 12 Feb 2008 14:50:37 +0100
+
 siduxcc (0.9.8) unstable; urgency=low
 
   * typo fix "Samaba" --> "Samba", thanks to muchan for noticing.
