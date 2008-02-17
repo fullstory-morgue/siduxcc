@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-03 21:23+0100\n"
+"POT-Creation-Date: 2008-02-17 21:26+0100\n"
 "PO-Revision-Date: 2007-11-18 21:37+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -28,78 +28,28 @@ msgid ""
 "Your emails"
 msgstr ""
 
-#: hermes.cpp:43 systray.cpp:63
+#: hermes.cpp:44 systray.cpp:63
 msgid "en"
 msgstr "pl"
 
-#. i18n: file ./hermesbase.ui line 76
-#: hermesbase.cpp:133 hermesbase.cpp:212 rc.cpp:25
-#, no-c-format
-msgid "Name"
-msgstr "Nazwa"
+#: main.cpp:39
+msgid "A KDE tray application for sidux"
+msgstr "Aplet tacki systemowej KDE dla sidux"
 
-#. i18n: file ./hermesbase.ui line 87
-#: hermesbase.cpp:134 hermesbase.cpp:213 rc.cpp:28
-#, no-c-format
-msgid "Installed Version"
-msgstr "Zainstalowana wersja"
-
-#. i18n: file ./hermesbase.ui line 98
-#: hermesbase.cpp:135 hermesbase.cpp:214 rc.cpp:31
-#, no-c-format
-msgid "Latest Version"
-msgstr "Najnowsza wersja"
-
-#. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:210 rc.cpp:16 systray.cpp:40
-#, no-c-format
-msgid "siduxcc-hermes"
-msgstr "siduxcc-hermes"
-
-#. i18n: file ./hermesbase.ui line 49
-#: hermesbase.cpp:211 rc.cpp:19
-#, no-c-format
-msgid "War&nings"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 67
-#: hermesbase.cpp:215 rc.cpp:22
+#. i18n: file ./legendbase.ui line 16
+#: rc.cpp:3
 #, fuzzy, no-c-format
-msgid "Upgradable pac&kages"
-msgstr "Pakiety do aktualizacji"
-
-#. i18n: file ./hermesbase.ui line 142
-#: hermesbase.cpp:216 rc.cpp:34
-#, no-c-format
-msgid "cl&ose"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 145
-#: hermesbase.cpp:217 rc.cpp:37
-#, no-c-format
-msgid "Alt+O"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 170
-#: hermesbase.cpp:218 rc.cpp:40
-#, fuzzy, no-c-format
-msgid "&update (apt-get)"
-msgstr "Odśwież (apt-get update)"
-
-#. i18n: file ./hermesbase.ui line 173
-#: hermesbase.cpp:219 rc.cpp:43
-#, no-c-format
-msgid "Alt+U"
-msgstr ""
+msgid "legendbase"
+msgstr "Legenda"
 
 #. i18n: file ./legendbase.ui line 34
-#: legendbase.cpp:464 rc.cpp:4
+#: rc.cpp:6
 #, no-c-format
 msgid "Legend"
 msgstr "Legenda"
 
-#. i18n: file ./legendbase.ui line 106
-#: legendbase.cpp:465 rc.cpp:7
+#. i18n: file ./legendbase.ui line 87
+#: rc.cpp:9
 #, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
@@ -107,21 +57,77 @@ msgstr ""
 "Są ostrzeżenia przed aktualizacją. Odwiedź sidux.com, aby zdobyć więcej "
 "informacji"
 
-#. i18n: file ./legendbase.ui line 125
-#: legendbase.cpp:466 rc.cpp:10
+#. i18n: file ./legendbase.ui line 106
+#: rc.cpp:12
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Brak połączenia do sidux.com"
 
-#. i18n: file ./legendbase.ui line 141
-#: legendbase.cpp:467 rc.cpp:13
+#. i18n: file ./legendbase.ui line 122
+#: rc.cpp:15
 #, no-c-format
 msgid "No dist-upgrade warnings."
 msgstr "Brak ostrzeżeń przed aktualizacją."
 
-#: main.cpp:39
-msgid "A KDE tray application for sidux"
-msgstr "Aplet tacki systemowej KDE dla sidux"
+#. i18n: file ./hermesbase.ui line 16
+#: rc.cpp:18 systray.cpp:40
+#, no-c-format
+msgid "siduxcc-hermes"
+msgstr "siduxcc-hermes"
+
+#. i18n: file ./hermesbase.ui line 49
+#: rc.cpp:21
+#, no-c-format
+msgid "War&nings"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 67
+#: rc.cpp:24
+#, fuzzy, no-c-format
+msgid "Upgr&adable packages"
+msgstr "Pakiety do aktualizacji"
+
+#. i18n: file ./hermesbase.ui line 76
+#: rc.cpp:27
+#, no-c-format
+msgid "Name"
+msgstr "Nazwa"
+
+#. i18n: file ./hermesbase.ui line 87
+#: rc.cpp:30
+#, no-c-format
+msgid "Installed Version"
+msgstr "Zainstalowana wersja"
+
+#. i18n: file ./hermesbase.ui line 98
+#: rc.cpp:33
+#, no-c-format
+msgid "Latest Version"
+msgstr "Najnowsza wersja"
+
+#. i18n: file ./hermesbase.ui line 142
+#: rc.cpp:36
+#, no-c-format
+msgid "cl&ose"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 145
+#: rc.cpp:39
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 170
+#: rc.cpp:42
+#, fuzzy, no-c-format
+msgid "&update (apt-get)"
+msgstr "Odśwież (apt-get update)"
+
+#. i18n: file ./hermesbase.ui line 173
+#: rc.cpp:45
+#, no-c-format
+msgid "Alt+U"
+msgstr ""
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
@@ -146,6 +152,10 @@ msgstr "Pokaż legendę"
 #: systray.cpp:49
 msgid "&About siduxcc-hermes"
 msgstr "O siduxcc-hermes"
+
+#, fuzzy
+#~ msgid "Upgradable pac&kages"
+#~ msgstr "Pakiety do aktualizacji"
 
 #, fuzzy
 #~ msgid "sidux-hermes"

@@ -28,6 +28,11 @@
 #include <qwidgetstack.h>
 #include <qcombobox.h>
 #include <qtabwidget.h>
+#include <qfiledialog.h>
+#include <qlistview.h>
+#include <qheader.h>
+#include <qmessagebox.h>
+
 
 #include "kernel.h"
 #include "console.h"
@@ -37,7 +42,11 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 :KernelDialog(parent, name)
 {
 	this->shell = new Process();
-	load(0);
+
+	getKernelData();
+	getOldKernels();
+	installModulesPushButton->hide();
+
 }
 
 
@@ -48,23 +57,45 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 
 void kernel::load(int i)
 {
-	if(i == 0)
-		getCurrentKernel();
-	else if(i == 1)
-		getNewKernels();
-	else if(i == 2)
-		getOldKernels();
-	else if(i == 3)
-		getKernelDirs();
+	
+	if(i == 3)
+	{
+		QString kernelpackage = "linux-image-"+QStringList::split( "modules-", modulesListBox->firstItem()->text() )[1];
+		if(isInstalled(kernelpackage))
+			installModulesPushButton->show();
+		else
+		{
+			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!") );
+			back();
+		}
+	}
+
+
 }
 
 
 void kernel::loadWidget(int i)
 {
+
+
+	if(i == 2 && modulesListBox->firstItem() != 0)
+	{
+		QString kernelpackage = "linux-image-"+QStringList::split( "modules-", modulesListBox->firstItem()->text() )[1];
+		if(isInstalled(kernelpackage))
+			installModulesPushButton->show();
+		else
+		{
+			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!")+kernelpackage );
+			back();
+			return;
+		}
+	}
+
+
 	i = i+1;
-	load(i);
 	widgetStack2->raiseWidget(i);
 	widgetStack3->raiseWidget(1);
+
 }
 
 
@@ -72,69 +103,66 @@ void kernel::back()
 {
 	widgetStack2->raiseWidget(0);
 	widgetStack3->raiseWidget(0);
+	installModulesPushButton->hide();
 }
 
 
 //------------------------------------------------------------------------------
-//--- get Kernels --------------------------------------------------------------
+//--- get kernel data ----------------------------------------------------------
 //------------------------------------------------------------------------------
 
-/*
-QString kernel::getCurrentKernel()
-{
-	this->shell->setCommand("uname -r");
-	this->shell->start(true);
-	return this->shell->getBuffer().stripWhiteSpace();
-}
-*/
 
-
-void kernel::getCurrentKernel()
-{
-	this->shell->setCommand("uname -r");
-	this->shell->start(true);
-	currentKernel =  this->shell->getBuffer().stripWhiteSpace();
-
-	currentKernelTextLabel1->setText(i18n("Current kernel")+": "+currentKernel);
-	currentKernelTextLabel2->setText(i18n("Current kernel")+": "+currentKernel);
-}
-
-
-void kernel::getNewKernels()
+void kernel::getKernelData()
 {
 
-	QPixmap kernelImg("/usr/share/siduxcc/icons/spacer.png");
-
-	installListBox->clear();
-
-	// get newestKernel
-	this->shell->setCommand("siduxcc kernel newestKernel");
+	this->shell->setCommand("siduxcc kernel getKernelData" );
 	this->shell->start(true);
-	QString newestKernel =  this->shell->getBuffer().stripWhiteSpace();
+	QStringList kerneldata = QStringList::split( "\n", this->shell->getBuffer() );
 
-	if(newestKernel != "" and newestKernel != currentKernel)
-		installListBox->insertItem(kernelImg, newestKernel);
+	for(uint i = 5; i < kerneldata.count(); i++)
+		modules.append(kerneldata[i]);
+	showModules();
 
-	// get experimentalKernel
-	this->shell->setCommand("siduxcc kernel experimentalKernel");
+
+	installKernelListView->clear();
+	installKernelListView->header()->hide();
+	installKernelListView->setSorting(2);
+
+	// show the current kernel
+	QString currentKernel = kerneldata[1];
+	QListViewItem * item1 = new QListViewItem( installKernelListView, 0 );
+	item1->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
+	item1->setText(0, "Current kernel:");
+	item1->setText(1, currentKernel );
+	item1->setText(2, "a" );
+
+
+	// show the newest stable kernel
+	this->shell->setCommand("siduxcc kernel stableKernel");
 	this->shell->start(true);
-	QString experimentalKernel =  this->shell->getBuffer().stripWhiteSpace();
+	QString stableKernel =  kerneldata[3];
+	QListViewItem * item2 = new QListViewItem( installKernelListView, 0 );
+	item2->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
+	item2->setText(0, i18n("Newest stable kernel:") );
+	item2->setText(1, stableKernel );
+	item2->setText(2, "b" );
 
-	if(experimentalKernel != "" and experimentalKernel != currentKernel)
-		installListBox->insertItem(kernelImg, experimentalKernel+" ("+i18n("experimental")+")");
+
+	// show the newest experimental kernel
+	QListViewItem * item3 = new QListViewItem( installKernelListView, 0 );
+	item3->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
+	item3->setText(0, i18n("Newest experimental kernel:")+"  ");
+	item3->setText(1, "");
+	item3->setText(2, "c" );
 
 
-	if(newestKernel == currentKernel)
-		if(experimentalKernel == "" or experimentalKernel == currentKernel)
-		{
-			messageTextLabel->setText("<b>"+i18n("There is no newer kernel available!")+"</b>");
-			installPushButton1->setEnabled(FALSE);
-		}
-	if(newestKernel == "" and experimentalKernel == "")
-	{
-		messageTextLabel->setText("<b>"+i18n("Couldn't connect to sidux.com!")+"</b>");
-		installPushButton1->setEnabled(FALSE);
-	}
+
+
+
+
+	//i18n("Couldn't connect to sidux.com!")
+
+
 }
 
 
@@ -153,7 +181,6 @@ void kernel::getOldKernels()
 		removeButton->setEnabled(TRUE);
 	}
 
-		
 }
 
 
@@ -161,21 +188,39 @@ void kernel::getOldKernels()
 //--- kernel-installation ------------------------------------------------------
 //------------------------------------------------------------------------------
 
-void kernel::install()
+void kernel::installKernel()
 {
 
-	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
-	{
+	QString type = installKernelListView->currentItem()->text(0);
 
-		installKernel =  QStringList::split( " ", installListBox->currentText() )[0];
-	
+	if( type == i18n("Current kernel:") )
+		QMessageBox::information( this, "kernel", i18n("Please select if you want to install the newest stable or experimental kernel!") );
+	else if( type == i18n("Newest stable kernel:") )
+		if( installKernelListView->currentItem()->text(1) == installKernelListView->firstChild()->text(1) )
+			QMessageBox::information( this, "kernel", i18n("You have already installed the newest stable kernel!") );
+		else if( installKernelListView->currentItem()->text(1) == "" )
+			QMessageBox::information( this, "kernel", i18n("There is no stable kernel avaiable!") );
+		else
+		{
+			if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
+			{
+				QStringList run;
+				run << "installKernel" << "stable";
+				startConsole(run);
+			}
+		}
+	else
+		QMessageBox::information( this, "kernel", i18n("At the moment there is no support for experimental kernels!") );
 
-		QStringList run; run << "installKernel" << installKernel;
-		if( QStringList::split( " ", installListBox->currentText() )[1] == "("+i18n("experimental")+")" )
-			run.append( "exp" );
-		startConsole(run);
 
-	}
+	/*
+		if( installKernelListView->currentItem()->text(1) == installKernelListView->firstChild()->text(1) )
+			QMessageBox::information( this, "kernel", i18n("You have alrady installed the newest experimental kernel!") );
+		else if( installKernelListView->currentItem()->text(1) == "" )
+			QMessageBox::information( this, "kernel", i18n("There is no experimental kernel avaiable!") );
+		else
+			QMessageBox::information( this, "kernel", i18n("Install Ex!") );
+	*/
 
 }
 
@@ -187,8 +232,9 @@ void kernel::install()
 
 void kernel::remove()
 {
-		QStringList run; run << "removeKernel" << removeList->currentText();
-		startConsole(run);
+	QStringList run; run << "removeKernel" << removeList->currentText();
+	startConsole(run);
+	getOldKernels();
 }
 
 
@@ -197,39 +243,19 @@ void kernel::remove()
 //------------------------------------------------------------------------------
 
 
-void kernel::getKernelDirs()
+
+void kernel::showModules()
 {
-
-	comboBox->clear();
-	this->shell->setCommand("siduxcc kernel getKernelDirs");
-	this->shell->start(true);
-	comboBox->insertStringList( QStringList::split( "/\n", this->shell->getBuffer() ) );
-	// set kernel-module comboBox to newest kernel
-	comboBox->setCurrentItem(comboBox->count()-1);
-	showModules(comboBox->currentText() );
-
-}
-
-void kernel::showModules(const QString& kernel)
-{
-
-	modulesListBox->clear();
-	this->shell->setCommand("ls /usr/src/kernel-downloads/"+kernel+"/*.deb  | cut -f6 -d/" );
-	this->shell->start(true);
-	QStringList mods = QStringList::split( "\n", this->shell->getBuffer() );
 	QPixmap okImg = QPixmap( "/usr/share/siduxcc/icons/ok.png");
 	QPixmap notokImg = QPixmap( "/usr/share/siduxcc/icons/notok.png");
-	QStringList tmp;
-	for ( QStringList::Iterator it = mods.begin(); it != mods.end(); ++it )
+	modulesListBox->clear();
+	for ( QStringList::Iterator it = modules.begin(); it != modules.end(); ++it )
 	{
-		tmp = QStringList::split( "_", *it);
-		if(isInstalled(tmp[0]))
+		if(isInstalled(*it))
 			modulesListBox->insertItem(okImg, *it);
 		else	
 			modulesListBox->insertItem(notokImg, *it);
 	}
-
-
 }
 
 void kernel::installModules()
@@ -239,28 +265,12 @@ void kernel::installModules()
 
 	for(uint i = 0; i < modulesListBox->count(); i++)
 		if ( modulesListBox->isSelected(i) )
-			run.append( comboBox->currentText()+"/"+modulesListBox->text(i) );
+			run.append( modulesListBox->text(i) );
 
 	if (run.count() < 2) return;
-
 	startConsole(run);
-}
-
-
-void kernel::clear()
-{
-
-	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to remove the stored kernel files?") ) )
-	{
-		this->shell->setCommand("rm -rf /usr/src/kernel-downloads/"+comboBox->currentText() );
-		this->shell->start(true);
-		this->shell->setCommand("rm -f /usr/src/kernel-downloads/"+comboBox->currentText()+".zip" );
-		this->shell->start(true);
-		getKernelDirs();
-	}
 
 }
-
 
 
 //------------------------------------------------------------------------------
@@ -270,10 +280,10 @@ void kernel::clear()
 
 bool kernel::isInstalled(QString package)
 {
-	this->shell->setCommand("LANG=C apt-cache policy "+package+" | grep Installed | gawk '{print $2}'");
+	this->shell->setCommand("apt-cache policy "+package+" | head -n 2 |tail -n 1");
 	this->shell->start(true);
 
-	if(this->shell->getBuffer().stripWhiteSpace() == "(none)"  || this->shell->getBuffer().stripWhiteSpace() == "" )
+	if(this->shell->getBuffer().stripWhiteSpace().contains("(none)")  || this->shell->getBuffer().stripWhiteSpace() == "" )
 		return FALSE;
 	else
 		return TRUE;
@@ -310,6 +320,7 @@ void kernel::startConsole(QStringList input)
 
 void kernel::terminateConsole1()
 {
+	showModules();
 	loadWidget(2);
 	emit menuLocked(FALSE);
 }

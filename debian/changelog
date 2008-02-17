@@ -1,8 +1,13 @@
 siduxcc (0.9.9) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 12 Feb 2008 14:50:37 +0100
+  [ Fabian Wuertz ]
+  * kde: services: action buttons added
+  * kde: kernel: updated for the new kernels
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 17 Feb 2008 21:34:50 +0100
 
 siduxcc (0.9.8) unstable; urgency=low
 

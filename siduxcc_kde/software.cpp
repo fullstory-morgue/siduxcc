@@ -219,4 +219,6 @@ void software::terminateConsole()
 }
 
 
+//egrep -B 1 "Status: hold" /var/lib/dpkg/statu
+
 #include "software.moc"

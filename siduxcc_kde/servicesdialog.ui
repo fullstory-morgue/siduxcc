@@ -9,8 +9,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>577</width>
-            <height>447</height>
+            <width>628</width>
+            <height>457</height>
         </rect>
     </property>
     <property name="caption">
@@ -353,48 +353,60 @@
                     <property name="title">
                         <string>Action</string>
                     </property>
-                    <widget class="QRadioButton">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>actionStart</cstring>
+                            <cstring>startPushButton</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>6</x>
-                                <y>20</y>
+                                <x>20</x>
+                                <y>30</y>
                                 <width>70</width>
-                                <height>22</height>
+                                <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>&amp;Start</string>
+                            <string>St&amp;art</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
+                        </property>
+                        <property name="iconSet">
+                            <iconset>image2</iconset>
                         </property>
                     </widget>
-                    <widget class="QRadioButton">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>actionStop</cstring>
+                            <cstring>stopPushButton</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>6</x>
-                                <y>45</y>
-                                <width>90</width>
-                                <height>22</height>
+                                <x>100</x>
+                                <y>30</y>
+                                <width>70</width>
+                                <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
                             <string>St&amp;op</string>
                         </property>
+                        <property name="accel">
+                            <string>Alt+O</string>
+                        </property>
+                        <property name="iconSet">
+                            <iconset>image3</iconset>
+                        </property>
                     </widget>
-                    <widget class="QRadioButton">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>actionRestart</cstring>
+                            <cstring>restartPushButton</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>96</x>
-                                <y>20</y>
+                                <x>180</x>
+                                <y>30</y>
                                 <width>80</width>
-                                <height>22</height>
+                                <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
@@ -403,62 +415,49 @@
                         <property name="accel">
                             <string></string>
                         </property>
+                        <property name="iconSet">
+                            <iconset>image2</iconset>
+                        </property>
                     </widget>
-                    <widget class="QRadioButton">
+                    <widget class="QPushButton">
                         <property name="name">
-                            <cstring>actionReload</cstring>
+                            <cstring>reloadPushButton</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>96</x>
-                                <y>45</y>
-                                <width>70</width>
-                                <height>22</height>
+                                <x>270</x>
+                                <y>30</y>
+                                <width>80</width>
+                                <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Reloa&amp;d</string>
+                            <string>Re&amp;load</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+D</string>
+                            <string>Alt+L</string>
+                        </property>
+                        <property name="iconSet">
+                            <iconset>image2</iconset>
                         </property>
                     </widget>
-                    <widget class="QRadioButton">
+                    <widget class="QCheckBox">
                         <property name="name">
-                            <cstring>actionDelete</cstring>
+                            <cstring>runlevelCheckBox</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>205</x>
-                                <y>45</y>
-                                <width>309</width>
-                                <height>22</height>
+                                <x>365</x>
+                                <y>35</y>
+                                <width>160</width>
+                                <height>20</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Delete Ru&amp;nlevel-Entry</string>
+                            <string>Start service at &amp;Boot</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+N</string>
-                        </property>
-                    </widget>
-                    <widget class="QRadioButton">
-                        <property name="name">
-                            <cstring>actionAdd</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>205</x>
-                                <y>20</y>
-                                <width>309</width>
-                                <height>22</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>&amp;Add a Runlevel-Entry (Start service at Boot)</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+A</string>
+                            <string>Alt+B</string>
                         </property>
                     </widget>
                 </widget>
@@ -639,6 +638,12 @@
     <image name="image1">
         <data format="PNG" length="1851">89504e470d0a1a0a0000000d494844520000002a0000002a0806000000c5c3c95b00000702494441545885ed976d6c5b5719c7ffe79c7baf6f6cc77113376f8d93beae2d2d622d816a532754a91a12126ab7024282ad22439340d55035754c0834954e8821a47ee80a6cda066abfec0303d456d3688b34a98531d291b6346d339aba794f13dbb19dd8bed7e7e5e14312ba342936a4830fe42ffd752d9de79cf33bcf79ae1f5d60494b5ad29296b418b1c52ef083c483765af53d62c87c018c3691410c00184712c4ba39e36fd75a6de70eadba28ff27a0fb7be321cfe4f69726cdfe6cbfa92d0e5b889a3802a886e0367c36891c1f84d550404d2b4f3bd5fcb0cb23870faf19c8ffd740bff56174a72ce863e37fd34d75539bb175e50eb42d5f0fc1ad3971440683a99be8bc791ae3a1cb58fe49316207c5933f7f2073f663077dba3bb2af98d487735dd5d6e73ff10dac5cbeb1a27989b16efcfedaaf50b3654a55c5c4fe5737e55efed840bf7931f2c4d46d7dccdc68c4e39fde8770a0667e109f799af943b9621a6f7d7004f60349841bc493af3d983b7edf419fba1069f773fa5ce15ad47d7ccb3e0403d500002bc8e00419ac2a066e018c4d2f4944300a501e411608a53c0100268b13f86dd7cba8de34e50522e291d7db73172ad99f970f014e0cbdc0a46f8ea47be0eed8f81558960d16f2118a2b14ea7a910c5c85b18a30ac040d1f1a3e0c2b01760956b54455834275ab8208fb08382e3eb7610f523de44adf1c3931f44245c9129504d9bbbb1ecb8f9b6757577d06abeb3721d2c450550b30a1312187b13bf6430cf857902edd826b0541d0f30cae61870856d080ab20f2c5294c78a32d37fcf72f5dfaa57fbd1c434519d55277c80cc7fae6ada88913ecb086819cb6d17078088fd67e070f479ec2786104459d9b192fcdb355a5b02c4ed8dcba0d32c3a1a5eea884a12ce8ded3f56159a09dcd91b588b5b8b05c3d67636d24305d7e88576dc6579b7e8a186dc0c854029ae49d037dc4dcd168680da139b216b2403bf79eae0f2f1ad42b15b7290fee9a967508450040ce31193d7741c6f170ec6bd85d7f0885298dac3f06829ce740c8605ddb3a280fae572a6e5b34a896663533022b9aea414cceb7510bce8b3a8df852fc1036db5fc6687a049a3c80c9398e373782190e2dcdeafb008ab06b87100a0b006a8e090ae6ae8cdeadcdb53bf0f5b6a340b6015753efe2b6ba08cfa441900806395c27082db1f8ab37123e170c96a5e76584310990fa678dde4b8ea8c217573e873db5afa16f7014297305121930aee0380246c25f3428491acc7b397826053035cf77d7e8bd743df9679c1c7e1e2d2b42b0b9409e86209145d12f80240d969b6f950b801117a4af28e925584368151c36f79688d4bf4c68be94c5c91b2f2115fe03622baa000466464ac8c8040a53926044d9ee5436a3273a2687651e9d23c93424c651a07e78188587111469109e1ebfe7d5bfdf77126ffc7d0ff88abfa06159040eb7e778349541294f9d273a2687cb7194cf28009278b3e7c6edcf6e8cc711b018a6ff9a0030802f70d6f1c9219cea7d1176d375b4c6dc05d754c6e06acf0848e2cd4a182aea4caea87e25d5ef0f75f5dd84cd6d38e28e05dd39ab2183d3d75ec76f86f6a271fd10ea6aaae7c47ed4dd837d184de4875c51fd4a250c15f5fa9eb7f3b26d873d3e919b7a8cd548b4451b617101c10426d2056ca97b02fdc91efcfafab308aebc8c86fa20c4ccf8dde610b83cd28bf7fe780b7e96ed7b677ff683fb060a0089b3ea7253bbd5985393ed393b83a6f072846c17a9640189be51f43b6f60ed7a07ae632f08289880274b383f70195d5d03c824e817ef7ecffb51a5fb5754a3b38a859a9f19eb1e6a342ab53b2dcf616db4056b1ae3a80f5f836dd7dd735ed6cfa33b95c08713fd18bde223d5a37f575fb3e219e066c57bffdb9f22df7e7527bf74ebfc8ba1263cdfb8d562811a86b05d85a6600c1127045738608cc153254cca02460b49644b79f859c2e85f15e547f0e34faddcfefd9f3d7d76816f80fb083aabeddf0d3d6498fa497435df1e5dc5116ee6e0771592d1c0d4b041266190b969ce73b29e3bff52febdff64bf8a418f1e3dca3a3b3b596f6f2fcf66b3ac582cb292f278ecd1e443c235bb2c178fbab56cade5321b009447d24bd30de5e1b4f6f889f177eafe645b01725dd744a3516a6969311b366ca083070f9669c065400f1c38c0cf9c3923c6c6c6ac62b1682ba52cadb56d8cb188c822220b80454462e6b71001d8c106444040610c93da8704a00168ceb906a018639231a618634a08212dcb52aeebca65cb96a9f6f67675fcf8f1054be29e6f7d341ae5030303229fcfdb5aeb59489b886c2272669f00661d200ddbcf10bc0c110ce3987e5905004e447c26318c8818630c44d3c9242218630c00eaefef5f10b4ecd51f3b768c9d3a758a2512093e3131c10b858228954a5c29258c31dc18230030630cc37403995d930010638c186386736e38e74608a11dc7d13325605a5b5bcdae5dbb4c4747474525b0a4252de9ff45ff0054d3812c9e66c1b80000000049454e44ae426082</data>
     </image>
+    <image name="image2">
+        <data format="PNG" length="771">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ca49444154388da5d24b6853411406e07fe6de243749939ba651fb4cad4541947661258216c5e7a62ebad185151504410a8a0feacec7ba8a1b05dd28480deab2501f88282a548b82b520a556aba969897de5e631f795392e8a855a5d799603e79b7fce1c4644f89f52ff767867f2387b93bfb741925c0f009cf1a144d9fe77072baf2fb98dfd99e0d85064af18f35faea396d53ac5c11987c153f886b7235a7df1f48df573bdff040ebf0e9f0a4eaeedde113fc4344f70116cda053cfd768b8ad5c3676e6f36ae2c018ef4eb5b9554cdb33d8d47b93722e10912346f0000205dc029107233161e7ebe29119fdc7e6b53f60500f0df527e425e6a89efe2a17a1b6e28830de5ed284907360c484f0e4a240fbdde4662e56e9e9f90977ef7710038d0178d55786bb6d43686414a11ae14a850ebb1337a0275ca4608db40090548a588ba461d15be9a2d07faa2b105c0164e43f5b22ace3d02c48a9024e6dfc718d685776247f959687615669c51909247edf22a6e0ba76101704d588ac706b800b80091b96880659e7224221d90051fe6e81354af0bd784b5b0071ae9c3996ccab0511956980f2ecd2d0286a69ee083730dde680e00f0333b6e68a40f2f2448768c5b635f67efe6cc29306e80c10408982ea4d1377e0e9f7d57a1eb2504d5004a0ee1cbe8f4dd64c7b8b5e817cc697ee1f1ab8fe98265c2cf7d78977e807ef324022b4611d18228f3f8613a361ebdfc982e4eb10b7f5da46d17834de56b586f734b657c55b41a115f088c018655c0d7d909bc1ff8f17d6698f63e3f5f185c020c0e0e22994cb297f99b114f9538a5af64fb7c61b61a002c8346b26374df4efbaf24bc87b2edededb2b5b5751ee8eaea623d3d3dbe6c36eb771c2720a5f4139146449aea4700005c0101c0e29c0bceb95055558442a1625b5b9bc98808a9540adddddd7c6060806732192e84505cd7e5a552890180a228a4aaaad4344dc662b1527373b3ececec944d4d4df805b6cb489e4fd5bef50000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="743">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ae49444154388da5d15d4853611807f0fffb9eb379e6dce66ca99b3a13b1a844c9a205218a52424cc28beaa24283a208af4cf032f27a495741de28c41c45602414419f44908a42c39ba5a5363fe6fcea1cb79ded9cb3f376a14953bbeabd7c2f7ecfff79fe843186ff79fc5e9f8f23b7c970ecc9719de9950040099df0e45c1abb5af870d734b233c1cd89dc6679c674bf849da8b0313728a1906818b31899144a13771e55fe1afa27d0f6d9da618e1cf635ba5b89603067c049258e37b37d2ce10a75f69f967a7601d7bed8eab870d1bba6f2ebd49c6784d14c40b716d435408d336caca5f06aaa57873bd2d0774afc987183d8a2dedde83e432da50a24751e8a920494bfa21a08f69516c1a39da56fe7fbbb01d46d27b8fc32cf6161f94b5ecf05caf104cbab1b6828bc91b1c248f4390c5609143c86869fe91b8816f8cfadadf000a0c86a99abc449a9410603608215c5e6231940888e20a207613314a238df49bfcece9701d804b424529c4101a8bcb5b369675bd03586189b0663ebe08d1ab424520040014060b650540c4b0a22489375a4556d0f00c8e105183815cbe29c24305b68fb88812b73a9f37d96818da32bb7ec660bc26b1318fcfa2003f8b63c86434e3312aa8c1fdf570706dba454468d4d3e5bc1fe726ebcb9bec6559063df9500005612225ebc1f5f589a526b5e778a4b190000d4df3357d90f92a163275dee32bb1336630e0801a4541cd3eb8b181f9dffb91662cd1feec683dbf5fe0182c120028100f914ebcd3538e50edb017231cb4a2a002025b14971863d55164c3d1e63abd8d2d2a2d7d6d66e025d5d5dc4eff76789a2685255355bd77513634c608c09bc09d900a0c99001a428a532a554e6795eb6582c09afd79b248c3184c361f87c3e3a3a3a4aa3d128956599d3348da6d36902001cc7319ee77541107487c391aeaeaed6dbdbdbf5aaaa2afc06038539c28d32f4ae0000000049454e44ae426082</data>
+    </image>
 </images>
 <connections>
     <connection>
@@ -678,8 +683,32 @@
         <slot>save()</slot>
     </connection>
     <connection>
-        <sender>actionGroup</sender>
-        <signal>clicked(int)</signal>
+        <sender>startPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>startService()</slot>
+    </connection>
+    <connection>
+        <sender>stopPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>stopService()</slot>
+    </connection>
+    <connection>
+        <sender>restartPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>restartService()</slot>
+    </connection>
+    <connection>
+        <sender>reloadPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>reloadService()</slot>
+    </connection>
+    <connection>
+        <sender>runlevelCheckBox</sender>
+        <signal>clicked()</signal>
         <receiver>ServicesDialog</receiver>
         <slot>hasChanged()</slot>
     </connection>
@@ -695,6 +724,10 @@
     <slot>back()</slot>
     <slot>save()</slot>
     <slot>hasChanged()</slot>
+    <slot>startService()</slot>
+    <slot>stopService()</slot>
+    <slot>restartService()</slot>
+    <slot>reloadService()</slot>
 </slots>
 <layoutdefaults spacing="3" margin="3"/>
 <includehints>

@@ -32,7 +32,7 @@ function removeKernel()
 
 function currentKernel()
 {
-	uname -r
+	uname -r | cut -f2 -d-
 }
 
 function kernelType()
@@ -49,45 +49,52 @@ function newestKernel()
 {
 	TMP="$(mktemp -p /tmp/ newestKernel-XXXXXXXXXX)"
 	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/
-	egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	if [ "$(cat $TMP)" == "" ]; then
+		echo "no_connection"
+	else
+		egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	fi
 	rm -f $TMP
 }
+
+
+function stableKernel()
+{
+	TMP="$(mktemp -p /tmp/ stableKernel-XXXXXXXXXX)"
+	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/debian/dists/sid/main/binary-i386/Packages
+	if [ "$(cat $TMP)" == "" ]; then
+		echo "no_connection"
+	else
+		egrep -m 3 "Package: linux-headers" $TMP | tail -n 1 | cut -f4 -d-
+	fi
+	rm -f $TMP
+}
+
 
 function experimentalKernel()
 {
 	TMP="$(mktemp -p /tmp/ experimentalKernel-XXXXXXXXXX)"
 	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/experimental/
-	egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	if [ "$(cat $TMP)" == "" ]; then
+		echo "no_connection"
+	else
+		egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
+	fi
 	rm -f $TMP
 }
 
+
 installKernel()
 {
-	# $1: kernelversion, e.g 2.6.22.1
-	# $2: exp (experimental)
+	# $1: type, stable, experimental
 
-	# download
-	if [ ! -d /usr/src/kernel-downloads ]; then
-		mkdir /usr/src/kernel-downloads
-	fi
-	cd /usr/src/kernel-downloads
-	if [ ! -w kernel-$1.zip ]; then
-		if [ -z $2 ]; then
-			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/kernel-$1.zip
-		else
-			wget -Nc http://debian.tu-bs.de/project/sidux/kernel/experimental/$1.zip
-		fi
-	fi
-
-	# unzip
-	unzip kernel-$1.zip -d kernel-$1
-	#rm -f kernel-$1.zip
-
-	#install
-	cd kernel-$1
-	./install-kernel-sidux.sh
-	cd ..
-	#rm -rf kernel-$1
+	case $1 in
+			stable)
+				apt-get update
+				apt-get install linux-image-2.6-sidux-686 linux-headers-2.6-sidux-686
+				;;
+			experimental) echo "na";;
+	esac
 
 	echo ""
 	echo "$(eval_gettext "The installation is finished!")"
@@ -96,16 +103,65 @@ installKernel()
 
 }
 
+
+getModules()
+{
+
+	if [ "$(cat $TMP)" == "" ]; then
+		echo "no_connection"
+	else
+		egrep "modules-2" $TMP | grep "Package:" | grep "686" | cut -f2 -d" "
+	fi
+	rm -f $TMP
+}
+
+
 installModules()
 {
-	cd /usr/src/kernel-downloads
-	dpkg -i $@
+	apt-get install $@
 
 	echo ""
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 }
+
+
+getKernelData()
+{
+
+	# get the current kernel
+	echo "<-- current kernel -->"
+	uname -r | cut -f2 -d-
+
+	#download package list
+	BZIP="$(mktemp -p /tmp/ kernelData1-XXXXXXXXXX)"
+	wget --timeout=3  -O $BZIP -q http://debian.tu-bs.de/project/sidux/debian/dists/sid/main/binary-i386/Packages.bz2
+	TMP="$(mktemp -p /tmp/ kernelData2-XXXXXXXXXX)"
+	bunzip2 -c $BZIP > $TMP
+
+
+	# check connection
+	if [ "$(cat $TMP)" == "" ]; then
+		echo "no_connection"
+		return
+	fi
+
+
+	# get the newest stable kernel
+	echo "<-- newest stable kernel -->"
+	egrep -m 3 "Package: linux-headers" $TMP | tail -n 1 | cut -f4 -d-
+
+
+	# get the kernel modules
+	echo "<-- kernel modules -->"
+	egrep "modules-2" $TMP | grep "Package:" | grep "686" | cut -f2 -d" "
+
+	rm -f $BZIP
+	rm -f $TMP
+
+}
+
 
 dlgInstallKernel()
 {

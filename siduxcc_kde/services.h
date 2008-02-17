@@ -32,6 +32,8 @@ class services : public ServicesDialog
 	public:
 		services(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
 		void load();
+		QStringList pid;
+		QStringList description;
 	
 	private:
 		Process* shell;
@@ -47,6 +49,13 @@ class services : public ServicesDialog
 		virtual void hasChanged();
 
 		virtual void updateSlot();
+
+		virtual void startService();
+		virtual void stopService();
+		virtual void restartService();
+		virtual void reloadService();
+		virtual void runServiceAction(QString);
+
 	
 	protected slots:
 		void disableService();

@@ -43,10 +43,10 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
 	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
 	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
-	menu->insertItem ( SmallIcon ( "siduxcc_hermes" ), i18n("Warnings"), this, SLOT ( warnings() ) );
+	menu->insertItem ( SmallIcon ( "siduxcc_warning" ), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
-	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
+	menu->insertItem ( SmallIcon ( "siduxcc_hermes" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
 
 	updateIcon();
 

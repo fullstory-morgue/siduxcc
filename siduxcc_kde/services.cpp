@@ -26,9 +26,13 @@
 #include <qpushbutton.h>
 #include <qlistbox.h>
 #include <qwidgetstack.h>
+#include <qcheckbox.h>
+
 
 #include "services.h"
 
+
+#include <qmessagebox.h>
 
 services::services(QWidget *parent, const char *name, const QStringList &)
 :ServicesDialog(parent, name)
@@ -53,10 +57,26 @@ void services::load()
 	servicesBox->insertItem("ssh");		//4
 	servicesBox->setCurrentItem(0);
 
+	// status
+	pid.append("apache2");
+	pid.append("cupsd");
+	pid.append("mysqld");
+	pid.append("smbd");
+	pid.append("sshd");
+
+	// description
+
+	description.append( i18n("Apache v2 is the next generation of the omnipresent Apache web server.") );
+	description.append( i18n("The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.") );
+	description.append( i18n("MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.") );
+	description.append( i18n("The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.") );
+	description.append( i18n("SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.") );
+
 	// update service ionformations
 	updateSlot();
 
 	applyPushButton->setEnabled(FALSE);
+
 }
 
 
@@ -85,32 +105,12 @@ void services::save()
 	// update Service
 	QString service = servicesBox->currentText();
 
-	if(actionStart->isChecked())
-	{
-		this->shell->setCommand("/etc/init.d/"+service+" start");
-		this->shell->start(true); sleep(1);
-	}
-	else if(actionStop->isChecked())
-	{
-		this->shell->setCommand("/etc/init.d/"+service+" stop");
-		this->shell->start(true); sleep(1);
-	}
-	else if(actionRestart->isChecked())
-	{
-		this->shell->setCommand("/etc/init.d/"+service+" restart");
-		this->shell->start(true); sleep(1);
-	}
-	else if(actionReload->isChecked())
-	{
-		this->shell->setCommand("/etc/init.d/"+service+" reload");
-		this->shell->start(true); sleep(1);
-	}
-	else if(actionAdd->isChecked())
+	if(runlevelCheckBox->isChecked())
 	{
 		this->shell->setCommand("update-rc.d -f "+service+" defaults");
 		this->shell->start(true);
 	}
-	else if(actionDelete->isChecked())
+	else
 	{
 		this->shell->setCommand("update-rc.d -f "+service+" remove");
 		this->shell->start(true);
@@ -142,23 +142,49 @@ void services::hasChanged()
 	applyPushButton->setEnabled(TRUE);
 }
 
+//------------------------------------------------------------------------------
+//--- run service action -------------------------------------------------------
+//------------------------------------------------------------------------------
+
+void services::startService()
+{
+	runServiceAction("start");
+}
+
+void services::stopService()
+{
+	runServiceAction("stop");
+}
+void services::restartService()
+{
+	runServiceAction("restart");
+}
+
+void services::reloadService()
+{
+	runServiceAction("reload");
+}
+
+void services::runServiceAction(QString action)
+{
+	QString service = servicesBox->currentText();
+	this->shell->setCommand("/etc/init.d/"+service+" "+action);
+	this->shell->start(true); sleep(1);
+	updateSlot();
+}
 
 //------------------------------------------------------------------------------
-//--- main ---------------------------------------------------------------------
+//--- update -------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
 void services::updateSlot()
 {
 
-	// status
-	QString pid [50];
-	pid[0] = "apache2";
-	pid[1] = "cupsd";
-	pid[2] = "mysqld";
-	pid[3] = "smbd";
-	pid[4] = "sshd";
 
-	this->shell->setCommand("pidof "+pid[servicesBox->currentItem()]);
+	QString service = servicesBox->currentText();
+	int i = servicesBox->currentItem();
+
+	this->shell->setCommand("pidof "+pid[i]);
 	this->shell->start(true);
 	if(this->shell->exitStatus())
 	{
@@ -171,15 +197,8 @@ void services::updateSlot()
 		statusLed->setColor(QColor(0x00ff00));
 	} 
 
-	// description
-	QString description [50];
-	description[0] = i18n("Apache v2 is the next generation of the omnipresent Apache web server.");
-	description[1] = i18n("The Common UNIX Printing System (or CUPS(tm)) is a printing system and general replacement for lpd and the like.");
-	description[2] = i18n("MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.");
-	description[3] = i18n("The Samba software suite is a collection of programs that implements the SMB/CIFS protocol for unix systems, allowing you to serve files and printers to Windows, NT, OS/2 and DOS clients.");
-	description[4] = i18n("SSH is the portable version of OpenSSH, a free implementation of the Secure Shell protocol as specified by the IETF secsh working group.");
 
-	descriptionLabel->setText(description[servicesBox->currentItem()]);
+	descriptionLabel->setText(description[i]);
 
 
 	 // Services
@@ -200,6 +219,14 @@ void services::updateSlot()
 		QString service = *it;
 		disabledServices->insertItem(service);
 	}
+
+
+	this->shell->setCommand("ls /etc/rc*/*"+service);
+	this->shell->start(true);
+	if( this->shell->getBuffer() == "" )
+		runlevelCheckBox->setChecked(FALSE);
+	else
+		runlevelCheckBox->setChecked(TRUE);
 
 
 }

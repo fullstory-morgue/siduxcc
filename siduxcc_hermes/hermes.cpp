@@ -38,6 +38,7 @@ hermes::hermes(QWidget* parent, const char* name )
 	this->shell = new Process();
 
 	getPackages();
+	getKernels();
 
 
 	if(i18n("en") == "de")
@@ -86,6 +87,36 @@ void hermes::getPackages()
 
 	updatePushButton->setHidden(TRUE);
 
+}
+
+void hermes::getKernels()
+{
+
+	/*
+	QPixmap kernelImg("/usr/share/siduxcc/icons/spacer.png");
+
+	// get currentKernel
+	this->shell->setCommand("uname -r");
+	this->shell->start(true);
+	QString currentKernel =  this->shell->getBuffer().stripWhiteSpace();
+
+	// get newestKernel
+	this->shell->setCommand("siduxcc kernel newestKernel");
+	this->shell->start(true);
+	QString newestKernel =  this->shell->getBuffer().stripWhiteSpace();
+
+	if(newestKernel != "" and newestKernel != currentKernel)
+		kernelListBox->insertItem(kernelImg, newestKernel);
+
+	// get experimentalKernel
+	this->shell->setCommand("siduxcc kernel experimentalKernel");
+	this->shell->start(true);
+	QString experimentalKernel =  this->shell->getBuffer().stripWhiteSpace();
+
+	if(experimentalKernel != "" and experimentalKernel != currentKernel)
+		kernelListBox->insertItem(kernelImg, experimentalKernel+" ("+i18n("experimental")+")");
+
+	*/
 }
 
 void hermes::tabChanged()

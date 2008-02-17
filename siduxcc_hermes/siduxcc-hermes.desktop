@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=sidux dist-upgrade alerter
 Comment[de]=sidux dist-upgrade Warner
-Comment[ru]=служба оповещения dist-upgrade   
+Comment[ru]=служба оповещения dist-upgrade
 Encoding=UTF-8
 Exec=siduxcc-hermes
 Icon=siduxcc_hermes
