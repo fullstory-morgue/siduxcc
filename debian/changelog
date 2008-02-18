@@ -1,8 +1,12 @@
 siduxcc (0.9.11) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Feb 2008 16:09:15 +0100
+  [ Fabian Wuertz ]
+  * kde: kernel: performance updated
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Feb 2008 23:41:43 +0100
 
 siduxcc (0.9.10) unstable; urgency=low
 

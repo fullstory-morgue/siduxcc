@@ -43,7 +43,9 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 {
 	this->shell = new Process();
 
-	getKernelData();
+
+	getKernels();
+	getModules();
 	getOldKernels();
 	installModulesPushButton->hide();
 
@@ -55,32 +57,13 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 //------------------------------------------------------------------------------
 
 
-void kernel::load(int i)
-{
-	
-	if(i == 3)
-	{
-		QString kernelpackage = "linux-image-"+QStringList::split( "modules-", modulesListBox->firstItem()->text() )[1];
-		if(isInstalled(kernelpackage))
-			installModulesPushButton->show();
-		else
-		{
-			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!") );
-			back();
-		}
-	}
-
-
-}
-
 
 void kernel::loadWidget(int i)
 {
 
-
 	if(i == 2 && modulesListBox->firstItem() != 0)
 	{
-		QString kernelpackage = "linux-image-"+QStringList::split( "modules-", modulesListBox->firstItem()->text() )[1];
+		QString kernelpackage = "linux-image-"+stableKernelFull;
 		if(isInstalled(kernelpackage))
 			installModulesPushButton->show();
 		else
@@ -89,6 +72,8 @@ void kernel::loadWidget(int i)
 			back();
 			return;
 		}
+	
+	
 	}
 
 
@@ -108,20 +93,16 @@ void kernel::back()
 
 
 //------------------------------------------------------------------------------
-//--- get kernel data ----------------------------------------------------------
+//--- get kernels --------------------------------------------------------------
 //------------------------------------------------------------------------------
 
 
-void kernel::getKernelData()
+void kernel::getKernels()
 {
 
-	this->shell->setCommand("siduxcc kernel getKernelData" );
+	this->shell->setCommand("siduxcc kernel kernelType");
 	this->shell->start(true);
-	QStringList kerneldata = QStringList::split( "\n", this->shell->getBuffer() );
-
-	for(uint i = 5; i < kerneldata.count(); i++)
-		modules.append(kerneldata[i]);
-	showModules();
+	QString kernelType = this->shell->getBuffer().stripWhiteSpace();
 
 
 	installKernelListView->clear();
@@ -129,7 +110,9 @@ void kernel::getKernelData()
 	installKernelListView->setSorting(2);
 
 	// show the current kernel
-	QString currentKernel = kerneldata[1];
+	this->shell->setCommand("siduxcc kernel currentKernel");
+	this->shell->start(true);
+	QString currentKernel = this->shell->getBuffer().stripWhiteSpace();
 	QListViewItem * item1 = new QListViewItem( installKernelListView, 0 );
 	item1->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
 	item1->setText(0, "Current kernel:");
@@ -138,9 +121,10 @@ void kernel::getKernelData()
 
 
 	// show the newest stable kernel
-	this->shell->setCommand("siduxcc kernel stableKernel");
+	this->shell->setCommand("siduxcc kernel stableKernelFull");
 	this->shell->start(true);
-	QString stableKernel =  kerneldata[3];
+	stableKernelFull = this->shell->getBuffer().stripWhiteSpace()+"-"+kernelType;
+	QString stableKernel = QStringList::split( "-", stableKernelFull)[1];
 	QListViewItem * item2 = new QListViewItem( installKernelListView, 0 );
 	item2->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
 	item2->setText(0, i18n("Newest stable kernel:") );
@@ -148,15 +132,15 @@ void kernel::getKernelData()
 	item2->setText(2, "b" );
 
 
+
+	
+
 	// show the newest experimental kernel
 	QListViewItem * item3 = new QListViewItem( installKernelListView, 0 );
 	item3->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
 	item3->setText(0, i18n("Newest experimental kernel:")+"  ");
 	item3->setText(1, "");
 	item3->setText(2, "c" );
-
-
-
 
 
 
@@ -242,6 +226,14 @@ void kernel::remove()
 //--- kernel Modules -----------------------------------------------------------
 //------------------------------------------------------------------------------
 
+void kernel::getModules()
+{
+
+	this->shell->setCommand("siduxcc kernel getModules" );
+	this->shell->start(true);
+	modules = QStringList::split( "\n", this->shell->getBuffer() );
+	showModules();
+}
 
 
 void kernel::showModules()
@@ -251,7 +243,7 @@ void kernel::showModules()
 	modulesListBox->clear();
 	for ( QStringList::Iterator it = modules.begin(); it != modules.end(); ++it )
 	{
-		if(isInstalled(*it))
+		if(isInstalled(*it+"-modules-"+stableKernelFull))
 			modulesListBox->insertItem(okImg, *it);
 		else	
 			modulesListBox->insertItem(notokImg, *it);
@@ -265,7 +257,7 @@ void kernel::installModules()
 
 	for(uint i = 0; i < modulesListBox->count(); i++)
 		if ( modulesListBox->isSelected(i) )
-			run.append( modulesListBox->text(i) );
+			run.append( modulesListBox->text(i)+"-modules-"+stableKernelFull );
 
 	if (run.count() < 2) return;
 	startConsole(run);

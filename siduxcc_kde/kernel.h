@@ -30,12 +30,13 @@ class kernel : public KernelDialog
 
 	public:
 		kernel(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
-		void load(int);
 		//QString getCurrentKernel();
 		//QString installKernel;
-		void getKernelData();
+		void getModules();
+		void getKernels();
 		void getOldKernels();
 		bool isInstalled(QString);
+		QString stableKernelFull;
 		QStringList modules;
 
 	private:

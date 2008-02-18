@@ -37,39 +37,24 @@ function currentKernel()
 
 function kernelType()
 {
-	if [ -n "$(uname -r | grep slh-smp)" ]; then
-		echo slh-smp
-	elif [ -n "$(uname -r | grep slh-64smp)" ]; then
-		echo slh64-smp
+	if [ -n "$(uname -r | grep 686)" ]; then
+		echo 686
+	elif [ -n "$(uname -r | grep amd64)" ]; then
+		echo amd64
 	fi
-}
-
-
-function newestKernel()
-{
-	TMP="$(mktemp -p /tmp/ newestKernel-XXXXXXXXXX)"
-	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/
-	if [ "$(cat $TMP)" == "" ]; then
-		echo "no_connection"
-	else
-		egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
-	fi
-	rm -f $TMP
 }
 
 
 function stableKernel()
 {
-	TMP="$(mktemp -p /tmp/ stableKernel-XXXXXXXXXX)"
-	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/debian/dists/sid/main/binary-i386/Packages
-	if [ "$(cat $TMP)" == "" ]; then
-		echo "no_connection"
-	else
-		egrep -m 3 "Package: linux-headers" $TMP | tail -n 1 | cut -f4 -d-
-	fi
-	rm -f $TMP
+	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
 }
 
+
+function stableKernelFull()
+{
+	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f3-5 -d"-"
+}
 
 function experimentalKernel()
 {
@@ -106,13 +91,7 @@ installKernel()
 
 getModules()
 {
-
-	if [ "$(cat $TMP)" == "" ]; then
-		echo "no_connection"
-	else
-		egrep "modules-2" $TMP | grep "Package:" | grep "686" | cut -f2 -d" "
-	fi
-	rm -f $TMP
+	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux/modules/i686/ 2>/dev/null | grep "modules-" | cut -f8 -d"\"" | cut -f1 -d2 | sed 's/-modules-//g'
 }
 
 
@@ -124,42 +103,6 @@ installModules()
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
-}
-
-
-getKernelData()
-{
-
-	# get the current kernel
-	echo "<-- current kernel -->"
-	uname -r | cut -f2 -d-
-
-	#download package list
-	BZIP="$(mktemp -p /tmp/ kernelData1-XXXXXXXXXX)"
-	wget --timeout=3  -O $BZIP -q http://debian.tu-bs.de/project/sidux/debian/dists/sid/main/binary-i386/Packages.bz2
-	TMP="$(mktemp -p /tmp/ kernelData2-XXXXXXXXXX)"
-	bunzip2 -c $BZIP > $TMP
-
-
-	# check connection
-	if [ "$(cat $TMP)" == "" ]; then
-		echo "no_connection"
-		return
-	fi
-
-
-	# get the newest stable kernel
-	echo "<-- newest stable kernel -->"
-	egrep -m 3 "Package: linux-headers" $TMP | tail -n 1 | cut -f4 -d-
-
-
-	# get the kernel modules
-	echo "<-- kernel modules -->"
-	egrep "modules-2" $TMP | grep "Package:" | grep "686" | cut -f2 -d" "
-
-	rm -f $BZIP
-	rm -f $TMP
-
 }
 
 
