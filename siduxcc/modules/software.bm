@@ -182,9 +182,9 @@ function addSources()
 
 	[ -z "$(grep deb-src\ .*debian\.org.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)debian.org\/debian\/ sid \(.*\)/deb-src \1debian.org\/debian\/ sid main contrib non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for debian
 
-	[ -z "$(grep deb\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb \(.*\)sidux.com\/debian\/ sid \(.*\)/deb \1sidux.com\/debian\/ sid main contrib non-free firmware fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb *contrib in sources.list for sidux
+	[ -z "$(grep deb\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb \(.*\)sidux.com\/debian\/ sid \(.*\)/deb \1sidux.com\/debian\/ sid main contrib non-free fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb *contrib in sources.list for sidux
 
-	[ -z "$(grep deb-src\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)sidux.com\/debian\/ sid \(.*\)/deb-src \1sidux.com\/debian\/ sid main contrib non-free firmware fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for sidux
+	[ -z "$(grep deb-src\ .*sidux\.com.*main.*contrib /etc/apt/sources.list)" ] && sed -ie 's/deb-src \(.*\)sidux.com\/debian\/ sid \(.*\)/deb-src \1sidux.com\/debian\/ sid main contrib non-free fix.main fix.contrib fix.non-free/' /etc/apt/sources.list || echo found deb-src *contrib in sources.list for sidux
 }
 
 

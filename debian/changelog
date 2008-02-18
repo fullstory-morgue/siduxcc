@@ -1,8 +1,8 @@
-siduxcc (0.9.10) UNRELEASED; urgency=low
+siduxcc (0.9.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * the "firmware" section is deprecated, don't promote it.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Feb 2008 13:29:11 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 18 Feb 2008 16:01:49 +0100
 
 siduxcc (0.9.9) unstable; urgency=low
 
