@@ -1,8 +1,12 @@
 siduxcc (0.9.11) unstable; urgency=low
 
+  [ Fabian Wuertz ]
   * kde: kernel: performance updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Feb 2008 23:41:43 +0100
+  [ Stefan Lippers-Hollmann ]
+  * don't depend erroneously on essential packages sed and coreutils.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 19 Feb 2008 01:50:58 +0100
 
 siduxcc (0.9.10) unstable; urgency=low
 
