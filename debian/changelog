@@ -1,9 +1,5 @@
-siduxcc (0.9.11) UNRELEASED; urgency=low
+siduxcc (0.9.11) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * kde: kernel: performance updated
 
  -- Fabian Wuertz <xadras@sidux.com>  Mon, 18 Feb 2008 23:41:43 +0100
