@@ -1,8 +1,8 @@
-siduxcc (0.9.12) UNRELEASED; urgency=low
+siduxcc (0.9.12) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * appease lintian and write (C) as © in debian/copyright.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 19 Feb 2008 02:00:02 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 00:47:17 +0100
 
 siduxcc (0.9.11) unstable; urgency=low
 
