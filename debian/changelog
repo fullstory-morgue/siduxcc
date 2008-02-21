@@ -1,8 +1,13 @@
 siduxcc (0.9.13) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 00:52:02 +0100
+  [ Bernard Gray ]
+  * make siduxcchermes.svg kde3/kde4 compatible
+  * convert text objects to paths
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Thu, 21 Feb 2008 23:38:50 +1100
 
 siduxcc (0.9.12) unstable; urgency=low
 
