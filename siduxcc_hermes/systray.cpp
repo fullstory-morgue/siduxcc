@@ -46,7 +46,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc_warning" ), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
-	menu->insertItem ( SmallIcon ( "siduxcc_hermes" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
+	menu->insertItem ( SmallIcon ( "siduxcchermes" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
 
 	updateIcon();
 
@@ -111,11 +111,11 @@ void SysTray::updateIcon()
 	{
 		if ( tmp == "" )
 		{
-			setPixmap ( loadIcon ( "siduxcc_ok" ) );
+			setPixmap( QPixmap("/usr/share/siduxcc/icons/ok-hermes.png") );
 		}
 		else
 		{
-			setPixmap ( loadIcon ( "siduxcc_warning" ) );
+			setPixmap( QPixmap("/usr/share/siduxcc/icons/notok-hermes.png") );
 		}
 	}
 

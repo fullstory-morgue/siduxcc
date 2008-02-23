@@ -37,25 +37,9 @@ hermes::hermes(QWidget* parent, const char* name )
 
 	this->shell = new Process();
 
+	getWarnings();
 	getPackages();
 	getKernels();
-
-
-	if(i18n("en") == "de")
-		this->shell->setCommand("siduxcc software duWarningsDe");
-	else
-		this->shell->setCommand("siduxcc software duWarningsEn");
-	this->shell->start(true);
-	QStringList list = QStringList::split( "\n", this->shell->getBuffer() );
-	QStringList title = list.grep( "title" );
-	link  = list.grep( "link" );
-	title = title.gres( "<title>"  , "" );
-	title = title.gres( "</title>" , "" );
-	title = title.gres( "Warning: ", "" );
-	link  = link.gres(  "<link>"   , "" );
-	link  = link.gres(  "</link>"  , "" );
-	for ( QStringList::Iterator it = title.begin(); it != title.end(); ++it )
-		warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"), *it);
 
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
@@ -65,6 +49,31 @@ hermes::hermes(QWidget* parent, const char* name )
 void hermes::init(int i)
 {
 	tabWidget->setCurrentPage(i);
+}
+
+void hermes::getWarnings()
+{
+	if(i18n("en") == "de")
+		this->shell->setCommand("siduxcc software duWarningsDe");
+	else
+		this->shell->setCommand("siduxcc software duWarningsEn");
+	this->shell->start(true);
+
+	if( this->shell->getBuffer() == "" )
+		warningtextLabel->setText(i18n( "No dist-upgrade warnings.") );
+	else
+	{
+		QStringList list = QStringList::split( "\n", this->shell->getBuffer() );
+		QStringList title = list.grep( "title" );
+		link  = list.grep( "link" );
+		title = title.gres( "<title>"  , "" );
+		title = title.gres( "</title>" , "" );
+		title = title.gres( "Warning: ", "" );
+		link  = link.gres(  "<link>"   , "" );
+		link  = link.gres(  "</link>"  , "" );
+		for ( QStringList::Iterator it = title.begin(); it != title.end(); ++it )
+			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"), *it);
+	}
 }
 
 void hermes::getPackages()
@@ -88,6 +97,7 @@ void hermes::getPackages()
 	updatePushButton->setHidden(TRUE);
 
 }
+
 
 void hermes::getKernels()
 {

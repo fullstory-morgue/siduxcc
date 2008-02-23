@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-17 21:26+0100\n"
+"POT-Creation-Date: 2008-02-24 00:02+0100\n"
 "PO-Revision-Date: 2007-11-20 01:24+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -28,28 +28,96 @@ msgid ""
 "Your emails"
 msgstr "trwaw@ozemail.com.au"
 
-#: hermes.cpp:44 systray.cpp:63
+#: hermes.cpp:56 systray.cpp:63
 msgid "en"
 msgstr "ro"
 
-#: main.cpp:39
-msgid "A KDE tray application for sidux"
-msgstr "O aplicatie KDE pentru sidux"
+#. i18n: file ./legendbase.ui line 141
+#: hermes.cpp:63 legendbase.cpp:449 rc.cpp:15
+#, no-c-format
+msgid "No dist-upgrade warnings."
+msgstr "Fara atentionari pentru dist-upgrade"
+
+#. i18n: file ./hermesbase.ui line 84
+#: hermesbase.cpp:136 hermesbase.cpp:217 rc.cpp:30
+#, no-c-format
+msgid "Name"
+msgstr "Numele"
+
+#. i18n: file ./hermesbase.ui line 95
+#: hermesbase.cpp:137 hermesbase.cpp:218 rc.cpp:33
+#, no-c-format
+msgid "Installed Version"
+msgstr "Versiune instalata"
+
+#. i18n: file ./hermesbase.ui line 106
+#: hermesbase.cpp:138 hermesbase.cpp:219 rc.cpp:36
+#, no-c-format
+msgid "Latest Version"
+msgstr "Ultima versiune"
+
+#. i18n: file ./hermesbase.ui line 16
+#: hermesbase.cpp:214 rc.cpp:18 systray.cpp:40
+#, no-c-format
+msgid "siduxcc-hermes"
+msgstr "siduxcc-hermes"
+
+#. i18n: file ./hermesbase.ui line 65
+#: hermesbase.cpp:215 rc.cpp:24
+#, no-c-format
+msgid "Double click to the item to view the full warning."
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 49
+#: hermesbase.cpp:216 rc.cpp:21
+#, no-c-format
+msgid "War&nings"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 75
+#: hermesbase.cpp:220 rc.cpp:27
+#, fuzzy, no-c-format
+msgid "Upgradable pac&kages"
+msgstr "Pachete ce pot fi imbunatatite"
+
+#. i18n: file ./hermesbase.ui line 153
+#: hermesbase.cpp:221 rc.cpp:39
+#, no-c-format
+msgid "cl&ose"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 156
+#: hermesbase.cpp:222 rc.cpp:42
+#, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file ./hermesbase.ui line 181
+#: hermesbase.cpp:223 rc.cpp:45
+#, no-c-format
+msgid "&update (apt-get)"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 184
+#: hermesbase.cpp:224 rc.cpp:48
+#, no-c-format
+msgid "Alt+U"
+msgstr "Alt+U"
 
 #. i18n: file ./legendbase.ui line 16
-#: rc.cpp:3
+#: legendbase.cpp:445 rc.cpp:3
 #, fuzzy, no-c-format
 msgid "legendbase"
 msgstr "Legenda"
 
 #. i18n: file ./legendbase.ui line 34
-#: rc.cpp:6
+#: legendbase.cpp:446 rc.cpp:6
 #, no-c-format
 msgid "Legend"
 msgstr "Legenda"
 
-#. i18n: file ./legendbase.ui line 87
-#: rc.cpp:9
+#. i18n: file ./legendbase.ui line 68
+#: legendbase.cpp:447 rc.cpp:9
 #, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
@@ -57,77 +125,15 @@ msgstr ""
 "Exista atentionari de dist-upgrade. Va rugam sa vizitati sidux.com pentru "
 "informatii aditionale"
 
-#. i18n: file ./legendbase.ui line 106
-#: rc.cpp:12
+#. i18n: file ./legendbase.ui line 87
+#: legendbase.cpp:448 rc.cpp:12
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Fara legatura la sidux.com"
 
-#. i18n: file ./legendbase.ui line 122
-#: rc.cpp:15
-#, no-c-format
-msgid "No dist-upgrade warnings."
-msgstr "Fara atentionari pentru dist-upgrade"
-
-#. i18n: file ./hermesbase.ui line 16
-#: rc.cpp:18 systray.cpp:40
-#, no-c-format
-msgid "siduxcc-hermes"
-msgstr "siduxcc-hermes"
-
-#. i18n: file ./hermesbase.ui line 49
-#: rc.cpp:21
-#, no-c-format
-msgid "War&nings"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 67
-#: rc.cpp:24
-#, fuzzy, no-c-format
-msgid "Upgr&adable packages"
-msgstr "Pachete ce pot fi imbunatatite"
-
-#. i18n: file ./hermesbase.ui line 76
-#: rc.cpp:27
-#, no-c-format
-msgid "Name"
-msgstr "Numele"
-
-#. i18n: file ./hermesbase.ui line 87
-#: rc.cpp:30
-#, no-c-format
-msgid "Installed Version"
-msgstr "Versiune instalata"
-
-#. i18n: file ./hermesbase.ui line 98
-#: rc.cpp:33
-#, no-c-format
-msgid "Latest Version"
-msgstr "Ultima versiune"
-
-#. i18n: file ./hermesbase.ui line 142
-#: rc.cpp:36
-#, no-c-format
-msgid "cl&ose"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 145
-#: rc.cpp:39
-#, no-c-format
-msgid "Alt+O"
-msgstr "Alt+O"
-
-#. i18n: file ./hermesbase.ui line 170
-#: rc.cpp:42
-#, no-c-format
-msgid "&update (apt-get)"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 173
-#: rc.cpp:45
-#, no-c-format
-msgid "Alt+U"
-msgstr "Alt+U"
+#: main.cpp:39
+msgid "A KDE tray application for sidux"
+msgstr "O aplicatie KDE pentru sidux"
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
@@ -154,5 +160,5 @@ msgid "&About siduxcc-hermes"
 msgstr "Despre siduxcc-hermes"
 
 #, fuzzy
-#~ msgid "Upgradable pac&kages"
+#~ msgid "Upgr&adable packages"
 #~ msgstr "Pachete ce pot fi imbunatatite"

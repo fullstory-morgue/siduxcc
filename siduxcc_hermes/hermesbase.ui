@@ -52,9 +52,17 @@
                                 <property name="name">
                                     <cstring>unnamed</cstring>
                                 </property>
-                                <widget class="QListBox" row="0" column="0">
+                                <widget class="QListBox" row="1" column="0">
                                     <property name="name">
                                         <cstring>warningListBox</cstring>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>warningtextLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Double click to the item to view the full warning.</string>
                                     </property>
                                 </widget>
                             </grid>
@@ -64,7 +72,7 @@
                                 <cstring>tab</cstring>
                             </property>
                             <attribute name="title">
-                                <string>Upgr&amp;adable packages</string>
+                                <string>Upgradable pac&amp;kages</string>
                             </attribute>
                             <grid>
                                 <property name="name">
@@ -115,6 +123,9 @@
                                     </property>
                                     <property name="itemMargin">
                                         <number>2</number>
+                                    </property>
+                                    <property name="resizeMode">
+                                        <enum>LastColumn</enum>
                                     </property>
                                 </widget>
                             </grid>
@@ -237,7 +248,7 @@
 </widget>
 <images>
     <image name="image0">
-        <data format="PNG" length="715">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000029249444154388d9d934d6b5b5710869f73cf3df74357d147244bb50d8ee252234208298504c58b2cf33b0afd0fd9040af93f8556851402da984253a2226fdac4a99b604c1044d18d2cb8b225dd73a60b5b76165d75601633ccbcbcef7ca89fa113c123fe87cde1b9ff173caa361adf9b4603cf183cadf18c41a2082914e022a7b4c6d39a20cff1ac257bf78ee3c1a0e43b40d7eb48b58a0401b652e12c8e394912f230c40501bed6c49e47d1394211626b092b158e07037c0788b5489e43149102d1ddbb7cd36e535b5b230843c439b2e994d178ccf170483e9d72633c46001fc03a87b11601aa0f1fd2d9dd45791e2885520acf18caf53a95b535be6ab7e976bb887300e70c94b51811c65ad3b97307014eb38cc9c909fd7e9f7c38a410c7249b9bdcd8d9c13a8713c1ad007ca508acc5cf73e22802118cef73ad58a451af33d69ab32cc31b8df8fbc30762ad116bcf1908e02945e81ce5d98c8fa311cdf5758c319820a0d3e9a03c0f11e1d368c43f4747fcb1b7c7e4d93304f000b4d618118af339afbb5d6659868880c8e5ce4584a45462fbe64daad7af7350ad5e4990f91c6633c25289cd172ff8fdd52b3eb5db9866934292b0b5b5c517cd262bb8fb0f1ef05bafc797ab2dc87289a4298328e2d77a9ddd3465bbd7c32c977cd49a5f3636f8f6e95300149094cbccb5be62e00501be528459c6778f1fb3dfeff3d3dbb7a4e331a1083bb76e5d360b301a0e29597b05a07dffb2a0d56ad16ab5ce757fee17f348d394dede1eb7178bab3b20083815a19265fcf8e409f1bd7b6c6c6f53abd5282409d639269309076fde70b0bf4fe9e54bd69b4ddeaf6690a629d78a4572119a8787c8e12147becf9fbecf1470402842cd5abe5e2cc881b3c9e45cc2029e1f0d8795ff7a5705943f8b4f2f7c654bf8e15f26302082d08c12c10000000049454e44ae426082</data>
+        <data format="PNG" length="786">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002d949444154388d95934d6f1b6514859ff763c676ecc4ae1d9ad46329a4b4eaa2a81f11420205a942281bb2832d3f03b1e14ff003582016acaa2e48858454240a524554456a12080d6a641bec060cb16b7b663c63cf7b5938ea821d573a3aba9bab738ece551f7ff16873e7e7d1f65137e4ffcce5570a7c70b3bc63bf7ab0fffe3b37d63fb1718c351a6b3439eda8ea31151d52cb0bbe810c43e43c625d64aa722c2f97b9fbf050ec1f7ff5d97b6ab858d4f85673d18b786b2dc71b1b1b944a45945228a5d0e7ec9c230c433ebff71d27dd148b389c73644ea1c978b53861f3ed3b68ad1011009452c8b9746d0ce57219710ec46111217342260ac952aead0708200293c984dddd9f08c3885ccee742a5c2caea2a8d46637e5c040b8243e1b48f488aeffb20308e423a9d0e8727cf49723594f5f0fa110bed636afb4f117180cc2d089a4c5b525de29fb33e02789e4710047cf461401cc74461c88be190e6699ffe2ccf995f067936b7a08dc1993c89161efffa8cd7af5f67696909dff7514ab1b8b8883acfe26636a3d5fe9d4f3ffb12255730acdf79af5aad6d7a85129a8c30b742ebc90fb8648ce779e4f379acb538274c9284c17084b1965c36e6e4e8c98f161c934c90a962c15fc0efed7350b9cdf15e1bfdf05bb2510f9df4a9d716d9dede26a85f4229c595ab57a9debf5fb08890ce84fec85155036ed344c5030e7b31b12e91165e23f5a1f577978d4e87a05e47c4618c4141de2282311aa50d63bd447d25606b6b8bd96cc6e9e9735e0c06389751ad5ea35ebf0422a4694aabd964a20a030b0eab152805a8975db7d6d26834680401202f4b351c0e198d867cf3e07b5a851b3257a040a6312e8b78b4fb98c16040bd5e67b956a5582c628c21492674bb5d0e0f0e386a9e325e7993e42cc5167d4550ccc84f63248df973f55d7a6711aadd261dee314b225c36431b4bb1b28c5d5a23ba7c8b349d81f4b0b7d62eecfc72fc9bea87d3ff3cac0556c13007c00818454034dfb3e4eb7f01b666532a2245546a0000000049454e44ae426082</data>
     </image>
 </images>
 <connections>

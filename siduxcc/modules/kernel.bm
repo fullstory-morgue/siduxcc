@@ -91,7 +91,7 @@ installKernel()
 
 getModules()
 {
-	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux/modules/i686/ 2>/dev/null | grep "modules-" | cut -f8 -d"\"" | cut -f1 -d2 | sed 's/-modules-//g'
+	wget -O - http://sidux.com/debian/pool/main/l/linux-modules-sidux-main-2.6 2>/dev/null | grep 2.6-sidux-686 | cut -f8 -d"\"" | cut -f1 -d2 | sed 's/-modules-//g'
 }
 
 

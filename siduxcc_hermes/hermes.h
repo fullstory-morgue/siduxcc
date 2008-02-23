@@ -35,6 +35,7 @@ class hermes : public hermesBase
 	public:
 		hermes(QWidget* parent = 0, const char* name = 0);
 		void getPackages();
+		void getWarnings();
 		void getKernels();
 		QStringList link;
 		virtual void init(int i);
