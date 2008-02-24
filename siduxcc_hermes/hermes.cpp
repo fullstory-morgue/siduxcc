@@ -89,12 +89,10 @@ void hermes::getPackages()
 		QListViewItem * item = new QListViewItem( packageListView, 0 );
 		tmp = QStringList::split( "/", *it );
 		item->setText(0,tmp[0]);
-		tmp = QStringList::split( " ", *it ); 
+		tmp = QStringList::split( " ", *it );
 		item->setText(1,tmp[3]);
 		item->setText(2,tmp[5]); 
 	}
-
-	updatePushButton->setHidden(TRUE);
 
 }
 
@@ -132,9 +130,15 @@ void hermes::getKernels()
 void hermes::tabChanged()
 {
 	if(tabWidget->currentPageIndex() == 1)
+	{
 		updatePushButton->setHidden(FALSE);
+		reloadPushButton->setHidden(FALSE);
+	}
 	else
+	{
 		updatePushButton->setHidden(TRUE);
+		reloadPushButton->setHidden(TRUE);
+	}
 }
 
 void hermes::openLink(int i)
@@ -161,6 +165,7 @@ void hermes::terminateConsole()
 {
 	widgetStack->raiseWidget(0);
 	updatePushButton->setHidden(FALSE);
+	reloadPushButton->setHidden(FALSE);
 	getPackages();
 
 	loadKonsole();

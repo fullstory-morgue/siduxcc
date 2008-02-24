@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-24 00:02+0100\n"
+"POT-Creation-Date: 2008-02-24 12:42+0100\n"
 "PO-Revision-Date: 2007-11-20 01:26+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -39,70 +39,82 @@ msgid "No dist-upgrade warnings."
 msgstr "Aucune alerte de dist-upgrade"
 
 #. i18n: file ./hermesbase.ui line 84
-#: hermesbase.cpp:136 hermesbase.cpp:217 rc.cpp:30
+#: hermesbase.cpp:136 hermesbase.cpp:222 rc.cpp:30
 #, no-c-format
 msgid "Name"
 msgstr "Nom"
 
 #. i18n: file ./hermesbase.ui line 95
-#: hermesbase.cpp:137 hermesbase.cpp:218 rc.cpp:33
+#: hermesbase.cpp:137 hermesbase.cpp:223 rc.cpp:33
 #, no-c-format
 msgid "Installed Version"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 106
-#: hermesbase.cpp:138 hermesbase.cpp:219 rc.cpp:36
+#: hermesbase.cpp:138 hermesbase.cpp:224 rc.cpp:36
 #, no-c-format
 msgid "Latest Version"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:214 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:219 rc.cpp:18 systray.cpp:40
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
 
 #. i18n: file ./hermesbase.ui line 65
-#: hermesbase.cpp:215 rc.cpp:24
+#: hermesbase.cpp:220 rc.cpp:24
 #, no-c-format
 msgid "Double click to the item to view the full warning."
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 49
-#: hermesbase.cpp:216 rc.cpp:21
+#: hermesbase.cpp:221 rc.cpp:21
 #, no-c-format
 msgid "War&nings"
 msgstr "Alertes"
 
 #. i18n: file ./hermesbase.ui line 75
-#: hermesbase.cpp:220 rc.cpp:27
+#: hermesbase.cpp:225 rc.cpp:27
 #, fuzzy, no-c-format
 msgid "Upgradable pac&kages"
 msgstr "Paquets actualisables"
 
 #. i18n: file ./hermesbase.ui line 153
-#: hermesbase.cpp:221 rc.cpp:39
+#: hermesbase.cpp:226 rc.cpp:39
 #, no-c-format
 msgid "cl&ose"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 156
-#: hermesbase.cpp:222 rc.cpp:42
+#: hermesbase.cpp:227 rc.cpp:42
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 181
-#: hermesbase.cpp:223 rc.cpp:45
+#: hermesbase.cpp:228 rc.cpp:45
 #, no-c-format
 msgid "&update (apt-get)"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 184
-#: hermesbase.cpp:224 rc.cpp:48
+#: hermesbase.cpp:229 rc.cpp:48
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
+
+#. i18n: file ./hermesbase.ui line 192
+#: hermesbase.cpp:230 rc.cpp:51
+#, no-c-format
+msgid "relo&ad"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 195
+#: hermesbase.cpp:231 rc.cpp:54
+#, fuzzy, no-c-format
+msgid "Alt+A"
+msgstr "Alt+O"
 
 #. i18n: file ./legendbase.ui line 16
 #: legendbase.cpp:445 rc.cpp:3

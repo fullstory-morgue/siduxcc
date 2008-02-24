@@ -3,34 +3,14 @@ siduxcc (0.9.14) UNRELEASED; urgency=low
   [ Stefan Lippers-Hollmann ]
   * NO RELEASED YET
   * FTBS
-mkdir -p -- /tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/share/siduxcc
-cp -aR /tmp/buildd/siduxcc-0.9.14/./siduxcc/modules /tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/share/siduxcc/
-cp -aR /tmp/buildd/siduxcc-0.9.14/./siduxcc/scripts /tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/share/siduxcc/
-make[3]: Leaving directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc'
-make[2]: Leaving directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc'
-Making install in siduxcc_hermes
-make[2]: Entering directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc_hermes'
-make[3]: Entering directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc_hermes'
-test -z "/usr/bin" || /bin/mkdir -p "/tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/bin"
   /bin/sh ../libtool --silent   --mode=install /usr/bin/install -c -p  'siduxcc-hermes' '/tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/bin/siduxcc-hermes'
-/bin/sh /tmp/buildd/siduxcc-0.9.14/./admin/mkinstalldirs /tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/share/siduxcc
-cp -aR /tmp/buildd/siduxcc-0.9.14/./siduxcc_hermes/icons /tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/share/siduxcc/
-cp: cannot stat `/tmp/buildd/siduxcc-0.9.14/./siduxcc_hermes/icons': No such file or directory
-make[3]: *** [install-data-local] Error 1
-make[3]: Leaving directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc_hermes'
-make[2]: *** [install-am] Error 2
-make[2]: Leaving directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu/siduxcc_hermes'
-make[1]: *** [install-recursive] Error 1
-make[1]: Leaving directory `/tmp/buildd/siduxcc-0.9.14/obj-x86_64-linux-gnu'
-make: *** [common-install-impl] Error 2
-dpkg-buildpackage: failure: fakeroot debian/rules binary gave error exit status 2
-pbuilder: Failed autobuilding of package
 
   [ Fabian Wuertz ]
   * hermes: new icons
   * kernel: get modules function updated
+  * hermes: reload button added
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 24 Feb 2008 01:52:53 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 24 Feb 2008 12:52:38 +0100
 
 siduxcc (0.9.13) unstable; urgency=low
 
