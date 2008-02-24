@@ -10,7 +10,10 @@ siduxcc (0.9.14) UNRELEASED; urgency=low
   * kernel: get modules function updated
   * hermes: reload button added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 24 Feb 2008 12:52:38 +0100
+  [ Joaquim Boura ]
+  * Ja language files updated (thks to muchan)
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun, 24 Feb 2008 16:59:29 +0100
 
 siduxcc (0.9.13) unstable; urgency=low
 
