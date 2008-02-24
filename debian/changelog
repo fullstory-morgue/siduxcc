@@ -1,9 +1,5 @@
-siduxcc (0.9.14) UNRELEASED; urgency=low
+siduxcc (0.9.14) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * hermes: new icons
   * kernel: get modules function updated
 
