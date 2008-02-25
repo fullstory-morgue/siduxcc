@@ -660,7 +660,7 @@ void network::getHostname()
 {
 	this->shell->setCommand("siduxcc network getHostname");
 	this->shell->start(true);
-	hostnameLineEdit->setText( this->shell->getBuffer() );
+	hostnameLineEdit->setText( this->shell->getBuffer().replace( "\n", "") );
 }
 
 

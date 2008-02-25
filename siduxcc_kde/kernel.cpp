@@ -68,7 +68,7 @@ void kernel::loadWidget(int i)
 			installModulesPushButton->show();
 		else
 		{
-			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!")+kernelpackage );
+			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!") );
 			back();
 			return;
 		}

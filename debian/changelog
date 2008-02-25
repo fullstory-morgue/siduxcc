@@ -1,8 +1,14 @@
 siduxcc (0.9.15) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 25 Feb 2008 17:57:58 +0100
+  [ Fabian Wuertz ]
+  * kde: network: hostname-blank bug fixed
+  * kde: kernel: kernel question updated
+  * typos
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 25 Feb 2008 19:46:29 +0100
 
 siduxcc (0.9.14) unstable; urgency=low
 
