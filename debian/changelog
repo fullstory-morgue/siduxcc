@@ -1,4 +1,8 @@
-siduxcc (0.9.14) unstable; urgency=low
+siduxcc (0.9.14) UNRELEASED; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * NOT RELEASED YET
+  * wait for new build-dep to arrive, mesa...
 
   [ Fabian Wuertz ]
   * hermes: new icons
@@ -8,7 +12,7 @@ siduxcc (0.9.14) unstable; urgency=low
   [ Joaquim Boura ]
   * Ja language files updated (thks to muchan)
 
- -- Joaquim Boura <x-un-i@sidux.com>  Sun, 24 Feb 2008 16:59:29 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 25 Feb 2008 01:58:48 +0100
 
 siduxcc (0.9.13) unstable; urgency=low
 
