@@ -1,9 +1,4 @@
-siduxcc (0.9.14) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NO RELEASED YET
-  * FTBS
-  /bin/sh ../libtool --silent   --mode=install /usr/bin/install -c -p  'siduxcc-hermes' '/tmp/buildd/siduxcc-0.9.14/debian/tmp//usr/bin/siduxcc-hermes'
+siduxcc (0.9.14) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * hermes: new icons
