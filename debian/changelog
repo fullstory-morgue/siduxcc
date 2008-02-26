@@ -14,7 +14,7 @@ siduxcc (0.9.15) unstable; urgency=low
   [ Stefan Lippers-Hollmann ]
   * generate PNGs from source.
 
- -- Bernard Gray <bernard.gray@gmail.com>  Tue, 26 Feb 2008 14:09:09 +1100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 26 Feb 2008 15:17:24 +0100
 
 siduxcc (0.9.14) unstable; urgency=low
 
