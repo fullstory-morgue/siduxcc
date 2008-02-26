@@ -1337,7 +1337,7 @@ msgstr "インストール"
 #: rc.cpp:746
 #, no-c-format
 msgid "sidux Control Center"
-msgstr "siduxコントロールセンター"
+msgstr "sidux Control Center"
 
 #. i18n: file ./startdialog.ui line 29
 #: rc.cpp:749

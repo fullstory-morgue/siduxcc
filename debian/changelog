@@ -1,8 +1,13 @@
 siduxcc (0.9.16) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 26 Feb 2008 15:21:32 +0100
+  [ Joaquim Boura ]
+  * minimal ja font for kde does not support font used on window title so
+    changed to plain english (muchan)
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Tue, 26 Feb 2008 20:34:20 +0100
 
 siduxcc (0.9.15) unstable; urgency=low
 
