@@ -10,8 +10,10 @@ siduxcc (0.9.15) UNRELEASED; urgency=low
 
   [ Bernard Gray ]
   * convert siduxcchermes and sidux_book to debian3/4 compat
+  * add kde 3/4 compat sidux-blue.svg (there was no source for this)
+  * note to xadras: you need to re-export all these updated svgs to png
 
- -- Bernard Gray <bernard.gray@gmail.com>  Tue, 26 Feb 2008 13:21:54 +1100
+ -- Bernard Gray <bernard.gray@gmail.com>  Tue, 26 Feb 2008 13:27:54 +1100
 
 siduxcc (0.9.14) unstable; urgency=low
 
