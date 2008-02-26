@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
-   xmlns:ns="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -15,14 +14,14 @@
    height="128"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.1"
-   sodipodi:docname="sidux-manual.svg"
+   inkscape:version="0.45+devel"
+   sodipodi:docname="sidux_book.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    sodipodi:docbase="/home/tjalling/svn/noc.sidux.com/sidux-icon-vidos/trunk/.source">
   <metadata
      id="metadata349">
     <rdf:RDF>
-      <ns:Work
+      <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
@@ -30,19 +29,37 @@
         <dc:title>sidux-base-icon</dc:title>
         <dc:date>6th December 2007</dc:date>
         <dc:creator>
-          <ns:Agent>
+          <cc:Agent>
             <dc:title>Bernard Gray &lt;bernard.gray@gmail.com&gt;</dc:title>
-          </ns:Agent>
+          </cc:Agent>
         </dc:creator>
         <dc:rights>
-          <ns:Agent>
+          <cc:Agent>
             <dc:title>Copyright</dc:title>
-          </ns:Agent>
+          </cc:Agent>
         </dc:rights>
-        <ns:license
+        <cc:license
            rdf:resource="http://www.gnu.org/licenses/gpl-2.0.txt" />
         <dc:description>base icon on which other sidux icons can be built for the vidos icon set</dc:description>
-      </ns:Work>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:source></dc:source>
+        <dc:relation></dc:relation>
+        <dc:language></dc:language>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:coverage></dc:coverage>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title></dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
@@ -66,12 +83,19 @@
      showgrid="false"
      inkscape:zoom="0.85546875"
      inkscape:cx="147.47031"
-     inkscape:cy="325.30105"
+     inkscape:cy="138.26909"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1"
+       id="perspective607" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        id="perspective11747"
@@ -4077,16 +4101,9 @@
        d="M 88.413248,123.23384 C 88.176927,123.28192 87.894693,123.29761 87.642193,123.29859 L 21.796406,123.44704 L 21.751988,122.38639 L 87.543162,122.29228 C 89.563046,122.28445 91.181739,121.13838 91.1739,119.11729 L 91.289428,119.70452 C 91.296303,121.47296 90.067494,122.89727 88.413248,123.23384 z"
        style="opacity:0.34836067;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:4;stroke-opacity:0.1300813" />
   </g>
-  <text
-     xml:space="preserve"
-     style="font-size:118.53128052px;font-style:normal;font-weight:bold;fill:#ffffff;fill-opacity:0.61666667;stroke:#00112b;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Sidux"
-     x="23.395895"
-     y="118.95117"
+  <path
+     style="font-size:118.53128052px;font-style:normal;font-weight:bold;fill:#ffffff;fill-opacity:0.61666667;stroke:#00112b;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;font-family:Sidux"
+     d="M 38.906824,117.79364 C 38.906809,118.6425 39.292652,119.06692 40.064356,119.06693 L 54.186247,119.06693 C 54.957904,119.06692 55.343747,118.6425 55.343779,117.79364 L 55.343779,112.23749 C 55.343747,105.90966 53.183023,102.74574 48.8616,102.74572 L 46.546536,102.74572 C 41.453377,102.74574 38.906809,105.63957 38.906824,111.42721 L 38.906824,117.79364 M 38.559565,97.305323 C 38.55955,98.077032 38.945393,98.462875 39.717097,98.462855 L 54.533507,98.462855 C 55.382332,98.462875 55.80676,98.077032 55.806792,97.305323 L 55.806792,91.401909 C 55.80676,88.238019 56.346941,86.000126 57.427337,84.688224 C 58.662002,83.222052 61.169986,82.488949 64.951295,82.488913 C 72.43662,82.488949 77.799846,80.289641 81.04099,75.89098 C 84.359188,71.415237 86.018316,65.434661 86.018378,57.949234 C 86.018316,53.550677 85.748225,50.502513 85.208106,48.80473 C 83.433163,42.708471 79.999155,38.155517 74.906071,35.145852 C 72.43662,33.602562 69.504208,32.830874 66.108827,32.830788 L 30.45684,32.946542 C 29.685146,32.946628 29.299302,33.332471 29.299308,34.104074 L 29.299308,47.068432 C 29.299302,47.91736 29.685146,48.341788 30.45684,48.341718 L 62.288971,48.225964 C 63.600801,48.226035 64.719747,48.53471 65.645814,49.15199 C 67.189147,50.309591 68.19234,52.663237 68.655398,56.212936 C 69.041196,59.454085 68.616768,62.077821 67.382112,64.084153 C 66.456044,65.704751 64.333904,66.515023 61.015686,66.514971 C 57.080044,66.515023 53.723204,67.170957 50.945157,68.482775 C 48.167056,69.794694 45.851994,71.569575 43.999965,73.807422 C 42.147895,76.045361 40.758858,78.669097 39.83285,81.67864 C 38.983978,84.688258 38.55955,87.929344 38.559565,91.401909 L 38.559565,97.305323"
      id="text21823"
-     transform="scale(0.999876,1.000124)"><tspan
-       sodipodi:role="line"
-       id="tspan21825"
-       x="23.395895"
-       y="118.95117"
-       style="font-weight:bold;fill:#ffffff;fill-opacity:0.61666667;stroke-width:1.79999995;stroke-miterlimit:4;stroke-dasharray:none;font-family:Sidux">?</tspan></text>
+     transform="scale(0.999876,1.000124)" />
 </svg>

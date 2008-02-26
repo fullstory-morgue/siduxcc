@@ -8,7 +8,10 @@ siduxcc (0.9.15) UNRELEASED; urgency=low
   * kde: kernel: kernel question updated
   * typos
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 25 Feb 2008 19:46:29 +0100
+  [ Bernard Gray ]
+  * convert siduxcchermes and sidux_book to debian3/4 compat
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Tue, 26 Feb 2008 13:21:54 +1100
 
 siduxcc (0.9.14) unstable; urgency=low
 
