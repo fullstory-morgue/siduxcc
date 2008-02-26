@@ -1,7 +1,4 @@
-siduxcc (0.9.15) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.9.15) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * kde: network: hostname-blank bug fixed
@@ -13,6 +10,9 @@ siduxcc (0.9.15) UNRELEASED; urgency=low
   * add kde 3/4 compat sidux-blue.svg (there was no source for this)
   * note to xadras: you need to re-export all these updated svgs to png
   * add siduxcchermes icon candidates
+
+  [ Stefan Lippers-Hollmann ]
+  * generate PNGs from source.
 
  -- Bernard Gray <bernard.gray@gmail.com>  Tue, 26 Feb 2008 14:09:09 +1100
 
