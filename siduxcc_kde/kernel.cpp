@@ -105,48 +105,20 @@ void kernel::getKernels()
 	QString kernelType = this->shell->getBuffer().stripWhiteSpace();
 
 
-	installKernelListView->clear();
-	installKernelListView->header()->hide();
-	installKernelListView->setSorting(2);
-
 	// show the current kernel
 	this->shell->setCommand("siduxcc kernel currentKernel");
 	this->shell->start(true);
-	QString currentKernel = this->shell->getBuffer().stripWhiteSpace();
-	QListViewItem * item1 = new QListViewItem( installKernelListView, 0 );
-	item1->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
-	item1->setText(0, "Current kernel:");
-	item1->setText(1, currentKernel );
-	item1->setText(2, "a" );
+	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace() );
 
 
 	// show the newest stable kernel
 	this->shell->setCommand("siduxcc kernel stableKernelFull");
 	this->shell->start(true);
 	stableKernelFull = this->shell->getBuffer().stripWhiteSpace()+"-"+kernelType;
-	QString stableKernel = QStringList::split( "-", stableKernelFull)[1];
-	QListViewItem * item2 = new QListViewItem( installKernelListView, 0 );
-	item2->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
-	item2->setText(0, i18n("Newest stable kernel:") );
-	item2->setText(1, stableKernel );
-	item2->setText(2, "b" );
-
-
-
-	
-
-	// show the newest experimental kernel
-	QListViewItem * item3 = new QListViewItem( installKernelListView, 0 );
-	item3->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/spacer.png" ));
-	item3->setText(0, i18n("Newest experimental kernel:")+"  ");
-	item3->setText(1, "");
-	item3->setText(2, "c" );
-
+	stableKernel->setText( QStringList::split( "-", stableKernelFull)[1] );
 
 
 	//i18n("Couldn't connect to sidux.com!")
-
-
 }
 
 
@@ -175,26 +147,20 @@ void kernel::getOldKernels()
 void kernel::installKernel()
 {
 
-	QString type = installKernelListView->currentItem()->text(0);
 
-	if( type == i18n("Current kernel:") )
-		QMessageBox::information( this, "kernel", i18n("Please select if you want to install the newest stable or experimental kernel!") );
-	else if( type == i18n("Newest stable kernel:") )
-		if( installKernelListView->currentItem()->text(1) == installKernelListView->firstChild()->text(1) )
-			QMessageBox::information( this, "kernel", i18n("You have already installed the newest stable kernel!") );
-		else if( installKernelListView->currentItem()->text(1) == "" )
-			QMessageBox::information( this, "kernel", i18n("There is no stable kernel avaiable!") );
-		else
-		{
-			if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
-			{
-				QStringList run;
-				run << "installKernel" << "stable";
-				startConsole(run);
-			}
-		}
+	if( stableKernel->text() == currentKernel->text() )
+		QMessageBox::information( this, "kernel", i18n("You have already installed the newest stable kernel!") );
+	else if( stableKernel->text() == "" )
+		QMessageBox::information( this, "kernel", i18n("There is no stable kernel avaiable!") );
 	else
-		QMessageBox::information( this, "kernel", i18n("At the moment there is no support for experimental kernels!") );
+	{
+		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
+		{
+			QStringList run;
+			run << "installKernel" << "stable";
+			startConsole(run);
+		}
+	}
 
 
 	/*

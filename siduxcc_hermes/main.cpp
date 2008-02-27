@@ -39,6 +39,10 @@ int main(int argc, char *argv[])
 	about->setShortDescription(I18N_NOOP("A KDE tray application for sidux"));
 	about->setLicense(KAboutData::License_GPL_V2);
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
+	about->setHomepage("http://sidux.com");
+	about->setBugAddress("xadras@sidux.com");
+	about->addCredit("Stefan Lippers-Hollmann (slh)", I18N_NOOP("Packaging") );
+	about->addCredit("Bernard Gray (cleary)", I18N_NOOP("Icon") );
 	
 	
 	KCmdLineArgs::init(argc, argv, about);

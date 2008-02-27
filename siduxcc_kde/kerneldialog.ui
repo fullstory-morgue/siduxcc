@@ -184,7 +184,7 @@
                             <x>40</x>
                             <y>40</y>
                             <width>380</width>
-                            <height>240</height>
+                            <height>130</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
@@ -198,6 +198,38 @@
                     <property name="title">
                         <string></string>
                     </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>currentKernelTextLabel</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>40</y>
+                                <width>140</width>
+                                <height>17</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Current kernel:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>stableKernelTextLabel</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>30</x>
+                                <y>80</y>
+                                <width>160</width>
+                                <height>17</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Newest stable kernel:</string>
+                        </property>
+                    </widget>
                     <widget class="QPushButton">
                         <property name="name">
                             <cstring>installPushButton</cstring>
@@ -207,70 +239,52 @@
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>120</x>
-                                <y>180</y>
-                                <width>130</width>
+                                <x>330</x>
+                                <y>70</y>
+                                <width>30</width>
                                 <height>30</height>
                             </rect>
                         </property>
                         <property name="text">
-                            <string>inst&amp;all Kernel</string>
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image6</pixmap>
                         </property>
                         <property name="accel">
-                            <string>Alt+A</string>
-                        </property>
-                        <property name="iconSet">
-                            <iconset>image6</iconset>
+                            <string></string>
                         </property>
                     </widget>
-                    <widget class="QListView">
-                        <column>
-                            <property name="text">
-                                <string>description</string>
-                            </property>
-                            <property name="clickable">
-                                <bool>true</bool>
-                            </property>
-                            <property name="resizable">
-                                <bool>true</bool>
-                            </property>
-                        </column>
-                        <column>
-                            <property name="text">
-                                <string>version</string>
-                            </property>
-                            <property name="clickable">
-                                <bool>true</bool>
-                            </property>
-                            <property name="resizable">
-                                <bool>true</bool>
-                            </property>
-                        </column>
+                    <widget class="QLabel">
                         <property name="name">
-                            <cstring>installKernelListView</cstring>
+                            <cstring>currentKernel</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
-                                <x>30</x>
-                                <y>50</y>
-                                <width>310</width>
-                                <height>100</height>
+                                <x>190</x>
+                                <y>40</y>
+                                <width>130</width>
+                                <height>17</height>
                             </rect>
                         </property>
-                        <property name="vScrollBarMode">
-                            <enum>Auto</enum>
+                        <property name="text">
+                            <string>---</string>
                         </property>
-                        <property name="hScrollBarMode">
-                            <enum>Auto</enum>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>stableKernel</cstring>
                         </property>
-                        <property name="selectionMode">
-                            <enum>Single</enum>
+                        <property name="geometry">
+                            <rect>
+                                <x>190</x>
+                                <y>80</y>
+                                <width>130</width>
+                                <height>17</height>
+                            </rect>
                         </property>
-                        <property name="allColumnsShowFocus">
-                            <bool>true</bool>
-                        </property>
-                        <property name="resizeMode">
-                            <enum>LastColumn</enum>
+                        <property name="text">
+                            <string>---</string>
                         </property>
                     </widget>
                 </widget>
@@ -533,7 +547,7 @@
         <data format="PNG" length="1891">89504e470d0a1a0a0000000d494844520000002a0000002a0806000000c5c3c95b0000072a494441545885ed985b8c55571980bfb5f73ee7cc9cb9c1c0cc00c3543a144b29568b48b1604d6d2d0d7d404dea537d68d5076362622c89f1497da831a6d5181b13634c8c9ad8062fb1219692603098525bee540670a0e532036786b99e396766eff5ffbf0ffbcc30d786a927e1853f59397bafb3feec6fffd7b536dc913b7247aa22eec32885bb7ac03ca0044e50f1044e5111c08329f2f74db70f34fcc2753001f338a72c5f16d0be32c3d2a511030313f4f414b9d15746c5837964dfa76f13e8ae1e30e1a9271bd8bbafd48ef9871c723ff87b310950396fe6bb30398c942f82206f3c5215d06851ab4d20c8babdfb4a5fc1fcee28d4b6d69628d7da5293077585eba552a1908cfb58aee3821fa0137baa42b9685004cc6fc5f4f91d8f376edcbead11c5e10512012f342489351c3c70a9e5f85b57be830b8f0217aa011a2c0af36f6bc0d43927d6d414589c301d321dea58da5c03481693866a402e1ab482fb2e267f7efdf5bec2891343167b9b824c3c5cec1eb463872f8d62b20fd3aa58131648a69bd92da4ee9e35826cb333fff5e52dd18fbef8f4475cbe3e4b22303c3cc11b7ffd8f157a865ec4f425b4dc3b471741fef9cca241e78dd1c009aa024136c264154884f36001a8034d30e458b9a46e74d493a9cde23d8c15138a232587fa4358520bd68929e910408a9814c2edbf410e3df7ff8362c2fa8f6638d72d5f53956f81d4cdb60a26917366612670de8317238c4202a786f95f82243375144c7a30791693ae451a74a1ac17f2f92c98dcb76e6dd4b9e389969c88e135051201af46261b91cb67492a73b9ba1a3ef7a54fb9e2e8f84a111035bca6ffc571c289bd7b739876540fd40455053cb95c444b6b8ed81bc5a2502e0bb575112e0c2b193f099e2654a626477d2637ad0aa4bfc1783cd3bad502b54a5ca92a89876bbde31c3bdaafc343132c6dceb1fe63ad412e9f9d01396754e6a5727f336caa087ae5f218a832323cc1a9138374750dc6e7cf0e1d54f107c240beecbd7fe0e35bd7847320757ec814d4a7b03ae1c22d2fb463ba0e93abb8e01c26c83bdf5f1074de3a6a2a0c0e943193e37d8552cfc17ff4162e9c1fda67223f44e525f1f11fce9eba3a1a27b620a4cc8214657a327e02d39f80bd8cf9df21e527314fb8e97b0b827ee0a6247aea749d73b20cd3c0d4974c6500297a700f82bcf6c4d35bda1b9635ce845cc0fdf178cc993dbf2862fe4f986fa9695bfb78dddaadd9f29553942efeeb18e677e2a26b98478ebd788baeaf88dfbb710c189b3e173eb60f4c4f838d167a07a959d238034a2a1d6ab67535c8507fd7fa9a78a4f04c54dfecf29d5b82a07e053575ad94de3bd481ca23c0ab0bc5ef0782863b0ee7316907093119c6a480c6027a17685d5d53fd1cc879434041cdd1b27967347d9d2868584bd8d89e9781ee8782c6d5afeaf0a55b070d771c06131cbac3057c350c5dcec7fa5f437e0d7214d34733d9b0aeaeb9690a4466b95ca6418ace7d99c9795120d798056d0997ad4587dfbf7550871044868a7d76e9f2dac7eed9d096bddc5dd8d6f3deb50e87bd0dba7365e7ea0617447363731a98ccba2edfb88a1f1bc53279a86b43835c6ad5914b25cc9f91b17e4016e37ae5ee75cbe83ed3e7ea1b32ae73c3caa06169be36caf0f952b1f46853cb92dcaa75772d5c9ae6814c12cfd091bfa8f9f1324198893a1eca86ab36e3470bd8d8b5129afc5b6f7481268b0035c154c13ca68a9aa3615913f73fbc219b249625083117cd5fdc752ea457f05ef0c3570730dd8df9953a3ef45dd77bbcde8a3d0e89df043d4c3c52295f8b00559dec4c42e2d36408a22ca14b1f1c4f7846874618edbf41f146bf9606fbc6cdd465ea1a73d9a6d6206a6ac3e597a02e53791903f382e95534de63e5be0b56bafe08265d98ff15416ee2669d5d8c452db5a89ade4c868ae5e258b87ae62cef1f3bd22371f922e875cc77a7073cdf097e45585bbfb6e1deedadd9551b118bd0c9169aee678b72fca7af840f7cf3155c906e1f2b5d4bdefded222d6a0aa4c0b3dd5b1c1ae1cae993483cfe33d03f62d28ba90703bcc3fc1a29f67fa374e9c4f334b43bf22d884d03adf41939f9f2bc8fbf75500433034d637476a2a80b09a2c020598bfa7639fcedcb939ae196170c4d3a413b0d500b304db77c53bdfe437cf798ffcc34954c82a9cc2c410a614d3dab366da3be6df5b398ec0eb7fcb8e3e63b96f32e087e9e5971dfae5ce7679ce596a4256866afaf22682546e773bd58406d4bbb6b5ebf398bc93d202ba6e92e218a36643b36476ec91a84109d02f5d3acba38f9e0f2844c14076e68f7db475055d40c554d4b962a7ebc08f8c9c51511232927f1e5773214cea196ae3789c124bda826a89a6226fb4b43836b4a83fdf5e9473101f553df9f400cb313985c9ca63b60e27f9f5c796bc5d4baa95fbd0cd2553d5084b1c141eefee483fb556dffa425550d9bbc16a1ffe401c0666e785d3881c973998e87710d6d981a6a8699627e023bb7a77aae371346fb0a8c167a173edb4f1e29663fb4729f5c7e7301ddb4ecdd913b72476e93fc0f19e9ceb76b9eec430000000049454e44ae426082</data>
     </image>
     <image name="image6">
-        <data format="PNG" length="777">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000002d049444154388dad956f48dc751cc75fdfbb53377713b9ecb631170765c17612954c7c206241031fb4a04073b1dc3f09a9460f8c3d88401a48ea1e4c3606d18388aec38a64adb827e79104c56ada624dd89fdb74ce9c6d5eacced3f3f7bbdfbb0773ec0ff773e6fcc0fbc9f7fbf9be3e7cdf9fef1f24914f56829ecc519e729b7f903cb884c7bb6747e1d68f86af1c322fdc3d7ef37bf374f6a4e99e3e62426e6b015c2be67edb754ed64de5c60f5b535f15b6cf0eae7dc3bab67dd899ffc0b12e954dec7c8e4dc01ab7f53ed7825cbd86937ed253b6cd17dcb6a10b9f0f0a3ce0f99de4991b473e1bc206b2ae3bce37983966d69935ce639006d250f02878bd60d264a7bf9d78651f5f003392ec255991e9a5d41aafec71d25d73b2ce4af34352f607297b42b22252ae4ea933c480f58067b1e6dd3905515e74928129d97f48ce4529372cd98392fd9d641f9372cf4869e44ca1e4d77c087817031b490064bb4ce9f4265e32416f5549285c5554f678d8e77f7e2dfa15ac2fc19a853960169c34bafc0b079ed8cd2149b9075a0118a000288ebcc996dc04b6ae234da23f0736ea783793a918897f629cfef71bcebff72c9bdd2c59f4905ba7185112cdfcc4f88f0327661a1b1be5f7fb5f06824009500aacfaffe038d1dc499c9f0fb2abb5b5b523994c2a1c0e0f011b808225352f9fe63ee7edeb9ff2f102a8289148fcdddedeae6030f83a105836f8f42dcf57032592686b6bdb9b4aa5545f5f7f6ea158e1b2c0f9148bc5feeaecec544545c55bc0232b066e696979756c6c4ccdcdcd57818d40d18a8025d1dfdf7fa5b7b757d5d5d5ef0365f9725c9fcdc5221a8deeaeababa3b6b6f65da0d818b3fafe9c6581fbfafae223232317cacbcb030d0d0dfb01ff8a80012291c80edbb6555353b30ff01b638aef49588ec7b7150a85a21d1d1d6a6a6afa845bb7d13c94c7b7637474f4403c1eb742a1d06bc0aa0501b8ff204b0949638140e09d4c2653094c73d78ff21f526348eb758151350000000049454e44ae426082</data>
+        <data format="PNG" length="1146">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000044149444154388db5d44b6c54551cc7f1efb9f7cebdf3e8307dcc743a2da59dda56696d4d5cc08204a49a68442218832b63d8e08268e2c60710d810a36e0c128d89892c5ce94225a2f1d1602493c6c468a48408054acbf43dd3e7ccdcb9735fc7456d05a7e08a7ff2df9c9bf3c939fffbcb11524aee4729f74505b47b7d7cf57a32e9fa9567cb4bfe137641b601e851311eaa550635c538fb41e7ececddf68a8d46f1c668b7be5c9e3db23c2a5e8b971edeb439d8475d2489aaa82c9939b2e56166437faec43ae4fbb150f2ed773b46ecff855fb9dc142bac94bee45aebc0e3e99788479b373c51be30c54fa36750ba27cf4737459e3bdd3bb37c57f8cd4b7ddaf4f2d8d7ca687acf333d8708a83aaa0e39fb26b66f213dd06490a6681ab702b66bf1cde58f119dd96f53b1f67deff45d72d7ac3b663c53183f688d45f63cddf53c6a8d43b0de430d085acc7676a70e82841f6f7c8ad168e1d912167d76771de0bbd18ff6cc3c307e10f864cd5a4fc5e14c47c0ccfb477a1a7652dbac114edaa05b78a28c10024dd1d1541da1083ccaa05b841a6d1ab6e8f436ecc4ccfb470e673a0255f06229bf4db36bda1fecee408f3978c2c263b525fe6df792ebeb9eb008441d7a7abad0ec48fb6229bfad0a766db923156b235a2f98776e12f0ead09d04012b417370eb3adb12d98a371bc79d8a638dd7726b72949a18b4d4a5716db9a36ac65ec56f4cb526108a8d234becaa3b44400956a5a13fb58bfed42e002a8ec5e9e17d48254eaab181d1ab7ee3063015cd704054403855e0ddaae88f63ca187a50e255a86c045fc997c7e914297455e1c2d287e0ab78ae4b8bfe28bdf503005c9c3ecfd8ca6f484fe2382e35e110363916ca39bc0a57aa605c6d706272de2e774ee9615da7c02ff8d2c1375c64117a5985274a7fe0340f022080761a40c2c464dec6d506d7b8f59f776a7f667a6ea27476723e8fae4240f53134959066a0dcf65609210869c61d3db7b4c2c4d8f2d953fb33d3557047a20fb7a41ebd3074ad30b7b244503108aaab0d3eae6fe37a3648b9be1e540c164a45ce67fe2ab825f56847a2efdf03fcf7add87d32bcbfae5bf962fbf636ed9144179b8c30538bf3581517e981ae6ab4363550b22d86733718faf586bb30e21ff8f998f9d5ed4e155cb68b3c7932f954748bfcaca93f10df9c682019ae27acad46afec56982b2f90cde599bee8e40bb7c48b3f1c9bfd3ea4d7704f78ad1e7bab3ee107caaf475bc50b9126a5d5880a002a054969c6cf16b2f273c50ebd77e6e5df73e974ba6abf181a1ae2c48913eac8c88856281474dbb675cff374dff70352ca801696a144bf78c8a8a515a0b224b3b961aebaa6280b211c45511c45516c5dd7ed482462a7d369e7f8f1e39ee6380ea669e2baaef03c4f9152aeb50a687651323924af0337ff4998b79a0e34c09752fa524ac5f33cc5755d619aa628168b1b8fe2dcb9732293c990cd66c5c2c282304d13cbb204403018948661108fc765329994030303ecddbbb70af91b75e206f703aefd5d0000000049454e44ae426082</data>
     </image>
     <image name="image7">
         <data format="PNG" length="710">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000028d49444154388db5d5cb6b534114c7f16f1aad11b599caed43b4362182b4a8bd2eeac256245871610b2a08a27fa12bff02994dac1295581f5069d1504b2144edf5d5fb48668e8b24e6dd74e3d9df0fe79ef99d999888f05faa132e2da14a37481df4fbb7d3a4d6cea23acda14e54046daa14b617710f80ba221430e8c2643bfe0f6ea0230fefb8c9472bca56d1c5f9fe781dd553d96975e6fa946b05fdca69e2439d68e2d23d8e5e5861f4c14d650d7a63ae1b6f45d59929462727989e1f7331e87cb286d73a1694ad921263a01240e4736c7609e7fe352506bd3ed3c43b51fc00fc00a918ac250535382622c46231b617716d153dfae0a63a36bb04910f51c0cfc253761ebff4c4903555e8857efbb4c3e717df3d84ec959fbc1191260c509cc7b506eddcbfa68e9f5f802880708f1f6bcfd97ef2ceb30606a18d54b4c1001b73b862d0e377e7d5c8b9cb108510f8fcfaf81ec20a27c627f645fbc200eb33b5ce4f2d5f54c9f40c043e8401f8fe40745f18e04306d75af4d9dbb3eac4e4e936d4db2ab1992bf7441bf0a17e39ad1f14849536143f84a0820888edf735ed9bd7a8d648b5ce143f84bd009518269d4e2831e8d523bd97a80bee97536fab84f7a50c7f42f813e10cc7c9387105e8d5c3dd78db8cfba18d831281743aa19ce138fcaec08f2ae55dcb66840764174c8fb80d4211b2d6821874c6892bc7087816f6a00c6c50c31769599077a9584a84c241c25f9fa9ce0ca1c6fce6afb7e09717448a43b5d6f13014a56207e6f46ac81b2cd9cd08afdc7d66456a78f3a22f4ca25e4f50f8ba3c26e55b27259f64373fd2ffda7c16c7cdc16e09a404928342ae7e01752dc82b0785415b4baa5ff85b2b476d2cf54eb38bf56e45a4fb69ca2751f9e4c19fa61ca41a9d36ea5fc7ffa3fe021080f8d83c9fb0540000000049454e44ae426082</data>
@@ -561,12 +575,6 @@
     <connection>
         <sender>installPushButton</sender>
         <signal>clicked()</signal>
-        <receiver>KernelDialog</receiver>
-        <slot>installKernel()</slot>
-    </connection>
-    <connection>
-        <sender>installKernelListView</sender>
-        <signal>doubleClicked(QListViewItem*)</signal>
         <receiver>KernelDialog</receiver>
         <slot>installKernel()</slot>
     </connection>

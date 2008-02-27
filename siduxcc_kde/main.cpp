@@ -39,14 +39,17 @@ int main(int argc, char **argv)
 	about->setProgramLogo( QImage("/usr/share/icons/hicolor/32x32/apps/siduxcc.png") );
 	about->setShortDescription( I18N_NOOP("Frontend for managing sidux.") );
 	about->setLicense(KAboutData::License_GPL_V2);
-   about->setHomepage("http://sidux.com");
-   about->setBugAddress("xadras@sidux.com");
+	about->setHomepage("http://sidux.com");
+	about->setBugAddress("xadras@sidux.com");
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
 
 	about->addAuthor("Fabian Würtz (xadras)", I18N_NOOP("Developer"), "xadras@sidux.com", "http://xadras.wordpress.com/");
 	about->addCredit("Stefan Lippers-Hollmann (slh)", I18N_NOOP("Packaging") );
 	about->addCredit("Andreas Loibl (Acritox)", I18N_NOOP("Developer of the knxcc") , "andreas@andreas-loibl.de", "http://www.andreas-loibl.de/");
-	about->addCredit("Kel Modderman (kelmo)", I18N_NOOP("Developer of ceni and fw-detect") , "<kel@otaku42.de", "http://www.andreas-loibl.de/");
+	about->addCredit("Kel Modderman (kelmo)", I18N_NOOP("Developer of ceni and fw-detect") , "kel@otaku42.de", "http://www.andreas-loibl.de/");
+	about->addCredit("Bernard Gray (cleary)", I18N_NOOP("Icon") );
+
+
 
 
 	KCmdLineArgs::init(argc, argv, about);
