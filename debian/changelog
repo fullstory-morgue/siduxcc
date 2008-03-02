@@ -7,7 +7,10 @@ siduxcc (0.9.18) UNRELEASED; urgency=low
   * make siduxcchermes-candidate.svg the core siduxcchermes icon
   * remove extraneous unused svg icons
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sun, 02 Mar 2008 18:46:38 +1100
+  [ Fabian Wuertz ]
+  * hermes timer set to 30min 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 02 Mar 2008 23:06:24 +0100
 
 siduxcc (0.9.17) unstable; urgency=low
 

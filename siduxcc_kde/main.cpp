@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 	about->setBugAddress("xadras@sidux.com");
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
 
-	about->addAuthor("Fabian Würtz (xadras)", I18N_NOOP("Developer"), "xadras@sidux.com", "http://xadras.wordpress.com/");
+	about->addAuthor("Fabian Würtz (xadras)", I18N_NOOP("Developer"), "xadras@sidux.com", "http://sidux.wuertz.org/");
 	about->addCredit("Stefan Lippers-Hollmann (slh)", I18N_NOOP("Packaging") );
 	about->addCredit("Andreas Loibl (Acritox)", I18N_NOOP("Developer of the knxcc") , "andreas@andreas-loibl.de", "http://www.andreas-loibl.de/");
 	about->addCredit("Kel Modderman (kelmo)", I18N_NOOP("Developer of ceni and fw-detect") , "kel@otaku42.de", "http://www.andreas-loibl.de/");
