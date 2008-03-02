@@ -1,8 +1,13 @@
 siduxcc (0.9.18) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 28 Feb 2008 12:00:38 +0100
+  [ Bernard Gray ]
+  * make siduxcchermes-candidate.svg the core siduxcchermes icon
+  * remove extraneous unused svg icons
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Sun, 02 Mar 2008 18:46:38 +1100
 
 siduxcc (0.9.17) unstable; urgency=low
 
