@@ -1,8 +1,12 @@
 siduxcc (0.9.20) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Mar 2008 00:03:28 +0100
+  [ Fabian Wuertz ]
+  * debian: rules updated for the new hermes icon 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 03 Mar 2008 00:06:52 +0100
 
 siduxcc (0.9.19) unstable; urgency=low
 

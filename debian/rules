@@ -42,6 +42,12 @@ create-icons::
 			 --export-height=$${i} \
 			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcc.png" \
 				"$(CURDIR)/icons/siduxcc.svg" ; \
+	for i in 16 22 32 48 64 96; do \
+		mkdir -p "icons" ; \
+		inkscape --export-width=$${i} \
+			 --export-height=$${i} \
+			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcchermes.png" \
+				"$(CURDIR)/icons/siduxcchermes.svg" ; \
 	done
 	
 	# create GUI icons
@@ -49,10 +55,6 @@ create-icons::
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-siduxcc_warning.png" \
 		 	"$(CURDIR)/icons/siduxcc_warning.svg"
-	inkscape --export-width=22 \
-		 --export-height=22 \
-		 --export-png="$(CURDIR)/icons/hi22-app-siduxcchermes.png" \
-		 	"$(CURDIR)/icons/siduxcchermes.svg"
 	inkscape --export-width=22 \
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-sidux_book.png" \
