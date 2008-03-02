@@ -113,7 +113,7 @@ function installASV()
 function duWarnings()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q http://sidux.com/xBackends.php
+	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/xBackends.php
 	tmp=`cat $TMP`
 	if [ -n "$tmp" ]; then 
 		egrep ">WARNING" $TMP | cut -f2 -d"<" | cut -c7-
@@ -127,7 +127,7 @@ function duWarnings()
 function duWarningsEn()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q http://sidux.com/backend.php
+	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php
 	grep -A 1 Warning $TMP
 	rm -f $TMP
 }
@@ -135,7 +135,7 @@ function duWarningsEn()
 function duWarningsDe()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q http://sidux.com/backend.php?newlang=deu
+	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 Warning $TMP
 	rm -f $TMP
 }

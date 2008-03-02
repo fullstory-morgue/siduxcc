@@ -47,19 +47,19 @@ function kernelType()
 
 function stableKernel()
 {
-	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
 }
 
 
 function stableKernelFull()
 {
-	wget -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f3-5 -d"-"
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f3-5 -d"-"
 }
 
 function experimentalKernel()
 {
 	TMP="$(mktemp -p /tmp/ experimentalKernel-XXXXXXXXXX)"
-	wget --timeout=3  -O $TMP -q http://debian.tu-bs.de/project/sidux/kernel/experimental/
+	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://debian.tu-bs.de/project/sidux/kernel/experimental/
 	if [ "$(cat $TMP)" == "" ]; then
 		echo "no_connection"
 	else
@@ -91,7 +91,7 @@ installKernel()
 
 getModules()
 {
-	wget -O - http://sidux.com/debian/pool/main/l/linux-modules-sidux-main-2.6 2>/dev/null | grep 2.6-sidux-686 | cut -f8 -d"\"" | cut -f1 -d2 | sed 's/-modules-//g'
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-modules-sidux-main-2.6 2>/dev/null | grep 2.6-sidux-686 | cut -f8 -d"\"" | cut -f1 -d2 | sed 's/-modules-//g'
 }
 
 

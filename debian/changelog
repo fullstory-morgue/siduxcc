@@ -1,8 +1,8 @@
-siduxcc (0.9.19) UNRELEASED; urgency=low
+siduxcc (0.9.19) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * make sure to distinguish new siduxcc versions from old ones.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2008 23:17:39 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2008 23:59:06 +0100
 
 siduxcc (0.9.18) unstable; urgency=low
 
