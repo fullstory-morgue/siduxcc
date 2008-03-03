@@ -1,9 +1,5 @@
-siduxcc (0.9.22) UNRELEASED; urgency=low
+siduxcc (0.9.22) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * all icons moved to the icon folder
   * cli: display: fix-res problem solved
 
