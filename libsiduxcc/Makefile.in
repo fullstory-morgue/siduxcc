@@ -684,7 +684,7 @@ bcheck-am:
 
 
 #>+ 11
-libsiduxcc_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/process.cpp $(srcdir)/process.moc.cpp 
+libsiduxcc_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/process.cpp process.moc.cpp 
 	@echo 'creating libsiduxcc_la.all_cpp.cpp ...'; \
 	rm -f libsiduxcc_la.all_cpp.files libsiduxcc_la.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> libsiduxcc_la.all_cpp.final; \

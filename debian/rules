@@ -61,10 +61,10 @@ create-icons::
 	# create siduxcc status icons
 	inkscape --export-width=22 \
 		 --export-height=22 \
-		 --export-png="$(CURDIR)/siduxcc_hermes/icons/ok-hermes.png" \
+		 --export-png="$(CURDIR)/icons/icons/ok-hermes.png" \
 		 	"$(CURDIR)/siduxcc-hermes/icons/ok-hermes.svg"
 	inkscape --export-width=22 \
 		 --export-height=22 \
-		 --export-png="$(CURDIR)/siduxcc_hermes/icons/notok-hermes.png" \
+		 --export-png="$(CURDIR)/icons/icons/notok-hermes.png" \
 		 	"$(CURDIR)/siduxcc-hermes/icons/notok-hermes.svg"
 

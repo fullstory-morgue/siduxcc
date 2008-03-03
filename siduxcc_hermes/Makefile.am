@@ -17,12 +17,6 @@ xdg_apps_DATA = siduxcc-hermes.desktop
 bin_PROGRAMS = siduxcc-hermes
 
 
-# icons
-sharedir = $(pkgdatadir)
-install-data-local:
-	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/icons $(DESTDIR)$(sharedir)/
-
 # translation
 messages: rc.cpp
 	$(EXTRACTRC) `find . -name \*.ui -o -name \*.rc` > rc.cpp

@@ -368,9 +368,6 @@ siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
 xdg_apps_DATA = siduxcc-hermes.desktop
-
-# icons
-sharedir = $(pkgdatadir)
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -641,7 +638,7 @@ info: info-am
 
 info-am:
 
-install-data-am: install-data-local install-xdg_appsDATA
+install-data-am: install-xdg_appsDATA
 
 install-exec-am: install-binPROGRAMS
 
@@ -676,18 +673,15 @@ uninstall-am: uninstall-binPROGRAMS uninstall-info-am \
 	clean-generic clean-libtool ctags distclean distclean-compile \
 	distclean-generic distclean-libtool distclean-tags distdir dvi \
 	dvi-am html html-am info info-am install install-am \
-	install-binPROGRAMS install-data install-data-am \
-	install-data-local install-exec install-exec-am install-info \
-	install-info-am install-man install-strip install-xdg_appsDATA \
-	installcheck installcheck-am installdirs maintainer-clean \
+	install-binPROGRAMS install-data install-data-am install-exec \
+	install-exec-am install-info install-info-am install-man \
+	install-strip install-xdg_appsDATA installcheck \
+	installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
 	tags uninstall uninstall-am uninstall-binPROGRAMS \
 	uninstall-info-am uninstall-xdg_appsDATA
 
-install-data-local:
-	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/icons $(DESTDIR)$(sharedir)/
 
 # translation
 messages: rc.cpp
@@ -730,7 +724,7 @@ clean-metasources:
 	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc hermes.moc
 
 #>+ 2
-KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop legendbase.h hermesbase.ui Makefile.am siduxcc-hermes hermesbase.h 
+KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop hermesbase.ui Makefile.am 
 
 #>+ 5
 clean-ui:
@@ -780,7 +774,7 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp $(srcdir)/legendbase.cpp $(srcdir)/hermesbase.cpp $(srcdir)/unique.moc.cpp $(srcdir)/systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
+siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp legendbase.cpp hermesbase.cpp unique.moc.cpp systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
 	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
 	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \

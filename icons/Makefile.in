@@ -297,6 +297,9 @@ xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
 KDE_ICON = AUTO
+
+# icons
+sharedir = $(pkgdatadir)
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -438,9 +441,9 @@ info: info-am
 
 info-am:
 
-#>- install-data-am:
+#>- install-data-am: install-data-local
 #>+ 1
-install-data-am: install-kde-icons 
+install-data-am: install-kde-icons  install-data-local
 
 install-exec-am:
 
@@ -473,19 +476,22 @@ uninstall-am: uninstall-kde-icons  uninstall-info-am
 .PHONY: all all-am check check-am clean clean-generic clean-libtool \
 	distclean distclean-generic distclean-libtool distdir dvi \
 	dvi-am html html-am info info-am install install-am \
-	install-data install-data-am install-exec install-exec-am \
-	install-info install-info-am install-man install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-generic \
-	mostlyclean-libtool pdf pdf-am ps ps-am uninstall uninstall-am \
-	uninstall-info-am
+	install-data install-data-am install-data-local install-exec \
+	install-exec-am install-info install-info-am install-man \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
+	uninstall uninstall-am uninstall-info-am
 
+install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(sharedir)
+	cp -aR $(srcdir)/icons $(DESTDIR)$(sharedir)/
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxcc_warning.svg hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcchermes.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi16-app-siduxcc_warning.png hi32-app-siduxcchermes.png hi64-app-siduxcchermes.png hi22-app-siduxcc_wlan_up.png hi48-app-siduxcchermes.png siduxcchermes.svg siduxcc.svg sidux_book.svg hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi96-app-siduxcchermes.png hi22-app-siduxcc_warning.png 
+KDE_DIST=siduxcc-pkg-update.svg siduxcc_warning.svg hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcchermes.png hi16-app-siduxcc.png hi22-app-sidux_book.png Makefile.in hi48-app-siduxcc.png hi32-app-siduxcc.png hi22-app-siduxcc_lan_up.png hi16-app-siduxcc_warning.png hi32-app-siduxcchermes.png hi64-app-siduxcchermes.png hi22-app-siduxcc_wlan_up.png hi48-app-siduxcchermes.png siduxcchermes.svg siduxcc.svg sidux_book.svg hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am hi96-app-siduxcchermes.png hi22-app-siduxcc_warning.png 
 
 #>+ 2
 docs-am:
@@ -504,6 +510,7 @@ install-kde-icons:
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_disconnected.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
 	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps
 	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
@@ -512,7 +519,6 @@ install-kde-icons:
 	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-sidux_book.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
 	$(INSTALL_DATA) $(srcdir)/hi32-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcchermes.png
 
@@ -524,6 +530,7 @@ uninstall-kde-icons:
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
@@ -532,7 +539,6 @@ uninstall-kde-icons:
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcchermes.png
 

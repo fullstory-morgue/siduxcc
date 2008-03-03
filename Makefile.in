@@ -817,7 +817,7 @@ dist-hook:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=stamp-h.in siduxcc.kdevelop.pcs subdirs Makefile.in configure.files config.h.in configure.in Makefile.cvs aclocal.m4 Doxyfile siduxcc.kdevses siduxcc.kdevelop Makefile.am configure acinclude.m4 
+KDE_DIST=stamp-h.in siduxcc.kdevelop.pcs subdirs Makefile.in configure.files config.h.in configure.in Makefile.cvs aclocal.m4 Doxyfile siduxcc.kdevses siduxcc.kdevelop configure acinclude.m4 Makefile.am 
 
 #>+ 2
 docs-am:

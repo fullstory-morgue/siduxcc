@@ -401,7 +401,6 @@ siduxcc_kde_SOURCES=\
 siduxcc_kde_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 siduxcc_kde_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 xdg_apps_DATA = siduxcc.desktop
-sharedir = $(pkgdatadir)
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -677,7 +676,7 @@ info: info-am
 
 info-am:
 
-install-data-am: install-data-local install-xdg_appsDATA
+install-data-am: install-xdg_appsDATA
 
 install-exec-am: install-binPROGRAMS
 
@@ -712,18 +711,15 @@ uninstall-am: uninstall-binPROGRAMS uninstall-info-am \
 	clean-generic clean-libtool ctags distclean distclean-compile \
 	distclean-generic distclean-libtool distclean-tags distdir dvi \
 	dvi-am html html-am info info-am install install-am \
-	install-binPROGRAMS install-data install-data-am \
-	install-data-local install-exec install-exec-am install-info \
-	install-info-am install-man install-strip install-xdg_appsDATA \
-	installcheck installcheck-am installdirs maintainer-clean \
+	install-binPROGRAMS install-data install-data-am install-exec \
+	install-exec-am install-info install-info-am install-man \
+	install-strip install-xdg_appsDATA installcheck \
+	installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
 	tags uninstall uninstall-am uninstall-binPROGRAMS \
 	uninstall-info-am uninstall-xdg_appsDATA
 
-install-data-local:
-	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/icons $(DESTDIR)$(sharedir)/
 
 # translation
 messages: rc.cpp
@@ -801,7 +797,7 @@ clean-metasources:
 	-rm -f  info.moc internet.moc network.moc services.moc console.moc display.moc software.moc kernel.moc start.moc
 
 #>+ 2
-KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui siduxcc.desktop servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde internetdialog.h servicesdialog.h Makefile.in infodialog.ui consoledialog.h displaydialog.ui internetdialog.ui softwaredialog.h consoledialog.ui startdialog.h Makefile.am 
+KDE_DIST=startdialog.ui infodialog.ui Makefile.in displaydialog.ui softwaredialog.ui internetdialog.ui kerneldialog.ui networkdialog.ui siduxcc.desktop servicesdialog.ui consoledialog.ui Makefile.am 
 
 #>+ 12
 clean-ui:
@@ -858,7 +854,7 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_kde.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/console.cpp $(srcdir)/start.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp $(srcdir)/consoledialog.cpp $(srcdir)/startdialog.cpp $(srcdir)/displaydialog.cpp $(srcdir)/networkdialog.cpp $(srcdir)/servicesdialog.cpp $(srcdir)/softwaredialog.cpp $(srcdir)/internetdialog.cpp $(srcdir)/kerneldialog.cpp $(srcdir)/infodialog.cpp  network.moc internetdialog.moc infodialog.moc displaydialog.moc display.moc kernel.moc kerneldialog.moc info.moc internet.moc services.moc softwaredialog.moc console.moc consoledialog.moc servicesdialog.moc startdialog.moc networkdialog.moc software.moc start.moc
+siduxcc_kde.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/console.cpp $(srcdir)/start.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp consoledialog.cpp startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp  network.moc internetdialog.moc infodialog.moc displaydialog.moc display.moc kernel.moc kerneldialog.moc info.moc internet.moc services.moc softwaredialog.moc console.moc consoledialog.moc servicesdialog.moc startdialog.moc networkdialog.moc software.moc start.moc
 	@echo 'creating siduxcc_kde.all_cpp.cpp ...'; \
 	rm -f siduxcc_kde.all_cpp.files siduxcc_kde.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_kde.all_cpp.final; \

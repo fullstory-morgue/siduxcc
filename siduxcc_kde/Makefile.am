@@ -37,10 +37,6 @@ siduxcc_kde_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 bin_PROGRAMS = siduxcc-kde
 xdg_apps_DATA = siduxcc.desktop
 
-sharedir = $(pkgdatadir)
-install-data-local:
-	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/icons $(DESTDIR)$(sharedir)/
 
 
 # translation

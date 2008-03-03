@@ -24,14 +24,81 @@ function getResolution()
 
 function setResolution()
 {
-	if [ "$1" = "$(getResolution)" ]; then
-		echo "Resolution unchanged."
-		return 128
-	else
-		backupX
-		fix-res $1
-	fi
+	backupX
+	fix-res $1
 }
+
+function fix-res()
+{
+	# (C) 2005 Joerg Schirottke <master@kanotix.com>
+	# (C) 2005-2006 modified by Stefan Lippers-Hollman <s.l-h@gmx.de>
+
+	PERL=$(type -p perl) || PERL="/usr/bin/perl"
+
+	for i in "$PERL"; do
+		if [ ! -x "$i" ]; then
+			echo "$i: missing, terminate abnormally."
+			exit 999
+		fi
+	done
+	
+	if [ "$UID" -ne 0 ]; then
+		echo Error: You must be root to run this script!
+		exit 1
+	fi
+	
+	MODE=""
+	MODE_NUM=7
+	MODE_X[1]=640
+	MODE_Y[1]=480
+	MODE_X[2]=800
+	MODE_Y[2]=600
+	MODE_X[3]=1024
+	MODE_Y[3]=768
+	MODE_X[4]=1152
+	MODE_Y[4]=864
+	MODE_X[5]=1280
+	MODE_Y[5]=1024
+	MODE_X[6]=1400
+	MODE_Y[6]=1050
+	MODE_X[7]=1600
+	MODE_Y[7]=1200
+	
+	
+	if [ "$1" != "" ]; then
+		X=1024
+		Y=768
+	
+		if echo $1|grep -q '^[0-9]\{3,4\}*x[0-9]\{3,4\}*$'; then
+			X=$(echo "$1"|cut -f1 -dx)
+			Y=$(echo "$1"|cut -f2 -dx)
+		fi
+	
+		MODE_MAX=0
+	
+		for i in $(seq $MODE_NUM); do
+			[[ ${MODE_X[$i]} -le $X && ${MODE_Y[$i]} -le $Y && ${MODE_X[$i]} != $X && ${MODE_Y[$i]} != $Y ]] && MODE_MAX="$i"
+		done
+	
+		MODE_MIN=0
+	
+		for i in $(seq $MODE_MAX -1 1); do
+			[[ ${MODE_X[$i]} -le $X && ${MODE_Y[$i]} -le $Y && ${MODE_X[$i]} != $X && ${MODE_Y[$i]} != $Y ]] && MODE_MIN="$i"
+		done
+	
+		MODE="\"${X}x${Y}\""
+		if [ $MODE_MIN -gt 0 ]; then
+			for i in $(seq $MODE_MAX -1 $MODE_MIN); do
+				MODE="$MODE \"${MODE_X[$i]}x${MODE_Y[$i]}\""
+			done
+		fi
+	else
+		MODE="\"1024x768\" \"800x600\" \"640x480\""
+	fi
+	
+	"$PERL" -pi -e "s/(Modes).*/\1 $MODE/" "$X_CONF"
+}
+
 
 function dlgResolution()
 {

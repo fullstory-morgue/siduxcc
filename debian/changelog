@@ -1,8 +1,13 @@
 siduxcc (0.9.22) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Mar 2008 15:50:45 +0100
+  [ Fabian Wuertz ]
+  * all icons moved to the icon folder
+  * cli: display: fix-res problem solved
+
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 04 Mar 2008 00:30:13 +0100
 
 siduxcc (0.9.21) unstable; urgency=low
 

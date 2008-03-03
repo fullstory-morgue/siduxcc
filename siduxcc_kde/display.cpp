@@ -116,19 +116,19 @@ void display::back()
 void display::save()
 {
 	if(resolutionList->currentText() != resolution and resolutionEdit->text() != resolution)
-		{setResolution();}
+		setResolution();
 
 	if(hsEdit->text() != horizsync)
-		{setHorizSync();}
+		setHorizSync();
 
 	if(vrEdit->text() != vertrefresh)
-		{setVertRefresh();}
+		setVertRefresh();
 
 	if(dpiSpin->value() != dpi)
-		{setDpi();}
+		setDpi();
 
 	if(colorDepthList->currentText() != colordepth)
-		{setColorDepth();}
+		setColorDepth();
 
 	if(driverComboBox->currentText() != driver )
 		setDriver();
@@ -183,9 +183,9 @@ void display::getResolution()
 void display::setResolution()
 {
 	if(resolutionList->currentText() == i18n("custom"))
-		{this->shell->setCommand("siduxcc display setResolution "+resolutionEdit->text());}
+		this->shell->setCommand("siduxcc display setResolution "+resolutionEdit->text());
 	else
-		{this->shell->setCommand("siduxcc display setResolution "+resolutionList->currentText());}
+		this->shell->setCommand("siduxcc display setResolution "+resolutionList->currentText());
 
 	this->shell->start(true);
 }
