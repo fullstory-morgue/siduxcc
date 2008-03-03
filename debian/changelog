@@ -1,7 +1,4 @@
-siduxcc (0.9.21) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.9.21) unstable; urgency=low
 
   [ Bernard Gray ]
   * add kde3/4 compatible red (notok) and green (ok) 'S' icons 
@@ -10,7 +7,10 @@ siduxcc (0.9.21) UNRELEASED; urgency=low
   * add alternative available updates logo candidate
   * add ok/notok bitmap icon export to debian/rules 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Mon, 03 Mar 2008 22:15:45 +1100
+  [ Stefan Lippers-Hollmann ]
+  * regenerate PNG icons.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Mar 2008 15:46:50 +0100
 
 siduxcc (0.9.20) unstable; urgency=low
 
