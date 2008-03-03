@@ -8,8 +8,9 @@ siduxcc (0.9.21) UNRELEASED; urgency=low
   * remove dependency on sidux font
   * add correct manual logo
   * add alternative available updates logo candidate
+  * add ok/notok bitmap icon export to debian/rules 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Mon, 03 Mar 2008 22:11:04 +1100
+ -- Bernard Gray <bernard.gray@gmail.com>  Mon, 03 Mar 2008 22:15:45 +1100
 
 siduxcc (0.9.20) unstable; urgency=low
 

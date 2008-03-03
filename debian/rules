@@ -57,3 +57,14 @@ create-icons::
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-sidux_book.png" \
 		 	"$(CURDIR)/icons/sidux_book.svg"
+
+	# create siduxcc status icons
+	inkscape --export-width=22 \
+		 --export-height=22 \
+		 --export-png="$(CURDIR)/siduxcc_hermes/icons/ok-hermes.png" \
+		 	"$(CURDIR)/siduxcc-hermes/icons/ok-hermes.svg"
+	inkscape --export-width=22 \
+		 --export-height=22 \
+		 --export-png="$(CURDIR)/siduxcc_hermes/icons/notok-hermes.png" \
+		 	"$(CURDIR)/siduxcc-hermes/icons/notok-hermes.svg"
+
