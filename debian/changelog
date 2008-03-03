@@ -4,10 +4,12 @@ siduxcc (0.9.21) UNRELEASED; urgency=low
   * NOT RELEASED YET
 
   [ Bernard Gray ]
-  * add kde3/4 compatible red and green 'S' icons
+  * add kde3/4 compatible red (notok) and green (ok) 'S' icons 
   * remove dependency on sidux font
+  * add correct manual logo
+  * add alternative available updates logo candidate
 
- -- Bernard Gray <bernard.gray@gmail.com>  Mon, 03 Mar 2008 21:27:08 +1100
+ -- Bernard Gray <bernard.gray@gmail.com>  Mon, 03 Mar 2008 22:11:04 +1100
 
 siduxcc (0.9.20) unstable; urgency=low
 
