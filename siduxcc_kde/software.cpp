@@ -17,15 +17,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <kgenericfactory.h>
-#include <kpushbutton.h>
+
+#include <qpushbutton.h>
 #include <qlabel.h>
 #include <qlistbox.h>
-#include <klistview.h>
-#include <kmessagebox.h>
 #include <qwidgetstack.h>
 #include <qtextbrowser.h>
+#include <qfile.h>
+
+#include <klocale.h>
 #include <kled.h>
+#include <klistview.h>
+#include <kmessagebox.h>
 
 #include "software.h"
 #include "console.h"
@@ -73,13 +76,11 @@ void software::back()
 // check for apt-get-show versions and warnings
 
 
+
 void software::checkASV()
 {
-
 	// check if apt-show-versions is installed
-	this->shell->setCommand("siduxcc software checkASV");
-	this->shell->start(true);
-	if(this->shell->getBuffer().stripWhiteSpace() == "missing")
+	if( !QFile::exists( "/usr/bin/apt-show-versions" ) )
 	{
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Apt-show-versions is missing!")+" "+i18n("Do you want to install it?") ) )
 		{
