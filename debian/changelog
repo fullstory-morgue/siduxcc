@@ -1,8 +1,12 @@
 siduxcc (0.9.23) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 04 Mar 2008 01:07:19 +0100
+  [ Fabian Wuertz ]
+  * empty icons folders removed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 06 Mar 2008 01:50:11 +0100
 
 siduxcc (0.9.22) unstable; urgency=low
 
