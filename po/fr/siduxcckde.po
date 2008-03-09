@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-28 00:17+0100\n"
 "PO-Revision-Date: 2007-10-25 20:52+0200\n"
-"Last-Translator: Fabian Wuertz\n"
+"Last-Translator: Alpha Diakite (alphad)\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -494,21 +494,21 @@ msgstr "Internet"
 #: internetdialog.cpp:308 rc.cpp:298
 #, no-c-format
 msgid "sidux-Browser"
-msgstr ""
+msgstr "Navigateur-sidux"
 
 #: kernel.cpp:71
 msgid ""
 "You only can install modules for the newest stable kernel. But this kernel "
 "isn't installed!"
-msgstr ""
+msgstr "Vous pouvez seulement qu'installer les modules du nouveau noyau stable. Cependant ce noyau n'est pas installé"
 
 #: kernel.cpp:155
 msgid "You have already installed the newest stable kernel!"
-msgstr ""
+msgstr "Vous avez déjà installé le nouveau noyau stable"
 
 #: kernel.cpp:157
 msgid "There is no stable kernel avaiable!"
-msgstr ""
+msgstr "Il n'y'a pas de noyau stable"
 
 #: kernel.cpp:160
 msgid "Are you sure you want to install a new kernel?"
@@ -530,55 +530,55 @@ msgstr "Liste des contrôleurs réseau configurés"
 #: kerneldialog.cpp:1286 rc.cpp:687
 #, no-c-format
 msgid "Set Hostname"
-msgstr ""
+msgstr "Choisir le nom de l'hôte (Hostname)"
 
 #. i18n: file ./kerneldialog.ui line 42
 #: kerneldialog.cpp:1287 rc.cpp:690
 #, no-c-format
 msgid "Set Nameservers"
-msgstr ""
+msgstr "hoisir le serveur de noms de domain (DNS)"
 
 #. i18n: file ./kerneldialog.ui line 50
 #: kerneldialog.cpp:1288 rc.cpp:693
 #, no-c-format
 msgid "Install Wlan-Cards (Ndiswrapper)"
-msgstr ""
+msgstr "Installer la carte Wlan (Ndiswrapper)"
 
 #. i18n: file ./kerneldialog.ui line 58
 #: kerneldialog.cpp:1289 rc.cpp:696
 #, no-c-format
 msgid "Install Wlan-Cards (fwdetect)"
-msgstr ""
+msgstr "Installer la carte Wlan (fwdetect)"
 
 #. i18n: file ./kerneldialog.ui line 113
 #: kerneldialog.cpp:1291 rc.cpp:699
 #, no-c-format
 msgid "Install new kernel"
-msgstr ""
+msgstr "nstaller le nouveau noyau"
 
 #. i18n: file ./kerneldialog.ui line 121
 #: kerneldialog.cpp:1292 rc.cpp:702
 #, no-c-format
 msgid "Remove old kernels"
-msgstr ""
+msgstr "Enlever les anciens noyaux"
 
 #. i18n: file ./kerneldialog.ui line 129
 #: kerneldialog.cpp:1293 rc.cpp:705
 #, no-c-format
 msgid "Install kernel modules"
-msgstr ""
+msgstr "Installer les modules du noyau"
 
 #. i18n: file ./kerneldialog.ui line 214
 #: kerneldialog.cpp:1295 rc.cpp:709
 #, no-c-format
 msgid "Current kernel:"
-msgstr ""
+msgstr "Noyau courant"
 
 #. i18n: file ./kerneldialog.ui line 230
 #: kerneldialog.cpp:1296 rc.cpp:712
 #, no-c-format
 msgid "Newest stable kernel:"
-msgstr ""
+msgstr "Dernier noyau stable"
 
 #. i18n: file ./kerneldialog.ui line 271
 #. i18n: file ./kerneldialog.ui line 287
@@ -591,7 +591,7 @@ msgstr ""
 #: kerneldialog.cpp:1301 rc.cpp:723
 #, no-c-format
 msgid "Current kernel"
-msgstr ""
+msgstr "Noyau Courant"
 
 #. i18n: file ./kerneldialog.ui line 376
 #: kerneldialog.cpp:1303 rc.cpp:727
@@ -661,11 +661,11 @@ msgstr ""
 
 #: network.cpp:544
 msgid "WEP encryption requires a key with at least 5 characters."
-msgstr ""
+msgstr "Le chiffrage WEP exige une clef avec au moins 5 caractères."
 
 #: network.cpp:546
 msgid "WPA encryption requires a key with 8 to 63 characters."
-msgstr ""
+msgstr "Le chiffrage WPA exige une clef avec 8 à 63 caractères."
 
 #: network.cpp:548
 msgid "..."
@@ -759,25 +759,25 @@ msgstr "Liste des contrôleurs réseau configurés"
 #: networkdialog.cpp:1957 rc.cpp:322
 #, no-c-format
 msgid "Set hostname"
-msgstr ""
+msgstr "Choisir le nom de l'hôte (Hostname)"
 
 #. i18n: file ./networkdialog.ui line 165
 #: networkdialog.cpp:1958 rc.cpp:325
 #, fuzzy, no-c-format
 msgid "Set nameservers"
-msgstr "Sélection de service"
+msgstr "Sélection du serveur de noms de domain"
 
 #. i18n: file ./networkdialog.ui line 173
 #: networkdialog.cpp:1959 rc.cpp:328
 #, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
-msgstr ""
+msgstr "Installer la carte Wlan (Ndiswrapper)"
 
 #. i18n: file ./networkdialog.ui line 181
 #: networkdialog.cpp:1960 rc.cpp:331
 #, no-c-format
 msgid "Install WLAN cards (fwdetect)"
-msgstr ""
+msgstr "Installer la carte Wlan (fwdetect)"
 
 #. i18n: file ./networkdialog.ui line 288
 #: networkdialog.cpp:1963 rc.cpp:338
@@ -831,19 +831,19 @@ msgstr "Liste des contrôleurs réseau configurés"
 #: networkdialog.cpp:1978 rc.cpp:383
 #, no-c-format
 msgid "Hostname"
-msgstr ""
+msgstr "Nom de l'hôte"
 
 #. i18n: file ./networkdialog.ui line 569
 #: networkdialog.cpp:1979 rc.cpp:386
 #, no-c-format
 msgid "DNS Servers"
-msgstr ""
+msgstr "Serveur DNS"
 
 #. i18n: file ./networkdialog.ui line 604
 #: networkdialog.cpp:1980 rc.cpp:389
 #, no-c-format
 msgid "Install wlan card"
-msgstr ""
+msgstr "Installer la carte Wlan"
 
 #. i18n: file ./networkdialog.ui line 638
 #: networkdialog.cpp:1981 rc.cpp:392
@@ -861,7 +861,7 @@ msgstr "Cartes connues pour fonctionner"
 #: networkdialog.cpp:1984 rc.cpp:401
 #, no-c-format
 msgid "Sh&ow list"
-msgstr ""
+msgstr "Affichage"
 
 #. i18n: file ./networkdialog.ui line 1098
 #: networkdialog.cpp:1987 rc.cpp:408
@@ -879,31 +879,31 @@ msgstr "tout"
 #: networkdialog.cpp:1995 rc.cpp:422
 #, no-c-format
 msgid "LAN settings"
-msgstr ""
+msgstr "Paramètres LAN"
 
 #. i18n: file ./networkdialog.ui line 1201
 #: networkdialog.cpp:1996 rc.cpp:425
 #, no-c-format
 msgid "WLAN settings"
-msgstr ""
+msgstr "Paramètres WLAN"
 
 #. i18n: file ./networkdialog.ui line 1209
 #: networkdialog.cpp:1997 rc.cpp:428
 #, no-c-format
 msgid "WLAN security"
-msgstr ""
+msgstr "Sécurité WLAN"
 
 #. i18n: file ./networkdialog.ui line 1270
 #: networkdialog.cpp:1999 rc.cpp:431
 #, no-c-format
 msgid "manual"
-msgstr ""
+msgstr "manuel"
 
 #. i18n: file ./networkdialog.ui line 1275
 #: networkdialog.cpp:2000 rc.cpp:434
 #, no-c-format
 msgid "allow hotplug"
-msgstr ""
+msgstr "permettre le branchement à chaud"
 
 #. i18n: file ./networkdialog.ui line 1280
 #: networkdialog.cpp:2001 rc.cpp:437
@@ -1030,7 +1030,7 @@ msgstr ""
 #: networkdialog.cpp:2032 rc.cpp:519
 #, no-c-format
 msgid "Fre&quency:"
-msgstr ""
+msgstr "Fré&quence:"
 
 #. i18n: file ./networkdialog.ui line 1598
 #: networkdialog.cpp:2033 rc.cpp:522
@@ -1054,7 +1054,7 @@ msgstr ""
 #: networkdialog.cpp:2036 rc.cpp:531
 #, no-c-format
 msgid "Advanced options"
-msgstr ""
+msgstr "Options avancées"
 
 #. i18n: file ./networkdialog.ui line 1652
 #: networkdialog.cpp:2037 rc.cpp:534
@@ -1126,7 +1126,7 @@ msgstr "Action"
 #: networkdialog.cpp:2050 rc.cpp:568
 #, no-c-format
 msgid "Sh&ow List"
-msgstr ""
+msgstr "Affichage"
 
 #. i18n: file ./networkdialog.ui line 1849
 #: networkdialog.cpp:2055 rc.cpp:574
@@ -1182,7 +1182,7 @@ msgstr "Sélection de service"
 #: rc.cpp:223 servicesdialog.cpp:664
 #, no-c-format
 msgid "Start services at boot"
-msgstr ""
+msgstr "Demarrer les services au démarrage"
 
 #. i18n: file ./servicesdialog.ui line 197
 #: rc.cpp:226 servicesdialog.cpp:665
@@ -1347,14 +1347,16 @@ msgid ""
 "Welcome to the sidux Control Center, a central place \n"
 "to configure your distribution. Select an item from the \n"
 "menu to load a configuration module."
-msgstr ""
+msgstr "Bienvenu au centre de contôle sidux, le lieu central \n"
+"pour configurer votre distribution. Choisissez une rubrique du menu \n"
+"pour charger le module de configuration."
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
 #: rc.cpp:759 rc.cpp:762 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
-msgstr ""
+msgstr "manuel sidux"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
@@ -1498,7 +1500,7 @@ msgstr "Info système"
 
 #, fuzzy
 #~ msgid "Alt+T"
-#~ msgstr "Alt+Y"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "cle&ar"
@@ -1543,7 +1545,7 @@ msgstr "Info système"
 
 #, fuzzy
 #~ msgid "Alt+G"
-#~ msgstr "Alt+Y"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "I&nterface"
@@ -1551,7 +1553,7 @@ msgstr "Info système"
 
 #, fuzzy
 #~ msgid "Alt+S"
-#~ msgstr "Alt+Y"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "&IP address"
@@ -1559,23 +1561,23 @@ msgstr "Info système"
 
 #, fuzzy
 #~ msgid "pri&vate"
-#~ msgstr "Mettre-à-jour"
+#~ msgstr "pri&vé"
 
 #, fuzzy
 #~ msgid "64 bit"
-#~ msgstr "16 bit"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "128 bit"
-#~ msgstr "8 bit"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "152 bit"
-#~ msgstr "15 bit"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "256 bit"
-#~ msgstr "15 bit"
+#~ msgstr ""
 
 #~ msgid "local kernel"
 #~ msgstr "Noyau local"

@@ -7,7 +7,10 @@ siduxcc (0.9.23) UNRELEASED; urgency=low
   * empty icons folders removed
   * kde: software: asv check updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 06 Mar 2008 22:08:09 +0100
+  [ Joaquim Boura ]
+  * fixed fr translation. thanks to alphad. 
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun, 09 Mar 2008 11:49:52 +0100
 
 siduxcc (0.9.22) unstable; urgency=low
 
