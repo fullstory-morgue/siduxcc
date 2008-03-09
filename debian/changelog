@@ -14,7 +14,10 @@ siduxcc (0.9.23) UNRELEASED; urgency=low
   * cli: atl2 bug fixed
   * kde: kernel: descriptions for modules added
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 09 Mar 2008 15:19:37 +0100
+  [ Joaquim Boura ]
+  * added the pt language files. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun, 09 Mar 2008 17:41:28 +0100
 
 siduxcc (0.9.22) unstable; urgency=low
 
