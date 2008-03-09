@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-28 00:15+0100\n"
+"POT-Creation-Date: 2008-03-09 13:51+0100\n"
 "PO-Revision-Date: 2007-11-20 01:26+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -146,6 +146,14 @@ msgstr "Aucune connexion à sidux.com"
 #: main.cpp:39
 msgid "A KDE tray application for sidux"
 msgstr "Une application KDE pour sidux"
+
+#: main.cpp:44
+msgid "Packaging"
+msgstr ""
+
+#: main.cpp:45
+msgid "Icon"
+msgstr ""
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"

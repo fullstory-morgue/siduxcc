@@ -57,6 +57,8 @@ class kernel : public KernelDialog
 		virtual void terminateConsole1();
 		virtual void terminateConsole2();
 
+		virtual void moduleDescription(QListBoxItem*);
+
 	signals:
 		void menuLocked(bool);
 
