@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-09 15:10+0100\n"
+"POT-Creation-Date: 2008-03-10 21:22+0100\n"
 "PO-Revision-Date: 2007-10-25 20:30+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -495,7 +495,13 @@ msgstr "Internet"
 msgid "sidux-Browser"
 msgstr ""
 
-#: kernel.cpp:111
+#: kernel.cpp:78
+msgid ""
+"You only can install modules for the newest stable kernel. But this kernel "
+"isn't installed!"
+msgstr ""
+
+#: kernel.cpp:105
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -504,7 +510,7 @@ msgid ""
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
 
-#: kernel.cpp:113
+#: kernel.cpp:107
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -514,51 +520,51 @@ msgid ""
 "disable wireless hardware"
 msgstr ""
 
-#: kernel.cpp:115
+#: kernel.cpp:109
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
 
-#: kernel.cpp:117
+#: kernel.cpp:111
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
 
-#: kernel.cpp:119
+#: kernel.cpp:113
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr ""
 
-#: kernel.cpp:121
+#: kernel.cpp:115
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
 
-#: kernel.cpp:123
+#: kernel.cpp:117
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
 
-#: kernel.cpp:125
+#: kernel.cpp:119
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
 
-#: kernel.cpp:127
+#: kernel.cpp:121
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
 msgstr ""
 
-#: kernel.cpp:129
+#: kernel.cpp:123
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
 "Linux driver for their wireless network cards.  This project implements "
@@ -568,28 +574,28 @@ msgid ""
 "is in Windows, without binary emulation."
 msgstr ""
 
-#: kernel.cpp:131
+#: kernel.cpp:125
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
 
-#: kernel.cpp:133
+#: kernel.cpp:127
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
 msgstr ""
 
-#: kernel.cpp:135
+#: kernel.cpp:129
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
 
-#: kernel.cpp:137
+#: kernel.cpp:131
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -601,21 +607,21 @@ msgid ""
 "overhead is needed."
 msgstr ""
 
-#: kernel.cpp:139 kernel.cpp:141
+#: kernel.cpp:133 kernel.cpp:135
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
 
-#: kernel.cpp:205
+#: kernel.cpp:199
 msgid "You have already installed the newest stable kernel!"
 msgstr ""
 
-#: kernel.cpp:207
+#: kernel.cpp:201
 msgid "There is no stable kernel avaiable!"
 msgstr ""
 
-#: kernel.cpp:210
+#: kernel.cpp:204
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Esta seguro que quiere instalar un nuevo kernel?"
 

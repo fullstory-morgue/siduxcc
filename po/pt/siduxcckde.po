@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-28 00:17+0100\n"
+"POT-Creation-Date: 2008-03-10 21:22+0100\n"
 "PO-Revision-Date: 2008-03-09 14:58+0000\n"
 "Last-Translator: Rui Umbelino (VaMPiRiC_CRoW)\n"
 "Language-Team:  <en@li.org>\n"
@@ -48,8 +48,11 @@ msgid "Modelines removed"
 msgstr "Modelines removidas"
 
 #: display.cpp:233
-msgid "Are you sure you want to restart the X-Server? All windows will be closed."
-msgstr "Tem a certeza que quer reiniciar o Servidor X? Todas as janelas serão fechadas."
+msgid ""
+"Are you sure you want to restart the X-Server? All windows will be closed."
+msgstr ""
+"Tem a certeza que quer reiniciar o Servidor X? Todas as janelas serão "
+"fechadas."
 
 #: display.cpp:396
 msgid "Process is running!"
@@ -93,9 +96,9 @@ msgstr ""
 #. i18n: file ./servicesdialog.ui line 85
 #. i18n: file ./networkdialog.ui line 85
 #. i18n: file ./softwaredialog.ui line 449
-#. i18n: file ./kerneldialog.ui line 484
-#: displaydialog.cpp:2356 kerneldialog.cpp:1305 networkdialog.cpp:1950
-#: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:649 rc.cpp:733
+#. i18n: file ./kerneldialog.ui line 88
+#: displaydialog.cpp:2356 kerneldialog.cpp:818 networkdialog.cpp:1950
+#: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:649 rc.cpp:685
 #: servicesdialog.cpp:658 softwaredialog.cpp:783
 #, no-c-format
 msgid "&back"
@@ -107,10 +110,10 @@ msgstr "voltar"
 #. i18n: file ./networkdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 319
 #. i18n: file ./softwaredialog.ui line 452
-#. i18n: file ./kerneldialog.ui line 487
-#: displaydialog.cpp:2357 kerneldialog.cpp:1306 networkdialog.cpp:1951
+#. i18n: file ./kerneldialog.ui line 91
+#: displaydialog.cpp:2357 kerneldialog.cpp:819 networkdialog.cpp:1951
 #: networkdialog.cpp:1965 rc.cpp:15 rc.cpp:211 rc.cpp:269 rc.cpp:307
-#: rc.cpp:344 rc.cpp:652 rc.cpp:736 servicesdialog.cpp:659
+#: rc.cpp:344 rc.cpp:652 rc.cpp:688 servicesdialog.cpp:659
 #: servicesdialog.cpp:680 softwaredialog.cpp:784
 #, no-c-format
 msgid "Alt+B"
@@ -131,9 +134,9 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 129
 #. i18n: file ./softwaredialog.ui line 484
-#. i18n: file ./kerneldialog.ui line 522
-#: displaydialog.cpp:2360 kerneldialog.cpp:1309 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:316 rc.cpp:661 rc.cpp:745 softwaredialog.cpp:787
+#. i18n: file ./kerneldialog.ui line 132
+#: displaydialog.cpp:2360 kerneldialog.cpp:824 networkdialog.cpp:1954
+#: rc.cpp:24 rc.cpp:316 rc.cpp:661 rc.cpp:703 softwaredialog.cpp:787
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr "Não feche a janela antes de ver a mensagem \"O processo terminou!\"."
@@ -189,7 +192,10 @@ msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
-msgstr "Com opções erradas o servidor-X não funciona! Para restaurar uma configuração antiga pressione CTR + ALT + F1. Execute como super-utilizador o comando \"siduxcc\" e escolha a opção Exposição -> restaurar o X."
+msgstr ""
+"Com opções erradas o servidor-X não funciona! Para restaurar uma "
+"configuração antiga pressione CTR + ALT + F1. Execute como super-utilizador "
+"o comando \"siduxcc\" e escolha a opção Exposição -> restaurar o X."
 
 #. i18n: file ./displaydialog.ui line 291
 #: displaydialog.cpp:2369 rc.cpp:48
@@ -296,8 +302,11 @@ msgstr "Nota"
 #. i18n: file ./displaydialog.ui line 587
 #: displaydialog.cpp:2393 rc.cpp:104
 #, no-c-format
-msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
-msgstr "Se está a usar o Controlador-ATI (fglrx), não pode alterar a Profundidade da Cor."
+msgid ""
+"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+msgstr ""
+"Se está a usar o Controlador-ATI (fglrx), não pode alterar a Profundidade da "
+"Cor."
 
 #. i18n: file ./displaydialog.ui line 640
 #: displaydialog.cpp:2396 rc.cpp:113
@@ -383,10 +392,9 @@ msgstr "Activar Composite"
 #. i18n: file ./networkdialog.ui line 641
 #. i18n: file ./networkdialog.ui line 1587
 #. i18n: file ./softwaredialog.ui line 236
-#. i18n: file ./kerneldialog.ui line 501
-#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:1308
-#: networkdialog.cpp:1982 networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191
-#: rc.cpp:395 rc.cpp:516 rc.cpp:628 rc.cpp:742 softwaredialog.cpp:776
+#: displaydialog.cpp:2412 displaydialog.cpp:2426 networkdialog.cpp:1982
+#: networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191 rc.cpp:395 rc.cpp:516
+#: rc.cpp:628 softwaredialog.cpp:776
 #, no-c-format
 msgid "Alt+N"
 msgstr ""
@@ -493,120 +501,222 @@ msgstr ""
 msgid "sidux-Browser"
 msgstr ""
 
-#: kernel.cpp:71
+#: kernel.cpp:78
 msgid ""
 "You only can install modules for the newest stable kernel. But this kernel "
 "isn't installed!"
-msgstr "Só pode instalar controladores para o mais novo Kernel estável. Mas este Kernel não está instalado!"
+msgstr ""
+"Só pode instalar controladores para o mais novo Kernel estável. Mas este "
+"Kernel não está instalado!"
 
-#: kernel.cpp:155
+#: kernel.cpp:105
+msgid ""
+"acer-acpi is a driver to allow you to control various aspects of your Acer "
+"laptop hardware using the proc filesystem.  It was originally developed in "
+"order to activate the wireless LAN card under a 64-bit version of Linux, as "
+"acerhk (the previous fine solution to the problem) relied on making BIOS "
+"calls which are not allowed from a 64-bit OS."
+msgstr ""
+
+#: kernel.cpp:107
+msgid ""
+"This driver will give access to the special keys on notebooks of the Acer "
+"Travelmate series, which are not handled by the keyboard driver.  It also "
+"works on notebooks from other manufacturers (some Medion, Fujitsu-"
+"Siemens, ...).<br><br>It also has some other related functionality "
+"(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
+"disable wireless hardware"
+msgstr ""
+
+#: kernel.cpp:109
+msgid ""
+"atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
+"The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
+"Asus laptop systems, such as the Asus Eee PC."
+msgstr ""
+
+#: kernel.cpp:111
+msgid ""
+"Aufs is a stackable unification filesystem such as Unionfs, which unifies "
+"several directories and provides a merged single directory."
+msgstr ""
+
+#: kernel.cpp:113
+msgid "This package provides the Driver for a snapshotting filesystem modules."
+msgstr ""
+
+#: kernel.cpp:115
+msgid ""
+"The et131x package is also required in order to make use of these modules. "
+"Kernel source or headers are required to compile these modules.<br><br>This "
+"works with Agere Systems ET-131x PCI-E Ethernet Controller."
+msgstr ""
+
+#: kernel.cpp:117
+msgid ""
+" The fsam7400 module for the Linux kernel provides support for the software "
+"RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
+"provides the source code for the fsam7400 modules."
+msgstr ""
+
+#: kernel.cpp:119
+msgid ""
+"The gpsca video for linux (v4l) driver, provides support for webcams and "
+"digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
+"Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
+msgstr ""
+
+#: kernel.cpp:121
+msgid ""
+"LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
+"method."
+msgstr ""
+
+#: kernel.cpp:123
+msgid ""
+"Some vendors do not release specifications of the hardware or provide a "
+"Linux driver for their wireless network cards.  This project implements "
+"Windows kernel API and NDIS (Network Driver Interface Specification) API "
+"within Linux kernel. A Windows driver for wireless network card is then "
+"linked to this implementation so that the driver runs natively, as though it "
+"is in Windows, without binary emulation."
+msgstr ""
+
+#: kernel.cpp:125
+msgid ""
+"This package contains the loadable kernel modules for the HP OmniBooks, "
+"Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
+"Electronics, Inc as ODM."
+msgstr ""
+
+#: kernel.cpp:127
+msgid ""
+"This package provides the source code for the quickcam kernel module for "
+"Logitech's QuickCam Express webcam and similar webcams.  This driver "
+"supercedes the qce-ga driver."
+msgstr ""
+
+#: kernel.cpp:129
+msgid ""
+"Modules for controlling the software RF kill switch on the Averatec 5100P "
+"and Packard Bell EasyNote E5. The code may work on other laptops, but these "
+"are the only models on which it has been tested."
+msgstr ""
+
+#: kernel.cpp:131
+msgid ""
+"Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
+"zlib compression to compress both files, inodes and directories.  Inodes in "
+"the system are very small and all blocks are packed to minimise data "
+"overhead.  Block sizes greater than 4K are supported up to a maximum of 64K."
+"<br><br> Squashfs is intended for general read-only filesystem use, for "
+"archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
+"constrained block device/memory systems (e.g.  embedded systems) where low "
+"overhead is needed."
+msgstr ""
+
+#: kernel.cpp:133 kernel.cpp:135
+msgid ""
+"VirtualBox is a free PC virtualization solution allowing you to run a wide "
+"range of PC operating systems on your system."
+msgstr ""
+
+#: kernel.cpp:199
 msgid "You have already installed the newest stable kernel!"
 msgstr "Já tem instalado o mais novo Kernel estável!"
 
-#: kernel.cpp:157
+#: kernel.cpp:201
 msgid "There is no stable kernel avaiable!"
 msgstr "Não está disponível nenhum Kernel estável! "
 
-#: kernel.cpp:160
+#: kernel.cpp:204
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Tem a certeza que quer instalar um novo Kernel?"
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:1283 rc.cpp:681 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:816 rc.cpp:681 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 26
-#: kerneldialog.cpp:1285 rc.cpp:684
-#, no-c-format
-msgid "Configure Networkcards"
-msgstr "Configurar Placas de Rede"
+#. i18n: file ./kerneldialog.ui line 102
+#: kerneldialog.cpp:820 rc.cpp:691
+#, fuzzy, no-c-format
+msgid "ins&tall"
+msgstr "i&nstalar"
 
-#. i18n: file ./kerneldialog.ui line 34
-#: kerneldialog.cpp:1286 rc.cpp:687
+#. i18n: file ./kerneldialog.ui line 105
+#: kerneldialog.cpp:821 rc.cpp:694
 #, no-c-format
-msgid "Set Hostname"
-msgstr "Definir Nome da Máquina"
+msgid "Alt+T"
+msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 42
-#: kerneldialog.cpp:1287 rc.cpp:690
+#. i18n: file ./kerneldialog.ui line 108
+#: kerneldialog.cpp:822 rc.cpp:697
 #, no-c-format
-msgid "Set Nameservers"
-msgstr "Definir Nome do Servidores"
+msgid "sdasa asdasdas sdsareeef "
+msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 50
-#: kerneldialog.cpp:1288 rc.cpp:693
+#. i18n: file ./kerneldialog.ui line 111
+#: kerneldialog.cpp:823 rc.cpp:700
 #, no-c-format
-msgid "Install Wlan-Cards (Ndiswrapper)"
-msgstr "Instalar Placas Wireless (NDISwrapper)"
+msgid "sdasa asdasdas sdsareeef"
+msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 58
-#: kerneldialog.cpp:1289 rc.cpp:696
-#, no-c-format
-msgid "Install Wlan-Cards (fwdetect)"
-msgstr "Instalar Placas Wireless (fwdetect)"
-
-#. i18n: file ./kerneldialog.ui line 113
-#: kerneldialog.cpp:1291 rc.cpp:699
+#. i18n: file ./kerneldialog.ui line 163
+#: kerneldialog.cpp:826 rc.cpp:706
 #, no-c-format
 msgid "Install new kernel"
 msgstr "Instalar um Kernel novo"
 
-#. i18n: file ./kerneldialog.ui line 121
-#: kerneldialog.cpp:1292 rc.cpp:702
+#. i18n: file ./kerneldialog.ui line 171
+#: kerneldialog.cpp:827 rc.cpp:709
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "Remover os Kernel velhos"
 
-#. i18n: file ./kerneldialog.ui line 129
-#: kerneldialog.cpp:1293 rc.cpp:705
+#. i18n: file ./kerneldialog.ui line 179
+#: kerneldialog.cpp:828 rc.cpp:712
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "Instalar os modulos do Kernel"
 
-#. i18n: file ./kerneldialog.ui line 214
-#: kerneldialog.cpp:1295 rc.cpp:709
+#. i18n: file ./kerneldialog.ui line 264
+#: kerneldialog.cpp:830 rc.cpp:716
 #, no-c-format
 msgid "Current kernel:"
 msgstr "Kernel actual:"
 
-#. i18n: file ./kerneldialog.ui line 230
-#: kerneldialog.cpp:1296 rc.cpp:712
+#. i18n: file ./kerneldialog.ui line 280
+#: kerneldialog.cpp:831 rc.cpp:719
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr "Novo Kernel estável:"
 
-#. i18n: file ./kerneldialog.ui line 271
-#. i18n: file ./kerneldialog.ui line 287
-#: kerneldialog.cpp:1299 kerneldialog.cpp:1300 rc.cpp:717 rc.cpp:720
+#. i18n: file ./kerneldialog.ui line 321
+#. i18n: file ./kerneldialog.ui line 337
+#: kerneldialog.cpp:834 kerneldialog.cpp:835 rc.cpp:724 rc.cpp:727
 #, no-c-format
 msgid "---"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 312
-#: kerneldialog.cpp:1301 rc.cpp:723
+#. i18n: file ./kerneldialog.ui line 362
+#: kerneldialog.cpp:836 rc.cpp:730
 #, no-c-format
 msgid "Current kernel"
 msgstr "Kernel actual"
 
-#. i18n: file ./kerneldialog.ui line 376
-#: kerneldialog.cpp:1303 rc.cpp:727
-#, no-c-format
-msgid "re&move"
+#. i18n: file ./kerneldialog.ui line 426
+#: kerneldialog.cpp:838 rc.cpp:734
+#, fuzzy, no-c-format
+msgid "remo&ve"
 msgstr "re&mover"
 
-#. i18n: file ./kerneldialog.ui line 379
-#: kerneldialog.cpp:1304 rc.cpp:730
+#. i18n: file ./kerneldialog.ui line 429
+#: kerneldialog.cpp:839 rc.cpp:737
 #, no-c-format
-msgid "Alt+M"
+msgid "Alt+V"
 msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 498
-#: kerneldialog.cpp:1307 rc.cpp:739
-#, no-c-format
-msgid "i&nstall"
-msgstr "i&nstalar"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
@@ -629,8 +739,9 @@ msgid "Developer of ceni and fw-detect"
 msgstr "Criador do ceni e fw-detect"
 
 #: main.cpp:50
-msgid "Artwork"
-msgstr "Designer"
+#, fuzzy
+msgid "Icon"
+msgstr "Acção"
 
 #: network.cpp:234 network.cpp:244
 msgid "Mac Address"
@@ -1280,7 +1391,7 @@ msgid "Show upgradable packages"
 msgstr "Mostrar pacotes actualizáveis"
 
 #. i18n: file ./softwaredialog.ui line 111
-#: rc.cpp:613 software.cpp:109 softwaredialog.cpp:771
+#: rc.cpp:613 software.cpp:110 softwaredialog.cpp:771
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Não existem avisos"
@@ -1328,19 +1439,19 @@ msgid "Upgr&ade"
 msgstr "Actualiz&ar"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:748 startdialog.cpp:3499
+#: rc.cpp:741 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Centro de Controlo"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:751 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:744 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:754 startdialog.cpp:3501
+#: rc.cpp:747 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1353,28 +1464,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:759 rc.cpp:762 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:752 rc.cpp:755 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:766 rc.cpp:769 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:759 rc.cpp:762 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr "sidux Página Web"
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:776 rc.cpp:779 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:769 rc.cpp:772 startdialog.cpp:3511 startdialog.cpp:3512
 #, no-c-format
 msgid "About siduxcc"
 msgstr "Sobre o sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:783 rc.cpp:786 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:776 rc.cpp:779 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1382,14 +1493,14 @@ msgstr "Sair"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:789 rc.cpp:792 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:782 rc.cpp:785 startdialog.cpp:3516 startdialog.cpp:3517
 #, no-c-format
 msgid "About KDE"
 msgstr "Sobre o KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:795 rc.cpp:798 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:788 rc.cpp:791 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr "Língua"
@@ -1402,26 +1513,35 @@ msgstr "O Apache v2 é a próxima geração do omnipresente servidor web Apache.
 msgid ""
 "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
 "general replacement for lpd and the like."
-msgstr "O Common UNIX Printing System (ou CUPS(tm)) é um sistema de impressão e is a printing system e substituidor geral para o Ipd e outros."
+msgstr ""
+"O Common UNIX Printing System (ou CUPS(tm)) é um sistema de impressão e is a "
+"printing system e substituidor geral para o Ipd e outros."
 
 #: services.cpp:71
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr "O MySQL é rápido, estável, multi-utilizador e servidor de base de dados SQL multi-thread."
+msgstr ""
+"O MySQL é rápido, estável, multi-utilizador e servidor de base de dados SQL "
+"multi-thread."
 
 #: services.cpp:72
 msgid ""
 "The Samba software suite is a collection of programs that implements the SMB/"
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
-msgstr "O software Samba é uma colecção de programas que implementa o protocolo SMB/CIFS para sistemas Unix, permitindo-lhe que sirva ficheiros e impressoras para clientes Windows, NT, OS/2 e DOS."
+msgstr ""
+"O software Samba é uma colecção de programas que implementa o protocolo SMB/"
+"CIFS para sistemas Unix, permitindo-lhe que sirva ficheiros e impressoras "
+"para clientes Windows, NT, OS/2 e DOS."
 
 #: services.cpp:73
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
-msgstr "O SSH é a versão portável do OpenSSH, uma implementação gratuita do protocolo Secure Shell como especificado pela grupo IETF secsh."
+msgstr ""
+"O SSH é a versão portável do OpenSSH, uma implementação gratuita do "
+"protocolo Secure Shell como especificado pela grupo IETF secsh."
 
 #: services.cpp:191 services.cpp:196
 msgid "Status: %1"
@@ -1435,30 +1555,34 @@ msgstr "não está em execução..."
 msgid "running..."
 msgstr "em execução..."
 
-#: software.cpp:84
+#: software.cpp:85
 msgid "Apt-show-versions is missing!"
 msgstr "Não tem o Apt-show-versions!"
 
-#: software.cpp:84
+#: software.cpp:85
 msgid "Do you want to install it?"
 msgstr "Quer instalá-lo?"
 
-#: software.cpp:114
+#: software.cpp:115
 msgid "Couldn't connect to sidux.com!"
 msgstr "Sem ligação ao sidux.com!"
 
-#: software.cpp:121
+#: software.cpp:122
 msgid "Don't make a dist-Upgrade!"
 msgstr "Não faça uma actualização da distribuição!"
 
-#: software.cpp:160
+#: software.cpp:161
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
 "choose the option Software->Dist-Upgrade"
-msgstr "Para executar a actualização da distribuição tem de estar no nível 3 (init 3). Para entrar neste modo pressione CTRL+ALT+F1, entrar como super-utilizador (root) e escrever \"init 3\". Depois execute o comando \"siduxcc\" e escolha a opção Software->Actualização da Distribuição."
+msgstr ""
+"Para executar a actualização da distribuição tem de estar no nível 3 (init "
+"3). Para entrar neste modo pressione CTRL+ALT+F1, entrar como super-"
+"utilizador (root) e escrever \"init 3\". Depois execute o comando \"siduxcc"
+"\" e escolha a opção Software->Actualização da Distribuição."
 
-#: software.cpp:180
+#: software.cpp:181
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Tem a certeza que quer limpar o seu repositório local?"
 
@@ -1466,3 +1590,20 @@ msgstr "Tem a certeza que quer limpar o seu repositório local?"
 msgid "System Info"
 msgstr "Informação do Sistema"
 
+#~ msgid "Configure Networkcards"
+#~ msgstr "Configurar Placas de Rede"
+
+#~ msgid "Set Hostname"
+#~ msgstr "Definir Nome da Máquina"
+
+#~ msgid "Set Nameservers"
+#~ msgstr "Definir Nome do Servidores"
+
+#~ msgid "Install Wlan-Cards (Ndiswrapper)"
+#~ msgstr "Instalar Placas Wireless (NDISwrapper)"
+
+#~ msgid "Install Wlan-Cards (fwdetect)"
+#~ msgstr "Instalar Placas Wireless (fwdetect)"
+
+#~ msgid "Artwork"
+#~ msgstr "Designer"

@@ -62,9 +62,9 @@ create-icons::
 	inkscape --export-width=22 \
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/icons/ok-hermes.png" \
-		 	"$(CURDIR)/siduxcc-hermes/icons/ok-hermes.svg"
+		 	"$(CURDIR)/icons/ok-hermes.svg"
 	inkscape --export-width=22 \
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/icons/notok-hermes.png" \
-		 	"$(CURDIR)/siduxcc-hermes/icons/notok-hermes.svg"
+		 	"$(CURDIR)/icons/notok-hermes.svg"
 

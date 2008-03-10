@@ -301,7 +301,9 @@ msgstr "sidux-actualização"
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
 "Upgrade Warnings. Dou want to continuo anyway?"
-msgstr "Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de Actualização da Distribuição. Deseja continuar de qualquer forma?"
+msgstr ""
+"Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de "
+"Actualização da Distribuição. Deseja continuar de qualquer forma?"
 
 #: modules/software.bm:10 modules/software.bm:195
 #, sh-format
@@ -311,14 +313,18 @@ msgstr "Software"
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr "Tem de estar no nível de execução 3 (init 3) e fora do X para executar este programa."
+msgstr ""
+"Tem de estar no nível de execução 3 (init 3) e fora do X para executar este "
+"programa."
 
 #: modules/software.bm:40 modules/software.bm:152
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
 "com for more information!"
-msgstr "Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por favor, visite a página \"sidux.com\" para mais informação!"
+msgstr ""
+"Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por "
+"favor, visite a página \"sidux.com\" para mais informação!"
 
 #: modules/software.bm:43 modules/software.bm:154
 #, sh-format
@@ -359,4 +365,3 @@ msgstr "Menu Principal"
 #, sh-format
 msgid "Exit"
 msgstr "Sair"
-

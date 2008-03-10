@@ -37,7 +37,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-subdir = po/de
+subdir = po/pt
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
@@ -298,7 +298,7 @@ x_libraries = @x_libraries@
 xdg_appsdir = @xdg_appsdir@
 xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
-KDE_LANG = de
+KDE_LANG = pt
 #>- POFILES = AUTO
 #>+ 2
 POFILES = siduxcc.po siduxcchermes.po siduxcckde.po
@@ -317,9 +317,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 #>- 	      exit 1;; \
 #>- 	  esac; \
 #>- 	done; \
-#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/de/Makefile'; \
+#>- 	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/pt/Makefile'; \
 #>- 	cd $(top_srcdir) && \
-#>- 	  $(AUTOMAKE) --gnu  po/de/Makefile
+#>- 	  $(AUTOMAKE) --gnu  po/pt/Makefile
 #>+ 12
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -329,10 +329,10 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/de/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/pt/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/de/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/de/Makefile.in
+	  $(AUTOMAKE) --gnu  po/pt/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/pt/Makefile.in
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -496,7 +496,7 @@ clean: kde-rpo-clean
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxcckde.gmo Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po siduxcc.gmo siduxcchermes.gmo Makefile.am 
+KDE_DIST=Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po Makefile.am 
 
 #>+ 10
 siduxcc.gmo: siduxcc.po
@@ -555,10 +555,10 @@ force-reedit:
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/de/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  po/pt/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  po/de/Makefile
-	cd $(top_srcdir) && perl admin/am_edit po/de/Makefile.in
+	  $(AUTOMAKE) --gnu  po/pt/Makefile
+	cd $(top_srcdir) && perl admin/am_edit po/pt/Makefile.in
 
 
 #>+ 21

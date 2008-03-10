@@ -21,7 +21,11 @@ siduxcc (0.9.23) UNRELEASED; urgency=low
   * fixed fr translation. thanks to alphad. 
   * added the pt language files. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 09 Mar 2008 21:20:53 +0100
+  [ Fabian Wuertz ]
+  * debian: rules file fixed
+  * translation: pt fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 10 Mar 2008 21:25:20 +0100
 
 siduxcc (0.9.22) unstable; urgency=low
 
