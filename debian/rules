@@ -23,10 +23,16 @@ DEB_DESTDIR = $(CURDIR)/debian/tmp/
 
 install/siduxcc-common::
 	mkdir -p debian/tmp/usr/share/pixmaps
+	
 	convert icons/hi32-app-siduxcc.png \
 		debian/tmp/usr/share/pixmaps/siduxcc.xpm
+	test -r icons/hi32-app-siduxcc.png
+	test -r debian/tmp/usr/share/pixmaps/siduxcc.xpm
+	
 	convert icons/hi16-app-siduxcc.png \
 		debian/tmp/usr/share/pixmaps/siduxcc-16.xpm
+	test -r icons/hi16-app-siduxcc.png
+	test -r debian/tmp/usr/share/pixmaps/siduxcc-16.xpm
 
 create-icons::
 	# requires inkscape and imagemagick to be installed
@@ -42,10 +48,14 @@ create-icons::
 			 --export-height=$${i} \
 			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcc.png" \
 				"$(CURDIR)/icons/siduxcc.svg" ; \
+		test -r "$(CURDIR)/icons/siduxcc.svg" ; \
+		test -r "$(CURDIR)/icons/hi$${i}-app-siduxcc.png" ; \
 		inkscape --export-width=$${i} \
 			 --export-height=$${i} \
 			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcchermes.png" \
 				"$(CURDIR)/icons/siduxcchermes.svg" ; \
+		test -r "$(CURDIR)/icons/siduxcchermes.svg" ; \
+		test -r "$(CURDIR)/icons/hi$${i}-app-siduxcchermes.png" ; \
 	done
 	
 	# create GUI icons
@@ -53,18 +63,30 @@ create-icons::
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-siduxcc_warning.png" \
 		 	"$(CURDIR)/icons/siduxcc_warning.svg"
+	test -r "$(CURDIR)/icons/siduxcc_warning.svg"
+	test -r "$(CURDIR)/icons/hi22-app-siduxcc_warning.png"
+	
 	inkscape --export-width=22 \
 		 --export-height=22 \
 		 --export-png="$(CURDIR)/icons/hi22-app-sidux_book.png" \
 		 	"$(CURDIR)/icons/sidux_book.svg"
-
+	test -r "$(CURDIR)/icons/sidux_book.svg"
+	test -r "$(CURDIR)/icons/hi22-app-sidux_book.png"
+	
 	# create siduxcc status icons
 	inkscape --export-width=22 \
 		 --export-height=22 \
-		 --export-png="$(CURDIR)/icons/icons/ok-hermes.png" \
-		 	"$(CURDIR)/icons/ok-hermes.svg"
+		 --export-png="$(CURDIR)/icons/ok-hermes.png" \
+		 	"$(CURDIR)/icons/icons/ok-hermes.svg"
+	test -r "$(CURDIR)/icons/icons/ok-hermes.svg"
+	test -r "$(CURDIR)/icons/ok-hermes.png"
+	
 	inkscape --export-width=22 \
 		 --export-height=22 \
-		 --export-png="$(CURDIR)/icons/icons/notok-hermes.png" \
-		 	"$(CURDIR)/icons/notok-hermes.svg"
+		 --export-png="$(CURDIR)/icons/notok-hermes.png" \
+		 	"$(CURDIR)/icons/icons/notok-hermes.svg"
+	test -r "$(CURDIR)/icons/icons/notok-hermes.svg"
+	test -r "$(CURDIR)/icons/notok-hermes.png"
+	
+	@echo "all PNGs created successfully."
 

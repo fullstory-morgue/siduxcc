@@ -1,31 +1,22 @@
-siduxcc (0.9.23) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-  * FTBS:
-  $ fakeroot debian/rules create-icons 2>&1 | grep "cannot be opened"
-    ** (inkscape:15744): WARNING **: Specified document
-     /home/slh/vcs/fullstory/siduxcc/trunk/siduxcc-hermes/icons/ok-hermes.svg
-     cannot be opened (is it valid SVG file?)
-    ** (inkscape:15746): WARNING **: Specified document
-     /home/slh/vcs/fullstory/siduxcc/trunk/siduxcc-hermes/icons/notok-hermes.svg
-     cannot be opened (is it valid SVG file?)
+siduxcc (0.9.23) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * empty icons folders removed
   * kde: software: asv check updated
   * cli: atl2 bug fixed
   * kde: kernel: descriptions for modules added
+  * debian: rules file fixed
+  * translation: pt fixed
 
   [ Joaquim Boura ]
   * fixed fr translation. thanks to alphad. 
   * added the pt language files. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
 
-  [ Fabian Wuertz ]
-  * debian: rules file fixed
-  * translation: pt fixed
+  [ Stefan Lippers-Hollmann ]
+  * really fix debian/rules PNG generation.
+  * generate PNGs from SVG.
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 10 Mar 2008 21:25:20 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Mar 2008 23:39:57 +0100
 
 siduxcc (0.9.22) unstable; urgency=low
 
