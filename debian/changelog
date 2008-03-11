@@ -1,8 +1,13 @@
 siduxcc (0.9.24) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Mar 2008 23:45:02 +0100
+  [ Bernard Gray ]
+  * add hermes notification icon candidate - warning
+  * add hermes notification icon candidate - safe
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Tue, 11 Mar 2008 17:37:45 +1100
 
 siduxcc (0.9.23) unstable; urgency=low
 
