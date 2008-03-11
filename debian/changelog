@@ -7,7 +7,10 @@ siduxcc (0.9.24) UNRELEASED; urgency=low
   * add hermes notification icon candidate - warning
   * add hermes notification icon candidate - safe
 
- -- Bernard Gray <bernard.gray@gmail.com>  Tue, 11 Mar 2008 17:37:45 +1100
+  [ Fabian Wuertz ]
+  * cli: url of the kernel package updated
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 12 Mar 2008 00:10:56 +0100
 
 siduxcc (0.9.23) unstable; urgency=low
 
