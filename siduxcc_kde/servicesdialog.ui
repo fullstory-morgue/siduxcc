@@ -312,7 +312,7 @@
                     </property>
                     <widget class="QLabel">
                         <property name="name">
-                            <cstring>descriptionLabel</cstring>
+                            <cstring>descriptionLabel1</cstring>
                         </property>
                         <property name="geometry">
                             <rect>
@@ -454,10 +454,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Start service at &amp;Boot</string>
+                            <string>Start ser&amp;vice at Boot</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+B</string>
+                            <string>Alt+V</string>
                         </property>
                     </widget>
                 </widget>
@@ -477,153 +477,193 @@
                         <rect>
                             <x>40</x>
                             <y>40</y>
-                            <width>540</width>
-                            <height>187</height>
+                            <width>496</width>
+                            <height>260</height>
                         </rect>
                     </property>
                     <property name="title">
                         <string>Services</string>
                     </property>
-                    <hbox>
+                    <widget class="QLayoutWidget">
                         <property name="name">
-                            <cstring>unnamed</cstring>
+                            <cstring>activeServicesLayout</cstring>
                         </property>
-                        <property name="margin">
-                            <number>10</number>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>27</y>
+                                <width>202</width>
+                                <height>138</height>
+                            </rect>
                         </property>
-                        <property name="spacing">
-                            <number>10</number>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>activeServicesLabel</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Active Services:</string>
+                                </property>
+                            </widget>
+                            <widget class="QListBox">
+                                <property name="name">
+                                    <cstring>activeServices</cstring>
+                                </property>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout4</cstring>
                         </property>
-                        <widget class="QLayoutWidget">
+                        <property name="geometry">
+                            <rect>
+                                <x>222</x>
+                                <y>27</y>
+                                <width>52</width>
+                                <height>138</height>
+                            </rect>
+                        </property>
+                        <vbox>
                             <property name="name">
-                                <cstring>activeServicesLayout</cstring>
+                                <cstring>unnamed</cstring>
                             </property>
-                            <vbox>
+                            <spacer>
                                 <property name="name">
-                                    <cstring>unnamed</cstring>
+                                    <cstring>serviceControlSpacer_3</cstring>
                                 </property>
-                                <widget class="QLabel">
-                                    <property name="name">
-                                        <cstring>activeServicesLabel</cstring>
-                                    </property>
-                                    <property name="text">
-                                        <string>Active Services:</string>
-                                    </property>
-                                </widget>
-                                <widget class="QListBox">
-                                    <property name="name">
-                                        <cstring>activeServices</cstring>
-                                    </property>
-                                </widget>
-                            </vbox>
-                        </widget>
-                        <widget class="QLayoutWidget">
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>50</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>serviceDisable</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&gt;</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>serviceControlSpacer</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Fixed</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>50</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>serviceEnable</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&lt;</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>serviceControlSpacer_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>50</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </vbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>disabledServicesLayout</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>284</x>
+                                <y>27</y>
+                                <width>202</width>
+                                <height>138</height>
+                            </rect>
+                        </property>
+                        <vbox>
                             <property name="name">
-                                <cstring>layout4</cstring>
+                                <cstring>unnamed</cstring>
                             </property>
-                            <vbox>
+                            <widget class="QLabel">
                                 <property name="name">
-                                    <cstring>unnamed</cstring>
+                                    <cstring>disabledServicesLabel</cstring>
                                 </property>
-                                <spacer>
-                                    <property name="name">
-                                        <cstring>serviceControlSpacer_3</cstring>
-                                    </property>
-                                    <property name="orientation">
-                                        <enum>Vertical</enum>
-                                    </property>
-                                    <property name="sizeType">
-                                        <enum>Expanding</enum>
-                                    </property>
-                                    <property name="sizeHint">
-                                        <size>
-                                            <width>50</width>
-                                            <height>20</height>
-                                        </size>
-                                    </property>
-                                </spacer>
-                                <widget class="QPushButton">
-                                    <property name="name">
-                                        <cstring>serviceDisable</cstring>
-                                    </property>
-                                    <property name="text">
-                                        <string>&gt;</string>
-                                    </property>
-                                    <property name="accel">
-                                        <string></string>
-                                    </property>
-                                </widget>
-                                <spacer>
-                                    <property name="name">
-                                        <cstring>serviceControlSpacer</cstring>
-                                    </property>
-                                    <property name="orientation">
-                                        <enum>Vertical</enum>
-                                    </property>
-                                    <property name="sizeType">
-                                        <enum>Fixed</enum>
-                                    </property>
-                                    <property name="sizeHint">
-                                        <size>
-                                            <width>50</width>
-                                            <height>20</height>
-                                        </size>
-                                    </property>
-                                </spacer>
-                                <widget class="QPushButton">
-                                    <property name="name">
-                                        <cstring>serviceEnable</cstring>
-                                    </property>
-                                    <property name="text">
-                                        <string>&lt;</string>
-                                    </property>
-                                    <property name="accel">
-                                        <string></string>
-                                    </property>
-                                </widget>
-                                <spacer>
-                                    <property name="name">
-                                        <cstring>serviceControlSpacer_2</cstring>
-                                    </property>
-                                    <property name="orientation">
-                                        <enum>Vertical</enum>
-                                    </property>
-                                    <property name="sizeType">
-                                        <enum>Expanding</enum>
-                                    </property>
-                                    <property name="sizeHint">
-                                        <size>
-                                            <width>50</width>
-                                            <height>20</height>
-                                        </size>
-                                    </property>
-                                </spacer>
-                            </vbox>
-                        </widget>
-                        <widget class="QLayoutWidget">
-                            <property name="name">
-                                <cstring>disabledServicesLayout</cstring>
-                            </property>
-                            <vbox>
+                                <property name="text">
+                                    <string>Disabled Services:</string>
+                                </property>
+                            </widget>
+                            <widget class="QListBox">
                                 <property name="name">
-                                    <cstring>unnamed</cstring>
+                                    <cstring>disabledServices</cstring>
                                 </property>
-                                <widget class="QLabel">
-                                    <property name="name">
-                                        <cstring>disabledServicesLabel</cstring>
-                                    </property>
-                                    <property name="text">
-                                        <string>Disabled Services:</string>
-                                    </property>
-                                </widget>
-                                <widget class="QListBox">
-                                    <property name="name">
-                                        <cstring>disabledServices</cstring>
-                                    </property>
-                                </widget>
-                            </vbox>
-                        </widget>
-                    </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>descriptionLabel2</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>10</x>
+                                <y>180</y>
+                                <width>476</width>
+                                <height>70</height>
+                            </rect>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="text">
+                            <string>Description Text</string>
+                        </property>
+                        <property name="alignment">
+                            <set>WordBreak|AlignTop</set>
+                        </property>
+                    </widget>
                 </widget>
             </widget>
         </widget>
@@ -712,6 +752,18 @@
         <receiver>ServicesDialog</receiver>
         <slot>hasChanged()</slot>
     </connection>
+    <connection>
+        <sender>activeServices</sender>
+        <signal>highlighted(QListBoxItem*)</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>showDescription(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>disabledServices</sender>
+        <signal>highlighted(QListBoxItem*)</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>showDescription(QListBoxItem*)</slot>
+    </connection>
 </connections>
 <includes>
     <include location="local" impldecl="in implementation">kdialog.h</include>
@@ -728,6 +780,7 @@
     <slot>stopService()</slot>
     <slot>restartService()</slot>
     <slot>reloadService()</slot>
+    <slot>showDescription(QListBoxItem*)</slot>
 </slots>
 <layoutdefaults spacing="3" margin="3"/>
 <includehints>

@@ -56,6 +56,8 @@ class services : public ServicesDialog
 		virtual void reloadService();
 		virtual void runServiceAction(QString);
 
+		virtual void showDescription(QListBoxItem*);
+
 	
 	protected slots:
 		void disableService();

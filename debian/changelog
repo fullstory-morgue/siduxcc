@@ -1,8 +1,12 @@
 siduxcc (0.9.25) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Mar 2008 01:38:28 +0100
+  [ Fabian Wuertz ]
+  * kde: services: descriptions added  
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 12 Mar 2008 18:29:46 +0100
 
 siduxcc (0.9.24) unstable; urgency=low
 

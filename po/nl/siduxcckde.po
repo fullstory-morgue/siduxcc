@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-10 21:22+0100\n"
+"POT-Creation-Date: 2008-03-12 18:03+0100\n"
 "PO-Revision-Date: 2008-01-28 19:42+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./consoledialog.ui line 16
-#: consoledialog.cpp:66 rc.cpp:678
+#: consoledialog.cpp:66 rc.cpp:681
 #, no-c-format
 msgid "Widget"
 msgstr "Widget"
@@ -70,7 +70,7 @@ msgstr "Beeld"
 #. i18n: file ./networkdialog.ui line 105
 #. i18n: file ./softwaredialog.ui line 460
 #: displaydialog.cpp:2354 internetdialog.cpp:306 networkdialog.cpp:1952
-#: rc.cpp:6 rc.cpp:214 rc.cpp:292 rc.cpp:310 rc.cpp:655 servicesdialog.cpp:660
+#: rc.cpp:6 rc.cpp:214 rc.cpp:295 rc.cpp:313 rc.cpp:658 servicesdialog.cpp:665
 #: softwaredialog.cpp:785
 #, no-c-format
 msgid "appl&y"
@@ -82,7 +82,7 @@ msgstr "toepassen"
 #. i18n: file ./networkdialog.ui line 108
 #. i18n: file ./softwaredialog.ui line 463
 #: displaydialog.cpp:2355 internetdialog.cpp:307 networkdialog.cpp:1953
-#: rc.cpp:9 rc.cpp:217 rc.cpp:295 rc.cpp:313 rc.cpp:658 servicesdialog.cpp:661
+#: rc.cpp:9 rc.cpp:217 rc.cpp:298 rc.cpp:316 rc.cpp:661 servicesdialog.cpp:666
 #: softwaredialog.cpp:786
 #, no-c-format
 msgid "Alt+Y"
@@ -94,23 +94,21 @@ msgstr "Alt+Y"
 #. i18n: file ./softwaredialog.ui line 449
 #. i18n: file ./kerneldialog.ui line 88
 #: displaydialog.cpp:2356 kerneldialog.cpp:818 networkdialog.cpp:1950
-#: rc.cpp:12 rc.cpp:208 rc.cpp:304 rc.cpp:649 rc.cpp:685
-#: servicesdialog.cpp:658 softwaredialog.cpp:783
+#: rc.cpp:12 rc.cpp:208 rc.cpp:307 rc.cpp:652 rc.cpp:688
+#: servicesdialog.cpp:663 softwaredialog.cpp:783
 #, no-c-format
 msgid "&back"
 msgstr "terug"
 
 #. i18n: file ./displaydialog.ui line 99
 #. i18n: file ./servicesdialog.ui line 88
-#. i18n: file ./servicesdialog.ui line 460
 #. i18n: file ./networkdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 319
 #. i18n: file ./softwaredialog.ui line 452
 #. i18n: file ./kerneldialog.ui line 91
 #: displaydialog.cpp:2357 kerneldialog.cpp:819 networkdialog.cpp:1951
-#: networkdialog.cpp:1965 rc.cpp:15 rc.cpp:211 rc.cpp:269 rc.cpp:307
-#: rc.cpp:344 rc.cpp:652 rc.cpp:688 servicesdialog.cpp:659
-#: servicesdialog.cpp:680 softwaredialog.cpp:784
+#: networkdialog.cpp:1965 rc.cpp:15 rc.cpp:211 rc.cpp:310 rc.cpp:347
+#: rc.cpp:655 rc.cpp:691 servicesdialog.cpp:664 softwaredialog.cpp:784
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -132,7 +130,7 @@ msgstr "Alt+X"
 #. i18n: file ./softwaredialog.ui line 484
 #. i18n: file ./kerneldialog.ui line 132
 #: displaydialog.cpp:2360 kerneldialog.cpp:824 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:316 rc.cpp:661 rc.cpp:703 softwaredialog.cpp:787
+#: rc.cpp:24 rc.cpp:319 rc.cpp:664 rc.cpp:706 softwaredialog.cpp:787
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr "Venster niet sluiten totdat \"Process done!\". verschijnt."
@@ -365,8 +363,8 @@ msgstr "Verwijder modelijnen"
 #. i18n: file ./networkdialog.ui line 706
 #. i18n: file ./softwaredialog.ui line 281
 #: displaydialog.cpp:2409 displaydialog.cpp:2429 networkdialog.cpp:1967
-#: networkdialog.cpp:1985 rc.cpp:146 rc.cpp:200 rc.cpp:253 rc.cpp:350
-#: rc.cpp:404 rc.cpp:634 servicesdialog.cpp:674 softwaredialog.cpp:778
+#: networkdialog.cpp:1985 rc.cpp:146 rc.cpp:200 rc.cpp:253 rc.cpp:353
+#: rc.cpp:407 rc.cpp:637 servicesdialog.cpp:679 softwaredialog.cpp:778
 #, no-c-format
 msgid "Alt+O"
 msgstr ""
@@ -390,8 +388,8 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 1587
 #. i18n: file ./softwaredialog.ui line 236
 #: displaydialog.cpp:2412 displaydialog.cpp:2426 networkdialog.cpp:1982
-#: networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191 rc.cpp:395 rc.cpp:516
-#: rc.cpp:628 softwaredialog.cpp:776
+#: networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191 rc.cpp:398 rc.cpp:519
+#: rc.cpp:631 softwaredialog.cpp:776
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -463,37 +461,37 @@ msgid "Register F&onts"
 msgstr "Registreer f&onts"
 
 #. i18n: file ./infodialog.ui line 17
-#: infodialog.cpp:92 rc.cpp:664
+#: infodialog.cpp:92 rc.cpp:667
 #, no-c-format
 msgid "SysInfo"
 msgstr "SysInfo"
 
 #. i18n: file ./infodialog.ui line 31
-#: infodialog.cpp:93 rc.cpp:667
+#: infodialog.cpp:93 rc.cpp:670
 #, no-c-format
 msgid "About sidux"
 msgstr "Over sidux"
 
 #. i18n: file ./infodialog.ui line 42
-#: infodialog.cpp:94 rc.cpp:670
+#: infodialog.cpp:94 rc.cpp:673
 #, no-c-format
 msgid "sidux Version:"
 msgstr "sidux versie"
 
 #. i18n: file ./infodialog.ui line 94
-#: infodialog.cpp:96 rc.cpp:674
+#: infodialog.cpp:96 rc.cpp:677
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./internetdialog.ui line 17
-#: internetdialog.cpp:305 rc.cpp:289 start.cpp:60 start.cpp:124
+#: internetdialog.cpp:305 rc.cpp:292 start.cpp:60 start.cpp:124
 #, no-c-format
 msgid "Internet"
 msgstr "Internet"
 
 #. i18n: file ./internetdialog.ui line 118
-#: internetdialog.cpp:308 rc.cpp:298
+#: internetdialog.cpp:308 rc.cpp:301
 #, no-c-format
 msgid "sidux-Browser"
 msgstr "sidux-browser"
@@ -630,86 +628,87 @@ msgid "Are you sure you want to install a new kernel?"
 msgstr "Bent u zeker dat u een nieuwe kernel wilt installeren?"
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:816 rc.cpp:681 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:816 rc.cpp:684 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
 #. i18n: file ./kerneldialog.ui line 102
-#: kerneldialog.cpp:820 rc.cpp:691
+#: kerneldialog.cpp:820 rc.cpp:694
 #, no-c-format
 msgid "ins&tall"
 msgstr "installeer"
 
 #. i18n: file ./kerneldialog.ui line 105
-#: kerneldialog.cpp:821 rc.cpp:694
+#: kerneldialog.cpp:821 rc.cpp:697
 #, no-c-format
 msgid "Alt+T"
 msgstr "Alt+T"
 
 #. i18n: file ./kerneldialog.ui line 108
-#: kerneldialog.cpp:822 rc.cpp:697
+#: kerneldialog.cpp:822 rc.cpp:700
 #, no-c-format
 msgid "sdasa asdasdas sdsareeef "
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 111
-#: kerneldialog.cpp:823 rc.cpp:700
+#: kerneldialog.cpp:823 rc.cpp:703
 #, no-c-format
 msgid "sdasa asdasdas sdsareeef"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 163
-#: kerneldialog.cpp:826 rc.cpp:706
+#: kerneldialog.cpp:826 rc.cpp:709
 #, no-c-format
 msgid "Install new kernel"
 msgstr "installeer een nieuwe kernel"
 
 #. i18n: file ./kerneldialog.ui line 171
-#: kerneldialog.cpp:827 rc.cpp:709
+#: kerneldialog.cpp:827 rc.cpp:712
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "verwijder oude kernel"
 
 #. i18n: file ./kerneldialog.ui line 179
-#: kerneldialog.cpp:828 rc.cpp:712
+#: kerneldialog.cpp:828 rc.cpp:715
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "installeer kernel modules"
 
 #. i18n: file ./kerneldialog.ui line 264
-#: kerneldialog.cpp:830 rc.cpp:716
+#: kerneldialog.cpp:830 rc.cpp:719
 #, fuzzy, no-c-format
 msgid "Current kernel:"
 msgstr "huidige locale kernel"
 
 #. i18n: file ./kerneldialog.ui line 280
-#: kerneldialog.cpp:831 rc.cpp:719
+#: kerneldialog.cpp:831 rc.cpp:722
 #, fuzzy, no-c-format
 msgid "Newest stable kernel:"
 msgstr "installeer een nieuwe kernel"
 
 #. i18n: file ./kerneldialog.ui line 321
 #. i18n: file ./kerneldialog.ui line 337
-#: kerneldialog.cpp:834 kerneldialog.cpp:835 rc.cpp:724 rc.cpp:727
+#: kerneldialog.cpp:834 kerneldialog.cpp:835 rc.cpp:727 rc.cpp:730
 #, no-c-format
 msgid "---"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 362
-#: kerneldialog.cpp:836 rc.cpp:730
+#: kerneldialog.cpp:836 rc.cpp:733
 #, no-c-format
 msgid "Current kernel"
 msgstr "huidige locale kernel"
 
 #. i18n: file ./kerneldialog.ui line 426
-#: kerneldialog.cpp:838 rc.cpp:734
+#: kerneldialog.cpp:838 rc.cpp:737
 #, fuzzy, no-c-format
 msgid "remo&ve"
 msgstr "verwijder"
 
+#. i18n: file ./servicesdialog.ui line 460
 #. i18n: file ./kerneldialog.ui line 429
-#: kerneldialog.cpp:839 rc.cpp:737
+#: kerneldialog.cpp:839 rc.cpp:269 rc.cpp:740 servicesdialog.cpp:685
 #, fuzzy, no-c-format
 msgid "Alt+V"
 msgstr "Alt+Y"
@@ -746,7 +745,7 @@ msgstr "MAC Adres"
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 269
 #: network.cpp:235 network.cpp:245 networkdialog.cpp:1962 rc.cpp:235
-#: rc.cpp:335 servicesdialog.cpp:668
+#: rc.cpp:338 servicesdialog.cpp:673
 #, no-c-format
 msgid "Description"
 msgstr "Descriptie"
@@ -780,139 +779,139 @@ msgid "..."
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1107
-#: network.cpp:727 networkdialog.cpp:1990 rc.cpp:414
+#: network.cpp:727 networkdialog.cpp:1990 rc.cpp:417
 #, fuzzy, no-c-format
 msgid "Detected"
 msgstr "gevonden"
 
 #. i18n: file ./networkdialog.ui line 388
-#: networkdialog.cpp:1533 networkdialog.cpp:1971 rc.cpp:362
+#: networkdialog.cpp:1533 networkdialog.cpp:1971 rc.cpp:365
 #, no-c-format
 msgid "Interface"
 msgstr "Interface"
 
 #. i18n: file ./networkdialog.ui line 399
-#: networkdialog.cpp:1534 networkdialog.cpp:1972 rc.cpp:365
+#: networkdialog.cpp:1534 networkdialog.cpp:1972 rc.cpp:368
 #, fuzzy, no-c-format
 msgid "IP address"
 msgstr "IP Adres:"
 
 #. i18n: file ./networkdialog.ui line 410
-#: networkdialog.cpp:1535 networkdialog.cpp:1973 rc.cpp:368
+#: networkdialog.cpp:1535 networkdialog.cpp:1973 rc.cpp:371
 #, no-c-format
 msgid "Method"
 msgstr "Methode"
 
 #. i18n: file ./networkdialog.ui line 421
-#: networkdialog.cpp:1536 networkdialog.cpp:1974 rc.cpp:371
+#: networkdialog.cpp:1536 networkdialog.cpp:1974 rc.cpp:374
 #, no-c-format
 msgid "Class"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 432
-#: networkdialog.cpp:1537 networkdialog.cpp:1975 rc.cpp:374
+#: networkdialog.cpp:1537 networkdialog.cpp:1975 rc.cpp:377
 #, no-c-format
 msgid "Driver"
 msgstr "Driver"
 
 #. i18n: file ./networkdialog.ui line 443
-#: networkdialog.cpp:1538 networkdialog.cpp:1976 rc.cpp:377
+#: networkdialog.cpp:1538 networkdialog.cpp:1976 rc.cpp:380
 #, no-c-format
 msgid "Slot"
 msgstr "Slot"
 
 #. i18n: file ./networkdialog.ui line 1924
-#: networkdialog.cpp:1909 networkdialog.cpp:2060 rc.cpp:589
+#: networkdialog.cpp:1909 networkdialog.cpp:2060 rc.cpp:592
 #, no-c-format
 msgid "ESSID"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1935
-#: networkdialog.cpp:1910 networkdialog.cpp:2061 rc.cpp:592
+#: networkdialog.cpp:1910 networkdialog.cpp:2061 rc.cpp:595
 #, fuzzy, no-c-format
 msgid "Channel"
 msgstr "kanaal"
 
 #. i18n: file ./networkdialog.ui line 1946
-#: networkdialog.cpp:1911 networkdialog.cpp:2062 rc.cpp:595
+#: networkdialog.cpp:1911 networkdialog.cpp:2062 rc.cpp:598
 #, no-c-format
 msgid "Quality"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1957
-#: networkdialog.cpp:1912 networkdialog.cpp:2063 rc.cpp:598
+#: networkdialog.cpp:1912 networkdialog.cpp:2063 rc.cpp:601
 #, fuzzy, no-c-format
 msgid "WEP/WPA"
 msgstr "WEP"
 
 #. i18n: file ./networkdialog.ui line 1968
-#: networkdialog.cpp:1913 networkdialog.cpp:2064 rc.cpp:601
+#: networkdialog.cpp:1913 networkdialog.cpp:2064 rc.cpp:604
 #, no-c-format
 msgid "BSSID"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 17
-#: networkdialog.cpp:1949 rc.cpp:301 start.cpp:68 start.cpp:104
+#: networkdialog.cpp:1949 rc.cpp:304 start.cpp:68 start.cpp:104
 #, no-c-format
 msgid "Network"
 msgstr "Netwerk"
 
 #. i18n: file ./networkdialog.ui line 149
-#: networkdialog.cpp:1956 rc.cpp:319
+#: networkdialog.cpp:1956 rc.cpp:322
 #, fuzzy, no-c-format
 msgid "Configure network cards"
 msgstr "netwerkkaart configureren"
 
 #. i18n: file ./networkdialog.ui line 157
-#: networkdialog.cpp:1957 rc.cpp:322
+#: networkdialog.cpp:1957 rc.cpp:325
 #, fuzzy, no-c-format
 msgid "Set hostname"
 msgstr "Hostname vastleggen"
 
 #. i18n: file ./networkdialog.ui line 165
-#: networkdialog.cpp:1958 rc.cpp:325
+#: networkdialog.cpp:1958 rc.cpp:328
 #, fuzzy, no-c-format
 msgid "Set nameservers"
 msgstr "Nameservers vastleggen"
 
 #. i18n: file ./networkdialog.ui line 173
-#: networkdialog.cpp:1959 rc.cpp:328
+#: networkdialog.cpp:1959 rc.cpp:331
 #, fuzzy, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
 msgstr "Wlan-Cards met Ndiswrapper installeren"
 
 #. i18n: file ./networkdialog.ui line 181
-#: networkdialog.cpp:1960 rc.cpp:331
+#: networkdialog.cpp:1960 rc.cpp:334
 #, fuzzy, no-c-format
 msgid "Install WLAN cards (fwdetect)"
 msgstr "Wlan-Cards met fwdetect installeren"
 
 #. i18n: file ./networkdialog.ui line 288
-#: networkdialog.cpp:1963 rc.cpp:338
+#: networkdialog.cpp:1963 rc.cpp:341
 #, fuzzy, no-c-format
 msgid "MAC address"
 msgstr "MAC Adres"
 
 #. i18n: file ./networkdialog.ui line 316
-#: networkdialog.cpp:1964 rc.cpp:341
+#: networkdialog.cpp:1964 rc.cpp:344
 #, no-c-format
 msgid "Disa&ble"
 msgstr "deactiveren"
 
 #. i18n: file ./networkdialog.ui line 346
-#: networkdialog.cpp:1966 rc.cpp:347
+#: networkdialog.cpp:1966 rc.cpp:350
 #, no-c-format
 msgid "C&onfigure"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 352
-#: networkdialog.cpp:1968 rc.cpp:353
+#: networkdialog.cpp:1968 rc.cpp:356
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "Verander de instellingen voor de geselecteerde device"
 
 #. i18n: file ./networkdialog.ui line 379
-#: networkdialog.cpp:1969 rc.cpp:356
+#: networkdialog.cpp:1969 rc.cpp:359
 #, no-c-format
 msgid "En&able"
 msgstr "activeren"
@@ -923,122 +922,122 @@ msgstr "activeren"
 #. i18n: file ./networkdialog.ui line 1573
 #. i18n: file ./softwaredialog.ui line 367
 #: networkdialog.cpp:1970 networkdialog.cpp:1988 networkdialog.cpp:2029
-#: rc.cpp:247 rc.cpp:359 rc.cpp:411 rc.cpp:510 rc.cpp:646
-#: servicesdialog.cpp:672 softwaredialog.cpp:782
+#: rc.cpp:247 rc.cpp:362 rc.cpp:414 rc.cpp:513 rc.cpp:649
+#: servicesdialog.cpp:677 softwaredialog.cpp:782
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./networkdialog.ui line 487
-#: networkdialog.cpp:1977 rc.cpp:380
+#: networkdialog.cpp:1977 rc.cpp:383
 #, no-c-format
 msgid "List of configured network devices"
 msgstr "Lijst van geconfigureerde netwerk devices"
 
 #. i18n: file ./networkdialog.ui line 514
-#: networkdialog.cpp:1978 rc.cpp:383
+#: networkdialog.cpp:1978 rc.cpp:386
 #, no-c-format
 msgid "Hostname"
 msgstr "hostname"
 
 #. i18n: file ./networkdialog.ui line 569
-#: networkdialog.cpp:1979 rc.cpp:386
+#: networkdialog.cpp:1979 rc.cpp:389
 #, no-c-format
 msgid "DNS Servers"
 msgstr "DNS Servers"
 
 #. i18n: file ./networkdialog.ui line 604
-#: networkdialog.cpp:1980 rc.cpp:389
+#: networkdialog.cpp:1980 rc.cpp:392
 #, no-c-format
 msgid "Install wlan card"
 msgstr "Installeer wlan card"
 
 #. i18n: file ./networkdialog.ui line 638
-#: networkdialog.cpp:1981 rc.cpp:392
+#: networkdialog.cpp:1981 rc.cpp:395
 #, no-c-format
 msgid "&Ndiswrapper"
 msgstr "Ndiswrapper"
 
 #. i18n: file ./networkdialog.ui line 669
-#: networkdialog.cpp:1983 rc.cpp:398
+#: networkdialog.cpp:1983 rc.cpp:401
 #, no-c-format
 msgid "Cards known to work"
 msgstr "Kaarten die zeker werken"
 
 #. i18n: file ./networkdialog.ui line 703
-#: networkdialog.cpp:1984 rc.cpp:401
+#: networkdialog.cpp:1984 rc.cpp:404
 #, no-c-format
 msgid "Sh&ow list"
 msgstr "toon lijst"
 
 #. i18n: file ./networkdialog.ui line 1098
-#: networkdialog.cpp:1987 rc.cpp:408
+#: networkdialog.cpp:1987 rc.cpp:411
 #, no-c-format
 msgid "Inst&all"
 msgstr "Inst&alleer"
 
 #. i18n: file ./networkdialog.ui line 1112
-#: networkdialog.cpp:1991 rc.cpp:417
+#: networkdialog.cpp:1991 rc.cpp:420
 #, fuzzy, no-c-format
 msgid "All"
 msgstr "alle"
 
 #. i18n: file ./networkdialog.ui line 1193
-#: networkdialog.cpp:1995 rc.cpp:422
+#: networkdialog.cpp:1995 rc.cpp:425
 #, no-c-format
 msgid "LAN settings"
 msgstr "LAN instellingen"
 
 #. i18n: file ./networkdialog.ui line 1201
-#: networkdialog.cpp:1996 rc.cpp:425
+#: networkdialog.cpp:1996 rc.cpp:428
 #, no-c-format
 msgid "WLAN settings"
 msgstr "WLAN instellingen"
 
 #. i18n: file ./networkdialog.ui line 1209
-#: networkdialog.cpp:1997 rc.cpp:428
+#: networkdialog.cpp:1997 rc.cpp:431
 #, no-c-format
 msgid "WLAN security"
 msgstr "WLAN beveiliging"
 
 #. i18n: file ./networkdialog.ui line 1270
-#: networkdialog.cpp:1999 rc.cpp:431
+#: networkdialog.cpp:1999 rc.cpp:434
 #, no-c-format
 msgid "manual"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1275
-#: networkdialog.cpp:2000 rc.cpp:434
+#: networkdialog.cpp:2000 rc.cpp:437
 #, no-c-format
 msgid "allow hotplug"
 msgstr "a&bctiveren \"allow-hotplug\""
 
 #. i18n: file ./networkdialog.ui line 1280
-#: networkdialog.cpp:2001 rc.cpp:437
+#: networkdialog.cpp:2001 rc.cpp:440
 #, no-c-format
 msgid "auto"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1342
-#: networkdialog.cpp:2007 rc.cpp:444
+#: networkdialog.cpp:2007 rc.cpp:447
 #, no-c-format
 msgid "dhcp"
 msgstr "dhcp"
 
 #. i18n: file ./networkdialog.ui line 1347
-#: networkdialog.cpp:2008 rc.cpp:447
+#: networkdialog.cpp:2008 rc.cpp:450
 #, no-c-format
 msgid "static"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1375
-#: networkdialog.cpp:2009 rc.cpp:450
+#: networkdialog.cpp:2009 rc.cpp:453
 #, no-c-format
 msgid "<b>Method:</b>"
 msgstr "<b>Methode:</b>"
 
 #. i18n: file ./networkdialog.ui line 1391
-#: networkdialog.cpp:2010 rc.cpp:453
+#: networkdialog.cpp:2010 rc.cpp:456
 #, no-c-format
 msgid "<b>Class:</b>"
 msgstr ""
@@ -1049,407 +1048,408 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 1500
 #. i18n: file ./networkdialog.ui line 1511
 #: networkdialog.cpp:2011 networkdialog.cpp:2014 networkdialog.cpp:2018
-#: networkdialog.cpp:2022 networkdialog.cpp:2024 rc.cpp:456 rc.cpp:465
-#: rc.cpp:477 rc.cpp:489 rc.cpp:495
+#: networkdialog.cpp:2022 networkdialog.cpp:2024 rc.cpp:459 rc.cpp:468
+#: rc.cpp:480 rc.cpp:492 rc.cpp:498
 #, no-c-format
 msgid "000.000.000.000; "
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1430
-#: networkdialog.cpp:2012 rc.cpp:459
+#: networkdialog.cpp:2012 rc.cpp:462
 #, no-c-format
 msgid "E.g. 192.168.0.2"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1438
-#: networkdialog.cpp:2013 rc.cpp:462
+#: networkdialog.cpp:2013 rc.cpp:465
 #, no-c-format
 msgid "IP address:"
 msgstr "IP Adres:"
 
 #. i18n: file ./networkdialog.ui line 1449
-#: networkdialog.cpp:2015 rc.cpp:468
+#: networkdialog.cpp:2015 rc.cpp:471
 #, no-c-format
 msgid "E.g. 255.255.255.0"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1457
-#: networkdialog.cpp:2016 rc.cpp:471
+#: networkdialog.cpp:2016 rc.cpp:474
 #, no-c-format
 msgid "Netmask:"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1465
-#: networkdialog.cpp:2017 rc.cpp:474
+#: networkdialog.cpp:2017 rc.cpp:477
 #, no-c-format
 msgid "Gateway:"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1476
-#: networkdialog.cpp:2019 rc.cpp:480
+#: networkdialog.cpp:2019 rc.cpp:483
 #, no-c-format
 msgid "E.g. 192.168.0.254"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1484
-#: networkdialog.cpp:2020 rc.cpp:483
+#: networkdialog.cpp:2020 rc.cpp:486
 #, no-c-format
 msgid "Broadcast:"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1492
-#: networkdialog.cpp:2021 rc.cpp:486
+#: networkdialog.cpp:2021 rc.cpp:489
 #, no-c-format
 msgid "Network:"
 msgstr "Netwerk:"
 
 #. i18n: file ./networkdialog.ui line 1503
 #. i18n: file ./networkdialog.ui line 1514
-#: networkdialog.cpp:2023 networkdialog.cpp:2025 rc.cpp:492 rc.cpp:498
+#: networkdialog.cpp:2023 networkdialog.cpp:2025 rc.cpp:495 rc.cpp:501
 #, no-c-format
 msgid "E.g. 192.168.0.255"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1540
-#: networkdialog.cpp:2026 rc.cpp:501
+#: networkdialog.cpp:2026 rc.cpp:504
 #, no-c-format
 msgid "<b>ESSID:</b>"
 msgstr "<b>ESSID:</b>"
 
 #. i18n: file ./networkdialog.ui line 1556
-#: networkdialog.cpp:2027 rc.cpp:504
+#: networkdialog.cpp:2027 rc.cpp:507
 #, no-c-format
 msgid "Channel/ Frequency"
 msgstr "Kanaal/frequentie"
 
 #. i18n: file ./networkdialog.ui line 1570
-#: networkdialog.cpp:2028 rc.cpp:507
+#: networkdialog.cpp:2028 rc.cpp:510
 #, no-c-format
 msgid "&Auto"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1584
-#: networkdialog.cpp:2030 rc.cpp:513
+#: networkdialog.cpp:2030 rc.cpp:516
 #, no-c-format
 msgid "Cha&nnel:"
 msgstr "kanaal"
 
 #. i18n: file ./networkdialog.ui line 1595
-#: networkdialog.cpp:2032 rc.cpp:519
+#: networkdialog.cpp:2032 rc.cpp:522
 #, no-c-format
 msgid "Fre&quency:"
 msgstr "frequentie"
 
 #. i18n: file ./networkdialog.ui line 1598
-#: networkdialog.cpp:2033 rc.cpp:522
+#: networkdialog.cpp:2033 rc.cpp:525
 #, no-c-format
 msgid "Alt+Q"
 msgstr "Alt+Q"
 
 #. i18n: file ./networkdialog.ui line 1617
-#: networkdialog.cpp:2034 rc.cpp:525
+#: networkdialog.cpp:2034 rc.cpp:528
 #, no-c-format
 msgid ".G"
 msgstr ".G"
 
 #. i18n: file ./networkdialog.ui line 1620
-#: networkdialog.cpp:2035 rc.cpp:528
+#: networkdialog.cpp:2035 rc.cpp:531
 #, no-c-format
 msgid "9.999G;_"
 msgstr "9.999G;_"
 
 #. i18n: file ./networkdialog.ui line 1638
-#: networkdialog.cpp:2036 rc.cpp:531
+#: networkdialog.cpp:2036 rc.cpp:534
 #, no-c-format
 msgid "Advanced options"
 msgstr "Geavanceerde instellingen"
 
 #. i18n: file ./networkdialog.ui line 1652
-#: networkdialog.cpp:2037 rc.cpp:534
+#: networkdialog.cpp:2037 rc.cpp:537
 #, no-c-format
 msgid "NWID:"
 msgstr "NWID:"
 
 #. i18n: file ./networkdialog.ui line 1660
-#: networkdialog.cpp:2038 rc.cpp:537
+#: networkdialog.cpp:2038 rc.cpp:540
 #, no-c-format
 msgid "iwspy:"
 msgstr "iwspy:"
 
 #. i18n: file ./networkdialog.ui line 1668
-#: networkdialog.cpp:2039 rc.cpp:540
+#: networkdialog.cpp:2039 rc.cpp:543
 #, no-c-format
 msgid "iwconfig:"
 msgstr "iwconfig:"
 
 #. i18n: file ./networkdialog.ui line 1676
-#: networkdialog.cpp:2040 rc.cpp:543
+#: networkdialog.cpp:2040 rc.cpp:546
 #, no-c-format
 msgid "iwpriv:"
 msgstr "iwpriv:"
 
 #. i18n: file ./networkdialog.ui line 1714
-#: networkdialog.cpp:2041 rc.cpp:546
+#: networkdialog.cpp:2041 rc.cpp:549
 #, no-c-format
 msgid "<b>Mode:</b>"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1725
-#: networkdialog.cpp:2044 rc.cpp:550
+#: networkdialog.cpp:2044 rc.cpp:553
 #, no-c-format
 msgid "Managed"
 msgstr "Managed"
 
 #. i18n: file ./networkdialog.ui line 1730
-#: networkdialog.cpp:2045 rc.cpp:553
+#: networkdialog.cpp:2045 rc.cpp:556
 #, no-c-format
 msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
 
 #. i18n: file ./networkdialog.ui line 1735
-#: networkdialog.cpp:2046 rc.cpp:556
+#: networkdialog.cpp:2046 rc.cpp:559
 #, no-c-format
 msgid "Master"
 msgstr "Master"
 
 #. i18n: file ./networkdialog.ui line 1740
-#: networkdialog.cpp:2047 rc.cpp:559
+#: networkdialog.cpp:2047 rc.cpp:562
 #, no-c-format
 msgid "Repeater"
 msgstr "Repeater"
 
 #. i18n: file ./networkdialog.ui line 1745
-#: networkdialog.cpp:2048 rc.cpp:562
+#: networkdialog.cpp:2048 rc.cpp:565
 #, no-c-format
 msgid "Secondary"
 msgstr "Secondary"
 
 #. i18n: file ./networkdialog.ui line 1750
-#: networkdialog.cpp:2049 rc.cpp:565
+#: networkdialog.cpp:2049 rc.cpp:568
 #, no-c-format
 msgid "Auto"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1794
-#: networkdialog.cpp:2050 rc.cpp:568
+#: networkdialog.cpp:2050 rc.cpp:571
 #, fuzzy, no-c-format
 msgid "Sh&ow List"
 msgstr "toon lijst"
 
 #. i18n: file ./networkdialog.ui line 1849
-#: networkdialog.cpp:2055 rc.cpp:574
+#: networkdialog.cpp:2055 rc.cpp:577
 #, fuzzy, no-c-format
 msgid "None"
 msgstr "NB"
 
 #. i18n: file ./networkdialog.ui line 1854
-#: networkdialog.cpp:2056 rc.cpp:577
+#: networkdialog.cpp:2056 rc.cpp:580
 #, no-c-format
 msgid "WEP"
 msgstr "WEP"
 
 #. i18n: file ./networkdialog.ui line 1859
-#: networkdialog.cpp:2057 rc.cpp:580
+#: networkdialog.cpp:2057 rc.cpp:583
 #, no-c-format
 msgid "WPA-PSK"
 msgstr "WPA-PSK"
 
 #. i18n: file ./networkdialog.ui line 1887
-#: networkdialog.cpp:2058 rc.cpp:583
+#: networkdialog.cpp:2058 rc.cpp:586
 #, no-c-format
 msgid "<b>Preshared Key:</b>"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1903
-#: networkdialog.cpp:2059 rc.cpp:586
+#: networkdialog.cpp:2059 rc.cpp:589
 #, no-c-format
 msgid "<b>Encryptiontype:</b>"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1998
-#: networkdialog.cpp:2065 rc.cpp:604
+#: networkdialog.cpp:2065 rc.cpp:607
 #, no-c-format
 msgid "Choose a network (doubleklick):"
 msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 485
-#: rc.cpp:205 rc.cpp:272 servicesdialog.cpp:657 servicesdialog.cpp:681
+#: rc.cpp:205 rc.cpp:272 servicesdialog.cpp:662 servicesdialog.cpp:686
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "Services"
 
 #. i18n: file ./servicesdialog.ui line 119
-#: rc.cpp:220 servicesdialog.cpp:663
+#: rc.cpp:220 servicesdialog.cpp:668
 #, no-c-format
 msgid "Manage services"
 msgstr "Kies service"
 
 #. i18n: file ./servicesdialog.ui line 127
-#: rc.cpp:223 servicesdialog.cpp:664
+#: rc.cpp:223 servicesdialog.cpp:669
 #, no-c-format
 msgid "Start services at boot"
 msgstr "Diensten activeren tijdens opstarten."
 
 #. i18n: file ./servicesdialog.ui line 197
-#: rc.cpp:226 servicesdialog.cpp:665
+#: rc.cpp:226 servicesdialog.cpp:670
 #, no-c-format
 msgid "Select service"
 msgstr "Kies service"
 
 #. i18n: file ./servicesdialog.ui line 237
-#: rc.cpp:229 servicesdialog.cpp:666
+#: rc.cpp:229 servicesdialog.cpp:671
 #, no-c-format
 msgid "Status"
 msgstr "status"
 
 #. i18n: file ./servicesdialog.ui line 286
-#: rc.cpp:232 servicesdialog.cpp:667
+#: rc.cpp:232 servicesdialog.cpp:672
 #, no-c-format
 msgid "Status: not running..."
 msgstr "Status: niet actief"
 
 #. i18n: file ./servicesdialog.ui line 334
-#: rc.cpp:238 servicesdialog.cpp:669
+#. i18n: file ./servicesdialog.ui line 661
+#: rc.cpp:238 rc.cpp:289 servicesdialog.cpp:674 servicesdialog.cpp:693
 #, no-c-format
 msgid "Description Text"
 msgstr "Descriptie tekst"
 
 #. i18n: file ./servicesdialog.ui line 354
-#: rc.cpp:241 servicesdialog.cpp:670
+#: rc.cpp:241 servicesdialog.cpp:675
 #, no-c-format
 msgid "Action"
 msgstr "actie"
 
 #. i18n: file ./servicesdialog.ui line 369
-#: rc.cpp:244 servicesdialog.cpp:671
+#: rc.cpp:244 servicesdialog.cpp:676
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "status"
 
 #. i18n: file ./servicesdialog.ui line 413
-#: rc.cpp:256 servicesdialog.cpp:675
+#: rc.cpp:256 servicesdialog.cpp:680
 #, no-c-format
 msgid "Restart"
 msgstr "herstarten"
 
 #. i18n: file ./servicesdialog.ui line 435
-#: rc.cpp:260 servicesdialog.cpp:677
+#: rc.cpp:260 servicesdialog.cpp:682
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "opnieuw laden"
 
 #. i18n: file ./servicesdialog.ui line 438
-#: rc.cpp:263 servicesdialog.cpp:678
+#: rc.cpp:263 servicesdialog.cpp:683
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
 #. i18n: file ./servicesdialog.ui line 457
-#: rc.cpp:266 servicesdialog.cpp:679
+#: rc.cpp:266 servicesdialog.cpp:684
 #, fuzzy, no-c-format
-msgid "Start service at &Boot"
+msgid "Start ser&vice at Boot"
 msgstr "Diensten activeren tijdens opstarten."
 
-#. i18n: file ./servicesdialog.ui line 510
-#: rc.cpp:275 servicesdialog.cpp:682
+#. i18n: file ./servicesdialog.ui line 508
+#: rc.cpp:275 servicesdialog.cpp:687
 #, no-c-format
 msgid "Active Services:"
 msgstr "Actieve diensten:"
 
-#. i18n: file ./servicesdialog.ui line 550
-#: rc.cpp:278 servicesdialog.cpp:683
+#. i18n: file ./servicesdialog.ui line 556
+#: rc.cpp:278 servicesdialog.cpp:688
 #, no-c-format
 msgid ">"
 msgstr ">"
 
-#. i18n: file ./servicesdialog.ui line 578
-#: rc.cpp:282 servicesdialog.cpp:685
+#. i18n: file ./servicesdialog.ui line 584
+#: rc.cpp:282 servicesdialog.cpp:690
 #, no-c-format
 msgid "<"
 msgstr "<"
 
-#. i18n: file ./servicesdialog.ui line 616
-#: rc.cpp:286 servicesdialog.cpp:687
+#. i18n: file ./servicesdialog.ui line 630
+#: rc.cpp:286 servicesdialog.cpp:692
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Niet-actieve diensten:"
 
 #. i18n: file ./softwaredialog.ui line 17
-#: rc.cpp:607 softwaredialog.cpp:768 start.cpp:76 start.cpp:117
+#: rc.cpp:610 softwaredialog.cpp:768 start.cpp:76 start.cpp:117
 #, no-c-format
 msgid "Software"
 msgstr "Software"
 
 #. i18n: file ./softwaredialog.ui line 48
-#: rc.cpp:610 softwaredialog.cpp:770
+#: rc.cpp:613 softwaredialog.cpp:770
 #, no-c-format
 msgid "Show upgradable packages"
 msgstr "Toon upgradable packages"
 
 #. i18n: file ./softwaredialog.ui line 111
-#: rc.cpp:613 software.cpp:110 softwaredialog.cpp:771
+#: rc.cpp:616 software.cpp:110 softwaredialog.cpp:771
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Er zijn geen warschuwingen."
 
 #. i18n: file ./softwaredialog.ui line 133
-#: rc.cpp:616 softwaredialog.cpp:630 softwaredialog.cpp:772
+#: rc.cpp:619 softwaredialog.cpp:630 softwaredialog.cpp:772
 #, no-c-format
 msgid "Name"
 msgstr "Naam"
 
 #. i18n: file ./softwaredialog.ui line 144
-#: rc.cpp:619 softwaredialog.cpp:631 softwaredialog.cpp:773
+#: rc.cpp:622 softwaredialog.cpp:631 softwaredialog.cpp:773
 #, no-c-format
 msgid "Installed Version"
 msgstr "G&#239;nstallerde versie"
 
 #. i18n: file ./softwaredialog.ui line 155
-#: rc.cpp:622 softwaredialog.cpp:632 softwaredialog.cpp:774
+#: rc.cpp:625 softwaredialog.cpp:632 softwaredialog.cpp:774
 #, no-c-format
 msgid "Latest Version"
 msgstr "Nieuwste versie"
 
 #. i18n: file ./softwaredialog.ui line 233
-#: rc.cpp:625 softwaredialog.cpp:775
+#: rc.cpp:628 softwaredialog.cpp:775
 #, no-c-format
 msgid "Clea&n"
 msgstr "Schoo&nmaken"
 
 #. i18n: file ./softwaredialog.ui line 278
-#: rc.cpp:631 softwaredialog.cpp:777
+#: rc.cpp:634 softwaredialog.cpp:777
 #, no-c-format
 msgid "D&ownload"
 msgstr "D&ownload"
 
 #. i18n: file ./softwaredialog.ui line 322
-#: rc.cpp:640 softwaredialog.cpp:780
+#: rc.cpp:643 softwaredialog.cpp:780
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
 #. i18n: file ./softwaredialog.ui line 364
-#: rc.cpp:643 softwaredialog.cpp:781
+#: rc.cpp:646 softwaredialog.cpp:781
 #, no-c-format
 msgid "Upgr&ade"
 msgstr "Upgr&ade"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:741 startdialog.cpp:3499
+#: rc.cpp:744 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Control Center"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:744 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:747 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr "Menu"
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:747 startdialog.cpp:3501
+#: rc.cpp:750 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1462,28 +1462,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:752 rc.cpp:755 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:755 rc.cpp:758 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr "sidux handleiding"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:759 rc.cpp:762 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:762 rc.cpp:765 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr "sidux Homepage"
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:769 rc.cpp:772 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:772 rc.cpp:775 startdialog.cpp:3511 startdialog.cpp:3512
 #, no-c-format
 msgid "About siduxcc"
 msgstr "Over siduxcc"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:776 rc.cpp:779 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:779 rc.cpp:782 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1491,14 +1491,14 @@ msgstr "Sluiten"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:782 rc.cpp:785 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:785 rc.cpp:788 startdialog.cpp:3516 startdialog.cpp:3517
 #, no-c-format
 msgid "About KDE"
 msgstr "Over KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:788 rc.cpp:791 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:791 rc.cpp:794 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr "taal"
@@ -1540,17 +1540,134 @@ msgstr ""
 "SSH is een free/gratis impementatie van het secure shell protocol zoals "
 "gedefinieerd door de IETF secsh working group"
 
-#: services.cpp:191 services.cpp:196
+#: services.cpp:192 services.cpp:197
 msgid "Status: %1"
 msgstr "Status: %1"
 
-#: services.cpp:191
+#: services.cpp:192
 msgid "not running..."
 msgstr "niet actief"
 
-#: services.cpp:196
+#: services.cpp:197
 msgid "running..."
 msgstr "actief"
+
+#: services.cpp:275
+msgid ""
+"Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
+"management on your system."
+msgstr ""
+
+#: services.cpp:277
+msgid "Cron is a time-based scheduling service."
+msgstr ""
+
+#: services.cpp:279
+msgid ""
+"gpm means general purpose mouse and is the mouse support for linux in the "
+"console."
+msgstr ""
+
+#: services.cpp:281
+msgid ""
+"HAL provides an abstract view on hardware. This abstraction layer is simply "
+"an interface that makes it possible to add support for new devices and new "
+"ways of connecting devices to the computer, without modifying every "
+"application that uses the device."
+msgstr ""
+
+#: services.cpp:283
+#, fuzzy
+msgid ""
+"fplugd is a daemon which will automatically configure your ethernet device "
+"when a cable is plugged in and automatically unconfigure it if the cable is "
+"pulled. This is useful on laptops with onboard network adapters, since it "
+"will only configure the interface when a cable is really connected."
+msgstr ""
+"<b>allow-hotplug</b>: Deze optie is zinvol met <b>ifplugd</b>/n, dat is een "
+"daemon waarmee automatisch configuraties voor de ethernet device vastgelegd "
+"worden als een kabelverbinding bestaat. Hiermee wordt het tevens automatisch "
+"platgelegd als geen kabelverbinding actief is./n Dat is handig voor laptops "
+"met onboard network adapters. De configuratie van de interface wordt alleen "
+"uitgevoerd als er een kabelverbinding aanwezig is."
+
+#: services.cpp:285
+msgid ""
+"IrDA (Infrared Data Association) is an industry standard for infrared "
+"wireless communication. Most laptops sold today are equipped with an IrDA "
+"compliant infrared transceiver, which enables you to communicate with "
+"devices such as printers, modems, fax, LAN, and other laptops."
+msgstr ""
+
+#: services.cpp:287
+msgid ""
+"klogd is a system daemon which intercepts and logs Linux kernel messages."
+msgstr ""
+
+#: services.cpp:289
+msgid ""
+"Rsync is a command line utility traditionally used in synchronizing files "
+"between two computers, but rsync can also be used as an effective backup "
+"tool. In daemon mode, rsync listens to the default TCP port of 873, serving "
+"files in the native rsync protocol. rsync can also be used to synchronize "
+"local directories, or via a remote shell such as RSH or SSH."
+msgstr ""
+
+#: services.cpp:291
+msgid ""
+"Sysklogd provides two system utilities which provide support for system "
+"logging and kernel message trapping. Support of both internet and unix "
+"domain sockets enables this utility package to support both local and remote "
+"logging."
+msgstr ""
+
+#: services.cpp:293
+msgid "Linux Video Disk Recorder (vdr)"
+msgstr ""
+
+#: services.cpp:295
+msgid ""
+"vdradmin-am provides a webinterface for managing the Linux Video Disk "
+"Recorder (vdr)"
+msgstr ""
+
+#: services.cpp:297
+msgid "Enables Universal interface for wireless communication"
+msgstr ""
+
+#: services.cpp:299
+#, fuzzy
+msgid ""
+"The Common UNIX Printing System (or CUPS(tm)) is a printing system. It "
+"supports the Internet Printing Protocol (IPP), and has its own filtering "
+"driver model for handling various document types."
+msgstr ""
+"Het Common UNIX Printing System (CUPS) is een afdruk-systeem en de vervanger "
+"van lpd en anderen."
+
+#: services.cpp:301
+msgid ""
+"Irqbalance is a Linux daemon that distributes interrupts over the processors "
+"and cores you have in your computer system. The design goal of irqbalance is "
+"to do find a balance between power savings and optimal performance."
+msgstr ""
+
+#: services.cpp:303
+msgid "Isndutils is only for use with an internal ISDN adapter."
+msgstr ""
+
+#: services.cpp:305
+msgid ""
+"LIRC is a package that allows you to decode and send infra-red signals of "
+"many (but not all) commonly used remote controls."
+msgstr ""
+
+#: services.cpp:307
+msgid ""
+"VirtualBox is an application installed on an existing host operating system; "
+"within this application, additional operating systems can be loaded and run, "
+"each with its own virtual environment."
+msgstr ""
 
 #: software.cpp:85
 msgid "Apt-show-versions is missing!"
