@@ -136,7 +136,7 @@ function duWarningsDe()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
 	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
-	grep -A 1 Warning $TMP
+	grep -A 1 Warnung $TMP
 	rm -f $TMP
 }
 

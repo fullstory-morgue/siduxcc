@@ -5,8 +5,9 @@ siduxcc (0.9.25) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * kde: services: descriptions added  
+  * hermes: duWarningsDe fixed 
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 12 Mar 2008 18:29:46 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 13 Mar 2008 00:54:32 +0100
 
 siduxcc (0.9.24) unstable; urgency=low
 
