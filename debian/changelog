@@ -6,7 +6,10 @@ siduxcc (0.9.26) UNRELEASED; urgency=low
   [ Bernard Gray ]
   * begin work on a new hermes upgrade-ok icon 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Thu, 13 Mar 2008 15:24:58 +1100
+  [ Fabian Wuertz ]
+  * translation: de: hermes: updated 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 13 Mar 2008 09:02:40 +0100
 
 siduxcc (0.9.25) unstable; urgency=low
 
