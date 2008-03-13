@@ -1,8 +1,12 @@
 siduxcc (0.9.26) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 13 Mar 2008 01:16:30 +0100
+  [ Bernard Gray ]
+  * begin work on a new hermes upgrade-ok icon 
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Thu, 13 Mar 2008 15:24:58 +1100
 
 siduxcc (0.9.25) unstable; urgency=low
 
