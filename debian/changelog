@@ -13,8 +13,9 @@ siduxcc (0.9.26) UNRELEASED; urgency=low
   * add new upgrade-warning candidate icon
   * tweak upgrade-ok candidate icon
   * add another upgrade-ok and warning candidate 
+  * make sidux-warning5 bg grayscale to enhance warning effect 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 01:03:32 +1100
+ -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 01:04:59 +1100
 
 siduxcc (0.9.25) unstable; urgency=low
 
