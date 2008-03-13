@@ -9,7 +9,11 @@ siduxcc (0.9.26) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * translation: de: hermes: updated 
 
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 13 Mar 2008 09:02:40 +0100
+  [ Bernard Gray ]
+  * add new upgrade-warning candidate icon
+  * tweak upgrade-ok candidate icon
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 00:51:44 +1100
 
 siduxcc (0.9.25) unstable; urgency=low
 
