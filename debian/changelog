@@ -1,19 +1,14 @@
-siduxcc (0.9.26) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.9.26) unstable; urgency=low
 
   [ Bernard Gray ]
   * begin work on a new hermes upgrade-ok icon 
-
-  [ Fabian Wuertz ]
-  * translation: de: hermes: updated 
-
-  [ Bernard Gray ]
   * add new upgrade-warning candidate icon
   * tweak upgrade-ok candidate icon
   * add another upgrade-ok and warning candidate 
   * make sidux-warning5 bg grayscale to enhance warning effect 
+
+  [ Fabian Wuertz ]
+  * translation: de: hermes: updated 
 
  -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 01:04:59 +1100
 
