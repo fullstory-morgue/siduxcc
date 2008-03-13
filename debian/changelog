@@ -12,8 +12,9 @@ siduxcc (0.9.26) UNRELEASED; urgency=low
   [ Bernard Gray ]
   * add new upgrade-warning candidate icon
   * tweak upgrade-ok candidate icon
+  * add another upgrade-ok and warning candidate 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 00:51:44 +1100
+ -- Bernard Gray <bernard.gray@gmail.com>  Fri, 14 Mar 2008 01:03:32 +1100
 
 siduxcc (0.9.25) unstable; urgency=low
 
