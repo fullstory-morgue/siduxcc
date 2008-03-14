@@ -62,7 +62,7 @@ void hermes::getNews()
 	QStringList list = QStringList::split( "\n", this->shell->getBuffer() );
 	QStringList title = list.grep( "<title>" );
 	QStringList link  = list.grep( "<link>" );
-	title = title.gres( "<title>"  , "" ).gres( "</title>" , "" );
+	title = title.gres( "<title>"  , "" ).gres( "</title>" , "" ).gres( "&amp;", "&");
 	link  = link.gres(  "<link>"   , "" ).gres(  "</link>"  , "" );
 	for(uint i = 0; i < title.count(); i++ )
 		if( title[i].contains( "Warning", TRUE )+title[i].contains( "Warnung", TRUE ) > 0)

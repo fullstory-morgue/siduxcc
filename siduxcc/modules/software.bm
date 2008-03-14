@@ -154,7 +154,6 @@ function getNewsDe()
 	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 title $TMP | grep -B 1 link
 	rm -f $TMP
-	echo "Warning: Hallo Welt"
 }
 
 function dlgDuWarnings()
