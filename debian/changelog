@@ -8,8 +8,9 @@ siduxcc (0.9.27) UNRELEASED; urgency=low
   * kde: software: tooltips added
   * kde: network: qwhatsthis added
   * icons: hermes icons updated
+  * hermes: legend updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 14 Mar 2008 23:17:16 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 14 Mar 2008 23:23:08 +0100
 
 siduxcc (0.9.26) unstable; urgency=low
 
