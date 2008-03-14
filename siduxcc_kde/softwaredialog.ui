@@ -230,10 +230,19 @@
                             </font>
                         </property>
                         <property name="text">
-                            <string>Clea&amp;n</string>
+                            <string>C&amp;lean</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+N</string>
+                            <string>Alt+L</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>clean clears out the local repository 
+of retrieved package files. It removes 
+everything but the lock file from 
+/var/cache/apt/archives/ and 
+/var/cache/apt/archives/partial/.
+
+Command: apt-get clean</string>
                         </property>
                     </widget>
                     <widget class="QLabel" row="2" column="4">
@@ -280,6 +289,12 @@
                         <property name="accel">
                             <string>Alt+O</string>
                         </property>
+                        <property name="toolTip" stdset="0">
+                            <string>package files are only retrieved, not
+unpacked or installed.
+
+Command: apt-get -d dist-upgrade</string>
+                        </property>
                     </widget>
                     <widget class="QLabel" row="2" column="6">
                         <property name="name">
@@ -320,6 +335,14 @@
                         </property>
                         <property name="accel">
                             <string>Alt+U</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>update is used to resynchronize the package 
+index files from their sources. The indexes 
+of available packages are fetched from the 
+location(s) specified in /etc/apt/sources.list.
+
+Command: apt-get update</string>
                         </property>
                     </widget>
                     <widget class="QLabel" row="2" column="8">

@@ -35,9 +35,10 @@ class hermes : public hermesBase
 	public:
 		hermes(QWidget* parent = 0, const char* name = 0);
 		void getPackages();
-		void getWarnings();
+		void getNews();
 		void getKernels();
-		QStringList link;
+		QStringList newslink;
+		QStringList warninglink;
 		virtual void init(int i);
 		// console
 		ExtTerminalInterface *terminal()
@@ -53,7 +54,9 @@ class hermes : public hermesBase
 		virtual void tabChanged();
 		virtual void update();
 		virtual void terminateConsole();
-		virtual void openLink(int);
+		virtual void showWarning(int);
+		virtual void showNews(int);
+		virtual void siduxcc();
 
 	protected slots:
 		void loadKonsole();

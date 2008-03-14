@@ -47,7 +47,7 @@ function kernelType()
 
 function stableKernel()
 {
-	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-2.6-sidux 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
 }
 
 

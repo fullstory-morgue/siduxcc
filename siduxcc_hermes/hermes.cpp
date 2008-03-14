@@ -37,7 +37,7 @@ hermes::hermes(QWidget* parent, const char* name )
 
 	this->shell = new Process();
 
-	getWarnings();
+	getNews();
 	getPackages();
 	getKernels();
 
@@ -51,29 +51,32 @@ void hermes::init(int i)
 	tabWidget->setCurrentPage(i);
 }
 
-void hermes::getWarnings()
+void hermes::getNews()
 {
 	if(i18n("en") == "de")
-		this->shell->setCommand("siduxcc software duWarningsDe");
+		this->shell->setCommand("siduxcc software getNewsDe");
 	else
-		this->shell->setCommand("siduxcc software duWarningsEn");
+		this->shell->setCommand("siduxcc software getNewsEn");
 	this->shell->start(true);
 
-	if( this->shell->getBuffer() == "" )
-		warningtextLabel->setText(i18n( "No dist-upgrade warnings.") );
-	else
-	{
-		QStringList list = QStringList::split( "\n", this->shell->getBuffer() );
-		QStringList title = list.grep( "title" );
-		link  = list.grep( "link" );
-		title = title.gres( "<title>"  , "" );
-		title = title.gres( "</title>" , "" );
-		title = title.gres( "Warning: ", "" );
-		link  = link.gres(  "<link>"   , "" );
-		link  = link.gres(  "</link>"  , "" );
-		for ( QStringList::Iterator it = title.begin(); it != title.end(); ++it )
-			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"), *it);
-	}
+	QStringList list = QStringList::split( "\n", this->shell->getBuffer() );
+	QStringList title = list.grep( "<title>" );
+	QStringList link  = list.grep( "<link>" );
+	title = title.gres( "<title>"  , "" ).gres( "</title>" , "" );
+	link  = link.gres(  "<link>"   , "" ).gres(  "</link>"  , "" );
+	for(uint i = 0; i < title.count(); i++ )
+		if( title[i].contains( "Warning", TRUE )+title[i].contains( "Warnung", TRUE ) > 0)
+		{
+			title[i] = title[i].replace( "Warning: ", "" ).replace( "Warnung: ", "" );
+			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"),title[i]);
+			warningtextLabel->setText(i18n( "Double click to the item to view the full warning.") );
+			warninglink.append( link[i] );
+		}
+		else
+		{
+			newsListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/spacer.png"), title[i]);
+			newslink.append( link[i] );
+		}
 }
 
 void hermes::getPackages()
@@ -100,36 +103,20 @@ void hermes::getPackages()
 void hermes::getKernels()
 {
 
-	/*
-	QPixmap kernelImg("/usr/share/siduxcc/icons/spacer.png");
-
-	// get currentKernel
-	this->shell->setCommand("uname -r");
+	// show the current kernel
+	this->shell->setCommand("siduxcc kernel currentKernel");
 	this->shell->start(true);
-	QString currentKernel =  this->shell->getBuffer().stripWhiteSpace();
+	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace() );
 
-	// get newestKernel
-	this->shell->setCommand("siduxcc kernel newestKernel");
+	// show the newest stable kernel
+	this->shell->setCommand("siduxcc kernel stableKernel");
 	this->shell->start(true);
-	QString newestKernel =  this->shell->getBuffer().stripWhiteSpace();
-
-	if(newestKernel != "" and newestKernel != currentKernel)
-		kernelListBox->insertItem(kernelImg, newestKernel);
-
-	// get experimentalKernel
-	this->shell->setCommand("siduxcc kernel experimentalKernel");
-	this->shell->start(true);
-	QString experimentalKernel =  this->shell->getBuffer().stripWhiteSpace();
-
-	if(experimentalKernel != "" and experimentalKernel != currentKernel)
-		kernelListBox->insertItem(kernelImg, experimentalKernel+" ("+i18n("experimental")+")");
-
-	*/
+	stableKernel->setText( this->shell->getBuffer().stripWhiteSpace()  );
 }
 
 void hermes::tabChanged()
 {
-	if(tabWidget->currentPageIndex() == 1)
+	if(tabWidget->currentPageIndex() == 2)
 	{
 		updatePushButton->setHidden(FALSE);
 		reloadPushButton->setHidden(FALSE);
@@ -141,9 +128,14 @@ void hermes::tabChanged()
 	}
 }
 
-void hermes::openLink(int i)
+void hermes::showWarning(int i)
 {
-	kapp->invokeBrowser( link[i] );
+	kapp->invokeBrowser( warninglink[i] );
+}
+
+void hermes::showNews(int i)
+{
+	kapp->invokeBrowser( newslink[i] );
 }
 
 void hermes::update()
@@ -159,6 +151,13 @@ void hermes::update()
 	terminal()->startProgram( "siduxcc", run );
 
 	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
+}
+
+
+void hermes::siduxcc()
+{
+	this->shell->setCommand("su-to-root -X -c /usr/bin/siduxcc-kde&");
+	this->shell->start(true);
 }
 
 void hermes::terminateConsole()

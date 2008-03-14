@@ -45,6 +45,7 @@ class SysTray : public KSystemTray
 		void upgradablePackages();
 		void showLegend();
 		void warnings();
+		void news();
 		void showHermes();
 	
 	private:

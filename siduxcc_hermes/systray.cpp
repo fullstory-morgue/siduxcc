@@ -40,9 +40,10 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	QToolTip::add ( this,i18n("siduxcc-hermes"));
 
 	menu = contextMenu();
-	menu->insertItem ( SmallIcon ( "siduxcc" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
+	menu->insertItem ( SmallIcon ( "info" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
 	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
 	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
+	menu->insertItem ( SmallIcon ( "info" ), i18n("sidux news"), this, SLOT ( news() ) );
 	menu->insertItem ( SmallIcon ( "siduxcc_warning" ), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
@@ -83,10 +84,16 @@ void SysTray::warnings()
 	dialog->show();
 }
 
+void SysTray::news()
+{
+	dialog->init(1);
+	dialog->show();
+}
+
 
 void SysTray::upgradablePackages()
 {
-	dialog->init(1);
+	dialog->init(2);
 	dialog->show();
 }
 

@@ -45,6 +45,7 @@
 
 
 #include <qmessagebox.h>
+#include <qwhatsthis.h>
 
 
 network::network(QWidget *parent, const char *name, const QStringList &)
@@ -440,19 +441,12 @@ QString network::toValidIP(QString ip)
 
 void network::classHelp()
 {
-	//KMessageBox::information(this, i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the computer starts"));
-
-	QMessageBox::information( this, "class",
-	 i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the computer starts") );
-
+	QWhatsThis::display ( i18n("<b>allow hotplug</b>: The network will be activated  when a cable is plugged in and it will be deactivated if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.<br><br><b>auto</b>: The networkcard will be activated, when the computer starts"), QCursor::pos(), this );
 }
 
 void network::methodHelp()
 {
-	QMessageBox::information( this, "Application name",
-	"Unable to find the user preferences file.\n"
-	"The factory default will be used instead." );
-	//KMessageBox::information(this, i18n("..."));
+	//QWhatsThis::display ( "test", QCursor::pos(), this );
 }
 
 
