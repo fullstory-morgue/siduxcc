@@ -1,8 +1,13 @@
 siduxcc (0.9.28) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 15 Mar 2008 02:46:18 +0100
+  [ Joaquim Boura ]
+  * fr translations of siduxcckde actualized. thks to Alpha Diakite (alphad) &
+    sidux.fr team
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sat, 15 Mar 2008 18:30:53 +0100
 
 siduxcc (0.9.27) unstable; urgency=low
 
