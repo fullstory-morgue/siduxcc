@@ -1,9 +1,5 @@
-siduxcc (0.9.27) UNRELEASED; urgency=low
+siduxcc (0.9.27) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * hermes: new and kernel tab added
   * kde: software: tooltips added
   * kde: network: qwhatsthis added
