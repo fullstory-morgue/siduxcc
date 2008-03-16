@@ -1,8 +1,12 @@
 siduxcc (0.9.29) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 16 Mar 2008 15:17:20 +0100
+  [ Fabian Wuertz ]
+  * kde: kernel: update function updated 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 16 Mar 2008 17:25:57 +0100
 
 siduxcc (0.9.28) unstable; urgency=low
 
