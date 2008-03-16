@@ -83,7 +83,7 @@ installKernel()
 	case $1 in
 			stable)
 				apt-get update
-				apt-get install -s linux-image-$tmp linux-headers-$tmp
+				apt-get install linux-image-$tmp linux-headers-$tmp
 				;;
 			experimental) echo "na";;
 	esac
