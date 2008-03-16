@@ -538,7 +538,7 @@ msgid ""
 msgstr ""
 "Atl2 est le pilote de base Linux  pour Atheros (R), L2 Fast Ethernet Adapter. "
 "L'adaptateur Atheros L2 (R) Fast Ethernet  est présent dans quelques "
-"portable moin cher d'Asus, tels que les PC Asus Eee".
+"portable moin cher d'Asus, tels que les PC Asus Eee."
 
 #: kernel.cpp:111
 msgid ""
@@ -590,7 +590,7 @@ msgid ""
 "method."
 msgstr ""
 "LZMA est un algorithme de compression, basé sur la fameuse compression "
-"Lempel Ziv Méthode".
+"Lempel Ziv Méthode."
 
 #: kernel.cpp:123
 msgid ""
