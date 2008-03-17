@@ -1,3 +1,9 @@
+siduxcc (0.9.31) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 17 Mar 2008 02:44:42 +0100
+
 siduxcc (0.9.30) unstable; urgency=low
 
   * cli: kernel: install function fixed
