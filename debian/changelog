@@ -1,9 +1,5 @@
-siduxcc (0.9.30) UNRELEASED; urgency=low
+siduxcc (0.9.30) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * cli: kernel: install function fixed
 
  -- Fabian Wuertz <xadras@sidux.com>  Sun, 16 Mar 2008 23:58:13 +0100
