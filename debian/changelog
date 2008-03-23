@@ -11,8 +11,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: network: tab problem solved
   * kde: network: networkcard reload problem solved
   * kde: services: type 
+  * kde: services: descriptions updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 23:12:42 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 23:20:41 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 
