@@ -6,8 +6,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * debian: konsole dependency added (solves the problems with the icewm)
   * hermes: descriptions updated
+  * translation: de updated 
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 19:21:45 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 21:41:19 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 

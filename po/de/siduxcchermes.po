@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 20:45+0100\n"
-"PO-Revision-Date: 2008-03-14 20:53+0100\n"
+"POT-Creation-Date: 2008-03-23 19:24+0100\n"
+"PO-Revision-Date: 2008-03-23 21:35+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,148 +36,181 @@ msgstr "de"
 msgid "Double click to the item to view the full warning."
 msgstr "Doppelklick auf die Meldungum die vollständige Warnung zu lesen."
 
-#. i18n: file ./hermesbase.ui line 110
-#: hermesbase.cpp:267 hermesbase.cpp:384 rc.cpp:36
+#. i18n: file ./hermesbase.ui line 188
+#: hermesbase.cpp:288 hermesbase.cpp:401 rc.cpp:68
 #, no-c-format
 msgid "Name"
 msgstr "Name"
 
-#. i18n: file ./hermesbase.ui line 121
-#: hermesbase.cpp:268 hermesbase.cpp:385 rc.cpp:39
+#. i18n: file ./hermesbase.ui line 199
+#: hermesbase.cpp:289 hermesbase.cpp:402 rc.cpp:71
 #, no-c-format
 msgid "Installed Version"
 msgstr "Installierte Version"
 
-#. i18n: file ./hermesbase.ui line 132
-#: hermesbase.cpp:269 hermesbase.cpp:386 rc.cpp:42
+#. i18n: file ./hermesbase.ui line 210
+#: hermesbase.cpp:290 hermesbase.cpp:403 rc.cpp:74
 #, no-c-format
 msgid "Latest Version"
 msgstr "Neuste Version:"
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:379 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:380 rc.cpp:18 systray.cpp:40
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
 
-#. i18n: file ./legendbase.ui line 141
-#. i18n: file ./hermesbase.ui line 65
-#: hermesbase.cpp:380 legendbase.cpp:449 rc.cpp:15 rc.cpp:24
-#, no-c-format
-msgid "No dist-upgrade warnings."
-msgstr "Keine dist-upgrade Warnungen."
-
-#. i18n: file ./hermesbase.ui line 49
+#. i18n: file ./hermesbase.ui line 62
 #: hermesbase.cpp:381 rc.cpp:21
-#, no-c-format
-msgid "&Warnings"
-msgstr "Warnungen"
-
-#. i18n: file ./hermesbase.ui line 91
-#: hermesbase.cpp:382 rc.cpp:30
-#, no-c-format
-msgid "Double click to the item to view the full message."
-msgstr "Doppelklick auf die Meldungung um die vollständige Nachricht zu lesen."
-
-#. i18n: file ./hermesbase.ui line 75
-#: hermesbase.cpp:383 rc.cpp:27
-#, no-c-format
-msgid "&News"
-msgstr "News"
-
-#. i18n: file ./hermesbase.ui line 101
-#: hermesbase.cpp:387 rc.cpp:33
-#, no-c-format
-msgid "Upgradable pac&kages"
-msgstr "Neue Pakete"
-
-#. i18n: file ./hermesbase.ui line 205
-#: hermesbase.cpp:389 rc.cpp:49
-#, no-c-format
-msgid "Current kernel:"
-msgstr "Aktueller Kernel:"
-
-#. i18n: file ./hermesbase.ui line 221
-#. i18n: file ./hermesbase.ui line 253
-#: hermesbase.cpp:390 hermesbase.cpp:392 rc.cpp:52 rc.cpp:58
-#, no-c-format
-msgid "---"
-msgstr "---"
-
-#. i18n: file ./hermesbase.ui line 237
-#: hermesbase.cpp:391 rc.cpp:55
-#, no-c-format
-msgid "Newest stable kernel:"
-msgstr "Neuster stabiler Kernel:"
-
-#. i18n: file ./hermesbase.ui line 291
-#: hermesbase.cpp:395 rc.cpp:63
-#, no-c-format
-msgid "To install a new kernel use the sidux Control Center."
-msgstr "Neue Kernel können im sidux Kontrollzentrum installiert werden."
-
-#. i18n: file ./hermesbase.ui line 164
-#: hermesbase.cpp:396 rc.cpp:45
-#, no-c-format
-msgid "Kernel"
-msgstr "Kernel"
-
-#. i18n: file ./hermesbase.ui line 316
-#: hermesbase.cpp:397 rc.cpp:66
-#, no-c-format
-msgid "&close"
-msgstr "schließen"
-
-#. i18n: file ./hermesbase.ui line 319
-#: hermesbase.cpp:398 rc.cpp:69
-#, no-c-format
-msgid "Alt+C"
-msgstr "Alt+C"
-
-#. i18n: file ./hermesbase.ui line 344
-#: hermesbase.cpp:399 rc.cpp:72
-#, no-c-format
-msgid "&update (apt-get)"
-msgstr "update (apt-get)"
-
-#. i18n: file ./hermesbase.ui line 347
-#: hermesbase.cpp:400 rc.cpp:75
-#, no-c-format
-msgid "Alt+U"
-msgstr "Alt+U"
-
-#. i18n: file ./hermesbase.ui line 355
-#: hermesbase.cpp:401 rc.cpp:78
 #, no-c-format
 msgid "relo&ad"
 msgstr "aktualisieren"
 
-#. i18n: file ./hermesbase.ui line 358
-#: hermesbase.cpp:402 rc.cpp:81
+#. i18n: file ./hermesbase.ui line 65
+#: hermesbase.cpp:382 rc.cpp:24
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
+#. i18n: file ./hermesbase.ui line 71
+#: hermesbase.cpp:383 rc.cpp:27
+#, no-c-format
+msgid ""
+"Reload the current package list of \n"
+"siduxcc-hermes. Use this option if \n"
+"you have updated the package list \n"
+"without siduxcc-hermes."
+msgstr ""
+"Gleicht die oben stehende Liste mit \n"
+"dem System ab. Dieser Befehl sollte \n"
+"dann durchgeführt, falls ein Update \n"
+"der Paketlisten ohne siduxcc-hermes \n"
+"durchgeführt wurde."
+
+#. i18n: file ./hermesbase.ui line 79
+#: hermesbase.cpp:387 rc.cpp:33
+#, no-c-format
+msgid "&update (apt-get)"
+msgstr "update (apt-get)"
+
+#. i18n: file ./hermesbase.ui line 82
+#: hermesbase.cpp:388 rc.cpp:36
+#, no-c-format
+msgid "Alt+U"
+msgstr "Alt+U"
+
+#. i18n: file ./hermesbase.ui line 90
+#: hermesbase.cpp:389 rc.cpp:39
+#, no-c-format
+msgid ""
+"update is used to resynchronize the package \n"
+"index files from their sources. The indexes \n"
+"of available packages are fetched from the \n"
+"location(s) specified in /etc/apt/sources.list.\n"
+"\n"
+"Command: apt-get update"
+msgstr ""
+"synchronisiert die Übersicht der \n"
+"verfügbaren Pakete mit den \n"
+"Serverlisten aus dem Internet.\n"
+"\n"
+"Befehl: apt-get update"
+
+#. i18n: file ./hermesbase.ui line 98
+#: hermesbase.cpp:395 rc.cpp:47
+#, no-c-format
+msgid "&close"
+msgstr "schließen"
+
+#. i18n: file ./hermesbase.ui line 101
+#: hermesbase.cpp:396 rc.cpp:50
+#, no-c-format
+msgid "Alt+C"
+msgstr "Alt+C"
+
+#. i18n: file ./legendbase.ui line 103
+#. i18n: file ./hermesbase.ui line 143
+#: hermesbase.cpp:397 legendbase.cpp:438 rc.cpp:15 rc.cpp:56
+#, no-c-format
+msgid "No dist-upgrade warnings."
+msgstr "Keine dist-upgrade Warnungen."
+
+#. i18n: file ./hermesbase.ui line 127
+#: hermesbase.cpp:398 rc.cpp:53
+#, no-c-format
+msgid "&Warnings"
+msgstr "Warnungen"
+
+#. i18n: file ./hermesbase.ui line 169
+#: hermesbase.cpp:399 rc.cpp:62
+#, no-c-format
+msgid "Double click to the item to view the full message."
+msgstr "Doppelklick auf die Meldungung um die vollständige Nachricht zu lesen."
+
+#. i18n: file ./hermesbase.ui line 153
+#: hermesbase.cpp:400 rc.cpp:59
+#, no-c-format
+msgid "&News"
+msgstr "News"
+
+#. i18n: file ./hermesbase.ui line 179
+#: hermesbase.cpp:404 rc.cpp:65
+#, no-c-format
+msgid "Upgrada&ble packages"
+msgstr "Neue Pakete"
+
+#. i18n: file ./hermesbase.ui line 283
+#: hermesbase.cpp:406 rc.cpp:81
+#, no-c-format
+msgid "Current kernel:"
+msgstr "Aktueller Kernel:"
+
+#. i18n: file ./hermesbase.ui line 299
+#. i18n: file ./hermesbase.ui line 331
+#: hermesbase.cpp:407 hermesbase.cpp:409 rc.cpp:84 rc.cpp:90
+#, no-c-format
+msgid "---"
+msgstr "---"
+
+#. i18n: file ./hermesbase.ui line 315
+#: hermesbase.cpp:408 rc.cpp:87
+#, no-c-format
+msgid "Newest stable kernel:"
+msgstr "Neuster stabiler Kernel:"
+
+#. i18n: file ./hermesbase.ui line 369
+#: hermesbase.cpp:412 rc.cpp:95
+#, no-c-format
+msgid "To install a new kernel use the sidux Control Center."
+msgstr "Neue Kernel können im sidux Kontrollzentrum installiert werden."
+
+#. i18n: file ./hermesbase.ui line 242
+#: hermesbase.cpp:413 rc.cpp:77
+#, no-c-format
+msgid "Kernel"
+msgstr "Kernel"
+
 #. i18n: file ./legendbase.ui line 16
-#: legendbase.cpp:445 rc.cpp:3
+#: legendbase.cpp:434 rc.cpp:3
 #, no-c-format
 msgid "legendbase"
 msgstr "Legende"
 
 #. i18n: file ./legendbase.ui line 34
-#: legendbase.cpp:446 rc.cpp:6
+#: legendbase.cpp:435 rc.cpp:6
 #, no-c-format
 msgid "Legend"
 msgstr "Legende"
 
 #. i18n: file ./legendbase.ui line 68
-#: legendbase.cpp:447 rc.cpp:9
+#: legendbase.cpp:436 rc.cpp:9
 #, no-c-format
-msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid ""
+"There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 87
-#: legendbase.cpp:448 rc.cpp:12
+#: legendbase.cpp:437 rc.cpp:12
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Keine Verbindung zu sidux.com"
@@ -221,4 +254,3 @@ msgstr "Legende anzeigen"
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
 msgstr "Über siduxcc-hermes"
-

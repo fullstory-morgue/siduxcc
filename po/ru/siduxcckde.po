@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 20:45+0100\n"
+"POT-Creation-Date: 2008-03-23 21:07+0100\n"
 "PO-Revision-Date: 2007-10-25 22:16+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -126,9 +126,9 @@ msgstr "Alt+X"
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 129
 #. i18n: file ./softwaredialog.ui line 507
-#. i18n: file ./kerneldialog.ui line 132
-#: displaydialog.cpp:2360 kerneldialog.cpp:824 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:729 softwaredialog.cpp:804
+#. i18n: file ./kerneldialog.ui line 126
+#: displaydialog.cpp:2360 kerneldialog.cpp:822 networkdialog.cpp:1954
+#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:723 softwaredialog.cpp:804
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -383,8 +383,10 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 1161
 #. i18n: file ./networkdialog.ui line 641
 #. i18n: file ./networkdialog.ui line 1587
-#: displaydialog.cpp:2412 displaydialog.cpp:2426 networkdialog.cpp:1982
-#: networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191 rc.cpp:398 rc.cpp:519
+#. i18n: file ./kerneldialog.ui line 105
+#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:821
+#: networkdialog.cpp:1982 networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191
+#: rc.cpp:398 rc.cpp:519 rc.cpp:720
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -630,81 +632,62 @@ msgstr "Ядро"
 #. i18n: file ./kerneldialog.ui line 102
 #: kerneldialog.cpp:820 rc.cpp:717
 #, fuzzy, no-c-format
-msgid "ins&tall"
+msgid "i&nstall"
 msgstr "Установка"
 
-#. i18n: file ./kerneldialog.ui line 105
-#: kerneldialog.cpp:821 rc.cpp:720
-#, fuzzy, no-c-format
-msgid "Alt+T"
-msgstr "Alt+Y"
-
-#. i18n: file ./kerneldialog.ui line 108
-#: kerneldialog.cpp:822 rc.cpp:723
-#, no-c-format
-msgid "sdasa asdasdas sdsareeef "
-msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 111
-#: kerneldialog.cpp:823 rc.cpp:726
-#, no-c-format
-msgid "sdasa asdasdas sdsareeef"
-msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 163
-#: kerneldialog.cpp:826 rc.cpp:732
+#. i18n: file ./kerneldialog.ui line 157
+#: kerneldialog.cpp:824 rc.cpp:726
 #, no-c-format
 msgid "Install new kernel"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 171
-#: kerneldialog.cpp:827 rc.cpp:735
+#. i18n: file ./kerneldialog.ui line 165
+#: kerneldialog.cpp:825 rc.cpp:729
 #, no-c-format
 msgid "Remove old kernels"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 179
-#: kerneldialog.cpp:828 rc.cpp:738
+#. i18n: file ./kerneldialog.ui line 173
+#: kerneldialog.cpp:826 rc.cpp:732
 #, no-c-format
 msgid "Install kernel modules"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 264
-#: kerneldialog.cpp:830 rc.cpp:742
+#. i18n: file ./kerneldialog.ui line 258
+#: kerneldialog.cpp:828 rc.cpp:736
 #, no-c-format
 msgid "Current kernel:"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 280
-#: kerneldialog.cpp:831 rc.cpp:745
+#. i18n: file ./kerneldialog.ui line 274
+#: kerneldialog.cpp:829 rc.cpp:739
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 321
-#. i18n: file ./kerneldialog.ui line 337
-#: kerneldialog.cpp:834 kerneldialog.cpp:835 rc.cpp:750 rc.cpp:753
+#. i18n: file ./kerneldialog.ui line 315
+#. i18n: file ./kerneldialog.ui line 331
+#: kerneldialog.cpp:832 kerneldialog.cpp:833 rc.cpp:744 rc.cpp:747
 #, no-c-format
 msgid "---"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 362
-#: kerneldialog.cpp:836 rc.cpp:756
+#. i18n: file ./kerneldialog.ui line 356
+#: kerneldialog.cpp:834 rc.cpp:750
 #, no-c-format
 msgid "Current kernel"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 426
-#: kerneldialog.cpp:838 rc.cpp:760
+#. i18n: file ./kerneldialog.ui line 420
+#: kerneldialog.cpp:836 rc.cpp:754
 #, fuzzy, no-c-format
-msgid "remo&ve"
+msgid "re&move"
 msgstr "удалить"
 
-#. i18n: file ./servicesdialog.ui line 460
-#. i18n: file ./kerneldialog.ui line 429
-#: kerneldialog.cpp:839 rc.cpp:269 rc.cpp:763 servicesdialog.cpp:685
+#. i18n: file ./kerneldialog.ui line 423
+#: kerneldialog.cpp:837 rc.cpp:757
 #, fuzzy, no-c-format
-msgid "Alt+V"
+msgid "Alt+M"
 msgstr "Alt+Y"
 
 #: main.cpp:40
@@ -1342,6 +1325,12 @@ msgstr "Alt+Y"
 msgid "Start ser&vice at Boot"
 msgstr "Добавить Runlevel-Entry (стартовать сервис призагрузке)"
 
+#. i18n: file ./servicesdialog.ui line 460
+#: rc.cpp:269 servicesdialog.cpp:685
+#, fuzzy, no-c-format
+msgid "Alt+V"
+msgstr "Alt+Y"
+
 #. i18n: file ./servicesdialog.ui line 508
 #: rc.cpp:275 servicesdialog.cpp:687
 #, no-c-format
@@ -1462,19 +1451,19 @@ msgid "Upgr&ade"
 msgstr "Обновить"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:767 startdialog.cpp:3499
+#: rc.cpp:761 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "Центр управления sidux"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:770 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:764 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:773 startdialog.cpp:3501
+#: rc.cpp:767 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1484,28 +1473,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:778 rc.cpp:781 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:772 rc.cpp:775 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:785 rc.cpp:788 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:779 rc.cpp:782 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:795 rc.cpp:798 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:789 rc.cpp:792 startdialog.cpp:3511 startdialog.cpp:3512
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "О sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:802 rc.cpp:805 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:796 rc.cpp:799 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1513,14 +1502,14 @@ msgstr "Выход"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:808 rc.cpp:811 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:802 rc.cpp:805 startdialog.cpp:3516 startdialog.cpp:3517
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "О sidux"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:814 rc.cpp:817 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:808 rc.cpp:811 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr ""
@@ -1719,16 +1708,16 @@ msgstr "Вы уверены, что хотите стереть локальны
 msgid "System Info"
 msgstr "Системная информация"
 
-#~ msgid "Configure Networkcards"
-#~ msgstr "Перечень сконфигурированных сетевых адапторов"
+#, fuzzy
+#~ msgid "ins&tall"
+#~ msgstr "Установка"
 
 #, fuzzy
-#~ msgid "Alt+M"
+#~ msgid "Alt+T"
 #~ msgstr "Alt+Y"
 
-#, fuzzy
-#~ msgid "i&nstall"
-#~ msgstr "Установка"
+#~ msgid "Configure Networkcards"
+#~ msgstr "Перечень сконфигурированных сетевых адапторов"
 
 #, fuzzy
 #~ msgid "Artwork"

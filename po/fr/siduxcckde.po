@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-14 20:45+0100\n"
+"POT-Creation-Date: 2008-03-23 21:07+0100\n"
 "PO-Revision-Date: 2008-03-15 18:12+0100\n"
 "Last-Translator: Alpha Diakite (alphad) & sidux.fr team\n"
 "Language-Team: \n"
@@ -126,9 +126,9 @@ msgstr "Alt+X"
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 129
 #. i18n: file ./softwaredialog.ui line 507
-#. i18n: file ./kerneldialog.ui line 132
-#: displaydialog.cpp:2360 kerneldialog.cpp:824 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:729 softwaredialog.cpp:804
+#. i18n: file ./kerneldialog.ui line 126
+#: displaydialog.cpp:2360 kerneldialog.cpp:822 networkdialog.cpp:1954
+#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:723 softwaredialog.cpp:804
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -383,8 +383,10 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 1161
 #. i18n: file ./networkdialog.ui line 641
 #. i18n: file ./networkdialog.ui line 1587
-#: displaydialog.cpp:2412 displaydialog.cpp:2426 networkdialog.cpp:1982
-#: networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191 rc.cpp:398 rc.cpp:519
+#. i18n: file ./kerneldialog.ui line 105
+#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:821
+#: networkdialog.cpp:1982 networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191
+#: rc.cpp:398 rc.cpp:519 rc.cpp:720
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -510,9 +512,9 @@ msgstr ""
 "acer-acpi est un pilote qui permet de contrôler divers aspects matériel de "
 "votre  portable acer utilisant le système de fichiers proc. Il a été "
 "développé initialement pour activer la carte LAN sans fil dans le cadre "
-"d'une version 64 bits de Linux, comme acerhk (la précédente bonne "
-"solution au problème) reposait sur des appels BIOS qui ne sont pas "
-"autorisés à partir d'un système d'exploitation 64 bits."
+"d'une version 64 bits de Linux, comme acerhk (la précédente bonne solution "
+"au problème) reposait sur des appels BIOS qui ne sont pas autorisés à partir "
+"d'un système d'exploitation 64 bits."
 
 #: kernel.cpp:107
 msgid ""
@@ -524,11 +526,11 @@ msgid ""
 "disable wireless hardware"
 msgstr ""
 "Ce pilote donnera accès aux touches spéciales sur des portables Acer "
-"Travelmate série, qui ne sont pas gérés par le pilote de clavier. "
-"Il marche également sur des portables d'autres fabricants "
-"(certains Medion, Fujitsu-Siemens, ...).<br><br>Il y a quelques autres "
-"fonctionnalités connexes (selon le modèle): - contrôlant les voyants "
-"(Mail, Wireless) - activer/désactiver matériel sans fil"
+"Travelmate série, qui ne sont pas gérés par le pilote de clavier. Il marche "
+"également sur des portables d'autres fabricants (certains Medion, Fujitsu-"
+"Siemens, ...).<br><br>Il y a quelques autres fonctionnalités connexes (selon "
+"le modèle): - contrôlant les voyants (Mail, Wireless) - activer/désactiver "
+"matériel sans fil"
 
 #: kernel.cpp:109
 msgid ""
@@ -536,9 +538,9 @@ msgid ""
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
-"Atl2 est le pilote de base Linux  pour Atheros (R), L2 Fast Ethernet Adapter. "
-"L'adaptateur Atheros L2 (R) Fast Ethernet  est présent dans quelques "
-"portable moin cher d'Asus, tels que les PC Asus Eee."
+"Atl2 est le pilote de base Linux  pour Atheros (R), L2 Fast Ethernet "
+"Adapter. L'adaptateur Atheros L2 (R) Fast Ethernet  est présent dans "
+"quelques portable moin cher d'Asus, tels que les PC Asus Eee."
 
 #: kernel.cpp:111
 msgid ""
@@ -550,19 +552,19 @@ msgstr ""
 
 #: kernel.cpp:113
 msgid "This package provides the Driver for a snapshotting filesystem modules."
-msgstr "Ce paquet fournit le pilote pour un système de fichiers snapshotting "
-"modules."
+msgstr ""
+"Ce paquet fournit le pilote pour un système de fichiers snapshotting modules."
 
 #: kernel.cpp:115
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
-msgstr "" 
+msgstr ""
 "Le paquet et131x est également requis afin de rendre l'utilisation de ces "
 "modules possible. Les sources du noyau ou les en-têtes sont tenus de "
-"compiler ces modules.<br><br>Ceci fonctionne avec Agere Systems ET-131x "
-"PCI-E contrôleur Ethernet."
+"compiler ces modules.<br><br>Ceci fonctionne avec Agere Systems ET-131x PCI-"
+"E contrôleur Ethernet."
 
 #: kernel.cpp:117
 msgid ""
@@ -570,8 +572,8 @@ msgid ""
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
-"Le fsam7400 est un module pour le noyau Linux qui fournit un soutien pour "
-"le logiciel RF tuer commutateurs sur le Fujitsu Siemens Amilo M 7400 pc "
+"Le fsam7400 est un module pour le noyau Linux qui fournit un soutien pour le "
+"logiciel RF tuer commutateurs sur le Fujitsu Siemens Amilo M 7400 pc "
 "portable. Ce paquet Fournit le code source des modules fsam7400."
 
 #: kernel.cpp:119
@@ -581,8 +583,9 @@ msgid ""
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
 "Le pilote gpsca vidéo pour linux (v4l) , offre son soutien à des webcams et "
-"des appareils photo numériques basés sur le spca5xx gamme de puces fabriquées ""par SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, semi-Mars, et Pixart "
-"Transvision."
+"des appareils photo numériques basés sur le spca5xx gamme de puces "
+"fabriquées par SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, semi-Mars, "
+"et Pixart Transvision."
 
 #: kernel.cpp:121
 msgid ""
@@ -625,8 +628,8 @@ msgid ""
 "supercedes the qce-ga driver."
 msgstr ""
 "Ce paquet fournit le code source du module de noyau pour quickcam pour "
-"Logitech QuickCam Express webcam et autres webcams. Ce pilote remplace "
-"le pilote qce-ga."
+"Logitech QuickCam Express webcam et autres webcams. Ce pilote remplace le "
+"pilote qce-ga."
 
 #: kernel.cpp:129
 msgid ""
@@ -634,9 +637,10 @@ msgid ""
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
-"Les modules de contrôle du logiciels RF coupe-circuit sur la Averatec 5100P"
-"Et Packard Bell EasyNote E5. Le code peut fonctionner sur d'autres ordinateurs"
-"portables, mais ceux-ci sont les seuls modèles sur lesquels il a été testé."
+"Les modules de contrôle du logiciels RF coupe-circuit sur la Averatec "
+"5100PEt Packard Bell EasyNote E5. Le code peut fonctionner sur d'autres "
+"ordinateursportables, mais ceux-ci sont les seuls modèles sur lesquels il a "
+"été testé."
 
 #: kernel.cpp:131
 msgid ""
@@ -649,15 +653,15 @@ msgid ""
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
 msgstr ""
-"Squashfs est hautement compressé en lecture seule de fichiers pour Linux. "
-"Il utilise la compression zlib pour compresser les fichiers, répertoires et "
-"les inodes. Inodes dans ce système est très compact et tous les blocs sont "
+"Squashfs est hautement compressé en lecture seule de fichiers pour Linux. Il "
+"utilise la compression zlib pour compresser les fichiers, répertoires et les "
+"inodes. Inodes dans ce système est très compact et tous les blocs sont "
 "emballés afin de minimiser les données frais généraux. Les blocs de taille "
 "supérieure à 4K sont supportés, jusqu'à un maximum de 64K.<br><br>Squashfs "
 "est destiné aux grand système de fichiers en lecture seule utilisation, au "
 "lieu de l'utilisation des archives (c'est-à-dire dans les cas où un tar.gz "
-"peut être utilisé), et contraint block device / systèmes de mémoire "
-"(par exemple, systèmes embarqués) si bas overhead est nécessaire."
+"peut être utilisé), et contraint block device / systèmes de mémoire (par "
+"exemple, systèmes embarqués) si bas overhead est nécessaire."
 
 #: kernel.cpp:133 kernel.cpp:135
 msgid ""
@@ -688,81 +692,62 @@ msgstr "Noyau"
 #. i18n: file ./kerneldialog.ui line 102
 #: kerneldialog.cpp:820 rc.cpp:717
 #, fuzzy, no-c-format
-msgid "ins&tall"
+msgid "i&nstall"
 msgstr "Installer"
 
-#. i18n: file ./kerneldialog.ui line 105
-#: kerneldialog.cpp:821 rc.cpp:720
-#, no-c-format
-msgid "Alt+T"
-msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 108
-#: kerneldialog.cpp:822 rc.cpp:723
-#, no-c-format
-msgid "sdasa asdasdas sdsareeef "
-msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 111
-#: kerneldialog.cpp:823 rc.cpp:726
-#, no-c-format
-msgid "sdasa asdasdas sdsareeef"
-msgstr ""
-
-#. i18n: file ./kerneldialog.ui line 163
-#: kerneldialog.cpp:826 rc.cpp:732
+#. i18n: file ./kerneldialog.ui line 157
+#: kerneldialog.cpp:824 rc.cpp:726
 #, no-c-format
 msgid "Install new kernel"
 msgstr "nstaller le nouveau noyau"
 
-#. i18n: file ./kerneldialog.ui line 171
-#: kerneldialog.cpp:827 rc.cpp:735
+#. i18n: file ./kerneldialog.ui line 165
+#: kerneldialog.cpp:825 rc.cpp:729
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "Enlever les anciens noyaux"
 
-#. i18n: file ./kerneldialog.ui line 179
-#: kerneldialog.cpp:828 rc.cpp:738
+#. i18n: file ./kerneldialog.ui line 173
+#: kerneldialog.cpp:826 rc.cpp:732
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "Installer les modules du noyau"
 
-#. i18n: file ./kerneldialog.ui line 264
-#: kerneldialog.cpp:830 rc.cpp:742
+#. i18n: file ./kerneldialog.ui line 258
+#: kerneldialog.cpp:828 rc.cpp:736
 #, no-c-format
 msgid "Current kernel:"
 msgstr "Noyau courant"
 
-#. i18n: file ./kerneldialog.ui line 280
-#: kerneldialog.cpp:831 rc.cpp:745
+#. i18n: file ./kerneldialog.ui line 274
+#: kerneldialog.cpp:829 rc.cpp:739
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr "Dernier noyau stable"
 
-#. i18n: file ./kerneldialog.ui line 321
-#. i18n: file ./kerneldialog.ui line 337
-#: kerneldialog.cpp:834 kerneldialog.cpp:835 rc.cpp:750 rc.cpp:753
+#. i18n: file ./kerneldialog.ui line 315
+#. i18n: file ./kerneldialog.ui line 331
+#: kerneldialog.cpp:832 kerneldialog.cpp:833 rc.cpp:744 rc.cpp:747
 #, no-c-format
 msgid "---"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 362
-#: kerneldialog.cpp:836 rc.cpp:756
+#. i18n: file ./kerneldialog.ui line 356
+#: kerneldialog.cpp:834 rc.cpp:750
 #, no-c-format
 msgid "Current kernel"
 msgstr "Noyau Courant"
 
-#. i18n: file ./kerneldialog.ui line 426
-#: kerneldialog.cpp:838 rc.cpp:760
+#. i18n: file ./kerneldialog.ui line 420
+#: kerneldialog.cpp:836 rc.cpp:754
 #, fuzzy, no-c-format
-msgid "remo&ve"
+msgid "re&move"
 msgstr "effacer"
 
-#. i18n: file ./servicesdialog.ui line 460
-#. i18n: file ./kerneldialog.ui line 429
-#: kerneldialog.cpp:839 rc.cpp:269 rc.cpp:763 servicesdialog.cpp:685
+#. i18n: file ./kerneldialog.ui line 423
+#: kerneldialog.cpp:837 rc.cpp:757
 #, fuzzy, no-c-format
-msgid "Alt+V"
+msgid "Alt+M"
 msgstr "Alt+Y"
 
 #: main.cpp:40
@@ -814,8 +799,8 @@ msgid ""
 msgstr ""
 "<b> Permettre branchement à chaud </b>: Le réseau sera activé lorsque le "
 "câble est branché et il sera désactivé si le câble est retiré. Ceci est "
-"utile pour les ordinateurs portables avec des adaptateurs réseau , car il "
-"ne fera que configurer les interfaces quand un câble est bien branché."
+"utile pour les ordinateurs portables avec des adaptateurs réseau , car il ne "
+"fera que configurer les interfaces quand un câble est bien branché."
 "<br><br><b>auto</b>: Les cartes de résau serent activé lorsque l'ordinateur "
 "démarre."
 
@@ -1406,6 +1391,12 @@ msgstr "Alt+Y"
 msgid "Start ser&vice at Boot"
 msgstr "Demarrer les services au démarrage"
 
+#. i18n: file ./servicesdialog.ui line 460
+#: rc.cpp:269 servicesdialog.cpp:685
+#, fuzzy, no-c-format
+msgid "Alt+V"
+msgstr "Alt+Y"
+
 #. i18n: file ./servicesdialog.ui line 508
 #: rc.cpp:275 servicesdialog.cpp:687
 #, no-c-format
@@ -1526,19 +1517,19 @@ msgid "Upgr&ade"
 msgstr "Mettre-à-jour"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:767 startdialog.cpp:3499
+#: rc.cpp:761 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "Centre de Contrôle de sidux"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:770 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:764 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:773 startdialog.cpp:3501
+#: rc.cpp:767 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1551,28 +1542,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:778 rc.cpp:781 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:772 rc.cpp:775 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr "manuel sidux"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:785 rc.cpp:788 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:779 rc.cpp:782 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:795 rc.cpp:798 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:789 rc.cpp:792 startdialog.cpp:3511 startdialog.cpp:3512
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:802 rc.cpp:805 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:796 rc.cpp:799 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1580,14 +1571,14 @@ msgstr "Sortir"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:808 rc.cpp:811 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:802 rc.cpp:805 startdialog.cpp:3516 startdialog.cpp:3517
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:814 rc.cpp:817 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:808 rc.cpp:811 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr ""
@@ -1787,6 +1778,10 @@ msgstr "Êtes-vous sûr de vouloir nettoyer votre dépot local ?"
 msgid "System Info"
 msgstr "Info système"
 
+#, fuzzy
+#~ msgid "ins&tall"
+#~ msgstr "Installer"
+
 #~ msgid "Configure Networkcards"
 #~ msgstr "Liste des contrôleurs réseau configurés"
 
@@ -1801,14 +1796,6 @@ msgstr "Info système"
 
 #~ msgid "Install Wlan-Cards (fwdetect)"
 #~ msgstr "Installer la carte Wlan (fwdetect)"
-
-#, fuzzy
-#~ msgid "Alt+M"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "i&nstall"
-#~ msgstr "Installer"
 
 #, fuzzy
 #~ msgid "Artwork"

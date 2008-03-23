@@ -99,16 +99,10 @@
                             <bool>true</bool>
                         </property>
                         <property name="text">
-                            <string>ins&amp;tall</string>
+                            <string>i&amp;nstall</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+T</string>
-                        </property>
-                        <property name="toolTip" stdset="0">
-                            <string>sdasa asdasdas sdsareeef </string>
-                        </property>
-                        <property name="whatsThis" stdset="0">
-                            <string>sdasa asdasdas sdsareeef</string>
+                            <string>Alt+N</string>
                         </property>
                     </widget>
                 </grid>
@@ -423,10 +417,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>remo&amp;ve</string>
+                            <string>re&amp;move</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+V</string>
+                            <string>Alt+M</string>
                         </property>
                     </widget>
                     <widget class="QListBox">
