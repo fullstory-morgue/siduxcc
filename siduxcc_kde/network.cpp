@@ -84,6 +84,7 @@ void network::back()
 	if( widgetStack2->visibleWidget() == tab6)
 	{
 		widgetStack2->raiseWidget(1);
+		getNetworkcards();
 	}
 	else
 	{

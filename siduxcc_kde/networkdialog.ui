@@ -1401,8 +1401,8 @@
                             <property name="geometry">
                                 <rect>
                                     <x>20</x>
-                                    <y>115</y>
-                                    <width>310</width>
+                                    <y>110</y>
+                                    <width>320</width>
                                     <height>144</height>
                                 </rect>
                             </property>
@@ -1476,14 +1476,6 @@
                                         <string>E.g. 192.168.0.254</string>
                                     </property>
                                 </widget>
-                                <widget class="QLabel" row="4" column="0">
-                                    <property name="name">
-                                        <cstring>staticBroadcastLabel</cstring>
-                                    </property>
-                                    <property name="text">
-                                        <string>Broadcast:</string>
-                                    </property>
-                                </widget>
                                 <widget class="QLabel" row="3" column="0">
                                     <property name="name">
                                         <cstring>staticNetworkLabel</cstring>
@@ -1492,9 +1484,9 @@
                                         <string>Network:</string>
                                     </property>
                                 </widget>
-                                <widget class="QLineEdit" row="4" column="1">
+                                <widget class="QLineEdit" row="3" column="1">
                                     <property name="name">
-                                        <cstring>broadcastLineEdit</cstring>
+                                        <cstring>networkLineEdit</cstring>
                                     </property>
                                     <property name="inputMask">
                                         <string>000.000.000.000; </string>
@@ -1503,9 +1495,17 @@
                                         <string>E.g. 192.168.0.255</string>
                                     </property>
                                 </widget>
-                                <widget class="QLineEdit" row="3" column="1">
+                                <widget class="QLabel" row="4" column="0">
                                     <property name="name">
-                                        <cstring>networkLineEdit</cstring>
+                                        <cstring>staticBroadcastLabel</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Broadcast:</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit" row="4" column="1">
+                                    <property name="name">
+                                        <cstring>broadcastLineEdit</cstring>
                                     </property>
                                     <property name="inputMask">
                                         <string>000.000.000.000; </string>

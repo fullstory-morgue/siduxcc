@@ -231,7 +231,6 @@ void kernel::remove()
 {
 	QStringList run; run << "removeKernel" << removeList->currentText();
 	startConsole(run);
-	getOldKernels();
 }
 
 
@@ -334,6 +333,7 @@ void kernel::terminateConsole2()
 {
 	loadWidget(1);
 	emit menuLocked(FALSE);
+	getOldKernels();
 }
 
 //------------------------------------------------------------------------------
