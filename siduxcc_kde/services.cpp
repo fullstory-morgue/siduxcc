@@ -280,7 +280,7 @@ void services::showDescription(QListBoxItem* input)
 	else if( input->text() == "hal" )
 		text = i18n("HAL provides an abstract view on hardware. This abstraction layer is simply an interface that makes it possible to add support for new devices and new ways of connecting devices to the computer, without modifying every application that uses the device.");
 	else if( input->text() == "ifplugd" )
-		text = i18n("fplugd is a daemon which will automatically configure your ethernet device when a cable is plugged in and automatically unconfigure it if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.");
+		text = i18n("Ifplugd is a daemon which will automatically configure your ethernet device when a cable is plugged in and automatically unconfigure it if the cable is pulled. This is useful on laptops with onboard network adapters, since it will only configure the interface when a cable is really connected.");
 	else if( input->text() == "IrDA" )
 		text = i18n("IrDA (Infrared Data Association) is an industry standard for infrared wireless communication. Most laptops sold today are equipped with an IrDA compliant infrared transceiver, which enables you to communicate with devices such as printers, modems, fax, LAN, and other laptops.");
 	else if( input->text() == "klogd" )

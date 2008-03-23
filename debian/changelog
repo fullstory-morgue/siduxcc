@@ -10,8 +10,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: kernel: kernel-remove reload problem solved
   * kde: network: tab problem solved
   * kde: network: networkcard reload problem solved
+  * kde: services: type 
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 22:48:21 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 23:12:42 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 
