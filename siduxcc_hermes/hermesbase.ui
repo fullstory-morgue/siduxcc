@@ -64,6 +64,12 @@
                         <property name="accel">
                             <string>Alt+A</string>
                         </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Reload the current package list of 
+siduxcc-hermes. Use this option if 
+you have updated the package list 
+without siduxcc-hermes.</string>
+                        </property>
                     </widget>
                     <widget class="QPushButton" row="2" column="2">
                         <property name="name">
@@ -74,6 +80,14 @@
                         </property>
                         <property name="accel">
                             <string>Alt+U</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>update is used to resynchronize the package 
+index files from their sources. The indexes 
+of available packages are fetched from the 
+location(s) specified in /etc/apt/sources.list.
+
+Command: apt-get update</string>
                         </property>
                     </widget>
                     <widget class="QPushButton" row="2" column="3">
@@ -162,7 +176,7 @@
                                 <cstring>tab</cstring>
                             </property>
                             <attribute name="title">
-                                <string>Upgradable pac&amp;kages</string>
+                                <string>Upgrada&amp;ble packages</string>
                             </attribute>
                             <grid>
                                 <property name="name">
