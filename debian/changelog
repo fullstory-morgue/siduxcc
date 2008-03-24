@@ -13,8 +13,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: services: type 
   * kde: services: descriptions updated
   * kde: services: descriptions updated
+  * cli: kernel: amd bug solved
 
- -- Fabian Wuertz <xadras@sidux.com>  Sun, 23 Mar 2008 23:55:34 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 01:34:47 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 

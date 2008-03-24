@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-23 21:07+0100\n"
+"POT-Creation-Date: 2008-03-24 00:07+0100\n"
 "PO-Revision-Date: 2007-10-25 20:30+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -716,20 +716,20 @@ msgstr "Autor de knxcc"
 msgid "Icon"
 msgstr "Accion"
 
-#: network.cpp:235 network.cpp:245
+#: network.cpp:236 network.cpp:246
 #, fuzzy
 msgid "Mac Address"
 msgstr "<b>Mac Address:</b>"
 
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 269
-#: network.cpp:236 network.cpp:246 networkdialog.cpp:1962 rc.cpp:235
+#: network.cpp:237 network.cpp:247 networkdialog.cpp:1962 rc.cpp:235
 #: rc.cpp:338 servicesdialog.cpp:673
 #, no-c-format
 msgid "Description"
 msgstr "Descripción"
 
-#: network.cpp:444
+#: network.cpp:445
 msgid ""
 "<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
 "in and it will be deactivated if the cable is pulled. This is useful on "
@@ -738,20 +738,20 @@ msgid ""
 "networkcard will be activated, when the computer starts"
 msgstr ""
 
-#: network.cpp:538
+#: network.cpp:539
 msgid "WEP encryption requires a key with at least 5 characters."
 msgstr ""
 
-#: network.cpp:540
+#: network.cpp:541
 msgid "WPA encryption requires a key with 8 to 63 characters."
 msgstr ""
 
-#: network.cpp:542
+#: network.cpp:543
 msgid "..."
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1107
-#: network.cpp:721 networkdialog.cpp:1990 rc.cpp:417
+#: network.cpp:722 networkdialog.cpp:1990 rc.cpp:417
 #, fuzzy, no-c-format
 msgid "Detected"
 msgstr "detectado"
@@ -1017,11 +1017,11 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 1427
 #. i18n: file ./networkdialog.ui line 1446
 #. i18n: file ./networkdialog.ui line 1473
-#. i18n: file ./networkdialog.ui line 1500
+#. i18n: file ./networkdialog.ui line 1492
 #. i18n: file ./networkdialog.ui line 1511
 #: networkdialog.cpp:2011 networkdialog.cpp:2014 networkdialog.cpp:2018
-#: networkdialog.cpp:2022 networkdialog.cpp:2024 rc.cpp:459 rc.cpp:468
-#: rc.cpp:480 rc.cpp:492 rc.cpp:498
+#: networkdialog.cpp:2021 networkdialog.cpp:2024 rc.cpp:459 rc.cpp:468
+#: rc.cpp:480 rc.cpp:489 rc.cpp:498
 #, no-c-format
 msgid "000.000.000.000; "
 msgstr ""
@@ -1064,21 +1064,21 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1484
 #: networkdialog.cpp:2020 rc.cpp:486
-#, no-c-format
-msgid "Broadcast:"
-msgstr ""
-
-#. i18n: file ./networkdialog.ui line 1492
-#: networkdialog.cpp:2021 rc.cpp:489
 #, fuzzy, no-c-format
 msgid "Network:"
 msgstr "Red"
 
-#. i18n: file ./networkdialog.ui line 1503
+#. i18n: file ./networkdialog.ui line 1495
 #. i18n: file ./networkdialog.ui line 1514
-#: networkdialog.cpp:2023 networkdialog.cpp:2025 rc.cpp:495 rc.cpp:501
+#: networkdialog.cpp:2022 networkdialog.cpp:2025 rc.cpp:492 rc.cpp:501
 #, no-c-format
 msgid "E.g. 192.168.0.255"
+msgstr ""
+
+#. i18n: file ./networkdialog.ui line 1503
+#: networkdialog.cpp:2023 rc.cpp:495
+#, no-c-format
+msgid "Broadcast:"
 msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1540
@@ -1514,19 +1514,21 @@ msgstr "Acerca de sidux"
 msgid "Language"
 msgstr ""
 
-#: services.cpp:69
+#: services.cpp:69 services.cpp:274
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
 msgstr "Apache v2 es la nueva generacion del omnipresente Apache servidor"
 
-#: services.cpp:70
+#: services.cpp:70 services.cpp:280
+#, fuzzy
 msgid ""
-"The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
-"general replacement for lpd and the like."
+"CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
+"(Internet Printing Protocol), and has its own filtering driver model for "
+"handling various document types."
 msgstr ""
 "El Commin Unix Printing System ( o CUPS(tm)) es un sistema de impresoras que "
 "reemplaza lpd y otros"
 
-#: services.cpp:71
+#: services.cpp:71 services.cpp:298
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
@@ -1543,7 +1545,7 @@ msgstr ""
 "CIFS protocolo para sistemas de linux, permitiendo servir archivos e "
 "impresoras a Windows, NT, OS/2 y DOS clients."
 
-#: services.cpp:73
+#: services.cpp:73 services.cpp:308
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
@@ -1551,35 +1553,39 @@ msgstr ""
 "SSH es una portable version de OpenSSH. Una implementacion del Secure Shell "
 "protocolo especificado por grupo IETC sechsh working"
 
-#: services.cpp:192 services.cpp:197
+#: services.cpp:188 services.cpp:193
 msgid "Status: %1"
 msgstr "Estado: %1"
 
-#: services.cpp:192
+#: services.cpp:188
 msgid "not running..."
 msgstr "Parado..."
 
-#: services.cpp:197
+#: services.cpp:193
 msgid "running..."
 msgstr "Corriendo..."
 
-#: services.cpp:275
+#: services.cpp:272
 msgid ""
 "Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
 "management on your system."
 msgstr ""
 
-#: services.cpp:277
+#: services.cpp:276
+msgid "Enables Universal interface for wireless communication"
+msgstr ""
+
+#: services.cpp:278
 msgid "Cron is a time-based scheduling service."
 msgstr ""
 
-#: services.cpp:279
+#: services.cpp:282
 msgid ""
 "gpm means general purpose mouse and is the mouse support for linux in the "
 "console."
 msgstr ""
 
-#: services.cpp:281
+#: services.cpp:284
 msgid ""
 "HAL provides an abstract view on hardware. This abstraction layer is simply "
 "an interface that makes it possible to add support for new devices and new "
@@ -1587,15 +1593,15 @@ msgid ""
 "application that uses the device."
 msgstr ""
 
-#: services.cpp:283
+#: services.cpp:286
 msgid ""
-"fplugd is a daemon which will automatically configure your ethernet device "
+"Ifplugd is a daemon which will automatically configure your ethernet device "
 "when a cable is plugged in and automatically unconfigure it if the cable is "
 "pulled. This is useful on laptops with onboard network adapters, since it "
 "will only configure the interface when a cable is really connected."
 msgstr ""
 
-#: services.cpp:285
+#: services.cpp:288
 msgid ""
 "IrDA (Infrared Data Association) is an industry standard for infrared "
 "wireless communication. Most laptops sold today are equipped with an IrDA "
@@ -1603,12 +1609,39 @@ msgid ""
 "devices such as printers, modems, fax, LAN, and other laptops."
 msgstr ""
 
-#: services.cpp:287
+#: services.cpp:290
+msgid ""
+"Irqbalance is a Linux daemon that distributes interrupts over the processors "
+"and cores you have in your computer system. The design goal of irqbalance is "
+"to do find a balance between power savings and optimal performance."
+msgstr ""
+
+#: services.cpp:292
+msgid "Isndutils is only for use with an internal ISDN adapter."
+msgstr ""
+
+#: services.cpp:294
 msgid ""
 "klogd is a system daemon which intercepts and logs Linux kernel messages."
 msgstr ""
 
-#: services.cpp:289
+#: services.cpp:296
+msgid ""
+"LIRC is a package that allows you to decode and send infra-red signals of "
+"many (but not all) commonly used remote controls."
+msgstr ""
+
+#: services.cpp:300
+msgid ""
+"These binary drivers provide optimized hardware acceleration of  OpenGL "
+"applications via a direct-rendering X Server."
+msgstr ""
+
+#: services.cpp:302
+msgid "Support for ACPI, APM and CPU frequency scaling."
+msgstr ""
+
+#: services.cpp:304
 msgid ""
 "Rsync is a command line utility traditionally used in synchronizing files "
 "between two computers, but rsync can also be used as an effective backup "
@@ -1617,7 +1650,13 @@ msgid ""
 "local directories, or via a remote shell such as RSH or SSH."
 msgstr ""
 
-#: services.cpp:291
+#: services.cpp:306
+msgid ""
+"SQL Relay is a persistent database connection pooling, proxying and load "
+"balancing system."
+msgstr ""
+
+#: services.cpp:310
 msgid ""
 "Sysklogd provides two system utilities which provide support for system "
 "logging and kernel message trapping. Support of both internet and unix "
@@ -1625,48 +1664,21 @@ msgid ""
 "logging."
 msgstr ""
 
-#: services.cpp:293
+#: services.cpp:312
+msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
+msgstr ""
+
+#: services.cpp:314
 msgid "Linux Video Disk Recorder (vdr)"
 msgstr ""
 
-#: services.cpp:295
+#: services.cpp:316
 msgid ""
 "vdradmin-am provides a webinterface for managing the Linux Video Disk "
 "Recorder (vdr)"
 msgstr ""
 
-#: services.cpp:297
-msgid "Enables Universal interface for wireless communication"
-msgstr ""
-
-#: services.cpp:299
-#, fuzzy
-msgid ""
-"The Common UNIX Printing System (or CUPS(tm)) is a printing system. It "
-"supports the Internet Printing Protocol (IPP), and has its own filtering "
-"driver model for handling various document types."
-msgstr ""
-"El Commin Unix Printing System ( o CUPS(tm)) es un sistema de impresoras que "
-"reemplaza lpd y otros"
-
-#: services.cpp:301
-msgid ""
-"Irqbalance is a Linux daemon that distributes interrupts over the processors "
-"and cores you have in your computer system. The design goal of irqbalance is "
-"to do find a balance between power savings and optimal performance."
-msgstr ""
-
-#: services.cpp:303
-msgid "Isndutils is only for use with an internal ISDN adapter."
-msgstr ""
-
-#: services.cpp:305
-msgid ""
-"LIRC is a package that allows you to decode and send infra-red signals of "
-"many (but not all) commonly used remote controls."
-msgstr ""
-
-#: services.cpp:307
+#: services.cpp:318
 msgid ""
 "VirtualBox is an application installed on an existing host operating system; "
 "within this application, additional operating systems can be loaded and run, "
@@ -1706,6 +1718,13 @@ msgstr "Seguro que quiere limpiar su reporsorio local?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "Información del sistema"
+
+#~ msgid ""
+#~ "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
+#~ "general replacement for lpd and the like."
+#~ msgstr ""
+#~ "El Commin Unix Printing System ( o CUPS(tm)) es un sistema de impresoras "
+#~ "que reemplaza lpd y otros"
 
 #, fuzzy
 #~ msgid "ins&tall"

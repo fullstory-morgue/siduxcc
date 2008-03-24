@@ -53,12 +53,7 @@ function stableKernel()
 
 function stableKernelFull()
 {
-	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f3-5 -d"-"
-}
-
-function stableKernel3()
-{
-	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f3-6 -d"-" | cut -f1 -d_
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep linux-image | grep $(kernelType) | tail -n 1 | cut -f3-6 -d"-" | cut -f1 -d_
 }
 
 function experimentalKernel()
@@ -78,7 +73,7 @@ installKernel()
 {
 	# $1: type, stable, experimental
 
-	tmp=$(stableKernel3)
+	tmp=$(stableKernelFull)
 
 	case $1 in
 			stable)
