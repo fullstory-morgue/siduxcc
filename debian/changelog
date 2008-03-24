@@ -19,8 +19,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: services: applyPushButton size problem solved 
   * kde: software: better description
   * kde: kernel: position of the back button fixrd
+  * kde: software: better description
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 22:09:54 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 25 Mar 2008 00:34:10 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 

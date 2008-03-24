@@ -155,7 +155,7 @@ void software::showPackages()
 
 void software::upgrade()
 {
-	QWhatsThis::display ( i18n("To update your system you have to leave the graphic modus. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command smxi or apt-get dist-upgrade."), QCursor::pos(), this );
+	QWhatsThis::display ( i18n("To update your system you have to leave the graphic modus. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command smxi or siduxcc (Software->Dist-upgrade)."), QCursor::pos(), this );
 
 }
 
