@@ -16,8 +16,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * cli: kernel: amd bug solved
   * kde: kernel: automatical kernel install option added 
   * kde: konsole implementation improved 
+  * kde: services: applyPushButton size problem solved 
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 16:16:21 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 16:19:22 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 
