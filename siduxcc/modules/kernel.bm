@@ -108,6 +108,27 @@ installModules()
 }
 
 
+installMetapackage()
+{
+	apt-get install linux-image-2.6-sidux-$(kernelType) linux-headers-2.6-sidux-$(kernelType)
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+
+removeMetapackage()
+{
+	apt-get remove 2.6-sidux*
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
+
+
+
 dlgInstallKernel()
 {
 	

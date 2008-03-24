@@ -34,10 +34,12 @@ class kernel : public KernelDialog
 		//QString installKernel;
 		void getModules();
 		void getKernels();
+		void getMetapackageStatus();
 		void getOldKernels();
 		bool isInstalled(QString);
 		QString stableKernelFull;
 		QStringList modules;
+		int ci;
 
 	private:
 		Process* shell;
@@ -52,10 +54,11 @@ class kernel : public KernelDialog
 		virtual void installKernel();
 		virtual void showModules();
 		virtual void installModules();
+		virtual void toggleKernelMetapackage();
+		virtual void hasChanged();
 
 		virtual void startConsole(QStringList input);
-		virtual void terminateConsole1();
-		virtual void terminateConsole2();
+		virtual void terminateConsole();
 
 		virtual void moduleDescription(QListBoxItem*);
 

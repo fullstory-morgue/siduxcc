@@ -35,6 +35,7 @@
 #include <qwhatsthis.h>
 #include <qcursor.h>
 #include <qtooltip.h>
+#include <qcheckbox.h>
 
 
 #include "kernel.h"
@@ -50,11 +51,8 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 	getKernels();
 	getModules();
 	getOldKernels();
-	installModulesPushButton->hide();
 
-
-	//QWhatsThis::whatsThisButton( this);
-
+	applyPushButton->setEnabled(FALSE);
 }
 
 
@@ -67,32 +65,48 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 void kernel::loadWidget(int i)
 {
 
-	if(i == 2 && modulesListBox->firstItem() != 0)
+	widgetStack3->raiseWidget(1);
+	installModulesPushButton->hide();
+	showMetapackagesCheckBox->hide();
+	applyPushButton->hide();
+
+	if( i == 0 )
+	{
+		applyPushButton->show();
+		getMetapackageStatus();
+	}
+
+
+	if( i == 1 )
+		getOldKernels();
+	else if( i == 2 )
 	{
 		QString kernelpackage = "linux-image-"+stableKernelFull;
-
 		if(isInstalled(kernelpackage))
+		{
+			showModules();
 			installModulesPushButton->show();
+			showMetapackagesCheckBox->show();
+		}
 		else
 		{
 			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!") );
 			back();
 			return;
-		}	
+		}
+
 	}
 
 	i = i+1;
 	widgetStack2->raiseWidget(i);
-	widgetStack3->raiseWidget(1);
 
 }
 
 
-void kernel::back()
+void kernel::back() 
 {
 	widgetStack2->raiseWidget(0);
 	widgetStack3->raiseWidget(0);
-	installModulesPushButton->hide();
 }
 
 
@@ -104,7 +118,6 @@ void kernel::back()
 
 void kernel::getKernels()
 {
-
 
 	// show the current kernel
 	this->shell->setCommand("siduxcc kernel currentKernel");
@@ -120,6 +133,16 @@ void kernel::getKernels()
 
 
 	//i18n("Couldn't connect to sidux.com!")
+}
+
+
+void kernel::getMetapackageStatus()
+{
+	QString kernelType = QStringList::split( "-", stableKernelFull )[3];
+	if( isInstalled("linux-image-2.6-sidux-"+kernelType) )
+		kernelMetapackageCheckBox->setChecked(TRUE);
+	else
+		kernelMetapackageCheckBox->setChecked(FALSE);
 }
 
 
@@ -168,6 +191,25 @@ void kernel::installKernel()
 
 
 //------------------------------------------------------------------------------
+//--- kernel-metapackage -------------------------------------------------------
+//------------------------------------------------------------------------------
+
+
+void kernel::hasChanged()
+{
+	applyPushButton->setEnabled(TRUE);
+}
+
+void kernel::toggleKernelMetapackage()
+{
+	if( kernelMetapackageCheckBox->isChecked() )
+		 startConsole("installMetapackage");
+	else
+		 startConsole("removeMetapackage");
+	
+}
+
+//------------------------------------------------------------------------------
 //--- kernel-remover -----------------------------------------------------------
 //------------------------------------------------------------------------------
 
@@ -198,13 +240,23 @@ void kernel::showModules()
 	QPixmap okImg = QPixmap( "/usr/share/siduxcc/icons/ok.png");
 	QPixmap notokImg = QPixmap( "/usr/share/siduxcc/icons/notok.png");
 	modulesListBox->clear();
-	for ( QStringList::Iterator it = modules.begin(); it != modules.end(); ++it )
+
+	QString postfix;
+	if( showMetapackagesCheckBox->isChecked() )
 	{
-		if(isInstalled(*it+"-modules-"+stableKernelFull))
+		QString kernelType = QStringList::split( "-", stableKernelFull )[3];
+		postfix = "-modules-2.6-sidux-"+kernelType;
+	}
+	else
+		postfix = "-modules-"+stableKernelFull;
+	
+
+	for ( QStringList::Iterator it = modules.begin(); it != modules.end(); ++it )
+		if(isInstalled(*it+postfix))
 			modulesListBox->insertItem(okImg, *it);
 		else	
 			modulesListBox->insertItem(notokImg, *it);
-	}
+
 }
 
 void kernel::installModules()
@@ -212,9 +264,18 @@ void kernel::installModules()
 
 	QStringList run; run << "installModules";
 
+	QString postfix;
+	if( showMetapackagesCheckBox->isChecked() )
+	{
+		QString kernelType = QStringList::split( "-", stableKernelFull )[3];
+		postfix = "-modules-2.6-sidux-"+kernelType;
+	}
+	else
+		postfix = "-modules-"+stableKernelFull;
+
 	for(uint i = 0; i < modulesListBox->count(); i++)
 		if ( modulesListBox->isSelected(i) )
-			run.append( modulesListBox->text(i)+"-modules-"+stableKernelFull );
+			run.append( modulesListBox->text(i)+postfix );
 
 	if (run.count() < 2) return;
 	startConsole(run);
@@ -272,13 +333,10 @@ void kernel::moduleDescription(QListBoxItem* item)
 
 bool kernel::isInstalled(QString package)
 {
-	this->shell->setCommand("apt-cache policy "+package+" | head -n 2 |tail -n 1");
-	this->shell->start(true);
-
-	if(this->shell->getBuffer().stripWhiteSpace().contains("(none)")  || this->shell->getBuffer().stripWhiteSpace() == "" )
-		return FALSE;
-	else
+	if( QFile::exists( "/usr/share/doc/"+package+"/copyright" ) )
 		return TRUE;
+	else
+		return FALSE;
 }
 
 
@@ -304,25 +362,23 @@ void kernel::startConsole(QStringList input)
 	widgetStack2->removeWidget(consoleWidget);
 
 	if( input[0] == "removeKernel" )
-		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole2() ));
+		ci = 1;
+	if( input[0].contains( "Metapackage" ) )
+		ci = 0;
 	else
-		connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole1() ));
+		ci = 2;
+	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
+
 }
 
-
-void kernel::terminateConsole1()
+void kernel::terminateConsole()
 {
-	showModules();
-	loadWidget(2);
+	loadWidget(ci);
 	emit menuLocked(FALSE);
+	applyPushButton->setEnabled(FALSE);
 }
 
-void kernel::terminateConsole2()
-{
-	loadWidget(1);
-	emit menuLocked(FALSE);
-	getOldKernels();
-}
+
 
 //------------------------------------------------------------------------------
 //--- END ----------------------------------------------------------------------

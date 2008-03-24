@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-24 00:07+0100\n"
+"POT-Creation-Date: 2008-03-24 12:45+0100\n"
 "PO-Revision-Date: 2008-03-15 18:12+0100\n"
 "Last-Translator: Alpha Diakite (alphad) & sidux.fr team\n"
 "Language-Team: \n"
@@ -90,9 +90,9 @@ msgstr "Alt+Y"
 #. i18n: file ./servicesdialog.ui line 85
 #. i18n: file ./networkdialog.ui line 85
 #. i18n: file ./softwaredialog.ui line 472
-#. i18n: file ./kerneldialog.ui line 88
-#: displaydialog.cpp:2356 kerneldialog.cpp:818 networkdialog.cpp:1950
-#: rc.cpp:12 rc.cpp:208 rc.cpp:307 rc.cpp:675 rc.cpp:711
+#. i18n: file ./kerneldialog.ui line 441
+#: displaydialog.cpp:2356 kerneldialog.cpp:851 networkdialog.cpp:1950
+#: rc.cpp:12 rc.cpp:208 rc.cpp:307 rc.cpp:675 rc.cpp:752
 #: servicesdialog.cpp:663 softwaredialog.cpp:800
 #, no-c-format
 msgid "&back"
@@ -103,10 +103,10 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 319
 #. i18n: file ./softwaredialog.ui line 475
-#. i18n: file ./kerneldialog.ui line 91
-#: displaydialog.cpp:2357 kerneldialog.cpp:819 networkdialog.cpp:1951
+#. i18n: file ./kerneldialog.ui line 444
+#: displaydialog.cpp:2357 kerneldialog.cpp:852 networkdialog.cpp:1951
 #: networkdialog.cpp:1965 rc.cpp:15 rc.cpp:211 rc.cpp:310 rc.cpp:347
-#: rc.cpp:678 rc.cpp:714 servicesdialog.cpp:664 softwaredialog.cpp:801
+#: rc.cpp:678 rc.cpp:755 servicesdialog.cpp:664 softwaredialog.cpp:801
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -126,9 +126,9 @@ msgstr "Alt+X"
 #. i18n: file ./displaydialog.ui line 134
 #. i18n: file ./networkdialog.ui line 129
 #. i18n: file ./softwaredialog.ui line 507
-#. i18n: file ./kerneldialog.ui line 126
-#: displaydialog.cpp:2360 kerneldialog.cpp:822 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:723 softwaredialog.cpp:804
+#. i18n: file ./kerneldialog.ui line 518
+#: displaydialog.cpp:2360 kerneldialog.cpp:859 networkdialog.cpp:1954
+#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:776 softwaredialog.cpp:804
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -360,9 +360,12 @@ msgstr "Effacer les Modelines"
 #. i18n: file ./networkdialog.ui line 349
 #. i18n: file ./networkdialog.ui line 706
 #. i18n: file ./softwaredialog.ui line 290
-#: displaydialog.cpp:2409 displaydialog.cpp:2429 networkdialog.cpp:1967
-#: networkdialog.cpp:1985 rc.cpp:146 rc.cpp:200 rc.cpp:253 rc.cpp:353
-#: rc.cpp:407 rc.cpp:646 servicesdialog.cpp:679 softwaredialog.cpp:785
+#. i18n: file ./kerneldialog.ui line 244
+#. i18n: file ./kerneldialog.ui line 336
+#: displaydialog.cpp:2409 displaydialog.cpp:2429 kerneldialog.cpp:845
+#: kerneldialog.cpp:849 networkdialog.cpp:1967 networkdialog.cpp:1985
+#: rc.cpp:146 rc.cpp:200 rc.cpp:253 rc.cpp:353 rc.cpp:407 rc.cpp:646
+#: rc.cpp:738 rc.cpp:748 servicesdialog.cpp:679 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -383,10 +386,10 @@ msgstr ""
 #. i18n: file ./displaydialog.ui line 1161
 #. i18n: file ./networkdialog.ui line 641
 #. i18n: file ./networkdialog.ui line 1587
-#. i18n: file ./kerneldialog.ui line 105
-#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:821
+#. i18n: file ./kerneldialog.ui line 458
+#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:854
 #: networkdialog.cpp:1982 networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191
-#: rc.cpp:398 rc.cpp:519 rc.cpp:720
+#: rc.cpp:398 rc.cpp:519 rc.cpp:761
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -493,7 +496,7 @@ msgstr "Internet"
 msgid "sidux-Browser"
 msgstr "Navigateur-sidux"
 
-#: kernel.cpp:78
+#: kernel.cpp:93
 msgid ""
 "You only can install modules for the newest stable kernel. But this kernel "
 "isn't installed!"
@@ -501,7 +504,19 @@ msgstr ""
 "Vous pouvez seulement qu'installer les modules du nouveau noyau stable. "
 "Cependant ce noyau n'est pas installé"
 
-#: kernel.cpp:105
+#: kernel.cpp:176
+msgid "You have already installed the newest stable kernel!"
+msgstr "Vous avez déjà installé le nouveau noyau stable"
+
+#: kernel.cpp:178
+msgid "There is no stable kernel avaiable!"
+msgstr "Il n'y'a pas de noyau stable"
+
+#: kernel.cpp:181
+msgid "Are you sure you want to install a new kernel?"
+msgstr "Êtes-vous sûr de vouloir installer un nouveau noyau?"
+
+#: kernel.cpp:292
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -516,7 +531,7 @@ msgstr ""
 "au problème) reposait sur des appels BIOS qui ne sont pas autorisés à partir "
 "d'un système d'exploitation 64 bits."
 
-#: kernel.cpp:107
+#: kernel.cpp:294
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -532,7 +547,7 @@ msgstr ""
 "le modèle): - contrôlant les voyants (Mail, Wireless) - activer/désactiver "
 "matériel sans fil"
 
-#: kernel.cpp:109
+#: kernel.cpp:296
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
@@ -542,7 +557,7 @@ msgstr ""
 "Adapter. L'adaptateur Atheros L2 (R) Fast Ethernet  est présent dans "
 "quelques portable moin cher d'Asus, tels que les PC Asus Eee."
 
-#: kernel.cpp:111
+#: kernel.cpp:298
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
@@ -550,12 +565,12 @@ msgstr ""
 "Aufs l'unification empilable est un système de fichiers, tels que Unionfs, "
 "qui unifie plusieurs répertoires et fournit un répertoire unique fusionné."
 
-#: kernel.cpp:113
+#: kernel.cpp:300
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr ""
 "Ce paquet fournit le pilote pour un système de fichiers snapshotting modules."
 
-#: kernel.cpp:115
+#: kernel.cpp:302
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
@@ -566,7 +581,7 @@ msgstr ""
 "compiler ces modules.<br><br>Ceci fonctionne avec Agere Systems ET-131x PCI-"
 "E contrôleur Ethernet."
 
-#: kernel.cpp:117
+#: kernel.cpp:304
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
@@ -576,7 +591,7 @@ msgstr ""
 "logiciel RF tuer commutateurs sur le Fujitsu Siemens Amilo M 7400 pc "
 "portable. Ce paquet Fournit le code source des modules fsam7400."
 
-#: kernel.cpp:119
+#: kernel.cpp:306
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
@@ -587,7 +602,7 @@ msgstr ""
 "fabriquées par SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, semi-Mars, "
 "et Pixart Transvision."
 
-#: kernel.cpp:121
+#: kernel.cpp:308
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
@@ -595,7 +610,7 @@ msgstr ""
 "LZMA est un algorithme de compression, basé sur la fameuse compression "
 "Lempel Ziv Méthode."
 
-#: kernel.cpp:123
+#: kernel.cpp:310
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
 "Linux driver for their wireless network cards.  This project implements "
@@ -611,7 +626,7 @@ msgstr ""
 "réseau sans fil est alors liés à cette mise en œuvre afin que le pilote "
 "tourne nativement, comme s'il était sous Windows, sans émulation binaire."
 
-#: kernel.cpp:125
+#: kernel.cpp:312
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
@@ -621,7 +636,7 @@ msgstr ""
 "Toshiba Satellite et quelques autres ordinateurs portables fabriqués par "
 "Compal Electronics, Inc comme ODM."
 
-#: kernel.cpp:127
+#: kernel.cpp:314
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
@@ -631,7 +646,7 @@ msgstr ""
 "Logitech QuickCam Express webcam et autres webcams. Ce pilote remplace le "
 "pilote qce-ga."
 
-#: kernel.cpp:129
+#: kernel.cpp:316
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
@@ -642,7 +657,7 @@ msgstr ""
 "ordinateursportables, mais ceux-ci sont les seuls modèles sur lesquels il a "
 "été testé."
 
-#: kernel.cpp:131
+#: kernel.cpp:318
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -663,7 +678,7 @@ msgstr ""
 "peut être utilisé), et contraint block device / systèmes de mémoire (par "
 "exemple, systèmes embarqués) si bas overhead est nécessaire."
 
-#: kernel.cpp:133 kernel.cpp:135
+#: kernel.cpp:320 kernel.cpp:322
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
@@ -671,81 +686,100 @@ msgstr ""
 "VirtualBox est une solution de virtualisation libre pour PC vous permettant "
 "de gérer une large gamme de systèmes d'exploitation PC sur votre système."
 
-#: kernel.cpp:199
-msgid "You have already installed the newest stable kernel!"
-msgstr "Vous avez déjà installé le nouveau noyau stable"
-
-#: kernel.cpp:201
-msgid "There is no stable kernel avaiable!"
-msgstr "Il n'y'a pas de noyau stable"
-
-#: kernel.cpp:204
-msgid "Are you sure you want to install a new kernel?"
-msgstr "Êtes-vous sûr de vouloir installer un nouveau noyau?"
-
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:816 rc.cpp:707 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:831 rc.cpp:707 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Noyau"
 
-#. i18n: file ./kerneldialog.ui line 102
-#: kerneldialog.cpp:820 rc.cpp:717
-#, fuzzy, no-c-format
-msgid "i&nstall"
-msgstr "Installer"
-
-#. i18n: file ./kerneldialog.ui line 157
-#: kerneldialog.cpp:824 rc.cpp:726
+#. i18n: file ./kerneldialog.ui line 51
+#: kerneldialog.cpp:834 rc.cpp:711
 #, no-c-format
 msgid "Install new kernel"
 msgstr "nstaller le nouveau noyau"
 
-#. i18n: file ./kerneldialog.ui line 165
-#: kerneldialog.cpp:825 rc.cpp:729
+#. i18n: file ./kerneldialog.ui line 59
+#: kerneldialog.cpp:835 rc.cpp:714
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "Enlever les anciens noyaux"
 
-#. i18n: file ./kerneldialog.ui line 173
-#: kerneldialog.cpp:826 rc.cpp:732
+#. i18n: file ./kerneldialog.ui line 67
+#: kerneldialog.cpp:836 rc.cpp:717
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "Installer les modules du noyau"
 
-#. i18n: file ./kerneldialog.ui line 258
-#: kerneldialog.cpp:828 rc.cpp:736
+#. i18n: file ./kerneldialog.ui line 152
+#: kerneldialog.cpp:838 rc.cpp:721
 #, no-c-format
 msgid "Current kernel:"
 msgstr "Noyau courant"
 
-#. i18n: file ./kerneldialog.ui line 274
-#: kerneldialog.cpp:829 rc.cpp:739
+#. i18n: file ./kerneldialog.ui line 168
+#: kerneldialog.cpp:839 rc.cpp:724
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr "Dernier noyau stable"
 
-#. i18n: file ./kerneldialog.ui line 315
-#. i18n: file ./kerneldialog.ui line 331
-#: kerneldialog.cpp:832 kerneldialog.cpp:833 rc.cpp:744 rc.cpp:747
+#. i18n: file ./kerneldialog.ui line 209
+#. i18n: file ./kerneldialog.ui line 225
+#: kerneldialog.cpp:842 kerneldialog.cpp:843 rc.cpp:729 rc.cpp:732
 #, no-c-format
 msgid "---"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 356
-#: kerneldialog.cpp:834 rc.cpp:750
+#. i18n: file ./kerneldialog.ui line 241
+#: kerneldialog.cpp:844 rc.cpp:735
+#, no-c-format
+msgid "Install aut&omatic new kernels during dist-updates."
+msgstr ""
+
+#. i18n: file ./kerneldialog.ui line 269
+#: kerneldialog.cpp:846 rc.cpp:741
 #, no-c-format
 msgid "Current kernel"
 msgstr "Noyau Courant"
 
-#. i18n: file ./kerneldialog.ui line 420
-#: kerneldialog.cpp:836 rc.cpp:754
+#. i18n: file ./kerneldialog.ui line 333
+#: kerneldialog.cpp:848 rc.cpp:745
 #, fuzzy, no-c-format
-msgid "re&move"
+msgid "rem&ove"
 msgstr "effacer"
 
-#. i18n: file ./kerneldialog.ui line 423
-#: kerneldialog.cpp:837 rc.cpp:757
+#. i18n: file ./kerneldialog.ui line 455
+#: kerneldialog.cpp:853 rc.cpp:758
+#, fuzzy, no-c-format
+msgid "i&nstall"
+msgstr "Installer"
+
+#. i18n: file ./kerneldialog.ui line 466
+#: kerneldialog.cpp:855 rc.cpp:764
+#, no-c-format
+msgid "&apply"
+msgstr ""
+
+#. i18n: file ./servicesdialog.ui line 372
+#. i18n: file ./networkdialog.ui line 382
+#. i18n: file ./networkdialog.ui line 1101
+#. i18n: file ./networkdialog.ui line 1573
+#. i18n: file ./softwaredialog.ui line 390
+#. i18n: file ./kerneldialog.ui line 469
+#: kerneldialog.cpp:856 networkdialog.cpp:1970 networkdialog.cpp:1988
+#: networkdialog.cpp:2029 rc.cpp:247 rc.cpp:362 rc.cpp:414 rc.cpp:513
+#: rc.cpp:672 rc.cpp:767 servicesdialog.cpp:677 softwaredialog.cpp:799
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
+#. i18n: file ./kerneldialog.ui line 494
+#: kerneldialog.cpp:857 rc.cpp:770
+#, fuzzy, no-c-format
+msgid "Show &metapackages"
+msgstr "Paquetages actualisables"
+
+#. i18n: file ./kerneldialog.ui line 497
+#: kerneldialog.cpp:858 rc.cpp:773
 #, fuzzy, no-c-format
 msgid "Alt+M"
 msgstr "Alt+Y"
@@ -953,18 +987,6 @@ msgstr "Changer les réglages du contrôleur sélectionné"
 #, no-c-format
 msgid "En&able"
 msgstr "Activer"
-
-#. i18n: file ./servicesdialog.ui line 372
-#. i18n: file ./networkdialog.ui line 382
-#. i18n: file ./networkdialog.ui line 1101
-#. i18n: file ./networkdialog.ui line 1573
-#. i18n: file ./softwaredialog.ui line 390
-#: networkdialog.cpp:1970 networkdialog.cpp:1988 networkdialog.cpp:2029
-#: rc.cpp:247 rc.cpp:362 rc.cpp:414 rc.cpp:513 rc.cpp:672
-#: servicesdialog.cpp:677 softwaredialog.cpp:799
-#, no-c-format
-msgid "Alt+A"
-msgstr "Alt+A"
 
 #. i18n: file ./networkdialog.ui line 487
 #: networkdialog.cpp:1977 rc.cpp:383
@@ -1517,19 +1539,19 @@ msgid "Upgr&ade"
 msgstr "Mettre-à-jour"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:761 startdialog.cpp:3499
+#: rc.cpp:779 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "Centre de Contrôle de sidux"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:764 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:782 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:767 startdialog.cpp:3501
+#: rc.cpp:785 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1542,28 +1564,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:772 rc.cpp:775 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:790 rc.cpp:793 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr "manuel sidux"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:779 rc.cpp:782 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:797 rc.cpp:800 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:789 rc.cpp:792 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:807 rc.cpp:810 startdialog.cpp:3511 startdialog.cpp:3512
 #, fuzzy, no-c-format
 msgid "About siduxcc"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:796 rc.cpp:799 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:814 rc.cpp:817 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1571,14 +1593,14 @@ msgstr "Sortir"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:802 rc.cpp:805 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:820 rc.cpp:823 startdialog.cpp:3516 startdialog.cpp:3517
 #, fuzzy, no-c-format
 msgid "About KDE"
 msgstr "À propos de sidux"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:808 rc.cpp:811 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:826 rc.cpp:829 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr ""

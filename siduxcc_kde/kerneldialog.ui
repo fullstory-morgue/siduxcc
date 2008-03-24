@@ -9,8 +9,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>765</width>
-            <height>526</height>
+            <width>782</width>
+            <height>488</height>
         </rect>
     </property>
     <property name="caption">
@@ -23,112 +23,6 @@
         <property name="name">
             <cstring>unnamed</cstring>
         </property>
-        <widget class="QWidgetStack" row="1" column="0">
-            <property name="name">
-                <cstring>widgetStack3</cstring>
-            </property>
-            <property name="sizePolicy">
-                <sizepolicy>
-                    <hsizetype>5</hsizetype>
-                    <vsizetype>5</vsizetype>
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                </sizepolicy>
-            </property>
-            <property name="maximumSize">
-                <size>
-                    <width>32767</width>
-                    <height>35</height>
-                </size>
-            </property>
-            <widget class="QWidget">
-                <property name="name">
-                    <cstring>WStackPage</cstring>
-                </property>
-                <attribute name="id">
-                    <number>0</number>
-                </attribute>
-            </widget>
-            <widget class="QWidget">
-                <property name="name">
-                    <cstring>WStackPage</cstring>
-                </property>
-                <attribute name="id">
-                    <number>1</number>
-                </attribute>
-                <grid>
-                    <property name="name">
-                        <cstring>unnamed</cstring>
-                    </property>
-                    <spacer row="0" column="0">
-                        <property name="name">
-                            <cstring>spacer1_2</cstring>
-                        </property>
-                        <property name="orientation">
-                            <enum>Horizontal</enum>
-                        </property>
-                        <property name="sizeType">
-                            <enum>Expanding</enum>
-                        </property>
-                        <property name="sizeHint">
-                            <size>
-                                <width>530</width>
-                                <height>20</height>
-                            </size>
-                        </property>
-                    </spacer>
-                    <widget class="QPushButton" row="0" column="2">
-                        <property name="name">
-                            <cstring>backPushButton</cstring>
-                        </property>
-                        <property name="focusPolicy">
-                            <enum>NoFocus</enum>
-                        </property>
-                        <property name="text">
-                            <string>&amp;back</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+B</string>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton" row="0" column="1">
-                        <property name="name">
-                            <cstring>installModulesPushButton</cstring>
-                        </property>
-                        <property name="enabled">
-                            <bool>true</bool>
-                        </property>
-                        <property name="text">
-                            <string>i&amp;nstall</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+N</string>
-                        </property>
-                    </widget>
-                </grid>
-            </widget>
-            <widget class="QWidget">
-                <property name="name">
-                    <cstring>WStackPage</cstring>
-                </property>
-                <attribute name="id">
-                    <number>2</number>
-                </attribute>
-                <grid>
-                    <property name="name">
-                        <cstring>unnamed</cstring>
-                    </property>
-                    <widget class="QLabel" row="0" column="0">
-                        <property name="name">
-                            <cstring>textLabel</cstring>
-                        </property>
-                        <property name="text">
-                            <string>Don't close the window, before you see the message "Process done!".</string>
-                        </property>
-                    </widget>
-                </grid>
-            </widget>
-        </widget>
         <widget class="QWidgetStack" row="0" column="0">
             <property name="name">
                 <cstring>widgetStack2</cstring>
@@ -228,7 +122,7 @@
                             <x>40</x>
                             <y>40</y>
                             <width>380</width>
-                            <height>130</height>
+                            <height>190</height>
                         </rect>
                     </property>
                     <property name="sizePolicy">
@@ -331,6 +225,25 @@
                             <string>---</string>
                         </property>
                     </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>kernelMetapackageCheckBox</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>17</x>
+                                <y>127</y>
+                                <width>340</width>
+                                <height>40</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Install aut&amp;omatic new kernels during dist-updates.</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+O</string>
+                        </property>
+                    </widget>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -417,10 +330,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>re&amp;move</string>
+                            <string>rem&amp;ove</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+M</string>
+                            <string>Alt+O</string>
                         </property>
                     </widget>
                     <widget class="QListBox">
@@ -475,6 +388,134 @@
                         </property>
                         <property name="readOnly">
                             <bool>true</bool>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QWidgetStack" row="1" column="0">
+            <property name="name">
+                <cstring>widgetStack3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>35</height>
+                </size>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QPushButton" row="0" column="4">
+                        <property name="name">
+                            <cstring>backPushButton</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="text">
+                            <string>&amp;back</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+B</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="0" column="3">
+                        <property name="name">
+                            <cstring>installModulesPushButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="text">
+                            <string>i&amp;nstall</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+N</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="0" column="2">
+                        <property name="name">
+                            <cstring>applyPushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;apply</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
+                        </property>
+                    </widget>
+                    <spacer row="0" column="1">
+                        <property name="name">
+                            <cstring>spacer2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>389</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>showMetapackagesCheckBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Show &amp;metapackages</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+M</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>2</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Don't close the window, before you see the message "Process done!".</string>
                         </property>
                     </widget>
                 </grid>
@@ -536,6 +577,24 @@
         <receiver>KernelDialog</receiver>
         <slot>moduleDescription(QListBoxItem*)</slot>
     </connection>
+    <connection>
+        <sender>showMetapackagesCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>KernelDialog</receiver>
+        <slot>showModules()</slot>
+    </connection>
+    <connection>
+        <sender>kernelMetapackageCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>KernelDialog</receiver>
+        <slot>hasChanged()</slot>
+    </connection>
+    <connection>
+        <sender>applyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>KernelDialog</receiver>
+        <slot>toggleKernelMetapackage()</slot>
+    </connection>
 </connections>
 <includes>
     <include location="local" impldecl="in implementation">kdialog.h</include>
@@ -551,6 +610,9 @@
     <slot>save()</slot>
     <slot>loadWidget(int)</slot>
     <slot>moduleDescription(QListBoxItem*)</slot>
+    <slot>showModules()</slot>
+    <slot>toggleKernelMetapackage()</slot>
+    <slot>hasChanged()</slot>
 </slots>
 <layoutdefaults spacing="3" margin="3"/>
 </UI>
