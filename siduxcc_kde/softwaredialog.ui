@@ -9,8 +9,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>681</width>
-            <height>484</height>
+            <width>763</width>
+            <height>708</height>
         </rect>
     </property>
     <property name="caption">
@@ -230,10 +230,10 @@
                             </font>
                         </property>
                         <property name="text">
-                            <string>C&amp;lean</string>
+                            <string>Clea&amp;n</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+L</string>
+                            <string>Alt+N</string>
                         </property>
                         <property name="toolTip" stdset="0">
                             <string>clean clears out the local repository 
@@ -407,108 +407,63 @@ Command: apt-get update</string>
                 </grid>
             </widget>
         </widget>
-        <widget class="QWidgetStack" row="1" column="0">
+        <widget class="QFrame" row="1" column="0">
             <property name="name">
-                <cstring>widgetStack3</cstring>
+                <cstring>bottomFrame</cstring>
             </property>
-            <property name="sizePolicy">
-                <sizepolicy>
-                    <hsizetype>5</hsizetype>
-                    <vsizetype>5</vsizetype>
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                </sizepolicy>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
             </property>
-            <property name="maximumSize">
-                <size>
-                    <width>32767</width>
-                    <height>35</height>
-                </size>
+            <property name="frameShadow">
+                <enum>Raised</enum>
             </property>
-            <widget class="QWidget">
+            <grid>
                 <property name="name">
-                    <cstring>WStackPage</cstring>
+                    <cstring>unnamed</cstring>
                 </property>
-                <attribute name="id">
-                    <number>0</number>
-                </attribute>
-            </widget>
-            <widget class="QWidget">
-                <property name="name">
-                    <cstring>WStackPage</cstring>
-                </property>
-                <attribute name="id">
-                    <number>1</number>
-                </attribute>
-                <grid>
+                <spacer row="0" column="0">
                     <property name="name">
-                        <cstring>unnamed</cstring>
+                        <cstring>spacer1_2</cstring>
                     </property>
-                    <spacer row="0" column="0">
-                        <property name="name">
-                            <cstring>spacer1_2</cstring>
-                        </property>
-                        <property name="orientation">
-                            <enum>Horizontal</enum>
-                        </property>
-                        <property name="sizeType">
-                            <enum>Expanding</enum>
-                        </property>
-                        <property name="sizeHint">
-                            <size>
-                                <width>330</width>
-                                <height>20</height>
-                            </size>
-                        </property>
-                    </spacer>
-                    <widget class="QPushButton" row="0" column="1">
-                        <property name="name">
-                            <cstring>backPushButton</cstring>
-                        </property>
-                        <property name="focusPolicy">
-                            <enum>NoFocus</enum>
-                        </property>
-                        <property name="text">
-                            <string>&amp;back</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+B</string>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton" row="0" column="2">
-                        <property name="name">
-                            <cstring>applyPushButton</cstring>
-                        </property>
-                        <property name="text">
-                            <string>appl&amp;y</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+Y</string>
-                        </property>
-                    </widget>
-                </grid>
-            </widget>
-            <widget class="QWidget">
-                <property name="name">
-                    <cstring>WStackPage</cstring>
-                </property>
-                <attribute name="id">
-                    <number>2</number>
-                </attribute>
-                <grid>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>420</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="0" column="1">
                     <property name="name">
-                        <cstring>unnamed</cstring>
+                        <cstring>backPushButton</cstring>
                     </property>
-                    <widget class="QLabel" row="0" column="0">
-                        <property name="name">
-                            <cstring>textLabel</cstring>
-                        </property>
-                        <property name="text">
-                            <string>Don't close the window, before you see the message "Process done!".</string>
-                        </property>
-                    </widget>
-                </grid>
-            </widget>
+                    <property name="focusPolicy">
+                        <enum>NoFocus</enum>
+                    </property>
+                    <property name="text">
+                        <string>&amp;back</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+B</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="2">
+                    <property name="name">
+                        <cstring>applyPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>appl&amp;y</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+Y</string>
+                    </property>
+                </widget>
+            </grid>
         </widget>
     </grid>
 </widget>

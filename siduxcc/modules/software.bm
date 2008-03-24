@@ -108,6 +108,7 @@ function installASV()
 	echo ""
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
 }
 
 function duWarnings()

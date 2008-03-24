@@ -53,6 +53,7 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 	getOldKernels();
 
 	applyPushButton->setEnabled(FALSE);
+	bottomFrame->hide();
 }
 
 
@@ -65,39 +66,44 @@ kernel::kernel(QWidget *parent, const char *name, const QStringList &)
 void kernel::loadWidget(int i)
 {
 
-	widgetStack3->raiseWidget(1);
-	installModulesPushButton->hide();
-	showMetapackagesCheckBox->hide();
-	applyPushButton->hide();
-
 	if( i == 0 )
 	{
+		// buttons
+		installModulesPushButton->hide();
+		showMetapackagesCheckBox->hide();
 		applyPushButton->show();
+		// load
 		getMetapackageStatus();
 	}
-
-
 	if( i == 1 )
+	{
+		// buttons
+		installModulesPushButton->hide();
+		showMetapackagesCheckBox->hide();
+		applyPushButton->hide();
+		// load
 		getOldKernels();
+	}
 	else if( i == 2 )
 	{
 		QString kernelpackage = "linux-image-"+stableKernelFull;
-		if(isInstalled(kernelpackage))
-		{
-			showModules();
-			installModulesPushButton->show();
-			showMetapackagesCheckBox->show();
-		}
-		else
+		if( !isInstalled(kernelpackage) )
 		{
 			QMessageBox::information( this, "kernel", i18n("You only can install modules for the newest stable kernel. But this kernel isn't installed!") );
 			back();
 			return;
 		}
+		// buttons
+		installModulesPushButton->show();
+		showMetapackagesCheckBox->show();
+		applyPushButton->hide();
+		// load
+		showModules();
 
 	}
 
-	i = i+1;
+	bottomFrame->show();
+	i++;
 	widgetStack2->raiseWidget(i);
 
 }
@@ -106,7 +112,7 @@ void kernel::loadWidget(int i)
 void kernel::back() 
 {
 	widgetStack2->raiseWidget(0);
-	widgetStack3->raiseWidget(0);
+	bottomFrame->hide();
 }
 
 
@@ -278,7 +284,7 @@ void kernel::installModules()
 			run.append( modulesListBox->text(i)+postfix );
 
 	if (run.count() < 2) return;
-	startConsole(run);
+		startConsole(run);
 
 }
 
@@ -355,15 +361,14 @@ void kernel::startConsole(QStringList input)
 		run.append(*it);
 
 	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 6);
-	widgetStack2->raiseWidget(6);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
+	bottomFrame->hide();
+	consoleWidget = new console(this, run );
+	widgetStack2->addWidget(consoleWidget, 4);
+	widgetStack2->raiseWidget(4);
 
 	if( input[0] == "removeKernel" )
 		ci = 1;
-	if( input[0].contains( "Metapackage" ) )
+	else if( input[0].contains( "Metapackage" ) )
 		ci = 0;
 	else
 		ci = 2;
@@ -376,6 +381,7 @@ void kernel::terminateConsole()
 	loadWidget(ci);
 	emit menuLocked(FALSE);
 	applyPushButton->setEnabled(FALSE);
+	widgetStack2->removeWidget(consoleWidget);
 }
 
 

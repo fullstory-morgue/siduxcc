@@ -91,20 +91,26 @@ void display::load()
 	compositeSlot();
 
 	applyPushButton->setEnabled(FALSE);
+	bottomFrame->hide();
 }
 
 
 void display::loadWidget(int i)
 {
+	if( i == 3 or i == 4 )
+		applyPushButton->hide();
+	else
+		applyPushButton->show();
+
 	widgetStack2->raiseWidget(i+1);
-	widgetStack3->raiseWidget(1);
+	bottomFrame->show();
 }
 
 
 void display::back()
 {
 	widgetStack2->raiseWidget(0);
-	widgetStack3->raiseWidget(0);
+	bottomFrame->hide();
 }
 
 
@@ -361,28 +367,9 @@ void display::setComposite()
 
 void display::gfx()
 {
-	emit menuLocked(TRUE);
-
-	QStrList run; run.append( "siduxcc" ); 
-		run.append( "display" );
-		run.append( "binaryGfx" );
-	
-	// change widget
-	QWidget *consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 6);
-	widgetStack2->raiseWidget(6);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
-
-	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
-
-}
-
-void display::terminateConsole()
-{
-	widgetStack2->raiseWidget(4);
-	widgetStack3->raiseWidget(1);
-	emit menuLocked(FALSE);
+	QStringList run;
+	run << "binaryGfx";
+	startConsole(run);
 }
 
 
@@ -392,38 +379,46 @@ void display::terminateConsole()
 
 void display::fixFonts()
 {
-
-	statusText->setText(i18n("Process is running!"));
-	widgetStack3->raiseWidget(2);
-
-	proc << "fix-fonts";
-	proc.start(KProcess::NotifyOnExit, KProcess::AllOutput);
-
-	connect(&proc, SIGNAL(receivedStdout(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-	connect(&proc, SIGNAL(receivedStderr(KProcess *, char *, int)),
-		this, SLOT(getOutput(KProcess *, char *, int)));
-
-	connect(&proc, SIGNAL(processExited(KProcess *)),
-		this, SLOT( fixFonts_END() ));
-
+	QStringList run;
+	run << "fixFonts";
+	startConsole(run);
 }
 
 
-void display::fixFonts_END()
+//------------------------------------------------------------------------------
+//--- console ------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+void display::startConsole(QStringList input)
 {
-	statusText->setText(i18n("Process done!"));
-	widgetStack3->raiseWidget(1);
+	emit menuLocked(TRUE);
+
+	QStrList run; run.append( "siduxcc" );
+	run.append( "display" );
+	for ( QStringList::Iterator it = input.begin(); it != input.end(); ++it )
+		run.append(*it);
+
+	// change widget
+	bottomFrame->hide();
+	consoleWidget = new console(this, run );
+	widgetStack2->addWidget(consoleWidget, 6);
+	widgetStack2->raiseWidget(6);
+
+	if( input[0] == "binaryGfx" )
+		ci = 3;
+	else if( input[0] == "fixFonts" )
+		ci = 4;
+	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
 }
 
 
-void display::getOutput(KProcess *, char *data, int len)
+void display::terminateConsole()
 {
-	char dst[len+1];
-	memmove(dst,data,len);
-	dst[len]=0;
-	consoleText->setText(consoleText->text()+dst);
+	emit menuLocked(FALSE);
+	widgetStack2->removeWidget(consoleWidget);
+	loadWidget(ci);
 }
+
 
 
 #include "display.moc"

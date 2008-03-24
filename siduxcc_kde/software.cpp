@@ -38,6 +38,7 @@ software::software(QWidget *parent, const char *name, const QStringList &)
 :SoftwareDialog(parent, name)
 {
 	this->shell = new Process();
+	bottomFrame->hide();
 }
 
 
@@ -46,29 +47,30 @@ software::software(QWidget *parent, const char *name, const QStringList &)
 //------------------------------------------------------------------------------
 
 
-void software::load()
-{
-}
-
-
 void software::loadWidget(int i)
 {
+	
 	if(i == 0)
 	{
-		checkASV();
+		if( !QFile::exists( "/usr/bin/apt-show-versions" ) )
+		{
+			installASV();
+			return;
+		}
+		showPackages();
+		warning();
 	}
-	else
-	{
-		widgetStack2->raiseWidget(i+1);
-		widgetStack3->raiseWidget(1);
-	}
+	
+	bottomFrame->show();
+	i++;
+	widgetStack2->raiseWidget(i);
 }
 
 
 void software::back()
 {
 	widgetStack2->raiseWidget(0);
-	widgetStack3->raiseWidget(0);
+	bottomFrame->hide();
 }
 
 
@@ -77,7 +79,7 @@ void software::back()
 
 
 
-void software::checkASV()
+void software::installASV()
 {
 	// check if apt-show-versions is installed
 	if( !QFile::exists( "/usr/bin/apt-show-versions" ) )
@@ -88,14 +90,6 @@ void software::checkASV()
 			startConsole(run);
 		}
 	}
-	else
-	{
-		showPackages();
-		warning();
-		widgetStack2->raiseWidget(1);
-		widgetStack3->raiseWidget(1);
-	}
-
 }
 
 void software::warning()
@@ -200,11 +194,10 @@ void software::startConsole(QStringList input)
 		run.append(*it);
 
 	// change widget
-	QWidget *consoleWidget = new console(this, run );
+	bottomFrame->hide();
+	consoleWidget = new console(this, run );
 	widgetStack2->addWidget(consoleWidget, 6);
 	widgetStack2->raiseWidget(6);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
 
 	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
 }
@@ -212,11 +205,9 @@ void software::startConsole(QStringList input)
 
 void software::terminateConsole()
 {
-	showPackages();
-	warning();
-	widgetStack2->raiseWidget(1);
-	widgetStack3->raiseWidget(1);
 	emit menuLocked(FALSE);
+	widgetStack2->removeWidget(consoleWidget);
+	loadWidget(0);
 }
 
 

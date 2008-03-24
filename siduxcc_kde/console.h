@@ -27,7 +27,7 @@
 #include <kde_terminal_interface.h>
 #include <kparts/part.h>
 
-class console : public Widget
+class console : public ConsoleDialog
 {
     Q_OBJECT
 

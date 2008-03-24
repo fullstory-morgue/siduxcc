@@ -15,8 +15,9 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: services: descriptions updated
   * cli: kernel: amd bug solved
   * kde: kernel: automatical kernel install option added 
+  * kde: konsole implementation improved 
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 13:01:12 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 16:16:21 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 

@@ -69,13 +69,20 @@ void network::load()
 	getNameservers();
 	fwDetect();
 	applyPushButton->setEnabled(FALSE);
+	bottomFrame->hide();
 }
 
 
 void network::loadWidget(int i)
 {
-	widgetStack2->raiseWidget(i+1);
-	widgetStack3->raiseWidget(1);
+	if( i == 3 or i == 4 )
+		applyPushButton->hide();
+	else
+		applyPushButton->show();
+
+	i++;
+	widgetStack2->raiseWidget(i);
+	bottomFrame->show();
 }
 
 
@@ -89,7 +96,7 @@ void network::back()
 	else
 	{
 		widgetStack2->raiseWidget(0);
-		widgetStack3->raiseWidget(0);
+			bottomFrame->hide();
 	}
 	
 }
@@ -744,11 +751,10 @@ void network::fwInstall()
 		run.append( hardwareList->currentText() );
 
 	// change widget
-	QWidget *consoleWidget = new console(this, run );
+	bottomFrame->hide();
+	consoleWidget = new console(this, run );
 	widgetStack2->addWidget(consoleWidget, 7);
 	widgetStack2->raiseWidget(7);
-	widgetStack3->raiseWidget(2);
-	widgetStack2->removeWidget(consoleWidget);
 
 	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
 }
@@ -756,9 +762,10 @@ void network::fwInstall()
 void network::terminateConsole()
 {
 	widgetStack2->raiseWidget(5);
-	widgetStack3->raiseWidget(1);
+	bottomFrame->show();
 	emit menuLocked(FALSE);
 	fwDetect();
+	widgetStack2->removeWidget(consoleWidget);
 }
 
 #include "network.moc"

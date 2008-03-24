@@ -35,7 +35,7 @@
 #include "console.h"
 
 console::console(QWidget *parent, const QStrList &run, const char *name, const QStringList &)
-: Widget(parent,name)
+:ConsoleDialog(parent,name)
 {
 	//label->setText( name );
 	loadKonsole();
@@ -76,6 +76,7 @@ bool console::eventFilter( QObject *o, QEvent *e )
 	}
 	return false;
 };
+
 
 void console::finish()
 {

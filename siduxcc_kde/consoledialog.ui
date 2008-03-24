@@ -1,5 +1,5 @@
 <!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>Widget</class>
+<class>ConsoleDialog</class>
 <widget class="QWidget">
     <property name="name">
         <cstring>Widget</cstring>
@@ -8,8 +8,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>546</width>
-            <height>440</height>
+            <width>474</width>
+            <height>394</height>
         </rect>
     </property>
     <property name="caption">
@@ -45,7 +45,7 @@
                     </property>
                     <property name="sizePolicy">
                         <sizepolicy>
-                            <hsizetype>5</hsizetype>
+                            <hsizetype>7</hsizetype>
                             <vsizetype>7</vsizetype>
                             <horstretch>0</horstretch>
                             <verstretch>0</verstretch>
@@ -63,10 +63,25 @@
                 </widget>
             </grid>
         </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel</cstring>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>255</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                </color>
+            </property>
+            <property name="text">
+                <string>Don't close the window, before you see the message "Process done!".</string>
+            </property>
+        </widget>
     </grid>
 </widget>
 <slots>
     <slot>button_clicked()</slot>
 </slots>
-<layoutdefaults spacing="2" margin="2"/>
+<layoutdefaults spacing="3" margin="3"/>
 </UI>

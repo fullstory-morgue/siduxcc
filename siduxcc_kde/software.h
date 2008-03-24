@@ -30,10 +30,10 @@ class software : public SoftwareDialog
 
 	public:
 		software(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
-		void load();
 		void showPackages();
 		void warning();
-		void checkASV();
+		void installASV();
+		QWidget *consoleWidget;
 
 	private:
 		Process* shell;

@@ -36,6 +36,7 @@ class network : public NetworkDialog
 		void setNetworkcardSettings(QString, QString);
 		void updateNetworkcardStatus();
 
+	QWidget *consoleWidget;
 
 	private:
 		Process* shell;

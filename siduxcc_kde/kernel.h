@@ -40,6 +40,7 @@ class kernel : public KernelDialog
 		QString stableKernelFull;
 		QStringList modules;
 		int ci;
+		QWidget *consoleWidget;
 
 	private:
 		Process* shell;

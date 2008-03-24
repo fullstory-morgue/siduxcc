@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-24 12:45+0100\n"
+"POT-Creation-Date: 2008-03-24 16:12+0100\n"
 "PO-Revision-Date: 2008-02-24 13:i08+0100\n"
 "Last-Translator: Mutsumu Nomura\n"
 "Language-Team: \n"
@@ -30,158 +30,85 @@ msgid ""
 msgstr "sachs@infoseek.jp & muchan.m@gmail.com"
 
 #. i18n: file ./consoledialog.ui line 16
-#: consoledialog.cpp:66 rc.cpp:704
+#: consoledialog.cpp:72 rc.cpp:693
 #, no-c-format
 msgid "Widget"
 msgstr "ウィジット"
 
-#. i18n: file ./displaydialog.ui line 350
-#: display.cpp:185 display.cpp:240 displaydialog.cpp:2378 rc.cpp:72
+#. i18n: file ./consoledialog.ui line 78
+#: consoledialog.cpp:73 rc.cpp:696
+#, no-c-format
+msgid "Don't close the window, before you see the message \"Process done!\"."
+msgstr "\"処理完了\"のメッセージが出るまでウィンドウは閉じないでください。"
+
+#. i18n: file ./displaydialog.ui line 241
+#: display.cpp:191 display.cpp:246 displaydialog.cpp:2349 rc.cpp:51
 #, no-c-format
 msgid "custom"
 msgstr "カスタム"
 
-#: display.cpp:228
+#: display.cpp:234
 msgid "Modelines removed"
 msgstr "Modeline 削除"
 
-#: display.cpp:233
+#: display.cpp:239
 msgid ""
 "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
 "本当にX-Serverを再起動してよろしいですか? すべてのウィンドウが終了します."
 
-#: display.cpp:396
-msgid "Process is running!"
-msgstr "処理実行中!"
-
-#: display.cpp:415
-msgid "Process done!"
-msgstr "処理完了!"
-
 #. i18n: file ./displaydialog.ui line 17
-#: displaydialog.cpp:2353 rc.cpp:3 start.cpp:56 start.cpp:97
+#: displaydialog.cpp:2331 rc.cpp:3 start.cpp:56 start.cpp:97
 #, no-c-format
 msgid "Display"
 msgstr "ディスプレイ"
 
-#. i18n: file ./displaydialog.ui line 65
-#. i18n: file ./servicesdialog.ui line 96
-#. i18n: file ./internetdialog.ui line 74
-#. i18n: file ./networkdialog.ui line 105
-#. i18n: file ./softwaredialog.ui line 483
-#: displaydialog.cpp:2354 internetdialog.cpp:306 networkdialog.cpp:1952
-#: rc.cpp:6 rc.cpp:214 rc.cpp:295 rc.cpp:313 rc.cpp:681 servicesdialog.cpp:665
-#: softwaredialog.cpp:802
-#, no-c-format
-msgid "appl&y"
-msgstr "適用"
-
-#. i18n: file ./displaydialog.ui line 68
-#. i18n: file ./servicesdialog.ui line 99
-#. i18n: file ./internetdialog.ui line 77
-#. i18n: file ./networkdialog.ui line 108
-#. i18n: file ./softwaredialog.ui line 486
-#: displaydialog.cpp:2355 internetdialog.cpp:307 networkdialog.cpp:1953
-#: rc.cpp:9 rc.cpp:217 rc.cpp:298 rc.cpp:316 rc.cpp:684 servicesdialog.cpp:666
-#: softwaredialog.cpp:803
-#, no-c-format
-msgid "Alt+Y"
-msgstr "Alt+Y"
-
-#. i18n: file ./displaydialog.ui line 96
-#. i18n: file ./servicesdialog.ui line 85
-#. i18n: file ./networkdialog.ui line 85
-#. i18n: file ./softwaredialog.ui line 472
-#. i18n: file ./kerneldialog.ui line 441
-#: displaydialog.cpp:2356 kerneldialog.cpp:851 networkdialog.cpp:1950
-#: rc.cpp:12 rc.cpp:208 rc.cpp:307 rc.cpp:675 rc.cpp:752
-#: servicesdialog.cpp:663 softwaredialog.cpp:800
-#, no-c-format
-msgid "&back"
-msgstr "戻る"
-
-#. i18n: file ./displaydialog.ui line 99
-#. i18n: file ./servicesdialog.ui line 88
-#. i18n: file ./networkdialog.ui line 88
-#. i18n: file ./networkdialog.ui line 319
-#. i18n: file ./softwaredialog.ui line 475
-#. i18n: file ./kerneldialog.ui line 444
-#: displaydialog.cpp:2357 kerneldialog.cpp:852 networkdialog.cpp:1951
-#: networkdialog.cpp:1965 rc.cpp:15 rc.cpp:211 rc.cpp:310 rc.cpp:347
-#: rc.cpp:678 rc.cpp:755 servicesdialog.cpp:664 softwaredialog.cpp:801
-#, no-c-format
-msgid "Alt+B"
-msgstr "Alt+B"
-
-#. i18n: file ./displaydialog.ui line 110
-#: displaydialog.cpp:2358 rc.cpp:18
-#, no-c-format
-msgid "restart &X-Server"
-msgstr "X-Server再起動"
-
-#. i18n: file ./displaydialog.ui line 113
-#: displaydialog.cpp:2359 rc.cpp:21
-#, no-c-format
-msgid "Alt+X"
-msgstr "Alt+X"
-
-#. i18n: file ./displaydialog.ui line 134
-#. i18n: file ./networkdialog.ui line 129
-#. i18n: file ./softwaredialog.ui line 507
-#. i18n: file ./kerneldialog.ui line 518
-#: displaydialog.cpp:2360 kerneldialog.cpp:859 networkdialog.cpp:1954
-#: rc.cpp:24 rc.cpp:319 rc.cpp:687 rc.cpp:776 softwaredialog.cpp:804
-#, no-c-format
-msgid "Don't close the window, before you see the message \"Process done!\"."
-msgstr "\"処理完了\"のメッセージが出るまでウィンドウは閉じないでください。"
-
-#. i18n: file ./displaydialog.ui line 154
-#: displaydialog.cpp:2362 rc.cpp:27
+#. i18n: file ./displaydialog.ui line 45
+#: displaydialog.cpp:2333 rc.cpp:6
 #, no-c-format
 msgid "Change resolution & frequency"
 msgstr "解像度と周波数を変更"
 
-#. i18n: file ./displaydialog.ui line 162
-#: displaydialog.cpp:2363 rc.cpp:30
+#. i18n: file ./displaydialog.ui line 53
+#: displaydialog.cpp:2334 rc.cpp:9
 #, no-c-format
 msgid "Configure color-depth & DPI"
 msgstr "色深度とDPIを設定"
 
-#. i18n: file ./displaydialog.ui line 170
-#: displaydialog.cpp:2364 rc.cpp:33
+#. i18n: file ./displaydialog.ui line 61
+#: displaydialog.cpp:2335 rc.cpp:12
 #, no-c-format
 msgid "Configure X-Server"
 msgstr "X-Server 設定"
 
-#. i18n: file ./displaydialog.ui line 178
-#: displaydialog.cpp:2365 rc.cpp:36
+#. i18n: file ./displaydialog.ui line 69
+#: displaydialog.cpp:2336 rc.cpp:15
 #, no-c-format
 msgid "Install graphiccard-drivers"
 msgstr "グラフィックカードドライバーインストール"
 
-#. i18n: file ./displaydialog.ui line 186
-#: displaydialog.cpp:2366 rc.cpp:39
+#. i18n: file ./displaydialog.ui line 77
+#: displaydialog.cpp:2337 rc.cpp:18
 #, no-c-format
 msgid "Font-Settings"
 msgstr "Font 設定"
 
-#. i18n: file ./displaydialog.ui line 245
-#. i18n: file ./displaydialog.ui line 605
-#. i18n: file ./displaydialog.ui line 836
-#. i18n: file ./displaydialog.ui line 1072
-#: displaydialog.cpp:2367 displaydialog.cpp:2394 displaydialog.cpp:2405
-#: displaydialog.cpp:2422 rc.cpp:42 rc.cpp:107 rc.cpp:134 rc.cpp:179
+#. i18n: file ./displaydialog.ui line 136
+#. i18n: file ./displaydialog.ui line 496
+#. i18n: file ./displaydialog.ui line 727
+#. i18n: file ./displaydialog.ui line 963
+#: displaydialog.cpp:2338 displaydialog.cpp:2365 displaydialog.cpp:2376
+#: displaydialog.cpp:2393 rc.cpp:21 rc.cpp:86 rc.cpp:113 rc.cpp:158
 #, no-c-format
 msgid "WARNING!"
 msgstr "警告!"
 
-#. i18n: file ./displaydialog.ui line 260
-#. i18n: file ./displaydialog.ui line 620
-#. i18n: file ./displaydialog.ui line 851
-#. i18n: file ./displaydialog.ui line 1087
-#: displaydialog.cpp:2368 displaydialog.cpp:2395 displaydialog.cpp:2406
-#: displaydialog.cpp:2423 rc.cpp:45 rc.cpp:110 rc.cpp:137 rc.cpp:182
+#. i18n: file ./displaydialog.ui line 151
+#. i18n: file ./displaydialog.ui line 511
+#. i18n: file ./displaydialog.ui line 742
+#. i18n: file ./displaydialog.ui line 978
+#: displaydialog.cpp:2339 displaydialog.cpp:2366 displaydialog.cpp:2377
+#: displaydialog.cpp:2394 rc.cpp:24 rc.cpp:89 rc.cpp:116 rc.cpp:161
 #, no-c-format
 msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
@@ -192,312 +119,373 @@ msgstr ""
 "を押して、ルートでsiduxccコマンドを実行し、Main menuのDisplay-> restoreXを選"
 "択してください."
 
-#. i18n: file ./displaydialog.ui line 291
-#: displaydialog.cpp:2369 rc.cpp:48
+#. i18n: file ./displaydialog.ui line 182
+#: displaydialog.cpp:2340 rc.cpp:27
 #, no-c-format
 msgid "Resolution"
 msgstr "解像度"
 
-#. i18n: file ./displaydialog.ui line 315
-#: displaydialog.cpp:2371 rc.cpp:51
+#. i18n: file ./displaydialog.ui line 206
+#: displaydialog.cpp:2342 rc.cpp:30
 #, no-c-format
 msgid "640x480"
 msgstr "640x480"
 
-#. i18n: file ./displaydialog.ui line 320
-#: displaydialog.cpp:2372 rc.cpp:54
+#. i18n: file ./displaydialog.ui line 211
+#: displaydialog.cpp:2343 rc.cpp:33
 #, no-c-format
 msgid "800x600"
 msgstr "800x600"
 
-#. i18n: file ./displaydialog.ui line 325
-#: displaydialog.cpp:2373 rc.cpp:57
+#. i18n: file ./displaydialog.ui line 216
+#: displaydialog.cpp:2344 rc.cpp:36
 #, no-c-format
 msgid "1024x768"
 msgstr "1024x768"
 
-#. i18n: file ./displaydialog.ui line 330
-#: displaydialog.cpp:2374 rc.cpp:60
+#. i18n: file ./displaydialog.ui line 221
+#: displaydialog.cpp:2345 rc.cpp:39
 #, no-c-format
 msgid "1152x864"
 msgstr "1152x864"
 
-#. i18n: file ./displaydialog.ui line 335
-#: displaydialog.cpp:2375 rc.cpp:63
+#. i18n: file ./displaydialog.ui line 226
+#: displaydialog.cpp:2346 rc.cpp:42
 #, no-c-format
 msgid "1280x1024"
 msgstr "1280x1024"
 
-#. i18n: file ./displaydialog.ui line 340
-#: displaydialog.cpp:2376 rc.cpp:66
+#. i18n: file ./displaydialog.ui line 231
+#: displaydialog.cpp:2347 rc.cpp:45
 #, no-c-format
 msgid "1400x1050"
 msgstr "1400x1050"
 
-#. i18n: file ./displaydialog.ui line 345
-#: displaydialog.cpp:2377 rc.cpp:69
+#. i18n: file ./displaydialog.ui line 236
+#: displaydialog.cpp:2348 rc.cpp:48
 #, no-c-format
 msgid "1600x1200"
 msgstr "1600x1200"
 
-#. i18n: file ./displaydialog.ui line 412
-#: displaydialog.cpp:2380 rc.cpp:75
+#. i18n: file ./displaydialog.ui line 303
+#: displaydialog.cpp:2351 rc.cpp:54
 #, no-c-format
 msgid "Scanning Frequency"
 msgstr "周波数走査"
 
-#. i18n: file ./displaydialog.ui line 446
-#: displaydialog.cpp:2381 rc.cpp:78
+#. i18n: file ./displaydialog.ui line 337
+#: displaydialog.cpp:2352 rc.cpp:57
 #, no-c-format
 msgid "HorizSync:"
 msgstr "水平同期:"
 
-#. i18n: file ./displaydialog.ui line 462
-#: displaydialog.cpp:2382 rc.cpp:81
+#. i18n: file ./displaydialog.ui line 353
+#: displaydialog.cpp:2353 rc.cpp:60
 #, no-c-format
 msgid "VertRefresh:"
 msgstr "垂直リフレッシュ:"
 
-#. i18n: file ./displaydialog.ui line 484
-#: displaydialog.cpp:2384 rc.cpp:85
+#. i18n: file ./displaydialog.ui line 375
+#: displaydialog.cpp:2355 rc.cpp:64
 #, no-c-format
 msgid "Vertical Frequenz"
 msgstr "垂直周波数"
 
-#. i18n: file ./displaydialog.ui line 490
-#: displaydialog.cpp:2386 rc.cpp:88
+#. i18n: file ./displaydialog.ui line 381
+#: displaydialog.cpp:2357 rc.cpp:67
 #, no-c-format
 msgid "Type"
 msgstr "タイプ"
 
-#. i18n: file ./displaydialog.ui line 495
-#: displaydialog.cpp:2387 rc.cpp:91
+#. i18n: file ./displaydialog.ui line 386
+#: displaydialog.cpp:2358 rc.cpp:70
 #, no-c-format
 msgid "TFT"
 msgstr "TFT"
 
-#. i18n: file ./displaydialog.ui line 500
-#: displaydialog.cpp:2388 rc.cpp:94
+#. i18n: file ./displaydialog.ui line 391
+#: displaydialog.cpp:2359 rc.cpp:73
 #, no-c-format
 msgid "CRT"
 msgstr "CRT"
 
-#. i18n: file ./displaydialog.ui line 545
-#: displaydialog.cpp:2391 rc.cpp:98
+#. i18n: file ./displaydialog.ui line 436
+#: displaydialog.cpp:2362 rc.cpp:77
 #, no-c-format
 msgid "Horizontal Frequenz"
 msgstr "水平周波数"
 
-#. i18n: file ./displaydialog.ui line 570
-#: displaydialog.cpp:2392 rc.cpp:101
+#. i18n: file ./displaydialog.ui line 461
+#: displaydialog.cpp:2363 rc.cpp:80
 #, no-c-format
 msgid "Note"
 msgstr "注意"
 
-#. i18n: file ./displaydialog.ui line 587
-#: displaydialog.cpp:2393 rc.cpp:104
+#. i18n: file ./displaydialog.ui line 478
+#: displaydialog.cpp:2364 rc.cpp:83
 #, no-c-format
 msgid ""
 "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr "ATI ドライバー(fglrx)を使用しているときは、色深度は変更できません."
 
-#. i18n: file ./displaydialog.ui line 640
-#: displaydialog.cpp:2396 rc.cpp:113
+#. i18n: file ./displaydialog.ui line 531
+#: displaydialog.cpp:2367 rc.cpp:92
 #, no-c-format
 msgid "Color-Depth"
 msgstr "色深度"
 
-#. i18n: file ./displaydialog.ui line 664
-#: displaydialog.cpp:2398 rc.cpp:116
+#. i18n: file ./displaydialog.ui line 555
+#: displaydialog.cpp:2369 rc.cpp:95
 #, no-c-format
 msgid "8 bit"
 msgstr "8 bit"
 
-#. i18n: file ./displaydialog.ui line 669
-#: displaydialog.cpp:2399 rc.cpp:119
+#. i18n: file ./displaydialog.ui line 560
+#: displaydialog.cpp:2370 rc.cpp:98
 #, no-c-format
 msgid "15 bit"
 msgstr "15 bit"
 
-#. i18n: file ./displaydialog.ui line 674
-#: displaydialog.cpp:2400 rc.cpp:122
+#. i18n: file ./displaydialog.ui line 565
+#: displaydialog.cpp:2371 rc.cpp:101
 #, no-c-format
 msgid "16 bit"
 msgstr "16 bit"
 
-#. i18n: file ./displaydialog.ui line 679
-#: displaydialog.cpp:2401 rc.cpp:125
+#. i18n: file ./displaydialog.ui line 570
+#: displaydialog.cpp:2372 rc.cpp:104
 #, no-c-format
 msgid "24 bit"
 msgstr "24 bit"
 
-#. i18n: file ./displaydialog.ui line 725
-#: displaydialog.cpp:2403 rc.cpp:128
+#. i18n: file ./displaydialog.ui line 616
+#: displaydialog.cpp:2374 rc.cpp:107
 #, no-c-format
 msgid "DPI-Settings"
 msgstr "DPI設定"
 
-#. i18n: file ./displaydialog.ui line 762
-#: displaydialog.cpp:2404 rc.cpp:131
+#. i18n: file ./displaydialog.ui line 653
+#: displaydialog.cpp:2375 rc.cpp:110
 #, no-c-format
 msgid " dpi"
 msgstr " dpi"
 
-#. i18n: file ./displaydialog.ui line 882
-#: displaydialog.cpp:2407 rc.cpp:140
+#. i18n: file ./displaydialog.ui line 773
+#: displaydialog.cpp:2378 rc.cpp:119
 #, no-c-format
 msgid "Modelines"
 msgstr "Modelines"
 
-#. i18n: file ./displaydialog.ui line 922
-#: displaydialog.cpp:2408 rc.cpp:143
+#. i18n: file ./displaydialog.ui line 813
+#: displaydialog.cpp:2379 rc.cpp:122
 #, no-c-format
 msgid "Rem&ove Modelines"
 msgstr "Modelines削除"
 
-#. i18n: file ./displaydialog.ui line 925
-#. i18n: file ./displaydialog.ui line 1237
-#. i18n: file ./servicesdialog.ui line 394
-#. i18n: file ./networkdialog.ui line 349
-#. i18n: file ./networkdialog.ui line 706
+#. i18n: file ./displaydialog.ui line 816
+#. i18n: file ./servicesdialog.ui line 413
+#. i18n: file ./networkdialog.ui line 245
+#. i18n: file ./networkdialog.ui line 602
 #. i18n: file ./softwaredialog.ui line 290
-#. i18n: file ./kerneldialog.ui line 244
 #. i18n: file ./kerneldialog.ui line 336
-#: displaydialog.cpp:2409 displaydialog.cpp:2429 kerneldialog.cpp:845
-#: kerneldialog.cpp:849 networkdialog.cpp:1967 networkdialog.cpp:1985
-#: rc.cpp:146 rc.cpp:200 rc.cpp:253 rc.cpp:353 rc.cpp:407 rc.cpp:646
-#: rc.cpp:738 rc.cpp:748 servicesdialog.cpp:679 softwaredialog.cpp:785
+#: displaydialog.cpp:2380 kerneldialog.cpp:837 networkdialog.cpp:1949
+#: networkdialog.cpp:1967 rc.cpp:125 rc.cpp:248 rc.cpp:333 rc.cpp:387
+#: rc.cpp:638 rc.cpp:740 servicesdialog.cpp:674 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
-#. i18n: file ./displaydialog.ui line 953
-#: displaydialog.cpp:2410 rc.cpp:149
+#. i18n: file ./displaydialog.ui line 844
+#: displaydialog.cpp:2381 rc.cpp:128
 #, no-c-format
 msgid "Selecet X-Module"
 msgstr "X-Module選択"
 
-#. i18n: file ./displaydialog.ui line 990
-#: displaydialog.cpp:2411 rc.cpp:152
+#. i18n: file ./displaydialog.ui line 881
+#: displaydialog.cpp:2382 rc.cpp:131
 #, no-c-format
 msgid "E&nable Composite"
 msgstr "コンポジットを使用"
 
-#. i18n: file ./displaydialog.ui line 993
-#. i18n: file ./displaydialog.ui line 1161
-#. i18n: file ./networkdialog.ui line 641
-#. i18n: file ./networkdialog.ui line 1587
-#. i18n: file ./kerneldialog.ui line 458
-#: displaydialog.cpp:2412 displaydialog.cpp:2426 kerneldialog.cpp:854
-#: networkdialog.cpp:1982 networkdialog.cpp:2031 rc.cpp:155 rc.cpp:191
-#: rc.cpp:398 rc.cpp:519 rc.cpp:761
+#. i18n: file ./displaydialog.ui line 884
+#. i18n: file ./displaydialog.ui line 1052
+#. i18n: file ./displaydialog.ui line 1128
+#. i18n: file ./networkdialog.ui line 537
+#. i18n: file ./networkdialog.ui line 1483
+#. i18n: file ./softwaredialog.ui line 236
+#. i18n: file ./kerneldialog.ui line 460
+#: displaydialog.cpp:2383 displaydialog.cpp:2397 displaydialog.cpp:2400
+#: kerneldialog.cpp:844 networkdialog.cpp:1964 networkdialog.cpp:2013
+#: rc.cpp:134 rc.cpp:170 rc.cpp:179 rc.cpp:378 rc.cpp:499 rc.cpp:623
+#: rc.cpp:759 softwaredialog.cpp:762
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
 
-#. i18n: file ./displaydialog.ui line 999
-#: displaydialog.cpp:2414 rc.cpp:158
+#. i18n: file ./displaydialog.ui line 890
+#: displaydialog.cpp:2385 rc.cpp:137
 #, no-c-format
 msgid "VESA"
 msgstr "VESA"
 
-#. i18n: file ./displaydialog.ui line 1004
-#: displaydialog.cpp:2415 rc.cpp:161
+#. i18n: file ./displaydialog.ui line 895
+#: displaydialog.cpp:2386 rc.cpp:140
 #, no-c-format
 msgid "FBdev"
 msgstr "FBdev"
 
-#. i18n: file ./displaydialog.ui line 1009
-#: displaydialog.cpp:2416 rc.cpp:164
+#. i18n: file ./displaydialog.ui line 900
+#: displaydialog.cpp:2387 rc.cpp:143
 #, no-c-format
 msgid "nv"
 msgstr "nv"
 
-#. i18n: file ./displaydialog.ui line 1014
-#: displaydialog.cpp:2417 rc.cpp:167
+#. i18n: file ./displaydialog.ui line 905
+#: displaydialog.cpp:2388 rc.cpp:146
 #, no-c-format
 msgid "nvidia"
 msgstr "nvidia"
 
-#. i18n: file ./displaydialog.ui line 1019
-#: displaydialog.cpp:2418 rc.cpp:170
+#. i18n: file ./displaydialog.ui line 910
+#: displaydialog.cpp:2389 rc.cpp:149
 #, no-c-format
 msgid "ati"
 msgstr "ati"
 
-#. i18n: file ./displaydialog.ui line 1024
-#: displaydialog.cpp:2419 rc.cpp:173
+#. i18n: file ./displaydialog.ui line 915
+#: displaydialog.cpp:2390 rc.cpp:152
 #, no-c-format
 msgid "fglrx"
 msgstr "fglrx"
 
-#. i18n: file ./displaydialog.ui line 1029
-#: displaydialog.cpp:2420 rc.cpp:176
+#. i18n: file ./displaydialog.ui line 920
+#: displaydialog.cpp:2391 rc.cpp:155
 #, no-c-format
 msgid "vboxvideo"
 msgstr "vboxvideo"
 
-#. i18n: file ./displaydialog.ui line 1118
-#: displaydialog.cpp:2424 rc.cpp:185
+#. i18n: file ./displaydialog.ui line 1009
+#: displaydialog.cpp:2395 rc.cpp:164
 #, no-c-format
 msgid "ATI/Nvidia (Non-Free)"
 msgstr "ATI/Nvidia (Non-Free)"
 
-#. i18n: file ./displaydialog.ui line 1158
-#: displaydialog.cpp:2425 rc.cpp:188
+#. i18n: file ./displaydialog.ui line 1049
+#: displaydialog.cpp:2396 rc.cpp:167
 #, no-c-format
 msgid "I&nstall driver"
 msgstr "ドライバーインストール"
 
-#. i18n: file ./displaydialog.ui line 1197
-#: displaydialog.cpp:2427 rc.cpp:194
+#. i18n: file ./displaydialog.ui line 1088
+#: displaydialog.cpp:2398 rc.cpp:173
 #, no-c-format
 msgid "Fonts (fix-fonts)"
 msgstr "フォント(fix-fonts)"
 
-#. i18n: file ./displaydialog.ui line 1234
-#: displaydialog.cpp:2428 rc.cpp:197
-#, no-c-format
-msgid "Register F&onts"
+#. i18n: file ./displaydialog.ui line 1125
+#: displaydialog.cpp:2399 rc.cpp:176
+#, fuzzy, no-c-format
+msgid "Register Fo&nts"
 msgstr "フォント登録"
 
+#. i18n: file ./displaydialog.ui line 1173
+#. i18n: file ./servicesdialog.ui line 97
+#. i18n: file ./networkdialog.ui line 1941
+#. i18n: file ./softwaredialog.ui line 449
+#. i18n: file ./kerneldialog.ui line 471
+#: displaydialog.cpp:2401 kerneldialog.cpp:845 networkdialog.cpp:2048
+#: rc.cpp:182 rc.cpp:203 rc.cpp:590 rc.cpp:667 rc.cpp:762
+#: servicesdialog.cpp:658 softwaredialog.cpp:786
+#, no-c-format
+msgid "&back"
+msgstr "戻る"
+
+#. i18n: file ./displaydialog.ui line 1176
+#. i18n: file ./servicesdialog.ui line 100
+#. i18n: file ./networkdialog.ui line 215
+#. i18n: file ./networkdialog.ui line 1944
+#. i18n: file ./softwaredialog.ui line 452
+#. i18n: file ./kerneldialog.ui line 474
+#: displaydialog.cpp:2402 kerneldialog.cpp:846 networkdialog.cpp:1947
+#: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:327 rc.cpp:593
+#: rc.cpp:670 rc.cpp:765 servicesdialog.cpp:659 softwaredialog.cpp:787
+#, no-c-format
+msgid "Alt+B"
+msgstr "Alt+B"
+
+#. i18n: file ./displaydialog.ui line 1187
+#: displaydialog.cpp:2403 rc.cpp:188
+#, no-c-format
+msgid "restart &X-Server"
+msgstr "X-Server再起動"
+
+#. i18n: file ./displaydialog.ui line 1190
+#: displaydialog.cpp:2404 rc.cpp:191
+#, no-c-format
+msgid "Alt+X"
+msgstr "Alt+X"
+
+#. i18n: file ./displaydialog.ui line 1198
+#. i18n: file ./servicesdialog.ui line 116
+#. i18n: file ./internetdialog.ui line 74
+#. i18n: file ./networkdialog.ui line 1961
+#. i18n: file ./softwaredialog.ui line 460
+#: displaydialog.cpp:2405 internetdialog.cpp:306 networkdialog.cpp:2050
+#: rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:596 rc.cpp:673
+#: servicesdialog.cpp:660 softwaredialog.cpp:788
+#, no-c-format
+msgid "appl&y"
+msgstr "適用"
+
+#. i18n: file ./displaydialog.ui line 1201
+#. i18n: file ./servicesdialog.ui line 119
+#. i18n: file ./internetdialog.ui line 77
+#. i18n: file ./networkdialog.ui line 1964
+#. i18n: file ./softwaredialog.ui line 463
+#: displaydialog.cpp:2406 internetdialog.cpp:307 networkdialog.cpp:2051
+#: rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:599 rc.cpp:676
+#: servicesdialog.cpp:661 softwaredialog.cpp:789
+#, no-c-format
+msgid "Alt+Y"
+msgstr "Alt+Y"
+
 #. i18n: file ./infodialog.ui line 17
-#: infodialog.cpp:92 rc.cpp:690
+#: infodialog.cpp:92 rc.cpp:679
 #, no-c-format
 msgid "SysInfo"
 msgstr "システム情報"
 
 #. i18n: file ./infodialog.ui line 31
-#: infodialog.cpp:93 rc.cpp:693
+#: infodialog.cpp:93 rc.cpp:682
 #, no-c-format
 msgid "About sidux"
 msgstr "siduxについて"
 
 #. i18n: file ./infodialog.ui line 42
-#: infodialog.cpp:94 rc.cpp:696
+#: infodialog.cpp:94 rc.cpp:685
 #, no-c-format
 msgid "sidux Version:"
 msgstr "siduxバージョン:"
 
 #. i18n: file ./infodialog.ui line 94
-#: infodialog.cpp:96 rc.cpp:700
+#: infodialog.cpp:96 rc.cpp:689
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./internetdialog.ui line 17
-#: internetdialog.cpp:305 rc.cpp:292 start.cpp:60 start.cpp:124
+#: internetdialog.cpp:305 rc.cpp:287 start.cpp:60 start.cpp:124
 #, no-c-format
 msgid "Internet"
 msgstr "インターネット"
 
 #. i18n: file ./internetdialog.ui line 118
-#: internetdialog.cpp:308 rc.cpp:301
+#: internetdialog.cpp:308 rc.cpp:296
 #, no-c-format
 msgid "sidux-Browser"
 msgstr "siduxブラウザ"
 
-#: kernel.cpp:93
+#: kernel.cpp:92
 msgid ""
 "You only can install modules for the newest stable kernel. But this kernel "
 "isn't installed!"
@@ -505,20 +493,20 @@ msgstr ""
 "最新の安定カーネル用のモジュールだけしかインストールできません。そのカーネル"
 "はインストールされていません。"
 
-#: kernel.cpp:176
+#: kernel.cpp:182
 msgid "You have already installed the newest stable kernel!"
 msgstr "最新の安定カーネルはすでにインストールされています"
 
-#: kernel.cpp:178
+#: kernel.cpp:184
 #, fuzzy
 msgid "There is no stable kernel avaiable!"
 msgstr "利用可能な新しいカーネルはありません!"
 
-#: kernel.cpp:181
+#: kernel.cpp:187
 msgid "Are you sure you want to install a new kernel?"
 msgstr "本当に新しいカーネルをインストールしますか?"
 
-#: kernel.cpp:292
+#: kernel.cpp:298
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -527,7 +515,7 @@ msgid ""
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
 
-#: kernel.cpp:294
+#: kernel.cpp:300
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -537,51 +525,51 @@ msgid ""
 "disable wireless hardware"
 msgstr ""
 
-#: kernel.cpp:296
+#: kernel.cpp:302
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
 
-#: kernel.cpp:298
+#: kernel.cpp:304
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
 
-#: kernel.cpp:300
+#: kernel.cpp:306
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr ""
 
-#: kernel.cpp:302
+#: kernel.cpp:308
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
 
-#: kernel.cpp:304
+#: kernel.cpp:310
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
 
-#: kernel.cpp:306
+#: kernel.cpp:312
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
 
-#: kernel.cpp:308
+#: kernel.cpp:314
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
 msgstr ""
 
-#: kernel.cpp:310
+#: kernel.cpp:316
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
 "Linux driver for their wireless network cards.  This project implements "
@@ -591,28 +579,28 @@ msgid ""
 "is in Windows, without binary emulation."
 msgstr ""
 
-#: kernel.cpp:312
+#: kernel.cpp:318
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
 
-#: kernel.cpp:314
+#: kernel.cpp:320
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
 msgstr ""
 
-#: kernel.cpp:316
+#: kernel.cpp:322
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
 
-#: kernel.cpp:318
+#: kernel.cpp:324
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -624,109 +612,111 @@ msgid ""
 "overhead is needed."
 msgstr ""
 
-#: kernel.cpp:320 kernel.cpp:322
+#: kernel.cpp:326 kernel.cpp:328
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:831 rc.cpp:707 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:819 rc.cpp:699 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "カーネル"
 
 #. i18n: file ./kerneldialog.ui line 51
-#: kerneldialog.cpp:834 rc.cpp:711
+#: kerneldialog.cpp:822 rc.cpp:703
 #, no-c-format
 msgid "Install new kernel"
 msgstr "新しいカーネルをインストール"
 
 #. i18n: file ./kerneldialog.ui line 59
-#: kerneldialog.cpp:835 rc.cpp:714
+#: kerneldialog.cpp:823 rc.cpp:706
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "古いカーネルを削除"
 
 #. i18n: file ./kerneldialog.ui line 67
-#: kerneldialog.cpp:836 rc.cpp:717
+#: kerneldialog.cpp:824 rc.cpp:709
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "カーネルモジュールをインストール"
 
 #. i18n: file ./kerneldialog.ui line 152
-#: kerneldialog.cpp:838 rc.cpp:721
+#: kerneldialog.cpp:826 rc.cpp:713
 #, fuzzy, no-c-format
 msgid "Current kernel:"
 msgstr "現在のカーネル"
 
 #. i18n: file ./kerneldialog.ui line 168
-#: kerneldialog.cpp:839 rc.cpp:724
+#: kerneldialog.cpp:827 rc.cpp:716
 #, fuzzy, no-c-format
 msgid "Newest stable kernel:"
 msgstr "最新の安定カーネルをインストール"
 
 #. i18n: file ./kerneldialog.ui line 209
 #. i18n: file ./kerneldialog.ui line 225
-#: kerneldialog.cpp:842 kerneldialog.cpp:843 rc.cpp:729 rc.cpp:732
+#: kerneldialog.cpp:830 kerneldialog.cpp:831 rc.cpp:721 rc.cpp:724
 #, no-c-format
 msgid "---"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 241
-#: kerneldialog.cpp:844 rc.cpp:735
+#: kerneldialog.cpp:832 rc.cpp:727
 #, no-c-format
-msgid "Install aut&omatic new kernels during dist-updates."
+msgid "Install &automatic new kernels during dist-updates."
 msgstr ""
 
+#. i18n: file ./servicesdialog.ui line 391
+#. i18n: file ./networkdialog.ui line 278
+#. i18n: file ./networkdialog.ui line 997
+#. i18n: file ./networkdialog.ui line 1469
+#. i18n: file ./softwaredialog.ui line 390
+#. i18n: file ./kerneldialog.ui line 244
+#. i18n: file ./kerneldialog.ui line 446
+#: kerneldialog.cpp:833 kerneldialog.cpp:842 networkdialog.cpp:1952
+#: networkdialog.cpp:1970 networkdialog.cpp:2011 rc.cpp:242 rc.cpp:342
+#: rc.cpp:394 rc.cpp:493 rc.cpp:664 rc.cpp:730 rc.cpp:753
+#: servicesdialog.cpp:672 softwaredialog.cpp:785
+#, no-c-format
+msgid "Alt+A"
+msgstr "Alt+A"
+
 #. i18n: file ./kerneldialog.ui line 269
-#: kerneldialog.cpp:846 rc.cpp:741
+#: kerneldialog.cpp:834 rc.cpp:733
 #, no-c-format
 msgid "Current kernel"
 msgstr "現在のカーネル"
 
 #. i18n: file ./kerneldialog.ui line 333
-#: kerneldialog.cpp:848 rc.cpp:745
+#: kerneldialog.cpp:836 rc.cpp:737
 #, fuzzy, no-c-format
 msgid "rem&ove"
 msgstr "削除"
 
-#. i18n: file ./kerneldialog.ui line 455
-#: kerneldialog.cpp:853 rc.cpp:758
-#, no-c-format
-msgid "i&nstall"
-msgstr "インストール"
-
-#. i18n: file ./kerneldialog.ui line 466
-#: kerneldialog.cpp:855 rc.cpp:764
-#, fuzzy, no-c-format
-msgid "&apply"
-msgstr "適用"
-
-#. i18n: file ./servicesdialog.ui line 372
-#. i18n: file ./networkdialog.ui line 382
-#. i18n: file ./networkdialog.ui line 1101
-#. i18n: file ./networkdialog.ui line 1573
-#. i18n: file ./softwaredialog.ui line 390
-#. i18n: file ./kerneldialog.ui line 469
-#: kerneldialog.cpp:856 networkdialog.cpp:1970 networkdialog.cpp:1988
-#: networkdialog.cpp:2029 rc.cpp:247 rc.cpp:362 rc.cpp:414 rc.cpp:513
-#: rc.cpp:672 rc.cpp:767 servicesdialog.cpp:677 softwaredialog.cpp:799
-#, no-c-format
-msgid "Alt+A"
-msgstr "Alt+A"
-
-#. i18n: file ./kerneldialog.ui line 494
-#: kerneldialog.cpp:857 rc.cpp:770
+#. i18n: file ./kerneldialog.ui line 415
+#: kerneldialog.cpp:839 rc.cpp:744
 #, fuzzy, no-c-format
 msgid "Show &metapackages"
 msgstr "更新可能パッケージ表示"
 
-#. i18n: file ./kerneldialog.ui line 497
-#: kerneldialog.cpp:858 rc.cpp:773
+#. i18n: file ./kerneldialog.ui line 418
+#: kerneldialog.cpp:840 rc.cpp:747
 #, no-c-format
 msgid "Alt+M"
 msgstr "Alt+M"
+
+#. i18n: file ./kerneldialog.ui line 443
+#: kerneldialog.cpp:841 rc.cpp:750
+#, fuzzy, no-c-format
+msgid "&apply"
+msgstr "適用"
+
+#. i18n: file ./kerneldialog.ui line 457
+#: kerneldialog.cpp:843 rc.cpp:756
+#, no-c-format
+msgid "i&nstall"
+msgstr "インストール"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
@@ -753,19 +743,19 @@ msgstr "ceniとfw-detectの開発者"
 msgid "Icon"
 msgstr "アクション"
 
-#: network.cpp:236 network.cpp:246
+#: network.cpp:243 network.cpp:253
 msgid "Mac Address"
 msgstr "MAC アドレス"
 
-#. i18n: file ./servicesdialog.ui line 311
-#. i18n: file ./networkdialog.ui line 269
-#: network.cpp:237 network.cpp:247 networkdialog.cpp:1962 rc.cpp:235
-#: rc.cpp:338 servicesdialog.cpp:673
+#. i18n: file ./servicesdialog.ui line 330
+#. i18n: file ./networkdialog.ui line 165
+#: network.cpp:244 network.cpp:254 networkdialog.cpp:1944 rc.cpp:230
+#: rc.cpp:318 servicesdialog.cpp:668
 #, no-c-format
 msgid "Description"
 msgstr "記述"
 
-#: network.cpp:445
+#: network.cpp:452
 msgid ""
 "<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
 "in and it will be deactivated if the cable is pulled. This is useful on "
@@ -779,655 +769,654 @@ msgstr ""
 "使うと便利です。<br><br><b>自動</b>: コンピュータが起動したときにネットワーク"
 "カードが作動するようにする。"
 
-#: network.cpp:539
+#: network.cpp:546
 msgid "WEP encryption requires a key with at least 5 characters."
 msgstr "WEPの暗号化には最低５文字のキーが必要です"
 
-#: network.cpp:541
+#: network.cpp:548
 msgid "WPA encryption requires a key with 8 to 63 characters."
 msgstr "WPAの暗号化には8文字以上63文字以下のキーが必要です。"
 
-#: network.cpp:543
+#: network.cpp:550
 msgid "..."
 msgstr "..."
 
-#. i18n: file ./networkdialog.ui line 1107
-#: network.cpp:722 networkdialog.cpp:1990 rc.cpp:417
+#. i18n: file ./networkdialog.ui line 1003
+#: network.cpp:729 networkdialog.cpp:1972 rc.cpp:397
 #, no-c-format
 msgid "Detected"
 msgstr "見つかりました"
 
-#. i18n: file ./networkdialog.ui line 388
-#: networkdialog.cpp:1533 networkdialog.cpp:1971 rc.cpp:365
+#. i18n: file ./networkdialog.ui line 284
+#: networkdialog.cpp:1499 networkdialog.cpp:1953 rc.cpp:345
 #, no-c-format
 msgid "Interface"
 msgstr "インターフェース"
 
-#. i18n: file ./networkdialog.ui line 399
-#: networkdialog.cpp:1534 networkdialog.cpp:1972 rc.cpp:368
+#. i18n: file ./networkdialog.ui line 295
+#: networkdialog.cpp:1500 networkdialog.cpp:1954 rc.cpp:348
 #, no-c-format
 msgid "IP address"
 msgstr "Ipアドレス"
 
-#. i18n: file ./networkdialog.ui line 410
-#: networkdialog.cpp:1535 networkdialog.cpp:1973 rc.cpp:371
+#. i18n: file ./networkdialog.ui line 306
+#: networkdialog.cpp:1501 networkdialog.cpp:1955 rc.cpp:351
 #, no-c-format
 msgid "Method"
 msgstr "メソッド"
 
-#. i18n: file ./networkdialog.ui line 421
-#: networkdialog.cpp:1536 networkdialog.cpp:1974 rc.cpp:374
+#. i18n: file ./networkdialog.ui line 317
+#: networkdialog.cpp:1502 networkdialog.cpp:1956 rc.cpp:354
 #, no-c-format
 msgid "Class"
 msgstr "クラス"
 
-#. i18n: file ./networkdialog.ui line 432
-#: networkdialog.cpp:1537 networkdialog.cpp:1975 rc.cpp:377
+#. i18n: file ./networkdialog.ui line 328
+#: networkdialog.cpp:1503 networkdialog.cpp:1957 rc.cpp:357
 #, no-c-format
 msgid "Driver"
 msgstr "ドライバー"
 
-#. i18n: file ./networkdialog.ui line 443
-#: networkdialog.cpp:1538 networkdialog.cpp:1976 rc.cpp:380
+#. i18n: file ./networkdialog.ui line 339
+#: networkdialog.cpp:1504 networkdialog.cpp:1958 rc.cpp:360
 #, no-c-format
 msgid "Slot"
 msgstr "スロット"
 
-#. i18n: file ./networkdialog.ui line 1924
-#: networkdialog.cpp:1909 networkdialog.cpp:2060 rc.cpp:592
+#. i18n: file ./networkdialog.ui line 1820
+#: networkdialog.cpp:1875 networkdialog.cpp:2042 rc.cpp:572
 #, no-c-format
 msgid "ESSID"
 msgstr "ESSID"
 
-#. i18n: file ./networkdialog.ui line 1935
-#: networkdialog.cpp:1910 networkdialog.cpp:2061 rc.cpp:595
+#. i18n: file ./networkdialog.ui line 1831
+#: networkdialog.cpp:1876 networkdialog.cpp:2043 rc.cpp:575
 #, no-c-format
 msgid "Channel"
 msgstr "チャンネル"
 
-#. i18n: file ./networkdialog.ui line 1946
-#: networkdialog.cpp:1911 networkdialog.cpp:2062 rc.cpp:598
+#. i18n: file ./networkdialog.ui line 1842
+#: networkdialog.cpp:1877 networkdialog.cpp:2044 rc.cpp:578
 #, no-c-format
 msgid "Quality"
 msgstr "クォリティー"
 
-#. i18n: file ./networkdialog.ui line 1957
-#: networkdialog.cpp:1912 networkdialog.cpp:2063 rc.cpp:601
+#. i18n: file ./networkdialog.ui line 1853
+#: networkdialog.cpp:1878 networkdialog.cpp:2045 rc.cpp:581
 #, no-c-format
 msgid "WEP/WPA"
 msgstr "WEP/WPA"
 
-#. i18n: file ./networkdialog.ui line 1968
-#: networkdialog.cpp:1913 networkdialog.cpp:2064 rc.cpp:604
+#. i18n: file ./networkdialog.ui line 1864
+#: networkdialog.cpp:1879 networkdialog.cpp:2046 rc.cpp:584
 #, no-c-format
 msgid "BSSID"
 msgstr "BSSID"
 
 #. i18n: file ./networkdialog.ui line 17
-#: networkdialog.cpp:1949 rc.cpp:304 start.cpp:68 start.cpp:104
+#: networkdialog.cpp:1936 rc.cpp:299 start.cpp:68 start.cpp:104
 #, no-c-format
 msgid "Network"
 msgstr "ネットワーク"
 
-#. i18n: file ./networkdialog.ui line 149
-#: networkdialog.cpp:1956 rc.cpp:322
+#. i18n: file ./networkdialog.ui line 45
+#: networkdialog.cpp:1938 rc.cpp:302
 #, no-c-format
 msgid "Configure network cards"
 msgstr "ネットワークカード設定"
 
-#. i18n: file ./networkdialog.ui line 157
-#: networkdialog.cpp:1957 rc.cpp:325
+#. i18n: file ./networkdialog.ui line 53
+#: networkdialog.cpp:1939 rc.cpp:305
 #, no-c-format
 msgid "Set hostname"
 msgstr "ホスト名設定"
 
-#. i18n: file ./networkdialog.ui line 165
-#: networkdialog.cpp:1958 rc.cpp:328
+#. i18n: file ./networkdialog.ui line 61
+#: networkdialog.cpp:1940 rc.cpp:308
 #, no-c-format
 msgid "Set nameservers"
 msgstr "ネームサーバー設定"
 
-#. i18n: file ./networkdialog.ui line 173
-#: networkdialog.cpp:1959 rc.cpp:331
+#. i18n: file ./networkdialog.ui line 69
+#: networkdialog.cpp:1941 rc.cpp:311
 #, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
 msgstr "WLAN-カード(Ndiswrapper)インストール"
 
-#. i18n: file ./networkdialog.ui line 181
-#: networkdialog.cpp:1960 rc.cpp:334
+#. i18n: file ./networkdialog.ui line 77
+#: networkdialog.cpp:1942 rc.cpp:314
 #, no-c-format
 msgid "Install WLAN cards (fwdetect)"
 msgstr "WLAN-カード(fwdetect)インストール"
 
-#. i18n: file ./networkdialog.ui line 288
-#: networkdialog.cpp:1963 rc.cpp:341
+#. i18n: file ./networkdialog.ui line 184
+#: networkdialog.cpp:1945 rc.cpp:321
 #, no-c-format
 msgid "MAC address"
 msgstr "MAC アドレス"
 
-#. i18n: file ./networkdialog.ui line 316
-#: networkdialog.cpp:1964 rc.cpp:344
+#. i18n: file ./networkdialog.ui line 212
+#: networkdialog.cpp:1946 rc.cpp:324
 #, no-c-format
 msgid "Disa&ble"
 msgstr "無効"
 
-#. i18n: file ./networkdialog.ui line 346
-#: networkdialog.cpp:1966 rc.cpp:350
+#. i18n: file ./networkdialog.ui line 242
+#: networkdialog.cpp:1948 rc.cpp:330
 #, no-c-format
 msgid "C&onfigure"
 msgstr "設定"
 
-#. i18n: file ./networkdialog.ui line 352
-#: networkdialog.cpp:1968 rc.cpp:356
+#. i18n: file ./networkdialog.ui line 248
+#: networkdialog.cpp:1950 rc.cpp:336
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "選択したデバイスの設定変更"
 
-#. i18n: file ./networkdialog.ui line 379
-#: networkdialog.cpp:1969 rc.cpp:359
+#. i18n: file ./networkdialog.ui line 275
+#: networkdialog.cpp:1951 rc.cpp:339
 #, no-c-format
 msgid "En&able"
 msgstr "有効"
 
-#. i18n: file ./networkdialog.ui line 487
-#: networkdialog.cpp:1977 rc.cpp:383
+#. i18n: file ./networkdialog.ui line 383
+#: networkdialog.cpp:1959 rc.cpp:363
 #, no-c-format
 msgid "List of configured network devices"
 msgstr "設定されたネットワークデバイスのリスト"
 
-#. i18n: file ./networkdialog.ui line 514
-#: networkdialog.cpp:1978 rc.cpp:386
+#. i18n: file ./networkdialog.ui line 410
+#: networkdialog.cpp:1960 rc.cpp:366
 #, no-c-format
 msgid "Hostname"
 msgstr "ホストネーム"
 
-#. i18n: file ./networkdialog.ui line 569
-#: networkdialog.cpp:1979 rc.cpp:389
+#. i18n: file ./networkdialog.ui line 465
+#: networkdialog.cpp:1961 rc.cpp:369
 #, no-c-format
 msgid "DNS Servers"
 msgstr "DNSサーバー"
 
-#. i18n: file ./networkdialog.ui line 604
-#: networkdialog.cpp:1980 rc.cpp:392
+#. i18n: file ./networkdialog.ui line 500
+#: networkdialog.cpp:1962 rc.cpp:372
 #, no-c-format
 msgid "Install wlan card"
 msgstr "Wlanカードをインストール"
 
-#. i18n: file ./networkdialog.ui line 638
-#: networkdialog.cpp:1981 rc.cpp:395
+#. i18n: file ./networkdialog.ui line 534
+#: networkdialog.cpp:1963 rc.cpp:375
 #, no-c-format
 msgid "&Ndiswrapper"
 msgstr "Ndiswrapper"
 
-#. i18n: file ./networkdialog.ui line 669
-#: networkdialog.cpp:1983 rc.cpp:401
+#. i18n: file ./networkdialog.ui line 565
+#: networkdialog.cpp:1965 rc.cpp:381
 #, no-c-format
 msgid "Cards known to work"
 msgstr "機能が確認されたカード"
 
-#. i18n: file ./networkdialog.ui line 703
-#: networkdialog.cpp:1984 rc.cpp:404
+#. i18n: file ./networkdialog.ui line 599
+#: networkdialog.cpp:1966 rc.cpp:384
 #, no-c-format
 msgid "Sh&ow list"
 msgstr "リスト表示"
 
-#. i18n: file ./networkdialog.ui line 1098
-#: networkdialog.cpp:1987 rc.cpp:411
+#. i18n: file ./networkdialog.ui line 994
+#: networkdialog.cpp:1969 rc.cpp:391
 #, no-c-format
 msgid "Inst&all"
 msgstr "インストール"
 
-#. i18n: file ./networkdialog.ui line 1112
-#: networkdialog.cpp:1991 rc.cpp:420
+#. i18n: file ./networkdialog.ui line 1008
+#: networkdialog.cpp:1973 rc.cpp:400
 #, no-c-format
 msgid "All"
 msgstr "すべて"
 
-#. i18n: file ./networkdialog.ui line 1193
-#: networkdialog.cpp:1995 rc.cpp:425
+#. i18n: file ./networkdialog.ui line 1089
+#: networkdialog.cpp:1977 rc.cpp:405
 #, no-c-format
 msgid "LAN settings"
 msgstr "LANの設定"
 
-#. i18n: file ./networkdialog.ui line 1201
-#: networkdialog.cpp:1996 rc.cpp:428
+#. i18n: file ./networkdialog.ui line 1097
+#: networkdialog.cpp:1978 rc.cpp:408
 #, no-c-format
 msgid "WLAN settings"
 msgstr "WLANの設定"
 
-#. i18n: file ./networkdialog.ui line 1209
-#: networkdialog.cpp:1997 rc.cpp:431
+#. i18n: file ./networkdialog.ui line 1105
+#: networkdialog.cpp:1979 rc.cpp:411
 #, no-c-format
 msgid "WLAN security"
 msgstr "WLANセキュリティ"
 
-#. i18n: file ./networkdialog.ui line 1270
-#: networkdialog.cpp:1999 rc.cpp:434
+#. i18n: file ./networkdialog.ui line 1166
+#: networkdialog.cpp:1981 rc.cpp:414
 #, no-c-format
 msgid "manual"
 msgstr "マニュアル"
 
-#. i18n: file ./networkdialog.ui line 1275
-#: networkdialog.cpp:2000 rc.cpp:437
+#. i18n: file ./networkdialog.ui line 1171
+#: networkdialog.cpp:1982 rc.cpp:417
 #, no-c-format
 msgid "allow hotplug"
 msgstr "ホットプラグを使う"
 
-#. i18n: file ./networkdialog.ui line 1280
-#: networkdialog.cpp:2001 rc.cpp:440
+#. i18n: file ./networkdialog.ui line 1176
+#: networkdialog.cpp:1983 rc.cpp:420
 #, no-c-format
 msgid "auto"
 msgstr "自動"
 
-#. i18n: file ./networkdialog.ui line 1342
-#: networkdialog.cpp:2007 rc.cpp:447
+#. i18n: file ./networkdialog.ui line 1238
+#: networkdialog.cpp:1989 rc.cpp:427
 #, no-c-format
 msgid "dhcp"
 msgstr "DHCP"
 
-#. i18n: file ./networkdialog.ui line 1347
-#: networkdialog.cpp:2008 rc.cpp:450
+#. i18n: file ./networkdialog.ui line 1243
+#: networkdialog.cpp:1990 rc.cpp:430
 #, no-c-format
 msgid "static"
 msgstr "スタティック"
 
-#. i18n: file ./networkdialog.ui line 1375
-#: networkdialog.cpp:2009 rc.cpp:453
+#. i18n: file ./networkdialog.ui line 1271
+#: networkdialog.cpp:1991 rc.cpp:433
 #, no-c-format
 msgid "<b>Method:</b>"
 msgstr "<b>メソッド:</b>"
 
-#. i18n: file ./networkdialog.ui line 1391
-#: networkdialog.cpp:2010 rc.cpp:456
+#. i18n: file ./networkdialog.ui line 1287
+#: networkdialog.cpp:1992 rc.cpp:436
 #, no-c-format
 msgid "<b>Class:</b>"
 msgstr "<b>クラス:</b>"
 
-#. i18n: file ./networkdialog.ui line 1427
-#. i18n: file ./networkdialog.ui line 1446
-#. i18n: file ./networkdialog.ui line 1473
-#. i18n: file ./networkdialog.ui line 1492
-#. i18n: file ./networkdialog.ui line 1511
-#: networkdialog.cpp:2011 networkdialog.cpp:2014 networkdialog.cpp:2018
-#: networkdialog.cpp:2021 networkdialog.cpp:2024 rc.cpp:459 rc.cpp:468
-#: rc.cpp:480 rc.cpp:489 rc.cpp:498
+#. i18n: file ./networkdialog.ui line 1323
+#. i18n: file ./networkdialog.ui line 1342
+#. i18n: file ./networkdialog.ui line 1369
+#. i18n: file ./networkdialog.ui line 1388
+#. i18n: file ./networkdialog.ui line 1407
+#: networkdialog.cpp:1993 networkdialog.cpp:1996 networkdialog.cpp:2000
+#: networkdialog.cpp:2003 networkdialog.cpp:2006 rc.cpp:439 rc.cpp:448
+#: rc.cpp:460 rc.cpp:469 rc.cpp:478
 #, no-c-format
 msgid "000.000.000.000; "
 msgstr "000.000.000.000; "
 
-#. i18n: file ./networkdialog.ui line 1430
-#: networkdialog.cpp:2012 rc.cpp:462
+#. i18n: file ./networkdialog.ui line 1326
+#: networkdialog.cpp:1994 rc.cpp:442
 #, no-c-format
 msgid "E.g. 192.168.0.2"
 msgstr "例. 192.168.0.2"
 
-#. i18n: file ./networkdialog.ui line 1438
-#: networkdialog.cpp:2013 rc.cpp:465
+#. i18n: file ./networkdialog.ui line 1334
+#: networkdialog.cpp:1995 rc.cpp:445
 #, no-c-format
 msgid "IP address:"
 msgstr "Ipアドレス:"
 
-#. i18n: file ./networkdialog.ui line 1449
-#: networkdialog.cpp:2015 rc.cpp:471
+#. i18n: file ./networkdialog.ui line 1345
+#: networkdialog.cpp:1997 rc.cpp:451
 #, no-c-format
 msgid "E.g. 255.255.255.0"
 msgstr "例. 255.255.255.0"
 
-#. i18n: file ./networkdialog.ui line 1457
-#: networkdialog.cpp:2016 rc.cpp:474
+#. i18n: file ./networkdialog.ui line 1353
+#: networkdialog.cpp:1998 rc.cpp:454
 #, no-c-format
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
-#. i18n: file ./networkdialog.ui line 1465
-#: networkdialog.cpp:2017 rc.cpp:477
+#. i18n: file ./networkdialog.ui line 1361
+#: networkdialog.cpp:1999 rc.cpp:457
 #, no-c-format
 msgid "Gateway:"
 msgstr "ゲートウェイ"
 
-#. i18n: file ./networkdialog.ui line 1476
-#: networkdialog.cpp:2019 rc.cpp:483
+#. i18n: file ./networkdialog.ui line 1372
+#: networkdialog.cpp:2001 rc.cpp:463
 #, no-c-format
 msgid "E.g. 192.168.0.254"
 msgstr "例. 192.168.0.254"
 
-#. i18n: file ./networkdialog.ui line 1484
-#: networkdialog.cpp:2020 rc.cpp:486
+#. i18n: file ./networkdialog.ui line 1380
+#: networkdialog.cpp:2002 rc.cpp:466
 #, no-c-format
 msgid "Network:"
 msgstr "ネットワーク"
 
-#. i18n: file ./networkdialog.ui line 1495
-#. i18n: file ./networkdialog.ui line 1514
-#: networkdialog.cpp:2022 networkdialog.cpp:2025 rc.cpp:492 rc.cpp:501
+#. i18n: file ./networkdialog.ui line 1391
+#. i18n: file ./networkdialog.ui line 1410
+#: networkdialog.cpp:2004 networkdialog.cpp:2007 rc.cpp:472 rc.cpp:481
 #, no-c-format
 msgid "E.g. 192.168.0.255"
 msgstr "例. 192.168.0.255"
 
-#. i18n: file ./networkdialog.ui line 1503
-#: networkdialog.cpp:2023 rc.cpp:495
+#. i18n: file ./networkdialog.ui line 1399
+#: networkdialog.cpp:2005 rc.cpp:475
 #, no-c-format
 msgid "Broadcast:"
 msgstr "ブロードキャスト:"
 
-#. i18n: file ./networkdialog.ui line 1540
-#: networkdialog.cpp:2026 rc.cpp:504
+#. i18n: file ./networkdialog.ui line 1436
+#: networkdialog.cpp:2008 rc.cpp:484
 #, no-c-format
 msgid "<b>ESSID:</b>"
 msgstr "<b>ESSID:</b>"
 
-#. i18n: file ./networkdialog.ui line 1556
-#: networkdialog.cpp:2027 rc.cpp:507
+#. i18n: file ./networkdialog.ui line 1452
+#: networkdialog.cpp:2009 rc.cpp:487
 #, no-c-format
 msgid "Channel/ Frequency"
 msgstr "チャンネル/周波数"
 
-#. i18n: file ./networkdialog.ui line 1570
-#: networkdialog.cpp:2028 rc.cpp:510
+#. i18n: file ./networkdialog.ui line 1466
+#: networkdialog.cpp:2010 rc.cpp:490
 #, no-c-format
 msgid "&Auto"
 msgstr "自動"
 
-#. i18n: file ./networkdialog.ui line 1584
-#: networkdialog.cpp:2030 rc.cpp:516
+#. i18n: file ./networkdialog.ui line 1480
+#: networkdialog.cpp:2012 rc.cpp:496
 #, no-c-format
 msgid "Cha&nnel:"
 msgstr "チャンネル:"
 
-#. i18n: file ./networkdialog.ui line 1595
-#: networkdialog.cpp:2032 rc.cpp:522
+#. i18n: file ./networkdialog.ui line 1491
+#: networkdialog.cpp:2014 rc.cpp:502
 #, no-c-format
 msgid "Fre&quency:"
 msgstr "周波数:"
 
-#. i18n: file ./networkdialog.ui line 1598
-#: networkdialog.cpp:2033 rc.cpp:525
+#. i18n: file ./networkdialog.ui line 1494
+#: networkdialog.cpp:2015 rc.cpp:505
 #, no-c-format
 msgid "Alt+Q"
 msgstr "Alt+Q"
 
-#. i18n: file ./networkdialog.ui line 1617
-#: networkdialog.cpp:2034 rc.cpp:528
+#. i18n: file ./networkdialog.ui line 1513
+#: networkdialog.cpp:2016 rc.cpp:508
 #, no-c-format
 msgid ".G"
 msgstr ".G"
 
-#. i18n: file ./networkdialog.ui line 1620
-#: networkdialog.cpp:2035 rc.cpp:531
+#. i18n: file ./networkdialog.ui line 1516
+#: networkdialog.cpp:2017 rc.cpp:511
 #, no-c-format
 msgid "9.999G;_"
 msgstr "9.999G;_"
 
-#. i18n: file ./networkdialog.ui line 1638
-#: networkdialog.cpp:2036 rc.cpp:534
+#. i18n: file ./networkdialog.ui line 1534
+#: networkdialog.cpp:2018 rc.cpp:514
 #, no-c-format
 msgid "Advanced options"
 msgstr "高度なオプション"
 
-#. i18n: file ./networkdialog.ui line 1652
-#: networkdialog.cpp:2037 rc.cpp:537
+#. i18n: file ./networkdialog.ui line 1548
+#: networkdialog.cpp:2019 rc.cpp:517
 #, no-c-format
 msgid "NWID:"
 msgstr "NWID:"
 
-#. i18n: file ./networkdialog.ui line 1660
-#: networkdialog.cpp:2038 rc.cpp:540
+#. i18n: file ./networkdialog.ui line 1556
+#: networkdialog.cpp:2020 rc.cpp:520
 #, no-c-format
 msgid "iwspy:"
 msgstr "iwspy:"
 
-#. i18n: file ./networkdialog.ui line 1668
-#: networkdialog.cpp:2039 rc.cpp:543
+#. i18n: file ./networkdialog.ui line 1564
+#: networkdialog.cpp:2021 rc.cpp:523
 #, no-c-format
 msgid "iwconfig:"
 msgstr "iwconfig:"
 
-#. i18n: file ./networkdialog.ui line 1676
-#: networkdialog.cpp:2040 rc.cpp:546
+#. i18n: file ./networkdialog.ui line 1572
+#: networkdialog.cpp:2022 rc.cpp:526
 #, no-c-format
 msgid "iwpriv:"
 msgstr "iwpriv:"
 
-#. i18n: file ./networkdialog.ui line 1714
-#: networkdialog.cpp:2041 rc.cpp:549
+#. i18n: file ./networkdialog.ui line 1610
+#: networkdialog.cpp:2023 rc.cpp:529
 #, no-c-format
 msgid "<b>Mode:</b>"
 msgstr "<b>モード:</b>"
 
-#. i18n: file ./networkdialog.ui line 1725
-#: networkdialog.cpp:2044 rc.cpp:553
+#. i18n: file ./networkdialog.ui line 1621
+#: networkdialog.cpp:2026 rc.cpp:533
 #, no-c-format
 msgid "Managed"
 msgstr "Managed"
 
-#. i18n: file ./networkdialog.ui line 1730
-#: networkdialog.cpp:2045 rc.cpp:556
+#. i18n: file ./networkdialog.ui line 1626
+#: networkdialog.cpp:2027 rc.cpp:536
 #, no-c-format
 msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
 
-#. i18n: file ./networkdialog.ui line 1735
-#: networkdialog.cpp:2046 rc.cpp:559
+#. i18n: file ./networkdialog.ui line 1631
+#: networkdialog.cpp:2028 rc.cpp:539
 #, no-c-format
 msgid "Master"
 msgstr "マスター"
 
-#. i18n: file ./networkdialog.ui line 1740
-#: networkdialog.cpp:2047 rc.cpp:562
+#. i18n: file ./networkdialog.ui line 1636
+#: networkdialog.cpp:2029 rc.cpp:542
 #, no-c-format
 msgid "Repeater"
 msgstr "リピーター"
 
-#. i18n: file ./networkdialog.ui line 1745
-#: networkdialog.cpp:2048 rc.cpp:565
+#. i18n: file ./networkdialog.ui line 1641
+#: networkdialog.cpp:2030 rc.cpp:545
 #, no-c-format
 msgid "Secondary"
 msgstr "セカンダリー"
 
-#. i18n: file ./networkdialog.ui line 1750
-#: networkdialog.cpp:2049 rc.cpp:568
+#. i18n: file ./networkdialog.ui line 1646
+#: networkdialog.cpp:2031 rc.cpp:548
 #, no-c-format
 msgid "Auto"
 msgstr "自動"
 
-#. i18n: file ./networkdialog.ui line 1794
-#: networkdialog.cpp:2050 rc.cpp:571
+#. i18n: file ./networkdialog.ui line 1690
+#: networkdialog.cpp:2032 rc.cpp:551
 #, no-c-format
 msgid "Sh&ow List"
 msgstr "リストを表示"
 
-#. i18n: file ./networkdialog.ui line 1849
-#: networkdialog.cpp:2055 rc.cpp:577
+#. i18n: file ./networkdialog.ui line 1745
+#: networkdialog.cpp:2037 rc.cpp:557
 #, no-c-format
 msgid "None"
 msgstr "無し"
 
-#. i18n: file ./networkdialog.ui line 1854
-#: networkdialog.cpp:2056 rc.cpp:580
+#. i18n: file ./networkdialog.ui line 1750
+#: networkdialog.cpp:2038 rc.cpp:560
 #, no-c-format
 msgid "WEP"
 msgstr "WEP"
 
-#. i18n: file ./networkdialog.ui line 1859
-#: networkdialog.cpp:2057 rc.cpp:583
+#. i18n: file ./networkdialog.ui line 1755
+#: networkdialog.cpp:2039 rc.cpp:563
 #, no-c-format
 msgid "WPA-PSK"
 msgstr "WPA-PSK"
 
-#. i18n: file ./networkdialog.ui line 1887
-#: networkdialog.cpp:2058 rc.cpp:586
+#. i18n: file ./networkdialog.ui line 1783
+#: networkdialog.cpp:2040 rc.cpp:566
 #, no-c-format
 msgid "<b>Preshared Key:</b>"
 msgstr "<b>プリシェアード キー:</b>"
 
-#. i18n: file ./networkdialog.ui line 1903
-#: networkdialog.cpp:2059 rc.cpp:589
+#. i18n: file ./networkdialog.ui line 1799
+#: networkdialog.cpp:2041 rc.cpp:569
 #, no-c-format
 msgid "<b>Encryptiontype:</b>"
 msgstr "暗号タイプ"
 
-#. i18n: file ./networkdialog.ui line 1998
-#: networkdialog.cpp:2065 rc.cpp:607
+#. i18n: file ./networkdialog.ui line 1894
+#: networkdialog.cpp:2047 rc.cpp:587
 #, no-c-format
 msgid "Choose a network (doubleklick):"
 msgstr "ネットワークを選んでください (ダブルクリック):"
 
 #. i18n: file ./servicesdialog.ui line 17
-#. i18n: file ./servicesdialog.ui line 485
-#: rc.cpp:205 rc.cpp:272 servicesdialog.cpp:662 servicesdialog.cpp:686
+#. i18n: file ./servicesdialog.ui line 504
+#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:657 servicesdialog.cpp:681
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "サービス"
 
-#. i18n: file ./servicesdialog.ui line 119
-#: rc.cpp:220 servicesdialog.cpp:668
+#. i18n: file ./servicesdialog.ui line 138
+#: rc.cpp:215 servicesdialog.cpp:663
 #, no-c-format
 msgid "Manage services"
 msgstr "サービス管理"
 
-#. i18n: file ./servicesdialog.ui line 127
-#: rc.cpp:223 servicesdialog.cpp:669
+#. i18n: file ./servicesdialog.ui line 146
+#: rc.cpp:218 servicesdialog.cpp:664
 #, no-c-format
 msgid "Start services at boot"
 msgstr "ブート時開始サービス"
 
-#. i18n: file ./servicesdialog.ui line 197
-#: rc.cpp:226 servicesdialog.cpp:670
+#. i18n: file ./servicesdialog.ui line 216
+#: rc.cpp:221 servicesdialog.cpp:665
 #, no-c-format
 msgid "Select service"
 msgstr "サービス選択"
 
-#. i18n: file ./servicesdialog.ui line 237
-#: rc.cpp:229 servicesdialog.cpp:671
+#. i18n: file ./servicesdialog.ui line 256
+#: rc.cpp:224 servicesdialog.cpp:666
 #, no-c-format
 msgid "Status"
 msgstr "状態"
 
-#. i18n: file ./servicesdialog.ui line 286
-#: rc.cpp:232 servicesdialog.cpp:672
+#. i18n: file ./servicesdialog.ui line 305
+#: rc.cpp:227 servicesdialog.cpp:667
 #, no-c-format
 msgid "Status: not running..."
 msgstr "状態: 未実行..."
 
-#. i18n: file ./servicesdialog.ui line 334
-#. i18n: file ./servicesdialog.ui line 661
-#: rc.cpp:238 rc.cpp:289 servicesdialog.cpp:674 servicesdialog.cpp:693
+#. i18n: file ./servicesdialog.ui line 353
+#. i18n: file ./servicesdialog.ui line 680
+#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:669 servicesdialog.cpp:688
 #, no-c-format
 msgid "Description Text"
 msgstr "解説テキスト"
 
-#. i18n: file ./servicesdialog.ui line 354
-#: rc.cpp:241 servicesdialog.cpp:675
+#. i18n: file ./servicesdialog.ui line 373
+#: rc.cpp:236 servicesdialog.cpp:670
 #, no-c-format
 msgid "Action"
 msgstr "アクション"
 
-#. i18n: file ./servicesdialog.ui line 369
-#: rc.cpp:244 servicesdialog.cpp:676
+#. i18n: file ./servicesdialog.ui line 388
+#: rc.cpp:239 servicesdialog.cpp:671
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "状態"
 
-#. i18n: file ./servicesdialog.ui line 413
-#: rc.cpp:256 servicesdialog.cpp:680
+#. i18n: file ./servicesdialog.ui line 432
+#: rc.cpp:251 servicesdialog.cpp:675
 #, no-c-format
 msgid "Restart"
 msgstr "リスタート"
 
-#. i18n: file ./servicesdialog.ui line 435
-#: rc.cpp:260 servicesdialog.cpp:682
+#. i18n: file ./servicesdialog.ui line 454
+#: rc.cpp:255 servicesdialog.cpp:677
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "リロード"
 
-#. i18n: file ./servicesdialog.ui line 438
-#. i18n: file ./softwaredialog.ui line 236
-#: rc.cpp:263 rc.cpp:631 servicesdialog.cpp:683 softwaredialog.cpp:776
+#. i18n: file ./servicesdialog.ui line 457
+#: rc.cpp:258 servicesdialog.cpp:678
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
-#. i18n: file ./servicesdialog.ui line 457
-#: rc.cpp:266 servicesdialog.cpp:684
+#. i18n: file ./servicesdialog.ui line 476
+#: rc.cpp:261 servicesdialog.cpp:679
 #, fuzzy, no-c-format
 msgid "Start ser&vice at Boot"
 msgstr "ブート時開始サービス"
 
-#. i18n: file ./servicesdialog.ui line 460
-#: rc.cpp:269 servicesdialog.cpp:685
+#. i18n: file ./servicesdialog.ui line 479
+#: rc.cpp:264 servicesdialog.cpp:680
 #, fuzzy, no-c-format
 msgid "Alt+V"
 msgstr "Alt+Y"
 
-#. i18n: file ./servicesdialog.ui line 508
-#: rc.cpp:275 servicesdialog.cpp:687
+#. i18n: file ./servicesdialog.ui line 527
+#: rc.cpp:270 servicesdialog.cpp:682
 #, no-c-format
 msgid "Active Services:"
 msgstr "アクティブサービス:"
 
-#. i18n: file ./servicesdialog.ui line 556
-#: rc.cpp:278 servicesdialog.cpp:688
+#. i18n: file ./servicesdialog.ui line 575
+#: rc.cpp:273 servicesdialog.cpp:683
 #, no-c-format
 msgid ">"
 msgstr ">"
 
-#. i18n: file ./servicesdialog.ui line 584
-#: rc.cpp:282 servicesdialog.cpp:690
+#. i18n: file ./servicesdialog.ui line 603
+#: rc.cpp:277 servicesdialog.cpp:685
 #, no-c-format
 msgid "<"
 msgstr "<"
 
-#. i18n: file ./servicesdialog.ui line 630
-#: rc.cpp:286 servicesdialog.cpp:692
+#. i18n: file ./servicesdialog.ui line 649
+#: rc.cpp:281 servicesdialog.cpp:687
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "サービスを無効に"
 
 #. i18n: file ./softwaredialog.ui line 17
-#: rc.cpp:610 softwaredialog.cpp:768 start.cpp:76 start.cpp:117
+#: rc.cpp:602 softwaredialog.cpp:754 start.cpp:76 start.cpp:117
 #, no-c-format
 msgid "Software"
 msgstr "ソフトウェア"
 
 #. i18n: file ./softwaredialog.ui line 48
-#: rc.cpp:613 softwaredialog.cpp:770
+#: rc.cpp:605 softwaredialog.cpp:756
 #, no-c-format
 msgid "Show upgradable packages"
 msgstr "更新可能パッケージ表示"
 
 #. i18n: file ./softwaredialog.ui line 111
-#: rc.cpp:616 software.cpp:110 softwaredialog.cpp:771
+#: rc.cpp:608 software.cpp:104 softwaredialog.cpp:757
 #, no-c-format
 msgid "There are no warnings"
 msgstr "警告はありません"
 
 #. i18n: file ./softwaredialog.ui line 133
-#: rc.cpp:619 softwaredialog.cpp:630 softwaredialog.cpp:772
+#: rc.cpp:611 softwaredialog.cpp:630 softwaredialog.cpp:758
 #, no-c-format
 msgid "Name"
 msgstr "名前"
 
 #. i18n: file ./softwaredialog.ui line 144
-#: rc.cpp:622 softwaredialog.cpp:631 softwaredialog.cpp:773
+#: rc.cpp:614 softwaredialog.cpp:631 softwaredialog.cpp:759
 #, no-c-format
 msgid "Installed Version"
 msgstr "インストールされているバージョン"
 
 #. i18n: file ./softwaredialog.ui line 155
-#: rc.cpp:625 softwaredialog.cpp:632 softwaredialog.cpp:774
+#: rc.cpp:617 softwaredialog.cpp:632 softwaredialog.cpp:760
 #, no-c-format
 msgid "Latest Version"
 msgstr "最新バージョン"
 
 #. i18n: file ./softwaredialog.ui line 233
-#: rc.cpp:628 softwaredialog.cpp:775
+#: rc.cpp:620 softwaredialog.cpp:761
 #, fuzzy, no-c-format
-msgid "C&lean"
+msgid "Clea&n"
 msgstr "クリア"
 
 #. i18n: file ./softwaredialog.ui line 245
-#: rc.cpp:634 softwaredialog.cpp:777
+#: rc.cpp:626 softwaredialog.cpp:763
 #, no-c-format
 msgid ""
 "clean clears out the local repository \n"
@@ -1440,13 +1429,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./softwaredialog.ui line 287
-#: rc.cpp:643 softwaredialog.cpp:784
+#: rc.cpp:635 softwaredialog.cpp:770
 #, no-c-format
 msgid "D&ownload"
 msgstr "ダウンロード"
 
 #. i18n: file ./softwaredialog.ui line 296
-#: rc.cpp:649 softwaredialog.cpp:786
+#: rc.cpp:641 softwaredialog.cpp:772
 #, no-c-format
 msgid ""
 "package files are only retrieved, not\n"
@@ -1456,13 +1445,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./softwaredialog.ui line 337
-#: rc.cpp:658 softwaredialog.cpp:791
+#: rc.cpp:650 softwaredialog.cpp:777
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
 #. i18n: file ./softwaredialog.ui line 345
-#: rc.cpp:661 softwaredialog.cpp:792
+#: rc.cpp:653 softwaredialog.cpp:778
 #, no-c-format
 msgid ""
 "update is used to resynchronize the package \n"
@@ -1474,25 +1463,25 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./softwaredialog.ui line 387
-#: rc.cpp:669 softwaredialog.cpp:798
+#: rc.cpp:661 softwaredialog.cpp:784
 #, no-c-format
 msgid "Upgr&ade"
 msgstr "アップグレード"
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:779 startdialog.cpp:3499
+#: rc.cpp:768 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Control Center"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:782 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:771 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr "メニュー"
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:785 startdialog.cpp:3501
+#: rc.cpp:774 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1505,28 +1494,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:790 rc.cpp:793 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:779 rc.cpp:782 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr "siduxマニュアル"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:797 rc.cpp:800 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:786 rc.cpp:789 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr "siduxホームページ"
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:807 rc.cpp:810 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:796 rc.cpp:799 startdialog.cpp:3511 startdialog.cpp:3512
 #, no-c-format
 msgid "About siduxcc"
 msgstr "siduxccについて"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:814 rc.cpp:817 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:803 rc.cpp:806 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1534,14 +1523,14 @@ msgstr "終了"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:820 rc.cpp:823 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:809 rc.cpp:812 startdialog.cpp:3516 startdialog.cpp:3517
 #, no-c-format
 msgid "About KDE"
 msgstr "KDEについて"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:826 rc.cpp:829 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:815 rc.cpp:818 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr "言語"
@@ -1724,23 +1713,23 @@ msgid ""
 "each with its own virtual environment."
 msgstr ""
 
-#: software.cpp:85
+#: software.cpp:87
 msgid "Apt-show-versions is missing!"
 msgstr "Apt-show-versionがインストールされていません!"
 
-#: software.cpp:85
+#: software.cpp:87
 msgid "Do you want to install it?"
 msgstr "インストールしますか?"
 
-#: software.cpp:115
+#: software.cpp:109
 msgid "Couldn't connect to sidux.com!"
 msgstr "sidux.comに接続することができません!"
 
-#: software.cpp:122
+#: software.cpp:116
 msgid "Don't make a dist-Upgrade!"
 msgstr "今Dist-Upgradeをしてはいけません!"
 
-#: software.cpp:161
+#: software.cpp:155
 msgid ""
 "To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
 "+F1, login as root and type init 3. After that run the command siduxcc and "
@@ -1750,13 +1739,19 @@ msgstr ""
 "としてログインしてからinit 3とタイプします. siduxccのコマンドを実行し"
 "Software->Dist-Upgradeのオプションを選びます."
 
-#: software.cpp:181
+#: software.cpp:175
 msgid "Are you sure you want to clear your local repository?"
 msgstr "本当にローカルリポジトリをクリアしますか?"
 
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "システム情報"
+
+#~ msgid "Process is running!"
+#~ msgstr "処理実行中!"
+
+#~ msgid "Process done!"
+#~ msgstr "処理完了!"
 
 #~ msgid ""
 #~ "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "

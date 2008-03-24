@@ -63,6 +63,9 @@ class display : public DisplayDialog
 		QString driver;
 		bool composite;
 
+		int ci;
+		QWidget *consoleWidget;
+
 	private:
 		Process* shell;
 		KProcess proc;
@@ -80,13 +83,13 @@ class display : public DisplayDialog
 		virtual void customScreenSize();
 
 		virtual void gfx();
-		virtual void terminateConsole();
 
 		virtual void compositeSlot();
 
 		virtual void fixFonts();
-		virtual void fixFonts_END();
-		virtual void getOutput(KProcess *, char *, int);
+
+		virtual void startConsole(QStringList input);
+		virtual void terminateConsole();
 
 	signals:
 		void menuLocked(bool);

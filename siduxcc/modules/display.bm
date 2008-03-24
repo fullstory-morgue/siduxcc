@@ -319,6 +319,7 @@ function fixFonts()
 {
 	clear
 	fix-fonts
+	echo ""
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
 
