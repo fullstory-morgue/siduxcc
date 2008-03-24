@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-24 16:12+0100\n"
+"POT-Creation-Date: 2008-03-24 22:04+0100\n"
 "PO-Revision-Date: 2007-11-18 21:55+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -28,13 +28,13 @@ msgid ""
 msgstr "cobra@sidux.com "
 
 #. i18n: file ./consoledialog.ui line 16
-#: consoledialog.cpp:72 rc.cpp:693
+#: consoledialog.cpp:72 rc.cpp:698
 #, no-c-format
 msgid "Widget"
 msgstr "Widget"
 
 #. i18n: file ./consoledialog.ui line 78
-#: consoledialog.cpp:73 rc.cpp:696
+#: consoledialog.cpp:73 rc.cpp:701
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
@@ -280,14 +280,16 @@ msgid "Rem&ove Modelines"
 msgstr "Izbriši &Modelinije"
 
 #. i18n: file ./displaydialog.ui line 816
-#. i18n: file ./servicesdialog.ui line 413
+#. i18n: file ./servicesdialog.ui line 394
 #. i18n: file ./networkdialog.ui line 245
 #. i18n: file ./networkdialog.ui line 602
 #. i18n: file ./softwaredialog.ui line 290
 #. i18n: file ./kerneldialog.ui line 336
-#: displaydialog.cpp:2380 kerneldialog.cpp:837 networkdialog.cpp:1949
-#: networkdialog.cpp:1967 rc.cpp:125 rc.cpp:248 rc.cpp:333 rc.cpp:387
-#: rc.cpp:638 rc.cpp:740 servicesdialog.cpp:674 softwaredialog.cpp:771
+#. i18n: file ./kerneldialog.ui line 418
+#: displaydialog.cpp:2380 kerneldialog.cpp:837 kerneldialog.cpp:840
+#: networkdialog.cpp:1949 networkdialog.cpp:1967 rc.cpp:125 rc.cpp:248
+#: rc.cpp:333 rc.cpp:387 rc.cpp:638 rc.cpp:745 rc.cpp:752
+#: servicesdialog.cpp:679 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -310,11 +312,11 @@ msgstr ""
 #. i18n: file ./networkdialog.ui line 537
 #. i18n: file ./networkdialog.ui line 1483
 #. i18n: file ./softwaredialog.ui line 236
-#. i18n: file ./kerneldialog.ui line 460
+#. i18n: file ./kerneldialog.ui line 443
 #: displaydialog.cpp:2383 displaydialog.cpp:2397 displaydialog.cpp:2400
 #: kerneldialog.cpp:844 networkdialog.cpp:1964 networkdialog.cpp:2013
 #: rc.cpp:134 rc.cpp:170 rc.cpp:179 rc.cpp:378 rc.cpp:499 rc.cpp:623
-#: rc.cpp:759 softwaredialog.cpp:762
+#: rc.cpp:764 softwaredialog.cpp:762
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -386,26 +388,26 @@ msgid "Register Fo&nts"
 msgstr "Registriraj &Tip Slova"
 
 #. i18n: file ./displaydialog.ui line 1173
-#. i18n: file ./servicesdialog.ui line 97
+#. i18n: file ./servicesdialog.ui line 85
 #. i18n: file ./networkdialog.ui line 1941
-#. i18n: file ./softwaredialog.ui line 449
+#. i18n: file ./softwaredialog.ui line 454
 #. i18n: file ./kerneldialog.ui line 471
 #: displaydialog.cpp:2401 kerneldialog.cpp:845 networkdialog.cpp:2048
-#: rc.cpp:182 rc.cpp:203 rc.cpp:590 rc.cpp:667 rc.cpp:762
-#: servicesdialog.cpp:658 softwaredialog.cpp:786
+#: rc.cpp:182 rc.cpp:203 rc.cpp:590 rc.cpp:672 rc.cpp:767
+#: servicesdialog.cpp:663 softwaredialog.cpp:789
 #, no-c-format
 msgid "&back"
 msgstr ""
 
 #. i18n: file ./displaydialog.ui line 1176
-#. i18n: file ./servicesdialog.ui line 100
+#. i18n: file ./servicesdialog.ui line 88
 #. i18n: file ./networkdialog.ui line 215
 #. i18n: file ./networkdialog.ui line 1944
-#. i18n: file ./softwaredialog.ui line 452
+#. i18n: file ./softwaredialog.ui line 457
 #. i18n: file ./kerneldialog.ui line 474
 #: displaydialog.cpp:2402 kerneldialog.cpp:846 networkdialog.cpp:1947
 #: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:327 rc.cpp:593
-#: rc.cpp:670 rc.cpp:765 servicesdialog.cpp:659 softwaredialog.cpp:787
+#: rc.cpp:675 rc.cpp:770 servicesdialog.cpp:664 softwaredialog.cpp:790
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -423,49 +425,49 @@ msgid "Alt+X"
 msgstr "Alt+X"
 
 #. i18n: file ./displaydialog.ui line 1198
-#. i18n: file ./servicesdialog.ui line 116
+#. i18n: file ./servicesdialog.ui line 96
 #. i18n: file ./internetdialog.ui line 74
 #. i18n: file ./networkdialog.ui line 1961
-#. i18n: file ./softwaredialog.ui line 460
+#. i18n: file ./softwaredialog.ui line 465
 #: displaydialog.cpp:2405 internetdialog.cpp:306 networkdialog.cpp:2050
-#: rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:596 rc.cpp:673
-#: servicesdialog.cpp:660 softwaredialog.cpp:788
+#: rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:596 rc.cpp:678
+#: servicesdialog.cpp:665 softwaredialog.cpp:791
 #, no-c-format
 msgid "appl&y"
 msgstr ""
 
 #. i18n: file ./displaydialog.ui line 1201
-#. i18n: file ./servicesdialog.ui line 119
+#. i18n: file ./servicesdialog.ui line 99
 #. i18n: file ./internetdialog.ui line 77
 #. i18n: file ./networkdialog.ui line 1964
-#. i18n: file ./softwaredialog.ui line 463
+#. i18n: file ./softwaredialog.ui line 468
 #: displaydialog.cpp:2406 internetdialog.cpp:307 networkdialog.cpp:2051
-#: rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:599 rc.cpp:676
-#: servicesdialog.cpp:661 softwaredialog.cpp:789
+#: rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:599 rc.cpp:681
+#: servicesdialog.cpp:666 softwaredialog.cpp:792
 #, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
 
 #. i18n: file ./infodialog.ui line 17
-#: infodialog.cpp:92 rc.cpp:679
+#: infodialog.cpp:92 rc.cpp:684
 #, no-c-format
 msgid "SysInfo"
 msgstr "Informacija o sistemu"
 
 #. i18n: file ./infodialog.ui line 31
-#: infodialog.cpp:93 rc.cpp:682
+#: infodialog.cpp:93 rc.cpp:687
 #, no-c-format
 msgid "About sidux"
 msgstr "O sidux"
 
 #. i18n: file ./infodialog.ui line 42
-#: infodialog.cpp:94 rc.cpp:685
+#: infodialog.cpp:94 rc.cpp:690
 #, no-c-format
 msgid "sidux Version:"
 msgstr "sidux Verzija:"
 
 #. i18n: file ./infodialog.ui line 94
-#: infodialog.cpp:96 rc.cpp:689
+#: infodialog.cpp:96 rc.cpp:694
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
@@ -613,101 +615,95 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:819 rc.cpp:699 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
 #. i18n: file ./kerneldialog.ui line 51
-#: kerneldialog.cpp:822 rc.cpp:703
+#: kerneldialog.cpp:822 rc.cpp:708
 #, no-c-format
 msgid "Install new kernel"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 59
-#: kerneldialog.cpp:823 rc.cpp:706
+#: kerneldialog.cpp:823 rc.cpp:711
 #, no-c-format
 msgid "Remove old kernels"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 67
-#: kerneldialog.cpp:824 rc.cpp:709
+#: kerneldialog.cpp:824 rc.cpp:714
 #, no-c-format
 msgid "Install kernel modules"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 152
-#: kerneldialog.cpp:826 rc.cpp:713
+#: kerneldialog.cpp:826 rc.cpp:718
 #, no-c-format
 msgid "Current kernel:"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 168
-#: kerneldialog.cpp:827 rc.cpp:716
+#: kerneldialog.cpp:827 rc.cpp:721
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 209
 #. i18n: file ./kerneldialog.ui line 225
-#: kerneldialog.cpp:830 kerneldialog.cpp:831 rc.cpp:721 rc.cpp:724
+#: kerneldialog.cpp:830 kerneldialog.cpp:831 rc.cpp:726 rc.cpp:729
 #, no-c-format
 msgid "---"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 241
-#: kerneldialog.cpp:832 rc.cpp:727
+#: kerneldialog.cpp:832 rc.cpp:732
 #, no-c-format
 msgid "Install &automatic new kernels during dist-updates."
 msgstr ""
 
-#. i18n: file ./servicesdialog.ui line 391
+#. i18n: file ./servicesdialog.ui line 372
 #. i18n: file ./networkdialog.ui line 278
 #. i18n: file ./networkdialog.ui line 997
 #. i18n: file ./networkdialog.ui line 1469
 #. i18n: file ./softwaredialog.ui line 390
 #. i18n: file ./kerneldialog.ui line 244
-#. i18n: file ./kerneldialog.ui line 446
+#. i18n: file ./kerneldialog.ui line 429
 #: kerneldialog.cpp:833 kerneldialog.cpp:842 networkdialog.cpp:1952
 #: networkdialog.cpp:1970 networkdialog.cpp:2011 rc.cpp:242 rc.cpp:342
-#: rc.cpp:394 rc.cpp:493 rc.cpp:664 rc.cpp:730 rc.cpp:753
-#: servicesdialog.cpp:672 softwaredialog.cpp:785
+#: rc.cpp:394 rc.cpp:493 rc.cpp:664 rc.cpp:735 rc.cpp:758
+#: servicesdialog.cpp:677 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./kerneldialog.ui line 269
-#: kerneldialog.cpp:834 rc.cpp:733
+#: kerneldialog.cpp:834 rc.cpp:738
 #, no-c-format
 msgid "Current kernel"
 msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 333
-#: kerneldialog.cpp:836 rc.cpp:737
+#: kerneldialog.cpp:836 rc.cpp:742
 #, fuzzy, no-c-format
 msgid "rem&ove"
 msgstr "izbrisati"
 
 #. i18n: file ./kerneldialog.ui line 415
-#: kerneldialog.cpp:839 rc.cpp:744
+#: kerneldialog.cpp:839 rc.cpp:749
 #, fuzzy, no-c-format
-msgid "Show &metapackages"
+msgid "Sh&ow metapackages"
 msgstr "Noviji paketi"
 
-#. i18n: file ./kerneldialog.ui line 418
-#: kerneldialog.cpp:840 rc.cpp:747
-#, no-c-format
-msgid "Alt+M"
-msgstr "Alt+M"
-
-#. i18n: file ./kerneldialog.ui line 443
-#: kerneldialog.cpp:841 rc.cpp:750
+#. i18n: file ./kerneldialog.ui line 426
+#: kerneldialog.cpp:841 rc.cpp:755
 #, no-c-format
 msgid "&apply"
 msgstr ""
 
-#. i18n: file ./kerneldialog.ui line 457
-#: kerneldialog.cpp:843 rc.cpp:756
+#. i18n: file ./kerneldialog.ui line 440
+#: kerneldialog.cpp:843 rc.cpp:761
 #, no-c-format
 msgid "i&nstall"
 msgstr "Instalirati"
@@ -742,10 +738,10 @@ msgstr "Akcija"
 msgid "Mac Address"
 msgstr "MAC-Adresa:"
 
-#. i18n: file ./servicesdialog.ui line 330
+#. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 165
 #: network.cpp:244 network.cpp:254 networkdialog.cpp:1944 rc.cpp:230
-#: rc.cpp:318 servicesdialog.cpp:668
+#: rc.cpp:318 servicesdialog.cpp:673
 #, no-c-format
 msgid "Description"
 msgstr "Opis"
@@ -1253,112 +1249,112 @@ msgid "Choose a network (doubleklick):"
 msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 17
-#. i18n: file ./servicesdialog.ui line 504
-#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:657 servicesdialog.cpp:681
+#. i18n: file ./servicesdialog.ui line 485
+#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:662 servicesdialog.cpp:686
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "Servisi"
 
-#. i18n: file ./servicesdialog.ui line 138
-#: rc.cpp:215 servicesdialog.cpp:663
+#. i18n: file ./servicesdialog.ui line 119
+#: rc.cpp:215 servicesdialog.cpp:668
 #, no-c-format
 msgid "Manage services"
 msgstr "Izaberite servis"
 
-#. i18n: file ./servicesdialog.ui line 146
-#: rc.cpp:218 servicesdialog.cpp:664
+#. i18n: file ./servicesdialog.ui line 127
+#: rc.cpp:218 servicesdialog.cpp:669
 #, no-c-format
 msgid "Start services at boot"
 msgstr ""
 
-#. i18n: file ./servicesdialog.ui line 216
-#: rc.cpp:221 servicesdialog.cpp:665
+#. i18n: file ./servicesdialog.ui line 197
+#: rc.cpp:221 servicesdialog.cpp:670
 #, no-c-format
 msgid "Select service"
 msgstr "Izaberite servis"
 
-#. i18n: file ./servicesdialog.ui line 256
-#: rc.cpp:224 servicesdialog.cpp:666
+#. i18n: file ./servicesdialog.ui line 237
+#: rc.cpp:224 servicesdialog.cpp:671
 #, no-c-format
 msgid "Status"
 msgstr "Status"
 
-#. i18n: file ./servicesdialog.ui line 305
-#: rc.cpp:227 servicesdialog.cpp:667
+#. i18n: file ./servicesdialog.ui line 286
+#: rc.cpp:227 servicesdialog.cpp:672
 #, no-c-format
 msgid "Status: not running..."
 msgstr "Status: nije aktivan..."
 
-#. i18n: file ./servicesdialog.ui line 353
-#. i18n: file ./servicesdialog.ui line 680
-#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:669 servicesdialog.cpp:688
+#. i18n: file ./servicesdialog.ui line 334
+#. i18n: file ./servicesdialog.ui line 661
+#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:674 servicesdialog.cpp:693
 #, no-c-format
 msgid "Description Text"
 msgstr "Opisni tekst"
 
-#. i18n: file ./servicesdialog.ui line 373
-#: rc.cpp:236 servicesdialog.cpp:670
+#. i18n: file ./servicesdialog.ui line 354
+#: rc.cpp:236 servicesdialog.cpp:675
 #, no-c-format
 msgid "Action"
 msgstr "Akcija"
 
-#. i18n: file ./servicesdialog.ui line 388
-#: rc.cpp:239 servicesdialog.cpp:671
+#. i18n: file ./servicesdialog.ui line 369
+#: rc.cpp:239 servicesdialog.cpp:676
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "Status"
 
-#. i18n: file ./servicesdialog.ui line 432
-#: rc.cpp:251 servicesdialog.cpp:675
+#. i18n: file ./servicesdialog.ui line 413
+#: rc.cpp:251 servicesdialog.cpp:680
 #, no-c-format
 msgid "Restart"
 msgstr "Ponovo startati"
 
-#. i18n: file ./servicesdialog.ui line 454
-#: rc.cpp:255 servicesdialog.cpp:677
+#. i18n: file ./servicesdialog.ui line 435
+#: rc.cpp:255 servicesdialog.cpp:682
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "Ponovno učitati"
 
-#. i18n: file ./servicesdialog.ui line 457
-#: rc.cpp:258 servicesdialog.cpp:678
+#. i18n: file ./servicesdialog.ui line 438
+#: rc.cpp:258 servicesdialog.cpp:683
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
-#. i18n: file ./servicesdialog.ui line 476
-#: rc.cpp:261 servicesdialog.cpp:679
+#. i18n: file ./servicesdialog.ui line 457
+#: rc.cpp:261 servicesdialog.cpp:684
 #, fuzzy, no-c-format
 msgid "Start ser&vice at Boot"
 msgstr "Servis pri startu startati."
 
-#. i18n: file ./servicesdialog.ui line 479
-#: rc.cpp:264 servicesdialog.cpp:680
+#. i18n: file ./servicesdialog.ui line 460
+#: rc.cpp:264 servicesdialog.cpp:685
 #, no-c-format
 msgid "Alt+V"
 msgstr "Alt+V"
 
-#. i18n: file ./servicesdialog.ui line 527
-#: rc.cpp:270 servicesdialog.cpp:682
+#. i18n: file ./servicesdialog.ui line 508
+#: rc.cpp:270 servicesdialog.cpp:687
 #, no-c-format
 msgid "Active Services:"
 msgstr "Aktivni Servisi:"
 
-#. i18n: file ./servicesdialog.ui line 575
-#: rc.cpp:273 servicesdialog.cpp:683
+#. i18n: file ./servicesdialog.ui line 556
+#: rc.cpp:273 servicesdialog.cpp:688
 #, no-c-format
 msgid ">"
 msgstr ">"
 
-#. i18n: file ./servicesdialog.ui line 603
-#: rc.cpp:277 servicesdialog.cpp:685
+#. i18n: file ./servicesdialog.ui line 584
+#: rc.cpp:277 servicesdialog.cpp:690
 #, no-c-format
 msgid "<"
 msgstr "<"
 
-#. i18n: file ./servicesdialog.ui line 649
-#: rc.cpp:281 servicesdialog.cpp:687
+#. i18n: file ./servicesdialog.ui line 630
+#: rc.cpp:281 servicesdialog.cpp:692
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Neaktivni servisi"
@@ -1376,7 +1372,7 @@ msgid "Show upgradable packages"
 msgstr "Noviji paketi"
 
 #. i18n: file ./softwaredialog.ui line 111
-#: rc.cpp:608 software.cpp:104 softwaredialog.cpp:757
+#: rc.cpp:608 software.cpp:107 softwaredialog.cpp:757
 #, no-c-format
 msgid "There are no warnings"
 msgstr "Ne postoju upozorenja"
@@ -1458,20 +1454,29 @@ msgstr ""
 msgid "Upgr&ade"
 msgstr "Upgrade"
 
+#. i18n: file ./softwaredialog.ui line 395
+#: rc.cpp:667 softwaredialog.cpp:786
+#, no-c-format
+msgid ""
+"For an explanation how to \n"
+"do a system upgrade click \n"
+"to the button."
+msgstr ""
+
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:768 startdialog.cpp:3499
+#: rc.cpp:773 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Kontrolni Centar"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:771 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:776 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:774 startdialog.cpp:3501
+#: rc.cpp:779 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1481,28 +1486,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:779 rc.cpp:782 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:784 rc.cpp:787 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:786 rc.cpp:789 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:791 rc.cpp:794 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr ""
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:796 rc.cpp:799 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:801 rc.cpp:804 startdialog.cpp:3511 startdialog.cpp:3512
 #, no-c-format
 msgid "About siduxcc"
 msgstr "O sidux"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:803 rc.cpp:806 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:808 rc.cpp:811 start.cpp:148 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1510,14 +1515,14 @@ msgstr "Zatvori"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:809 rc.cpp:812 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:814 rc.cpp:817 startdialog.cpp:3516 startdialog.cpp:3517
 #, no-c-format
 msgid "About KDE"
 msgstr "O KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:815 rc.cpp:818 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:820 rc.cpp:823 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr ""
@@ -1687,39 +1692,43 @@ msgid ""
 "each with its own virtual environment."
 msgstr ""
 
-#: software.cpp:87
+#: software.cpp:90
 msgid "Apt-show-versions is missing!"
 msgstr "Apt-show-version fali!"
 
-#: software.cpp:87
+#: software.cpp:90
 msgid "Do you want to install it?"
 msgstr "Hočete li da instalirate taj paket?"
 
-#: software.cpp:109
+#: software.cpp:112
 msgid "Couldn't connect to sidux.com!"
 msgstr ""
 
-#: software.cpp:116
+#: software.cpp:119
 msgid "Don't make a dist-Upgrade!"
 msgstr "Ne obavite Dist-Upgrade!"
 
-#: software.cpp:155
+#: software.cpp:158
+#, fuzzy
 msgid ""
-"To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT"
-"+F1, login as root and type init 3. After that run the command siduxcc and "
-"choose the option Software->Dist-Upgrade"
+"To update your system you have to leave the graphic modus. Press for this CTR"
+"+ALT+F1, login as root and type init 3. After that run the command smxi or "
+"apt-get dist-upgrade."
 msgstr ""
 "Da izvodite Dist-Upgrade morate napustiti grafički modus. Pritisnite CTR+ALT"
 "+F1, i prijavite se kao root i upišite init 3. Poslje toga izvodite siduxcc "
 "i izaberite opciju Softver->Dist-upgrade."
 
-#: software.cpp:175
+#: software.cpp:178
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Hoćete li stvarno da očistim lokalni repozitorij?"
 
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "Informacija o sistemu"
+
+#~ msgid "Alt+M"
+#~ msgstr "Alt+M"
 
 #~ msgid "Process is running!"
 #~ msgstr "Proces radi!"

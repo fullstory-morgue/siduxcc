@@ -17,8 +17,10 @@ siduxcc (0.9.31) UNRELEASED; urgency=low
   * kde: kernel: automatical kernel install option added 
   * kde: konsole implementation improved 
   * kde: services: applyPushButton size problem solved 
+  * kde: software: better description
+  * kde: kernel: position of the back button fixrd
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 16:19:22 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 24 Mar 2008 22:09:54 +0100
 
 siduxcc (0.9.30) unstable; urgency=low
 

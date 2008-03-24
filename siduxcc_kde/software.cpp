@@ -24,6 +24,7 @@
 #include <qwidgetstack.h>
 #include <qtextbrowser.h>
 #include <qfile.h>
+#include <qwhatsthis.h>
 
 #include <klocale.h>
 #include <kled.h>
@@ -59,6 +60,7 @@ void software::loadWidget(int i)
 		}
 		showPackages();
 		warning();
+		applyPushButton->hide();
 	}
 	
 	bottomFrame->show();
@@ -75,7 +77,8 @@ void software::back()
 
 
 //------------------------------------------------------------------------------
-// check for apt-get-show versions and warnings
+//--- check for apt-get-show versions and warnings -----------------------------
+//------------------------------------------------------------------------------
 
 
 
@@ -152,9 +155,9 @@ void software::showPackages()
 
 void software::upgrade()
 {
-	KMessageBox::information(this, i18n("To run a dist-upgrade you have to init the runlevel 3. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command siduxcc and choose the option Software->Dist-Upgrade") );
-}
+	QWhatsThis::display ( i18n("To update your system you have to leave the graphic modus. Press for this CTR+ALT+F1, login as root and type init 3. After that run the command smxi or apt-get dist-upgrade."), QCursor::pos(), this );
 
+}
 
 void software::update()
 {

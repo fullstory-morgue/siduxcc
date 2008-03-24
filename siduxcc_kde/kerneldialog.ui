@@ -412,10 +412,35 @@
                         <cstring>showMetapackagesCheckBox</cstring>
                     </property>
                     <property name="text">
-                        <string>Show &amp;metapackages</string>
+                        <string>Sh&amp;ow metapackages</string>
                     </property>
                     <property name="accel">
-                        <string>Alt+M</string>
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="3">
+                    <property name="name">
+                        <cstring>applyPushButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;apply</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="4">
+                    <property name="name">
+                        <cstring>installModulesPushButton</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="text">
+                        <string>i&amp;nstall</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+N</string>
                     </property>
                 </widget>
                 <spacer row="0" column="1">
@@ -430,37 +455,12 @@
                     </property>
                     <property name="sizeHint">
                         <size>
-                            <width>200</width>
+                            <width>140</width>
                             <height>20</height>
                         </size>
                     </property>
                 </spacer>
                 <widget class="QPushButton" row="0" column="2">
-                    <property name="name">
-                        <cstring>applyPushButton</cstring>
-                    </property>
-                    <property name="text">
-                        <string>&amp;apply</string>
-                    </property>
-                    <property name="accel">
-                        <string>Alt+A</string>
-                    </property>
-                </widget>
-                <widget class="QPushButton" row="0" column="3">
-                    <property name="name">
-                        <cstring>installModulesPushButton</cstring>
-                    </property>
-                    <property name="enabled">
-                        <bool>true</bool>
-                    </property>
-                    <property name="text">
-                        <string>i&amp;nstall</string>
-                    </property>
-                    <property name="accel">
-                        <string>Alt+N</string>
-                    </property>
-                </widget>
-                <widget class="QPushButton" row="0" column="4">
                     <property name="name">
                         <cstring>backPushButton</cstring>
                     </property>

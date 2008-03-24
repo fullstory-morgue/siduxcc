@@ -389,6 +389,11 @@ Command: apt-get update</string>
                         <property name="accel">
                             <string>Alt+A</string>
                         </property>
+                        <property name="toolTip" stdset="0">
+                            <string>For an explanation how to 
+do a system upgrade click 
+to the button.</string>
+                        </property>
                     </widget>
                     <widget class="Line" row="3" column="0" rowspan="1" colspan="10">
                         <property name="name">
