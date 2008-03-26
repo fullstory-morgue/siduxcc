@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-25 00:32+0100\n"
+"POT-Creation-Date: 2008-03-26 15:17+0100\n"
 "PO-Revision-Date: 2008-03-15 18:12+0100\n"
 "Last-Translator: Alpha Diakite (alphad) & sidux.fr team\n"
 "Language-Team: \n"
@@ -494,19 +494,25 @@ msgstr ""
 "Vous pouvez seulement qu'installer les modules du nouveau noyau stable. "
 "Cependant ce noyau n'est pas installé"
 
-#: kernel.cpp:182
+#: kernel.cpp:183
 msgid "You have already installed the newest stable kernel!"
 msgstr "Vous avez déjà installé le nouveau noyau stable"
 
-#: kernel.cpp:184
+#: kernel.cpp:185
 msgid "There is no stable kernel avaiable!"
 msgstr "Il n'y'a pas de noyau stable"
 
-#: kernel.cpp:187
+#: kernel.cpp:188
 msgid "Are you sure you want to install a new kernel?"
 msgstr "Êtes-vous sûr de vouloir installer un nouveau noyau?"
 
-#: kernel.cpp:298
+#: kernel.cpp:215
+msgid ""
+"It's recommended to not disable this function! Do you want to continue "
+"anyway?"
+msgstr ""
+
+#: kernel.cpp:302
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -521,7 +527,7 @@ msgstr ""
 "au problème) reposait sur des appels BIOS qui ne sont pas autorisés à partir "
 "d'un système d'exploitation 64 bits."
 
-#: kernel.cpp:300
+#: kernel.cpp:304
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -537,7 +543,7 @@ msgstr ""
 "le modèle): - contrôlant les voyants (Mail, Wireless) - activer/désactiver "
 "matériel sans fil"
 
-#: kernel.cpp:302
+#: kernel.cpp:306
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
@@ -547,7 +553,7 @@ msgstr ""
 "Adapter. L'adaptateur Atheros L2 (R) Fast Ethernet  est présent dans "
 "quelques portable moin cher d'Asus, tels que les PC Asus Eee."
 
-#: kernel.cpp:304
+#: kernel.cpp:308
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
@@ -555,12 +561,12 @@ msgstr ""
 "Aufs l'unification empilable est un système de fichiers, tels que Unionfs, "
 "qui unifie plusieurs répertoires et fournit un répertoire unique fusionné."
 
-#: kernel.cpp:306
+#: kernel.cpp:310
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr ""
 "Ce paquet fournit le pilote pour un système de fichiers snapshotting modules."
 
-#: kernel.cpp:308
+#: kernel.cpp:312
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
@@ -571,7 +577,7 @@ msgstr ""
 "compiler ces modules.<br><br>Ceci fonctionne avec Agere Systems ET-131x PCI-"
 "E contrôleur Ethernet."
 
-#: kernel.cpp:310
+#: kernel.cpp:314
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
@@ -581,7 +587,7 @@ msgstr ""
 "logiciel RF tuer commutateurs sur le Fujitsu Siemens Amilo M 7400 pc "
 "portable. Ce paquet Fournit le code source des modules fsam7400."
 
-#: kernel.cpp:312
+#: kernel.cpp:316
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
@@ -592,7 +598,7 @@ msgstr ""
 "fabriquées par SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, semi-Mars, "
 "et Pixart Transvision."
 
-#: kernel.cpp:314
+#: kernel.cpp:318
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
@@ -600,7 +606,7 @@ msgstr ""
 "LZMA est un algorithme de compression, basé sur la fameuse compression "
 "Lempel Ziv Méthode."
 
-#: kernel.cpp:316
+#: kernel.cpp:320
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
 "Linux driver for their wireless network cards.  This project implements "
@@ -616,7 +622,7 @@ msgstr ""
 "réseau sans fil est alors liés à cette mise en œuvre afin que le pilote "
 "tourne nativement, comme s'il était sous Windows, sans émulation binaire."
 
-#: kernel.cpp:318
+#: kernel.cpp:322
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
@@ -626,7 +632,7 @@ msgstr ""
 "Toshiba Satellite et quelques autres ordinateurs portables fabriqués par "
 "Compal Electronics, Inc comme ODM."
 
-#: kernel.cpp:320
+#: kernel.cpp:324
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
@@ -636,7 +642,7 @@ msgstr ""
 "Logitech QuickCam Express webcam et autres webcams. Ce pilote remplace le "
 "pilote qce-ga."
 
-#: kernel.cpp:322
+#: kernel.cpp:326
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
@@ -647,7 +653,7 @@ msgstr ""
 "ordinateursportables, mais ceux-ci sont les seuls modèles sur lesquels il a "
 "été testé."
 
-#: kernel.cpp:324
+#: kernel.cpp:328
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -668,7 +674,7 @@ msgstr ""
 "peut être utilisé), et contraint block device / systèmes de mémoire (par "
 "exemple, systèmes embarqués) si bas overhead est nécessaire."
 
-#: kernel.cpp:326 kernel.cpp:328
+#: kernel.cpp:330 kernel.cpp:332
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."

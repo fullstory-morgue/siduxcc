@@ -108,9 +108,35 @@ installModules()
 }
 
 
-installMetapackage()
+
+metapackageStatus()
 {
-	apt-get install linux-image-2.6-sidux-$(kernelType) linux-headers-2.6-sidux-$(kernelType)
+	if [ -f /usr/share/doc/linux-image-2.6-sidux-686/copyright ]; then
+		if [ "$(dpkg --get-selections | grep hold | grep linux-image-2.6-sidux-686 | cut -f1)" ]; then
+			echo disabled
+		else
+			echo enabled
+		fi
+	else
+		echo disabled
+	fi
+		
+}
+
+
+enableMetapackage()
+{
+	if [ ! -f /usr/share/doc/linux-image-2.6-sidux-686/copyright ]; then
+		apt-get install linux-image-2.6-sidux-$(kernelType) linux-headers-2.6-sidux-$(kernelType)
+	fi
+
+	echo linux-image-2.6-sidux-686 install|dpkg --set-selections
+	echo linux-headers-2.6-sidux-686 install|dpkg --set-selections
+
+	for i in $( ls /usr/share/doc/ | grep modules-2.6-sidux ); do
+        echo $i install|dpkg --set-selections
+	done
+
 	echo ""
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
@@ -118,9 +144,14 @@ installMetapackage()
 }
 
 
-removeMetapackage()
+disableMetapackage()
 {
-	apt-get remove 2.6-sidux*
+	echo linux-image-2.6-sidux-686 hold|dpkg --set-selections
+	echo linux-headers-2.6-sidux-686 hold|dpkg --set-selections
+	for i in $( ls /usr/share/doc/ | grep modules-2.6-sidux ); do
+        echo $i hold|dpkg --set-selections
+	done
+
 	echo ""
 	echo "$(eval_gettext "Process done!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"

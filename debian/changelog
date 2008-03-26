@@ -1,8 +1,13 @@
 siduxcc (0.9.32) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Mar 2008 01:11:48 +0100
+  [ Fabian Wuertz ]
+  * kde: kernel: warning message for "disable automatic kernel update"
+    function added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 26 Mar 2008 15:21:58 +0100
 
 siduxcc (0.9.31) unstable; urgency=low
 

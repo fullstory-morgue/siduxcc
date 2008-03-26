@@ -144,8 +144,9 @@ void kernel::getKernels()
 
 void kernel::getMetapackageStatus()
 {
-	QString kernelType = QStringList::split( "-", stableKernelFull )[3];
-	if( isInstalled("linux-image-2.6-sidux-"+kernelType) )
+	this->shell->setCommand("siduxcc kernel metapackageStatus");
+	this->shell->start(true);
+	if( this->shell->getBuffer().stripWhiteSpace() == "enabled" )
 		kernelMetapackageCheckBox->setChecked(TRUE);
 	else
 		kernelMetapackageCheckBox->setChecked(FALSE);
@@ -209,9 +210,12 @@ void kernel::hasChanged()
 void kernel::toggleKernelMetapackage()
 {
 	if( kernelMetapackageCheckBox->isChecked() )
-		 startConsole("installMetapackage");
+		startConsole("enableMetapackage");
 	else
-		 startConsole("removeMetapackage");
+		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("It's recommended to not disable this function! Do you want to continue anyway?") ) )
+			startConsole("disableMetapackage");
+		else
+			kernelMetapackageCheckBox->setChecked(TRUE);
 	
 }
 
