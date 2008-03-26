@@ -1,3 +1,9 @@
+siduxcc (0.9.32) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Mar 2008 01:11:48 +0100
+
 siduxcc (0.9.31) unstable; urgency=low
 
   * debian: konsole dependency added (solves the problems with the icewm)
