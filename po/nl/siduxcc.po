@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-31 15:06+0100\n"
-"PO-Revision-Date: 2008-01-23 16:50+0100\n"
+"PO-Revision-Date: 2008-03-27 14:34+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: modules/dialog.bm:27
 #, sh-format
 msgid "sidux-Control-Center"
-msgstr "sidux-Kontrol Center"
+msgstr "sidux-control center"
 
 #: modules/display.bm:9 modules/display.bm:316
 #, sh-format
@@ -122,7 +122,7 @@ msgstr "Herstel X-server"
 
 #: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
 #: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
-#, fuzzy, sh-format
+#, sh-format
 msgid "Return to main menu"
 msgstr "Terug naar hoofdmenu"
 
@@ -204,42 +204,42 @@ msgid "Enter a new hostname:"
 msgstr "Nieuwe hostname:"
 
 #: modules/network.bm:122
-#, fuzzy, sh-format
+#, sh-format
 msgid "Configure network cards"
 msgstr "Configureren netwerkcard"
 
 #: modules/network.bm:123
-#, fuzzy, sh-format
+#, sh-format
 msgid "Set hostname"
-msgstr "Vastleggen hostname"
+msgstr "hostname vastleggen "
 
 #: modules/services.bm:10
 #, sh-format
 msgid "Services"
-msgstr "Services"
+msgstr "diensten (services)"
 
 #: modules/services.bm:15
-#, fuzzy, sh-format
+#, sh-format
 msgid "Web server"
 msgstr "Webserver"
 
 #: modules/services.bm:16
-#, fuzzy, sh-format
+#, sh-format
 msgid "Print server"
 msgstr "Printerserver"
 
 #: modules/services.bm:17
-#, fuzzy, sh-format
+#, sh-format
 msgid "SQL database server"
 msgstr "SQL Database Server"
 
 #: modules/services.bm:18
-#, fuzzy, sh-format
+#, sh-format
 msgid "Secure shell server"
 msgstr "SSH Server"
 
 #: modules/services.bm:19
-#, fuzzy, sh-format
+#, sh-format
 msgid "Samba server"
 msgstr "Samba server"
 
@@ -276,7 +276,7 @@ msgstr "Verwijder runlevel-Entry"
 #: modules/services.bm:36 modules/services.bm:54
 #, sh-format
 msgid "Return to main Menu"
-msgstr "Terug naar hoofdmenu"
+msgstr "Terug naar het hoofdmenu"
 
 #: modules/services.bm:51
 #, sh-format
@@ -286,12 +286,12 @@ msgstr "Boot"
 #: modules/services.bm:52
 #, sh-format
 msgid "Enable/Disable Services at Boot"
-msgstr "Aanzetten/Uitzetten Services bij boot/opstarten"
+msgstr "Aanzetten/Uitzetten diensten (services) bij boot/opstarten"
 
 #: modules/services.bm:53
 #, sh-format
 msgid "Manage Services"
-msgstr "Manage Services"
+msgstr "Diensten (services) beheren"
 
 #: modules/smxi.bm:9
 #, sh-format
@@ -337,17 +337,17 @@ msgid "Please choose a date..."
 msgstr "Kies een datum..."
 
 #: modules/software.bm:196
-#, fuzzy, sh-format
+#, sh-format
 msgid "Run dist-upgrade"
 msgstr "Uitvoeren dist-upgrade"
 
 #: modules/software.bm:197
-#, fuzzy, sh-format
+#, sh-format
 msgid "Show DU warnings"
 msgstr "DU-Warnings laten zien"
 
 #: modules/software.bm:198
-#, fuzzy, sh-format
+#, sh-format
 msgid "Show DU log"
 msgstr "DU-Log laten zien"
 
@@ -365,6 +365,3 @@ msgstr "Hoofdmenu"
 #, sh-format
 msgid "Exit"
 msgstr "Sluiten"
-
-#~ msgid "Hardware"
-#~ msgstr "hardware"

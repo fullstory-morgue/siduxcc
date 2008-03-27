@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-26 15:17+0100\n"
-"PO-Revision-Date: 2008-01-28 19:42+0100\n"
+"PO-Revision-Date: 2008-03-27 14:37+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "Instellen X server"
 #: displaydialog.cpp:2336 rc.cpp:15
 #, no-c-format
 msgid "Install graphiccard-drivers"
-msgstr ""
+msgstr "installeren videokaart driver"
 
 #. i18n: file ./displaydialog.ui line 77
 #: displaydialog.cpp:2337 rc.cpp:18
@@ -281,7 +281,7 @@ msgstr "Modelijnen"
 #: displaydialog.cpp:2379 rc.cpp:122
 #, no-c-format
 msgid "Rem&ove Modelines"
-msgstr "Verwijder modelijnen"
+msgstr "Verwijder m&odelijnen"
 
 #. i18n: file ./displaydialog.ui line 816
 #. i18n: file ./servicesdialog.ui line 394
@@ -296,8 +296,7 @@ msgstr "Verwijder modelijnen"
 #: servicesdialog.cpp:679 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
-"Dit duurt een beetje. <b>Sluit het venster niet</b> tijdens het proces."
+msgstr "Alt+O"
 
 #. i18n: file ./displaydialog.ui line 844
 #: displaydialog.cpp:2381 rc.cpp:128
@@ -309,7 +308,7 @@ msgstr "kies x-module"
 #: displaydialog.cpp:2382 rc.cpp:131
 #, no-c-format
 msgid "E&nable Composite"
-msgstr ""
+msgstr "activere&n composite"
 
 #. i18n: file ./displaydialog.ui line 884
 #. i18n: file ./displaydialog.ui line 1052
@@ -324,7 +323,7 @@ msgstr ""
 #: rc.cpp:764 softwaredialog.cpp:762
 #, no-c-format
 msgid "Alt+N"
-msgstr "Alt+N"
+msgstr "Alt+n"
 
 #. i18n: file ./displaydialog.ui line 890
 #: displaydialog.cpp:2385 rc.cpp:137
@@ -378,7 +377,7 @@ msgstr "ATI/nVidia (non-free)"
 #: displaydialog.cpp:2396 rc.cpp:167
 #, no-c-format
 msgid "I&nstall driver"
-msgstr "Installeer driver"
+msgstr "I&nstalleer driver"
 
 #. i18n: file ./displaydialog.ui line 1088
 #: displaydialog.cpp:2398 rc.cpp:173
@@ -388,7 +387,7 @@ msgstr "Fonts (fix-fonts)"
 
 #. i18n: file ./displaydialog.ui line 1125
 #: displaydialog.cpp:2399 rc.cpp:176
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Register Fo&nts"
 msgstr "Registreer f&onts"
 
@@ -402,7 +401,7 @@ msgstr "Registreer f&onts"
 #: servicesdialog.cpp:663 softwaredialog.cpp:789
 #, no-c-format
 msgid "&back"
-msgstr "terug"
+msgstr "&terug"
 
 #. i18n: file ./displaydialog.ui line 1176
 #. i18n: file ./servicesdialog.ui line 88
@@ -415,7 +414,7 @@ msgstr "terug"
 #: rc.cpp:675 rc.cpp:770 servicesdialog.cpp:664 softwaredialog.cpp:790
 #, no-c-format
 msgid "Alt+B"
-msgstr "Alt+B"
+msgstr "Alt+t"
 
 #. i18n: file ./displaydialog.ui line 1187
 #: displaydialog.cpp:2403 rc.cpp:188
@@ -439,7 +438,7 @@ msgstr "Alt+X"
 #: servicesdialog.cpp:665 softwaredialog.cpp:791
 #, no-c-format
 msgid "appl&y"
-msgstr "toepassen"
+msgstr "toe&passen"
 
 #. i18n: file ./displaydialog.ui line 1201
 #. i18n: file ./servicesdialog.ui line 99
@@ -451,7 +450,7 @@ msgstr "toepassen"
 #: servicesdialog.cpp:666 softwaredialog.cpp:792
 #, no-c-format
 msgid "Alt+Y"
-msgstr "Alt+Y"
+msgstr "Alt+p"
 
 #. i18n: file ./infodialog.ui line 17
 #: infodialog.cpp:92 rc.cpp:684
@@ -494,15 +493,17 @@ msgid ""
 "You only can install modules for the newest stable kernel. But this kernel "
 "isn't installed!"
 msgstr ""
+"Er kunnen alleen modules voor de laatste stabiele kernel worden "
+"geïnstalleerd, maar deze kernel is niet geïnstalleerd (de beschikbare "
+"modules passen dus niet bij je kernel)."
 
 #: kernel.cpp:183
 msgid "You have already installed the newest stable kernel!"
-msgstr ""
+msgstr "De laatste stabiele kernel is al geïnstalleerd."
 
 #: kernel.cpp:185
-#, fuzzy
 msgid "There is no stable kernel avaiable!"
-msgstr "Er is een nieuwe kernel beschikbaar!"
+msgstr "Er is geen nieuwe kernel beschikbaar!"
 
 #: kernel.cpp:188
 msgid "Are you sure you want to install a new kernel?"
@@ -522,6 +523,8 @@ msgid ""
 "acerhk (the previous fine solution to the problem) relied on making BIOS "
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
+"Acer acpi is gemaakt voor Acer laptops. In eerste instantie was het bedoeld "
+"voor draadloze LAN cards met 64 bits Linux. "
 
 #: kernel.cpp:304
 msgid ""
@@ -532,6 +535,8 @@ msgid ""
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
 "disable wireless hardware"
 msgstr ""
+"Hiermee komen special keys beschikbaar voor Acer Travelmates. Het werkt "
+"overigens ook voor andere notebooks o.a. van Medion, Fujitsu-Siemens. "
 
 #: kernel.cpp:306
 msgid ""
@@ -539,16 +544,20 @@ msgid ""
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
+"Linux driver voor de Atheros(R) L2 Fast Ethernet Adapter. Deze adapter komt "
+"in budget Asus laptops voor bijv. in de Asus Eee PC."
 
 #: kernel.cpp:308
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
+"Aufs is een hulpmiddel om meerdere mappen te combineren en de "
+"bestandssystemen te tonen als 1 map/directory."
 
 #: kernel.cpp:310
 msgid "This package provides the Driver for a snapshotting filesystem modules."
-msgstr ""
+msgstr "Dit pakket bevat een driver voor snapshotting filesystem modules."
 
 #: kernel.cpp:312
 msgid ""
@@ -556,6 +565,8 @@ msgid ""
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
+"Dit pakket is bedoeld voor de Agere Systems ET-131x PCI-E Ethernet "
+"Controller."
 
 #: kernel.cpp:314
 msgid ""
@@ -563,6 +574,9 @@ msgid ""
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
+"Hiermee wordt de ondersteuning voor de RF kill switches voorFujits-Siemens "
+"Amilo M 7400 laptops geregeld (bevat de source code voor de fsam7400 "
+"modules)."
 
 #: kernel.cpp:316
 msgid ""
@@ -570,12 +584,15 @@ msgid ""
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
+"Driver voor de webcams en digitale camera's die gebaseerd zijn op spca5xx "
+"chips van de merken SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-"
+"semi, Pixart and Transvision."
 
 #: kernel.cpp:318
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
-msgstr ""
+msgstr "LZMA (Lempel Ziv compression) is een compressie algoritme."
 
 #: kernel.cpp:320
 msgid ""
@@ -586,6 +603,9 @@ msgid ""
 "linked to this implementation so that the driver runs natively, as though it "
 "is in Windows, without binary emulation."
 msgstr ""
+"Er zijn producenten die geen specificaties verstrekken en geen Linux driver "
+"aanbieden. Met dit project worden Windows kernel API en NDIS zo in Linux "
+"benaderd, dat deze als native Windows drivers werken zonder binary emulation."
 
 #: kernel.cpp:322
 msgid ""
@@ -593,6 +613,8 @@ msgid ""
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
+"Hiermee worden beschikbare kernel modules voor de HP OmniBooks, Pavilions, "
+"Toshiba Satellites e.a. laptops aangeboden (Compal Electronics, Inc as ODM)."
 
 #: kernel.cpp:324
 msgid ""
@@ -600,6 +622,7 @@ msgid ""
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
 msgstr ""
+"Pakket voor de Logitech's QuickCam Express webcam en eenvoudige webcams."
 
 #: kernel.cpp:326
 msgid ""
@@ -607,6 +630,9 @@ msgid ""
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
+"Modules voor de RF kill switch voor Averatec 5100P en Packard Bell EasyNote "
+"E5. Deze modellen zijn getest, het zou kunnen dat de modules ook op andere "
+"modellen werken."
 
 #: kernel.cpp:328
 msgid ""
@@ -618,13 +644,15 @@ msgid ""
 "archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
-msgstr ""
+msgstr "Squashfs is een hoog-gecomprimeerd read-only filesystem voor Linux."
 
 #: kernel.cpp:330 kernel.cpp:332
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
+"Met VirtualBox (PC virtualization) kunnen verschillende besturingssystemen "
+"op de pc 'in een box' geinstalleerd en uitgevoerd worden."
 
 #. i18n: file ./kerneldialog.ui line 17
 #: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
@@ -652,15 +680,15 @@ msgstr "installeer kernel modules"
 
 #. i18n: file ./kerneldialog.ui line 152
 #: kerneldialog.cpp:826 rc.cpp:718
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current kernel:"
-msgstr "huidige locale kernel"
+msgstr "huidige kernel"
 
 #. i18n: file ./kerneldialog.ui line 168
 #: kerneldialog.cpp:827 rc.cpp:721
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Newest stable kernel:"
-msgstr "installeer een nieuwe kernel"
+msgstr "installeer een nieuwe kernel:"
 
 #. i18n: file ./kerneldialog.ui line 209
 #. i18n: file ./kerneldialog.ui line 225
@@ -673,7 +701,7 @@ msgstr ""
 #: kerneldialog.cpp:832 rc.cpp:732
 #, no-c-format
 msgid "Install &automatic new kernels during dist-updates."
-msgstr ""
+msgstr "Installeer &automatisch nieuwe kernels tijdens de dist-updates."
 
 #. i18n: file ./servicesdialog.ui line 372
 #. i18n: file ./networkdialog.ui line 278
@@ -688,37 +716,37 @@ msgstr ""
 #: servicesdialog.cpp:677 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+A"
-msgstr "Alt+A"
+msgstr "Alt+a"
 
 #. i18n: file ./kerneldialog.ui line 269
 #: kerneldialog.cpp:834 rc.cpp:738
 #, no-c-format
 msgid "Current kernel"
-msgstr "huidige locale kernel"
+msgstr "huidige kernel"
 
 #. i18n: file ./kerneldialog.ui line 333
 #: kerneldialog.cpp:836 rc.cpp:742
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "rem&ove"
 msgstr "verwijder"
 
 #. i18n: file ./kerneldialog.ui line 415
 #: kerneldialog.cpp:839 rc.cpp:749
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Sh&ow metapackages"
-msgstr "Toon upgradable packages"
+msgstr "T&oon upgradable packages"
 
 #. i18n: file ./kerneldialog.ui line 426
 #: kerneldialog.cpp:841 rc.cpp:755
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&apply"
-msgstr "toepassen"
+msgstr "toep&assen"
 
 #. i18n: file ./kerneldialog.ui line 440
 #: kerneldialog.cpp:843 rc.cpp:761
 #, no-c-format
 msgid "i&nstall"
-msgstr "Installeer"
+msgstr "&installeer"
 
 #: main.cpp:40
 msgid "Frontend for managing sidux."
@@ -734,16 +762,15 @@ msgstr "Packaging"
 
 #: main.cpp:48
 msgid "Developer of the knxcc"
-msgstr "Ontwerper van de siduxcc"
+msgstr "Ontwikkelaar van knxcc"
 
 #: main.cpp:49
 msgid "Developer of ceni and fw-detect"
-msgstr ""
+msgstr "Ontwikkelaar van ceni en fw-detect"
 
 #: main.cpp:50
-#, fuzzy
 msgid "Icon"
-msgstr "actie"
+msgstr ""
 
 #: network.cpp:243 network.cpp:253
 msgid "Mac Address"
@@ -758,7 +785,6 @@ msgid "Description"
 msgstr "Descriptie"
 
 #: network.cpp:452
-#, fuzzy
 msgid ""
 "<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
 "in and it will be deactivated if the cable is pulled. This is useful on "
@@ -775,19 +801,19 @@ msgstr ""
 
 #: network.cpp:546
 msgid "WEP encryption requires a key with at least 5 characters."
-msgstr ""
+msgstr "WEP encryptie vereist een key met minimaal 5 posities."
 
 #: network.cpp:548
 msgid "WPA encryption requires a key with 8 to 63 characters."
-msgstr ""
+msgstr "WAP encryptie vereist een key met minimaal 8 en maximaal 63 posities."
 
 #: network.cpp:550
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. i18n: file ./networkdialog.ui line 1003
 #: network.cpp:729 networkdialog.cpp:1972 rc.cpp:397
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Detected"
 msgstr "gevonden"
 
@@ -799,9 +825,9 @@ msgstr "Interface"
 
 #. i18n: file ./networkdialog.ui line 295
 #: networkdialog.cpp:1500 networkdialog.cpp:1954 rc.cpp:348
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "IP address"
-msgstr "IP Adres:"
+msgstr "IP Adres"
 
 #. i18n: file ./networkdialog.ui line 306
 #: networkdialog.cpp:1501 networkdialog.cpp:1955 rc.cpp:351
@@ -813,7 +839,7 @@ msgstr "Methode"
 #: networkdialog.cpp:1502 networkdialog.cpp:1956 rc.cpp:354
 #, no-c-format
 msgid "Class"
-msgstr ""
+msgstr "class"
 
 #. i18n: file ./networkdialog.ui line 328
 #: networkdialog.cpp:1503 networkdialog.cpp:1957 rc.cpp:357
@@ -835,7 +861,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1831
 #: networkdialog.cpp:1876 networkdialog.cpp:2043 rc.cpp:575
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Channel"
 msgstr "kanaal"
 
@@ -847,9 +873,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1853
 #: networkdialog.cpp:1878 networkdialog.cpp:2045 rc.cpp:581
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "WEP/WPA"
-msgstr "WEP"
+msgstr "WEP/WPA"
 
 #. i18n: file ./networkdialog.ui line 1864
 #: networkdialog.cpp:1879 networkdialog.cpp:2046 rc.cpp:584
@@ -865,37 +891,37 @@ msgstr "Netwerk"
 
 #. i18n: file ./networkdialog.ui line 45
 #: networkdialog.cpp:1938 rc.cpp:302
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Configure network cards"
 msgstr "netwerkkaart configureren"
 
 #. i18n: file ./networkdialog.ui line 53
 #: networkdialog.cpp:1939 rc.cpp:305
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Set hostname"
 msgstr "Hostname vastleggen"
 
 #. i18n: file ./networkdialog.ui line 61
 #: networkdialog.cpp:1940 rc.cpp:308
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Set nameservers"
 msgstr "Nameservers vastleggen"
 
 #. i18n: file ./networkdialog.ui line 69
 #: networkdialog.cpp:1941 rc.cpp:311
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
 msgstr "Wlan-Cards met Ndiswrapper installeren"
 
 #. i18n: file ./networkdialog.ui line 77
 #: networkdialog.cpp:1942 rc.cpp:314
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install WLAN cards (fwdetect)"
 msgstr "Wlan-Cards met fwdetect installeren"
 
 #. i18n: file ./networkdialog.ui line 184
 #: networkdialog.cpp:1945 rc.cpp:321
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "MAC address"
 msgstr "MAC Adres"
 
@@ -909,7 +935,7 @@ msgstr "deactiveren"
 #: networkdialog.cpp:1948 rc.cpp:330
 #, no-c-format
 msgid "C&onfigure"
-msgstr ""
+msgstr "c&onfigureren"
 
 #. i18n: file ./networkdialog.ui line 248
 #: networkdialog.cpp:1950 rc.cpp:336
@@ -921,7 +947,7 @@ msgstr "Verander de instellingen voor de geselecteerde device"
 #: networkdialog.cpp:1951 rc.cpp:339
 #, no-c-format
 msgid "En&able"
-msgstr "activeren"
+msgstr "&activeren"
 
 #. i18n: file ./networkdialog.ui line 383
 #: networkdialog.cpp:1959 rc.cpp:363
@@ -951,7 +977,7 @@ msgstr "Installeer wlan card"
 #: networkdialog.cpp:1963 rc.cpp:375
 #, no-c-format
 msgid "&Ndiswrapper"
-msgstr "Ndiswrapper"
+msgstr "&Ndiswrapper"
 
 #. i18n: file ./networkdialog.ui line 565
 #: networkdialog.cpp:1965 rc.cpp:381
@@ -963,7 +989,7 @@ msgstr "Kaarten die zeker werken"
 #: networkdialog.cpp:1966 rc.cpp:384
 #, no-c-format
 msgid "Sh&ow list"
-msgstr "toon lijst"
+msgstr "to&on lijst"
 
 #. i18n: file ./networkdialog.ui line 994
 #: networkdialog.cpp:1969 rc.cpp:391
@@ -973,7 +999,7 @@ msgstr "Inst&alleer"
 
 #. i18n: file ./networkdialog.ui line 1008
 #: networkdialog.cpp:1973 rc.cpp:400
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "All"
 msgstr "alle"
 
@@ -1005,7 +1031,7 @@ msgstr ""
 #: networkdialog.cpp:1982 rc.cpp:417
 #, no-c-format
 msgid "allow hotplug"
-msgstr "a&bctiveren \"allow-hotplug\""
+msgstr "activeren \"allow-hotplug\""
 
 #. i18n: file ./networkdialog.ui line 1176
 #: networkdialog.cpp:1983 rc.cpp:420
@@ -1120,25 +1146,25 @@ msgstr "Kanaal/frequentie"
 #: networkdialog.cpp:2010 rc.cpp:490
 #, no-c-format
 msgid "&Auto"
-msgstr ""
+msgstr "&auto"
 
 #. i18n: file ./networkdialog.ui line 1480
 #: networkdialog.cpp:2012 rc.cpp:496
 #, no-c-format
 msgid "Cha&nnel:"
-msgstr "kanaal"
+msgstr "ka&naal"
 
 #. i18n: file ./networkdialog.ui line 1491
 #: networkdialog.cpp:2014 rc.cpp:502
 #, no-c-format
 msgid "Fre&quency:"
-msgstr "frequentie"
+msgstr "fre&quentie"
 
 #. i18n: file ./networkdialog.ui line 1494
 #: networkdialog.cpp:2015 rc.cpp:505
 #, no-c-format
 msgid "Alt+Q"
-msgstr "Alt+Q"
+msgstr "Alt+q"
 
 #. i18n: file ./networkdialog.ui line 1513
 #: networkdialog.cpp:2016 rc.cpp:508
@@ -1186,7 +1212,7 @@ msgstr "iwpriv:"
 #: networkdialog.cpp:2023 rc.cpp:529
 #, no-c-format
 msgid "<b>Mode:</b>"
-msgstr ""
+msgstr "<b>Modus:</b>"
 
 #. i18n: file ./networkdialog.ui line 1621
 #: networkdialog.cpp:2026 rc.cpp:533
@@ -1226,15 +1252,15 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1690
 #: networkdialog.cpp:2032 rc.cpp:551
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Sh&ow List"
-msgstr "toon lijst"
+msgstr "to&on lijst"
 
 #. i18n: file ./networkdialog.ui line 1745
 #: networkdialog.cpp:2037 rc.cpp:557
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "None"
-msgstr "NB"
+msgstr "geen"
 
 #. i18n: file ./networkdialog.ui line 1750
 #: networkdialog.cpp:2038 rc.cpp:560
@@ -1264,7 +1290,7 @@ msgstr ""
 #: networkdialog.cpp:2047 rc.cpp:587
 #, no-c-format
 msgid "Choose a network (doubleklick):"
-msgstr ""
+msgstr "kies een netwerk (dubbelklik)"
 
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 485
@@ -1272,13 +1298,13 @@ msgstr ""
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
-msgstr "Services"
+msgstr "diensten (services)"
 
 #. i18n: file ./servicesdialog.ui line 119
 #: rc.cpp:215 servicesdialog.cpp:668
 #, no-c-format
 msgid "Manage services"
-msgstr "Kies service"
+msgstr "diensten (services) beheren"
 
 #. i18n: file ./servicesdialog.ui line 127
 #: rc.cpp:218 servicesdialog.cpp:669
@@ -1290,7 +1316,7 @@ msgstr "Diensten activeren tijdens opstarten."
 #: rc.cpp:221 servicesdialog.cpp:670
 #, no-c-format
 msgid "Select service"
-msgstr "Kies service"
+msgstr "Kies dienst (service)"
 
 #. i18n: file ./servicesdialog.ui line 237
 #: rc.cpp:224 servicesdialog.cpp:671
@@ -1319,9 +1345,9 @@ msgstr "actie"
 
 #. i18n: file ./servicesdialog.ui line 369
 #: rc.cpp:239 servicesdialog.cpp:676
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "St&art"
-msgstr "status"
+msgstr "st&arten"
 
 #. i18n: file ./servicesdialog.ui line 413
 #: rc.cpp:251 servicesdialog.cpp:680
@@ -1331,27 +1357,27 @@ msgstr "herstarten"
 
 #. i18n: file ./servicesdialog.ui line 435
 #: rc.cpp:255 servicesdialog.cpp:682
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Re&load"
-msgstr "opnieuw laden"
+msgstr "opnieuw &laden"
 
 #. i18n: file ./servicesdialog.ui line 438
 #: rc.cpp:258 servicesdialog.cpp:683
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+L"
-msgstr "Alt+Y"
+msgstr "Alt+L"
 
 #. i18n: file ./servicesdialog.ui line 457
 #: rc.cpp:261 servicesdialog.cpp:684
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Start ser&vice at Boot"
-msgstr "Diensten activeren tijdens opstarten."
+msgstr "Diensten acti&veren tijdens opstarten."
 
 #. i18n: file ./servicesdialog.ui line 460
 #: rc.cpp:264 servicesdialog.cpp:685
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+V"
-msgstr "Alt+Y"
+msgstr "Alt+v"
 
 #. i18n: file ./servicesdialog.ui line 508
 #: rc.cpp:270 servicesdialog.cpp:687
@@ -1405,7 +1431,7 @@ msgstr "Naam"
 #: rc.cpp:614 softwaredialog.cpp:631 softwaredialog.cpp:759
 #, no-c-format
 msgid "Installed Version"
-msgstr "G&#239;nstallerde versie"
+msgstr "Geïnstallerde versie"
 
 #. i18n: file ./softwaredialog.ui line 155
 #: rc.cpp:617 softwaredialog.cpp:632 softwaredialog.cpp:760
@@ -1415,7 +1441,7 @@ msgstr "Nieuwste versie"
 
 #. i18n: file ./softwaredialog.ui line 233
 #: rc.cpp:620 softwaredialog.cpp:761
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Clea&n"
 msgstr "Schoo&nmaken"
 
@@ -1431,6 +1457,9 @@ msgid ""
 "\n"
 "Command: apt-get clean"
 msgstr ""
+"wissen van de gearchiveerde data in\n"
+" /var/cache/apt/archives/ and \n"
+"/var/cache/apt/archives/partial/"
 
 #. i18n: file ./softwaredialog.ui line 287
 #: rc.cpp:635 softwaredialog.cpp:770
@@ -1447,12 +1476,15 @@ msgid ""
 "\n"
 "Command: apt-get -d dist-upgrade"
 msgstr ""
+"pakketten worden alleen gedownload,\n"
+" maar niet &uitgepakt of geïnstalleerd.\n"
+" Komt overeen met apt-get -d dist-upgrade"
 
 #. i18n: file ./softwaredialog.ui line 337
 #: rc.cpp:650 softwaredialog.cpp:777
 #, no-c-format
 msgid "Alt+U"
-msgstr "Alt+U"
+msgstr "Alt+u"
 
 #. i18n: file ./softwaredialog.ui line 345
 #: rc.cpp:653 softwaredialog.cpp:778
@@ -1465,6 +1497,8 @@ msgid ""
 "\n"
 "Command: apt-get update"
 msgstr ""
+"synchroniseren van de pakketten met hun bronnen/sources \n"
+"commando: apt-get update"
 
 #. i18n: file ./softwaredialog.ui line 387
 #: rc.cpp:661 softwaredialog.cpp:784
@@ -1480,12 +1514,15 @@ msgid ""
 "do a system upgrade click \n"
 "to the button."
 msgstr ""
+"Voor meer informatie over\n"
+" de systeem upgrade klik\n"
+" op de button."
 
 #. i18n: file ./startdialog.ui line 17
 #: rc.cpp:773 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
-msgstr "sidux Control Center"
+msgstr "sidux control center"
 
 #. i18n: file ./startdialog.ui line 29
 #: rc.cpp:776 startdialog.cpp:3341 startdialog.cpp:3500
@@ -1501,7 +1538,7 @@ msgid ""
 "to configure your distribution. Select an item from the \n"
 "menu to load a configuration module."
 msgstr ""
-"Welkom in het sidux Control Center (systeembeheer), \n"
+"Welkom in het sidux control center (systeembeheer), \n"
 " het adres om instellingen van uw Linuxdistributie te regelen.\n"
 " Kies een onderwerp in het menu en start een module voor de instellingen."
 
@@ -1553,7 +1590,6 @@ msgid "Apache v2 is the next generation of the omnipresent Apache web server."
 msgstr "Apache v2 is de volgende generatie van de bekende Apache web server."
 
 #: services.cpp:70 services.cpp:280
-#, fuzzy
 msgid ""
 "CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
 "(Internet Printing Protocol), and has its own filtering driver model for "
@@ -1604,20 +1640,22 @@ msgid ""
 "Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
 "management on your system."
 msgstr ""
+"Advanced Configuration and Power Interface (ACPI) - geavanceerd "
+"energiebeheer."
 
 #: services.cpp:276
 msgid "Enables Universal interface for wireless communication"
-msgstr ""
+msgstr "Universele interface voor draadloze communicatie."
 
 #: services.cpp:278
 msgid "Cron is a time-based scheduling service."
-msgstr ""
+msgstr "Cron is een taakplanner."
 
 #: services.cpp:282
 msgid ""
 "gpm means general purpose mouse and is the mouse support for linux in the "
 "console."
-msgstr ""
+msgstr "gpm levert de ondersteuning voor de muis in de Linux console."
 
 #: services.cpp:284
 msgid ""
@@ -1626,9 +1664,10 @@ msgid ""
 "ways of connecting devices to the computer, without modifying every "
 "application that uses the device."
 msgstr ""
+"Met HAL wordt de ondersteuning voor apparaten/devices geregeld, zonder dat "
+"alle applicaties/programma's aangepast moeten worden."
 
 #: services.cpp:286
-#, fuzzy
 msgid ""
 "Ifplugd is a daemon which will automatically configure your ethernet device "
 "when a cable is plugged in and automatically unconfigure it if the cable is "
@@ -1649,6 +1688,8 @@ msgid ""
 "compliant infrared transceiver, which enables you to communicate with "
 "devices such as printers, modems, fax, LAN, and other laptops."
 msgstr ""
+"IrDA (Infrared Data Association) is een industrie standaard voor draadloze "
+"infrarood communicatie."
 
 #: services.cpp:290
 msgid ""
@@ -1656,31 +1697,38 @@ msgid ""
 "and cores you have in your computer system. The design goal of irqbalance is "
 "to do find a balance between power savings and optimal performance."
 msgstr ""
+"Met Irqbalance wordt geprobeerd een balance te vinden tussen energiebeheer "
+"instellingen en optimale prestaties."
 
 #: services.cpp:292
 msgid "Isndutils is only for use with an internal ISDN adapter."
-msgstr ""
+msgstr "Isndutils is alleen te gebruiken voor interneISDN adapters."
 
 #: services.cpp:294
 msgid ""
 "klogd is a system daemon which intercepts and logs Linux kernel messages."
 msgstr ""
+"klogd is een system daemon voor intercepts en logs van Linux kernel messages."
 
 #: services.cpp:296
 msgid ""
 "LIRC is a package that allows you to decode and send infra-red signals of "
 "many (but not all) commonly used remote controls."
 msgstr ""
+"LIRC is een pakket voor het decoderen en zenden van infrarood signalen van "
+"de meeste (maar niet alle) afstandsbedieningen."
 
 #: services.cpp:300
 msgid ""
 "These binary drivers provide optimized hardware acceleration of  OpenGL "
 "applications via a direct-rendering X Server."
 msgstr ""
+"Hiermee worden geoptimaliseerde drivers geladen voor OpenGL-applicaties via "
+"direct-rendering van de X Server."
 
 #: services.cpp:302
 msgid "Support for ACPI, APM and CPU frequency scaling."
-msgstr ""
+msgstr "Ondersteuning voor ACPI, APM en CPU frequentie instellingen."
 
 #: services.cpp:304
 msgid ""
@@ -1690,12 +1738,18 @@ msgid ""
 "files in the native rsync protocol. rsync can also be used to synchronize "
 "local directories, or via a remote shell such as RSH or SSH."
 msgstr ""
+"Rsync is een command line utility om bestanden tussen twee computers te "
+"synchroniseren. Het kan ook als prima backup-tool gebrukkt worden. rsync "
+"luistert aan de TCP port 873. rsync kan gebruikt worden om locale mappen te "
+"synchroniseren of via een remote shell als RSH of SSH."
 
 #: services.cpp:306
 msgid ""
 "SQL Relay is a persistent database connection pooling, proxying and load "
 "balancing system."
 msgstr ""
+"SQL Relay is een persistent database verbindingssysteem voor pooling, "
+"proxying en load balancing."
 
 #: services.cpp:310
 msgid ""
@@ -1704,20 +1758,25 @@ msgid ""
 "domain sockets enables this utility package to support both local and remote "
 "logging."
 msgstr ""
+"Sysklogd stelt twee systeem utilities beschikbaar voor system logging en "
+"kernel message trapping (ondersteuning voro local en remote logging)."
 
 #: services.cpp:312
 msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
 msgstr ""
+"TiMidity++ is een kwalitatioef hoogwaardige software-only MIDI sequencer."
 
 #: services.cpp:314
 msgid "Linux Video Disk Recorder (vdr)"
-msgstr ""
+msgstr "Linux Video Disk Recorder (vdr)"
 
 #: services.cpp:316
 msgid ""
 "vdradmin-am provides a webinterface for managing the Linux Video Disk "
 "Recorder (vdr)"
 msgstr ""
+"vdradmin-am is een webinterface voor het beheren van de Linux Video Disk "
+"Recorder (vdr)"
 
 #: services.cpp:318
 msgid ""
@@ -1725,6 +1784,9 @@ msgid ""
 "within this application, additional operating systems can be loaded and run, "
 "each with its own virtual environment."
 msgstr ""
+"Met VirtualBox (PC virtualization) kunnen verschillende besturingssystemen "
+"op de pc 'in een box' geinstalleerd en uitgevoerd worden. De gast-systemen "
+"werken in een box van het host-systeem."
 
 #: software.cpp:90
 msgid "Apt-show-versions is missing!"
@@ -1743,7 +1805,6 @@ msgid "Don't make a dist-Upgrade!"
 msgstr "Maak geen dist-upgrade!"
 
 #: software.cpp:158
-#, fuzzy
 msgid ""
 "To update your system you have to leave the graphic modus. Press for this CTR"
 "+ALT+F1, login as root and type init 3. After that run the command smxi or "
@@ -1760,75 +1821,3 @@ msgstr "Bent u zeker dat u uw locale repository wilt schoonmaken?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "Systeem informatie"
-
-#~ msgid "Alt+M"
-#~ msgstr "Alt+M"
-
-#~ msgid "Process is running!"
-#~ msgstr "Process is in gebruik!"
-
-#~ msgid "Process done!"
-#~ msgstr "Process klaar"
-
-#~ msgid ""
-#~ "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
-#~ "general replacement for lpd and the like."
-#~ msgstr ""
-#~ "Het Common UNIX Printing System (CUPS) is een afdruk-systeem en de "
-#~ "vervanger van lpd en anderen."
-
-#~ msgid "ins&tall"
-#~ msgstr "installeer"
-
-#~ msgid "Alt+T"
-#~ msgstr "Alt+T"
-
-#~ msgid "Configure Networkcards"
-#~ msgstr "netwerkkaart configureren"
-
-#~ msgid "Set Hostname"
-#~ msgstr "Hostname vastleggen"
-
-#~ msgid "Set Nameservers"
-#~ msgstr "Nameservers vastleggen"
-
-#~ msgid "Install Wlan-Cards (Ndiswrapper)"
-#~ msgstr "Wlan-Cards met Ndiswrapper installeren"
-
-#~ msgid "Install Wlan-Cards (fwdetect)"
-#~ msgstr "Wlan-Cards met fwdetect installeren"
-
-#, fuzzy
-#~ msgid "Artwork"
-#~ msgstr "Netwerk"
-
-#, fuzzy
-#~ msgid "Newest experimental kernel:"
-#~ msgstr "experimentaal"
-
-#, fuzzy
-#~ msgid "inst&all Kernel"
-#~ msgstr "installeer een nieuwe kernel"
-
-#, fuzzy
-#~ msgid "description"
-#~ msgstr "Descriptie"
-
-#~ msgid "Are you sure you want to remove the stored kernel files?"
-#~ msgstr "Bent u zeker u een kernel verwijdern wilt?"
-
-#~ msgid "cle&ar"
-#~ msgstr "Schoonmaken"
-
-#~ msgid "Alt+D"
-#~ msgstr "Alt+D"
-
-#~ msgid "Delete Ru&nlevel-Entry"
-#~ msgstr "Verwijder runlevel entry"
-
-#~ msgid "&Add a Runlevel-Entry (Start service at Boot)"
-#~ msgstr "Voeg een runlevel-Entry toe (start dienst tijdens booten)"
-
-#, fuzzy
-#~ msgid "IP address    "
-#~ msgstr "IP Adres"

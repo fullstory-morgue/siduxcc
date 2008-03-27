@@ -1,8 +1,12 @@
 siduxcc (0.9.33) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 27 Mar 2008 01:03:17 +0100
+  [ Fabian Wuertz ]
+  * nl translation updated
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 27 Mar 2008 14:45:03 +0100
 
 siduxcc (0.9.32) unstable; urgency=low
 
