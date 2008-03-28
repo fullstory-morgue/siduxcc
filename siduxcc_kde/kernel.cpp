@@ -213,7 +213,11 @@ void kernel::toggleKernelMetapackage()
 		startConsole("enableMetapackage");
 	else
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("It's recommended to not disable this function! Do you want to continue anyway?") ) )
-			startConsole("disableMetapackage");
+		{
+			this->shell->setCommand("siduxcc kernel disableMetapackage");
+			this->shell->start(true);
+			getMetapackageStatus();
+		}
 		else
 			kernelMetapackageCheckBox->setChecked(TRUE);
 	

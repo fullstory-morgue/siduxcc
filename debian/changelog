@@ -5,8 +5,9 @@ siduxcc (0.9.33) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * nl translation updated
+  * de translation updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Thu, 27 Mar 2008 14:45:03 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 28 Mar 2008 01:54:42 +0100
 
 siduxcc (0.9.32) unstable; urgency=low
 

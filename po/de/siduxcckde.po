@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-26 15:17+0100\n"
-"PO-Revision-Date: 2008-03-26 15:18+0100\n"
+"PO-Revision-Date: 2008-03-28 01:17+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Fabian Würtz"
+msgstr "Fabian Würtz HarzG"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -517,8 +517,6 @@ msgid ""
 "It's recommended to not disable this function! Do you want to continue "
 "anyway?"
 msgstr ""
-"Es wird abgeraten diese Funktion zu deaktivieren. Soll denoch weitergefahren "
-"werden?"
 
 #: kernel.cpp:302
 msgid ""
@@ -528,6 +526,8 @@ msgid ""
 "acerhk (the previous fine solution to the problem) relied on making BIOS "
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
+"Acer acpi ist gemacht für Acer laptops. Es wurde hauptsächlich für wireless "
+"LAN cards mit 64 bits Linux entwickelt. "
 
 #: kernel.cpp:304
 msgid ""
@@ -538,6 +538,8 @@ msgid ""
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
 "disable wireless hardware"
 msgstr ""
+"Hiermit werden special keys für Acer Travelmates Serie aktiviert. Das geht "
+"aber auch mit anderen Notebooks o.a. van Medion, Fujitsu-Siemens. "
 
 #: kernel.cpp:306
 msgid ""
@@ -545,16 +547,20 @@ msgid ""
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
+"Linux Treiber für den Atheros(R) L2 Fast Ethernet Adapter. Dieser Adapter "
+"ist in budget Asus laptops eingebaut y.B. in den Asus Eee PC."
 
 #: kernel.cpp:308
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
+"Aufs ist ein Hilfsmittel um mehrere Ordner zu kombinieren und das "
+"Dateisystem als einen Ordner/directory zu präsentieren."
 
 #: kernel.cpp:310
 msgid "This package provides the Driver for a snapshotting filesystem modules."
-msgstr ""
+msgstr "Btrfs ist ein experimentelles Filesystem."
 
 #: kernel.cpp:312
 msgid ""
@@ -562,6 +568,8 @@ msgid ""
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
+"Dieses Paket wurde für Agere Systems ET-131x PCI-E Ethernet Controller "
+"entwickelt."
 
 #: kernel.cpp:314
 msgid ""
@@ -569,6 +577,8 @@ msgid ""
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
+"Hiermit wird die Unterstützung für die RF kill switches für Fujits-Siemens "
+"Amilo M 7400 laptops geregelt (enthält den source code für fsam7400 Module)."
 
 #: kernel.cpp:316
 msgid ""
@@ -576,12 +586,15 @@ msgid ""
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
+"Treiber für webcams und digitale Kameras mit spca5xx chips der Marken "
+"SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart und "
+"Transvision."
 
 #: kernel.cpp:318
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
-msgstr ""
+msgstr "LZMA (Lempel Ziv compression) ist ein Kompressions Algorithmus."
 
 #: kernel.cpp:320
 msgid ""
@@ -592,6 +605,10 @@ msgid ""
 "linked to this implementation so that the driver runs natively, as though it "
 "is in Windows, without binary emulation."
 msgstr ""
+"Manche Produzenten liefern keine Specifikationen und bieten auch keine Linux "
+"Treiber. Mit diesem Projekt werden Windows kernel API und NDIS so in Linux "
+"aktiviert, dass diese als native Windows Treiber funktionieren ohne binary "
+"emulation."
 
 #: kernel.cpp:322
 msgid ""
@@ -599,13 +616,15 @@ msgid ""
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
+"Hiermit werden kernel modules für die HP OmniBooks, Pavilions, Toshiba "
+"Satellites e.a. laptops bereitgestellt (Compal Electronics, Inc as ODM)."
 
 #: kernel.cpp:324
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
-msgstr ""
+msgstr "Paket für die Logitech's QuickCam Express webcam und einfache webcams."
 
 #: kernel.cpp:326
 msgid ""
@@ -613,6 +632,9 @@ msgid ""
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
+"Modules für den RF kill switch für Averatec 5100P und Packard Bell EasyNote "
+"E5. Diese Modelle sind getestet. Es kann aber sein, dass die Module auch mit "
+"anderen Modellen funktionieren."
 
 #: kernel.cpp:328
 msgid ""
@@ -624,13 +646,15 @@ msgid ""
 "archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
-msgstr ""
+msgstr "Squashfs ist ein hochkomprimiertes read-only filesystem für Linux."
 
 #: kernel.cpp:330 kernel.cpp:332
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
+"Mit VirtualBox (PC virtualization) können verschiedene Betriebssysteme auf "
+"einem PC 'in einer box' installiert und verwaltet werden."
 
 #. i18n: file ./kerneldialog.ui line 17
 #: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
@@ -680,7 +704,7 @@ msgstr "---"
 #, no-c-format
 msgid "Install &automatic new kernels during dist-updates."
 msgstr ""
-"Neue Kernels automatisch bei Dist-Upgrades \n"
+"Neue Kernels &automatisch bei Dist-Upgrades \n"
 "installieren."
 
 #. i18n: file ./servicesdialog.ui line 372
@@ -1465,7 +1489,7 @@ msgstr ""
 "Lädt die gewünschten Pakete vom Server \n"
 "herunter, ohne diese zu installieren.\n"
 "\n"
-"Befehl: apt-get -d dist-upgrade"
+"Befehl: apt-get -d dist-&upgrade"
 
 #. i18n: file ./softwaredialog.ui line 337
 #: rc.cpp:650 softwaredialog.cpp:777
@@ -1494,7 +1518,7 @@ msgstr ""
 #: rc.cpp:661 softwaredialog.cpp:784
 #, no-c-format
 msgid "Upgr&ade"
-msgstr "Upgrade"
+msgstr "Upgr&ade"
 
 #. i18n: file ./softwaredialog.ui line 395
 #: rc.cpp:667 softwaredialog.cpp:786
@@ -1623,21 +1647,23 @@ msgstr "aktiv..."
 msgid ""
 "Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
 "management on your system."
-msgstr ""
+msgstr "Advanced Configuration and Power Interface (ACPI) - Energieverwaltung."
 
 #: services.cpp:276
 msgid "Enables Universal interface for wireless communication"
-msgstr ""
+msgstr "Benutzerschnittstelle für die wireless Kommunikation."
 
 #: services.cpp:278
 msgid "Cron is a time-based scheduling service."
 msgstr ""
+"Cron ist ein Steuerprogramm und regelt die zeitliche Ausführung von "
+"Prozessen."
 
 #: services.cpp:282
 msgid ""
 "gpm means general purpose mouse and is the mouse support for linux in the "
 "console."
-msgstr ""
+msgstr "Mit gpm wird die Maus in der Linux console aktiviert."
 
 #: services.cpp:284
 msgid ""
@@ -1646,6 +1672,8 @@ msgid ""
 "ways of connecting devices to the computer, without modifying every "
 "application that uses the device."
 msgstr ""
+"Mit HAL wird die Unterstützung von Apparaten/devices geregelt, ohne dass die "
+"Applications/Programme hierzu angepasst werden müssen."
 
 #: services.cpp:286
 msgid ""
@@ -1654,6 +1682,10 @@ msgid ""
 "pulled. This is useful on laptops with onboard network adapters, since it "
 "will only configure the interface when a cable is really connected."
 msgstr ""
+"<b>allow-hotplug</b>: <b>ifplugd</b> konfiguriert automatisch ethernet "
+"devices wenn eine Kabelverbindung erkannt wird. Es wird auch automatisch "
+"deaktiviert wenn keine Kabelverbinding verfügbar ist./n Das ist vor allem "
+"sinnvoll für Laptops mit onboard network adapters."
 
 #: services.cpp:288
 msgid ""
@@ -1662,6 +1694,8 @@ msgid ""
 "compliant infrared transceiver, which enables you to communicate with "
 "devices such as printers, modems, fax, LAN, and other laptops."
 msgstr ""
+"IrDA (Infrared Data Association) ist ein Industriestandard für "
+"Infrarotkommunication."
 
 #: services.cpp:290
 msgid ""
@@ -1669,31 +1703,38 @@ msgid ""
 "and cores you have in your computer system. The design goal of irqbalance is "
 "to do find a balance between power savings and optimal performance."
 msgstr ""
+"Mit Irqbalance wird versucht ein passendes Gleichgewicht zu finden zwischen "
+"Energiesparmodus und optimalen Systemleistungen."
 
 #: services.cpp:292
 msgid "Isndutils is only for use with an internal ISDN adapter."
-msgstr ""
+msgstr "Isndutils ist für interne ISDN Adapter entwickelt."
 
 #: services.cpp:294
 msgid ""
 "klogd is a system daemon which intercepts and logs Linux kernel messages."
 msgstr ""
+"klogd is ein Systemdaemon für intercepts und logs von Linux kernel messages."
 
 #: services.cpp:296
 msgid ""
 "LIRC is a package that allows you to decode and send infra-red signals of "
 "many (but not all) commonly used remote controls."
 msgstr ""
+"LIRC ist ein Paket für das Dekodieren und Senden von Infrarotsignalen an die "
+"meisten (leider nicht alle) Fernbedienungen."
 
 #: services.cpp:300
 msgid ""
 "These binary drivers provide optimized hardware acceleration of  OpenGL "
 "applications via a direct-rendering X Server."
 msgstr ""
+"Hiermit werden optimalisierte Treiber geladen für OpenGL-Programme via "
+"direct-rendering des X Servers."
 
 #: services.cpp:302
 msgid "Support for ACPI, APM and CPU frequency scaling."
-msgstr ""
+msgstr "Steuerung für ACPI, APM und CPU Frequenz-Einstellungen."
 
 #: services.cpp:304
 msgid ""
@@ -1703,12 +1744,19 @@ msgid ""
 "files in the native rsync protocol. rsync can also be used to synchronize "
 "local directories, or via a remote shell such as RSH or SSH."
 msgstr ""
+"Rsync ist eine command line utility um Dateien auszutauschen / zu "
+"synchronisieren zwischen zwei Rechnern. Es kann aber auch als backup-tool "
+"benutzt werden. rsync lauscht am TCP Port 873. rsync kann benutzt werden um "
+"lokale Ordner zu synchronisieren oder via eine remote shell wie RSH oder  "
+"SSH."
 
 #: services.cpp:306
 msgid ""
 "SQL Relay is a persistent database connection pooling, proxying and load "
 "balancing system."
 msgstr ""
+"SQL Relay ist ein persistent database System für pooling, proxying und load "
+"balancing."
 
 #: services.cpp:310
 msgid ""
@@ -1717,20 +1765,25 @@ msgid ""
 "domain sockets enables this utility package to support both local and remote "
 "logging."
 msgstr ""
+"Sysklogd bietet zwei System Utilities für System logging und kernel message "
+"trapping (local und remote logging)."
 
 #: services.cpp:312
 msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
 msgstr ""
+"TiMidity++ ist ein qualitativ hochwertiger software-only MIDI sequencer."
 
 #: services.cpp:314
 msgid "Linux Video Disk Recorder (vdr)"
-msgstr ""
+msgstr "Linux Video Disk Recorder (vdr)"
 
 #: services.cpp:316
 msgid ""
 "vdradmin-am provides a webinterface for managing the Linux Video Disk "
 "Recorder (vdr)"
 msgstr ""
+"vdradmin-am ist ein Webinterface für die Steuerung des Linux Video Disk "
+"Recorder (vdr)"
 
 #: services.cpp:318
 msgid ""
@@ -1738,6 +1791,9 @@ msgid ""
 "within this application, additional operating systems can be loaded and run, "
 "each with its own virtual environment."
 msgstr ""
+"Mit VirtualBox (PC virtualization) können verschiedene Betriebssysteme auf "
+"einem PC 'in einer box' installiert und geladen werden. Das Gast-System "
+"arbeitet in einer box des Hostsystems."
 
 #: software.cpp:90
 msgid "Apt-show-versions is missing!"
