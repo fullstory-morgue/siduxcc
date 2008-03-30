@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-26 15:17+0100\n"
-"PO-Revision-Date: 2008-03-28 01:17+0100\n"
+"POT-Creation-Date: 2008-03-30 12:47+0200\n"
+"PO-Revision-Date: 2008-03-30 13:06+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Fabian Würtz HarzG"
+msgstr "Fabian Würtz & HarzG"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -39,7 +39,7 @@ msgstr "Widget"
 #, no-c-format
 msgid "Don't close the window, before you see the message \"Process done!\"."
 msgstr ""
-"Das Fenster nicht schliessen, bevor die Nachricht \"Prozess abgeschlossen!\" "
+"Das Fenster nicht schließen, bevor die Nachricht \"Prozess abgeschlossen!\" "
 "erschienen ist!"
 
 #. i18n: file ./displaydialog.ui line 241
@@ -517,8 +517,10 @@ msgid ""
 "It's recommended to not disable this function! Do you want to continue "
 "anyway?"
 msgstr ""
+"Es wird davon abgeraten diese Funktion zu deaktivieren! Trotzdem "
+"weiterfahren?"
 
-#: kernel.cpp:302
+#: kernel.cpp:306
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -526,10 +528,10 @@ msgid ""
 "acerhk (the previous fine solution to the problem) relied on making BIOS "
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
-"Acer acpi ist gemacht für Acer laptops. Es wurde hauptsächlich für wireless "
-"LAN cards mit 64 bits Linux entwickelt. "
+"Acer acpi ist gemacht für Acer Laptops. Es wurde hauptsächlich für "
+"Funknetzwerkkarten mit 64 Bit-Linux entwickelt. "
 
-#: kernel.cpp:304
+#: kernel.cpp:308
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -538,105 +540,107 @@ msgid ""
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
 "disable wireless hardware"
 msgstr ""
-"Hiermit werden special keys für Acer Travelmates Serie aktiviert. Das geht "
-"aber auch mit anderen Notebooks o.a. van Medion, Fujitsu-Siemens. "
+"Hiermit werden spezielle Tasten für Acers Travelmates Serie aktiviert. Das "
+"geht aber auch mit anderen Notebooks von Medion, Fujitsu-Siemens. "
 
-#: kernel.cpp:306
+#: kernel.cpp:310
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
-"Linux Treiber für den Atheros(R) L2 Fast Ethernet Adapter. Dieser Adapter "
-"ist in budget Asus laptops eingebaut y.B. in den Asus Eee PC."
+"Linuxtreiber für den Atheros(R) L2 Fast Ethernet Adapter. Diese "
+"Netzwerkkarte ist in preiswerteren Laptops von Asus eingebaut. Z.B. im Asus "
+"Eee PC."
 
-#: kernel.cpp:308
+#: kernel.cpp:312
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
 "Aufs ist ein Hilfsmittel um mehrere Ordner zu kombinieren und das "
-"Dateisystem als einen Ordner/directory zu präsentieren."
+"Dateisystem als einen Ordner zu präsentieren."
 
-#: kernel.cpp:310
+#: kernel.cpp:314
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr "Btrfs ist ein experimentelles Filesystem."
 
-#: kernel.cpp:312
+#: kernel.cpp:316
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
-"Dieses Paket wurde für Agere Systems ET-131x PCI-E Ethernet Controller "
-"entwickelt."
+"Dieses Paket beinhaltet Treiber für Agere Systems ET-131x PCI-E Ethernet "
+"Controller."
 
-#: kernel.cpp:314
+#: kernel.cpp:318
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
 "Hiermit wird die Unterstützung für die RF kill switches für Fujits-Siemens "
-"Amilo M 7400 laptops geregelt (enthält den source code für fsam7400 Module)."
+"Amilo M 7400 Laptops geregelt (enthält den Quellcode für fsam7400 Module)."
 
-#: kernel.cpp:316
+#: kernel.cpp:320
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
-"Treiber für webcams und digitale Kameras mit spca5xx chips der Marken "
+"Treiber für Webcams und digitale Kameras mit spca5xx Chips der Marken "
 "SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart und "
 "Transvision."
 
-#: kernel.cpp:318
+#: kernel.cpp:322
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
-msgstr "LZMA (Lempel Ziv compression) ist ein Kompressions Algorithmus."
+msgstr ""
+"LZMA (Lempel-Ziv-Markov chain-Algorithm) ist ein "
+"Datenkompressionsalgorithmus."
 
-#: kernel.cpp:320
+#: kernel.cpp:324
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
-"Linux driver for their wireless network cards.  This project implements "
+"Linux driver for their wireless network cards. This project implements "
 "Windows kernel API and NDIS (Network Driver Interface Specification) API "
 "within Linux kernel. A Windows driver for wireless network card is then "
 "linked to this implementation so that the driver runs natively, as though it "
 "is in Windows, without binary emulation."
 msgstr ""
-"Manche Produzenten liefern keine Specifikationen und bieten auch keine Linux "
-"Treiber. Mit diesem Projekt werden Windows kernel API und NDIS so in Linux "
-"aktiviert, dass diese als native Windows Treiber funktionieren ohne binary "
-"emulation."
+"Für manche Funknetzwerkkarten gibt es unter Linux keine Treiber. Hier "
+"springt der Ndiswrapper in die Lücke in die Lücke. Er ermöglicht es bei "
+"gewissen Karten die Windowstreiber zu verwenden."
 
-#: kernel.cpp:322
+#: kernel.cpp:326
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
-"Hiermit werden kernel modules für die HP OmniBooks, Pavilions, Toshiba "
-"Satellites e.a. laptops bereitgestellt (Compal Electronics, Inc as ODM)."
+"Das Paket enthält Treiber für HP OmniBooks, Pavilions, Toshiba Satellites "
+"und weitere von Compal Electronics produzierte Laptops."
 
-#: kernel.cpp:324
+#: kernel.cpp:328
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
-msgstr "Paket für die Logitech's QuickCam Express webcam und einfache webcams."
+msgstr "Paket für die Logitech's QuickCam Express Webcam und ähnliche Webcams."
 
-#: kernel.cpp:326
+#: kernel.cpp:330
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
-"Modules für den RF kill switch für Averatec 5100P und Packard Bell EasyNote "
-"E5. Diese Modelle sind getestet. Es kann aber sein, dass die Module auch mit "
-"anderen Modellen funktionieren."
+"Dies ist ein Modul für den RF kill switch für Averatec 5100P und Packard "
+"Bell EasyNote E5. Es kann aber sein, dass die Module auch mit anderen "
+"Modellen funktionieren."
 
-#: kernel.cpp:328
+#: kernel.cpp:332
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -646,15 +650,16 @@ msgid ""
 "archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
-msgstr "Squashfs ist ein hochkomprimiertes read-only filesystem für Linux."
+msgstr "Squashfs ist ein hochkomprimiertes read-only Dateisystem für Linux."
 
-#: kernel.cpp:330 kernel.cpp:332
+#: kernel.cpp:334 kernel.cpp:336
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
-"Mit VirtualBox (PC virtualization) können verschiedene Betriebssysteme auf "
-"einem PC 'in einer box' installiert und verwaltet werden."
+"Mit VirtualBox lassen sich weitere Betriebssysteme (z.B. Windows) auf dem "
+"Rechner emulieren. Diese laufen dann ähnlich wie ein normales Programm "
+"innerhalb des Betriebssystems."
 
 #. i18n: file ./kerneldialog.ui line 17
 #: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
@@ -796,7 +801,7 @@ msgid ""
 "interface when a cable is really connected.<br><br><b>auto</b>: The "
 "networkcard will be activated, when the computer starts"
 msgstr ""
-"<b>allow-hotplug</b>: Die Verbingung zum Netzwerk wird aufgenommen, sobald "
+"<b>allow-hotplug</b>: Die Verbindung zum Netzwerk wird aufgenommen, sobald "
 "ein Netzwerkkabel in die Karte eingesteckt wird. Dies ist z.B. bei Laptops "
 "sinnvoll.<br><br>auto: Die Verbindung zum Netzwerk wird beim Hochfahren "
 "hergestellt."
@@ -977,7 +982,7 @@ msgstr "DNS Server"
 #: networkdialog.cpp:1962 rc.cpp:372
 #, no-c-format
 msgid "Install wlan card"
-msgstr "Wlan-Karte installieren"
+msgstr "WLAN-Karte installieren"
 
 #. i18n: file ./networkdialog.ui line 534
 #: networkdialog.cpp:1963 rc.cpp:375
@@ -1091,7 +1096,7 @@ msgstr "Z.B. 192.168.0.2"
 #: networkdialog.cpp:1995 rc.cpp:445
 #, no-c-format
 msgid "IP address:"
-msgstr "Ip Adresse:"
+msgstr "IP Adresse:"
 
 #. i18n: file ./networkdialog.ui line 1345
 #: networkdialog.cpp:1997 rc.cpp:451
@@ -1296,7 +1301,7 @@ msgstr "<b>Verschlüsselungsart:</b>"
 #: networkdialog.cpp:2047 rc.cpp:587
 #, no-c-format
 msgid "Choose a network (doubleklick):"
-msgstr "Bitte ein Netzwerk auswählen (doppelklick):"
+msgstr "Bitte ein Netzwerk auswählen (Doppelklick):"
 
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 485
@@ -1651,19 +1656,19 @@ msgstr "Advanced Configuration and Power Interface (ACPI) - Energieverwaltung."
 
 #: services.cpp:276
 msgid "Enables Universal interface for wireless communication"
-msgstr "Benutzerschnittstelle für die wireless Kommunikation."
+msgstr "Benutzerschnittstelle für Bluetooth-Geräte."
 
 #: services.cpp:278
 msgid "Cron is a time-based scheduling service."
 msgstr ""
-"Cron ist ein Steuerprogramm und regelt die zeitliche Ausführung von "
+"Cron ist ein Dienst zur automatischen zeitgesteurten Ausführung von "
 "Prozessen."
 
 #: services.cpp:282
 msgid ""
 "gpm means general purpose mouse and is the mouse support for linux in the "
 "console."
-msgstr "Mit gpm wird die Maus in der Linux console aktiviert."
+msgstr "Gpm aktiviert die Maus in der Linuxkonsole."
 
 #: services.cpp:284
 msgid ""
@@ -1682,10 +1687,9 @@ msgid ""
 "pulled. This is useful on laptops with onboard network adapters, since it "
 "will only configure the interface when a cable is really connected."
 msgstr ""
-"<b>allow-hotplug</b>: <b>ifplugd</b> konfiguriert automatisch ethernet "
-"devices wenn eine Kabelverbindung erkannt wird. Es wird auch automatisch "
-"deaktiviert wenn keine Kabelverbinding verfügbar ist./n Das ist vor allem "
-"sinnvoll für Laptops mit onboard network adapters."
+"Ifplugd konfiguriert automatisch Netzwerkkarten wenn eine Kabelverbindung "
+"erkannt wird. Es wird auch automatisch deaktiviert wenn keine "
+"Kabelverbinding verfügbar ist. Das ist vor allem sinnvoll für Laptops."
 
 #: services.cpp:288
 msgid ""
@@ -1694,8 +1698,7 @@ msgid ""
 "compliant infrared transceiver, which enables you to communicate with "
 "devices such as printers, modems, fax, LAN, and other laptops."
 msgstr ""
-"IrDA (Infrared Data Association) ist ein Industriestandard für "
-"Infrarotkommunication."
+"IrDA (Infrared Data Association) ist ein Dienst zur Infrarotkommunikation."
 
 #: services.cpp:290
 msgid ""
@@ -1713,8 +1716,7 @@ msgstr "Isndutils ist für interne ISDN Adapter entwickelt."
 #: services.cpp:294
 msgid ""
 "klogd is a system daemon which intercepts and logs Linux kernel messages."
-msgstr ""
-"klogd is ein Systemdaemon für intercepts und logs von Linux kernel messages."
+msgstr "Der klogd ist ein Dienst der Kernelmeldungen protokolliert."
 
 #: services.cpp:296
 msgid ""
@@ -1722,7 +1724,7 @@ msgid ""
 "many (but not all) commonly used remote controls."
 msgstr ""
 "LIRC ist ein Paket für das Dekodieren und Senden von Infrarotsignalen an die "
-"meisten (leider nicht alle) Fernbedienungen."
+"meisten (leider nicht alle) Fernbedienungen ermöglicht."
 
 #: services.cpp:300
 msgid ""
@@ -1744,11 +1746,9 @@ msgid ""
 "files in the native rsync protocol. rsync can also be used to synchronize "
 "local directories, or via a remote shell such as RSH or SSH."
 msgstr ""
-"Rsync ist eine command line utility um Dateien auszutauschen / zu "
-"synchronisieren zwischen zwei Rechnern. Es kann aber auch als backup-tool "
-"benutzt werden. rsync lauscht am TCP Port 873. rsync kann benutzt werden um "
-"lokale Ordner zu synchronisieren oder via eine remote shell wie RSH oder  "
-"SSH."
+"Rsync ist eine Konsolenbefehl zum Auszutauschen und Synchronisieren von "
+"Dateien zwischen zwei Rechnern. Es eignet sich deswegen auch gut als "
+"Backupprogramm."
 
 #: services.cpp:306
 msgid ""
@@ -1764,14 +1764,12 @@ msgid ""
 "logging and kernel message trapping. Support of both internet and unix "
 "domain sockets enables this utility package to support both local and remote "
 "logging."
-msgstr ""
-"Sysklogd bietet zwei System Utilities für System logging und kernel message "
-"trapping (local und remote logging)."
+msgstr "Sysklogd ist ein Dienst der Systemmeldungen protokolliert."
 
 #: services.cpp:312
 msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
 msgstr ""
-"TiMidity++ ist ein qualitativ hochwertiger software-only MIDI sequencer."
+"TiMidity++ ist ein qualitativ hochwertiger \"Software-Only\"-MIDI-Sequenzer."
 
 #: services.cpp:314
 msgid "Linux Video Disk Recorder (vdr)"

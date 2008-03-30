@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-23 19:24+0100\n"
-"PO-Revision-Date: 2008-03-23 21:35+0100\n"
+"POT-Creation-Date: 2008-03-30 12:47+0200\n"
+"PO-Revision-Date: 2008-03-30 13:07+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
-msgstr "Fabian Wuertz"
+msgstr "Fabian Würtz"
 
 #: _translatorinfo.cpp:3
 msgid ""
@@ -34,7 +34,7 @@ msgstr "de"
 
 #: hermes.cpp:72
 msgid "Double click to the item to view the full warning."
-msgstr "Doppelklick auf die Meldungum die vollständige Warnung zu lesen."
+msgstr "Doppelklick auf die Meldung um die vollständige Warnung zu lesen."
 
 #. i18n: file ./hermesbase.ui line 188
 #: hermesbase.cpp:288 hermesbase.cpp:401 rc.cpp:68
@@ -145,7 +145,7 @@ msgstr "Warnungen"
 #: hermesbase.cpp:399 rc.cpp:62
 #, no-c-format
 msgid "Double click to the item to view the full message."
-msgstr "Doppelklick auf die Meldungung um die vollständige Nachricht zu lesen."
+msgstr "Doppelklick auf die Meldung um die vollständige Nachricht zu lesen."
 
 #. i18n: file ./hermesbase.ui line 153
 #: hermesbase.cpp:400 rc.cpp:59

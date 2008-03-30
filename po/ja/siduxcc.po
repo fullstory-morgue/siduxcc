@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-31 15:06+0100\n"
+"POT-Creation-Date: 2008-03-30 12:47+0200\n"
 "PO-Revision-Date: 2008-02-03 20:51+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,111 +22,112 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux コントロールセンター"
 
-#: modules/display.bm:9 modules/display.bm:316
+#: modules/display.bm:9 modules/display.bm:384
 #, sh-format
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: modules/display.bm:38
+#: modules/display.bm:105
 #, sh-format
 msgid "Select new Resolution"
 msgstr "新らしい解像度選択"
 
-#: modules/display.bm:42
+#: modules/display.bm:109
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "新しい解像度入力:"
 
-#: modules/display.bm:81
+#: modules/display.bm:148
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "TFTモニターを使っていますか?"
 
-#: modules/display.bm:85
+#: modules/display.bm:152
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "新しい垂直リフレッシュレート入力:"
 
-#: modules/display.bm:94
+#: modules/display.bm:161
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "新しい水平同期率入力:"
 
-#: modules/display.bm:138
+#: modules/display.bm:205
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "新しいDPI設定入力:"
 
-#: modules/display.bm:172
+#: modules/display.bm:239
 #, sh-format
 msgid "Default Color Depth"
 msgstr "デフォルト色深度"
 
-#: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
-#: modules/kernel.bm:28 modules/kernel.bm:94 modules/kernel.bm:106
-#: modules/network.bm:107 modules/software.bm:65 modules/software.bm:74
-#: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
+#: modules/display.bm:323 modules/display.bm:371 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:88 modules/kernel.bm:106
+#: modules/kernel.bm:142 modules/network.bm:107 modules/software.bm:65
+#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
+#: modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "<Enter>で続行..."
 
-#: modules/display.bm:284
+#: modules/display.bm:352
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "レストアするファイルを選択してください"
 
-#: modules/display.bm:317
+#: modules/display.bm:385
 #, sh-format
 msgid "Change resolution"
 msgstr "解像度変更"
 
-#: modules/display.bm:318
+#: modules/display.bm:386
 #, sh-format
 msgid "Set scanning frequency"
 msgstr "操作周波数セット"
 
-#: modules/display.bm:319
+#: modules/display.bm:387
 #, sh-format
 msgid "Change DPI-settings"
 msgstr "DPI-設定変更"
 
-#: modules/display.bm:320
+#: modules/display.bm:388
 #, sh-format
 msgid "Change color-depth"
 msgstr "色深度変更"
 
-#: modules/display.bm:321
+#: modules/display.bm:389
 #, sh-format
 msgid "Remove modelines"
 msgstr "モードライン削除"
 
-#: modules/display.bm:322
+#: modules/display.bm:390
 #, sh-format
 msgid "Register/Repair fonts"
 msgstr "フォントの登録/修復"
 
-#: modules/display.bm:323
+#: modules/display.bm:391
 #, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Ati/Nvidia 3Dドライバーインストール"
 
-#: modules/display.bm:324
+#: modules/display.bm:392
 #, sh-format
 msgid "Restart X-Server"
 msgstr "X-Serverの最始動"
 
-#: modules/display.bm:325
+#: modules/display.bm:393
 #, sh-format
 msgid "Restore X-Server"
 msgstr "X-Serverのレストア"
 
-#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
-#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
+#: modules/display.bm:394 modules/info.bm:24 modules/kernel.bm:214
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:215
 #, sh-format
 msgid "Return to main menu"
 msgstr "メインメニューへ戻る"
 
-#: modules/display.bm:343 modules/network.bm:131
+#: modules/display.bm:411 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "エラー: このモジュールはまだ組み込まれていません!"
@@ -151,7 +152,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "使用中 "
 
-#: modules/kernel.bm:9 modules/kernel.bm:165
+#: modules/kernel.bm:9 modules/kernel.bm:211
 #, sh-format
 msgid "Kernel"
 msgstr "カーネル"
@@ -161,34 +162,34 @@ msgstr "カーネル"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "カーネルリムーバーがありません! インストールしますか?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:105 modules/network.bm:106
-#: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
-#: modules/software.bm:98 modules/software.bm:109
+#: modules/kernel.bm:27 modules/kernel.bm:105 modules/kernel.bm:141
+#: modules/network.bm:106 modules/software.bm:64 modules/software.bm:73
+#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "処理完了!"
 
-#: modules/kernel.bm:93
+#: modules/kernel.bm:87
 #, sh-format
 msgid "The installation is finished!"
 msgstr "インストールが終了しました!"
 
-#: modules/kernel.bm:117
+#: modules/kernel.bm:163
 #, sh-format
 msgid "Select a kernel"
 msgstr "カーネルを選択してください"
 
-#: modules/kernel.bm:127
+#: modules/kernel.bm:173
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "新しいカーネルと現在のカーネルのバージョンは同じです!"
 
-#: modules/kernel.bm:166
+#: modules/kernel.bm:212
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "カーネルリムーバー実行"
 
-#: modules/kernel.bm:167
+#: modules/kernel.bm:213
 #, sh-format
 msgid "Update kernel"
 msgstr "カーネル更新"
@@ -298,7 +299,7 @@ msgstr "管理サービス"
 msgid "sidux-update"
 msgstr "siduxiアップデート"
 
-#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:165
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -307,7 +308,7 @@ msgstr ""
 "sidux.comに接続できないためDist-Upgradeの警告が出ているか確認できません。それ"
 "でも続行しますか?"
 
-#: modules/software.bm:10 modules/software.bm:195
+#: modules/software.bm:10 modules/software.bm:211
 #, sh-format
 msgid "Software"
 msgstr "ソフトウェア"
@@ -317,7 +318,7 @@ msgstr "ソフトウェア"
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "このスクリプトはランレベル３でXの外側で実行しなければなりません!"
 
-#: modules/software.bm:40 modules/software.bm:152
+#: modules/software.bm:40 modules/software.bm:168
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -326,27 +327,27 @@ msgstr ""
 "Dist-Upgradeの警告があります! 今Dist-Upgradeをしないでください. sidux.comの"
 "フォーラムで詳しい情報を読んでください。"
 
-#: modules/software.bm:43 modules/software.bm:154
+#: modules/software.bm:43 modules/software.bm:170
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Dist-Upgradeの警告はありません!"
 
-#: modules/software.bm:160
+#: modules/software.bm:176
 #, sh-format
 msgid "Please choose a date..."
 msgstr "日付を選択してください。"
 
-#: modules/software.bm:196
+#: modules/software.bm:212
 #, sh-format
 msgid "Run dist-upgrade"
 msgstr "Dist-Upgradeを実行"
 
-#: modules/software.bm:197
+#: modules/software.bm:213
 #, sh-format
 msgid "Show DU warnings"
 msgstr "Dist-Upgradeの警告を表示"
 
-#: modules/software.bm:198
+#: modules/software.bm:214
 #, sh-format
 msgid "Show DU log"
 msgstr "Dist-Upgradeのログを表示"

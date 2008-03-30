@@ -321,7 +321,7 @@ void kernel::moduleDescription(QListBoxItem* item)
 	else if(item->text() == "lzma")
 		desctiptionText = i18n( "LZMA is a compression algorithm, based on the famous Lempel Ziv compression method.");
 	else if(item->text() == "ndiswrapper")
-		desctiptionText = i18n( "Some vendors do not release specifications of the hardware or provide a Linux driver for their wireless network cards.  This project implements Windows kernel API and NDIS (Network Driver Interface Specification) API within Linux kernel. A Windows driver for wireless network card is then linked to this implementation so that the driver runs natively, as though it is in Windows, without binary emulation.");
+		desctiptionText = i18n( "Some vendors do not release specifications of the hardware or provide a Linux driver for their wireless network cards. This project implements Windows kernel API and NDIS (Network Driver Interface Specification) API within Linux kernel. A Windows driver for wireless network card is then linked to this implementation so that the driver runs natively, as though it is in Windows, without binary emulation.");
 	else if(item->text() == "omnibook")
 		desctiptionText = i18n( "This package contains the loadable kernel modules for the HP OmniBooks, Pavilions, Toshiba Satellites and some other laptops manufactured by Compal Electronics, Inc as ODM.");
 	else if(item->text() == "qc-usb")

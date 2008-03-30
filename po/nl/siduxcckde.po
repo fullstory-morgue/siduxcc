@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-26 15:17+0100\n"
+"POT-Creation-Date: 2008-03-30 12:47+0200\n"
 "PO-Revision-Date: 2008-03-27 14:37+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -515,7 +515,7 @@ msgid ""
 "anyway?"
 msgstr ""
 
-#: kernel.cpp:302
+#: kernel.cpp:306
 msgid ""
 "acer-acpi is a driver to allow you to control various aspects of your Acer "
 "laptop hardware using the proc filesystem.  It was originally developed in "
@@ -526,7 +526,7 @@ msgstr ""
 "Acer acpi is gemaakt voor Acer laptops. In eerste instantie was het bedoeld "
 "voor draadloze LAN cards met 64 bits Linux. "
 
-#: kernel.cpp:304
+#: kernel.cpp:308
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
 "Travelmate series, which are not handled by the keyboard driver.  It also "
@@ -538,7 +538,7 @@ msgstr ""
 "Hiermee komen special keys beschikbaar voor Acer Travelmates. Het werkt "
 "overigens ook voor andere notebooks o.a. van Medion, Fujitsu-Siemens. "
 
-#: kernel.cpp:306
+#: kernel.cpp:310
 msgid ""
 "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
@@ -547,7 +547,7 @@ msgstr ""
 "Linux driver voor de Atheros(R) L2 Fast Ethernet Adapter. Deze adapter komt "
 "in budget Asus laptops voor bijv. in de Asus Eee PC."
 
-#: kernel.cpp:308
+#: kernel.cpp:312
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
@@ -555,11 +555,11 @@ msgstr ""
 "Aufs is een hulpmiddel om meerdere mappen te combineren en de "
 "bestandssystemen te tonen als 1 map/directory."
 
-#: kernel.cpp:310
+#: kernel.cpp:314
 msgid "This package provides the Driver for a snapshotting filesystem modules."
 msgstr "Dit pakket bevat een driver voor snapshotting filesystem modules."
 
-#: kernel.cpp:312
+#: kernel.cpp:316
 msgid ""
 "The et131x package is also required in order to make use of these modules. "
 "Kernel source or headers are required to compile these modules.<br><br>This "
@@ -568,7 +568,7 @@ msgstr ""
 "Dit pakket is bedoeld voor de Agere Systems ET-131x PCI-E Ethernet "
 "Controller."
 
-#: kernel.cpp:314
+#: kernel.cpp:318
 msgid ""
 " The fsam7400 module for the Linux kernel provides support for the software "
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
@@ -578,7 +578,7 @@ msgstr ""
 "Amilo M 7400 laptops geregeld (bevat de source code voor de fsam7400 "
 "modules)."
 
-#: kernel.cpp:316
+#: kernel.cpp:320
 msgid ""
 "The gpsca video for linux (v4l) driver, provides support for webcams and "
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
@@ -588,16 +588,17 @@ msgstr ""
 "chips van de merken SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-"
 "semi, Pixart and Transvision."
 
-#: kernel.cpp:318
+#: kernel.cpp:322
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
 msgstr "LZMA (Lempel Ziv compression) is een compressie algoritme."
 
-#: kernel.cpp:320
+#: kernel.cpp:324
+#, fuzzy
 msgid ""
 "Some vendors do not release specifications of the hardware or provide a "
-"Linux driver for their wireless network cards.  This project implements "
+"Linux driver for their wireless network cards. This project implements "
 "Windows kernel API and NDIS (Network Driver Interface Specification) API "
 "within Linux kernel. A Windows driver for wireless network card is then "
 "linked to this implementation so that the driver runs natively, as though it "
@@ -607,7 +608,7 @@ msgstr ""
 "aanbieden. Met dit project worden Windows kernel API en NDIS zo in Linux "
 "benaderd, dat deze als native Windows drivers werken zonder binary emulation."
 
-#: kernel.cpp:322
+#: kernel.cpp:326
 msgid ""
 "This package contains the loadable kernel modules for the HP OmniBooks, "
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
@@ -616,7 +617,7 @@ msgstr ""
 "Hiermee worden beschikbare kernel modules voor de HP OmniBooks, Pavilions, "
 "Toshiba Satellites e.a. laptops aangeboden (Compal Electronics, Inc as ODM)."
 
-#: kernel.cpp:324
+#: kernel.cpp:328
 msgid ""
 "This package provides the source code for the quickcam kernel module for "
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
@@ -624,7 +625,7 @@ msgid ""
 msgstr ""
 "Pakket voor de Logitech's QuickCam Express webcam en eenvoudige webcams."
 
-#: kernel.cpp:326
+#: kernel.cpp:330
 msgid ""
 "Modules for controlling the software RF kill switch on the Averatec 5100P "
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
@@ -634,7 +635,7 @@ msgstr ""
 "E5. Deze modellen zijn getest, het zou kunnen dat de modules ook op andere "
 "modellen werken."
 
-#: kernel.cpp:328
+#: kernel.cpp:332
 msgid ""
 "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
 "zlib compression to compress both files, inodes and directories.  Inodes in "
@@ -646,7 +647,7 @@ msgid ""
 "overhead is needed."
 msgstr "Squashfs is een hoog-gecomprimeerd read-only filesystem voor Linux."
 
-#: kernel.cpp:330 kernel.cpp:332
+#: kernel.cpp:334 kernel.cpp:336
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
