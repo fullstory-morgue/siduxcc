@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-30 12:47+0200\n"
+"POT-Creation-Date: 2008-01-31 15:06+0100\n"
 "PO-Revision-Date: 2008-03-09 14:55+0000\n"
 "Last-Translator: Rui Umbelino (VaMPiRiC_CRoW)\n"
 "Language-Team:  <en@li.org>\n"
@@ -20,112 +20,111 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux Centro de Controlo"
 
-#: modules/display.bm:9 modules/display.bm:384
+#: modules/display.bm:9 modules/display.bm:316
 #, sh-format
 msgid "Display"
 msgstr "Exposição"
 
-#: modules/display.bm:105
+#: modules/display.bm:38
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Seleccionar nova Resolução"
 
-#: modules/display.bm:109
+#: modules/display.bm:42
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Inserir nova Resolução"
 
-#: modules/display.bm:148
+#: modules/display.bm:81
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Tem um monitor TFT?"
 
-#: modules/display.bm:152
+#: modules/display.bm:85
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Insira a nova taxa de actualização vertical:"
 
-#: modules/display.bm:161
+#: modules/display.bm:94
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "Insira a nova taxa de sincronização horizontal:"
 
-#: modules/display.bm:205
+#: modules/display.bm:138
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Insira as novas definições DPI:"
 
-#: modules/display.bm:239
+#: modules/display.bm:172
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Profundidade da Cor, por omissão:"
 
-#: modules/display.bm:323 modules/display.bm:371 modules/info.bm:32
-#: modules/kernel.bm:28 modules/kernel.bm:88 modules/kernel.bm:106
-#: modules/kernel.bm:142 modules/network.bm:107 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
-#: modules/software.bm:110
+#: modules/display.bm:255 modules/display.bm:303 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:94 modules/kernel.bm:106
+#: modules/network.bm:107 modules/software.bm:65 modules/software.bm:74
+#: modules/software.bm:90 modules/software.bm:99 modules/software.bm:110
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Pressione '<Enter>' para continuar..."
 
-#: modules/display.bm:352
+#: modules/display.bm:284
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Seleccione o ficheiro que deverá ser restaurado"
 
-#: modules/display.bm:385
+#: modules/display.bm:317
 #, sh-format
 msgid "Change resolution"
 msgstr "Alterar resolução"
 
-#: modules/display.bm:386
+#: modules/display.bm:318
 #, sh-format
 msgid "Set scanning frequency"
 msgstr "Definir a frequência de verificação"
 
-#: modules/display.bm:387
+#: modules/display.bm:319
 #, sh-format
 msgid "Change DPI-settings"
 msgstr "Alterar definições DPI"
 
-#: modules/display.bm:388
+#: modules/display.bm:320
 #, sh-format
 msgid "Change color-depth"
 msgstr "Alterar profundidade da cor"
 
-#: modules/display.bm:389
+#: modules/display.bm:321
 #, sh-format
 msgid "Remove modelines"
 msgstr "Remover modelines"
 
-#: modules/display.bm:390
+#: modules/display.bm:322
 #, sh-format
 msgid "Register/Repair fonts"
 msgstr "Registar/Reparar fontes"
 
-#: modules/display.bm:391
+#: modules/display.bm:323
 #, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Instalar controladores 3D ATI/NVIDIA"
 
-#: modules/display.bm:392
+#: modules/display.bm:324
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Reiniciar Servidor X"
 
-#: modules/display.bm:393
+#: modules/display.bm:325
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Restaurar Servidor X"
 
-#: modules/display.bm:394 modules/info.bm:24 modules/kernel.bm:214
-#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:215
+#: modules/display.bm:326 modules/info.bm:24 modules/kernel.bm:168
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:199
 #, sh-format
 msgid "Return to main menu"
 msgstr "Retornar ao menu principal"
 
-#: modules/display.bm:411 modules/network.bm:131
+#: modules/display.bm:343 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Erro: Este modulo ainda não está implementado!"
@@ -150,7 +149,7 @@ msgstr "Informação"
 msgid "You are using "
 msgstr "Está a usar "
 
-#: modules/kernel.bm:9 modules/kernel.bm:211
+#: modules/kernel.bm:9 modules/kernel.bm:165
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -160,34 +159,34 @@ msgstr "Kernel"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "Não tem o \"Kernel-remover\"! Deseja instalá-lo? "
 
-#: modules/kernel.bm:27 modules/kernel.bm:105 modules/kernel.bm:141
-#: modules/network.bm:106 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
+#: modules/kernel.bm:27 modules/kernel.bm:105 modules/network.bm:106
+#: modules/software.bm:64 modules/software.bm:73 modules/software.bm:89
+#: modules/software.bm:98 modules/software.bm:109
 #, sh-format
 msgid "Process done!"
 msgstr "Processo terminado!"
 
-#: modules/kernel.bm:87
+#: modules/kernel.bm:93
 #, sh-format
 msgid "The installation is finished!"
 msgstr "A instalação terminou!"
 
-#: modules/kernel.bm:163
+#: modules/kernel.bm:117
 #, sh-format
 msgid "Select a kernel"
 msgstr "Seleccionar um kernel"
 
-#: modules/kernel.bm:173
+#: modules/kernel.bm:127
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "As versões do actual e do novo Kernel são as mesmas!"
 
-#: modules/kernel.bm:212
+#: modules/kernel.bm:166
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Executar o \"kernel-remover\""
 
-#: modules/kernel.bm:213
+#: modules/kernel.bm:167
 #, sh-format
 msgid "Update kernel"
 msgstr "Actualizar o Kernel"
@@ -297,16 +296,14 @@ msgstr "Gerir os Serviços"
 msgid "sidux-update"
 msgstr "sidux-actualização"
 
-#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:165
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:149
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
 "Upgrade Warnings. Dou want to continuo anyway?"
-msgstr ""
-"Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de "
-"Actualização da Distribuição. Deseja continuar de qualquer forma?"
+msgstr "Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de Actualização da Distribuição. Deseja continuar de qualquer forma?"
 
-#: modules/software.bm:10 modules/software.bm:211
+#: modules/software.bm:10 modules/software.bm:195
 #, sh-format
 msgid "Software"
 msgstr "Software"
@@ -314,40 +311,36 @@ msgstr "Software"
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr ""
-"Tem de estar no nível de execução 3 (init 3) e fora do X para executar este "
-"programa."
+msgstr "Tem de estar no nível de execução 3 (init 3) e fora do X para executar este programa."
 
-#: modules/software.bm:40 modules/software.bm:168
+#: modules/software.bm:40 modules/software.bm:152
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
 "com for more information!"
-msgstr ""
-"Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por "
-"favor, visite a página \"sidux.com\" para mais informação!"
+msgstr "Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por favor, visite a página \"sidux.com\" para mais informação!"
 
-#: modules/software.bm:43 modules/software.bm:170
+#: modules/software.bm:43 modules/software.bm:154
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Neste momento não existem Avisos de Actualização da Distribuição!"
 
-#: modules/software.bm:176
+#: modules/software.bm:160
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Por favor, escolha uma data..."
 
-#: modules/software.bm:212
+#: modules/software.bm:196
 #, sh-format
 msgid "Run dist-upgrade"
 msgstr "Executar a Actualização da Distribuição"
 
-#: modules/software.bm:213
+#: modules/software.bm:197
 #, sh-format
 msgid "Show DU warnings"
 msgstr "Mostrar Avisos da Actualização da Distribuição"
 
-#: modules/software.bm:214
+#: modules/software.bm:198
 #, sh-format
 msgid "Show DU log"
 msgstr "Mostrar o histórico da Actualização da Distribuição"
@@ -366,3 +359,4 @@ msgstr "Menu Principal"
 #, sh-format
 msgid "Exit"
 msgstr "Sair"
+

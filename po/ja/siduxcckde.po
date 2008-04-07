@@ -27,7 +27,7 @@ msgstr "S.Sach & Mutsumu Nomura"
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr "sachs@infoseek.jp & muchan.m@gmail.com"
+msgstr "muchan.m@gmail.com"
 
 #. i18n: file ./consoledialog.ui line 16
 #: consoledialog.cpp:72 rc.cpp:698
@@ -512,7 +512,7 @@ msgstr "本当に新しいカーネルをインストールしますか?"
 msgid ""
 "It's recommended to not disable this function! Do you want to continue "
 "anyway?"
-msgstr ""
+msgstr "この機能をオフにするのはお勧めできません。それでも実行しますか？"
 
 #: kernel.cpp:306
 msgid ""
@@ -522,6 +522,10 @@ msgid ""
 "acerhk (the previous fine solution to the problem) relied on making BIOS "
 "calls which are not allowed from a 64-bit OS."
 msgstr ""
+"acer-acpiはAcerのラップトップのハードウェアの様々な機能をprocファイルシステム"
+"を使ってコントロールするドライバーです。元は64bitのlinuxでワイアレスLANカード"
+"をオンにするのに、(それまでの32bitの解決方法だった)acerhkはBIOSのルーチンを"
+"呼んでいてこの方法では64bitのOSでは使えないために開発されたものです"
 
 #: kernel.cpp:308
 msgid ""
@@ -532,6 +536,11 @@ msgid ""
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
 "disable wireless hardware"
 msgstr ""
+"このドライバーはAcer Travelmateシリーズのノートブックの、通常のキーボード"
+"ドライバーではアクセスできない特殊キーにアクセスするためのものです。"
+"他のメーカーのノートブック(Medion, 富士通シーメンスなど)でも使える場合が"
+"あります。<br><br>他にもモデルによっては(メールやワイヤレスの)LEDや"
+"ワイヤレスのオン/オフの設定など関連する機能も持っています"
 
 #: kernel.cpp:310
 msgid ""
@@ -539,16 +548,21 @@ msgid ""
 "The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
+"atl2はAtheros(R) L2 Fast Ethernet Adapter用のLinuxベースのドライバーです。"
+"Atheros(R) L2 Fast Ethernet AdapterはAsusのEeePCなどの低価格ラップトップに"
+"使われています"
 
 #: kernel.cpp:312
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
+"Aufsはいくつかのディレクトリを統合して一つのディレクトリとして扱うことが"
+"できるスタッカブル統合ファイルシステムです"
 
 #: kernel.cpp:314
 msgid "This package provides the Driver for a snapshotting filesystem modules."
-msgstr ""
+msgstr "このパッケージはスナップショットファイルシステムのドライバを提供します"
 
 #: kernel.cpp:316
 msgid ""
@@ -556,6 +570,9 @@ msgid ""
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
+"et131xパッケージはこれらのモジュールを使用するのに必要です。"
+"これらのモジュールをコンパイルするのにはカーネルソースまたはヘッダーが必要"
+"です。<br><br>Agere SystemのET-131x PCI-E Ethernet Controllerが使えます。"
 
 #: kernel.cpp:318
 msgid ""
@@ -563,6 +580,9 @@ msgid ""
 "RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
 "provides the source code for the fsam7400 modules."
 msgstr ""
+"fsam7400モジュールは富士通シーメンスのAmilo M 7400ラップトップのソフトウェア"
+"RFキルスイッチのサポートを提供します。このパッケージはfsam7400のソースコード"
+"を提供します"
 
 #: kernel.cpp:320
 msgid ""
@@ -570,12 +590,17 @@ msgid ""
 "digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
+"linux用gpscaビデオドライバー (v4l)はSunPlus, Sonix, Z-star, Vimicro, "
+"Conexant, Etoms, Mars-semi, Pixart や Transvision などのメーカの、"
+"spca5xxチップをベースにしたwebカメラやデジタルカメラをサポートします。"
+""
 
 #: kernel.cpp:322
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
 msgstr ""
+"LZMAは有名な Lempel Ziv com[ressionをベースにした圧縮アルゴリズムです"
 
 #: kernel.cpp:324
 msgid ""
@@ -586,6 +611,13 @@ msgid ""
 "linked to this implementation so that the driver runs natively, as though it "
 "is in Windows, without binary emulation."
 msgstr ""
+"すべてのワイアレスカードのメーカーがハードウェアのスペックを公表したり、"
+"linuxのドライバーを提供したりしているわけではありません。このプロジェクトは"
+"WindowsのカーネルAPIとNDIS (Network Driver Interface Specification) API "
+"をlinuxカーネル内部に実装するものです。Windows用に書かれたネットワークカード"
+"ドライバーはこのAPIにリンクされて、バイナリーエミュレーションなしで"
+"あたかもWindows上で使用されているかの様に作動します"
+""
 
 #: kernel.cpp:326
 msgid ""
@@ -593,6 +625,8 @@ msgid ""
 "Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
 "Electronics, Inc as ODM."
 msgstr ""
+"このパッケージにはHP OmniBook, Pavilion, 東芝のSatelliteその他、Compal "
+"Electronics社のODMで作られたラップトップ用のカーネルモジュールが入っています"
 
 #: kernel.cpp:328
 msgid ""
@@ -600,6 +634,8 @@ msgid ""
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
 msgstr ""
+"このパッケージには Logitech の QuickCam Expressウェッブカメラや類似品用の"
+"カーネルモジュールのソースが含まれています"
 
 #: kernel.cpp:330
 msgid ""
@@ -607,6 +643,10 @@ msgid ""
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
+"Averatec 5100P と Packard Bell EasyNote E5 のソフトウェアRF Killスイッチを"
+"コントロールするモジュールです。他のラップトップでも動作するかもしれませんが"
+"テストは上記の2つの機種だけで行われています"
+""
 
 #: kernel.cpp:332
 msgid ""
@@ -619,12 +659,21 @@ msgid ""
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
 msgstr ""
+"Squashfsはlinuxの高度に圧縮されたリードオンリーファイルシステムです。"
+"zlib圧縮を使ってファイル、iノードとディレクトリを圧縮します。iノードは"
+"とても小さいので、すべてのブロックは圧縮されてオーバーヘッドを最小にします。"
+"4Kb以上64Kbまでの大きさのブロックがサポートされています。<br><br>Squashfs"
+"はリードオンリーのファイルシステム一般、(.tar.gzの代わりとしての)アーカイブ"
+"としての使用、ブロックデバイス/メモリーの制限された(組み込み)システムなど"
+"での使用を念頭において作られています"
 
 #: kernel.cpp:334 kernel.cpp:336
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
+"VirtualBoxはフリーのバーチャルPCプログラムで、様々なPC用のOSを走らす"
+"ことができます"
 
 #. i18n: file ./kerneldialog.ui line 17
 #: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
@@ -673,7 +722,7 @@ msgstr ""
 #: kerneldialog.cpp:832 rc.cpp:732
 #, no-c-format
 msgid "Install &automatic new kernels during dist-updates."
-msgstr ""
+msgstr "最新カーネルをdist-upgradeの際に自動インストールする"
 
 #. i18n: file ./servicesdialog.ui line 372
 #. i18n: file ./networkdialog.ui line 278
@@ -1429,6 +1478,14 @@ msgid ""
 "\n"
 "Command: apt-get clean"
 msgstr ""
+"cleanはダウンロードされたパッケージの\n"
+"ローカルレポジトリーをクリアします。\n"
+"/var/cache/apt/archives/ と \n"
+"/var/cache/apt/archives/partial/内の\n"
+"ロックされているもの以外のすべての\n"
+"ファイルを消去します。"
+"\n"
+"コマンド: apt-get clean"
 
 #. i18n: file ./softwaredialog.ui line 287
 #: rc.cpp:635 softwaredialog.cpp:770
@@ -1445,6 +1502,10 @@ msgid ""
 "\n"
 "Command: apt-get -d dist-upgrade"
 msgstr ""
+"パッケージはダウンロードされましたが\n"
+"まだ展開もインストールもされていません。\n"
+""
+"コマンド: apt-get -d dist-upgrade"
 
 #. i18n: file ./softwaredialog.ui line 337
 #: rc.cpp:650 softwaredialog.cpp:777
@@ -1463,6 +1524,12 @@ msgid ""
 "\n"
 "Command: apt-get update"
 msgstr ""
+"updateはパッケージのインデックスファイルを\n"
+"元レポジトリーと同期します。更新できるパッケージの\n"
+"インデックスは/etc/a[t/sources.listでしていされた\n"
+"場所からダウンロードされます。\n"
+"\n"
+"コマンド: apt-get update"
 
 #. i18n: file ./softwaredialog.ui line 387
 #: rc.cpp:661 softwaredialog.cpp:784
@@ -1478,6 +1545,9 @@ msgid ""
 "do a system upgrade click \n"
 "to the button."
 msgstr ""
+"システムのアップグレードについての\n"
+"説明を読むにははボタンをクリックして\n"
+"ください。"
 
 #. i18n: file ./startdialog.ui line 17
 #: rc.cpp:773 startdialog.cpp:3499
@@ -1558,7 +1628,8 @@ msgid ""
 "handling various document types."
 msgstr ""
 "Common UNIX Printing System (CUPS(tm)) はlpdの代わりとなる汎用印刷システムで"
-"す。"
+"す。IPP(Internet Printing Protocol)をサポートしていて、様々な文書タイプを"
+"処理する独自のフィルタードライバーを持っています。"
 
 #: services.cpp:71 services.cpp:298
 msgid ""
@@ -1602,21 +1673,21 @@ msgstr "作動中..."
 msgid ""
 "Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
 "management on your system."
-msgstr ""
+msgstr "ACPI(Advanced Configuration and Power Interface)はシステムの電源を賢くマネージメントします"
 
 #: services.cpp:276
 msgid "Enables Universal interface for wireless communication"
-msgstr ""
+msgstr "ワイアレスコミュニケーションの汎用インターフェースをオンにします"
 
 #: services.cpp:278
 msgid "Cron is a time-based scheduling service."
-msgstr ""
+msgstr "Cronは実行時間を設定できるスケジューリングサービスです"
 
 #: services.cpp:282
 msgid ""
 "gpm means general purpose mouse and is the mouse support for linux in the "
 "console."
-msgstr ""
+msgstr "gpmはlinuxのコンソールでマウスを使えるようにサポートします"
 
 #: services.cpp:284
 msgid ""
