@@ -1,21 +1,12 @@
-siduxcc (0.9.35+nmu2) UNRELEASED; urgency=high
+siduxcc (0.9.35) unstable; urgency=low
 
-  * Non-maintainer upload.
+  [ Joaquim Boura ]
+  * ja translation updated (muchan)
+
+  [ Fabian Wuertz ]
   * kde: services: design updated
 
  -- Fabian Wuertz <xadras@sidux.com>  Mon, 07 Apr 2008 15:03:14 +0200
-
-siduxcc (0.9.35+nmu1) UNRELEASED; urgency=high
-
-  * ja translation updated (muchan)
-
- -- Joaquim Boura <x-un-i@sidux.com>  Mon, 07 Apr 2008 07:22:26 +0200
-
-siduxcc (0.9.35) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 30 Mar 2008 13:37:20 +0200
 
 siduxcc (0.9.34) unstable; urgency=low
 

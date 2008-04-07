@@ -699,7 +699,6 @@ messages: rc.cpp
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
-
 #>+ 3
 unique.moc.cpp: $(srcdir)/unique.h
 	$(MOC) $(srcdir)/unique.h -o unique.moc.cpp
@@ -733,7 +732,7 @@ clean-metasources:
 	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc hermes.moc
 
 #>+ 2
-KDE_DIST=legendbase.h hermesbase.h legendbase.ui Makefile.in siduxcc-hermes.desktop hermesbase.ui Makefile.am siduxcc-hermes 
+KDE_DIST=legendbase.ui Makefile.in siduxcc-hermes.desktop hermesbase.ui Makefile.am 
 
 #>+ 5
 clean-ui:
@@ -783,7 +782,7 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp $(srcdir)/legendbase.cpp $(srcdir)/hermesbase.cpp $(srcdir)/unique.moc.cpp $(srcdir)/systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
+siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp legendbase.cpp hermesbase.cpp unique.moc.cpp systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
 	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
 	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \
