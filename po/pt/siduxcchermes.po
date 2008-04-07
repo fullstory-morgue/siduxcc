@@ -132,7 +132,7 @@ msgstr "Sem avisos de actualização da distribuição."
 #: hermesbase.cpp:398 rc.cpp:53
 #, fuzzy, no-c-format
 msgid "&Warnings"
-msgstr "Avisos"
+msgstr "&Avisos"
 
 #. i18n: file ./hermesbase.ui line 169
 #: hermesbase.cpp:399 rc.cpp:62
@@ -144,19 +144,19 @@ msgstr "Duplo clique no item para ver o aviso todo."
 #: hermesbase.cpp:400 rc.cpp:59
 #, no-c-format
 msgid "&News"
-msgstr ""
+msgstr "&Novidades"
 
 #. i18n: file ./hermesbase.ui line 179
 #: hermesbase.cpp:404 rc.cpp:65
 #, fuzzy, no-c-format
 msgid "Upgrada&ble packages"
-msgstr "Pacotes Actualizáveis"
+msgstr "Paco&tes Actualizáveis"
 
 #. i18n: file ./hermesbase.ui line 283
 #: hermesbase.cpp:406 rc.cpp:81
 #, no-c-format
 msgid "Current kernel:"
-msgstr ""
+msgstr "Kernel actual"
 
 #. i18n: file ./hermesbase.ui line 299
 #. i18n: file ./hermesbase.ui line 331
@@ -169,13 +169,13 @@ msgstr ""
 #: hermesbase.cpp:408 rc.cpp:87
 #, no-c-format
 msgid "Newest stable kernel:"
-msgstr ""
+msgstr "Kernel actual estável:"
 
 #. i18n: file ./hermesbase.ui line 369
 #: hermesbase.cpp:412 rc.cpp:95
 #, no-c-format
 msgid "To install a new kernel use the sidux Control Center."
-msgstr ""
+msgstr "Para instalar um kernel novo utilize o Centro de Controle do sidux"
 
 #. i18n: file ./hermesbase.ui line 242
 #: hermesbase.cpp:413 rc.cpp:77
