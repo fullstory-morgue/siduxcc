@@ -305,7 +305,7 @@ void kernel::moduleDescription(QListBoxItem* item)
 	if(item->text() == "acer-acpi")
 		desctiptionText = i18n( "acer-acpi is a driver to allow you to control various aspects of your Acer laptop hardware using the proc filesystem.  It was originally developed in order to activate the wireless LAN card under a 64-bit version of Linux, as acerhk (the previous fine solution to the problem) relied on making BIOS calls which are not allowed from a 64-bit OS.");
 	else if(item->text() == "acerhk")
-		desctiptionText = i18n( "This driver will give access to the special keys on notebooks of the Acer Travelmate series, which are not handled by the keyboard driver.  It also works on notebooks from other manufacturers (some Medion, Fujitsu-Siemens, ...).<br><br>It also has some other related functionality (depending on the model): - controlling LEDs (Mail, Wireless) - enable/disable wireless hardware" );
+		desctiptionText = i18n( "This driver will give access to the special keys on notebooks of the Acer Travelmate series, which are not handled by the keyboard driver. It also works on notebooks from other manufacturers (some Medion, Fujitsu-Siemens, ...).<br><br>It also has some other related functionality (depending on the model): - controlling LEDs (Mail, Wireless) - enable/disable wireless hardware" );
 	else if(item->text() == "atl2")
 		desctiptionText = i18n( "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost Asus laptop systems, such as the Asus Eee PC." );
 	else if(item->text() == "aufs")

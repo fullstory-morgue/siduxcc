@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-30 12:47+0200\n"
+"POT-Creation-Date: 2008-04-07 14:59+0200\n"
 "PO-Revision-Date: 2007-10-25 22:06+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -281,7 +281,7 @@ msgid "Rem&ove Modelines"
 msgstr "Inlocuieste Liniile de Mod"
 
 #. i18n: file ./displaydialog.ui line 816
-#. i18n: file ./servicesdialog.ui line 394
+#. i18n: file ./servicesdialog.ui line 408
 #. i18n: file ./networkdialog.ui line 245
 #. i18n: file ./networkdialog.ui line 602
 #. i18n: file ./softwaredialog.ui line 290
@@ -290,7 +290,7 @@ msgstr "Inlocuieste Liniile de Mod"
 #: displaydialog.cpp:2380 kerneldialog.cpp:837 kerneldialog.cpp:840
 #: networkdialog.cpp:1949 networkdialog.cpp:1967 rc.cpp:125 rc.cpp:248
 #: rc.cpp:333 rc.cpp:387 rc.cpp:638 rc.cpp:745 rc.cpp:752
-#: servicesdialog.cpp:679 softwaredialog.cpp:771
+#: servicesdialog.cpp:699 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -395,20 +395,22 @@ msgstr "Inregistreaza fonturile"
 #. i18n: file ./kerneldialog.ui line 471
 #: displaydialog.cpp:2401 kerneldialog.cpp:845 networkdialog.cpp:2048
 #: rc.cpp:182 rc.cpp:203 rc.cpp:590 rc.cpp:672 rc.cpp:767
-#: servicesdialog.cpp:663 softwaredialog.cpp:789
+#: servicesdialog.cpp:683 softwaredialog.cpp:789
 #, no-c-format
 msgid "&back"
 msgstr ""
 
 #. i18n: file ./displaydialog.ui line 1176
 #. i18n: file ./servicesdialog.ui line 88
+#. i18n: file ./servicesdialog.ui line 469
 #. i18n: file ./networkdialog.ui line 215
 #. i18n: file ./networkdialog.ui line 1944
 #. i18n: file ./softwaredialog.ui line 457
 #. i18n: file ./kerneldialog.ui line 474
 #: displaydialog.cpp:2402 kerneldialog.cpp:846 networkdialog.cpp:1947
-#: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:327 rc.cpp:593
-#: rc.cpp:675 rc.cpp:770 servicesdialog.cpp:664 softwaredialog.cpp:790
+#: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:264 rc.cpp:327
+#: rc.cpp:593 rc.cpp:675 rc.cpp:770 servicesdialog.cpp:684
+#: servicesdialog.cpp:705 softwaredialog.cpp:790
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -432,7 +434,7 @@ msgstr "Alt+X"
 #. i18n: file ./softwaredialog.ui line 465
 #: displaydialog.cpp:2405 internetdialog.cpp:306 networkdialog.cpp:2050
 #: rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:596 rc.cpp:678
-#: servicesdialog.cpp:665 softwaredialog.cpp:791
+#: servicesdialog.cpp:685 softwaredialog.cpp:791
 #, no-c-format
 msgid "appl&y"
 msgstr ""
@@ -444,7 +446,7 @@ msgstr ""
 #. i18n: file ./softwaredialog.ui line 468
 #: displaydialog.cpp:2406 internetdialog.cpp:307 networkdialog.cpp:2051
 #: rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:599 rc.cpp:681
-#: servicesdialog.cpp:666 softwaredialog.cpp:792
+#: servicesdialog.cpp:686 softwaredialog.cpp:792
 #, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
@@ -521,7 +523,7 @@ msgstr ""
 #: kernel.cpp:308
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
-"Travelmate series, which are not handled by the keyboard driver.  It also "
+"Travelmate series, which are not handled by the keyboard driver. It also "
 "works on notebooks from other manufacturers (some Medion, Fujitsu-"
 "Siemens, ...).<br><br>It also has some other related functionality "
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
@@ -670,7 +672,7 @@ msgstr ""
 msgid "Install &automatic new kernels during dist-updates."
 msgstr ""
 
-#. i18n: file ./servicesdialog.ui line 372
+#. i18n: file ./servicesdialog.ui line 394
 #. i18n: file ./networkdialog.ui line 278
 #. i18n: file ./networkdialog.ui line 997
 #. i18n: file ./networkdialog.ui line 1469
@@ -680,7 +682,7 @@ msgstr ""
 #: kerneldialog.cpp:833 kerneldialog.cpp:842 networkdialog.cpp:1952
 #: networkdialog.cpp:1970 networkdialog.cpp:2011 rc.cpp:242 rc.cpp:342
 #: rc.cpp:394 rc.cpp:493 rc.cpp:664 rc.cpp:735 rc.cpp:758
-#: servicesdialog.cpp:677 softwaredialog.cpp:785
+#: servicesdialog.cpp:697 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
@@ -749,7 +751,7 @@ msgstr "<b>Mac Address:</b>"
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 165
 #: network.cpp:244 network.cpp:254 networkdialog.cpp:1944 rc.cpp:230
-#: rc.cpp:318 servicesdialog.cpp:673
+#: rc.cpp:318 servicesdialog.cpp:693
 #, no-c-format
 msgid "Description"
 msgstr "Descriere"
@@ -1257,112 +1259,106 @@ msgid "Choose a network (doubleklick):"
 msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 17
-#. i18n: file ./servicesdialog.ui line 485
-#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:662 servicesdialog.cpp:686
+#. i18n: file ./servicesdialog.ui line 495
+#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:682 servicesdialog.cpp:706
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "Servicii"
 
 #. i18n: file ./servicesdialog.ui line 119
-#: rc.cpp:215 servicesdialog.cpp:668
+#: rc.cpp:215 servicesdialog.cpp:688
 #, no-c-format
 msgid "Manage services"
 msgstr "Alegeti Serviciul"
 
 #. i18n: file ./servicesdialog.ui line 127
-#: rc.cpp:218 servicesdialog.cpp:669
+#: rc.cpp:218 servicesdialog.cpp:689
 #, no-c-format
 msgid "Start services at boot"
 msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 197
-#: rc.cpp:221 servicesdialog.cpp:670
+#: rc.cpp:221 servicesdialog.cpp:690
 #, no-c-format
 msgid "Select service"
 msgstr "Alegeti Serviciul"
 
 #. i18n: file ./servicesdialog.ui line 237
-#: rc.cpp:224 servicesdialog.cpp:671
+#: rc.cpp:224 servicesdialog.cpp:691
 #, no-c-format
 msgid "Status"
 msgstr "Stadiul"
 
 #. i18n: file ./servicesdialog.ui line 286
-#: rc.cpp:227 servicesdialog.cpp:672
+#: rc.cpp:227 servicesdialog.cpp:692
 #, no-c-format
 msgid "Status: not running..."
 msgstr "Stadiul:nu ruleaza..."
 
 #. i18n: file ./servicesdialog.ui line 334
-#. i18n: file ./servicesdialog.ui line 661
-#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:674 servicesdialog.cpp:693
+#. i18n: file ./servicesdialog.ui line 671
+#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:694 servicesdialog.cpp:713
 #, no-c-format
 msgid "Description Text"
 msgstr "Descrierea Textului"
 
 #. i18n: file ./servicesdialog.ui line 354
-#: rc.cpp:236 servicesdialog.cpp:675
+#: rc.cpp:236 servicesdialog.cpp:695
 #, no-c-format
 msgid "Action"
 msgstr "Actiunea"
 
-#. i18n: file ./servicesdialog.ui line 369
-#: rc.cpp:239 servicesdialog.cpp:676
+#. i18n: file ./servicesdialog.ui line 391
+#: rc.cpp:239 servicesdialog.cpp:696
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "Stadiul"
 
-#. i18n: file ./servicesdialog.ui line 413
-#: rc.cpp:251 servicesdialog.cpp:680
+#. i18n: file ./servicesdialog.ui line 419
+#: rc.cpp:251 servicesdialog.cpp:700
 #, no-c-format
 msgid "Restart"
 msgstr "Reincepe"
 
-#. i18n: file ./servicesdialog.ui line 435
-#: rc.cpp:255 servicesdialog.cpp:682
+#. i18n: file ./servicesdialog.ui line 433
+#: rc.cpp:255 servicesdialog.cpp:702
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "Reincarca"
 
-#. i18n: file ./servicesdialog.ui line 438
-#: rc.cpp:258 servicesdialog.cpp:683
+#. i18n: file ./servicesdialog.ui line 436
+#: rc.cpp:258 servicesdialog.cpp:703
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
-#. i18n: file ./servicesdialog.ui line 457
-#: rc.cpp:261 servicesdialog.cpp:684
+#. i18n: file ./servicesdialog.ui line 466
+#: rc.cpp:261 servicesdialog.cpp:704
 #, fuzzy, no-c-format
-msgid "Start ser&vice at Boot"
+msgid "Start service at &Boot"
 msgstr "Adaoga un Nivel-Intrare (Porneste Serviciul la Boot)"
 
-#. i18n: file ./servicesdialog.ui line 460
-#: rc.cpp:264 servicesdialog.cpp:685
-#, fuzzy, no-c-format
-msgid "Alt+V"
-msgstr "Alt+Y"
-
-#. i18n: file ./servicesdialog.ui line 508
-#: rc.cpp:270 servicesdialog.cpp:687
+#. i18n: file ./servicesdialog.ui line 518
+#: rc.cpp:270 servicesdialog.cpp:707
 #, no-c-format
 msgid "Active Services:"
 msgstr "Servicii Active"
 
-#. i18n: file ./servicesdialog.ui line 556
-#: rc.cpp:273 servicesdialog.cpp:688
+#. i18n: file ./servicesdialog.ui line 566
+#: rc.cpp:273 servicesdialog.cpp:708
 #, no-c-format
 msgid ">"
 msgstr ">"
 
-#. i18n: file ./servicesdialog.ui line 584
-#: rc.cpp:277 servicesdialog.cpp:690
+#. i18n: file ./servicesdialog.ui line 594
+#: rc.cpp:277 servicesdialog.cpp:710
 #, no-c-format
 msgid "<"
 msgstr "<"
 
-#. i18n: file ./servicesdialog.ui line 630
-#: rc.cpp:281 servicesdialog.cpp:692
+#. i18n: file ./servicesdialog.ui line 640
+#: rc.cpp:281 servicesdialog.cpp:712
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "Servicii Disabled:"
@@ -1741,6 +1737,10 @@ msgstr "Sunteti siguri ca vreti sa curatati repozitoriul local?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "System Info"
+
+#, fuzzy
+#~ msgid "Alt+V"
+#~ msgstr "Alt+Y"
 
 #, fuzzy
 #~ msgid "Alt+M"

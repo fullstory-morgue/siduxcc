@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-30 12:47+0200\n"
+"POT-Creation-Date: 2008-04-07 14:59+0200\n"
 "PO-Revision-Date: 2008-02-24 13:i08+0100\n"
 "Last-Translator: Mutsumu Nomura\n"
 "Language-Team: \n"
@@ -283,7 +283,7 @@ msgid "Rem&ove Modelines"
 msgstr "Modelines削除"
 
 #. i18n: file ./displaydialog.ui line 816
-#. i18n: file ./servicesdialog.ui line 394
+#. i18n: file ./servicesdialog.ui line 408
 #. i18n: file ./networkdialog.ui line 245
 #. i18n: file ./networkdialog.ui line 602
 #. i18n: file ./softwaredialog.ui line 290
@@ -292,7 +292,7 @@ msgstr "Modelines削除"
 #: displaydialog.cpp:2380 kerneldialog.cpp:837 kerneldialog.cpp:840
 #: networkdialog.cpp:1949 networkdialog.cpp:1967 rc.cpp:125 rc.cpp:248
 #: rc.cpp:333 rc.cpp:387 rc.cpp:638 rc.cpp:745 rc.cpp:752
-#: servicesdialog.cpp:679 softwaredialog.cpp:771
+#: servicesdialog.cpp:699 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -397,20 +397,22 @@ msgstr "フォント登録"
 #. i18n: file ./kerneldialog.ui line 471
 #: displaydialog.cpp:2401 kerneldialog.cpp:845 networkdialog.cpp:2048
 #: rc.cpp:182 rc.cpp:203 rc.cpp:590 rc.cpp:672 rc.cpp:767
-#: servicesdialog.cpp:663 softwaredialog.cpp:789
+#: servicesdialog.cpp:683 softwaredialog.cpp:789
 #, no-c-format
 msgid "&back"
 msgstr "戻る"
 
 #. i18n: file ./displaydialog.ui line 1176
 #. i18n: file ./servicesdialog.ui line 88
+#. i18n: file ./servicesdialog.ui line 469
 #. i18n: file ./networkdialog.ui line 215
 #. i18n: file ./networkdialog.ui line 1944
 #. i18n: file ./softwaredialog.ui line 457
 #. i18n: file ./kerneldialog.ui line 474
 #: displaydialog.cpp:2402 kerneldialog.cpp:846 networkdialog.cpp:1947
-#: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:327 rc.cpp:593
-#: rc.cpp:675 rc.cpp:770 servicesdialog.cpp:664 softwaredialog.cpp:790
+#: networkdialog.cpp:2049 rc.cpp:185 rc.cpp:206 rc.cpp:264 rc.cpp:327
+#: rc.cpp:593 rc.cpp:675 rc.cpp:770 servicesdialog.cpp:684
+#: servicesdialog.cpp:705 softwaredialog.cpp:790
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
@@ -434,7 +436,7 @@ msgstr "Alt+X"
 #. i18n: file ./softwaredialog.ui line 465
 #: displaydialog.cpp:2405 internetdialog.cpp:306 networkdialog.cpp:2050
 #: rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:596 rc.cpp:678
-#: servicesdialog.cpp:665 softwaredialog.cpp:791
+#: servicesdialog.cpp:685 softwaredialog.cpp:791
 #, no-c-format
 msgid "appl&y"
 msgstr "適用"
@@ -446,7 +448,7 @@ msgstr "適用"
 #. i18n: file ./softwaredialog.ui line 468
 #: displaydialog.cpp:2406 internetdialog.cpp:307 networkdialog.cpp:2051
 #: rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:599 rc.cpp:681
-#: servicesdialog.cpp:666 softwaredialog.cpp:792
+#: servicesdialog.cpp:686 softwaredialog.cpp:792
 #, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
@@ -524,23 +526,23 @@ msgid ""
 msgstr ""
 "acer-acpiはAcerのラップトップのハードウェアの様々な機能をprocファイルシステム"
 "を使ってコントロールするドライバーです。元は64bitのlinuxでワイアレスLANカード"
-"をオンにするのに、(それまでの32bitの解決方法だった)acerhkはBIOSのルーチンを"
-"呼んでいてこの方法では64bitのOSでは使えないために開発されたものです"
+"をオンにするのに、(それまでの32bitの解決方法だった)acerhkはBIOSのルーチンを呼"
+"んでいてこの方法では64bitのOSでは使えないために開発されたものです"
 
 #: kernel.cpp:308
 msgid ""
 "This driver will give access to the special keys on notebooks of the Acer "
-"Travelmate series, which are not handled by the keyboard driver.  It also "
+"Travelmate series, which are not handled by the keyboard driver. It also "
 "works on notebooks from other manufacturers (some Medion, Fujitsu-"
 "Siemens, ...).<br><br>It also has some other related functionality "
 "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
 "disable wireless hardware"
 msgstr ""
-"このドライバーはAcer Travelmateシリーズのノートブックの、通常のキーボード"
-"ドライバーではアクセスできない特殊キーにアクセスするためのものです。"
-"他のメーカーのノートブック(Medion, 富士通シーメンスなど)でも使える場合が"
-"あります。<br><br>他にもモデルによっては(メールやワイヤレスの)LEDや"
-"ワイヤレスのオン/オフの設定など関連する機能も持っています"
+"このドライバーはAcer Travelmateシリーズのノートブックの、通常のキーボードドラ"
+"イバーではアクセスできない特殊キーにアクセスするためのものです。他のメーカー"
+"のノートブック(Medion, 富士通シーメンスなど)でも使える場合があります。"
+"<br><br>他にもモデルによっては(メールやワイヤレスの)LEDやワイヤレスのオン/オ"
+"フの設定など関連する機能も持っています"
 
 #: kernel.cpp:310
 msgid ""
@@ -549,16 +551,16 @@ msgid ""
 "Asus laptop systems, such as the Asus Eee PC."
 msgstr ""
 "atl2はAtheros(R) L2 Fast Ethernet Adapter用のLinuxベースのドライバーです。"
-"Atheros(R) L2 Fast Ethernet AdapterはAsusのEeePCなどの低価格ラップトップに"
-"使われています"
+"Atheros(R) L2 Fast Ethernet AdapterはAsusのEeePCなどの低価格ラップトップに使"
+"われています"
 
 #: kernel.cpp:312
 msgid ""
 "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
 "several directories and provides a merged single directory."
 msgstr ""
-"Aufsはいくつかのディレクトリを統合して一つのディレクトリとして扱うことが"
-"できるスタッカブル統合ファイルシステムです"
+"Aufsはいくつかのディレクトリを統合して一つのディレクトリとして扱うことができ"
+"るスタッカブル統合ファイルシステムです"
 
 #: kernel.cpp:314
 msgid "This package provides the Driver for a snapshotting filesystem modules."
@@ -570,9 +572,9 @@ msgid ""
 "Kernel source or headers are required to compile these modules.<br><br>This "
 "works with Agere Systems ET-131x PCI-E Ethernet Controller."
 msgstr ""
-"et131xパッケージはこれらのモジュールを使用するのに必要です。"
-"これらのモジュールをコンパイルするのにはカーネルソースまたはヘッダーが必要"
-"です。<br><br>Agere SystemのET-131x PCI-E Ethernet Controllerが使えます。"
+"et131xパッケージはこれらのモジュールを使用するのに必要です。これらのモジュー"
+"ルをコンパイルするのにはカーネルソースまたはヘッダーが必要です。"
+"<br><br>Agere SystemのET-131x PCI-E Ethernet Controllerが使えます。"
 
 #: kernel.cpp:318
 msgid ""
@@ -591,16 +593,14 @@ msgid ""
 "Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
 msgstr ""
 "linux用gpscaビデオドライバー (v4l)はSunPlus, Sonix, Z-star, Vimicro, "
-"Conexant, Etoms, Mars-semi, Pixart や Transvision などのメーカの、"
-"spca5xxチップをベースにしたwebカメラやデジタルカメラをサポートします。"
-""
+"Conexant, Etoms, Mars-semi, Pixart や Transvision などのメーカの、spca5xxチッ"
+"プをベースにしたwebカメラやデジタルカメラをサポートします。"
 
 #: kernel.cpp:322
 msgid ""
 "LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
 "method."
-msgstr ""
-"LZMAは有名な Lempel Ziv com[ressionをベースにした圧縮アルゴリズムです"
+msgstr "LZMAは有名な Lempel Ziv com[ressionをベースにした圧縮アルゴリズムです"
 
 #: kernel.cpp:324
 msgid ""
@@ -611,13 +611,12 @@ msgid ""
 "linked to this implementation so that the driver runs natively, as though it "
 "is in Windows, without binary emulation."
 msgstr ""
-"すべてのワイアレスカードのメーカーがハードウェアのスペックを公表したり、"
-"linuxのドライバーを提供したりしているわけではありません。このプロジェクトは"
-"WindowsのカーネルAPIとNDIS (Network Driver Interface Specification) API "
-"をlinuxカーネル内部に実装するものです。Windows用に書かれたネットワークカード"
-"ドライバーはこのAPIにリンクされて、バイナリーエミュレーションなしで"
-"あたかもWindows上で使用されているかの様に作動します"
-""
+"すべてのワイアレスカードのメーカーがハードウェアのスペックを公表したり、linux"
+"のドライバーを提供したりしているわけではありません。このプロジェクトはWindows"
+"のカーネルAPIとNDIS (Network Driver Interface Specification) API をlinuxカー"
+"ネル内部に実装するものです。Windows用に書かれたネットワークカードドライバーは"
+"このAPIにリンクされて、バイナリーエミュレーションなしであたかもWindows上で使"
+"用されているかの様に作動します"
 
 #: kernel.cpp:326
 msgid ""
@@ -634,8 +633,8 @@ msgid ""
 "Logitech's QuickCam Express webcam and similar webcams.  This driver "
 "supercedes the qce-ga driver."
 msgstr ""
-"このパッケージには Logitech の QuickCam Expressウェッブカメラや類似品用の"
-"カーネルモジュールのソースが含まれています"
+"このパッケージには Logitech の QuickCam Expressウェッブカメラや類似品用のカー"
+"ネルモジュールのソースが含まれています"
 
 #: kernel.cpp:330
 msgid ""
@@ -643,10 +642,9 @@ msgid ""
 "and Packard Bell EasyNote E5. The code may work on other laptops, but these "
 "are the only models on which it has been tested."
 msgstr ""
-"Averatec 5100P と Packard Bell EasyNote E5 のソフトウェアRF Killスイッチを"
-"コントロールするモジュールです。他のラップトップでも動作するかもしれませんが"
-"テストは上記の2つの機種だけで行われています"
-""
+"Averatec 5100P と Packard Bell EasyNote E5 のソフトウェアRF Killスイッチをコ"
+"ントロールするモジュールです。他のラップトップでも動作するかもしれませんがテ"
+"ストは上記の2つの機種だけで行われています"
 
 #: kernel.cpp:332
 msgid ""
@@ -659,21 +657,21 @@ msgid ""
 "constrained block device/memory systems (e.g.  embedded systems) where low "
 "overhead is needed."
 msgstr ""
-"Squashfsはlinuxの高度に圧縮されたリードオンリーファイルシステムです。"
-"zlib圧縮を使ってファイル、iノードとディレクトリを圧縮します。iノードは"
-"とても小さいので、すべてのブロックは圧縮されてオーバーヘッドを最小にします。"
-"4Kb以上64Kbまでの大きさのブロックがサポートされています。<br><br>Squashfs"
-"はリードオンリーのファイルシステム一般、(.tar.gzの代わりとしての)アーカイブ"
-"としての使用、ブロックデバイス/メモリーの制限された(組み込み)システムなど"
-"での使用を念頭において作られています"
+"Squashfsはlinuxの高度に圧縮されたリードオンリーファイルシステムです。zlib圧縮"
+"を使ってファイル、iノードとディレクトリを圧縮します。iノードはとても小さいの"
+"で、すべてのブロックは圧縮されてオーバーヘッドを最小にします。4Kb以上64Kbまで"
+"の大きさのブロックがサポートされています。<br><br>Squashfsはリードオンリーの"
+"ファイルシステム一般、(.tar.gzの代わりとしての)アーカイブとしての使用、ブロッ"
+"クデバイス/メモリーの制限された(組み込み)システムなどでの使用を念頭において作"
+"られています"
 
 #: kernel.cpp:334 kernel.cpp:336
 msgid ""
 "VirtualBox is a free PC virtualization solution allowing you to run a wide "
 "range of PC operating systems on your system."
 msgstr ""
-"VirtualBoxはフリーのバーチャルPCプログラムで、様々なPC用のOSを走らす"
-"ことができます"
+"VirtualBoxはフリーのバーチャルPCプログラムで、様々なPC用のOSを走らすことがで"
+"きます"
 
 #. i18n: file ./kerneldialog.ui line 17
 #: kerneldialog.cpp:819 rc.cpp:704 start.cpp:64 start.cpp:130
@@ -724,7 +722,7 @@ msgstr ""
 msgid "Install &automatic new kernels during dist-updates."
 msgstr "最新カーネルをdist-upgradeの際に自動インストールする"
 
-#. i18n: file ./servicesdialog.ui line 372
+#. i18n: file ./servicesdialog.ui line 394
 #. i18n: file ./networkdialog.ui line 278
 #. i18n: file ./networkdialog.ui line 997
 #. i18n: file ./networkdialog.ui line 1469
@@ -734,7 +732,7 @@ msgstr "最新カーネルをdist-upgradeの際に自動インストールする
 #: kerneldialog.cpp:833 kerneldialog.cpp:842 networkdialog.cpp:1952
 #: networkdialog.cpp:1970 networkdialog.cpp:2011 rc.cpp:242 rc.cpp:342
 #: rc.cpp:394 rc.cpp:493 rc.cpp:664 rc.cpp:735 rc.cpp:758
-#: servicesdialog.cpp:677 softwaredialog.cpp:785
+#: servicesdialog.cpp:697 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
@@ -801,7 +799,7 @@ msgstr "MAC アドレス"
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 165
 #: network.cpp:244 network.cpp:254 networkdialog.cpp:1944 rc.cpp:230
-#: rc.cpp:318 servicesdialog.cpp:673
+#: rc.cpp:318 servicesdialog.cpp:693
 #, no-c-format
 msgid "Description"
 msgstr "記述"
@@ -1314,112 +1312,106 @@ msgid "Choose a network (doubleklick):"
 msgstr "ネットワークを選んでください (ダブルクリック):"
 
 #. i18n: file ./servicesdialog.ui line 17
-#. i18n: file ./servicesdialog.ui line 485
-#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:662 servicesdialog.cpp:686
+#. i18n: file ./servicesdialog.ui line 495
+#: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:682 servicesdialog.cpp:706
 #: start.cpp:72 start.cpp:111
 #, no-c-format
 msgid "Services"
 msgstr "サービス"
 
 #. i18n: file ./servicesdialog.ui line 119
-#: rc.cpp:215 servicesdialog.cpp:668
+#: rc.cpp:215 servicesdialog.cpp:688
 #, no-c-format
 msgid "Manage services"
 msgstr "サービス管理"
 
 #. i18n: file ./servicesdialog.ui line 127
-#: rc.cpp:218 servicesdialog.cpp:669
+#: rc.cpp:218 servicesdialog.cpp:689
 #, no-c-format
 msgid "Start services at boot"
 msgstr "ブート時開始サービス"
 
 #. i18n: file ./servicesdialog.ui line 197
-#: rc.cpp:221 servicesdialog.cpp:670
+#: rc.cpp:221 servicesdialog.cpp:690
 #, no-c-format
 msgid "Select service"
 msgstr "サービス選択"
 
 #. i18n: file ./servicesdialog.ui line 237
-#: rc.cpp:224 servicesdialog.cpp:671
+#: rc.cpp:224 servicesdialog.cpp:691
 #, no-c-format
 msgid "Status"
 msgstr "状態"
 
 #. i18n: file ./servicesdialog.ui line 286
-#: rc.cpp:227 servicesdialog.cpp:672
+#: rc.cpp:227 servicesdialog.cpp:692
 #, no-c-format
 msgid "Status: not running..."
 msgstr "状態: 未実行..."
 
 #. i18n: file ./servicesdialog.ui line 334
-#. i18n: file ./servicesdialog.ui line 661
-#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:674 servicesdialog.cpp:693
+#. i18n: file ./servicesdialog.ui line 671
+#: rc.cpp:233 rc.cpp:284 servicesdialog.cpp:694 servicesdialog.cpp:713
 #, no-c-format
 msgid "Description Text"
 msgstr "解説テキスト"
 
 #. i18n: file ./servicesdialog.ui line 354
-#: rc.cpp:236 servicesdialog.cpp:675
+#: rc.cpp:236 servicesdialog.cpp:695
 #, no-c-format
 msgid "Action"
 msgstr "アクション"
 
-#. i18n: file ./servicesdialog.ui line 369
-#: rc.cpp:239 servicesdialog.cpp:676
+#. i18n: file ./servicesdialog.ui line 391
+#: rc.cpp:239 servicesdialog.cpp:696
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "状態"
 
-#. i18n: file ./servicesdialog.ui line 413
-#: rc.cpp:251 servicesdialog.cpp:680
+#. i18n: file ./servicesdialog.ui line 419
+#: rc.cpp:251 servicesdialog.cpp:700
 #, no-c-format
 msgid "Restart"
 msgstr "リスタート"
 
-#. i18n: file ./servicesdialog.ui line 435
-#: rc.cpp:255 servicesdialog.cpp:682
+#. i18n: file ./servicesdialog.ui line 433
+#: rc.cpp:255 servicesdialog.cpp:702
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "リロード"
 
-#. i18n: file ./servicesdialog.ui line 438
-#: rc.cpp:258 servicesdialog.cpp:683
+#. i18n: file ./servicesdialog.ui line 436
+#: rc.cpp:258 servicesdialog.cpp:703
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
-#. i18n: file ./servicesdialog.ui line 457
-#: rc.cpp:261 servicesdialog.cpp:684
+#. i18n: file ./servicesdialog.ui line 466
+#: rc.cpp:261 servicesdialog.cpp:704
 #, fuzzy, no-c-format
-msgid "Start ser&vice at Boot"
+msgid "Start service at &Boot"
 msgstr "ブート時開始サービス"
 
-#. i18n: file ./servicesdialog.ui line 460
-#: rc.cpp:264 servicesdialog.cpp:685
-#, fuzzy, no-c-format
-msgid "Alt+V"
-msgstr "Alt+Y"
-
-#. i18n: file ./servicesdialog.ui line 508
-#: rc.cpp:270 servicesdialog.cpp:687
+#. i18n: file ./servicesdialog.ui line 518
+#: rc.cpp:270 servicesdialog.cpp:707
 #, no-c-format
 msgid "Active Services:"
 msgstr "アクティブサービス:"
 
-#. i18n: file ./servicesdialog.ui line 556
-#: rc.cpp:273 servicesdialog.cpp:688
+#. i18n: file ./servicesdialog.ui line 566
+#: rc.cpp:273 servicesdialog.cpp:708
 #, no-c-format
 msgid ">"
 msgstr ">"
 
-#. i18n: file ./servicesdialog.ui line 584
-#: rc.cpp:277 servicesdialog.cpp:690
+#. i18n: file ./servicesdialog.ui line 594
+#: rc.cpp:277 servicesdialog.cpp:710
 #, no-c-format
 msgid "<"
 msgstr "<"
 
-#. i18n: file ./servicesdialog.ui line 630
-#: rc.cpp:281 servicesdialog.cpp:692
+#. i18n: file ./servicesdialog.ui line 640
+#: rc.cpp:281 servicesdialog.cpp:712
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "サービスを無効に"
@@ -1483,8 +1475,7 @@ msgstr ""
 "/var/cache/apt/archives/ と \n"
 "/var/cache/apt/archives/partial/内の\n"
 "ロックされているもの以外のすべての\n"
-"ファイルを消去します。"
-"\n"
+"ファイルを消去します。\n"
 "コマンド: apt-get clean"
 
 #. i18n: file ./softwaredialog.ui line 287
@@ -1504,7 +1495,6 @@ msgid ""
 msgstr ""
 "パッケージはダウンロードされましたが\n"
 "まだ展開もインストールもされていません。\n"
-""
 "コマンド: apt-get -d dist-upgrade"
 
 #. i18n: file ./softwaredialog.ui line 337
@@ -1628,8 +1618,8 @@ msgid ""
 "handling various document types."
 msgstr ""
 "Common UNIX Printing System (CUPS(tm)) はlpdの代わりとなる汎用印刷システムで"
-"す。IPP(Internet Printing Protocol)をサポートしていて、様々な文書タイプを"
-"処理する独自のフィルタードライバーを持っています。"
+"す。IPP(Internet Printing Protocol)をサポートしていて、様々な文書タイプを処理"
+"する独自のフィルタードライバーを持っています。"
 
 #: services.cpp:71 services.cpp:298
 msgid ""
@@ -1673,7 +1663,9 @@ msgstr "作動中..."
 msgid ""
 "Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
 "management on your system."
-msgstr "ACPI(Advanced Configuration and Power Interface)はシステムの電源を賢くマネージメントします"
+msgstr ""
+"ACPI(Advanced Configuration and Power Interface)はシステムの電源を賢くマネー"
+"ジメントします"
 
 #: services.cpp:276
 msgid "Enables Universal interface for wireless communication"
@@ -1829,6 +1821,10 @@ msgstr "本当にローカルリポジトリをクリアしますか?"
 #: start.cpp:80 start.cpp:137
 msgid "System Info"
 msgstr "システム情報"
+
+#, fuzzy
+#~ msgid "Alt+V"
+#~ msgstr "Alt+Y"
 
 #~ msgid "Alt+M"
 #~ msgstr "Alt+M"

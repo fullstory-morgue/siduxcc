@@ -347,119 +347,129 @@
                             <x>40</x>
                             <y>260</y>
                             <width>540</width>
-                            <height>80</height>
+                            <height>91</height>
                         </rect>
                     </property>
                     <property name="title">
                         <string>Action</string>
                     </property>
-                    <widget class="QPushButton">
+                    <grid>
                         <property name="name">
-                            <cstring>startPushButton</cstring>
+                            <cstring>unnamed</cstring>
                         </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>20</x>
-                                <y>30</y>
-                                <width>70</width>
-                                <height>30</height>
-                            </rect>
+                        <property name="margin">
+                            <number>8</number>
                         </property>
-                        <property name="text">
-                            <string>St&amp;art</string>
+                        <property name="spacing">
+                            <number>8</number>
                         </property>
-                        <property name="accel">
-                            <string>Alt+A</string>
-                        </property>
-                        <property name="iconSet">
-                            <iconset>image2</iconset>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>stopPushButton</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>100</x>
-                                <y>30</y>
-                                <width>70</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>St&amp;op</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+O</string>
-                        </property>
-                        <property name="iconSet">
-                            <iconset>image3</iconset>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>restartPushButton</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>180</x>
-                                <y>30</y>
-                                <width>80</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Restart</string>
-                        </property>
-                        <property name="accel">
-                            <string></string>
-                        </property>
-                        <property name="iconSet">
-                            <iconset>image2</iconset>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton">
-                        <property name="name">
-                            <cstring>reloadPushButton</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>270</x>
-                                <y>30</y>
-                                <width>80</width>
-                                <height>30</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Re&amp;load</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+L</string>
-                        </property>
-                        <property name="iconSet">
-                            <iconset>image2</iconset>
-                        </property>
-                    </widget>
-                    <widget class="QCheckBox">
-                        <property name="name">
-                            <cstring>runlevelCheckBox</cstring>
-                        </property>
-                        <property name="geometry">
-                            <rect>
-                                <x>365</x>
-                                <y>35</y>
-                                <width>160</width>
-                                <height>20</height>
-                            </rect>
-                        </property>
-                        <property name="text">
-                            <string>Start ser&amp;vice at Boot</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+V</string>
-                        </property>
-                    </widget>
+                        <widget class="QFrame" row="0" column="0">
+                            <property name="name">
+                                <cstring>frame3</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>NoFrame</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Plain</enum>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>6</number>
+                                </property>
+                                <widget class="QPushButton" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>startPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>St&amp;art</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+A</string>
+                                    </property>
+                                    <property name="iconSet">
+                                        <iconset>image2</iconset>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" row="0" column="1">
+                                    <property name="name">
+                                        <cstring>stopPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>St&amp;op</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+O</string>
+                                    </property>
+                                    <property name="iconSet">
+                                        <iconset>image3</iconset>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" row="0" column="2">
+                                    <property name="name">
+                                        <cstring>restartPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Restart</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string></string>
+                                    </property>
+                                    <property name="iconSet">
+                                        <iconset>image2</iconset>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton" row="0" column="3">
+                                    <property name="name">
+                                        <cstring>reloadPushButton</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Re&amp;load</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+L</string>
+                                    </property>
+                                    <property name="iconSet">
+                                        <iconset>image2</iconset>
+                                    </property>
+                                </widget>
+                                <spacer row="0" column="4">
+                                    <property name="name">
+                                        <cstring>spacer5</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </grid>
+                        </widget>
+                        <widget class="QCheckBox" row="1" column="0">
+                            <property name="name">
+                                <cstring>runlevelCheckBox</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Start service at &amp;Boot</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+B</string>
+                            </property>
+                        </widget>
+                    </grid>
                 </widget>
             </widget>
             <widget class="QWidget">
@@ -747,12 +757,6 @@
         <slot>reloadService()</slot>
     </connection>
     <connection>
-        <sender>runlevelCheckBox</sender>
-        <signal>clicked()</signal>
-        <receiver>ServicesDialog</receiver>
-        <slot>hasChanged()</slot>
-    </connection>
-    <connection>
         <sender>activeServices</sender>
         <signal>highlighted(QListBoxItem*)</signal>
         <receiver>ServicesDialog</receiver>
@@ -763,6 +767,12 @@
         <signal>highlighted(QListBoxItem*)</signal>
         <receiver>ServicesDialog</receiver>
         <slot>showDescription(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>runlevelCheckBox</sender>
+        <signal>clicked()</signal>
+        <receiver>ServicesDialog</receiver>
+        <slot>hasChanged()</slot>
     </connection>
 </connections>
 <includes>
