@@ -188,7 +188,7 @@ void kernel::installKernel()
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to install a new kernel?") ) )
 		{
 			QStringList run;
-			run << "installKernel" << "stable";
+			run << "installKernel";
 			startConsole(run);
 		}
 	}

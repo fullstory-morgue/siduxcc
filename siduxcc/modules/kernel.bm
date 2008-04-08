@@ -71,17 +71,15 @@ function experimentalKernel()
 
 installKernel()
 {
-	# $1: type, stable, experimental
 
 	tmp=$(stableKernelFull)
 
-	case $1 in
-			stable)
-				apt-get update
-				apt-get install linux-image-$tmp linux-headers-$tmp
-				;;
-			experimental) echo "na";;
-	esac
+	if [ "$tmp" == "$(uname -r)" ]; then
+		echo "The versions of the new and the current Kernel are the same!"
+	else
+		apt-get update
+		apt-get install linux-image-$tmp linux-headers-$tmp
+	fi
 
 	echo ""
 	echo "$(eval_gettext "The installation is finished!")"
@@ -215,7 +213,7 @@ function kernel_interface()
 
 		case $kernel in
 			remover) kernel-remover;;
-			update)  dlgInstallKernel;;
+			update)  installKernel;;
 			return|"") break;;
 		esac
 	done
