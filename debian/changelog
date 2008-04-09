@@ -1,21 +1,12 @@
-siduxcc (0.9.36+nmu2) UNRELEASED; urgency=high
+siduxcc (0.9.36) unstable; urgency=low
 
-  * Non-maintainer upload.
+  [ Joaquim Boura ]
+  * enhanced pt language file. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
+
+  [ Fabian Wuertz ]
   * cli: kernel: update function updated
 
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 09 Apr 2008 00:19:28 +0200
-
-siduxcc (0.9.36+nmu1) UNRELEASED; urgency=high
-
-  * enhanced pt language file. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
-
- -- Joaquim Boura <x-un-i@sidux.com>  Mon, 07 Apr 2008 22:54:38 +0200
-
-siduxcc (0.9.36) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 07 Apr 2008 16:11:00 +0200
 
 siduxcc (0.9.35) unstable; urgency=low
 
