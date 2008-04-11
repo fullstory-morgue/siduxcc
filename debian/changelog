@@ -1,15 +1,8 @@
-siduxcc (0.9.37+nmu1) UNRELEASED; urgency=low
+siduxcc (0.9.37) unstable; urgency=low
 
-  * Non-maintainer upload.
   * enhanced pt language file. Thanks to Rui Umbelino (VaMPiRiC_CRoW)
 
  -- Joaquim Boura <x-un-i@sidux.com>  Fri, 11 Apr 2008 23:22:08 +0200
-
-siduxcc (0.9.37) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 09 Apr 2008 15:40:04 +0200
 
 siduxcc (0.9.36) unstable; urgency=low
 
