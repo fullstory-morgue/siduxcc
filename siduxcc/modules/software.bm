@@ -128,7 +128,7 @@ function duWarnings()
 function duWarningsEn()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php
+	wget --timeout=10 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php
 	grep -A 1 Warning $TMP
 	rm -f $TMP
 }
@@ -136,7 +136,7 @@ function duWarningsEn()
 function duWarningsDe()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
+	wget --timeout=10 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 Warnung $TMP
 	rm -f $TMP
 }
@@ -144,7 +144,7 @@ function duWarningsDe()
 function getNewsEn()
 {
 	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php
+	wget --timeout=10 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php
 	grep -A 1 title $TMP | grep -B 1 link
 	rm -f $TMP
 }
@@ -152,7 +152,7 @@ function getNewsEn()
 function getNewsDe()
 {
 	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
+	wget --timeout=10 -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 title $TMP | grep -B 1 link
 	rm -f $TMP
 }

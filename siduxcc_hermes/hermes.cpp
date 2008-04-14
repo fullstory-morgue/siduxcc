@@ -65,7 +65,7 @@ void hermes::getNews()
 	title = title.gres( "<title>"  , "" ).gres( "</title>" , "" ).gres( "&amp;", "&");
 	link  = link.gres(  "<link>"   , "" ).gres(  "</link>"  , "" );
 	for(uint i = 0; i < title.count(); i++ )
-		if( title[i].contains( "Warning", TRUE )+title[i].contains( "Warnung", TRUE ) > 0)
+		if( title[i].contains( "Warning", TRUE )+title[i].contains( "WARNING", TRUE )+title[i].contains( "Warnung", TRUE )+title[i].contains( "WARNUNG", TRUE ) > 0)
 		{
 			title[i] = title[i].replace( "Warning: ", "" ).replace( "Warnung: ", "" );
 			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"),title[i]);

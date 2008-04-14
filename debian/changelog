@@ -1,3 +1,10 @@
+siduxcc (0.9.38+nmu1) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * hermes: show WARNING problem fixed 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 15 Apr 2008 13:01:47 +0200
+
 siduxcc (0.9.38) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
