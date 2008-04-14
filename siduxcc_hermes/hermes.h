@@ -53,6 +53,7 @@ class hermes : public hermesBase
 	public slots:
 		virtual void tabChanged();
 		virtual void update();
+		virtual void download();
 		virtual void terminateConsole();
 		virtual void showWarning(int);
 		virtual void showNews(int);

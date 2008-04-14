@@ -75,22 +75,6 @@ function update()
 	read
 }
 
-
-function updateHermes()
-{
-	SELF="siduxcc"
-	if ((UID)); then
-		exec su -c "$0 software updateHermes --uid $UID $*"
-	fi
-	
-	
-	apt-get update
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
-
 function clean()
 {
 	apt-get clean

@@ -618,6 +618,7 @@ uninstall-am:
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 3
 process.moc.cpp: $(srcdir)/process.h
 	$(MOC) $(srcdir)/process.h -o process.moc.cpp
@@ -630,7 +631,7 @@ clean-metasources:
 	-rm -f  process.moc.cpp
 
 #>+ 2
-KDE_DIST=Makefile.in process.h Makefile.am 
+KDE_DIST=process.h Makefile.am Makefile.in 
 
 #>+ 2
 docs-am:
@@ -674,7 +675,7 @@ bcheck-am:
 
 
 #>+ 11
-libsiduxcc_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/process.cpp process.moc.cpp 
+libsiduxcc_la.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/process.cpp $(srcdir)/process.moc.cpp 
 	@echo 'creating libsiduxcc_la.all_cpp.cpp ...'; \
 	rm -f libsiduxcc_la.all_cpp.files libsiduxcc_la.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> libsiduxcc_la.all_cpp.final; \

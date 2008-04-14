@@ -8,8 +8,8 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>587</width>
-            <height>396</height>
+            <width>593</width>
+            <height>374</height>
         </rect>
     </property>
     <property name="caption">
@@ -37,85 +37,7 @@
                     <property name="name">
                         <cstring>unnamed</cstring>
                     </property>
-                    <spacer row="2" column="0">
-                        <property name="name">
-                            <cstring>spacer9</cstring>
-                        </property>
-                        <property name="orientation">
-                            <enum>Horizontal</enum>
-                        </property>
-                        <property name="sizeType">
-                            <enum>Expanding</enum>
-                        </property>
-                        <property name="sizeHint">
-                            <size>
-                                <width>270</width>
-                                <height>20</height>
-                            </size>
-                        </property>
-                    </spacer>
-                    <widget class="QPushButton" row="2" column="1">
-                        <property name="name">
-                            <cstring>reloadPushButton</cstring>
-                        </property>
-                        <property name="text">
-                            <string>relo&amp;ad</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+A</string>
-                        </property>
-                        <property name="toolTip" stdset="0">
-                            <string>Reload the current package list of 
-siduxcc-hermes. Use this option if 
-you have updated the package list 
-without siduxcc-hermes.</string>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton" row="2" column="2">
-                        <property name="name">
-                            <cstring>updatePushButton</cstring>
-                        </property>
-                        <property name="text">
-                            <string>&amp;update (apt-get)</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+U</string>
-                        </property>
-                        <property name="toolTip" stdset="0">
-                            <string>update is used to resynchronize the package 
-index files from their sources. The indexes 
-of available packages are fetched from the 
-location(s) specified in /etc/apt/sources.list.
-
-Command: apt-get update</string>
-                        </property>
-                    </widget>
-                    <widget class="QPushButton" row="2" column="3">
-                        <property name="name">
-                            <cstring>closePushButton</cstring>
-                        </property>
-                        <property name="text">
-                            <string>&amp;close</string>
-                        </property>
-                        <property name="accel">
-                            <string>Alt+C</string>
-                        </property>
-                    </widget>
-                    <widget class="Line" row="1" column="0" rowspan="1" colspan="4">
-                        <property name="name">
-                            <cstring>line1</cstring>
-                        </property>
-                        <property name="frameShape">
-                            <enum>HLine</enum>
-                        </property>
-                        <property name="frameShadow">
-                            <enum>Sunken</enum>
-                        </property>
-                        <property name="orientation">
-                            <enum>Horizontal</enum>
-                        </property>
-                    </widget>
-                    <widget class="QTabWidget" row="0" column="0" rowspan="1" colspan="4">
+                    <widget class="QTabWidget" row="0" column="0" rowspan="1" colspan="5">
                         <property name="name">
                             <cstring>tabWidget</cstring>
                         </property>
@@ -239,7 +161,7 @@ Command: apt-get update</string>
                                 <cstring>TabPage</cstring>
                             </property>
                             <attribute name="title">
-                                <string>Kernel</string>
+                                <string>&amp;Kernel</string>
                             </attribute>
                             <widget class="QGroupBox">
                                 <property name="name">
@@ -375,6 +297,116 @@ Command: apt-get update</string>
                             </widget>
                         </widget>
                     </widget>
+                    <widget class="Line" row="1" column="0" rowspan="1" colspan="5">
+                        <property name="name">
+                            <cstring>line1</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="0">
+                        <property name="name">
+                            <cstring>spacer9</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>90</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QPushButton" row="2" column="1">
+                        <property name="name">
+                            <cstring>reloadPushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>relo&amp;ad</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Reload the current package list of 
+siduxcc-hermes. Use this option if 
+you have updated the package list 
+without siduxcc-hermes.</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="2">
+                        <property name="name">
+                            <cstring>updatePushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;update (apt-get)</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+U</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>update is used to resynchronize the package 
+index files from their sources. The indexes 
+of available packages are fetched from the 
+location(s) specified in /etc/apt/sources.list.
+
+Command: apt-get update</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="3">
+                        <property name="name">
+                            <cstring>downloadPushButton</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>D&amp;ownload</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+O</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>package files are only retrieved, not
+unpacked or installed.
+
+Command: apt-get -d dist-upgrade</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="4">
+                        <property name="name">
+                            <cstring>closePushButton</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;close</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+C</string>
+                        </property>
+                    </widget>
                 </grid>
             </widget>
             <widget class="QWidget">
@@ -488,6 +520,12 @@ Command: apt-get update</string>
         <receiver>hermesBase</receiver>
         <slot>siduxcc()</slot>
     </connection>
+    <connection>
+        <sender>downloadPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>hermesBase</receiver>
+        <slot>download()</slot>
+    </connection>
 </connections>
 <slots>
     <slot>tabChanged()</slot>
@@ -496,6 +534,7 @@ Command: apt-get update</string>
     <slot>getPackages()</slot>
     <slot>showNews(int)</slot>
     <slot>siduxcc()</slot>
+    <slot>download()</slot>
 </slots>
 <layoutdefaults spacing="6" margin="6"/>
 </UI>

@@ -491,57 +491,58 @@ install-data-local:
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=siduxcc_warning.svg siduxcc-pkg-update.svg sidux-warning4.svg hi96-app-siduxcc.png hi22-app-siduxcc_wlan_down.png hi16-app-siduxcchermes.png hi16-app-siduxcc.png sidux-warning3.svg hi22-app-sidux_book.png Makefile.in hi32-app-siduxcc.png hi48-app-siduxcc.png hi22-app-siduxcc_lan_up.png sidux-warning5.svg hi16-app-siduxcc_warning.png sidux-tick5.svg hi32-app-siduxcchermes.png hi64-app-siduxcchermes.png hi48-app-siduxcchermes.png hi22-app-siduxcc_wlan_up.png siduxcchermes.svg siduxcc.svg sidux_book.svg hi64-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcc.png hi22-app-siduxcc_disconnected.png hi22-app-siduxcchermes.png Makefile.am sidux-tick3.svg hi96-app-siduxcchermes.png hi22-app-siduxcc_warning.png 
+KDE_DIST=siduxcc-pkg-update.svg sidux-warning4.svg hi22-app-siduxcc_wlan_down.png hi16-app-siduxcchermes.png hi16-app-siduxcc.png sidux-warning3.svg hi22-app-siduxcc_lan_up.png sidux-tick5.svg hi32-app-siduxcchermes.png hi64-app-siduxcchermes.png siduxcchermes.svg hi64-app-siduxcc.png sidux_book.svg hi22-app-siduxcc_disconnected.png hi22-app-siduxcc_warning.png siduxcc_warning.svg hi96-app-siduxcc.png Makefile.in hi22-app-sidux_book.png hi48-app-siduxcc.png hi32-app-siduxcc.png hi16-app-siduxcc_warning.png sidux-warning5.svg hi22-app-siduxcc_wlan_up.png hi48-app-siduxcchermes.png siduxcc.svg hi22-app-siduxcc.png hi22-app-siduxcc_lan_down.png hi22-app-siduxcchermes.png Makefile.am sidux-tick3.svg hi96-app-siduxcchermes.png 
 
 #>+ 2
 docs-am:
 
 #>+ 45
 install-kde-icons:
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps
 	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
-	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
-	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_warning.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps
-	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
-	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps
-	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcc.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
-	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcchermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-sidux_book.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
 	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps
 	$(INSTALL_DATA) $(srcdir)/hi32-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps
+	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcc.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_disconnected.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps
+	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcc.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
+	$(INSTALL_DATA) $(srcdir)/hi48-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcchermes.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_lan_up.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcc_warning.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_warning.png
+	$(INSTALL_DATA) $(srcdir)/hi16-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
+	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
+	$(INSTALL_DATA) $(srcdir)/hi22-app-sidux_book.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
 	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_wlan_down.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
 	$(INSTALL_DATA) $(srcdir)/hi32-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcchermes.png
-	$(INSTALL_DATA) $(srcdir)/hi22-app-siduxcc_disconnected.png $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
-	$(INSTALL_DATA) $(srcdir)/hi64-app-siduxcchermes.png $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
 
 uninstall-kde-icons:
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_warning.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcc.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_down.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcc.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/48x48/apps/siduxcchermes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_up.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_warning.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_lan_up.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcc_warning.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/16x16/apps/siduxcchermes.png
+	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/sidux_book.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcc.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_wlan_down.png
 	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/32x32/apps/siduxcchermes.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/22x22/apps/siduxcc_disconnected.png
-	-rm -f $(DESTDIR)$(kde_icondir)/hicolor/64x64/apps/siduxcchermes.png
 
 #>+ 15
 force-reedit:

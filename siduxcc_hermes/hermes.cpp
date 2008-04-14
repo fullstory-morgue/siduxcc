@@ -119,11 +119,13 @@ void hermes::tabChanged()
 	if(tabWidget->currentPageIndex() == 2)
 	{
 		updatePushButton->setHidden(FALSE);
+		downloadPushButton->setHidden(FALSE);
 		reloadPushButton->setHidden(FALSE);
 	}
 	else
 	{
 		updatePushButton->setHidden(TRUE);
+		downloadPushButton->setHidden(TRUE);
 		reloadPushButton->setHidden(TRUE);
 	}
 }
@@ -141,14 +143,27 @@ void hermes::showNews(int i)
 void hermes::update()
 {
 
-	QStrList run; run.append( "siduxcc" ); 
-		run.append( "software" );
-		run.append( "updateHermes" );
+	QStrList run; run.append( "hermesExec" ); 
+		run.append( "update" );
 	
 	// change widget
 	widgetStack->raiseWidget(1);
 
-	terminal()->startProgram( "siduxcc", run );
+	terminal()->startProgram( "/usr/share/siduxcc/sh/hermesExec", run );
+
+	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
+}
+
+void hermes::download()
+{
+
+	QStrList run; run.append( "hermesExec" );
+		run.append( "download" );
+	
+	// change widget
+	widgetStack->raiseWidget(1);
+
+	terminal()->startProgram( "/usr/share/siduxcc/sh/hermesExec", run );
 
 	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
 }
@@ -164,6 +179,7 @@ void hermes::terminateConsole()
 {
 	widgetStack->raiseWidget(0);
 	updatePushButton->setHidden(FALSE);
+	downloadPushButton->setHidden(FALSE);
 	reloadPushButton->setHidden(FALSE);
 	getPackages();
 

@@ -16,6 +16,10 @@ siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 xdg_apps_DATA = siduxcc-hermes.desktop
 bin_PROGRAMS = siduxcc-hermes
 
+sharedir = $(pkgdatadir)
+install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(sharedir)
+	cp -aR $(srcdir)/sh $(DESTDIR)$(sharedir)/
 
 # translation
 messages: rc.cpp

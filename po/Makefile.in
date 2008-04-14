@@ -658,8 +658,9 @@ merge:
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 2
-KDE_DIST=siduxcc.pot Makefile.in siduxcckde.pot siduxcchermes.pot Makefile.am 
+KDE_DIST=siduxcckde.pot Makefile.am siduxcc.pot Makefile.in siduxcchermes.pot 
 
 #>+ 2
 docs-am:
