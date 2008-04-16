@@ -4,8 +4,9 @@ siduxcc (0.9.38+nmu1) UNRELEASED; urgency=low
   * hermes: show WARNING problem fixed 
   * hermes: Exex script added
   * hermes: download button added
+  * hermes: EDIT problem solved
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 15 Apr 2008 13:27:30 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 16 Apr 2008 09:14:20 +0200
 
 siduxcc (0.9.38) UNRELEASED; urgency=low
 
