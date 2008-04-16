@@ -101,8 +101,8 @@ function duWarnings()
 	wget -O $TMP -q -U "siduxcc-hermes" http://sidux.com/xBackends.php
 	tmp=`cat $TMP`
 	if [ -n "$tmp" ]; then 
-		egrep "WARNING" $TMP | cut -f2 -d"<" | cut -c7-
-		egrep "Warning" $TMP | cut -f2 -d"<" | cut -c7-
+		egrep title $TMP | grep WARNING | cut -f2 -d"<" | cut -c7-
+		egrep title $TMP | grep Warning | cut -f2 -d"<" | cut -c7-
 	else
 		echo "disconnected"
 	fi
