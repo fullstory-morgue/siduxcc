@@ -1,4 +1,4 @@
-siduxcc (0.9.38+nmu1) UNRELEASED; urgency=low
+siduxcc (0.9.38) unstable; urgency=low
 
   * Non-maintainer upload.
   * hermes: show WARNING problem fixed 
@@ -8,12 +8,6 @@ siduxcc (0.9.38+nmu1) UNRELEASED; urgency=low
   * hermes: du warning function updated 
 
  -- Fabian Wuertz <xadras@sidux.com>  Wed, 16 Apr 2008 12:24:15 +0200
-
-siduxcc (0.9.38) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 11 Apr 2008 23:54:46 +0200
 
 siduxcc (0.9.37) unstable; urgency=low
 
