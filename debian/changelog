@@ -1,3 +1,9 @@
+siduxcc (0.9.40) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Apr 2008 01:20:12 +0200
+
 siduxcc (0.9.39) unstable; urgency=low
 
   * hermes: exec function fixed
