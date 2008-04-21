@@ -1,15 +1,8 @@
-siduxcc (0.9.39+nmu1) UNRELEASED; urgency=low
+siduxcc (0.9.39) unstable; urgency=low
 
-  * Non-maintainer upload.
   * hermes: exec function fixed
 
  -- Fabian Wuertz <xadras@sidux.com>  Tue, 22 Apr 2008 00:42:18 +0200
-
-siduxcc (0.9.39) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 16 Apr 2008 20:46:02 +0200
 
 siduxcc (0.9.38) unstable; urgency=low
 
