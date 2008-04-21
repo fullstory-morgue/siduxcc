@@ -4,6 +4,7 @@ debian/tmp/usr/share/applications	usr/share/
 debian/tmp/usr/share/doc/kde		usr/share/doc/
 debian/tmp/usr/share/icons		usr/share/
 debian/tmp/usr/share/siduxcc/icons	usr/share/siduxcc/
+debian/tmp/usr/share/siduxcc/scripts	usr/share/siduxcc/
 icons/siduxcc.svg			usr/share/icons/hicolor/scalable/apps/
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcchermes.mo
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcckde.mo
