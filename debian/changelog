@@ -1,8 +1,8 @@
-siduxcc (0.9.40) UNRELEASED; urgency=low
+siduxcc (0.9.40) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * revert r17310.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Apr 2008 01:20:12 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Apr 2008 14:12:01 +0200
 
 siduxcc (0.9.39) unstable; urgency=low
 
