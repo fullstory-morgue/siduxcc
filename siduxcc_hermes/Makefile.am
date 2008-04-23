@@ -19,7 +19,7 @@ bin_PROGRAMS = siduxcc-hermes
 sharedir = $(pkgdatadir)
 install-data-local:
 	$(mkinstalldirs) $(DESTDIR)$(sharedir)
-	cp -aR $(srcdir)/sh $(DESTDIR)$(sharedir)/
+	cp -aR $(srcdir)/hermes $(DESTDIR)$(sharedir)/
 
 # translation
 messages: rc.cpp

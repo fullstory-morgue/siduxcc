@@ -149,7 +149,7 @@ void hermes::update()
 	// change widget
 	widgetStack->raiseWidget(1);
 
-	terminal()->startProgram( "/usr/share/siduxcc/sh/hermesExec", run );
+	terminal()->startProgram( "/usr/share/siduxcc/hermes/hermesExec", run );
 
 	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
 }
@@ -163,7 +163,7 @@ void hermes::download()
 	// change widget
 	widgetStack->raiseWidget(1);
 
-	terminal()->startProgram( "/usr/share/siduxcc/sh/hermesExec", run );
+	terminal()->startProgram( "/usr/share/siduxcc/hermes/hermesExec", run );
 
 	connect( konsole, SIGNAL(destroyed()), this, SLOT( terminateConsole() ) );
 }

@@ -2,8 +2,9 @@ siduxcc (0.9.41+nmu1) UNRELEASED; urgency=low
 
   * Non-maintainer upload.
   * hermes: update function fixed.
+  * hermes: update function fixed again.
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 22 Apr 2008 17:57:16 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 23 Apr 2008 12:25:12 +0200
 
 siduxcc (0.9.41) UNRELEASED; urgency=low
 
