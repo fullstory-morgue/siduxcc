@@ -1,16 +1,14 @@
-siduxcc (0.9.43+nmu1) UNRELEASED; urgency=low
+siduxcc (0.9.43) unstable; urgency=low
 
+  [ Fabian Wuertz ]
   * Non-maintainer upload.
   * getStableKernel fixed
   * Nameserver function updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 12 May 2008 13:23:24 +0200
+  [ Stefan Lippers-Hollmann ]
+  * add xadras to uploaders.
 
-siduxcc (0.9.43) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 24 Apr 2008 00:20:35 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 12 May 2008 18:54:55 +0200
 
 siduxcc (0.9.42) unstable; urgency=low
 
