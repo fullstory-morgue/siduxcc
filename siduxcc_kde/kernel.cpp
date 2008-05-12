@@ -128,14 +128,15 @@ void kernel::getKernels()
 	// show the current kernel
 	this->shell->setCommand("siduxcc kernel currentKernel");
 	this->shell->start(true);
-	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace() );
+	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace().replace("-sidux-686","") );
 
 
 	// show the newest stable kernel
-	this->shell->setCommand("siduxcc kernel stableKernelFull");
+	this->shell->setCommand("siduxcc kernel stableKernel");
 	this->shell->start(true);
 	stableKernelFull = this->shell->getBuffer().stripWhiteSpace();
-	stableKernel->setText( QStringList::split( "-", stableKernelFull)[1] );
+	QString tmp = stableKernelFull;
+	stableKernel->setText( tmp.replace("-sidux-686","") );
 
 
 	//i18n("Couldn't connect to sidux.com!")

@@ -106,12 +106,12 @@ void hermes::getKernels()
 	// show the current kernel
 	this->shell->setCommand("siduxcc kernel currentKernel");
 	this->shell->start(true);
-	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace() );
+	currentKernel->setText( this->shell->getBuffer().stripWhiteSpace().replace("-sidux-686","") );
 
 	// show the newest stable kernel
 	this->shell->setCommand("siduxcc kernel stableKernel");
 	this->shell->start(true);
-	stableKernel->setText( this->shell->getBuffer().stripWhiteSpace()  );
+	stableKernel->setText( this->shell->getBuffer().stripWhiteSpace().replace("-sidux-686","")  );
 }
 
 void hermes::tabChanged()

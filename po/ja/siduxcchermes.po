@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-23 19:24+0100\n"
+"POT-Creation-Date: 2008-05-12 13:18+0200\n"
 "PO-Revision-Date: 2008-02-24 13:08+0100\n"
 "Last-Translator: Mutsumu Nomura\n"
 "Language-Team: \n"
@@ -36,44 +36,106 @@ msgstr "ja"
 msgid "Double click to the item to view the full warning."
 msgstr "ダブルクリックすれば警告の全文が読めます"
 
-#. i18n: file ./hermesbase.ui line 188
-#: hermesbase.cpp:288 hermesbase.cpp:401 rc.cpp:68
+#. i18n: file ./hermesbase.ui line 110
+#: hermesbase.cpp:267 hermesbase.cpp:394 rc.cpp:36
 #, no-c-format
 msgid "Name"
 msgstr "Name"
 
-#. i18n: file ./hermesbase.ui line 199
-#: hermesbase.cpp:289 hermesbase.cpp:402 rc.cpp:71
+#. i18n: file ./hermesbase.ui line 121
+#: hermesbase.cpp:268 hermesbase.cpp:395 rc.cpp:39
 #, no-c-format
 msgid "Installed Version"
 msgstr "インストールバージョン"
 
-#. i18n: file ./hermesbase.ui line 210
-#: hermesbase.cpp:290 hermesbase.cpp:403 rc.cpp:74
+#. i18n: file ./hermesbase.ui line 132
+#: hermesbase.cpp:269 hermesbase.cpp:396 rc.cpp:42
 #, no-c-format
 msgid "Latest Version"
 msgstr "最新バージョン:"
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:380 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:389 rc.cpp:18 systray.cpp:40
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
 
-#. i18n: file ./hermesbase.ui line 62
-#: hermesbase.cpp:381 rc.cpp:21
+#. i18n: file ./legendbase.ui line 103
+#. i18n: file ./hermesbase.ui line 65
+#: hermesbase.cpp:390 legendbase.cpp:438 rc.cpp:15 rc.cpp:24
+#, no-c-format
+msgid "No dist-upgrade warnings."
+msgstr "dist-upgradeの警告はありません."
+
+#. i18n: file ./hermesbase.ui line 49
+#: hermesbase.cpp:391 rc.cpp:21
+#, fuzzy, no-c-format
+msgid "&Warnings"
+msgstr "警告"
+
+#. i18n: file ./hermesbase.ui line 91
+#: hermesbase.cpp:392 rc.cpp:30
+#, fuzzy, no-c-format
+msgid "Double click to the item to view the full message."
+msgstr "ダブルクリックすれば警告の全文が読めます"
+
+#. i18n: file ./hermesbase.ui line 75
+#: hermesbase.cpp:393 rc.cpp:27
+#, no-c-format
+msgid "&News"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 101
+#: hermesbase.cpp:397 rc.cpp:33
+#, fuzzy, no-c-format
+msgid "Upgrada&ble packages"
+msgstr "更新可能パッケージ"
+
+#. i18n: file ./hermesbase.ui line 205
+#: hermesbase.cpp:399 rc.cpp:49
+#, no-c-format
+msgid "Current kernel:"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 221
+#. i18n: file ./hermesbase.ui line 253
+#: hermesbase.cpp:400 hermesbase.cpp:402 rc.cpp:52 rc.cpp:58
+#, no-c-format
+msgid "---"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 237
+#: hermesbase.cpp:401 rc.cpp:55
+#, no-c-format
+msgid "Newest stable kernel:"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 291
+#: hermesbase.cpp:405 rc.cpp:63
+#, no-c-format
+msgid "To install a new kernel use the sidux Control Center."
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 164
+#: hermesbase.cpp:406 rc.cpp:45
+#, no-c-format
+msgid "&Kernel"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 336
+#: hermesbase.cpp:407 rc.cpp:66
 #, no-c-format
 msgid "relo&ad"
 msgstr "リロード"
 
-#. i18n: file ./hermesbase.ui line 65
-#: hermesbase.cpp:382 rc.cpp:24
+#. i18n: file ./hermesbase.ui line 339
+#: hermesbase.cpp:408 rc.cpp:69
 #, fuzzy, no-c-format
 msgid "Alt+A"
 msgstr "Alt+O"
 
-#. i18n: file ./hermesbase.ui line 71
-#: hermesbase.cpp:383 rc.cpp:27
+#. i18n: file ./hermesbase.ui line 345
+#: hermesbase.cpp:409 rc.cpp:72
 #, no-c-format
 msgid ""
 "Reload the current package list of \n"
@@ -82,20 +144,20 @@ msgid ""
 "without siduxcc-hermes."
 msgstr ""
 
-#. i18n: file ./hermesbase.ui line 79
-#: hermesbase.cpp:387 rc.cpp:33
+#. i18n: file ./hermesbase.ui line 353
+#: hermesbase.cpp:413 rc.cpp:78
 #, no-c-format
 msgid "&update (apt-get)"
 msgstr "アップデート (apt-get)"
 
-#. i18n: file ./hermesbase.ui line 82
-#: hermesbase.cpp:388 rc.cpp:36
+#. i18n: file ./hermesbase.ui line 356
+#: hermesbase.cpp:414 rc.cpp:81
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
-#. i18n: file ./hermesbase.ui line 90
-#: hermesbase.cpp:389 rc.cpp:39
+#. i18n: file ./hermesbase.ui line 364
+#: hermesbase.cpp:415 rc.cpp:84
 #, no-c-format
 msgid ""
 "update is used to resynchronize the package \n"
@@ -106,79 +168,39 @@ msgid ""
 "Command: apt-get update"
 msgstr ""
 
-#. i18n: file ./hermesbase.ui line 98
-#: hermesbase.cpp:395 rc.cpp:47
+#. i18n: file ./hermesbase.ui line 387
+#: hermesbase.cpp:421 rc.cpp:92
+#, no-c-format
+msgid "D&ownload"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 390
+#: hermesbase.cpp:422 rc.cpp:95
+#, fuzzy, no-c-format
+msgid "Alt+O"
+msgstr "Alt+O"
+
+#. i18n: file ./hermesbase.ui line 396
+#: hermesbase.cpp:423 rc.cpp:98
+#, no-c-format
+msgid ""
+"package files are only retrieved, not\n"
+"unpacked or installed.\n"
+"\n"
+"Command: apt-get -d dist-upgrade"
+msgstr ""
+
+#. i18n: file ./hermesbase.ui line 404
+#: hermesbase.cpp:427 rc.cpp:104
 #, fuzzy, no-c-format
 msgid "&close"
 msgstr "閉じる"
 
-#. i18n: file ./hermesbase.ui line 101
-#: hermesbase.cpp:396 rc.cpp:50
+#. i18n: file ./hermesbase.ui line 407
+#: hermesbase.cpp:428 rc.cpp:107
 #, fuzzy, no-c-format
 msgid "Alt+C"
 msgstr "Alt+O"
-
-#. i18n: file ./legendbase.ui line 103
-#. i18n: file ./hermesbase.ui line 143
-#: hermesbase.cpp:397 legendbase.cpp:438 rc.cpp:15 rc.cpp:56
-#, no-c-format
-msgid "No dist-upgrade warnings."
-msgstr "dist-upgradeの警告はありません."
-
-#. i18n: file ./hermesbase.ui line 127
-#: hermesbase.cpp:398 rc.cpp:53
-#, fuzzy, no-c-format
-msgid "&Warnings"
-msgstr "警告"
-
-#. i18n: file ./hermesbase.ui line 169
-#: hermesbase.cpp:399 rc.cpp:62
-#, fuzzy, no-c-format
-msgid "Double click to the item to view the full message."
-msgstr "ダブルクリックすれば警告の全文が読めます"
-
-#. i18n: file ./hermesbase.ui line 153
-#: hermesbase.cpp:400 rc.cpp:59
-#, no-c-format
-msgid "&News"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 179
-#: hermesbase.cpp:404 rc.cpp:65
-#, fuzzy, no-c-format
-msgid "Upgrada&ble packages"
-msgstr "更新可能パッケージ"
-
-#. i18n: file ./hermesbase.ui line 283
-#: hermesbase.cpp:406 rc.cpp:81
-#, no-c-format
-msgid "Current kernel:"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 299
-#. i18n: file ./hermesbase.ui line 331
-#: hermesbase.cpp:407 hermesbase.cpp:409 rc.cpp:84 rc.cpp:90
-#, no-c-format
-msgid "---"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 315
-#: hermesbase.cpp:408 rc.cpp:87
-#, no-c-format
-msgid "Newest stable kernel:"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 369
-#: hermesbase.cpp:412 rc.cpp:95
-#, no-c-format
-msgid "To install a new kernel use the sidux Control Center."
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 242
-#: hermesbase.cpp:413 rc.cpp:77
-#, no-c-format
-msgid "Kernel"
-msgstr ""
 
 #. i18n: file ./legendbase.ui line 16
 #: legendbase.cpp:434 rc.cpp:3

@@ -66,7 +66,6 @@ void network::load()
 {
 	getNetworkcards();
 	getHostname();
-	getNameservers();
 	fwDetect();
 	applyPushButton->setEnabled(FALSE);
 	bottomFrame->hide();
@@ -75,7 +74,7 @@ void network::load()
 
 void network::loadWidget(int i)
 {
-	if( i == 3 or i == 4 )
+	if( i == 2 or i == 3 )
 		applyPushButton->hide();
 	else
 		applyPushButton->show();
@@ -88,7 +87,7 @@ void network::loadWidget(int i)
 
 void network::back()
 {
-	if( widgetStack2->visibleWidget() == tab6)
+	if( widgetStack2->visibleWidget() == tab5)
 	{
 		widgetStack2->raiseWidget(1);
 		getNetworkcards();
@@ -96,7 +95,7 @@ void network::back()
 	else
 	{
 		widgetStack2->raiseWidget(0);
-			bottomFrame->hide();
+		bottomFrame->hide();
 	}
 	
 }
@@ -114,8 +113,6 @@ void network::connections()
 		connect( ncList, SIGNAL( doubleClicked(QListViewItem*) ), this, SLOT( getNetworkcardSettings() ));
 	//hostname
 		connect( hostnameLineEdit, SIGNAL( textChanged(const QString&) ), this, SLOT( hasChanged() ));
-	//nameserver
-		connect( dnsServers, SIGNAL( changed() ), this, SLOT( hasChanged() ));
 	//ndiswrapper
 		connect( nwButton,  SIGNAL( clicked() ), this, SLOT( ndiswrapper() ));
 		connect( nwlButton, SIGNAL( clicked() ), this, SLOT( ndiswrapperList() ));
@@ -130,6 +127,7 @@ void network::connections()
 			connect( ipLineEdit,           SIGNAL( textChanged(const QString&) ),   this,              SLOT( hasChanged() ));
 			connect( netmaskLineEdit,      SIGNAL( textChanged(const QString&) ),   this,              SLOT( hasChanged() ));
 			connect( broadcastLineEdit,    SIGNAL( textChanged(const QString&) ),   this,              SLOT( hasChanged() ));
+			connect( nameserverLineEdit,    SIGNAL( textChanged(const QString&) ),   this,              SLOT( hasChanged() ));
 			connect( gatewayLineEdit,      SIGNAL( textChanged(const QString&) ),   this,              SLOT( hasChanged() ));
 			connect( classComboBox,        SIGNAL( activated(int) ),                this,              SLOT( hasChanged() ));
 			connect( classPushButton,      SIGNAL( clicked() ),                     this,              SLOT( classHelp() ));
@@ -174,7 +172,6 @@ void network::connections()
 void network::save()
 {
 	setHostname();
-	setNameservers();
 
 	QString networkcard = ncList->currentItem()->text(0);
 	QString type = ncList->currentItem()->text(6);
@@ -308,7 +305,7 @@ void network::getNetworkcardSettings()
 {
 
 	
-	widgetStack2->raiseWidget(6);
+	widgetStack2->raiseWidget(5);
 	networkcardWidget->raiseWidget(0);
 
 	QString networkcard = ncList->currentItem()->text(0); // eth0
@@ -334,11 +331,12 @@ void network::getNetworkcardSettings()
 		methodComboBox->setCurrentItem(1);
 	enableStaticFrame();
 
-	ipLineEdit->setText(        QStringList::split(",", cardsettings.grep( "address,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
-	netmaskLineEdit->setText(   QStringList::split(",", cardsettings.grep( "netmask,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
-	broadcastLineEdit->setText( QStringList::split(",", cardsettings.grep( "broadcast," )[0] )[1] );  // xxx.xxx.xxx.xxx
-	networkLineEdit->setText(   QStringList::split(",", cardsettings.grep( "network,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
-	gatewayLineEdit->setText(   QStringList::split(",", cardsettings.grep( "gateway,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	ipLineEdit->setText(         QStringList::split(",", cardsettings.grep( "address,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	netmaskLineEdit->setText(    QStringList::split(",", cardsettings.grep( "netmask,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	broadcastLineEdit->setText(  QStringList::split(",", cardsettings.grep( "broadcast," )[0] )[1] );  // xxx.xxx.xxx.xxx
+	networkLineEdit->setText(    QStringList::split(",", cardsettings.grep( "network,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	gatewayLineEdit->setText(    QStringList::split(",", cardsettings.grep( "gateway,"   )[0] )[1] );  // xxx.xxx.xxx.xxx
+	nameserverLineEdit->setText( QStringList::split(",", cardsettings.grep( "dns-nameservers," )[0] )[1] );  // xxx.xxx.xxx.xxx
 
 
 		
@@ -591,12 +589,13 @@ void network::setNetworkcardSettings(QString networkcard, QString type)
 	else
 	{
 		settings+= "iface "+networkcard+" inet static\n";
-		settings+=QString("\taddress "  +toValidIP( ipLineEdit->text())       +"\n");
-		settings+=QString("\tbroadcast "+toValidIP( broadcastLineEdit->text())+"\n");
-		settings+=QString("\tnetmask "  +toValidIP( netmaskLineEdit->text())  +"\n");
-		settings+=QString("\tnetwork "  +toValidIP( networkLineEdit->text() ) +"\n");
-		settings+=QString("\tgateway "  +toValidIP( gatewayLineEdit->text() ) +"\n");
+		settings+=QString("\taddress "        +toValidIP( ipLineEdit->text())       +"\n");
+		settings+=QString("\tbroadcast "      +toValidIP( broadcastLineEdit->text())+"\n");
+		settings+=QString("\tnetmask "        +toValidIP( netmaskLineEdit->text())  +"\n");
+		settings+=QString("\tnetwork "        +toValidIP( networkLineEdit->text() ) +"\n");
+		settings+=QString("\tgateway "        +toValidIP( gatewayLineEdit->text() ) +"\n");
 	}
+	settings+=QString("\tdns-nameservers "+toValidIP( nameserverLineEdit->text())+"\n");
 
 
 
@@ -672,34 +671,6 @@ void network::setHostname()
 	this->shell->start(true);
 }
 
-
-//------------------------------------------------------------------------------
-//--- nameservers --------------------------------------------------------------
-//------------------------------------------------------------------------------
-
-
-void network::setNameservers()
-{
-	QString command = "siduxcc network setNameservers ";
-	QStringList nameserverList = dnsServers->items();
-	for ( QStringList::Iterator it = nameserverList.begin(); it != nameserverList.end(); ++it )
-		command+=(*it) + " ";
-	this->shell->setCommand(command);
-	this->shell->start(true);
-}
-
-
-void network::getNameservers()
-{
-	this->shell->setCommand("siduxcc network getNameservers");
-	this->shell->start(true);
-	QStringList nameserverList = QStringList::split( "\n", this->shell->getBuffer() );
-	dnsServers->clear();
-	for ( QStringList::Iterator it = nameserverList.begin(); it != nameserverList.end(); ++it )
-		dnsServers->insertItem(*it);
-}
-
-
 //------------------------------------------------------------------------------
 //--- ndiswrapper --------------------------------------------------------------
 //------------------------------------------------------------------------------
@@ -753,15 +724,15 @@ void network::fwInstall()
 	// change widget
 	bottomFrame->hide();
 	consoleWidget = new console(this, run );
-	widgetStack2->addWidget(consoleWidget, 7);
-	widgetStack2->raiseWidget(7);
+	widgetStack2->addWidget(consoleWidget, 6);
+	widgetStack2->raiseWidget(6);
 
 	connect( consoleWidget, SIGNAL( finished(bool) ), this, SLOT( terminateConsole() ));
 }
 
 void network::terminateConsole()
 {
-	widgetStack2->raiseWidget(5);
+	widgetStack2->raiseWidget(4);
 	bottomFrame->show();
 	emit menuLocked(FALSE);
 	fwDetect();

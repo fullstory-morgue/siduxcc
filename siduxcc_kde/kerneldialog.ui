@@ -238,10 +238,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>Install &amp;automatic new kernels during dist-updates.</string>
+                            <string>Install automatic new kernels during dist-&amp;updates.</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+A</string>
+                            <string>Alt+U</string>
                         </property>
                     </widget>
                 </widget>
@@ -330,10 +330,10 @@
                             </rect>
                         </property>
                         <property name="text">
-                            <string>rem&amp;ove</string>
+                            <string>re&amp;move</string>
                         </property>
                         <property name="accel">
-                            <string>Alt+O</string>
+                            <string>Alt+M</string>
                         </property>
                     </widget>
                     <widget class="QListBox">

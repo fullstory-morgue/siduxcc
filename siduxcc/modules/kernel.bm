@@ -32,7 +32,7 @@ function removeKernel()
 
 function currentKernel()
 {
-	uname -r | cut -f2 -d-
+	uname -r
 }
 
 function kernelType()
@@ -47,14 +47,9 @@ function kernelType()
 
 function stableKernel()
 {
-	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep -m 3 "linux-image" | tail -n 1 | cut -f4 -d"-"
+	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep linux-image | grep $(kernelType) | tail -n 1 | cut -f8 -d\" | cut -f1 -d_ | cut -f3- -d-
 }
 
-
-function stableKernelFull()
-{
-	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-sidux-2.6/ 2>/dev/null | grep linux-image | grep $(kernelType) | tail -n 1 | cut -f3-6 -d"-" | cut -f1 -d_
-}
 
 function experimentalKernel()
 {
@@ -72,7 +67,7 @@ function experimentalKernel()
 installKernel()
 {
 
-	tmp=$(stableKernelFull)
+	tmp=$(stableKernel)
 
 	if [ "$tmp" == "$(uname -r)" ]; then
 		echo "The versions of the new and the current Kernel are the same!"

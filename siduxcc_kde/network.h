@@ -74,9 +74,6 @@ class network : public NetworkDialog
 		virtual void getHostname();
 		virtual void setHostname();
 
-		virtual void getNameservers();
-		virtual void setNameservers();
-
 		virtual void ndiswrapper();
 		virtual void ndiswrapperList();
 
