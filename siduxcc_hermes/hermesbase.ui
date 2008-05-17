@@ -43,49 +43,26 @@
                         </property>
                         <widget class="QWidget">
                             <property name="name">
-                                <cstring>TabPage</cstring>
+                                <cstring>tab</cstring>
                             </property>
                             <attribute name="title">
-                                <string>Warnings</string>
+                                <string>&amp;Warnings</string>
                             </attribute>
                             <grid>
                                 <property name="name">
                                     <cstring>unnamed</cstring>
                                 </property>
-                                <widget class="QTextBrowser" row="0" column="0">
-                                    <property name="name">
-                                        <cstring>warningsTextBrowser</cstring>
-                                    </property>
-                                </widget>
-                                <widget class="QListBox" row="2" column="0">
+                                <widget class="QListBox" row="1" column="0">
                                     <property name="name">
                                         <cstring>warningListBox</cstring>
                                     </property>
                                 </widget>
-                                <widget class="QLabel" row="1" column="0">
+                                <widget class="QLabel" row="0" column="0">
                                     <property name="name">
-                                        <cstring>homepageTextLabel</cstring>
+                                        <cstring>warningTextLabel</cstring>
                                     </property>
                                     <property name="text">
-                                        <string>Double click to the item to view the full message.</string>
-                                    </property>
-                                </widget>
-                            </grid>
-                        </widget>
-                        <widget class="QWidget">
-                            <property name="name">
-                                <cstring>TabPage</cstring>
-                            </property>
-                            <attribute name="title">
-                                <string>Alerts</string>
-                            </attribute>
-                            <grid>
-                                <property name="name">
-                                    <cstring>unnamed</cstring>
-                                </property>
-                                <widget class="QTextBrowser" row="0" column="0">
-                                    <property name="name">
-                                        <cstring>alertsTextBrowser</cstring>
+                                        <string>No dist-upgrade warnings.</string>
                                     </property>
                                 </widget>
                             </grid>
@@ -112,6 +89,24 @@
                                     </property>
                                     <property name="text">
                                         <string>Double click to the item to view the full message.</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>TabPage</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Sm&amp;xi Advices</string>
+                            </attribute>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QTextBrowser" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>alertsTextBrowser</cstring>
                                     </property>
                                 </widget>
                             </grid>
@@ -514,22 +509,22 @@ Command: apt-get -d dist-upgrade</string>
         <slot>close()</slot>
     </connection>
     <connection>
-        <sender>tabWidget</sender>
-        <signal>currentChanged(QWidget*)</signal>
-        <receiver>hermesBase</receiver>
-        <slot>tabChanged()</slot>
-    </connection>
-    <connection>
         <sender>reloadPushButton</sender>
         <signal>clicked()</signal>
         <receiver>hermesBase</receiver>
         <slot>getPackages()</slot>
     </connection>
     <connection>
-        <sender>newsListBox</sender>
-        <signal>selected(int)</signal>
+        <sender>downloadPushButton</sender>
+        <signal>clicked()</signal>
         <receiver>hermesBase</receiver>
-        <slot>showNews(int)</slot>
+        <slot>download()</slot>
+    </connection>
+    <connection>
+        <sender>tabWidget</sender>
+        <signal>currentChanged(QWidget*)</signal>
+        <receiver>hermesBase</receiver>
+        <slot>tabChanged()</slot>
     </connection>
     <connection>
         <sender>siduxccPushButton</sender>
@@ -538,10 +533,16 @@ Command: apt-get -d dist-upgrade</string>
         <slot>siduxcc()</slot>
     </connection>
     <connection>
-        <sender>downloadPushButton</sender>
-        <signal>clicked()</signal>
+        <sender>newsListBox</sender>
+        <signal>selected(int)</signal>
         <receiver>hermesBase</receiver>
-        <slot>download()</slot>
+        <slot>showNews(int)</slot>
+    </connection>
+    <connection>
+        <sender>warningListBox</sender>
+        <signal>selected(int)</signal>
+        <receiver>hermesBase</receiver>
+        <slot>showWarning(int)</slot>
     </connection>
 </connections>
 <slots>

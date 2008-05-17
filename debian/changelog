@@ -6,8 +6,9 @@ siduxcc (0.9.44) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * de: typo
   * hermes: warningsystem changed to smxi
+  * hermes: smxi warningsystem partially reverted
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 17 May 2008 11:44:21 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 17 May 2008 12:13:06 +0200
 
 siduxcc (0.9.43) unstable; urgency=low
 

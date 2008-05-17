@@ -36,8 +36,7 @@ class hermes : public hermesBase
 		hermes(QWidget* parent = 0, const char* name = 0);
 		void getPackages();
 		void getNews();
-		void getWarnings();
-		void getAlerts();
+		void getSmxiAlerts();
 		void getKernels();
 		QStringList newslink;
 		QStringList warninglink;

@@ -42,8 +42,7 @@ hermes::hermes(QWidget* parent, const char* name )
 	getPackages();
 	getKernels();
 
-	getWarnings();
-	getAlerts();
+	getSmxiAlerts();
 
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
@@ -55,17 +54,10 @@ void hermes::init(int i)
 	tabWidget->setCurrentPage(i);
 }
 
-void hermes::getWarnings()
-{
-	this->shell->setCommand("siduxcc software getDuWarnings");
-	this->shell->start(true);
-	warningsTextBrowser->setText(this->shell->getBuffer() );
-}
 
-
-void hermes::getAlerts()
+void hermes::getSmxiAlerts()
 {
-	this->shell->setCommand("siduxcc software getDuAlerts ");
+	this->shell->setCommand("siduxcc software getSmxiAlerts ");
 	this->shell->start(true);
 	alertsTextBrowser->setText(this->shell->getBuffer() );
 }
@@ -74,9 +66,6 @@ void hermes::getAlerts()
 
 void hermes::getNews()
 {
-	homepageTextLabel->hide();
-	warningListBox->hide();
-
 	if(i18n("en") == "de")
 		this->shell->setCommand("siduxcc software getNewsDe");
 	else
@@ -93,8 +82,7 @@ void hermes::getNews()
 		{
 			title[i] = title[i].replace( "Warning: ", "" ).replace( "Warnung: ", "" );
 			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"),title[i]);
-			homepageTextLabel->show();
-			warningListBox->show();
+			warningTextLabel->setText(i18n( "Double click to the item to view the full warning.") );
 			warninglink.append( link[i] );
 		}
 		else
