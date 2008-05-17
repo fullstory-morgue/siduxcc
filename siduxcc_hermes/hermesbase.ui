@@ -43,26 +43,49 @@
                         </property>
                         <widget class="QWidget">
                             <property name="name">
-                                <cstring>tab</cstring>
+                                <cstring>TabPage</cstring>
                             </property>
                             <attribute name="title">
-                                <string>&amp;Warnings</string>
+                                <string>Warnings</string>
                             </attribute>
                             <grid>
                                 <property name="name">
                                     <cstring>unnamed</cstring>
                                 </property>
-                                <widget class="QListBox" row="1" column="0">
+                                <widget class="QTextBrowser" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>warningsTextBrowser</cstring>
+                                    </property>
+                                </widget>
+                                <widget class="QListBox" row="2" column="0">
                                     <property name="name">
                                         <cstring>warningListBox</cstring>
                                     </property>
                                 </widget>
-                                <widget class="QLabel" row="0" column="0">
+                                <widget class="QLabel" row="1" column="0">
                                     <property name="name">
-                                        <cstring>warningtextLabel</cstring>
+                                        <cstring>homepageTextLabel</cstring>
                                     </property>
                                     <property name="text">
-                                        <string>No dist-upgrade warnings.</string>
+                                        <string>Double click to the item to view the full message.</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>TabPage</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>Alerts</string>
+                            </attribute>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QTextBrowser" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>alertsTextBrowser</cstring>
                                     </property>
                                 </widget>
                             </grid>
@@ -495,12 +518,6 @@ Command: apt-get -d dist-upgrade</string>
         <signal>currentChanged(QWidget*)</signal>
         <receiver>hermesBase</receiver>
         <slot>tabChanged()</slot>
-    </connection>
-    <connection>
-        <sender>warningListBox</sender>
-        <signal>selected(int)</signal>
-        <receiver>hermesBase</receiver>
-        <slot>showWarning(int)</slot>
     </connection>
     <connection>
         <sender>reloadPushButton</sender>

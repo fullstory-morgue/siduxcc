@@ -107,7 +107,7 @@ void SysTray::showLegend()
 
 void SysTray::updateIcon()
 {
-	this->shell->setCommand ( "siduxcc software duWarnings" );
+	this->shell->setCommand ( "siduxcc software getDuStatus" );
 	this->shell->start ( true );
 	QString tmp = this->shell->getBuffer().stripWhiteSpace();
 	if ( tmp == "disconnected" )
@@ -116,13 +116,13 @@ void SysTray::updateIcon()
 	}
 	else
 	{
-		if ( tmp == "" )
+		if ( tmp == "alert" )
 		{
-			setPixmap( QPixmap("/usr/share/siduxcc/icons/ok-hermes.png") );
+			setPixmap( QPixmap("/usr/share/siduxcc/icons/notok-hermes.png") );
 		}
 		else
 		{
-			setPixmap( QPixmap("/usr/share/siduxcc/icons/notok-hermes.png") );
+			setPixmap( QPixmap("/usr/share/siduxcc/icons/ok-hermes.png") );
 		}
 	}
 

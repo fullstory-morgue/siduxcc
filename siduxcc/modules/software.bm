@@ -95,7 +95,7 @@ function installASV()
 	read
 }
 
-function duWarnings()
+function duWarnings2()
 {
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
 	wget -O $TMP -q -U "siduxcc-hermes" http://sidux.com/xBackends.php
@@ -122,6 +122,36 @@ function duWarningsDe()
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
 	wget -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 Warnung $TMP
+	rm -f $TMP
+}
+
+
+function getDuStatus()
+{
+	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
+	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/status
+	tmp=$(cat $TMP)
+	if [ -n "$tmp" ]; then 
+		cat $TMP
+	else
+		echo "disconnected"
+	fi
+	rm -f $TMP
+}
+
+function getDuWarnings()
+{
+	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
+	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/warning_message
+	cat $TMP
+	rm -f $TMP
+}
+
+function getDuAlerts()
+{
+	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
+	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/alert_message
+	cat $TMP
 	rm -f $TMP
 }
 

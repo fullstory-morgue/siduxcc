@@ -29,6 +29,7 @@
 #include <qtabwidget.h>
 #include <kapp.h>
 #include <klocale.h>
+#include <qtextbrowser.h>
 
 
 hermes::hermes(QWidget* parent, const char* name )
@@ -41,6 +42,9 @@ hermes::hermes(QWidget* parent, const char* name )
 	getPackages();
 	getKernels();
 
+	getWarnings();
+	getAlerts();
+
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
 
@@ -51,8 +55,28 @@ void hermes::init(int i)
 	tabWidget->setCurrentPage(i);
 }
 
+void hermes::getWarnings()
+{
+	this->shell->setCommand("siduxcc software getDuWarnings");
+	this->shell->start(true);
+	warningsTextBrowser->setText(this->shell->getBuffer() );
+}
+
+
+void hermes::getAlerts()
+{
+	this->shell->setCommand("siduxcc software getDuAlerts ");
+	this->shell->start(true);
+	alertsTextBrowser->setText(this->shell->getBuffer() );
+}
+
+
+
 void hermes::getNews()
 {
+	homepageTextLabel->hide();
+	warningListBox->hide();
+
 	if(i18n("en") == "de")
 		this->shell->setCommand("siduxcc software getNewsDe");
 	else
@@ -69,7 +93,8 @@ void hermes::getNews()
 		{
 			title[i] = title[i].replace( "Warning: ", "" ).replace( "Warnung: ", "" );
 			warningListBox->insertItem(QPixmap("/usr/share/siduxcc/icons/warning.png"),title[i]);
-			warningtextLabel->setText(i18n( "Double click to the item to view the full warning.") );
+			homepageTextLabel->show();
+			warningListBox->show();
 			warninglink.append( link[i] );
 		}
 		else
@@ -116,7 +141,7 @@ void hermes::getKernels()
 
 void hermes::tabChanged()
 {
-	if(tabWidget->currentPageIndex() == 2)
+	if(tabWidget->currentPageIndex() == 3)
 	{
 		updatePushButton->setHidden(FALSE);
 		downloadPushButton->setHidden(FALSE);

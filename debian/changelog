@@ -1,8 +1,13 @@
 siduxcc (0.9.44) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 12 May 2008 19:00:14 +0200
+  [ Fabian Wuertz ]
+  * de: typo
+  * hermes: warningsystem changed to smxi
+
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 17 May 2008 11:44:21 +0200
 
 siduxcc (0.9.43) unstable; urgency=low
 
