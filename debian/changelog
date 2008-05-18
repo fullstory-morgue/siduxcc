@@ -1,9 +1,5 @@
-siduxcc (0.9.44) UNRELEASED; urgency=low
+siduxcc (0.9.44) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * de: typo
   * hermes: warningsystem changed to smxi
   * hermes: smxi warningsystem partially reverted
