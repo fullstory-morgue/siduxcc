@@ -1,10 +1,10 @@
-debian/tmp/usr/bin/siduxcc-kde		usr/bin/
-debian/tmp/usr/bin/siduxcc-hermes	usr/bin/
-debian/tmp/usr/share/applications	usr/share/
-debian/tmp/usr/share/doc/kde		usr/share/doc/
-debian/tmp/usr/share/icons		usr/share/
-debian/tmp/usr/share/siduxcc/icons	usr/share/siduxcc/
-debian/tmp/usr/share/siduxcc/hermes		usr/share/siduxcc/
-icons/siduxcc.svg			usr/share/icons/hicolor/scalable/apps/
+debian/tmp/usr/bin/siduxcc-kde                                usr/bin/
+debian/tmp/usr/bin/siduxcc-hermes                             usr/bin/
+debian/tmp/usr/share/applications/kde/siduxcc.desktop         usr/share/applications/kde/
+debian/tmp/usr/share/applications/kde/siduxcc-hermes.desktop  usr/share/applications/kde/
+debian/tmp/usr/share/doc/kde                                  usr/share/doc/
+debian/tmp/usr/share/icons                                    usr/share/
+debian/tmp/usr/share/siduxcc/icons                            usr/share/siduxcc/
+debian/tmp/usr/share/siduxcc/hermes                           usr/share/siduxcc/
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcchermes.mo
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcckde.mo

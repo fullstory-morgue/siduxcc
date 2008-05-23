@@ -34,10 +34,18 @@ case $argc in
         eval "${module}_interface"
     fi
     ;;
+about)
+     about;;
 *)
     # Include supplied Module
-    . modules/"$module".bm || exit 3
     action="$1"; shift
+    case $action in
+        dlg*)
+            . modules/dialog.bm
+            testRoot;;
+    esac
+    . modules/"$module".bm || exit 3
+
     if [ "$action" ]; then
         "$action" "$@"
         RC=$?

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=sidux Control Center (gtk)
+Name[da]=sidux kontrolcenter (gtk)
+Name[de]=sidux Kontrollzentrum (gtk)
+Name[fr]=Centre de Contrôle de Sidux (gtk)
+Name[hr]=sidux-Kontrolni Centar (gtk)
+Name[it]=Centro di controllo di sidux (gtk)
+Name[nl]=sidux-Kontrol Center (gtk)
+Name[ro]=Centrul de control sidux (gtk)
+Name[ru]=Цетр управления sidux (gtk)
+Encoding=UTF-8
+Exec=siduxcc-gtk2
+Icon=siduxcc
+Categories=GTK;System;
+Type=Application

@@ -15,6 +15,13 @@ Recommends: apt-show-versions, configure-ndiswrapper
 Description: sidux control center (KDE frontend)
  KDE based frontend for managing sidux
 
+Package: siduxcc-gtk2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu, libgtk2-ruby1.8
+Suggests: xfce4-mcs-manager, gnome-control-center, install-meta, gnome-system-tools, gnome-alsamixer, gnome-cups-manager, hardinfo
+Description: sidux control center (KDE frontend)
+ GTK2 based frontend for managing sidux
+
 Package: siduxcc-common
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ceni (>= 1.31), gettext-base, sidux-scripts

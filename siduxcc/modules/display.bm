@@ -175,11 +175,11 @@ function getDpi()
 {
 	DPI=$(xdpyinfo | grep resolution | cut -f7 -d" " | cut -f2 -d"x")
 
-	if [ "$DPI" != "" ]; then
-		echo $DPI
-	else
-		DPI=$(sed -ne 's/^.*ServerArgsLocal=-nolisten tcp.*-dpi \([^ ]*\).*$/\1/p' < /etc/kde3/kdm/kdmrc)
-	fi
+	#if [ "$DPI" != "" ]; then
+	#	echo $DPI
+	#else
+	#	DPI=$(sed -ne 's/^.*ServerArgsLocal=-nolisten tcp.*-dpi \([^ ]*\).*$/\1/p' < /etc/kde3/kdm/kdmrc)
+	#fi
 
 	if [ "$DPI" != "" ]; then
 		echo $DPI
@@ -199,7 +199,7 @@ function setDpi()
 	fi
 }
 
-function dlgDpi()
+function dlgDpi2()
 {
 	defaultdpi="$(getDpi)" || defaultdpi="72"
 	newdpi=$(dlg --inputbox "$(eval_gettext "Enter new DPI-Settings:")" 0 0 "$defaultdpi")
@@ -209,6 +209,20 @@ function dlgDpi()
 		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the DPI-Settings to $newdpi dpi!")"
 	fi
 }
+
+
+function dlgDpi()
+{
+	defaultdpi="$(getDpi)" || defaultdpi="72"
+	SSFT_DEFAULT=$defaultdpi
+	ssft_read_string "${Title}" "$(eval_gettext "Enter new DPI-Settings:")"
+	if [ "$SSFT_RESULT" != "" ]; then
+		setDpi $SSFT_RESULT \
+		&& ssft_display_message "${Title}" "$(eval_gettext "The DPI-Settings have been changed successfully to $SSFT_RESULT dpi.")" \
+		|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the DPI-Settings to $SSFT_RESULT dpi!")"	
+	fi
+}
+
 
 # ColorDepth
 # ----------
@@ -411,4 +425,17 @@ function display_interface()
 			*) dlg --msgbox "$(eval_gettext "Error: This module is not implemented yet!")";;
 		esac
 	done
+}
+
+# dlg
+# ---------
+
+function dlg()
+{
+	ssft_select_single "${Title}" "$(eval_gettext "Please make your choice:")" \
+		"$(eval_gettext "Change DPI-settings")"
+
+	case $SSFT_RESULT in
+		$(eval_gettext "Change DPI-settings") ) dlgDpi;;
+	esac
 }

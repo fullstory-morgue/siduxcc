@@ -89,6 +89,7 @@ AC_CONFIG_FILES([ po/pt/Makefile ])
 AC_CONFIG_FILES([ po/ro/Makefile ])
 AC_CONFIG_FILES([ po/ru/Makefile ])
 AC_CONFIG_FILES([ siduxcc/Makefile ])
+AC_CONFIG_FILES([ siduxcc_gtk2/Makefile ])
 AC_CONFIG_FILES([ siduxcc_hermes/Makefile ])
 AC_CONFIG_FILES([ siduxcc_kde/Makefile ])
 AC_OUTPUT

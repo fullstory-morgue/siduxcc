@@ -1,0 +1,8 @@
+# application
+xdg_apps_DATA = siduxcc-gtk2.desktop
+bin_SCRIPTS = siduxcc-gtk2
+
+sharedir = $(pkgdatadir)
+install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(sharedir)
+	cp -aR $(srcdir)/gtk2 $(DESTDIR)$(sharedir)/

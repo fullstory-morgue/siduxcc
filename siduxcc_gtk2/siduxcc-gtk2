@@ -1,0 +1,2 @@
+#!/bin/sh
+ruby /usr/share/siduxcc/gtk2/scripts/siduxcc-gtk2.rb

@@ -33280,6 +33280,8 @@ ac_config_files="$ac_config_files po/ru/Makefile"
 
 ac_config_files="$ac_config_files siduxcc/Makefile"
 
+ac_config_files="$ac_config_files siduxcc_gtk2/Makefile"
+
 ac_config_files="$ac_config_files siduxcc_hermes/Makefile"
 
 ac_config_files="$ac_config_files siduxcc_kde/Makefile"
@@ -33909,6 +33911,7 @@ do
     "po/ro/Makefile") CONFIG_FILES="$CONFIG_FILES po/ro/Makefile" ;;
     "po/ru/Makefile") CONFIG_FILES="$CONFIG_FILES po/ru/Makefile" ;;
     "siduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc/Makefile" ;;
+    "siduxcc_gtk2/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_gtk2/Makefile" ;;
     "siduxcc_hermes/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hermes/Makefile" ;;
     "siduxcc_kde/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kde/Makefile" ;;
 

@@ -47,6 +47,12 @@ Copyright:
 	© 2007 Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/software.bm
 
+	The following file is based on Dreamlinux Control Panel from:
+	© 2007 Nelson Gomes da Silveira (nelsongs) <ngsilveira@gmail.com>
+	The program is licensed under lgpl
+	siduxcc_gtk2/gtk2/scripts/sidux-gtk2.rb
+
+
 
 
 	--- icons ---
@@ -156,8 +162,25 @@ Copyright:
 
 	The following icon is from kde-icons-crystalproject
 	© 2005 Everaldo Coelho <everaldo@everaldo.com>
-	remote.png                      in siduxcc_kde/network/networkdialog.ui
+	remote.png                   in siduxcc_kde/network/networkdialog.ui
 
+
+	The following icons are from gnome-icon-theme-nuovo
+	© 2005 Silvestre Herrera <silvestre.herrera@gmail.com>
+	administration.svg	         siduxcc_gtk2/gtk2/icons/settings.png
+	clock.svg                    siduxcc_gtk2/gtk2/icons/clock.png
+	config-xfree.svg             siduxcc_gtk2/gtk2/icons/dipplay.png
+	gnome-audio.svg	             siduxcc_gtk2/gtk2/icons/audio.png
+	epiphany.svg                 siduxcc_gtk2/gtk2/icons/forum.png
+	gnome-logo.svg               siduxcc_gtk2/gtk2/icons/gnome.png
+	gnome-nettool.svg            siduxcc_gtk2/gtk2/icons/network.png
+	gnome-printer.svg            siduxcc_gtk2/gtk2/icons/printer.png
+	bonobo.svg                   siduxcc_gtk2/gtk2/icons/info.png
+
+	The following icons are from gnome-icon-theme
+	© 2005 Gnome Artwork Team
+	system-users.svg users       siduxcc_gtk2/gtk2/icons/users.png
+	gtk-about.png                siduxcc_gtk2/gtk2/icons/about.png
 
 
 License:

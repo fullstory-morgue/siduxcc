@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-30 12:47+0200\n"
-"PO-Revision-Date: 2008-03-30 13:09+0200\n"
+"POT-Creation-Date: 2008-05-23 23:23+0200\n"
+"PO-Revision-Date: 2008-05-23 23:26+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,17 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux-Kontrollzentrum"
 
-#: modules/display.bm:9 modules/display.bm:384
+#: modules/dialog.bm:70
+#, sh-format
+msgid "(c) 2007 by Fabian Wuertz\\nhttp://sidux.com"
+msgstr "(c) 2007 by Fabian Würtz\\nhttp://sidux.com"
+
+#: modules/dialog.bm:76 modules/interface:12
+#, sh-format
+msgid "Error: You must be root to run this script!"
+msgstr "Fehler: Sie müssen root sein um dieses Skript zu verwenden!"
+
+#: modules/display.bm:9 modules/display.bm:398
 #, sh-format
 msgid "Display"
 msgstr "Anzeige"
@@ -50,88 +60,91 @@ msgstr "Neue Bildwiederholfrequenz eingeben:"
 #: modules/display.bm:161
 #, sh-format
 msgid "Enter new horizontal sync rate:"
-msgstr ""
-"Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
+msgstr "Neue Frequenz der Bildschirmwiederauffrischung (horizontal sync) eingeben:"
 
-#: modules/display.bm:205
+#: modules/display.bm:205 modules/display.bm:218
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Neue DPI-Einstellungen eingeben:"
 
-#: modules/display.bm:239
+#: modules/display.bm:253
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Standard Farbtiefe"
 
-#: modules/display.bm:323 modules/display.bm:371 modules/info.bm:32
-#: modules/kernel.bm:28 modules/kernel.bm:88 modules/kernel.bm:106
-#: modules/kernel.bm:142 modules/network.bm:107 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:90 modules/software.bm:99
-#: modules/software.bm:110
+#: modules/display.bm:337 modules/display.bm:385 modules/info.bm:32
+#: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
+#: modules/kernel.bm:135 modules/network.bm:107 modules/software.bm:65
+#: modules/software.bm:74 modules/software.bm:83 modules/software.bm:94
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Drücken Sie <Enter> um fortzufahren..."
 
-#: modules/display.bm:352
+#: modules/display.bm:366
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Datei zur Wiederherstellung Auswählen"
 
-#: modules/display.bm:385
+#: modules/display.bm:399
 #, sh-format
 msgid "Change resolution"
 msgstr "Auflösung ändern"
 
-#: modules/display.bm:386
+#: modules/display.bm:400
 #, sh-format
 msgid "Set scanning frequency"
 msgstr "Bildschirmfrequenz setzen"
 
-#: modules/display.bm:387
+#: modules/display.bm:401 modules/display.bm:436 modules/display.bm:439
 #, sh-format
 msgid "Change DPI-settings"
 msgstr "DPI-Einstellungen ändern"
 
-#: modules/display.bm:388
+#: modules/display.bm:402
 #, sh-format
 msgid "Change color-depth"
 msgstr "Farbtiefe ändern"
 
-#: modules/display.bm:389
+#: modules/display.bm:403
 #, sh-format
 msgid "Remove modelines"
 msgstr "Modelines entfernen"
 
-#: modules/display.bm:390
+#: modules/display.bm:404
 #, sh-format
 msgid "Register/Repair fonts"
 msgstr "Schriften registrieren/reparieren"
 
-#: modules/display.bm:391
+#: modules/display.bm:405
 #, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Ati/Nvidia 3D Treiber installieren"
 
-#: modules/display.bm:392
+#: modules/display.bm:406
 #, sh-format
 msgid "Restart X-Server"
 msgstr "X-Server neu starten"
 
-#: modules/display.bm:393
+#: modules/display.bm:407
 #, sh-format
 msgid "Restore X-Server"
 msgstr "X-Server wiederherstellen"
 
-#: modules/display.bm:394 modules/info.bm:24 modules/kernel.bm:214
-#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:215
+#: modules/display.bm:408 modules/info.bm:24 modules/kernel.bm:207
+#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:209
 #, sh-format
 msgid "Return to main menu"
 msgstr "Zurück zum Hauptmenü"
 
-#: modules/display.bm:411 modules/network.bm:131
+#: modules/display.bm:425 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Fehler: Dieses Modul ist noch nicht implementiert!"
+
+#: modules/display.bm:435
+#, sh-format
+msgid "Please make your choice:"
+msgstr "Bitte eine Auswahl treffen:"
 
 #: modules/info.bm:10 modules/info.bm:21
 #, sh-format
@@ -153,7 +166,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr "Sie verwenden "
 
-#: modules/kernel.bm:9 modules/kernel.bm:211
+#: modules/kernel.bm:9 modules/kernel.bm:204
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -163,34 +176,34 @@ msgstr "Kernel"
 msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "Das Programm Kernel-remover fehlt! Soll es installiert werden?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:105 modules/kernel.bm:141
+#: modules/kernel.bm:27 modules/kernel.bm:98 modules/kernel.bm:134
 #: modules/network.bm:106 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:89 modules/software.bm:98 modules/software.bm:109
+#: modules/software.bm:82 modules/software.bm:93
 #, sh-format
 msgid "Process done!"
 msgstr "Prozess abgeschlossen!"
 
-#: modules/kernel.bm:87
+#: modules/kernel.bm:80
 #, sh-format
 msgid "The installation is finished!"
 msgstr "Installation beendet!"
 
-#: modules/kernel.bm:163
+#: modules/kernel.bm:156
 #, sh-format
 msgid "Select a kernel"
 msgstr "Bitte einen Kernel wählen"
 
-#: modules/kernel.bm:173
+#: modules/kernel.bm:166
 #, sh-format
 msgid "The versions of the new and the current Kernel are the same!"
 msgstr "Die Versionen des neuen und des jetzigen Kernels sind identisch!"
 
-#: modules/kernel.bm:212
+#: modules/kernel.bm:205
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "kernel-remover starten"
 
-#: modules/kernel.bm:213
+#: modules/kernel.bm:206
 #, sh-format
 msgid "Update kernel"
 msgstr "Kernel aktualisieren"
@@ -300,7 +313,7 @@ msgstr "Diensteverwaltung"
 msgid "sidux-update"
 msgstr "sidux-update"
 
-#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:165
+#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:159
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any Dist-"
@@ -310,7 +323,7 @@ msgstr ""
 "nicht Möglich zu überprüfen, ob Dist-Upgrade Warnungen vorliegen. Wollen Sie "
 "trotzdem fortfahren?"
 
-#: modules/software.bm:10 modules/software.bm:211
+#: modules/software.bm:10 modules/software.bm:205
 #, sh-format
 msgid "Software"
 msgstr "Software"
@@ -318,10 +331,9 @@ msgstr "Software"
 #: modules/software.bm:30
 #, sh-format
 msgid "You must be in runlevel 3 and out of X to run this script."
-msgstr ""
-"Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
+msgstr "Sie müssen sich im Runlevel 3 befinden, um dieses Skript laufen zu lassen!"
 
-#: modules/software.bm:40 modules/software.bm:168
+#: modules/software.bm:40 modules/software.bm:162
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -330,42 +342,38 @@ msgstr ""
 "Achtung es wurden Dist-Upgrade-Warnungen gefunden! Im Moment sollte kein "
 "Dist-Upgrade durchgeführt werden! Mehr Informationen finden Sie auf sidux.com"
 
-#: modules/software.bm:43 modules/software.bm:170
+#: modules/software.bm:43 modules/software.bm:164
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Im Moment sind keine Dist-Upgrade-Warnungen bekannt!"
 
-#: modules/software.bm:176
+#: modules/software.bm:170
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Bitte eine Datum auswählen"
 
-#: modules/software.bm:212
+#: modules/software.bm:206
 #, sh-format
 msgid "Run dist-upgrade"
 msgstr "Dist-Upgrade ausführen"
 
-#: modules/software.bm:213
+#: modules/software.bm:207
 #, sh-format
 msgid "Show DU warnings"
 msgstr "Zeige Dist-Upgrade-Warnungen"
 
-#: modules/software.bm:214
+#: modules/software.bm:208
 #, sh-format
 msgid "Show DU log"
 msgstr "Zeige Dist-Upgrade-Log"
 
-#: modules/interface:12
-#, sh-format
-msgid "Error: You must be root to run this script!"
-msgstr "Fehler: Sie müssen root sein um dieses Skript zu verwenden!"
-
-#: modules/interface:18
+#: modules/interface:20
 #, sh-format
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: modules/interface:19
+#: modules/interface:21
 #, sh-format
 msgid "Exit"
 msgstr "Ende"
+

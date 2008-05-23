@@ -13,6 +13,8 @@ if (($UID)); then
 	exit 1
 fi
 
+
+SSFT_FRONTEND=dialog
 MODULES="$(echo "$MODULES" | sort)"
 
 command="dlg --menu \"`eval_gettext "Main Menu"`\" 0 0 0 $MODULES
