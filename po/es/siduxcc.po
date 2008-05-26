@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-26 01:50+0200\n"
+"POT-Creation-Date: 2008-05-26 21:18+0200\n"
 "PO-Revision-Date: 2007-10-25 22:41+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -17,143 +17,110 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: modules/dialog.bm:27
-#, sh-format
-msgid "sidux-Control-Center"
-msgstr "sidux-Control-Center"
-
-#: modules/dialog.bm:73
-#, sh-format
-msgid "(c) 2007 by Fabian Wuertz\\nhttp://sidux.com"
-msgstr ""
-
-#: modules/dialog.bm:79 modules/interface:12
+#: siduxcc:14
 #, sh-format
 msgid "Error: You must be root to run this script!"
 msgstr "Error: Deberia de ser root para ejecutar este script"
 
-#: modules/dialog.bm:93
-msgid "Option number (0 cancels)"
-msgstr ""
-
-#: modules/display.bm:9 modules/display.bm:438
+#: modules/display.bm:9
 #, sh-format
 msgid "Display"
 msgstr "Pantalla"
 
-#: modules/display.bm:105 modules/display.bm:123
+#: modules/display.bm:106
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Seleccione una nueve resolución"
 
-#: modules/display.bm:109 modules/display.bm:131
+#: modules/display.bm:114
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Introduzca nueva resolución"
 
-#: modules/display.bm:171
+#: modules/display.bm:154
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Tiene un monitor TFT?"
 
-#: modules/display.bm:175
+#: modules/display.bm:157
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Introduzca nuevo rango de actualización vertical:"
 
-#: modules/display.bm:184
+#: modules/display.bm:166
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "Introduzca nuevo rango de actualización horizontal:"
 
-#: modules/display.bm:228 modules/display.bm:240
+#: modules/display.bm:210
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Introduzca nuevo DPI valores:"
 
-#: modules/display.bm:275 modules/display.bm:292
+#: modules/display.bm:245
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Default Color Depth"
 
-#: modules/display.bm:376 modules/display.bm:424 modules/info.bm:33
+#: modules/display.bm:331 modules/display.bm:375 modules/info.bm:33
 #: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
-#: modules/kernel.bm:135 modules/network.bm:107 modules/software.bm:65
-#: modules/software.bm:74 modules/software.bm:83 modules/software.bm:94
+#: modules/kernel.bm:135 modules/network.bm:115 modules/software.bm:68
+#: modules/software.bm:77 modules/software.bm:86 modules/software.bm:97
 #, sh-format
 msgid "Press <Enter> to continue..."
 msgstr "Presione <ENTER> para continuar"
 
-#: modules/display.bm:405
+#: modules/display.bm:356
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Seleccione el archivo que debería restaurarse"
 
-#: modules/display.bm:439 modules/display.bm:476 modules/display.bm:482
+#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:174
+#: modules/network.bm:129 modules/services.bm:15 modules/services.bm:35
+#: modules/services.bm:57 modules/software.bm:209
+#, sh-format
+msgid "Please make your choice:"
+msgstr ""
+
+#: modules/display.bm:390 modules/display.bm:401
 #, fuzzy, sh-format
 msgid "Change resolution"
 msgstr "Cambiar resolución"
 
-#: modules/display.bm:440
+#: modules/display.bm:391 modules/display.bm:402
 #, fuzzy, sh-format
 msgid "Set scanning frequency"
 msgstr "Introduzca Frecuencia de scaneo"
 
-#: modules/display.bm:441 modules/display.bm:477 modules/display.bm:483
+#: modules/display.bm:392 modules/display.bm:403
 #, fuzzy, sh-format
 msgid "Change DPI-settings"
 msgstr "Cambiar DPI valores"
 
-#: modules/display.bm:442 modules/display.bm:478 modules/display.bm:484
+#: modules/display.bm:393 modules/display.bm:404
 #, fuzzy, sh-format
 msgid "Change color-depth"
 msgstr "Cambiar ColorDepth"
 
-#: modules/display.bm:443 modules/display.bm:479 modules/display.bm:485
+#: modules/display.bm:394 modules/display.bm:405
 #, fuzzy, sh-format
 msgid "Remove modelines"
 msgstr "Remover Modelines"
 
-#: modules/display.bm:444
-#, fuzzy, sh-format
-msgid "Register/Repair fonts"
-msgstr "Registar/Reparar estilos de letras"
-
-#: modules/display.bm:445
-#, fuzzy, sh-format
-msgid "Install Ati/nVidia 3d drivers"
-msgstr "Installar Ati/nVidia 3d Controladores"
-
-#: modules/display.bm:446
-#, sh-format
-msgid "Restart X-Server"
-msgstr "Reiniciar X-Server"
-
-#: modules/display.bm:447
+#: modules/display.bm:395 modules/display.bm:408
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Restaurar X-Serer"
 
-#: modules/display.bm:448 modules/kernel.bm:207 modules/kernel.bm:220
-#: modules/kernel.bm:223 modules/network.bm:124 modules/network.bm:139
-#: modules/network.bm:142 modules/services.bm:20 modules/smxi.bm:27
-#: modules/smxi.bm:30 modules/software.bm:209 modules/software.bm:224
-#: modules/software.bm:227
+#: modules/display.bm:406
 #, fuzzy, sh-format
-msgid "Return to main menu"
-msgstr "Regresar al Menu Principal"
+msgid "Register/Repair fonts"
+msgstr "Registar/Reparar estilos de letras"
 
-#: modules/display.bm:461 modules/network.bm:131
+#: modules/display.bm:407
 #, sh-format
-msgid "Error: This module is not implemented yet!"
-msgstr "Error: ¡Este modulo no se a implementado todavia!"
-
-#: modules/display.bm:475 modules/info.bm:23 modules/kernel.bm:219
-#: modules/network.bm:138 modules/services.bm:37 modules/services.bm:95
-#: modules/smxi.bm:26 modules/software.bm:223
-#, sh-format
-msgid "Please make your choice:"
-msgstr ""
+msgid "Restart X-Server"
+msgstr "Reiniciar X-Server"
 
 #: modules/info.bm:10
 #, sh-format
@@ -175,7 +142,7 @@ msgstr "Infobash"
 msgid "You are using "
 msgstr " Esta usando"
 
-#: modules/kernel.bm:9 modules/kernel.bm:204
+#: modules/kernel.bm:9
 #, sh-format
 msgid "Kernel"
 msgstr "Kernel"
@@ -186,8 +153,8 @@ msgid "Kernel-remover is missing! Do you want do install it?"
 msgstr "\"Kernel-remover\" no se puedo encontar, Desea instalarlo?"
 
 #: modules/kernel.bm:27 modules/kernel.bm:98 modules/kernel.bm:134
-#: modules/network.bm:106 modules/software.bm:64 modules/software.bm:73
-#: modules/software.bm:82 modules/software.bm:93
+#: modules/network.bm:114 modules/software.bm:67 modules/software.bm:76
+#: modules/software.bm:85 modules/software.bm:96
 #, sh-format
 msgid "Process done!"
 msgstr "¡Proceso terminado!"
@@ -197,42 +164,32 @@ msgstr "¡Proceso terminado!"
 msgid "The installation is finished!"
 msgstr "La instalacion ha terminado"
 
-#: modules/kernel.bm:156
-#, sh-format
-msgid "Select a kernel"
-msgstr "Seleccione un kernel"
-
-#: modules/kernel.bm:166
-#, sh-format
-msgid "The versions of the new and the current Kernel are the same!"
-msgstr "¡La versiones del nuevo y el actual Kernel son los mismos!"
-
-#: modules/kernel.bm:205
+#: modules/kernel.bm:175 modules/kernel.bm:179
 #, sh-format
 msgid "Run kernel-remover"
 msgstr "Ejecute kernel-remover"
 
-#: modules/kernel.bm:206
+#: modules/kernel.bm:176 modules/kernel.bm:180
 #, sh-format
 msgid "Update kernel"
 msgstr "actualice kernel"
 
-#: modules/network.bm:11 modules/network.bm:121
+#: modules/network.bm:11
 #, sh-format
 msgid "Network"
 msgstr "Red"
 
-#: modules/network.bm:41
+#: modules/network.bm:42
 #, fuzzy, sh-format
 msgid "Enter a new hostname:"
 msgstr "Introduzca nueva resolución"
 
-#: modules/network.bm:122
+#: modules/network.bm:130 modules/network.bm:134
 #, sh-format
 msgid "Configure network cards"
 msgstr ""
 
-#: modules/network.bm:123
+#: modules/network.bm:131 modules/network.bm:135
 #, fuzzy, sh-format
 msgid "Set hostname"
 msgstr "Introduzca nueva resolución"
@@ -242,116 +199,72 @@ msgstr "Introduzca nueva resolución"
 msgid "Services"
 msgstr "Servicios"
 
-#: modules/services.bm:15
+#: modules/services.bm:16 modules/services.bm:23
 #, fuzzy, sh-format
-msgid "Web server"
+msgid "Web server (Apache2)"
 msgstr "Web servidor"
 
-#: modules/services.bm:16
+#: modules/services.bm:17 modules/services.bm:24
 #, fuzzy, sh-format
 msgid "Print server"
 msgstr "Servidor de impresores"
 
-#: modules/services.bm:17
+#: modules/services.bm:18 modules/services.bm:25
 #, fuzzy, sh-format
 msgid "SQL database server"
 msgstr "Servidor de base de datos SQL"
 
-#: modules/services.bm:18
+#: modules/services.bm:19 modules/services.bm:26
 #, fuzzy, sh-format
 msgid "Secure shell server"
 msgstr "Servidor de ssh"
 
-#: modules/services.bm:19
+#: modules/services.bm:20 modules/services.bm:27
 #, fuzzy, sh-format
 msgid "Samba server"
 msgstr "Servidor de Samba"
 
-#: modules/services.bm:38
+#: modules/services.bm:36
 #, fuzzy, sh-format
 msgid "start"
 msgstr "Reiniciar ahora"
 
-#: modules/services.bm:39
+#: modules/services.bm:37
 #, sh-format
 msgid "stop"
 msgstr ""
 
-#: modules/services.bm:40
+#: modules/services.bm:38
 #, fuzzy, sh-format
 msgid "restart"
 msgstr "Reiniciar ahora"
 
-#: modules/services.bm:41
+#: modules/services.bm:39
 #, fuzzy, sh-format
 msgid "reload"
 msgstr "Recargar ahora"
 
-#: modules/services.bm:42 modules/services.bm:48 modules/services.bm:61
+#: modules/services.bm:40 modules/services.bm:46
 #, sh-format
 msgid "Add a Runlevel-Entry"
 msgstr "Agregar un Runlevel"
 
-#: modules/services.bm:43 modules/services.bm:49 modules/services.bm:62
+#: modules/services.bm:41 modules/services.bm:47
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr "Eliminar un Runlevel"
 
-#: modules/services.bm:57
-#, sh-format
-msgid "Start now"
-msgstr "Iniciar ahora"
-
-#: modules/services.bm:58
-#, sh-format
-msgid "Stop now"
-msgstr "Detener ahora"
-
-#: modules/services.bm:59
-#, sh-format
-msgid "Restart now"
-msgstr "Reiniciar ahora"
-
-#: modules/services.bm:60
-#, sh-format
-msgid "Reload now"
-msgstr "Recargar ahora"
-
-#: modules/services.bm:63 modules/services.bm:81
-#, sh-format
-msgid "Return to main Menu"
-msgstr "Regresar al Menu Principal"
-
-#: modules/services.bm:78
-#, sh-format
-msgid "Boot"
-msgstr "Iniciar"
-
-#: modules/services.bm:79 modules/services.bm:96 modules/services.bm:100
+#: modules/services.bm:58 modules/services.bm:62
 #, sh-format
 msgid "Enable/Disable Services at Boot"
 msgstr "Activar/Desactivar servicios al iniciar PC"
 
-#: modules/services.bm:80 modules/services.bm:97 modules/services.bm:101
+#: modules/services.bm:59 modules/services.bm:63
 #, sh-format
 msgid "Manage Services"
 msgstr "Administart Servicios"
 
-#: modules/smxi.bm:9
-#, sh-format
-msgid "sidux-update"
-msgstr ""
-
-#: modules/smxi.bm:14 modules/software.bm:36 modules/software.bm:159
-#, sh-format
-msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
-msgstr ""
-"No se puedo conectar a sidux.com. No se pudo averiguar si hay advertencias "
-"de dist-upgrade. ¿Todavia deesea continuar?"
-
-#: modules/software.bm:10 modules/software.bm:205
+#: modules/software.bm:10
 #, sh-format
 msgid "Software"
 msgstr "Programas"
@@ -361,7 +274,16 @@ msgstr "Programas"
 msgid "You must be in runlevel 3 and out of X to run this script."
 msgstr "Deberia de estar en runlevel 3 y afuera de X para ejecuar este script"
 
-#: modules/software.bm:40 modules/software.bm:162
+#: modules/software.bm:35
+#, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings. Dou want to continuo anyway?"
+msgstr ""
+"No se puedo conectar a sidux.com. No se pudo averiguar si hay advertencias "
+"de dist-upgrade. ¿Todavia deesea continuar?"
+
+#: modules/software.bm:43 modules/software.bm:165
 #, sh-format
 msgid ""
 "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
@@ -370,35 +292,86 @@ msgstr ""
 " Hay advertencias de Dist-upgrade. ¡No deberia dist-upgrade!. Por favor "
 "visite sidux.com para mas información."
 
-#: modules/software.bm:43 modules/software.bm:164
+#: modules/software.bm:46 modules/software.bm:167
 #, sh-format
 msgid "At the moment there are no DU-warnings!"
 msgstr "Por el momento no hay advertencias de Dist-upgrade"
 
-#: modules/software.bm:170
+#: modules/software.bm:162
+#, fuzzy, sh-format
+msgid ""
+"No connection to sidux.com. It wasn't possible to test if there any Dist-"
+"Upgrade Warnings"
+msgstr ""
+"No se puedo conectar a sidux.com. No se pudo averiguar si hay advertencias "
+"de dist-upgrade. ¿Todavia deesea continuar?"
+
+#: modules/software.bm:173
 #, sh-format
 msgid "Please choose a date..."
 msgstr "Por favor seleccione una fecha"
 
-#: modules/software.bm:206
+#: modules/software.bm:210 modules/software.bm:216
+#, sh-format
+msgid "Run smxi (software update)"
+msgstr ""
+
+#: modules/software.bm:211 modules/software.bm:217
 #, fuzzy, sh-format
 msgid "Run dist-upgrade"
 msgstr "Ejecutar Dist-Upgrade"
 
-#: modules/software.bm:207
+#: modules/software.bm:212 modules/software.bm:218
 #, fuzzy, sh-format
 msgid "Show DU warnings"
 msgstr "Mostrar D-U advertencias"
 
-#: modules/software.bm:208
-#, fuzzy, sh-format
-msgid "Show DU log"
-msgstr "Mostrar DU-log"
-
-#: modules/interface:24
+#: modules/interface:19
 #, sh-format
 msgid "Main Menu"
 msgstr "Menu Principal"
+
+#~ msgid "sidux-Control-Center"
+#~ msgstr "sidux-Control-Center"
+
+#, fuzzy
+#~ msgid "Install Ati/nVidia 3d drivers"
+#~ msgstr "Installar Ati/nVidia 3d Controladores"
+
+#, fuzzy
+#~ msgid "Return to main menu"
+#~ msgstr "Regresar al Menu Principal"
+
+#~ msgid "Error: This module is not implemented yet!"
+#~ msgstr "Error: ¡Este modulo no se a implementado todavia!"
+
+#~ msgid "Select a kernel"
+#~ msgstr "Seleccione un kernel"
+
+#~ msgid "The versions of the new and the current Kernel are the same!"
+#~ msgstr "¡La versiones del nuevo y el actual Kernel son los mismos!"
+
+#~ msgid "Start now"
+#~ msgstr "Iniciar ahora"
+
+#~ msgid "Stop now"
+#~ msgstr "Detener ahora"
+
+#~ msgid "Restart now"
+#~ msgstr "Reiniciar ahora"
+
+#~ msgid "Reload now"
+#~ msgstr "Recargar ahora"
+
+#~ msgid "Return to main Menu"
+#~ msgstr "Regresar al Menu Principal"
+
+#~ msgid "Boot"
+#~ msgstr "Iniciar"
+
+#, fuzzy
+#~ msgid "Show DU log"
+#~ msgstr "Mostrar DU-log"
 
 #~ msgid "Exit"
 #~ msgstr "Salir"

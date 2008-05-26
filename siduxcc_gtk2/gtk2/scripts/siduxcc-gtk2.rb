@@ -90,7 +90,7 @@ end
 if File.exists?("/usr/share/doc/gnome-control-center/copyright")
 	panel1.add_button("  Gnome\nSettings", "#{icondir}gnome.png", "gnome-control-center")
 end
-panel1.add_button(" Display\nSettings",    "#{icondir}display.png", "#{cmd} \"siduxcc display ssftDisplay\"")
+panel1.add_button(" Display\nSettings",    "#{icondir}display.png", "#{cmd} \"siduxcc Display\"")
 if File.exists?("/usr/share/doc/ceni/copyright")
 	panel1.add_button("Network\nSettings", "#{icondir}network.png", "#{terminal} ceni")
 end
@@ -125,7 +125,7 @@ panel3.add_button("Forum", "#{icondir}forum.png", "#{browser} http://www.sidux.c
 if File.exists?("/usr/share/doc/sidux-irc/copyright")
 	panel3.add_button(" IRC Chat", "/usr/share/icons/hicolor/48x48/apps/sidux-irc.png", "sidux-irc")
 end
-panel3.add_button("About", "#{icondir}about.png", "siduxcc dialog about")
+panel3.add_button("About", "#{icondir}about.png", "siduxcc About")
 
 
 win.show_all

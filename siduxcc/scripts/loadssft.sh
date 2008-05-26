@@ -44,7 +44,7 @@ fi
 
 
 
-about()
+ssftAbout()
 {
 	ssft_display_message "${Title}" "$(eval_gettext "(c) 2007 by Fabian Wuertz\nhttp://sidux.com")"
 }

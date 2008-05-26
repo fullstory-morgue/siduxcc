@@ -45,7 +45,7 @@ case $argc in
     if [ -z "$module" ]; then
         . "modules/interface"
     else
-        eval "${module}_interface"
+        eval "ssft${module}"
     fi
     ;;
 about)
