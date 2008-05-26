@@ -10,8 +10,9 @@ siduxcc (0.9.45) UNRELEASED; urgency=low
   * cli: completely changed to ssft
   * cli: Title var added
   * cli: display menu updated
+  * cli: ssftFrequenz function added
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 26 May 2008 02:46:49 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 26 May 2008 18:11:15 +0200
 
 siduxcc (0.9.44) unstable; urgency=low
 

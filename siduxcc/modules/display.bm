@@ -151,26 +151,24 @@ function setVertRefresh()
 function ssftFrequenz()
 {
 
-	dlg --yesno "$(eval_gettext "Do you have a TFT-monitor?")"
-
+	ssft_yesno "${Title}" "$(eval_gettext "Do you have a TFT-monitor?")"
 	if [ $? -eq 1 ]; then
-		defaultrate="$(getVertRefresh)" || defaultrate="75"
-		newrate=$(dlg --inputbox "$(eval_gettext "Enter new vertical refresh rate:")" 0 0 "$defaultrate")
+		SSFT_DEFAULT="$(getVertRefresh)" || SSFT_DEFAULT="75"
+		ssft_read_string "${Title}" "$(eval_gettext "Enter new vertical refresh rate:")"
 		if [ $? -eq 0 ]; then
-			setVertRefresh $newrate \
-			&& dlg --msgbox "$(eval_gettext "The vertical refresh rate has been changed successfully to $newrate.")" \
-			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $newrate!")"
+			setVertRefresh $SSFT_DEFAULT \
+			&& ssft_display_message "${Title}" "$(eval_gettext "The vertical refresh rate has been changed successfully to $SSFT_DEFAULT.")" \
+			|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $SSFT_DEFAULT!")"
 		fi
 	fi
 
-	defaultrate="$(getHorizSync)" || defaultrate="65"
-	newrate=$(dlg --inputbox "$(eval_gettext "Enter new horizontal sync rate:")" 0 0 "$defaultrate")
+	SSFT_DEFAULT="$(getHorizSync)" || SSFT_DEFAULT="65"
+	ssft_read_string "${Title}" "$(eval_gettext "Enter new horizontal sync rate:")"
 	if [ $? -eq 0 ]; then
-		setHorizSync $newrate \
-		&& dlg --msgbox "$(eval_gettext "The horizontal sync rate has been changed successfully to $newrate.")" \
-		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $newrate!")"
+		setHorizSync $SSFT_DEFAULT \
+		&& ssft_display_message "${Title}" "$(eval_gettext "The horizontal sync rate has been changed successfully to $SSFT_DEFAULT.")" \
+		|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $SSFT_DEFAULT!")"
 	fi
-
 
 }
 
@@ -282,7 +280,7 @@ ENDE
 
 function getDriver()
 {
-    getSection "Device" | awk "(\$1==\"Driver\"){print \$2}" | sed -e 's/^"\(.*\)"$/\1/;'
+	getSection "Device" | awk "(\$1==\"Driver\"){print \$2}" | sed -e 's/^"\(.*\)"$/\1/;'
 }
 
 function setDriver()
@@ -300,21 +298,21 @@ function setDriver()
 
 function getComposite()
 {
-    if ! grep -i Option[[:space:]]*\"Composite\" $X_CONF | egrep -qv ^\s*#; then
-        echo "NOT USED"
-        return 128
-    elif [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | cut -d\  -f3)" -eq 0 ]; then
-        echo "NOT USED"
-        return 128
-    else
-        echo "USED"
-        return 0
-    fi
+	if ! grep -i Option[[:space:]]*\"Composite\" $X_CONF | egrep -qv ^\s*#; then
+		echo "NOT USED"
+		return 128
+	elif [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | cut -d\  -f3)" -eq 0 ]; then
+		echo "NOT USED"
+		return 128
+	else
+		echo "USED"
+		return 0
+	fi
 }
 
 function setComposite()
 {
-    	if [ $1 = "true" ]; then
+		if [ $1 = "true" ]; then
 			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/\tOption\t"Composite"\t"1"/' $X_CONF
 		else
 			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/#\tOption\t"Composite"\t"1"/' $X_CONF
@@ -355,12 +353,8 @@ function backupX()
 
 function restoreX()
 {
-	tmp=`ls $X_CONF.*`
-	tmp=`echo ${tmp//" "/' "" '}`
-	tmp=`echo ${tmp//" "/' "" '}`
-	tmp=$tmp" \"\" "
-	newres=$(dlg --menu "$(eval_gettext "Select the file that should be restore")" 0 0 0 $tmp)
-	cp -f $newres $X_CONF
+	ssft_menu "${Title}" "$(eval_gettext "Select the file that should be restore")" $(ls $X_CONF.*)
+	cp -f $SSFT_RESULT $X_CONF
 }
 
 function restartX()
@@ -393,15 +387,15 @@ function ssftDisplay()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "Change resolution")"  \
-			#"$(eval_gettext "Set scanning frequency")" \
-			"$(eval_gettext "Change DPI-settings")" \
-			"$(eval_gettext "Change color-depth")"  \
-			"$(eval_gettext "Remove modelines")"
+			"$(eval_gettext "Change resolution")"      \
+			"$(eval_gettext "Set scanning frequency")" \
+			"$(eval_gettext "Change DPI-settings")"    \
+			"$(eval_gettext "Change color-depth")"     \
+			"$(eval_gettext "Remove modelines")"       \
+			"$(eval_gettext "Restore X-Server")"
+			#"$(eval_gettext "Restart X-Server")"
 			#"$(eval_gettext "Register/Repair fonts")" \
 			#"$(eval_gettext "Install Ati/nVidia 3d drivers")" \
-			#"$(eval_gettext "Restart X-Server")" \
-			#""$(eval_gettext "Restore X-Server")" \
 	
 		case $SSFT_RESULT in
 			$(eval_gettext "Change resolution")      ) ssftResolution;;

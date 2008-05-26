@@ -32,8 +32,8 @@ function ssftDu()
 	fi
 	test=`duWarnings`
 	if [ $test == 'disconnected' ]; then
-		ssft_yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 
-		if [ $SSFT_RESULT = 0 ]; then
+		ssft_yesno "${Title}" "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")"
+		if [ $? -eq 1 ]; then
 			du
 		else
 			return 0
