@@ -8,8 +8,9 @@ siduxcc (0.9.45) UNRELEASED; urgency=low
   * cli: ssft functions added. 
   * gtk2 version added.
   * cli: completely changed to ssft
+  * cli: Title var added
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 26 May 2008 02:36:05 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 26 May 2008 02:39:36 +0200
 
 siduxcc (0.9.44) unstable; urgency=low
 
