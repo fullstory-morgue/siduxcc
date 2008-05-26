@@ -100,23 +100,6 @@ function fix-res()
 }
 
 
-function dlgResolution()
-{
-	newres=$(dlg --menu "$(eval_gettext "Select new Resolution")" 0 0 0 640x480 "" 800x600 "" 1024x768 "" 1152x864 "" 1280x1024 "" 1400x1050 "" 1600x1200 "" custom "")
-
-	if [ $? -eq 0 ]; then
-		if [ "$newres" = "custom" ]; then
-			newres=$(dlg --inputbox "$(eval_gettext "Enter new Resolution:")" 0 0 "1024x768")
-			[ $? -ne 0 ] && newres=
-		fi
-		if [ "$newres" ]; then
-			fix-res $newres \
-			&& dlg --msgbox "$(eval_gettext "The resolution has been changed successfully to $newres.")" \
-			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the resolution to $newres!")"
-		fi
-	fi
-}
-
 function ssftResolution()
 {
 	SSFT_DEFAULT="$(getResolution)"
@@ -222,17 +205,6 @@ function setDpi()
 	fi
 }
 
-function dlgDpi()
-{
-	defaultdpi="$(getDpi)" || defaultdpi="72"
-	newdpi=$(dlg --inputbox "$(eval_gettext "Enter new DPI-Settings:")" 0 0 "$defaultdpi")
-	if [ $? -eq 0 ]; then
-		setDpi $newdpi \
-		&& dlg --msgbox "$(eval_gettext "The DPI-Settings have been changed successfully to $newdpi dpi.")" \
-		|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the DPI-Settings to $newdpi dpi!")"
-	fi
-}
-
 
 function ssftDpi()
 {
@@ -281,21 +253,6 @@ function ssftColorDepth()
 	fi
 }
 
-
-function dlgColorDepth()
-{
-	cdepth="$(getColorDepth)"
-	case $cdepth in
-		8|15|16|24) default=$cdepth;;
-		*) default=24;;
-	esac
-	new=$(dlg --default-item $default --menu "$(eval_gettext "Default Color Depth")" 0 0 0 8 bit 15 bit 16 bit 24 bit)
-	if [ $? -eq 0 ]; then
-			setColorDepth $new \
-			&& dlg --msgbox "$(eval_gettext "The Colordepth has been changed successfully to $new.")" \
-			|| dlg --msgbox "$(eval_gettext "An Error occurred while changing the Colordepth to $new")"
-	fi
-}
 
 # Driver
 # ----------
@@ -427,44 +384,7 @@ function binaryGfx()
 
 
 
-# Interface
-# ---------
-
-function display_interface()
-{
-	while true;
-	do
-
-		display=$(dlg --menu "$(eval_gettext "Display")" 0 0 0 \
-		"resolution" "$(eval_gettext "Change resolution")" \
-		"frequency"  "$(eval_gettext "Set scanning frequency")" \
-		"dpi"        "$(eval_gettext "Change DPI-settings")" \
-		"cdepth"     "$(eval_gettext "Change color-depth")" \
-		"rmml"       "$(eval_gettext "Remove modelines")" \
-		"fix-fonts"  "$(eval_gettext "Register/Repair fonts")" \
-		"binary-gfx" "$(eval_gettext "Install Ati/nVidia 3d drivers")" \
-		"restartX"   "$(eval_gettext "Restart X-Server")" \
-		"restoreX"   "$(eval_gettext "Restore X-Server")" \
-		"return"     "$(eval_gettext "Return to main menu")" )
-
-		case $display in
-			binary-gfx) binaryGfx;;
-			resolution) ssftResolution;;
-			cdepth)     ssftColorDepth;;
-			dpi)        ssftDpi;;
-			frequenz)   ssftFrequenz;;
-			rmml) removeModelines;;
-			fix-fonts) fixFonts;;
-			restartX) restartX;;
-			restoreX) restoreX;;
-			return|"") break;;
-			*) dlg --msgbox "$(eval_gettext "Error: This module is not implemented yet!")";;
-		esac
-
-	done
-}
-
-# sft
+# ssft
 # ---------
 
 function ssftDisplay()
@@ -474,15 +394,24 @@ function ssftDisplay()
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
 			"$(eval_gettext "Change resolution")"  \
+			#"$(eval_gettext "Set scanning frequency")" \
 			"$(eval_gettext "Change DPI-settings")" \
 			"$(eval_gettext "Change color-depth")"  \
 			"$(eval_gettext "Remove modelines")"
+			#"$(eval_gettext "Register/Repair fonts")" \
+			#"$(eval_gettext "Install Ati/nVidia 3d drivers")" \
+			#"$(eval_gettext "Restart X-Server")" \
+			#""$(eval_gettext "Restore X-Server")" \
 	
 		case $SSFT_RESULT in
-			$(eval_gettext "Change resolution") )   ssftResolution;;
-			$(eval_gettext "Change DPI-settings") ) ssftDpi;;
-			$(eval_gettext "Change color-depth") )  ssftColorDepth;;
-			$(eval_gettext "Remove modelines") )    removeModelines;;
+			$(eval_gettext "Change resolution")      ) ssftResolution;;
+			$(eval_gettext "Set scanning frequency") ) ssftFrequenz;;
+			$(eval_gettext "Change DPI-settings")    ) ssftDpi;;
+			$(eval_gettext "Change color-depth")     ) ssftColorDepth;;
+			$(eval_gettext "Remove modelines")       ) removeModelines;;
+			$(eval_gettext "Register/Repair fonts")  ) fixFonts;;
+			$(eval_gettext "Restart X-Server")       ) restartX;;
+			$(eval_gettext "Restore X-Server")       ) restoreX;;
 			"") break;;
 		esac
 	done
