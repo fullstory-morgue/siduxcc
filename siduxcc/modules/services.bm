@@ -9,55 +9,59 @@
 
 register_module services $(eval_gettext "Services")
 
-function dlgService1()
+
+function ssftService1()
 {
-	service=$(dlg --menu "$(eval_gettext "Services: $services")" 0 0 0 \
-		"apache2" "$(eval_gettext "Web server")" \
-		"cupsys"  "$(eval_gettext "Print server")" \
-		"mysql"   "$(eval_gettext "SQL database server")" \
-		"ssh"     "$(eval_gettext "Secure shell server")" \
-		"samba"   "$(eval_gettext "Samba server")" \
-		"return"  "$(eval_gettext "Return to main menu")" )
-	case $service in
-		apache2|cupsys|ssh|samba) dlgService2;;
-		return|"") break;;
+	ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+		"$(eval_gettext "Web server (Apache2)")" \
+		"$(eval_gettext "Print server")"         \
+		"$(eval_gettext "SQL database server")"  \
+		"$(eval_gettext "Secure shell server")"  \
+		"$(eval_gettext "Samba server")"
+
+	case $SSFT_RESULT in
+		"$(eval_gettext "Web server (Apache2)")" ) service=apache2; ssftService2;;
+		"$(eval_gettext "Print server")"         ) service=cupsys;  ssftService2;;
+		"$(eval_gettext "SQL database server")"  ) service=mysql;   ssftService2;;
+		"$(eval_gettext "Secure shell server")"  ) service=ssh;     ssftService2;;
+		"$(eval_gettext "Samba server")"         ) service=samba;   ssftService2;;
 	esac
 }
 
-function dlgService2()
+
+function ssftService2()
 {
-	service=$(dlg --menu "$(eval_gettext "Services: $services")" 0 0 0 \
-	"start"   "$(eval_gettext "Start now")" \
-	"stop"    "$(eval_gettext "Stop now")" \
-	"restart" "$(eval_gettext "Restart now")" \
-	"reload"  "$(eval_gettext "Reload now")" \
-	"add"     "$(eval_gettext "Add a Runlevel-Entry")" \
-	"del"     "$(eval_gettext "Delete Runlevel-Entry")" \
-	"return"  "$(eval_gettext "Return to main Menu")" )
+
+	ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+		"$(eval_gettext "start")" \
+		"$(eval_gettext "stop")" \
+		"$(eval_gettext "restart")" \
+		"$(eval_gettext "reload")" \
+		"$(eval_gettext "Add a Runlevel-Entry")" \
+		"$(eval_gettext "Delete Runlevel-Entry")"
+
 	
-	case $action in
-		start|restart|stop|reload) /etc/init.d/$service $action;;
-		add) update-rc.d -f $service defaults;;
-		del) update-rc.d -f $service remove;;
-		return|"") break;;
+	case $SSFT_RESULT in
+		start|restart|stop|reload) /etc/init.d/$service $SSFT_RESULT;;
+		"$(eval_gettext "Add a Runlevel-Entry")"  ) update-rc.d -f $service defaults;;
+		"$(eval_gettext "Delete Runlevel-Entry")" ) update-rc.d -f $service remove;;
+		"") break;;
 	esac
 }
 
 
-function services_interface()
+function ssftServices()
 {
 	while true;
 	do
-		services=$(dlg --menu "$(eval_gettext "Boot")" 0 0 0 \
-			"boot"     "$(eval_gettext "Enable/Disable Services at Boot")" \
-			"services" "$(eval_gettext "Manage Services")" \
-			"return"   "$(eval_gettext "Return to main Menu")" )
-		
-		case $selection in
-			boot) rcconf;;
-			services) dlgService1;;
-			return|"") break;;
+		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+			"$(eval_gettext "Enable/Disable Services at Boot")" \
+			"$(eval_gettext "Manage Services")"
+	
+		case $SSFT_RESULT in
+			"$(eval_gettext "Enable/Disable Services at Boot")" ) rcconf;;
+			"$(eval_gettext "Manage Services")" )                 ssftService1;;
+			"") break;;
 		esac
 	done
 }
-

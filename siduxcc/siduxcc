@@ -4,16 +4,27 @@
 # siduxcc based on knxcc_info from Andreas Loible
 # License: GPL
 
+
+#run gettext
+. /usr/bin/gettext.sh
+
+testRoot()
+{
+	if (($UID)); then
+		echo $(eval_gettext "Error: You must be root to run this script!")
+		exit 1
+	fi
+}
+
 SEARCHPATH="/usr/share/siduxcc"
 
 export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=knxccscript
+export TEXTDOMAIN=siduxccccscript
 
 MODULES="\\"; export MODULES
 function register_module()
 {
-MODULES="$MODULES
-\"$1\" \"$2\" \\"
+	MODULES2="$MODULES2 $2"
 }
 
 BACKDIR="$PWD"
@@ -28,6 +39,7 @@ case $argc in
     do
         . "$source_module" || exit 3
     done
+	. scripts/loadssft.sh
     if [ -z "$module" ]; then
         . "modules/interface"
     else
@@ -40,8 +52,8 @@ about)
     # Include supplied Module
     action="$1"; shift
     case $action in
-        dlg*)
-            . modules/dialog.bm
+        ssft*)
+            . scripts/loadssft.sh
             testRoot;;
     esac
     . modules/"$module".bm || exit 3

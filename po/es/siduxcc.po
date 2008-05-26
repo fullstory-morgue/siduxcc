@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-23 23:23+0200\n"
+"POT-Creation-Date: 2008-05-26 01:50+0200\n"
 "PO-Revision-Date: 2007-10-25 22:41+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,57 +22,61 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr "sidux-Control-Center"
 
-#: modules/dialog.bm:70
+#: modules/dialog.bm:73
 #, sh-format
 msgid "(c) 2007 by Fabian Wuertz\\nhttp://sidux.com"
 msgstr ""
 
-#: modules/dialog.bm:76 modules/interface:12
+#: modules/dialog.bm:79 modules/interface:12
 #, sh-format
 msgid "Error: You must be root to run this script!"
 msgstr "Error: Deberia de ser root para ejecutar este script"
 
-#: modules/display.bm:9 modules/display.bm:398
+#: modules/dialog.bm:93
+msgid "Option number (0 cancels)"
+msgstr ""
+
+#: modules/display.bm:9 modules/display.bm:438
 #, sh-format
 msgid "Display"
 msgstr "Pantalla"
 
-#: modules/display.bm:105
+#: modules/display.bm:105 modules/display.bm:123
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Seleccione una nueve resolución"
 
-#: modules/display.bm:109
+#: modules/display.bm:109 modules/display.bm:131
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Introduzca nueva resolución"
 
-#: modules/display.bm:148
+#: modules/display.bm:171
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Tiene un monitor TFT?"
 
-#: modules/display.bm:152
+#: modules/display.bm:175
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Introduzca nuevo rango de actualización vertical:"
 
-#: modules/display.bm:161
+#: modules/display.bm:184
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "Introduzca nuevo rango de actualización horizontal:"
 
-#: modules/display.bm:205 modules/display.bm:218
+#: modules/display.bm:228 modules/display.bm:240
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Introduzca nuevo DPI valores:"
 
-#: modules/display.bm:253
+#: modules/display.bm:275 modules/display.bm:292
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Default Color Depth"
 
-#: modules/display.bm:337 modules/display.bm:385 modules/info.bm:32
+#: modules/display.bm:376 modules/display.bm:424 modules/info.bm:33
 #: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
 #: modules/kernel.bm:135 modules/network.bm:107 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:83 modules/software.bm:94
@@ -80,88 +84,93 @@ msgstr "Default Color Depth"
 msgid "Press <Enter> to continue..."
 msgstr "Presione <ENTER> para continuar"
 
-#: modules/display.bm:366
+#: modules/display.bm:405
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Seleccione el archivo que debería restaurarse"
 
-#: modules/display.bm:399
+#: modules/display.bm:439 modules/display.bm:476 modules/display.bm:482
 #, fuzzy, sh-format
 msgid "Change resolution"
 msgstr "Cambiar resolución"
 
-#: modules/display.bm:400
+#: modules/display.bm:440
 #, fuzzy, sh-format
 msgid "Set scanning frequency"
 msgstr "Introduzca Frecuencia de scaneo"
 
-#: modules/display.bm:401 modules/display.bm:436 modules/display.bm:439
+#: modules/display.bm:441 modules/display.bm:477 modules/display.bm:483
 #, fuzzy, sh-format
 msgid "Change DPI-settings"
 msgstr "Cambiar DPI valores"
 
-#: modules/display.bm:402
+#: modules/display.bm:442 modules/display.bm:478 modules/display.bm:484
 #, fuzzy, sh-format
 msgid "Change color-depth"
 msgstr "Cambiar ColorDepth"
 
-#: modules/display.bm:403
+#: modules/display.bm:443 modules/display.bm:479 modules/display.bm:485
 #, fuzzy, sh-format
 msgid "Remove modelines"
 msgstr "Remover Modelines"
 
-#: modules/display.bm:404
+#: modules/display.bm:444
 #, fuzzy, sh-format
 msgid "Register/Repair fonts"
 msgstr "Registar/Reparar estilos de letras"
 
-#: modules/display.bm:405
+#: modules/display.bm:445
 #, fuzzy, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr "Installar Ati/nVidia 3d Controladores"
 
-#: modules/display.bm:406
+#: modules/display.bm:446
 #, sh-format
 msgid "Restart X-Server"
 msgstr "Reiniciar X-Server"
 
-#: modules/display.bm:407
+#: modules/display.bm:447
 #, sh-format
 msgid "Restore X-Server"
 msgstr "Restaurar X-Serer"
 
-#: modules/display.bm:408 modules/info.bm:24 modules/kernel.bm:207
-#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:209
+#: modules/display.bm:448 modules/kernel.bm:207 modules/kernel.bm:220
+#: modules/kernel.bm:223 modules/network.bm:124 modules/network.bm:139
+#: modules/network.bm:142 modules/services.bm:20 modules/smxi.bm:27
+#: modules/smxi.bm:30 modules/software.bm:209 modules/software.bm:224
+#: modules/software.bm:227
 #, fuzzy, sh-format
 msgid "Return to main menu"
 msgstr "Regresar al Menu Principal"
 
-#: modules/display.bm:425 modules/network.bm:131
+#: modules/display.bm:461 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr "Error: ¡Este modulo no se a implementado todavia!"
 
-#: modules/display.bm:435
+#: modules/display.bm:475 modules/info.bm:23 modules/kernel.bm:219
+#: modules/network.bm:138 modules/services.bm:37 modules/services.bm:95
+#: modules/smxi.bm:26 modules/software.bm:223
 #, sh-format
 msgid "Please make your choice:"
 msgstr ""
 
-#: modules/info.bm:10 modules/info.bm:21
+#: modules/info.bm:10
 #, sh-format
 msgid "Infos"
 msgstr "Infos"
 
-#: modules/info.bm:22
+#: modules/info.bm:24 modules/info.bm:28
 #, sh-format
 msgid "sidux Version"
 msgstr "Version de sidux"
 
-#: modules/info.bm:23
+#: modules/info.bm:25 modules/info.bm:29
 #, sh-format
 msgid "Infobash"
 msgstr "Infobash"
 
-#: modules/info.bm:27
+#: modules/info.bm:28
 #, sh-format
 msgid "You are using "
 msgstr " Esta usando"
@@ -258,52 +267,72 @@ msgstr "Servidor de ssh"
 msgid "Samba server"
 msgstr "Servidor de Samba"
 
-#: modules/services.bm:30
-#, sh-format
-msgid "Start now"
-msgstr "Iniciar ahora"
-
-#: modules/services.bm:31
-#, sh-format
-msgid "Stop now"
-msgstr "Detener ahora"
-
-#: modules/services.bm:32
-#, sh-format
-msgid "Restart now"
+#: modules/services.bm:38
+#, fuzzy, sh-format
+msgid "start"
 msgstr "Reiniciar ahora"
 
-#: modules/services.bm:33
+#: modules/services.bm:39
 #, sh-format
-msgid "Reload now"
+msgid "stop"
+msgstr ""
+
+#: modules/services.bm:40
+#, fuzzy, sh-format
+msgid "restart"
+msgstr "Reiniciar ahora"
+
+#: modules/services.bm:41
+#, fuzzy, sh-format
+msgid "reload"
 msgstr "Recargar ahora"
 
-#: modules/services.bm:34
+#: modules/services.bm:42 modules/services.bm:48 modules/services.bm:61
 #, sh-format
 msgid "Add a Runlevel-Entry"
 msgstr "Agregar un Runlevel"
 
-#: modules/services.bm:35
+#: modules/services.bm:43 modules/services.bm:49 modules/services.bm:62
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr "Eliminar un Runlevel"
 
-#: modules/services.bm:36 modules/services.bm:54
+#: modules/services.bm:57
+#, sh-format
+msgid "Start now"
+msgstr "Iniciar ahora"
+
+#: modules/services.bm:58
+#, sh-format
+msgid "Stop now"
+msgstr "Detener ahora"
+
+#: modules/services.bm:59
+#, sh-format
+msgid "Restart now"
+msgstr "Reiniciar ahora"
+
+#: modules/services.bm:60
+#, sh-format
+msgid "Reload now"
+msgstr "Recargar ahora"
+
+#: modules/services.bm:63 modules/services.bm:81
 #, sh-format
 msgid "Return to main Menu"
 msgstr "Regresar al Menu Principal"
 
-#: modules/services.bm:51
+#: modules/services.bm:78
 #, sh-format
 msgid "Boot"
 msgstr "Iniciar"
 
-#: modules/services.bm:52
+#: modules/services.bm:79 modules/services.bm:96 modules/services.bm:100
 #, sh-format
 msgid "Enable/Disable Services at Boot"
 msgstr "Activar/Desactivar servicios al iniciar PC"
 
-#: modules/services.bm:53
+#: modules/services.bm:80 modules/services.bm:97 modules/services.bm:101
 #, sh-format
 msgid "Manage Services"
 msgstr "Administart Servicios"
@@ -366,15 +395,13 @@ msgstr "Mostrar D-U advertencias"
 msgid "Show DU log"
 msgstr "Mostrar DU-log"
 
-#: modules/interface:20
+#: modules/interface:24
 #, sh-format
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: modules/interface:21
-#, sh-format
-msgid "Exit"
-msgstr "Salir"
+#~ msgid "Exit"
+#~ msgstr "Salir"
 
 #~ msgid "Hardware"
 #~ msgstr "Hardware"

@@ -145,37 +145,6 @@ disableMetapackage()
 }
 
 
-
-dlgInstallKernel()
-{
-	
-	nKernel=$(newestKernel)
-	eKernel=$(experimentalKernel)
-	cKernel=$(currentKernel)
-
-	choice=$(dlg --menu "$(eval_gettext "Select a kernel")" 0 0 0 "newest" "$nKernel" "experimental" "$eKernel" )
-
-	if [ $? -eq 0 ]; then
-
-		case $choice in
-			newest) sKernel=$nKernel;;
-			experimental) sKernel=$eKernel;;
-		esac
-
-		if [ $skernel =  $cKernel ]; then
-			dlg --msgbox "$(eval_gettext "The versions of the new and the current Kernel are the same!")"
-		else
-
-			case $choice in
-				newest) installKernel $sKernel;;
-				experimental) installKernel $sKernel exp;;
-			esac
-		fi
-	fi
-
-}
-
-
 function getOldKernels()
 {
 	pushd /boot 2>&1 >>/dev/null
@@ -197,19 +166,19 @@ function getKernelDirs()
 	fi
 }
 
-function kernel_interface()
+
+function ssftKernel()
 {
 	while true;
 	do
-		kernel=$(dlg --menu "$(eval_gettext "Kernel"): $(currentKernel)" 0 0 0 \
-			"remover"  "$(eval_gettext "Run kernel-remover")" \
-			"update" "$(eval_gettext "Update kernel")" \
-			"return"   "$(eval_gettext "Return to main menu")" )
-
-		case $kernel in
-			remover) kernel-remover;;
-			update)  installKernel;;
-			return|"") break;;
+		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+			"$(eval_gettext "Run kernel-remover")" \
+			"$(eval_gettext "Update kernel")"
+	
+		case $SSFT_RESULT in
+			"$(eval_gettext "Run kernel-remover")" ) kernel-remover;;
+			"$(eval_gettext "Update kernel")"      )  installKernel;;
+			"") break;;
 		esac
 	done
 }

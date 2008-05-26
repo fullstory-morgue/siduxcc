@@ -22,25 +22,28 @@ function du()
 	apt-get dist-upgrade
 }
 
-function dlgDu()
+function ssftDu()
 {
 	test=`checkRunlevel`
 	if [ $test != '3' ] 
 	then
-		dlg --msgbox "$(eval_gettext "You must be in runlevel 3 and out of X to run this script.")"
+		ssft_display_message "${Title}" "$(eval_gettext "You must be in runlevel 3 and out of X to run this script.")"
 		return 0
 	fi
 	test=`duWarnings`
-	if [ $test == 'disconnected' ] 
-	then
-		dlg --yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 0 0
-		return 0
+	if [ $test == 'disconnected' ]; then
+		ssft_yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 
+		if [ $SSFT_RESULT = 0 ]; then
+			du
+		else
+			return 0
+		fi
 	elif [ $test != '' ]
 	then
-		dlg --msgbox "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
+		ssft_display_message "${Title}" "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
 		return 0
 	else
-		dlg --msgbox "$(eval_gettext "At the moment there are no DU-warnings!")"
+		ssft_display_message "${Title}" "$(eval_gettext "At the moment there are no DU-warnings!")"
 		du
 	fi
 }
@@ -151,17 +154,17 @@ function getNewsDe()
 	rm -f $TMP
 }
 
-function dlgDuWarnings()
+function ssftDuWarnings()
 {
 	test=`duWarnings`
 	if [ $test == 'disconnected' ] 
 	then
-		dlg --yesno "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings. Dou want to continuo anyway?")" 0 0
+		ssft_display_message "$(eval_gettext "No connection to sidux.com. It wasn't possible to test if there any Dist-Upgrade Warnings")"
 	elif [ $test != '' ]
 	then
-		dlg --msgbox "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
+		ssft_display_message "${Title}" "$(eval_gettext "There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux.com for more information!")"
 	else
-		dlg --msgbox "$(eval_gettext "At the moment there are no DU-warnings!")"
+		ssft_display_message "${Title}" "$(eval_gettext "At the moment there are no DU-warnings!")"
 	fi
 }
 
@@ -198,21 +201,23 @@ function addSources()
 }
 
 
-function software_interface()
+
+function ssftSoftware()
 {
 	while true;
 	do
-		software=$(dlg --menu "$(eval_gettext "Software")" 0 0 0 \
-			"du"       "$(eval_gettext "Run dist-upgrade")" \
-			"warnings" "$(eval_gettext "Show DU warnings")" \
-			"duLog"    "$(eval_gettext "Show DU log")" \
-			"return"   "$(eval_gettext "Return to main menu")" )
-
-		case $software in
-			du) dlgDu;;
-			warnings) dlgDuWarnings;;
-			duLog) dlgDuLog;;
-			return|"") break;;
+		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+			"$(eval_gettext "Run smxi (software update)")" \
+			"$(eval_gettext "Run dist-upgrade")" \
+			"$(eval_gettext "Show DU warnings")" \
+			#"$(eval_gettext "Show DU log")"
+	
+		case $SSFT_RESULT in
+			"$(eval_gettext "Run smxi (software update)")" ) smxi;;
+			"$(eval_gettext "Run dist-upgrade")"           ) ssftDu;;
+			"$(eval_gettext "Show DU warnings")"           ) ssftDuWarnings;;
+			#"$(eval_gettext "Show DU log")"                ) ssftDuLog;;
+			"") break;;
 		esac
 	done
 }

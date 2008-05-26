@@ -5,32 +5,24 @@
 # siduxcc is based on knxcc from Andreas Loibl
 
 
-#run gettext
-. /usr/bin/gettext.sh
 
-if (($UID)); then
-	echo $(eval_gettext "Error: You must be root to run this script!")
-	exit 1
-fi
 
+testRoot
 
 SSFT_FRONTEND=dialog
-MODULES="$(echo "$MODULES" | sort)"
 
-command="dlg --menu \"`eval_gettext "Main Menu"`\" 0 0 0 $MODULES
-         exit \"`eval_gettext Exit`\""
+
+MODULES2="$(echo "$MODULES2" | sort)"
 
 while true;
 do
-   selection=$(eval "$command")
-   
-   case $selection in
-      exit|"")
-         break;
-         ;;
-      *)
-         eval ${selection}_interface
-         ;;
-   esac
+	ssft_menu "${Title}" "$(eval_gettext "Main Menu")" $MODULES2
+	case $SSFT_RESULT in
+		exit|"") break;;
+		*)       ssft$SSFT_RESULT;;
+	esac
 done
+
+
+
 

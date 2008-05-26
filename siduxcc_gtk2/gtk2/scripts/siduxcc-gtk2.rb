@@ -90,7 +90,7 @@ end
 if File.exists?("/usr/share/doc/gnome-control-center/copyright")
 	panel1.add_button("  Gnome\nSettings", "#{icondir}gnome.png", "gnome-control-center")
 end
-panel1.add_button(" Display\nSettings",    "#{icondir}display.png", "#{cmd} \"siduxcc display dlg\"")
+panel1.add_button(" Display\nSettings",    "#{icondir}display.png", "#{cmd} \"siduxcc display ssftDisplay\"")
 if File.exists?("/usr/share/doc/ceni/copyright")
 	panel1.add_button("Network\nSettings", "#{icondir}network.png", "#{terminal} ceni")
 end

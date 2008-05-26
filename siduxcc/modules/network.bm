@@ -35,14 +35,22 @@ function setHostname()
 }
 
 
-function dlgHostname()
+function ssftHostname()
 {
 	oldHostname="$(getHostname)"
-	newHostname=$(dlg --inputbox "$(eval_gettext "Enter a new hostname:")" 0 0 "$oldHostname")
-	if [ $? -eq 0 ]; then
-		setHostname $newHostname \
-		&& dlg --msgbox "$(eval_gettext "The hostname have been changed successfully to $newHostname.")" \
-		|| dlg --msgbox "$(eval_gettext "An error occurred while changing the hosntame to $newHostname!")"
+
+	ssft_read_string "${Title}" "$(eval_gettext "Enter a new hostname:")"
+
+		if [ "$SSFT_RESULT" ]; then
+			fix-res $SSFT_RESULT \
+			&& ssft_display_message "${Title}" "$(eval_gettext "The resolution has been changed successfully to $SSFT_RESULT.")" \
+			|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the resolution to $SSFT_RESULT!")"
+		fi
+
+	if [ "$SSFT_RESULT" != "" ]; then
+		setHostname $SSFT_RESULT \
+		&&  ssft_display_message "${Title}" "$(eval_gettext "The hostname have been changed successfully to $SSFT_RESULT.")" \
+		||  ssft_display_message "${Title}" "$(eval_gettext "An error occurred while changing the hosntame to $SSFT_RESULT!")"
 	fi
 }
 
@@ -114,21 +122,18 @@ function installWlanCard()
 #------------------------------------------------------------------------------#
 
 
-function network_interface()
+function ssftNetwork()
 {
 	while true;
 	do
-		network=$(dlg --menu "$(eval_gettext "Network")" 0 0 0 \
-			"ceni"       "$(eval_gettext "Configure network cards")" \
-			"hostname"  "$(eval_gettext "Set hostname")" \
-			"return"     "$(eval_gettext "Return to main menu")" )
+		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+			"$(eval_gettext "Configure network cards")" \
+			"$(eval_gettext "Set hostname")"
 	
-		case $network in
-			ceni)      ceni;;
-			hostname)  dlgHostname;;
-
-			return|"") break;;
-			*) dlg --msgbox "$(eval_gettext "Error: This module is not implemented yet!")";;
+		case $SSFT_RESULT in
+			"$(eval_gettext "Configure network cards")" ) ceni;;
+			"$(eval_gettext "Set hostname")"            ) ssftHostname;;
+			"") break;;
 		esac
 	done
 }

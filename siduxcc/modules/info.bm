@@ -9,31 +9,31 @@
 
 register_module info $(eval_gettext "Infos")
 
+
 function siduxVersion()
 {
 	cat /etc/sidux-version
 }
 
-function info_interface()
+
+function ssftInfos()
 {
 	while true;
 	do
-		selection=$(dlg --menu "$(eval_gettext "Infos")" 0 0 0 \
-			"version" "$(eval_gettext "sidux Version")" \
-			"infobash" "$(eval_gettext "Infobash")" \
-			"return" "$(eval_gettext "Return to main menu")" )
-		
-		case $selection in
-			version) dlg --msgbox "$(eval_gettext "You are using ") $(siduxVersion)";;
-			infobash)
-				clear
-				infobash -v3
-				echo
-				echo $(eval_gettext "Press <Enter> to continue...")
-				read
-				;;
-			return|"") break;;
+		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
+			"$(eval_gettext "sidux Version")" \
+			"$(eval_gettext "Infobash")"
+	
+		case $SSFT_RESULT in
+				"$(eval_gettext "sidux Version")" ) ssft_display_message "${Title}" "$(eval_gettext "You are using ") $(siduxVersion)";;
+				"$(eval_gettext "Infobash")" )
+					clear
+					infobash -v3
+					echo
+					echo $(eval_gettext "Press <Enter> to continue...")
+					read
+					;;
+			""  ) break;;
 		esac
 	done
 }
-

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-23 23:23+0200\n"
+"POT-Creation-Date: 2008-05-26 01:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,57 +20,61 @@ msgstr ""
 msgid "sidux-Control-Center"
 msgstr ""
 
-#: modules/dialog.bm:70
+#: modules/dialog.bm:73
 #, sh-format
 msgid "(c) 2007 by Fabian Wuertz\\nhttp://sidux.com"
 msgstr ""
 
-#: modules/dialog.bm:76 modules/interface:12
+#: modules/dialog.bm:79 modules/interface:12
 #, sh-format
 msgid "Error: You must be root to run this script!"
 msgstr ""
 
-#: modules/display.bm:9 modules/display.bm:398
+#: modules/dialog.bm:93
+msgid "Option number (0 cancels)"
+msgstr ""
+
+#: modules/display.bm:9 modules/display.bm:438
 #, sh-format
 msgid "Display"
 msgstr ""
 
-#: modules/display.bm:105
+#: modules/display.bm:105 modules/display.bm:123
 #, sh-format
 msgid "Select new Resolution"
 msgstr ""
 
-#: modules/display.bm:109
+#: modules/display.bm:109 modules/display.bm:131
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr ""
 
-#: modules/display.bm:148
+#: modules/display.bm:171
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr ""
 
-#: modules/display.bm:152
+#: modules/display.bm:175
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr ""
 
-#: modules/display.bm:161
+#: modules/display.bm:184
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr ""
 
-#: modules/display.bm:205 modules/display.bm:218
+#: modules/display.bm:228 modules/display.bm:240
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr ""
 
-#: modules/display.bm:253
+#: modules/display.bm:275 modules/display.bm:292
 #, sh-format
 msgid "Default Color Depth"
 msgstr ""
 
-#: modules/display.bm:337 modules/display.bm:385 modules/info.bm:32
+#: modules/display.bm:376 modules/display.bm:424 modules/info.bm:33
 #: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
 #: modules/kernel.bm:135 modules/network.bm:107 modules/software.bm:65
 #: modules/software.bm:74 modules/software.bm:83 modules/software.bm:94
@@ -78,88 +82,93 @@ msgstr ""
 msgid "Press <Enter> to continue..."
 msgstr ""
 
-#: modules/display.bm:366
+#: modules/display.bm:405
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr ""
 
-#: modules/display.bm:399
+#: modules/display.bm:439 modules/display.bm:476 modules/display.bm:482
 #, sh-format
 msgid "Change resolution"
 msgstr ""
 
-#: modules/display.bm:400
+#: modules/display.bm:440
 #, sh-format
 msgid "Set scanning frequency"
 msgstr ""
 
-#: modules/display.bm:401 modules/display.bm:436 modules/display.bm:439
+#: modules/display.bm:441 modules/display.bm:477 modules/display.bm:483
 #, sh-format
 msgid "Change DPI-settings"
 msgstr ""
 
-#: modules/display.bm:402
+#: modules/display.bm:442 modules/display.bm:478 modules/display.bm:484
 #, sh-format
 msgid "Change color-depth"
 msgstr ""
 
-#: modules/display.bm:403
+#: modules/display.bm:443 modules/display.bm:479 modules/display.bm:485
 #, sh-format
 msgid "Remove modelines"
 msgstr ""
 
-#: modules/display.bm:404
+#: modules/display.bm:444
 #, sh-format
 msgid "Register/Repair fonts"
 msgstr ""
 
-#: modules/display.bm:405
+#: modules/display.bm:445
 #, sh-format
 msgid "Install Ati/nVidia 3d drivers"
 msgstr ""
 
-#: modules/display.bm:406
+#: modules/display.bm:446
 #, sh-format
 msgid "Restart X-Server"
 msgstr ""
 
-#: modules/display.bm:407
+#: modules/display.bm:447
 #, sh-format
 msgid "Restore X-Server"
 msgstr ""
 
-#: modules/display.bm:408 modules/info.bm:24 modules/kernel.bm:207
-#: modules/network.bm:124 modules/services.bm:20 modules/software.bm:209
+#: modules/display.bm:448 modules/kernel.bm:207 modules/kernel.bm:220
+#: modules/kernel.bm:223 modules/network.bm:124 modules/network.bm:139
+#: modules/network.bm:142 modules/services.bm:20 modules/smxi.bm:27
+#: modules/smxi.bm:30 modules/software.bm:209 modules/software.bm:224
+#: modules/software.bm:227
 #, sh-format
 msgid "Return to main menu"
 msgstr ""
 
-#: modules/display.bm:425 modules/network.bm:131
+#: modules/display.bm:461 modules/network.bm:131
 #, sh-format
 msgid "Error: This module is not implemented yet!"
 msgstr ""
 
-#: modules/display.bm:435
+#: modules/display.bm:475 modules/info.bm:23 modules/kernel.bm:219
+#: modules/network.bm:138 modules/services.bm:37 modules/services.bm:95
+#: modules/smxi.bm:26 modules/software.bm:223
 #, sh-format
 msgid "Please make your choice:"
 msgstr ""
 
-#: modules/info.bm:10 modules/info.bm:21
+#: modules/info.bm:10
 #, sh-format
 msgid "Infos"
 msgstr ""
 
-#: modules/info.bm:22
+#: modules/info.bm:24 modules/info.bm:28
 #, sh-format
 msgid "sidux Version"
 msgstr ""
 
-#: modules/info.bm:23
+#: modules/info.bm:25 modules/info.bm:29
 #, sh-format
 msgid "Infobash"
 msgstr ""
 
-#: modules/info.bm:27
+#: modules/info.bm:28
 #, sh-format
 msgid "You are using "
 msgstr ""
@@ -256,52 +265,72 @@ msgstr ""
 msgid "Samba server"
 msgstr ""
 
-#: modules/services.bm:30
+#: modules/services.bm:38
 #, sh-format
-msgid "Start now"
+msgid "start"
 msgstr ""
 
-#: modules/services.bm:31
+#: modules/services.bm:39
 #, sh-format
-msgid "Stop now"
+msgid "stop"
 msgstr ""
 
-#: modules/services.bm:32
+#: modules/services.bm:40
 #, sh-format
-msgid "Restart now"
+msgid "restart"
 msgstr ""
 
-#: modules/services.bm:33
+#: modules/services.bm:41
 #, sh-format
-msgid "Reload now"
+msgid "reload"
 msgstr ""
 
-#: modules/services.bm:34
+#: modules/services.bm:42 modules/services.bm:48 modules/services.bm:61
 #, sh-format
 msgid "Add a Runlevel-Entry"
 msgstr ""
 
-#: modules/services.bm:35
+#: modules/services.bm:43 modules/services.bm:49 modules/services.bm:62
 #, sh-format
 msgid "Delete Runlevel-Entry"
 msgstr ""
 
-#: modules/services.bm:36 modules/services.bm:54
+#: modules/services.bm:57
+#, sh-format
+msgid "Start now"
+msgstr ""
+
+#: modules/services.bm:58
+#, sh-format
+msgid "Stop now"
+msgstr ""
+
+#: modules/services.bm:59
+#, sh-format
+msgid "Restart now"
+msgstr ""
+
+#: modules/services.bm:60
+#, sh-format
+msgid "Reload now"
+msgstr ""
+
+#: modules/services.bm:63 modules/services.bm:81
 #, sh-format
 msgid "Return to main Menu"
 msgstr ""
 
-#: modules/services.bm:51
+#: modules/services.bm:78
 #, sh-format
 msgid "Boot"
 msgstr ""
 
-#: modules/services.bm:52
+#: modules/services.bm:79 modules/services.bm:96 modules/services.bm:100
 #, sh-format
 msgid "Enable/Disable Services at Boot"
 msgstr ""
 
-#: modules/services.bm:53
+#: modules/services.bm:80 modules/services.bm:97 modules/services.bm:101
 #, sh-format
 msgid "Manage Services"
 msgstr ""
@@ -360,12 +389,7 @@ msgstr ""
 msgid "Show DU log"
 msgstr ""
 
-#: modules/interface:20
+#: modules/interface:24
 #, sh-format
 msgid "Main Menu"
-msgstr ""
-
-#: modules/interface:21
-#, sh-format
-msgid "Exit"
 msgstr ""
