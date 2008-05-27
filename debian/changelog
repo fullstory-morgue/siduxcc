@@ -1,9 +1,5 @@
-siduxcc (0.9.45) UNRELEASED; urgency=low
+siduxcc (0.10.0) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * siduxcc.svn moved from siduxcc to siduxcc-common
   * cli: ssft functions added. 
   * gtk2 version added.
