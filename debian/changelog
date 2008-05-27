@@ -1,3 +1,9 @@
+siduxcc (0.10.1) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 May 2008 02:32:19 +0200
+
 siduxcc (0.10.0) unstable; urgency=low
 
   * siduxcc.svn moved from siduxcc to siduxcc-common
