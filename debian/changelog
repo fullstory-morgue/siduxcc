@@ -1,3 +1,9 @@
+siduxcc (0.10.3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 May 2008 01:21:56 +0200
+
 siduxcc (0.10.2) unstable; urgency=low
 
   * cli: missing file loadssft.sh added in siduxcc-common.install 
