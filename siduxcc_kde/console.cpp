@@ -21,32 +21,90 @@
 
 
 #include <kgenericfactory.h>
-#include <kpushbutton.h>
+
 #include <qlistbox.h>
 #include <qlineedit.h>
 #include <qcombobox.h>
 #include <qwidgetstack.h>
 #include <qlistview.h>
 #include <qtextedit.h>
-
+#include <qtimer.h>
 #include <qlabel.h>
 #include <qpushbutton.h>
+#include <qapplication.h>
+#include <qwidgetstack.h>
 
 #include "console.h"
 
 console::console(QWidget *parent, const QStrList &run, const char *name, const QStringList &)
 :ConsoleDialog(parent,name)
 {
-	//label->setText( name );
+	//QStrList run2; run.append( "siduxcc" );
+
+	borderFrame->hide();
+	borderFrame->setGeometry( borderFrame->x(), borderFrame->y(), width()-8, 100 );
+	konsoleFrame->setGeometry( konsoleFrame->x(), konsoleFrame->y(), width()-8, 100 );
+	pFrame->setGeometry( pFrame->x(), pFrame->y(), pFrame->width(), progressWidgetStack->height()-8 );
+	//konsoleFrame->setGeometry( 0, 0, 500, 400);
+
+	processDone = FALSE;
+	progress = 5;
+	runProgressBar();
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
 
 	// run command
 	terminal()->startProgram( "siduxcc", run );
+	connect( konsole, SIGNAL( receivedData( const QString& ) ), SLOT( shellOutput( const QString&) ) );
 	connect( konsole, SIGNAL(destroyed()), this, SLOT( finish() ) );
 
 }
 
+void console::runProgressBar()
+{
+	if( processDone )
+		progressWidgetStack->raiseWidget(1);
+	else
+	{
+		if( pFrame->x()+pFrame->width()+5+4 > progressWidgetStack->width() and progress > 0)
+			progress = -5;
+		else if( pFrame->x()-5-4 < 0 and progress < 0)
+			progress =  5;
+	
+		pFrame->setGeometry( pFrame->x()+progress, pFrame->y(), pFrame->width(), progressWidgetStack->height()-10 );
+	
+		QTimer *timer = new QTimer();
+		connect ( timer, SIGNAL ( timeout() ), this, SLOT ( runProgressBar() ) );
+		timer->start ( 50, TRUE ); // 2 sek single-shot timer
+	}
+}
+
+
+void console::shellOutput(const QString& txt)
+{
+	if( txt.contains("Process done!") )
+	{
+	 	processDone = TRUE;
+		continuoPushButton->setEnabled(TRUE);
+		QApplication::beep();
+	}
+
+}
+
+
+void console::details()
+{
+	if(borderFrame->isShown() )
+	{
+		borderFrame->hide();
+		detailsPushButton->setText( i18n("Show details") );
+	}
+	else
+	{
+		borderFrame->show();
+		detailsPushButton->setText( i18n("Hide details") );
+	}
+}
 
 
 

@@ -21,14 +21,16 @@
 
 
 #include <qwidgetstack.h>
+#include <qheader.h>
+
+#include <kprocess.h>
+#include <kapp.h>
+#include <kswitchlanguagedialog.h>
+#include <kmessagebox.h>
 #include <kaboutapplication.h>
 #include <kaboutkde.h>
 #include <qstatusbar.h>
 #include <klistview.h>
-#include <qheader.h>
-#include <kprocess.h>
-#include <kapp.h>
-#include <kswitchlanguagedialog.h>
 
 
 
@@ -46,6 +48,8 @@
 start::start(QWidget *parent, const char *name, const QStringList &)
 :StartDialog(parent, name)
 {
+
+	connect( this, SIGNAL( close() ), this, SLOT( test() ) );
 
 	statusBar()->hide();
 
@@ -184,6 +188,15 @@ void start::language()
 {
 	KSwitchLanguageDialog *lang = new KSwitchLanguageDialog( this );
 	lang->show();
+}
+
+void start::closeEvent ( QCloseEvent * e )
+{
+	if( menuListView->isEnabled() )
+		e->accept();
+	else
+		if(KMessageBox::Continue == KMessageBox::warningContinueCancel (this, i18n("There is still a running process in the control center. It's recommended not to close the apllication now! Do you want to close it anyway?") ) )
+			e->accept();
 }
 
 

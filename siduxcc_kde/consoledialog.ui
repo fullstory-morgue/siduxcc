@@ -9,7 +9,7 @@
             <x>0</x>
             <y>0</y>
             <width>474</width>
-            <height>394</height>
+            <height>459</height>
         </rect>
     </property>
     <property name="caption">
@@ -19,9 +19,53 @@
         <property name="name">
             <cstring>unnamed</cstring>
         </property>
-        <widget class="QFrame" row="0" column="0">
+        <widget class="QPushButton" row="0" column="2">
+            <property name="name">
+                <cstring>continuoPushButton</cstring>
+            </property>
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Con&amp;tinuo</string>
+            </property>
+            <property name="accel">
+                <string>Alt+T</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="1">
+            <property name="name">
+                <cstring>detailsPushButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Sho&amp;w Details</string>
+            </property>
+            <property name="accel">
+                <string>Alt+W</string>
+            </property>
+        </widget>
+        <widget class="QFrame" row="1" column="0" rowspan="1" colspan="3">
             <property name="name">
                 <cstring>borderFrame</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
             </property>
             <property name="frameShape">
                 <enum>GroupBoxPanel</enum>
@@ -45,7 +89,7 @@
                     </property>
                     <property name="sizePolicy">
                         <sizepolicy>
-                            <hsizetype>7</hsizetype>
+                            <hsizetype>5</hsizetype>
                             <vsizetype>7</vsizetype>
                             <horstretch>0</horstretch>
                             <verstretch>0</verstretch>
@@ -63,25 +107,115 @@
                 </widget>
             </grid>
         </widget>
-        <widget class="QLabel" row="1" column="0">
+        <widget class="QWidgetStack" row="0" column="0">
             <property name="name">
-                <cstring>textLabel</cstring>
+                <cstring>progressWidgetStack</cstring>
             </property>
-            <property name="paletteForegroundColor">
-                <color>
-                    <red>255</red>
-                    <green>0</green>
-                    <blue>0</blue>
-                </color>
+            <property name="focusPolicy">
+                <enum>NoFocus</enum>
             </property>
-            <property name="text">
-                <string>Don't close the window, before you see the message "Process done!".</string>
+            <property name="frameShape">
+                <enum>TabWidgetPanel</enum>
             </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <property name="lineWidth">
+                <number>1</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>pFrame</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>4</x>
+                            <y>4</y>
+                            <width>71</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>150</red>
+                            <green>186</green>
+                            <blue>239</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QFrame" row="0" column="0">
+                        <property name="name">
+                            <cstring>pFrame2</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>7</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="paletteBackgroundColor">
+                            <color>
+                                <red>150</red>
+                                <green>186</green>
+                                <blue>239</blue>
+                            </color>
+                        </property>
+                        <property name="frameShape">
+                            <enum>StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Raised</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
         </widget>
     </grid>
 </widget>
+<connections>
+    <connection>
+        <sender>detailsPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Widget</receiver>
+        <slot>details()</slot>
+    </connection>
+    <connection>
+        <sender>continuoPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>Widget</receiver>
+        <slot>finish()</slot>
+    </connection>
+</connections>
 <slots>
-    <slot>button_clicked()</slot>
+    <slot>details()</slot>
+    <slot>finish()</slot>
 </slots>
 <layoutdefaults spacing="3" margin="3"/>
 </UI>

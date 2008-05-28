@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-12 13:26+0200\n"
-"PO-Revision-Date: 2008-05-17 10:44+0200\n"
+"POT-Creation-Date: 2008-05-28 05:00+0200\n"
+"PO-Revision-Date: 2008-05-28 05:02+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,31 +28,56 @@ msgid ""
 "Your emails"
 msgstr "xadras@sidux.com"
 
+#: console.cpp:100
+msgid "Show details"
+msgstr "Details anzeigen"
+
+#: console.cpp:105
+msgid "Hide details"
+msgstr "Details verbergen"
+
 #. i18n: file ./consoledialog.ui line 16
-#: consoledialog.cpp:72 rc.cpp:701
+#: consoledialog.cpp:112 rc.cpp:701
 #, no-c-format
 msgid "Widget"
 msgstr "Widget"
 
-#. i18n: file ./consoledialog.ui line 78
-#: consoledialog.cpp:73 rc.cpp:704
+#. i18n: file ./consoledialog.ui line 38
+#: consoledialog.cpp:113 rc.cpp:704
 #, no-c-format
-msgid "Don't close the window, before you see the message \"Process done!\"."
-msgstr ""
-"Das Fenster nicht schließen, bevor die Nachricht \"Prozess abgeschlossen!\" "
-"erschienen ist!"
+msgid "Con&tinuo"
+msgstr "Weiterfahren"
+
+#. i18n: file ./displaydialog.ui line 1190
+#. i18n: file ./consoledialog.ui line 41
+#: consoledialog.cpp:114 displaydialog.cpp:2404 rc.cpp:191 rc.cpp:707
+#, no-c-format
+msgid "Alt+T"
+msgstr "Alt+T"
+
+#. i18n: file ./consoledialog.ui line 57
+#: consoledialog.cpp:115 rc.cpp:710
+#, no-c-format
+msgid "Sho&w Details"
+msgstr "Details anzeigen"
+
+#. i18n: file ./consoledialog.ui line 60
+#: consoledialog.cpp:116 rc.cpp:713
+#, no-c-format
+msgid "Alt+W"
+msgstr "Alt+W"
 
 #. i18n: file ./displaydialog.ui line 241
-#: display.cpp:191 display.cpp:246 displaydialog.cpp:2349 rc.cpp:51
+#: display.cpp:190 display.cpp:247 displaydialog.cpp:2349 rc.cpp:51
 #, no-c-format
 msgid "custom"
 msgstr "Benutzerdefiniert"
 
-#: display.cpp:234
+#: display.cpp:233
 msgid "Modelines removed"
 msgstr "Modelines gelöscht"
 
-#: display.cpp:239
+#: display.cpp:238
 msgid ""
 "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
@@ -60,7 +85,7 @@ msgstr ""
 "gespeicherte Fortschritte gehen verloren!"
 
 #. i18n: file ./displaydialog.ui line 17
-#: displaydialog.cpp:2331 rc.cpp:3 start.cpp:56 start.cpp:97
+#: displaydialog.cpp:2331 rc.cpp:3 start.cpp:60 start.cpp:101
 #, no-c-format
 msgid "Display"
 msgstr "Anzeige"
@@ -295,7 +320,7 @@ msgstr "Modelines entfernen"
 #. i18n: file ./kerneldialog.ui line 418
 #: displaydialog.cpp:2380 kerneldialog.cpp:840 networkdialog.cpp:1954
 #: networkdialog.cpp:1971 rc.cpp:125 rc.cpp:248 rc.cpp:330 rc.cpp:381
-#: rc.cpp:641 rc.cpp:755 servicesdialog.cpp:699 softwaredialog.cpp:771
+#: rc.cpp:641 rc.cpp:764 servicesdialog.cpp:699 softwaredialog.cpp:771
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
@@ -314,15 +339,13 @@ msgstr "Composite aktivieren"
 
 #. i18n: file ./displaydialog.ui line 884
 #. i18n: file ./displaydialog.ui line 1052
-#. i18n: file ./displaydialog.ui line 1128
 #. i18n: file ./networkdialog.ui line 496
 #. i18n: file ./networkdialog.ui line 1491
 #. i18n: file ./softwaredialog.ui line 236
 #. i18n: file ./kerneldialog.ui line 443
-#: displaydialog.cpp:2383 displaydialog.cpp:2397 displaydialog.cpp:2400
-#: kerneldialog.cpp:844 networkdialog.cpp:1968 networkdialog.cpp:2020
-#: rc.cpp:134 rc.cpp:170 rc.cpp:179 rc.cpp:372 rc.cpp:502 rc.cpp:626
-#: rc.cpp:767 softwaredialog.cpp:762
+#: displaydialog.cpp:2383 displaydialog.cpp:2397 kerneldialog.cpp:844
+#: networkdialog.cpp:1968 networkdialog.cpp:2020 rc.cpp:134 rc.cpp:170
+#: rc.cpp:372 rc.cpp:502 rc.cpp:626 rc.cpp:776 softwaredialog.cpp:762
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -390,8 +413,14 @@ msgstr "Schriften registrieren (fix-fonts)"
 #. i18n: file ./displaydialog.ui line 1125
 #: displaydialog.cpp:2399 rc.cpp:176
 #, no-c-format
-msgid "Register Fo&nts"
+msgid "&Register Fonts"
 msgstr "Schriften registrieren"
+
+#. i18n: file ./displaydialog.ui line 1128
+#: displaydialog.cpp:2400 rc.cpp:179
+#, no-c-format
+msgid "Alt+R"
+msgstr "Alt+R"
 
 #. i18n: file ./displaydialog.ui line 1173
 #. i18n: file ./servicesdialog.ui line 85
@@ -399,7 +428,7 @@ msgstr "Schriften registrieren"
 #. i18n: file ./softwaredialog.ui line 454
 #. i18n: file ./kerneldialog.ui line 471
 #: displaydialog.cpp:2401 kerneldialog.cpp:845 networkdialog.cpp:2055
-#: rc.cpp:182 rc.cpp:203 rc.cpp:593 rc.cpp:675 rc.cpp:770
+#: rc.cpp:182 rc.cpp:203 rc.cpp:593 rc.cpp:675 rc.cpp:779
 #: servicesdialog.cpp:683 softwaredialog.cpp:789
 #, no-c-format
 msgid "&back"
@@ -414,7 +443,7 @@ msgstr "zurück"
 #. i18n: file ./kerneldialog.ui line 474
 #: displaydialog.cpp:2402 kerneldialog.cpp:846 networkdialog.cpp:1952
 #: networkdialog.cpp:2056 rc.cpp:185 rc.cpp:206 rc.cpp:264 rc.cpp:324
-#: rc.cpp:596 rc.cpp:678 rc.cpp:773 servicesdialog.cpp:684
+#: rc.cpp:596 rc.cpp:678 rc.cpp:782 servicesdialog.cpp:684
 #: servicesdialog.cpp:705 softwaredialog.cpp:790
 #, no-c-format
 msgid "Alt+B"
@@ -423,14 +452,8 @@ msgstr "Alt+B"
 #. i18n: file ./displaydialog.ui line 1187
 #: displaydialog.cpp:2403 rc.cpp:188
 #, no-c-format
-msgid "restart &X-Server"
+msgid "res&tart X-Server"
 msgstr "X-Server neustarten"
-
-#. i18n: file ./displaydialog.ui line 1190
-#: displaydialog.cpp:2404 rc.cpp:191
-#, no-c-format
-msgid "Alt+X"
-msgstr "Alt+X"
 
 #. i18n: file ./displaydialog.ui line 1198
 #. i18n: file ./servicesdialog.ui line 96
@@ -481,7 +504,7 @@ msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: file ./internetdialog.ui line 17
-#: internetdialog.cpp:305 rc.cpp:287 start.cpp:60 start.cpp:124
+#: internetdialog.cpp:305 rc.cpp:287 start.cpp:64 start.cpp:128
 #, no-c-format
 msgid "Internet"
 msgstr "Internet"
@@ -662,50 +685,50 @@ msgstr ""
 "innerhalb des Betriebssystems."
 
 #. i18n: file ./kerneldialog.ui line 17
-#: kerneldialog.cpp:819 rc.cpp:707 start.cpp:64 start.cpp:130
+#: kerneldialog.cpp:819 rc.cpp:716 start.cpp:68 start.cpp:134
 #, no-c-format
 msgid "Kernel"
 msgstr "Kernel"
 
 #. i18n: file ./kerneldialog.ui line 51
-#: kerneldialog.cpp:822 rc.cpp:711
+#: kerneldialog.cpp:822 rc.cpp:720
 #, no-c-format
 msgid "Install new kernel"
 msgstr "Neuen Kernel installieren"
 
 #. i18n: file ./kerneldialog.ui line 59
-#: kerneldialog.cpp:823 rc.cpp:714
+#: kerneldialog.cpp:823 rc.cpp:723
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "Alte Kernel entfernen"
 
 #. i18n: file ./kerneldialog.ui line 67
-#: kerneldialog.cpp:824 rc.cpp:717
+#: kerneldialog.cpp:824 rc.cpp:726
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "Kernelmodule installieren"
 
 #. i18n: file ./kerneldialog.ui line 152
-#: kerneldialog.cpp:826 rc.cpp:721
+#: kerneldialog.cpp:826 rc.cpp:730
 #, no-c-format
 msgid "Current kernel:"
 msgstr "Aktueller Kernel:"
 
 #. i18n: file ./kerneldialog.ui line 168
-#: kerneldialog.cpp:827 rc.cpp:724
+#: kerneldialog.cpp:827 rc.cpp:733
 #, no-c-format
 msgid "Newest stable kernel:"
 msgstr "Neuster stabiler Kernel:"
 
 #. i18n: file ./kerneldialog.ui line 209
 #. i18n: file ./kerneldialog.ui line 225
-#: kerneldialog.cpp:830 kerneldialog.cpp:831 rc.cpp:729 rc.cpp:732
+#: kerneldialog.cpp:830 kerneldialog.cpp:831 rc.cpp:738 rc.cpp:741
 #, no-c-format
 msgid "---"
 msgstr "---"
 
 #. i18n: file ./kerneldialog.ui line 241
-#: kerneldialog.cpp:832 rc.cpp:735
+#: kerneldialog.cpp:832 rc.cpp:744
 #, no-c-format
 msgid "Install automatic new kernels during dist-&updates."
 msgstr ""
@@ -714,37 +737,37 @@ msgstr ""
 
 #. i18n: file ./softwaredialog.ui line 337
 #. i18n: file ./kerneldialog.ui line 244
-#: kerneldialog.cpp:833 rc.cpp:653 rc.cpp:738 softwaredialog.cpp:777
+#: kerneldialog.cpp:833 rc.cpp:653 rc.cpp:747 softwaredialog.cpp:777
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
 #. i18n: file ./kerneldialog.ui line 269
-#: kerneldialog.cpp:834 rc.cpp:741
+#: kerneldialog.cpp:834 rc.cpp:750
 #, no-c-format
 msgid "Current kernel"
 msgstr "Lokaler Kernel"
 
 #. i18n: file ./kerneldialog.ui line 333
-#: kerneldialog.cpp:836 rc.cpp:745
+#: kerneldialog.cpp:836 rc.cpp:754
 #, no-c-format
 msgid "re&move"
 msgstr "löschen"
 
 #. i18n: file ./kerneldialog.ui line 336
-#: kerneldialog.cpp:837 rc.cpp:748
+#: kerneldialog.cpp:837 rc.cpp:757
 #, no-c-format
 msgid "Alt+M"
 msgstr "Alt+M"
 
 #. i18n: file ./kerneldialog.ui line 415
-#: kerneldialog.cpp:839 rc.cpp:752
+#: kerneldialog.cpp:839 rc.cpp:761
 #, no-c-format
 msgid "Sh&ow metapackages"
 msgstr "Metapakete anzeigen"
 
 #. i18n: file ./kerneldialog.ui line 426
-#: kerneldialog.cpp:841 rc.cpp:758
+#: kerneldialog.cpp:841 rc.cpp:767
 #, no-c-format
 msgid "&apply"
 msgstr "übernehmen"
@@ -757,13 +780,13 @@ msgstr "übernehmen"
 #. i18n: file ./kerneldialog.ui line 429
 #: kerneldialog.cpp:842 networkdialog.cpp:1957 networkdialog.cpp:1974
 #: networkdialog.cpp:2018 rc.cpp:242 rc.cpp:339 rc.cpp:388 rc.cpp:496
-#: rc.cpp:667 rc.cpp:761 servicesdialog.cpp:697 softwaredialog.cpp:785
+#: rc.cpp:667 rc.cpp:770 servicesdialog.cpp:697 softwaredialog.cpp:785
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./kerneldialog.ui line 440
-#: kerneldialog.cpp:843 rc.cpp:764
+#: kerneldialog.cpp:843 rc.cpp:773
 #, no-c-format
 msgid "i&nstall"
 msgstr "installieren"
@@ -906,7 +929,7 @@ msgid "BSSID"
 msgstr "BSSID"
 
 #. i18n: file ./networkdialog.ui line 17
-#: networkdialog.cpp:1942 rc.cpp:299 start.cpp:68 start.cpp:104
+#: networkdialog.cpp:1942 rc.cpp:299 start.cpp:72 start.cpp:108
 #, no-c-format
 msgid "Network"
 msgstr "Netzwerk"
@@ -1314,7 +1337,7 @@ msgstr "Bitte ein Netzwerk auswählen (Doppelklick):"
 #. i18n: file ./servicesdialog.ui line 17
 #. i18n: file ./servicesdialog.ui line 495
 #: rc.cpp:200 rc.cpp:267 servicesdialog.cpp:682 servicesdialog.cpp:706
-#: start.cpp:72 start.cpp:111
+#: start.cpp:76 start.cpp:115
 #, no-c-format
 msgid "Services"
 msgstr "Dienste"
@@ -1417,7 +1440,7 @@ msgid "Disabled Services:"
 msgstr "Inaktive Dienste"
 
 #. i18n: file ./softwaredialog.ui line 17
-#: rc.cpp:605 softwaredialog.cpp:754 start.cpp:76 start.cpp:117
+#: rc.cpp:605 softwaredialog.cpp:754 start.cpp:80 start.cpp:121
 #, no-c-format
 msgid "Software"
 msgstr "Software"
@@ -1533,19 +1556,19 @@ msgstr ""
 "den Knopf drücken."
 
 #. i18n: file ./startdialog.ui line 17
-#: rc.cpp:776 startdialog.cpp:3499
+#: rc.cpp:785 startdialog.cpp:3499
 #, no-c-format
 msgid "sidux Control Center"
 msgstr "sidux Kontrollzentrum"
 
 #. i18n: file ./startdialog.ui line 29
-#: rc.cpp:779 startdialog.cpp:3341 startdialog.cpp:3500
+#: rc.cpp:788 startdialog.cpp:3341 startdialog.cpp:3500
 #, no-c-format
 msgid "Menu"
 msgstr "Menu"
 
 #. i18n: file ./startdialog.ui line 316
-#: rc.cpp:782 startdialog.cpp:3501
+#: rc.cpp:791 startdialog.cpp:3501
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -1558,28 +1581,28 @@ msgstr ""
 
 #. i18n: file ./startdialog.ui line 470
 #. i18n: file ./startdialog.ui line 473
-#: rc.cpp:787 rc.cpp:790 startdialog.cpp:3504 startdialog.cpp:3505
+#: rc.cpp:796 rc.cpp:799 startdialog.cpp:3504 startdialog.cpp:3505
 #, no-c-format
 msgid "sidux manual"
 msgstr "sidux Handbuch"
 
 #. i18n: file ./startdialog.ui line 487
 #. i18n: file ./startdialog.ui line 490
-#: rc.cpp:794 rc.cpp:797 startdialog.cpp:3507 startdialog.cpp:3508
+#: rc.cpp:803 rc.cpp:806 startdialog.cpp:3507 startdialog.cpp:3508
 #, no-c-format
 msgid "sidux Homepage"
 msgstr "sidux Homepage"
 
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
-#: rc.cpp:804 rc.cpp:807 startdialog.cpp:3511 startdialog.cpp:3512
+#: rc.cpp:813 rc.cpp:816 startdialog.cpp:3511 startdialog.cpp:3512
 #, no-c-format
 msgid "About siduxcc"
 msgstr "Über siduxcc"
 
 #. i18n: file ./startdialog.ui line 524
 #. i18n: file ./startdialog.ui line 527
-#: rc.cpp:811 rc.cpp:814 start.cpp:148 startdialog.cpp:3514
+#: rc.cpp:820 rc.cpp:823 start.cpp:152 startdialog.cpp:3514
 #: startdialog.cpp:3515
 #, no-c-format
 msgid "Exit"
@@ -1587,14 +1610,14 @@ msgstr "Beenden"
 
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
-#: rc.cpp:817 rc.cpp:820 startdialog.cpp:3516 startdialog.cpp:3517
+#: rc.cpp:826 rc.cpp:829 startdialog.cpp:3516 startdialog.cpp:3517
 #, no-c-format
 msgid "About KDE"
 msgstr "Über KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
-#: rc.cpp:823 rc.cpp:826 startdialog.cpp:3518 startdialog.cpp:3519
+#: rc.cpp:832 rc.cpp:835 startdialog.cpp:3518 startdialog.cpp:3519
 #, no-c-format
 msgid "Language"
 msgstr "Sprache"
@@ -1819,6 +1842,15 @@ msgstr ""
 msgid "Are you sure you want to clear your local repository?"
 msgstr "Soll das lokale Repository wirklich geleert werden?"
 
-#: start.cpp:80 start.cpp:137
+#: start.cpp:84 start.cpp:141
 msgid "System Info"
 msgstr "System-Info"
+
+#: start.cpp:198
+msgid ""
+"There is still a running process in the control center. It's recommended not "
+"to close the apllication now! Do you want to close it anyway?"
+msgstr ""
+"Es gibt noch einen unbeendeten Prozess im Kontrollzentrum. Es wird "
+"empfohlen, das Programm noch nicht zu beenden! Soll trotzdem fortgefahren "
+"werden?"

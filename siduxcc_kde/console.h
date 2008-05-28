@@ -40,8 +40,14 @@ class console : public ConsoleDialog
 		}
 		virtual bool eventFilter( QObject *o, QEvent *e );
 
+		int progress;
+		bool processDone;
+
 	public slots:
 		virtual void finish();
+		virtual void runProgressBar();
+		virtual void shellOutput(const QString&);
+		virtual void details();
 
 	protected slots:
 		void loadKonsole();
@@ -49,6 +55,7 @@ class console : public ConsoleDialog
 
 	signals:
 		void finished(bool);
+
 
 };
 

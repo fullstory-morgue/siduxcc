@@ -29,6 +29,7 @@ class start : public StartDialog
 
 	public:
 		start(QWidget *parent = 0L, const char *name = 0L, const QStringList &foo = QStringList());
+		virtual void closeEvent( QCloseEvent * e  );
 
 	public slots:
 		virtual void menu();
@@ -38,6 +39,7 @@ class start : public StartDialog
 		virtual void manual();
 		virtual void homepage();
 		virtual void language();
+
 };
 
 #endif

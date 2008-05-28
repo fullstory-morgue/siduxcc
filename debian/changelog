@@ -1,8 +1,13 @@
 siduxcc (0.10.1) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 May 2008 02:32:19 +0200
+  [ Fabian Wuertz ]
+  * kde: console part updated
+  * kde: close question added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 28 May 2008 05:06:31 +0200
 
 siduxcc (0.10.0) unstable; urgency=low
 
