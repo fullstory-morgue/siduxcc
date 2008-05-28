@@ -3,5 +3,6 @@ debian/tmp/usr/bin/siduxcc                           usr/bin/
 debian/tmp/usr/share/pixmaps                         usr/share/
 debian/tmp/usr/share/siduxcc/modules	             usr/share/siduxcc/
 debian/tmp/usr/share/siduxcc/scripts/rcconf.pl       usr/share/siduxcc/scripts/
+debian/tmp/usr/share/siduxcc/scripts/loadssft.sh     usr/share/siduxcc/scripts/
 icons/siduxcc.svg                                    usr/share/icons/hicolor/scalable/apps/
 debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcc.mo

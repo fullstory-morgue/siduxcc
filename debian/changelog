@@ -1,8 +1,12 @@
 siduxcc (0.10.2) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 May 2008 11:28:30 +0200
+  [ Fabian Wuertz ]
+  * cli: missing file loadssft.sh added in siduxcc-common.install 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 28 May 2008 15:30:51 +0200
 
 siduxcc (0.10.1) unstable; urgency=low
 
