@@ -1,9 +1,5 @@
-siduxcc (0.10.1) UNRELEASED; urgency=low
+siduxcc (0.10.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * kde: console part updated
   * kde: close question added
 
