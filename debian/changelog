@@ -1,9 +1,5 @@
-siduxcc (0.10.3) UNRELEASED; urgency=low
+siduxcc (0.10.3) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * hermes: typo
   * hermes update time from 5h to 30min set
 
