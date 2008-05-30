@@ -128,7 +128,7 @@ void SysTray::updateIcon()
 
 	QTimer *timer = new QTimer();
 	connect ( timer, SIGNAL ( timeout() ), this, SLOT ( updateIcon() ) );
-	timer->start ( 18000000, TRUE ); // 30 min single-shot timer
+	timer->start ( 1800000, TRUE ); // 30 min single-shot timer
 }
 
 

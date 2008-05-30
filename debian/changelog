@@ -5,8 +5,9 @@ siduxcc (0.10.3) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * hermes: typo
+  * hermes update time from 5h to 30min set
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 30 May 2008 12:44:29 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 30 May 2008 12:48:44 +0200
 
 siduxcc (0.10.2) unstable; urgency=low
 
