@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-28 05:00+0200\n"
+"POT-Creation-Date: 2008-05-30 12:41+0200\n"
 "PO-Revision-Date: 2007-10-25 22:06+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -48,9 +48,8 @@ msgstr "Widget"
 msgid "Con&tinuo"
 msgstr ""
 
-#. i18n: file ./displaydialog.ui line 1190
 #. i18n: file ./consoledialog.ui line 41
-#: consoledialog.cpp:114 displaydialog.cpp:2404 rc.cpp:191 rc.cpp:707
+#: consoledialog.cpp:114 rc.cpp:707
 #, fuzzy, no-c-format
 msgid "Alt+T"
 msgstr "Alt+Y"
@@ -68,16 +67,16 @@ msgid "Alt+W"
 msgstr "Alt+O"
 
 #. i18n: file ./displaydialog.ui line 241
-#: display.cpp:190 display.cpp:247 displaydialog.cpp:2349 rc.cpp:51
+#: display.cpp:191 display.cpp:246 displaydialog.cpp:2349 rc.cpp:51
 #, no-c-format
 msgid "custom"
 msgstr "special"
 
-#: display.cpp:233
+#: display.cpp:234
 msgid "Modelines removed"
 msgstr "Linii de mod eliminate"
 
-#: display.cpp:238
+#: display.cpp:239
 msgid ""
 "Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
@@ -335,13 +334,15 @@ msgstr ""
 
 #. i18n: file ./displaydialog.ui line 884
 #. i18n: file ./displaydialog.ui line 1052
+#. i18n: file ./displaydialog.ui line 1128
 #. i18n: file ./networkdialog.ui line 496
 #. i18n: file ./networkdialog.ui line 1491
 #. i18n: file ./softwaredialog.ui line 236
 #. i18n: file ./kerneldialog.ui line 443
-#: displaydialog.cpp:2383 displaydialog.cpp:2397 kerneldialog.cpp:844
-#: networkdialog.cpp:1968 networkdialog.cpp:2020 rc.cpp:134 rc.cpp:170
-#: rc.cpp:372 rc.cpp:502 rc.cpp:626 rc.cpp:776 softwaredialog.cpp:762
+#: displaydialog.cpp:2383 displaydialog.cpp:2397 displaydialog.cpp:2400
+#: kerneldialog.cpp:844 networkdialog.cpp:1968 networkdialog.cpp:2020
+#: rc.cpp:134 rc.cpp:170 rc.cpp:179 rc.cpp:372 rc.cpp:502 rc.cpp:626
+#: rc.cpp:776 softwaredialog.cpp:762
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
@@ -409,14 +410,8 @@ msgstr "Fonturi (fixeaza fonturile)"
 #. i18n: file ./displaydialog.ui line 1125
 #: displaydialog.cpp:2399 rc.cpp:176
 #, fuzzy, no-c-format
-msgid "&Register Fonts"
+msgid "Register Fo&nts"
 msgstr "Inregistreaza fonturile"
-
-#. i18n: file ./displaydialog.ui line 1128
-#: displaydialog.cpp:2400 rc.cpp:179
-#, fuzzy, no-c-format
-msgid "Alt+R"
-msgstr "Alt+O"
 
 #. i18n: file ./displaydialog.ui line 1173
 #. i18n: file ./servicesdialog.ui line 85
@@ -448,8 +443,14 @@ msgstr "Alt+B"
 #. i18n: file ./displaydialog.ui line 1187
 #: displaydialog.cpp:2403 rc.cpp:188
 #, fuzzy, no-c-format
-msgid "res&tart X-Server"
+msgid "restart &X-Server"
 msgstr "Porneste de la inceput X-Server"
+
+#. i18n: file ./displaydialog.ui line 1190
+#: displaydialog.cpp:2404 rc.cpp:191
+#, no-c-format
+msgid "Alt+X"
+msgstr "Alt+X"
 
 #. i18n: file ./displaydialog.ui line 1198
 #. i18n: file ./servicesdialog.ui line 96
@@ -1770,8 +1771,9 @@ msgid ""
 "to close the apllication now! Do you want to close it anyway?"
 msgstr ""
 
-#~ msgid "Alt+X"
-#~ msgstr "Alt+X"
+#, fuzzy
+#~ msgid "Alt+R"
+#~ msgstr "Alt+O"
 
 #, fuzzy
 #~ msgid "Set nameservers"

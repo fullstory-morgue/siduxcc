@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-17 12:11+0200\n"
-"PO-Revision-Date: 2008-05-17 12:12+0200\n"
+"POT-Creation-Date: 2008-05-30 12:41+0200\n"
+"PO-Revision-Date: 2008-05-30 12:43+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -85,9 +85,7 @@ msgstr "Doppelklick auf die Meldung um die vollständige Nachricht zu lesen."
 msgid "&News"
 msgstr "News"
 
-#. i18n: file ./hermesbase.ui line 101
-#: hermesbase.cpp:403 rc.cpp:33
-#, no-c-format
+#: hermesbase.cpp:403
 msgid "Sm&xi Advices"
 msgstr "Smxi Hinweise"
 
@@ -237,8 +235,7 @@ msgstr "Legende"
 #. i18n: file ./legendbase.ui line 68
 #: legendbase.cpp:436 rc.cpp:9
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 87
@@ -258,6 +255,12 @@ msgstr "Paketierung"
 #: main.cpp:45
 msgid "Icon"
 msgstr "Icon"
+
+#. i18n: file ./hermesbase.ui line 101
+#: rc.cpp:33
+#, no-c-format
+msgid "Smxi Ad&vice"
+msgstr "Smxi Hinweis"
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
@@ -286,3 +289,4 @@ msgstr "Legende anzeigen"
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
 msgstr "Über siduxcc-hermes"
+

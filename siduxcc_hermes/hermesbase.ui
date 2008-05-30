@@ -98,7 +98,7 @@
                                 <cstring>TabPage</cstring>
                             </property>
                             <attribute name="title">
-                                <string>Sm&amp;xi Advices</string>
+                                <string>Smxi Ad&amp;vice</string>
                             </attribute>
                             <grid>
                                 <property name="name">
