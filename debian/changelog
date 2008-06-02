@@ -1,8 +1,12 @@
 siduxcc (0.10.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 30 May 2008 23:51:47 +0200
+  [ Fabian Wuertz ]
+  * gtk icon-problem/dependency problem fixed
+
+ -- Fabian Wuertz <xadras@sidux.com>  Mon, 02 Jun 2008 08:35:31 +0200
 
 siduxcc (0.10.3) unstable; urgency=low
 
