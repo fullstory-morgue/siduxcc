@@ -1,12 +1,15 @@
-siduxcc (0.10.4) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.10.4) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * gtk icon-problem/dependency problem fixed
 
- -- Fabian Wuertz <xadras@sidux.com>  Mon, 02 Jun 2008 08:35:31 +0200
+  [ Stefan Lippers-Hollmann ]
+  * make siduxcc_gtk2/gtk2/scripts/siduxcc-gtk2.rb executable, use exec to
+    start it.
+  * drop shebang from siduxcc/scripts/loadssft.sh, it never gets executed, but
+    only sourced.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 02 Jun 2008 09:57:19 +0200
 
 siduxcc (0.10.3) unstable; urgency=low
 

@@ -1,4 +1,3 @@
-#!/bin/bash
 # Sidux-Control-Center
 # Fabian Wuertz
 # License: GPL
