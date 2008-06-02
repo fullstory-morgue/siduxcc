@@ -16,7 +16,7 @@ Description: sidux control center (KDE frontend)
  KDE based frontend for managing sidux
 
 Package: siduxcc-gtk2
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu, libgtk2-ruby1.8, ruby
 Suggests: xfce4-mcs-manager, gnome-control-center, install-meta, gnome-system-tools, gnome-alsamixer, gnome-cups-manager, hardinfo
 Description: sidux control center (KDE frontend)
