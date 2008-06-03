@@ -5,8 +5,9 @@ siduxcc (0.10.6) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * gtk2: sidux-hermes-gtk2 added
+  * debian: gtk2: python dependcies added
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 03 Jun 2008 11:23:35 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 03 Jun 2008 11:26:07 +0200
 
 siduxcc (0.10.5) unstable; urgency=low
 
