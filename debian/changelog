@@ -1,9 +1,5 @@
-siduxcc (0.10.6) UNRELEASED; urgency=low
+siduxcc (0.10.6) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * gtk2: sidux-hermes-gtk2 added
   * debian: gtk2: python dependcies added
 
