@@ -1,8 +1,12 @@
 siduxcc (0.10.6) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 02 Jun 2008 12:03:15 +0200
+  [ Fabian Wuertz ]
+  * gtk2: sidux-hermes-gtk2 added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 03 Jun 2008 11:23:35 +0200
 
 siduxcc (0.10.5) unstable; urgency=low
 

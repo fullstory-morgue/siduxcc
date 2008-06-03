@@ -1,3 +1,4 @@
 debian/tmp/usr/bin/siduxcc-gtk2                             usr/bin/
+debian/tmp/usr/bin/sidux-hermes-gtk2                        usr/bin/
 debian/tmp/usr/share/applications/kde/siduxcc-gtk2.desktop  usr/share/applications/
 debian/tmp/usr/share/siduxcc/gtk2                           usr/share/siduxcc/
