@@ -74,6 +74,8 @@ class MyStatusIcon(gtk.StatusIcon):
                 dialog = gtk.AboutDialog()
                 dialog.set_name('siduxcc-hermes (sidux dist-upgrade alerter)')
                 #dialog.set_version('0.1')
+                dialog.set_authors('Fabian Wuertz <xadras@sidux.com>')
+                dialog.set_license('GPL')
                 dialog.set_comments('A GTK tray application for sidux')
                 dialog.set_website('http://sidux.com')
                 dialog.run()
