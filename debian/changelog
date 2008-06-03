@@ -1,9 +1,5 @@
-siduxcc (0.10.7) UNRELEASED; urgency=low
+siduxcc (0.10.7) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * ruby dependencies removed
 
  -- Fabian Wuertz <xadras@sidux.com>  Tue, 03 Jun 2008 23:47:20 +0200
