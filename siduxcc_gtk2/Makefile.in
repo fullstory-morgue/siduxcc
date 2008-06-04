@@ -311,7 +311,7 @@ xdg_directorydir = @xdg_directorydir@
 xdg_menudir = @xdg_menudir@
 
 # application
-xdg_apps_DATA = siduxcc-gtk2.desktop
+xdg_apps_DATA = siduxcc-gtk2.desktop sidux-hermes-gtk2.desktop
 bin_SCRIPTS = siduxcc-gtk2 sidux-hermes-gtk2
 sharedir = $(pkgdatadir)
 #>- all: all-am
@@ -542,7 +542,7 @@ install-data-local:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=sidux-hermes-gtk2 siduxcc-gtk2.desktop siduxcc-gtk2 Makefile.am Makefile.in 
+KDE_DIST=sidux-hermes-gtk2 siduxcc-gtk2.desktop siduxcc-gtk2 Makefile.am sidux-hermes-gtk2.desktop Makefile.in 
 
 #>+ 2
 docs-am:
