@@ -16,7 +16,6 @@ Copyright:
 	The following files are based on knxcc (Kanotix-Control-Center):
 	siduxcc/siduxcc
 	siduxcc/scripts/rcconf.pl
-	siduxcc/modules/dialog.bm
 	siduxcc/modules/display.bm
 	siduxcc/modules/info.bm
 	siduxcc/modules/interface
@@ -46,12 +45,6 @@ Copyright:
 	The following file is based on install-meta from:
 	© 2007 Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/software.bm
-
-	The following file is based on Dreamlinux Control Panel from:
-	© 2007 Nelson Gomes da Silveira (nelsongs) <ngsilveira@gmail.com>
-	The program is licensed under lgpl
-	siduxcc_gtk2/gtk2/scripts/sidux-gtk2.rb
-
 
 
 

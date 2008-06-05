@@ -542,7 +542,7 @@ install-data-local:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=sidux-hermes-gtk2 siduxcc-gtk2.desktop siduxcc-gtk2 Makefile.am sidux-hermes-gtk2.desktop Makefile.in 
+KDE_DIST=siduxcc-gtk2 sidux-hermes-gtk2.desktop sidux-hermes-gtk2 Makefile.in siduxcc-gtk2.desktop Makefile.am 
 
 #>+ 2
 docs-am:
