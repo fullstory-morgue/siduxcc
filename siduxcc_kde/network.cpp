@@ -225,15 +225,19 @@ void network::getNetworkcards()
 
 		// set image
 		if(info[1] == "ethernet")
+		{
 			if(overview[0] == "activ")
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_up.png"));
 			else
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_down.png"));
+		}
 		if(info[1] == "wireless")
+		{
 			if(overview[0] == "activ")
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_up.png"));
 			else
 				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png"));
+		}
 
 		if(i == 0)
 		{
@@ -284,15 +288,19 @@ void network::updateNetworkcardStatus()
 	ncList->currentItem()->setText(3, overview[3]);     // class:    auto/hotplug
 
 	if(type == "ethernet")
+	{
 		if(overview[0] == "activ")
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_up.png"));
 		else
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_down.png"));
+	}
 	if(type == "wireless")
+	{
 		if(overview[0] == "activ")
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_up.png"));
 		else
 			ncList->currentItem()->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png"));
+	}
 }
 
 
@@ -527,15 +535,19 @@ void network::transmitWlanNetwork()
 void network::controlKeyLength()
 {
 	if( securityComboBox->currentItem() == 1 )
+	{
 		if( securityLineEdit->text().length() < 5  )
 			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/notok2.png") );
 		else
 			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/ok.png") );
+	}
 	else if( securityComboBox->currentItem() == 2 )
+	{
 		if( securityLineEdit->text().length() < 8 or securityLineEdit->text().length() > 63 )
 			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/notok2.png") );
 		else
 			securityPushButton->setPixmap( QPixmap("/usr/share/siduxcc/icons/ok.png") );
+	}
 }
 
 void network::securityHelp()
