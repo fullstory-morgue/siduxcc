@@ -1,9 +1,5 @@
-siduxcc (0.10.8) UNRELEASED; urgency=low
+siduxcc (0.10.8) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * sidux-hermes-gtk2.desktop added
   * gcc-4.3 problems solved
   * some compile warnings solved
