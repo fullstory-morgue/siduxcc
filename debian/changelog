@@ -1,9 +1,5 @@
-siduxcc (0.10.10) UNRELEASED; urgency=low
+siduxcc (0.10.10) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * cli: typos
 
  -- Fabian Wuertz <xadras@sidux.com>  Mon, 09 Jun 2008 13:13:07 +0200
