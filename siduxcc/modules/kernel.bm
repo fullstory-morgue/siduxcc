@@ -13,7 +13,7 @@ function removeKernel()
 {
 	# check if kernel-remover is installed
 	if [ ! -f /usr/sbin/kernel-remover ]; then
-		read -p "$(eval_gettext "Kernel-remover is missing! Do you want do install it?") <yes/no>"
+		read -p "$(eval_gettext "kernel-remover is missing! Do you want do install it?") <yes/no>"
 		if [ "$REPLY" = "yes" ]; then
 			apt-get update
 			apt-get install sidux-kernelhacking
@@ -51,26 +51,13 @@ function stableKernel()
 }
 
 
-function experimentalKernel()
-{
-	TMP="$(mktemp -p /tmp/ experimentalKernel-XXXXXXXXXX)"
-	wget --timeout=3 -O $TMP -q -U "siduxcc-hermes" http://debian.tu-bs.de/project/sidux/kernel/experimental/
-	if [ "$(cat $TMP)" == "" ]; then
-		echo "no_connection"
-	else
-		egrep $(kernelType) $TMP | cut -f3 -d">" | awk '{print (substr($1,8,length($1)-14))}'
-	fi
-	rm -f $TMP
-}
-
-
 installKernel()
 {
 
 	tmp=$(stableKernel)
 
 	if [ "$tmp" == "$(uname -r)" ]; then
-		echo "The versions of the new and the current Kernel are the same!"
+		echo "The versions of the new and the current kernel are the same!"
 	else
 		apt-get update
 		apt-get install linux-image-$tmp linux-headers-$tmp
@@ -172,12 +159,12 @@ function ssftKernel()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "Run kernel-remover")" \
-			"$(eval_gettext "Update kernel")"
+			"$(eval_gettext "run kernel-remover")" \
+			"$(eval_gettext "update kernel")"
 	
 		case $SSFT_RESULT in
-			"$(eval_gettext "Run kernel-remover")" ) kernel-remover;;
-			"$(eval_gettext "Update kernel")"      )  installKernel;;
+			"$(eval_gettext "run kernel-remover")" ) kernel-remover;;
+			"$(eval_gettext "update kernel")"      )  installKernel;;
 			"") break;;
 		esac
 	done

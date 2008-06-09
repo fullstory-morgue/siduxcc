@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-26 21:18+0200\n"
-"PO-Revision-Date: 2007-10-25 22:39+0200\n"
+"POT-Creation-Date: 2008-06-09 12:27+0200\n"
+"PO-Revision-Date: 2008-06-09 13:04+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -63,8 +63,8 @@ msgid "Default Color Depth"
 msgstr "Standard farve dybde"
 
 #: modules/display.bm:331 modules/display.bm:375 modules/info.bm:33
-#: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
-#: modules/kernel.bm:135 modules/network.bm:115 modules/software.bm:68
+#: modules/kernel.bm:28 modules/kernel.bm:68 modules/kernel.bm:86
+#: modules/kernel.bm:122 modules/network.bm:115 modules/software.bm:68
 #: modules/software.bm:77 modules/software.bm:86 modules/software.bm:97
 #, sh-format
 msgid "Press <Enter> to continue..."
@@ -75,7 +75,7 @@ msgstr "Tast <retur> for at fortsætte..."
 msgid "Select the file that should be restore"
 msgstr "Vælg filen der skal gendannes"
 
-#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:174
+#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:161
 #: modules/network.bm:129 modules/services.bm:15 modules/services.bm:35
 #: modules/services.bm:57 modules/software.bm:209
 #, sh-format
@@ -83,43 +83,43 @@ msgid "Please make your choice:"
 msgstr ""
 
 #: modules/display.bm:390 modules/display.bm:401
-#, fuzzy, sh-format
-msgid "Change resolution"
+#, sh-format
+msgid "set max resolution"
 msgstr "Ændre opløsning"
 
 #: modules/display.bm:391 modules/display.bm:402
-#, fuzzy, sh-format
-msgid "Set scanning frequency"
+#, sh-format
+msgid "set scanning frequency"
 msgstr "indstil skannings frekvens"
 
 #: modules/display.bm:392 modules/display.bm:403
-#, fuzzy, sh-format
-msgid "Change DPI-settings"
+#, sh-format
+msgid "set screen DPI"
 msgstr "ændre DPI-indstillinger"
 
 #: modules/display.bm:393 modules/display.bm:404
-#, fuzzy, sh-format
-msgid "Change color-depth"
+#, sh-format
+msgid "set color depth"
 msgstr "ændre farvedybden"
 
 #: modules/display.bm:394 modules/display.bm:405
-#, fuzzy, sh-format
-msgid "Remove modelines"
+#, sh-format
+msgid "remove modelines"
 msgstr "Fjerne modelines"
 
 #: modules/display.bm:395 modules/display.bm:408
 #, sh-format
-msgid "Restore X-Server"
+msgid "restore X-Server"
 msgstr "Gendan X-Serveren"
 
 #: modules/display.bm:406
-#, fuzzy, sh-format
-msgid "Register/Repair fonts"
+#, sh-format
+msgid "register/repair fonts"
 msgstr "Registrer/Reparer Fonte"
 
 #: modules/display.bm:407
 #, sh-format
-msgid "Restart X-Server"
+msgid "restart X-Server"
 msgstr "Genstart X-Serveren"
 
 #: modules/info.bm:10
@@ -129,12 +129,12 @@ msgstr "Info"
 
 #: modules/info.bm:24 modules/info.bm:28
 #, sh-format
-msgid "sidux Version"
+msgid "sidux version"
 msgstr "sidux Version"
 
 #: modules/info.bm:25 modules/info.bm:29
 #, sh-format
-msgid "Infobash"
+msgid "infobash"
 msgstr "Infobash"
 
 #: modules/info.bm:28
@@ -149,162 +149,181 @@ msgstr "Kernel"
 
 #: modules/kernel.bm:16
 #, sh-format
-msgid "Kernel-remover is missing! Do you want do install it?"
+msgid "kernel-remover is missing! Do you want do install it?"
 msgstr "Kernel-remover mangler! Vil du installere den?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:98 modules/kernel.bm:134
+#: modules/kernel.bm:27 modules/kernel.bm:85 modules/kernel.bm:121
 #: modules/network.bm:114 modules/software.bm:67 modules/software.bm:76
 #: modules/software.bm:85 modules/software.bm:96
 #, sh-format
 msgid "Process done!"
 msgstr "Process færdig!"
 
-#: modules/kernel.bm:80
+#: modules/kernel.bm:67
 #, sh-format
 msgid "The installation is finished!"
 msgstr "installationen er færdig!"
 
-#: modules/kernel.bm:175 modules/kernel.bm:179
+#: modules/kernel.bm:162 modules/kernel.bm:166
 #, sh-format
-msgid "Run kernel-remover"
+msgid "run kernel-remover"
 msgstr "Kør kernel-remover"
 
-#: modules/kernel.bm:176 modules/kernel.bm:180
+#: modules/kernel.bm:163 modules/kernel.bm:167
 #, sh-format
-msgid "Update kernel"
+msgid "update kernel"
 msgstr "Opdater kernel"
 
 #: modules/network.bm:11
 #, sh-format
-msgid "Network"
+msgid "network"
 msgstr "Netværk"
 
 #: modules/network.bm:42
-#, fuzzy, sh-format
+#, sh-format
 msgid "Enter a new hostname:"
 msgstr "indtast ny opløsning:"
 
 #: modules/network.bm:130 modules/network.bm:134
 #, sh-format
-msgid "Configure network cards"
+msgid "configure network adapters"
 msgstr ""
 
 #: modules/network.bm:131 modules/network.bm:135
-#, fuzzy, sh-format
-msgid "Set hostname"
+#, sh-format
+msgid "set hostname"
 msgstr "indtast ny opløsning:"
 
 #: modules/services.bm:10
 #, sh-format
-msgid "Services"
-msgstr "Tjenester"
+msgid "services"
+msgstr "Tjeneste"
 
 #: modules/services.bm:16 modules/services.bm:23
-#, fuzzy, sh-format
-msgid "Web server (Apache2)"
+#, sh-format
+msgid "web server (apache2)"
 msgstr "Webserver"
 
 #: modules/services.bm:17 modules/services.bm:24
-#, fuzzy, sh-format
-msgid "Print server"
+#, sh-format
+msgid "print server"
 msgstr "Printserver"
 
 #: modules/services.bm:18 modules/services.bm:25
-#, fuzzy, sh-format
-msgid "SQL database server"
-msgstr "SQL Databaseserver"
+#, sh-format
+msgid "MySQL database server"
+msgstr "MySQL Databaseserver"
 
 #: modules/services.bm:19 modules/services.bm:26
-#, fuzzy, sh-format
-msgid "Secure shell server"
+#, sh-format
+msgid "secure shell server"
 msgstr "Secure-Shell-Server"
 
 #: modules/services.bm:20 modules/services.bm:27
-#, fuzzy, sh-format
-msgid "Samba server"
+#, sh-format
+msgid "samba server"
 msgstr "Sambaserver"
 
 #: modules/services.bm:36
-#, fuzzy, sh-format
+#, sh-format
 msgid "start"
-msgstr "Genstart nu"
+msgstr "Start"
 
 #: modules/services.bm:37
 #, sh-format
 msgid "stop"
-msgstr ""
+msgstr "Stop"
 
 #: modules/services.bm:38
-#, fuzzy, sh-format
+#, sh-format
 msgid "restart"
-msgstr "Genstart nu"
+msgstr "Genstart"
 
 #: modules/services.bm:39
-#, fuzzy, sh-format
-msgid "reload"
-msgstr "Genindlæs nu"
-
-#: modules/services.bm:40 modules/services.bm:46
 #, sh-format
-msgid "Add a Runlevel-Entry"
+msgid "reload"
+msgstr "Genindlæs"
+
+#: modules/services.bm:40
+#, sh-format
+msgid "add a run-level entry"
 msgstr "Tilføj en Runlevel-Entry"
 
-#: modules/services.bm:41 modules/services.bm:47
+#: modules/services.bm:41
 #, sh-format
-msgid "Delete Runlevel-Entry"
+msgid "delete run-level entry"
+msgstr "Fjern en Runlevel-Entry"
+
+#: modules/services.bm:46
+#, sh-format
+msgid "add a run level entry"
+msgstr "Tilføj en Runlevel-Entry"
+
+#: modules/services.bm:47
+#, sh-format
+msgid "delete run level entry"
 msgstr "Fjern en Runlevel-Entry"
 
 #: modules/services.bm:58 modules/services.bm:62
 #, sh-format
-msgid "Enable/Disable Services at Boot"
+msgid "enable/disable services at boot"
 msgstr "Aktiver/deaktiver tjenester ved opstart"
 
 #: modules/services.bm:59 modules/services.bm:63
 #, sh-format
-msgid "Manage Services"
+msgid "manage services"
 msgstr "Administrer Tjenester"
 
 #: modules/software.bm:10
 #, sh-format
-msgid "Software"
+msgid "software"
 msgstr "Software"
 
 #: modules/software.bm:30
 #, sh-format
-msgid "You must be in runlevel 3 and out of X to run this script."
+msgid "You must be in run-level 3 and out of X to run this script."
 msgstr "Du skal være i runlevel 3, og ude af X for at køre dette script."
 
 #: modules/software.bm:35
 #, sh-format
 msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
+"No connection to sidux.com. It wasn't possible to test if there any dist-"
+"upgrade warnings. Do you want to continuo anyway?"
 msgstr ""
 "ingen forbindelse til sidux.com. Det var ikke muligt at teste om der var "
 "nogen dist-upgrade advarsler. vil du fortsætte alligevel?"
 
-#: modules/software.bm:43 modules/software.bm:165
+#: modules/software.bm:43
 #, sh-format
 msgid ""
-"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
-"com for more information!"
+"There are dist-upgrade warnings.  Please don't run a dist-upgrade! Visit "
+"sidux.com and our forums for more information!"
 msgstr ""
 " Der er dist-upgrade advarsler. Foretag ikke en dist-upgrade! Besøg venligst "
 "sidux.com for yderligere information!"
 
 #: modules/software.bm:46 modules/software.bm:167
 #, sh-format
-msgid "At the moment there are no DU-warnings!"
+msgid "At the moment there are no dist-upgrade warnings!"
 msgstr "I øjeblikket er der ingen dist-upgrade advarsler!"
 
 #: modules/software.bm:162
-#, fuzzy, sh-format
+#, sh-format
 msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings"
+"No connection to sidux.com. It wasn't possible to test if there were any "
+"dist-upgrade warnings"
 msgstr ""
 "ingen forbindelse til sidux.com. Det var ikke muligt at teste om der var "
 "nogen dist-upgrade advarsler. vil du fortsætte alligevel?"
+
+#: modules/software.bm:165
+#, sh-format
+msgid ""
+"There are dist-upgrde warnings please. Don't run a dist-upgrade!  Visit "
+"sidux.com and our forums for more information!"
+msgstr ""
+" Der er dist-upgrade advarsler. Foretag ikke en dist-upgrade! Besøg venligst "
+"sidux.com for yderligere information!"
 
 #: modules/software.bm:173
 #, sh-format
@@ -313,68 +332,20 @@ msgstr "Vælg venligst en dato..."
 
 #: modules/software.bm:210 modules/software.bm:216
 #, sh-format
-msgid "Run smxi (software update)"
+msgid "run smxi (software update)"
 msgstr ""
 
 #: modules/software.bm:211 modules/software.bm:217
-#, fuzzy, sh-format
-msgid "Run dist-upgrade"
+#, sh-format
+msgid "run a dist-upgrade only"
 msgstr "Kør Dist-Upgrade"
 
 #: modules/software.bm:212 modules/software.bm:218
-#, fuzzy, sh-format
-msgid "Show DU warnings"
+#, sh-format
+msgid "show DU warnings"
 msgstr "Vis dist-upgrade Advarsler"
 
 #: modules/interface:19
 #, sh-format
 msgid "Main Menu"
 msgstr "Hovedmenu"
-
-#~ msgid "sidux-Control-Center"
-#~ msgstr "sidux-kontrolcenter"
-
-#, fuzzy
-#~ msgid "Install Ati/nVidia 3d drivers"
-#~ msgstr "Installer ATI/Nvidia 3D Drivere"
-
-#, fuzzy
-#~ msgid "Return to main menu"
-#~ msgstr "Retur til hovedmenuen"
-
-#~ msgid "Error: This module is not implemented yet!"
-#~ msgstr "Fejl: Dette modul er endnu ikke implementeret!"
-
-#~ msgid "Select a kernel"
-#~ msgstr "Vælg en kernel"
-
-#~ msgid "The versions of the new and the current Kernel are the same!"
-#~ msgstr "Versionsnumrene på den nye og den nuværende kernel er de samme!"
-
-#~ msgid "Start now"
-#~ msgstr "Start nu"
-
-#~ msgid "Stop now"
-#~ msgstr "Stop nu"
-
-#~ msgid "Restart now"
-#~ msgstr "Genstart nu"
-
-#~ msgid "Reload now"
-#~ msgstr "Genindlæs nu"
-
-#~ msgid "Return to main Menu"
-#~ msgstr "Retur til hovedmenuen"
-
-#~ msgid "Boot"
-#~ msgstr "Boot"
-
-#, fuzzy
-#~ msgid "Show DU log"
-#~ msgstr "Vis dist-upgrade log"
-
-#~ msgid "Exit"
-#~ msgstr "Afslut"
-
-#~ msgid "Hardware"
-#~ msgstr "Hardware"

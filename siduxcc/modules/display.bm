@@ -206,7 +206,7 @@ function setDpi()
 
 function ssftDpi()
 {
-	SSFT_DEFAULT="$(getDpi)" || SSFT_DEFAULT="72"
+	SSFT_DEFAULT="$(getDpi)" || SSFT_DEFAULT="96"
 	ssft_read_string "${Title}" "$(eval_gettext "Enter new DPI-Settings:")"
 	if [ "$SSFT_RESULT" != "" ]; then
 		setDpi $SSFT_RESULT \
@@ -227,7 +227,7 @@ function getColorDepth()
 function setColorDepth()
 {
 	if [ $1 -eq $(getColorDepth) ]; then
-		echo "DefaultDepth-Settings unchanged."
+		echo "color depth unchanged."
 		return 128
 	else
 		backupX
@@ -387,25 +387,25 @@ function ssftDisplay()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "Change resolution")"      \
-			"$(eval_gettext "Set scanning frequency")" \
-			"$(eval_gettext "Change DPI-settings")"    \
-			"$(eval_gettext "Change color-depth")"     \
-			"$(eval_gettext "Remove modelines")"       \
-			"$(eval_gettext "Restore X-Server")"
+			"$(eval_gettext "set max resolution")"      \
+			"$(eval_gettext "set scanning frequency")" \
+			"$(eval_gettext "set screen DPI")"    \
+			"$(eval_gettext "set color depth")"     \
+			"$(eval_gettext "remove modelines")"       \
+			"$(eval_gettext "restore X-Server")"
 			#"$(eval_gettext "Restart X-Server")"
 			#"$(eval_gettext "Register/Repair fonts")" \
 			#"$(eval_gettext "Install Ati/nVidia 3d drivers")" \
 	
 		case $SSFT_RESULT in
-			$(eval_gettext "Change resolution")      ) ssftResolution;;
-			$(eval_gettext "Set scanning frequency") ) ssftFrequenz;;
-			$(eval_gettext "Change DPI-settings")    ) ssftDpi;;
-			$(eval_gettext "Change color-depth")     ) ssftColorDepth;;
-			$(eval_gettext "Remove modelines")       ) removeModelines;;
-			$(eval_gettext "Register/Repair fonts")  ) fixFonts;;
-			$(eval_gettext "Restart X-Server")       ) restartX;;
-			$(eval_gettext "Restore X-Server")       ) restoreX;;
+			$(eval_gettext "set max resolution")     ) ssftResolution;;
+			$(eval_gettext "set scanning frequency") ) ssftFrequenz;;
+			$(eval_gettext "set screen DPI")         ) ssftDpi;;
+			$(eval_gettext "set color depth")        ) ssftColorDepth;;
+			$(eval_gettext "remove modelines")       ) removeModelines;;
+			$(eval_gettext "register/repair fonts")  ) fixFonts;;
+			$(eval_gettext "restart X-Server")       ) restartX;;
+			$(eval_gettext "restore X-Server")       ) restoreX;;
 			"") break;;
 		esac
 	done

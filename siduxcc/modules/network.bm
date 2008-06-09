@@ -8,7 +8,7 @@
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module network $(eval_gettext "Network")
+register_module network $(eval_gettext "network")
 
 
 IFS_SP=" "
@@ -127,12 +127,12 @@ function ssftNetwork()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "Configure network cards")" \
-			"$(eval_gettext "Set hostname")"
+			"$(eval_gettext "configure network adapters")" \
+			"$(eval_gettext "set hostname")"
 	
 		case $SSFT_RESULT in
-			"$(eval_gettext "Configure network cards")" ) ceni;;
-			"$(eval_gettext "Set hostname")"            ) ssftHostname;;
+			"$(eval_gettext "configure network adapters")" ) ceni;;
+			"$(eval_gettext "set hostname")"            ) ssftHostname;;
 			"") break;;
 		esac
 	done

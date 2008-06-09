@@ -77,7 +77,8 @@ msgid "Modelines removed"
 msgstr "Modelines gelöscht"
 
 #: display.cpp:239
-msgid "Are you sure you want to restart the X-Server? All windows will be closed."
+msgid ""
+"Are you sure you want to restart the X-Server? All windows will be closed."
 msgstr ""
 "Sind Sie sicher, dass Sie den X-Server neustarten möchten? Sämtliche nicht "
 "gespeicherte Fortschritte gehen verloren!"
@@ -250,7 +251,8 @@ msgstr "Bemerkung"
 #. i18n: file ./displaydialog.ui line 478
 #: displaydialog.cpp:2364 rc.cpp:83
 #, no-c-format
-msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+msgid ""
+"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
 "Wenn Sie den ATI-Treiber (fglrx) verwenden können Sie die Farbtiefe nicht "
 "verändern."
@@ -1630,7 +1632,8 @@ msgid ""
 "CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
 "(Internet Printing Protocol), and has its own filtering driver model for "
 "handling various document types."
-msgstr "Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
+msgstr ""
+"Cups (Common UNIX Printing System) ist ein System zum Verwalten von Druckern."
 
 #: services.cpp:71 services.cpp:298
 msgid ""
@@ -1714,7 +1717,8 @@ msgid ""
 "wireless communication. Most laptops sold today are equipped with an IrDA "
 "compliant infrared transceiver, which enables you to communicate with "
 "devices such as printers, modems, fax, LAN, and other laptops."
-msgstr "IrDA (Infrared Data Association) ist ein Dienst zur Infrarotkommunikation."
+msgstr ""
+"IrDA (Infrared Data Association) ist ein Dienst zur Infrarotkommunikation."
 
 #: services.cpp:290
 msgid ""
@@ -1730,7 +1734,8 @@ msgid "Isndutils is only for use with an internal ISDN adapter."
 msgstr "Isndutils ist für interne ISDN Adapter entwickelt."
 
 #: services.cpp:294
-msgid "klogd is a system daemon which intercepts and logs Linux kernel messages."
+msgid ""
+"klogd is a system daemon which intercepts and logs Linux kernel messages."
 msgstr "Der klogd ist ein Dienst der Kernelmeldungen protokolliert."
 
 #: services.cpp:296
@@ -1783,7 +1788,8 @@ msgstr "Sysklogd ist ein Dienst der Systemmeldungen protokolliert."
 
 #: services.cpp:312
 msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
-msgstr "TiMidity++ ist ein qualitativ hochwertiger \"Software-Only\"-MIDI-Sequenzer."
+msgstr ""
+"TiMidity++ ist ein qualitativ hochwertiger \"Software-Only\"-MIDI-Sequenzer."
 
 #: services.cpp:314
 msgid "Linux Video Disk Recorder (vdr)"
@@ -1849,4 +1855,3 @@ msgstr ""
 "Es gibt noch einen unbeendeten Prozess im Kontrollzentrum. Es wird "
 "empfohlen, das Programm noch nicht zu beenden! Soll trotzdem fortgefahren "
 "werden?"
-

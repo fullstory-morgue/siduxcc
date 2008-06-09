@@ -21,12 +21,12 @@ function ssftInfos()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "sidux Version")" \
-			"$(eval_gettext "Infobash")"
+			"$(eval_gettext "sidux version")" \
+			"$(eval_gettext "infobash")"
 	
 		case $SSFT_RESULT in
-				"$(eval_gettext "sidux Version")" ) ssft_display_message "${Title}" "$(eval_gettext "You are using ") $(siduxVersion)";;
-				"$(eval_gettext "Infobash")" )
+				"$(eval_gettext "sidux version")" ) ssft_display_message "${Title}" "$(eval_gettext "You are using ") $(siduxVersion)";;
+				"$(eval_gettext "infobash")" )
 					clear
 					infobash -v3
 					echo

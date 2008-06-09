@@ -68,8 +68,6 @@ int main(int argc, char **argv)
 		// no session.. just siduxcc up normally
 		KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
-		/// @todo do something with the command line args here
-
 		mainWin = new start();
 		app.setMainWidget( mainWin );
 		mainWin->show();

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-05-30 12:41+0200\n"
-"PO-Revision-Date: 2008-04-07 15:01+0200\n"
+"PO-Revision-Date: 2008-06-09 12:58+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -50,21 +50,21 @@ msgstr ""
 
 #. i18n: file ./consoledialog.ui line 41
 #: consoledialog.cpp:114 rc.cpp:707
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+T"
-msgstr "Alt+O"
+msgstr "Alt+T"
 
 #. i18n: file ./consoledialog.ui line 57
 #: consoledialog.cpp:115 rc.cpp:710
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Sho&w Details"
 msgstr "to&on lijst"
 
 #. i18n: file ./consoledialog.ui line 60
 #: consoledialog.cpp:116 rc.cpp:713
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+W"
-msgstr "Alt+O"
+msgstr "Alt+W"
 
 #. i18n: file ./displaydialog.ui line 241
 #: display.cpp:191 display.cpp:246 displaydialog.cpp:2349 rc.cpp:51
@@ -412,7 +412,7 @@ msgstr "Fonts (fix-fonts)"
 
 #. i18n: file ./displaydialog.ui line 1125
 #: displaydialog.cpp:2399 rc.cpp:176
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Register Fo&nts"
 msgstr "Registreer f&onts"
 
@@ -445,7 +445,7 @@ msgstr "Alt+t"
 
 #. i18n: file ./displaydialog.ui line 1187
 #: displaydialog.cpp:2403 rc.cpp:188
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "restart &X-Server"
 msgstr "Herstart &X-Sever"
 
@@ -726,7 +726,7 @@ msgstr "---"
 
 #. i18n: file ./kerneldialog.ui line 241
 #: kerneldialog.cpp:832 rc.cpp:744
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install automatic new kernels during dist-&updates."
 msgstr "Installeer &automatisch nieuwe kernels tijdens de dist-updates."
 
@@ -745,15 +745,15 @@ msgstr "huidige kernel"
 
 #. i18n: file ./kerneldialog.ui line 333
 #: kerneldialog.cpp:836 rc.cpp:754
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "re&move"
 msgstr "verwijder"
 
 #. i18n: file ./kerneldialog.ui line 336
 #: kerneldialog.cpp:837 rc.cpp:757
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+M"
-msgstr "Alt+O"
+msgstr "Alt+M"
 
 #. i18n: file ./kerneldialog.ui line 415
 #: kerneldialog.cpp:839 rc.cpp:761
@@ -1091,9 +1091,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1279
 #: networkdialog.cpp:1997 rc.cpp:433
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Nameserver:"
-msgstr "Nameservers vastleggen"
+msgstr "Nameservers:"
 
 #. i18n: file ./networkdialog.ui line 1290
 #. i18n: file ./networkdialog.ui line 1331
@@ -1850,17 +1850,3 @@ msgid ""
 "There is still a running process in the control center. It's recommended not "
 "to close the apllication now! Do you want to close it anyway?"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Alt+R"
-#~ msgstr "Alt+O"
-
-#~ msgid ""
-#~ "Don't close the window, before you see the message \"Process done!\"."
-#~ msgstr "Venster niet sluiten totdat \"Process done!\". verschijnt."
-
-#~ msgid "Set nameservers"
-#~ msgstr "Nameservers vastleggen"
-
-#~ msgid "DNS Servers"
-#~ msgstr "DNS Servers"

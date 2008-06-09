@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: siduxcckde\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-05-30 12:41+0200\n"
-"PO-Revision-Date: 2007-10-25 20:13+0200\n"
+"PO-Revision-Date: 2008-06-09 12:40+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,9 +28,8 @@ msgid ""
 msgstr "zonker@greenin.dk"
 
 #: console.cpp:100
-#, fuzzy
 msgid "Show details"
-msgstr "Opgraderbare pakker"
+msgstr ""
 
 #: console.cpp:105
 msgid "Hide details"
@@ -50,9 +49,9 @@ msgstr ""
 
 #. i18n: file ./consoledialog.ui line 41
 #: consoledialog.cpp:114 rc.cpp:707
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+T"
-msgstr "Alt+Y"
+msgstr "Alt+T"
 
 #. i18n: file ./consoledialog.ui line 57
 #: consoledialog.cpp:115 rc.cpp:710
@@ -62,9 +61,9 @@ msgstr ""
 
 #. i18n: file ./consoledialog.ui line 60
 #: consoledialog.cpp:116 rc.cpp:713
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+W"
-msgstr "Alt+O"
+msgstr "Alt+W"
 
 #. i18n: file ./displaydialog.ui line 241
 #: display.cpp:191 display.cpp:246 displaydialog.cpp:2349 rc.cpp:51
@@ -89,7 +88,7 @@ msgstr "Display"
 
 #. i18n: file ./displaydialog.ui line 45
 #: displaydialog.cpp:2333 rc.cpp:6
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Change resolution & frequency"
 msgstr "Skannings frekvens"
 
@@ -107,7 +106,7 @@ msgstr ""
 
 #. i18n: file ./displaydialog.ui line 69
 #: displaydialog.cpp:2336 rc.cpp:15
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Install graphiccard-drivers"
 msgstr "Installer driver"
 
@@ -193,7 +192,7 @@ msgstr "1600x1200"
 
 #. i18n: file ./displaydialog.ui line 303
 #: displaydialog.cpp:2351 rc.cpp:54
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Scanning Frequency"
 msgstr "Skannings frekvens"
 
@@ -386,7 +385,7 @@ msgstr "fglrx"
 #: displaydialog.cpp:2391 rc.cpp:155
 #, no-c-format
 msgid "vboxvideo"
-msgstr ""
+msgstr "vboxvideo"
 
 #. i18n: file ./displaydialog.ui line 1009
 #: displaydialog.cpp:2395 rc.cpp:164
@@ -396,7 +395,7 @@ msgstr "ATI/Nvidia (Non-Free)"
 
 #. i18n: file ./displaydialog.ui line 1049
 #: displaydialog.cpp:2396 rc.cpp:167
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "I&nstall driver"
 msgstr "Installer driver"
 
@@ -408,7 +407,7 @@ msgstr "Fonte (fix-fonts)"
 
 #. i18n: file ./displaydialog.ui line 1125
 #: displaydialog.cpp:2399 rc.cpp:176
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Register Fo&nts"
 msgstr "Registrer Fonte"
 
@@ -441,7 +440,7 @@ msgstr "Alt+B"
 
 #. i18n: file ./displaydialog.ui line 1187
 #: displaydialog.cpp:2403 rc.cpp:188
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "restart &X-Server"
 msgstr "Genstart X-Server"
 
@@ -711,21 +710,21 @@ msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 333
 #: kerneldialog.cpp:836 rc.cpp:754
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "re&move"
 msgstr "fjern"
 
 #. i18n: file ./kerneldialog.ui line 336
 #: kerneldialog.cpp:837 rc.cpp:757
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+M"
-msgstr "Alt+Y"
+msgstr "Alt+M"
 
 #. i18n: file ./kerneldialog.ui line 415
 #: kerneldialog.cpp:839 rc.cpp:761
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Sh&ow metapackages"
-msgstr "Opgraderbare pakker"
+msgstr ""
 
 #. i18n: file ./kerneldialog.ui line 426
 #: kerneldialog.cpp:841 rc.cpp:767
@@ -748,7 +747,7 @@ msgstr "Alt+A"
 
 #. i18n: file ./kerneldialog.ui line 440
 #: kerneldialog.cpp:843 rc.cpp:773
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "i&nstall"
 msgstr "installer"
 
@@ -769,19 +768,16 @@ msgid "Developer of the knxcc"
 msgstr "Udviklerne af knxcc"
 
 #: main.cpp:49
-#, fuzzy
 msgid "Developer of ceni and fw-detect"
-msgstr "Udviklerne af knxcc"
+msgstr ""
 
 #: main.cpp:50
-#, fuzzy
 msgid "Icon"
 msgstr "Handling"
 
 #: network.cpp:240 network.cpp:250
-#, fuzzy
 msgid "Mac Address"
-msgstr "<b>Mac Addresse:</b>"
+msgstr "Mac Addresse"
 
 #. i18n: file ./servicesdialog.ui line 311
 #. i18n: file ./networkdialog.ui line 157
@@ -814,7 +810,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 962
 #: network.cpp:700 networkdialog.cpp:1976 rc.cpp:391
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Detected"
 msgstr "detekteret"
 
@@ -826,7 +822,7 @@ msgstr "Interface"
 
 #. i18n: file ./networkdialog.ui line 287
 #: networkdialog.cpp:1499 networkdialog.cpp:1959 rc.cpp:345
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "IP address"
 msgstr "IP adresse"
 
@@ -892,9 +888,9 @@ msgstr "Netværk"
 
 #. i18n: file ./networkdialog.ui line 45
 #: networkdialog.cpp:1944 rc.cpp:302
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Configure network cards"
-msgstr "Liste over konfigurerede netværks enheder"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 53
 #: networkdialog.cpp:1945 rc.cpp:305
@@ -916,9 +912,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 176
 #: networkdialog.cpp:1950 rc.cpp:318
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "MAC address"
-msgstr "<b>Mac Addresse:</b>"
+msgstr "Mac Addresse:"
 
 #. i18n: file ./networkdialog.ui line 204
 #: networkdialog.cpp:1951 rc.cpp:321
@@ -988,7 +984,7 @@ msgstr "Installer"
 
 #. i18n: file ./networkdialog.ui line 967
 #: networkdialog.cpp:1977 rc.cpp:394
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "All"
 msgstr "alt"
 
@@ -1024,13 +1020,13 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1157
 #: networkdialog.cpp:1989 rc.cpp:416
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "auto"
 msgstr "tilpasset"
 
 #. i18n: file ./networkdialog.ui line 1185
 #: networkdialog.cpp:1990 rc.cpp:419
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<b>Method:</b>"
 msgstr "<b>Beskrivelse:</b>"
 
@@ -1042,9 +1038,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1196
 #: networkdialog.cpp:1993 rc.cpp:425
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "static"
-msgstr "ati"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1246
 #: networkdialog.cpp:1996 rc.cpp:430
@@ -1054,7 +1050,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1279
 #: networkdialog.cpp:1997 rc.cpp:433
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Nameserver:"
 msgstr "Vælg tjeneste"
 
@@ -1088,9 +1084,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1342
 #: networkdialog.cpp:2002 rc.cpp:448
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "IP address:"
-msgstr "IP adresse"
+msgstr "IP adresse:"
 
 #. i18n: file ./networkdialog.ui line 1353
 #: networkdialog.cpp:2004 rc.cpp:454
@@ -1100,9 +1096,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1361
 #: networkdialog.cpp:2005 rc.cpp:457
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Netmask:"
-msgstr "Netværk"
+msgstr "Netværk:"
 
 #. i18n: file ./networkdialog.ui line 1369
 #: networkdialog.cpp:2006 rc.cpp:460
@@ -1118,9 +1114,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1388
 #: networkdialog.cpp:2009 rc.cpp:469
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Network:"
-msgstr "Netværk"
+msgstr "Netværk:"
 
 #. i18n: file ./networkdialog.ui line 1407
 #: networkdialog.cpp:2012 rc.cpp:478
@@ -1136,13 +1132,13 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1460
 #: networkdialog.cpp:2016 rc.cpp:490
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Channel/ Frequency"
-msgstr "Skannings frekvens"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1474
 #: networkdialog.cpp:2017 rc.cpp:493
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&Auto"
 msgstr "tilpasset"
 
@@ -1160,9 +1156,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1502
 #: networkdialog.cpp:2022 rc.cpp:508
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+Q"
-msgstr "Alt+Y"
+msgstr "Alt+Q"
 
 #. i18n: file ./networkdialog.ui line 1521
 #: networkdialog.cpp:2023 rc.cpp:511
@@ -1190,9 +1186,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1564
 #: networkdialog.cpp:2027 rc.cpp:523
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "iwspy:"
-msgstr "Display"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1572
 #: networkdialog.cpp:2028 rc.cpp:526
@@ -1208,7 +1204,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1618
 #: networkdialog.cpp:2030 rc.cpp:532
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<b>Mode:</b>"
 msgstr "<b>Beskrivelse:</b>"
 
@@ -1244,7 +1240,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1654
 #: networkdialog.cpp:2038 rc.cpp:551
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Auto"
 msgstr "tilpasset"
 
@@ -1256,7 +1252,7 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1753
 #: networkdialog.cpp:2044 rc.cpp:560
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "None"
 msgstr "Bemærk"
 
@@ -1274,9 +1270,9 @@ msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1791
 #: networkdialog.cpp:2047 rc.cpp:569
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "<b>Preshared Key:</b>"
-msgstr "<b>Beskrivelse:</b>"
+msgstr ""
 
 #. i18n: file ./networkdialog.ui line 1807
 #: networkdialog.cpp:2048 rc.cpp:572
@@ -1343,9 +1339,9 @@ msgstr "Handling"
 
 #. i18n: file ./servicesdialog.ui line 391
 #: rc.cpp:239 servicesdialog.cpp:696
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "St&art"
-msgstr "Status"
+msgstr ""
 
 #. i18n: file ./servicesdialog.ui line 419
 #: rc.cpp:251 servicesdialog.cpp:700
@@ -1355,19 +1351,19 @@ msgstr "Genstart"
 
 #. i18n: file ./servicesdialog.ui line 433
 #: rc.cpp:255 servicesdialog.cpp:702
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Re&load"
 msgstr "Genindlæs"
 
 #. i18n: file ./servicesdialog.ui line 436
 #: rc.cpp:258 servicesdialog.cpp:703
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+L"
-msgstr "Alt+Y"
+msgstr "Alt+L"
 
 #. i18n: file ./servicesdialog.ui line 466
 #: rc.cpp:261 servicesdialog.cpp:704
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Start service at &Boot"
 msgstr "Tilføj en runlevel-entry (start tjenesten ved opstart)"
 
@@ -1403,7 +1399,7 @@ msgstr "Software"
 
 #. i18n: file ./softwaredialog.ui line 48
 #: rc.cpp:608 softwaredialog.cpp:756
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Show upgradable packages"
 msgstr "Opgraderbare pakker"
 
@@ -1433,7 +1429,7 @@ msgstr "Nyeste Version"
 
 #. i18n: file ./softwaredialog.ui line 233
 #: rc.cpp:623 softwaredialog.cpp:761
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Clea&n"
 msgstr "Ryd"
 
@@ -1531,7 +1527,7 @@ msgstr ""
 #. i18n: file ./startdialog.ui line 507
 #. i18n: file ./startdialog.ui line 510
 #: rc.cpp:813 rc.cpp:816 startdialog.cpp:3511 startdialog.cpp:3512
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "About siduxcc"
 msgstr "Om sidux"
 
@@ -1546,9 +1542,9 @@ msgstr "Afslut"
 #. i18n: file ./startdialog.ui line 538
 #. i18n: file ./startdialog.ui line 541
 #: rc.cpp:826 rc.cpp:829 startdialog.cpp:3516 startdialog.cpp:3517
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "About KDE"
-msgstr "Om sidux"
+msgstr "Om KDE"
 
 #. i18n: file ./startdialog.ui line 552
 #. i18n: file ./startdialog.ui line 555
@@ -1564,7 +1560,6 @@ msgstr ""
 "server."
 
 #: services.cpp:70 services.cpp:280
-#, fuzzy
 msgid ""
 "CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
 "(Internet Printing Protocol), and has its own filtering driver model for "
@@ -1746,7 +1741,6 @@ msgid "Don't make a dist-Upgrade!"
 msgstr "Foretag ikke dist-upgrade!"
 
 #: software.cpp:158
-#, fuzzy
 msgid ""
 "To update your system you have to leave the graphic modus. Press for this CTR"
 "+ALT+F1, login as root and type init 3. After that run the command smxi or "
@@ -1769,137 +1763,3 @@ msgid ""
 "There is still a running process in the control center. It's recommended not "
 "to close the apllication now! Do you want to close it anyway?"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Alt+R"
-#~ msgstr "Alt+O"
-
-#, fuzzy
-#~ msgid "Set nameservers"
-#~ msgstr "Vælg tjeneste"
-
-#, fuzzy
-#~ msgid "Alt+V"
-#~ msgstr "Alt+Y"
-
-#~ msgid "Process is running!"
-#~ msgstr "Process kører!"
-
-#~ msgid "Process done!"
-#~ msgstr "Process afsluttet"
-
-#~ msgid ""
-#~ "The Common UNIX Printing System (or CUPS(tm)) is a printing system and "
-#~ "general replacement for lpd and the like."
-#~ msgstr ""
-#~ "Common UNIX Printing System (eller CUPS(tm)) er et printsystem og generel "
-#~ "afløser for lpd og deslige."
-
-#, fuzzy
-#~ msgid "ins&tall"
-#~ msgstr "installer"
-
-#~ msgid "Configure Networkcards"
-#~ msgstr "Liste over konfigurerede netværks enheder"
-
-#, fuzzy
-#~ msgid "Artwork"
-#~ msgstr "Netværk"
-
-#, fuzzy
-#~ msgid "Newest experimental kernel:"
-#~ msgstr "eksperimentiel"
-
-#, fuzzy
-#~ msgid "inst&all Kernel"
-#~ msgstr "Installeret Version"
-
-#, fuzzy
-#~ msgid "description"
-#~ msgstr "Beskrivelse"
-
-#~ msgid "Are you sure you want to remove the stored kernel files?"
-#~ msgstr "Er du sikker på at du vil installere en ny kernel?"
-
-#, fuzzy
-#~ msgid "cle&ar"
-#~ msgstr "Ryd"
-
-#~ msgid "Alt+D"
-#~ msgstr "Alt+D"
-
-#~ msgid "Delete Ru&nlevel-Entry"
-#~ msgstr "Fjern runlevel-entry"
-
-#, fuzzy
-#~ msgid "IP address    "
-#~ msgstr "IP adresse"
-
-#, fuzzy
-#~ msgid "System-Info"
-#~ msgstr "System Info"
-
-#~ msgid "Boot"
-#~ msgstr "Opstart"
-
-#~ msgid ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-#~ msgstr ""
-#~ "http://ndiswrapper.sourceforge.net/joomla/index.php?/component/option,"
-#~ "com_openwiki/Itemid,33/id,list/"
-
-#~ msgid "sidux-Browser (require root access)"
-#~ msgstr "sidux-Browser (kræver root adgang)"
-
-#~ msgid "Alt+C"
-#~ msgstr "Alt+C"
-
-#~ msgid "xxx"
-#~ msgstr "xxx"
-
-#, fuzzy
-#~ msgid "Alt+G"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "I&nterface"
-#~ msgstr "Interface"
-
-#, fuzzy
-#~ msgid "Alt+S"
-#~ msgstr "Alt+Y"
-
-#, fuzzy
-#~ msgid "&IP address"
-#~ msgstr "IP adresse"
-
-#, fuzzy
-#~ msgid "pri&vate"
-#~ msgstr "Upgrade"
-
-#, fuzzy
-#~ msgid "64 bit"
-#~ msgstr "16 bit"
-
-#, fuzzy
-#~ msgid "128 bit"
-#~ msgstr "8 bit"
-
-#, fuzzy
-#~ msgid "152 bit"
-#~ msgstr "15 bit"
-
-#, fuzzy
-#~ msgid "256 bit"
-#~ msgstr "15 bit"
-
-#~ msgid "local kernel"
-#~ msgstr "Lokal kernel:"
-
-#~ msgid "The versions of the new and the current Kernel are the same!"
-#~ msgstr ""
-#~ "Versionsnummeret på den nye og den installerede Kernel er det samme!"
-
-#~ msgid "No internet connection!"
-#~ msgstr "Ingen internet forbindelse!"

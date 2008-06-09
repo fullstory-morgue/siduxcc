@@ -17,7 +17,7 @@ testRoot()
 }
 
 
-Title="sidux Control Center"
+Title="sidux control center"
 SEARCHPATH="/usr/share/siduxcc"
 
 export TEXTDOMAINDIR="/usr/share/locale"

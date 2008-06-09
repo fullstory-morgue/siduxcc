@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-26 21:18+0200\n"
-"PO-Revision-Date: 2008-03-09 14:55+0000\n"
-"Last-Translator: Rui Umbelino (VaMPiRiC_CRoW)\n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2008-06-09 12:27+0200\n"
+"PO-Revision-Date: 2008-06-09 13:09+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,8 +61,8 @@ msgid "Default Color Depth"
 msgstr "Profundidade da Cor, por omissão:"
 
 #: modules/display.bm:331 modules/display.bm:375 modules/info.bm:33
-#: modules/kernel.bm:28 modules/kernel.bm:81 modules/kernel.bm:99
-#: modules/kernel.bm:135 modules/network.bm:115 modules/software.bm:68
+#: modules/kernel.bm:28 modules/kernel.bm:68 modules/kernel.bm:86
+#: modules/kernel.bm:122 modules/network.bm:115 modules/software.bm:68
 #: modules/software.bm:77 modules/software.bm:86 modules/software.bm:97
 #, sh-format
 msgid "Press <Enter> to continue..."
@@ -73,7 +73,7 @@ msgstr "Pressione '<Enter>' para continuar..."
 msgid "Select the file that should be restore"
 msgstr "Seleccione o ficheiro que deverá ser restaurado"
 
-#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:174
+#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:161
 #: modules/network.bm:129 modules/services.bm:15 modules/services.bm:35
 #: modules/services.bm:57 modules/software.bm:209
 #, sh-format
@@ -82,42 +82,42 @@ msgstr ""
 
 #: modules/display.bm:390 modules/display.bm:401
 #, sh-format
-msgid "Change resolution"
+msgid "set max resolution"
 msgstr "Alterar resolução"
 
 #: modules/display.bm:391 modules/display.bm:402
 #, sh-format
-msgid "Set scanning frequency"
+msgid "set scanning frequency"
 msgstr "Definir a frequência de verificação"
 
 #: modules/display.bm:392 modules/display.bm:403
 #, sh-format
-msgid "Change DPI-settings"
+msgid "set screen DPI"
 msgstr "Alterar definições DPI"
 
 #: modules/display.bm:393 modules/display.bm:404
 #, sh-format
-msgid "Change color-depth"
+msgid "set color depth"
 msgstr "Alterar profundidade da cor"
 
 #: modules/display.bm:394 modules/display.bm:405
 #, sh-format
-msgid "Remove modelines"
+msgid "remove modelines"
 msgstr "Remover modelines"
 
 #: modules/display.bm:395 modules/display.bm:408
 #, sh-format
-msgid "Restore X-Server"
+msgid "restore X-Server"
 msgstr "Restaurar Servidor X"
 
 #: modules/display.bm:406
 #, sh-format
-msgid "Register/Repair fonts"
+msgid "register/repair fonts"
 msgstr "Registar/Reparar fontes"
 
 #: modules/display.bm:407
 #, sh-format
-msgid "Restart X-Server"
+msgid "restart X-Server"
 msgstr "Reiniciar Servidor X"
 
 #: modules/info.bm:10
@@ -127,12 +127,12 @@ msgstr "Informações"
 
 #: modules/info.bm:24 modules/info.bm:28
 #, sh-format
-msgid "sidux Version"
+msgid "sidux version"
 msgstr "sidux Versão"
 
 #: modules/info.bm:25 modules/info.bm:29
 #, sh-format
-msgid "Infobash"
+msgid "infobash"
 msgstr "Informação"
 
 #: modules/info.bm:28
@@ -147,34 +147,34 @@ msgstr "Kernel"
 
 #: modules/kernel.bm:16
 #, sh-format
-msgid "Kernel-remover is missing! Do you want do install it?"
+msgid "kernel-remover is missing! Do you want do install it?"
 msgstr "Não tem o \"Kernel-remover\"! Deseja instalá-lo? "
 
-#: modules/kernel.bm:27 modules/kernel.bm:98 modules/kernel.bm:134
+#: modules/kernel.bm:27 modules/kernel.bm:85 modules/kernel.bm:121
 #: modules/network.bm:114 modules/software.bm:67 modules/software.bm:76
 #: modules/software.bm:85 modules/software.bm:96
 #, sh-format
 msgid "Process done!"
 msgstr "Processo terminado!"
 
-#: modules/kernel.bm:80
+#: modules/kernel.bm:67
 #, sh-format
 msgid "The installation is finished!"
 msgstr "A instalação terminou!"
 
-#: modules/kernel.bm:175 modules/kernel.bm:179
+#: modules/kernel.bm:162 modules/kernel.bm:166
 #, sh-format
-msgid "Run kernel-remover"
+msgid "run kernel-remover"
 msgstr "Executar o \"kernel-remover\""
 
-#: modules/kernel.bm:176 modules/kernel.bm:180
+#: modules/kernel.bm:163 modules/kernel.bm:167
 #, sh-format
-msgid "Update kernel"
+msgid "update kernel"
 msgstr "Actualizar o Kernel"
 
 #: modules/network.bm:11
 #, sh-format
-msgid "Network"
+msgid "network"
 msgstr "Rede"
 
 #: modules/network.bm:42
@@ -184,46 +184,46 @@ msgstr "Insira um novo nome da máquina:"
 
 #: modules/network.bm:130 modules/network.bm:134
 #, sh-format
-msgid "Configure network cards"
+msgid "configure network adapters"
 msgstr "Configurar placas de rede"
 
 #: modules/network.bm:131 modules/network.bm:135
 #, sh-format
-msgid "Set hostname"
+msgid "set hostname"
 msgstr "Definir o nome da máquina"
 
 #: modules/services.bm:10
 #, sh-format
-msgid "Services"
+msgid "services"
 msgstr "Serviços"
 
 #: modules/services.bm:16 modules/services.bm:23
-#, fuzzy, sh-format
-msgid "Web server (Apache2)"
+#, sh-format
+msgid "web server (apache2)"
 msgstr "Servidor Web"
 
 #: modules/services.bm:17 modules/services.bm:24
 #, sh-format
-msgid "Print server"
+msgid "print server"
 msgstr "Servidor de Impressão"
 
 #: modules/services.bm:18 modules/services.bm:25
 #, sh-format
-msgid "SQL database server"
+msgid "MySQL database server"
 msgstr "Servidor de Base de Dados (SQL)"
 
 #: modules/services.bm:19 modules/services.bm:26
 #, sh-format
-msgid "Secure shell server"
+msgid "secure shell server"
 msgstr "Servidor de Secure Shell"
 
 #: modules/services.bm:20 modules/services.bm:27
 #, sh-format
-msgid "Samba server"
+msgid "samba server"
 msgstr "Servidor Samba"
 
 #: modules/services.bm:36
-#, fuzzy, sh-format
+#, sh-format
 msgid "start"
 msgstr "Reiniciar agora"
 
@@ -233,43 +233,53 @@ msgid "stop"
 msgstr ""
 
 #: modules/services.bm:38
-#, fuzzy, sh-format
+#, sh-format
 msgid "restart"
 msgstr "Reiniciar agora"
 
 #: modules/services.bm:39
-#, fuzzy, sh-format
+#, sh-format
 msgid "reload"
 msgstr "Recarregar agora"
 
-#: modules/services.bm:40 modules/services.bm:46
+#: modules/services.bm:40
 #, sh-format
-msgid "Add a Runlevel-Entry"
+msgid "add a run-level entry"
 msgstr "Adicionar uma entrada no Runlevel"
 
-#: modules/services.bm:41 modules/services.bm:47
+#: modules/services.bm:41
 #, sh-format
-msgid "Delete Runlevel-Entry"
+msgid "delete run-level entry"
+msgstr "Apagar a entrada no Runlevel"
+
+#: modules/services.bm:46
+#, sh-format
+msgid "add a run level entry"
+msgstr "Adicionar uma entrada no Runlevel"
+
+#: modules/services.bm:47
+#, sh-format
+msgid "delete run level entry"
 msgstr "Apagar a entrada no Runlevel"
 
 #: modules/services.bm:58 modules/services.bm:62
 #, sh-format
-msgid "Enable/Disable Services at Boot"
+msgid "enable/disable services at boot"
 msgstr "Activar/Desactivar Serviços de Arranque"
 
 #: modules/services.bm:59 modules/services.bm:63
 #, sh-format
-msgid "Manage Services"
+msgid "manage services"
 msgstr "Gerir os Serviços"
 
 #: modules/software.bm:10
 #, sh-format
-msgid "Software"
+msgid "software"
 msgstr "Software"
 
 #: modules/software.bm:30
 #, sh-format
-msgid "You must be in runlevel 3 and out of X to run this script."
+msgid "You must be in run-level 3 and out of X to run this script."
 msgstr ""
 "Tem de estar no nível de execução 3 (init 3) e fora do X para executar este "
 "programa."
@@ -277,34 +287,43 @@ msgstr ""
 #: modules/software.bm:35
 #, sh-format
 msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings. Dou want to continuo anyway?"
+"No connection to sidux.com. It wasn't possible to test if there any dist-"
+"upgrade warnings. Do you want to continuo anyway?"
 msgstr ""
 "Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de "
 "Actualização da Distribuição. Deseja continuar de qualquer forma?"
 
-#: modules/software.bm:43 modules/software.bm:165
+#: modules/software.bm:43
 #, sh-format
 msgid ""
-"There are DU-warnings please. Don't make a dist-Upgrade! Please visit sidux."
-"com for more information!"
+"There are dist-upgrade warnings.  Please don't run a dist-upgrade! Visit "
+"sidux.com and our forums for more information!"
 msgstr ""
 "Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por "
 "favor, visite a página \"sidux.com\" para mais informação!"
 
 #: modules/software.bm:46 modules/software.bm:167
 #, sh-format
-msgid "At the moment there are no DU-warnings!"
+msgid "At the moment there are no dist-upgrade warnings!"
 msgstr "Neste momento não existem Avisos de Actualização da Distribuição!"
 
 #: modules/software.bm:162
-#, fuzzy, sh-format
+#, sh-format
 msgid ""
-"No connection to sidux.com. It wasn't possible to test if there any Dist-"
-"Upgrade Warnings"
+"No connection to sidux.com. It wasn't possible to test if there were any "
+"dist-upgrade warnings"
 msgstr ""
 "Sem ligação ao sidux.com. Não foi possível testar se existem Avisos de "
 "Actualização da Distribuição. Deseja continuar de qualquer forma?"
+
+#: modules/software.bm:165
+#, sh-format
+msgid ""
+"There are dist-upgrde warnings please. Don't run a dist-upgrade!  Visit "
+"sidux.com and our forums for more information!"
+msgstr ""
+"Existem Avisos de Actualização da Distribuição. Não faça a Actualização! Por "
+"favor, visite a página \"sidux.com\" para mais informação!"
 
 #: modules/software.bm:173
 #, sh-format
@@ -313,65 +332,20 @@ msgstr "Por favor, escolha uma data..."
 
 #: modules/software.bm:210 modules/software.bm:216
 #, sh-format
-msgid "Run smxi (software update)"
+msgid "run smxi (software update)"
 msgstr ""
 
 #: modules/software.bm:211 modules/software.bm:217
 #, sh-format
-msgid "Run dist-upgrade"
+msgid "run a dist-upgrade only"
 msgstr "Executar a Actualização da Distribuição"
 
 #: modules/software.bm:212 modules/software.bm:218
 #, sh-format
-msgid "Show DU warnings"
+msgid "show DU warnings"
 msgstr "Mostrar Avisos da Actualização da Distribuição"
 
 #: modules/interface:19
 #, sh-format
 msgid "Main Menu"
 msgstr "Menu Principal"
-
-#~ msgid "sidux-Control-Center"
-#~ msgstr "sidux Centro de Controlo"
-
-#~ msgid "Install Ati/nVidia 3d drivers"
-#~ msgstr "Instalar controladores 3D ATI/NVIDIA"
-
-#~ msgid "Return to main menu"
-#~ msgstr "Retornar ao menu principal"
-
-#~ msgid "Error: This module is not implemented yet!"
-#~ msgstr "Erro: Este modulo ainda não está implementado!"
-
-#~ msgid "Select a kernel"
-#~ msgstr "Seleccionar um kernel"
-
-#~ msgid "The versions of the new and the current Kernel are the same!"
-#~ msgstr "As versões do actual e do novo Kernel são as mesmas!"
-
-#~ msgid "Start now"
-#~ msgstr "Iniciar agora"
-
-#~ msgid "Stop now"
-#~ msgstr "Parar agora"
-
-#~ msgid "Restart now"
-#~ msgstr "Reiniciar agora"
-
-#~ msgid "Reload now"
-#~ msgstr "Recarregar agora"
-
-#~ msgid "Return to main Menu"
-#~ msgstr "Retornar ao menu principal"
-
-#~ msgid "Boot"
-#~ msgstr "Arranque"
-
-#~ msgid "sidux-update"
-#~ msgstr "sidux-actualização"
-
-#~ msgid "Show DU log"
-#~ msgstr "Mostrar o histórico da Actualização da Distribuição"
-
-#~ msgid "Exit"
-#~ msgstr "Sair"

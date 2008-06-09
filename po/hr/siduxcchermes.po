@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-30 12:41+0200\n"
+"POT-Creation-Date: 2008-06-09 12:22+0200\n"
 "PO-Revision-Date: 2007-11-18 21:55+0100\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -86,8 +86,10 @@ msgstr ""
 msgid "&News"
 msgstr ""
 
-#: hermesbase.cpp:403
-msgid "Sm&xi Advices"
+#. i18n: file ./hermesbase.ui line 101
+#: hermesbase.cpp:403 rc.cpp:33
+#, no-c-format
+msgid "Smxi Ad&vice"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 119
@@ -242,12 +244,6 @@ msgstr ""
 
 #: main.cpp:45
 msgid "Icon"
-msgstr ""
-
-#. i18n: file ./hermesbase.ui line 101
-#: rc.cpp:33
-#, no-c-format
-msgid "Smxi Ad&vice"
 msgstr ""
 
 #: systray.cpp:43

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-30 12:41+0200\n"
-"PO-Revision-Date: 2007-11-20 01:25+0100\n"
+"POT-Creation-Date: 2008-06-09 12:22+0200\n"
+"PO-Revision-Date: 2008-06-09 12:31+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -85,13 +85,15 @@ msgstr ""
 msgid "&News"
 msgstr ""
 
-#: hermesbase.cpp:403
-msgid "Sm&xi Advices"
+#. i18n: file ./hermesbase.ui line 101
+#: hermesbase.cpp:403 rc.cpp:33
+#, no-c-format
+msgid "Smxi Ad&vice"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 119
 #: hermesbase.cpp:407 rc.cpp:36
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Upgrada&ble packages"
 msgstr "Opgraderbare pakker"
 
@@ -134,9 +136,9 @@ msgstr ""
 
 #. i18n: file ./hermesbase.ui line 357
 #: hermesbase.cpp:418 rc.cpp:72
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+A"
-msgstr "Alt+O"
+msgstr "Alt+A"
 
 #. i18n: file ./hermesbase.ui line 363
 #: hermesbase.cpp:419 rc.cpp:75
@@ -180,7 +182,7 @@ msgstr ""
 
 #. i18n: file ./hermesbase.ui line 408
 #: hermesbase.cpp:432 rc.cpp:98
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
@@ -202,13 +204,13 @@ msgstr ""
 
 #. i18n: file ./hermesbase.ui line 425
 #: hermesbase.cpp:438 rc.cpp:110
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+C"
-msgstr "Alt+O"
+msgstr "Alt+C"
 
 #. i18n: file ./legendbase.ui line 16
 #: legendbase.cpp:434 rc.cpp:3
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "legendbase"
 msgstr "Signaturforklaring"
 
@@ -245,12 +247,6 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 
-#. i18n: file ./hermesbase.ui line 101
-#: rc.cpp:33
-#, no-c-format
-msgid "Smxi Ad&vice"
-msgstr ""
-
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
 msgstr "Forum - Upgrade advarsler"
@@ -278,11 +274,3 @@ msgstr "Vis signaturforklaring"
 #: systray.cpp:50
 msgid "&About siduxcc-hermes"
 msgstr "Om siduxcc-hermes"
-
-#, fuzzy
-#~ msgid "Upgradable pac&kages"
-#~ msgstr "Opgraderbare pakker"
-
-#, fuzzy
-#~ msgid "Upgr&adable packages"
-#~ msgstr "Opgraderbare pakker"

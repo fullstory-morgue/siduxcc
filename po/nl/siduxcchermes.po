@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-30 12:41+0200\n"
-"PO-Revision-Date: 2008-03-27 14:38+0100\n"
+"POT-Creation-Date: 2008-06-09 12:22+0200\n"
+"PO-Revision-Date: 2008-06-09 12:58+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -85,8 +85,10 @@ msgstr "dubbelklikken om het volledige bericht te lezen"
 msgid "&News"
 msgstr "nieuws"
 
-#: hermesbase.cpp:403
-msgid "Sm&xi Advices"
+#. i18n: file ./hermesbase.ui line 101
+#: hermesbase.cpp:403 rc.cpp:33
+#, no-c-format
+msgid "Smxi Ad&vice"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 119
@@ -122,7 +124,7 @@ msgstr "Om een nieuwe kernel te installeren, kan je siduxcc gebruiken."
 
 #. i18n: file ./hermesbase.ui line 182
 #: hermesbase.cpp:416 rc.cpp:48
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "&Kernel"
 msgstr "kernel"
 
@@ -185,9 +187,9 @@ msgstr ""
 
 #. i18n: file ./hermesbase.ui line 408
 #: hermesbase.cpp:432 rc.cpp:98
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Alt+O"
-msgstr "Alt+a"
+msgstr "Alt+O"
 
 #. i18n: file ./hermesbase.ui line 414
 #: hermesbase.cpp:433 rc.cpp:101
@@ -248,12 +250,6 @@ msgstr ""
 #: main.cpp:45
 msgid "Icon"
 msgstr "pictogram"
-
-#. i18n: file ./hermesbase.ui line 101
-#: rc.cpp:33
-#, no-c-format
-msgid "Smxi Ad&vice"
-msgstr ""
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
