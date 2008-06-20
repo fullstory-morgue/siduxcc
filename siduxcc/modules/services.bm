@@ -7,7 +7,7 @@
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module services $(eval_gettext "services")
+register_module services $(eval_gettext "Services")
 
 
 function ssftService1()
@@ -49,6 +49,10 @@ function ssftService2()
 	esac
 }
 
+
+#------------------------------------------------------------------------------#
+#--- menu ---------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function ssftServices()
 {

@@ -8,7 +8,7 @@
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module network $(eval_gettext "network")
+register_module network $(eval_gettext "Network")
 
 
 IFS_SP=" "
@@ -109,16 +109,12 @@ function getOverview()
 function installWlanCard()
 {
 	fw-detect -i "$1"
-
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
 }
 
 
 #------------------------------------------------------------------------------#
-#--- console interface --------------------------------------------------------#
+#--- menu ---------------------------------------------------------------------#
 #------------------------------------------------------------------------------#
 
 

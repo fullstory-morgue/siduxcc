@@ -318,7 +318,7 @@ void network::getNetworkcardSettings()
 
 	QString networkcard = ncList->currentItem()->text(0); // eth0
 	QString type        = ncList->currentItem()->text(6); // ethernet | wireless
-	networkcardTextLabel->setText("Card: "+networkcard);
+	networkcardTextLabel->setText( i18n("Card")+": "+networkcard);
 
 	// get Networkcard settings
 	this->shell->setCommand("Ceni_read_config --iface "+networkcard);

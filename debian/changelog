@@ -1,8 +1,14 @@
 siduxcc (0.10.11) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 10 Jun 2008 01:46:24 +0200
+  [ Fabian Wuertz ]
+  * kde: network: card -> i18n
+  * gtk: desktop: (GTK) added
+  * cli: fDone added
+
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 20 Jun 2008 14:51:29 +0200
 
 siduxcc (0.10.10) unstable; urgency=low
 

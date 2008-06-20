@@ -145,7 +145,7 @@ void kernel::getKernels()
 
 void kernel::getMetapackageStatus()
 {
-	this->shell->setCommand("siduxcc kernel metapackageStatus");
+	this->shell->setCommand("siduxcc kernel getAutoInstallStatus");
 	this->shell->start(true);
 	if( this->shell->getBuffer().stripWhiteSpace() == "enabled" )
 		kernelMetapackageCheckBox->setChecked(TRUE);
@@ -211,11 +211,11 @@ void kernel::hasChanged()
 void kernel::toggleKernelMetapackage()
 {
 	if( kernelMetapackageCheckBox->isChecked() )
-		startConsole("enableMetapackage");
+		startConsole("enableAutoInstall");
 	else
 		if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("It's recommended to not disable this function! Do you want to continue anyway?") ) )
 		{
-			this->shell->setCommand("siduxcc kernel disableMetapackage");
+			this->shell->setCommand("siduxcc kernel disableAutoInstall");
 			this->shell->start(true);
 			getMetapackageStatus();
 		}

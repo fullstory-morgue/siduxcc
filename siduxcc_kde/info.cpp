@@ -27,11 +27,11 @@ info::info(QWidget *parent, const char *name, const QStringList &)
 :InfoDialog(parent, name)
 {
 	this->shell = new Process();
-	this->shell->setCommand("cat /etc/sidux-version");
+	this->shell->setCommand("siduxcc info getSiduxVersion");
 	this->shell->start(true);
 	siduxVersion->setText(this->shell->getBuffer().simplifyWhiteSpace());
 
-	this->shell->setCommand("infobash -v3 1 | perl -pe 's///g;'");
+	this->shell->setCommand("siduxcc info getSystemInfo");
 	this->shell->start(true);
 	infobash->setText(this->shell->getBuffer());
 }

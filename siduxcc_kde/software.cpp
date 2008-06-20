@@ -130,7 +130,7 @@ void software::warning()
 void software::showPackages()
 {
 	uList->clear();
-	this->shell->setCommand("LANG=C apt-show-versions | grep upgradeable");
+	this->shell->setCommand("siduxcc software getUpgradablePackages");
 	this->shell->start(true);
 	QStringList upgrade = QStringList::split( "\n", this->shell->getBuffer() );
 
@@ -161,14 +161,14 @@ void software::upgrade()
 
 void software::update()
 {
-	QStringList run; run << "update";
+	QStringList run; run << "updatePackageIndex";
 	startConsole(run);
 }
 
 
 void software::download()
 {
-	QStringList run; run << "download";
+	QStringList run; run << "downloadUpgradablePackages";
 	startConsole(run);
 }
 
@@ -177,7 +177,7 @@ void software::clean()
 {
 	if(KMessageBox::Yes == KMessageBox::questionYesNo(this, i18n("Are you sure you want to clear your local repository?") ) )
 	{
-		QStringList run; run << "clean";
+		QStringList run; run << "cleanPackageCache";
 		startConsole(run);
 	}
 }

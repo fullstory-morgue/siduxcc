@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 12:27+0200\n"
+"POT-Creation-Date: 2008-06-20 14:29+0200\n"
 "PO-Revision-Date: 2008-06-09 13:10+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -22,102 +22,154 @@ msgstr ""
 msgid "Error: You must be root to run this script!"
 msgstr "Eroare:Trebuie sa fi root ca sa folosest acest script"
 
+#: siduxcc:22
+#, sh-format
+msgid "Process done!"
+msgstr "Procedeul terminat"
+
+#: siduxcc:23 modules/kernel.bm:89
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Apasati tasta <Enter> ca sa continuati..."
+
+#: siduxcc:27
+#, sh-format
+msgid "sidux Control Center"
+msgstr ""
+
 #: modules/display.bm:9
 #, sh-format
 msgid "Display"
 msgstr "Arata"
 
-#: modules/display.bm:106
+#: modules/display.bm:102
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Alegeti noua rezolutie"
 
-#: modules/display.bm:114
+#: modules/display.bm:110
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Introduceti noua rezolutie"
 
-#: modules/display.bm:154
+#: modules/display.bm:151
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Aveti un monitor TFT?"
 
-#: modules/display.bm:157
+#: modules/display.bm:154
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Intoduceti o noua rata verticala improspatata"
 
-#: modules/display.bm:166
+#: modules/display.bm:163
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "Introduceti o noua rata orizontala sync"
 
-#: modules/display.bm:210
+#: modules/display.bm:206
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Introduceti cadre noi DPI"
 
-#: modules/display.bm:245
+#: modules/display.bm:242
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Profunzime de culoare in absenta "
 
-#: modules/display.bm:331 modules/display.bm:375 modules/info.bm:33
-#: modules/kernel.bm:28 modules/kernel.bm:68 modules/kernel.bm:86
-#: modules/kernel.bm:122 modules/network.bm:115 modules/software.bm:68
-#: modules/software.bm:77 modules/software.bm:86 modules/software.bm:97
+#: modules/display.bm:297
 #, sh-format
-msgid "Press <Enter> to continue..."
-msgstr "Apasati tasta <Enter> ca sa continuati..."
+msgid "Current driver:"
+msgstr ""
 
-#: modules/display.bm:356
+#: modules/display.bm:297 modules/display.bm:340
+#, fuzzy, sh-format
+msgid "Select a new one:"
+msgstr "Alegeti noua rezolutie"
+
+#: modules/display.bm:326 modules/display.bm:340
+#, sh-format
+msgid "enabled"
+msgstr ""
+
+#: modules/display.bm:340
+#, sh-format
+msgid "Current status:"
+msgstr ""
+
+#: modules/display.bm:340
+#, sh-format
+msgid "disabled"
+msgstr ""
+
+#: modules/display.bm:382
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Selectati dosarul care trebuie restaurat"
 
-#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:161
-#: modules/network.bm:129 modules/services.bm:15 modules/services.bm:35
-#: modules/services.bm:57 modules/software.bm:209
+#: modules/display.bm:412
+#, sh-format
+msgid "Not available in this Frontend!"
+msgstr ""
+
+#: modules/display.bm:427 modules/info.bm:27 modules/kernel.bm:161
+#: modules/network.bm:125 modules/services.bm:15 modules/services.bm:35
+#: modules/services.bm:61 modules/software.bm:213
 #, sh-format
 msgid "Please make your choice:"
 msgstr ""
 
-#: modules/display.bm:390 modules/display.bm:401
+#: modules/display.bm:428 modules/display.bm:441
 #, sh-format
 msgid "set max resolution"
 msgstr "Schimbati rezolutia"
 
-#: modules/display.bm:391 modules/display.bm:402
+#: modules/display.bm:429 modules/display.bm:442
 #, sh-format
 msgid "set scanning frequency"
 msgstr "Stabiliti scanarea Frequenz"
 
-#: modules/display.bm:392 modules/display.bm:403
+#: modules/display.bm:430 modules/display.bm:443
 #, sh-format
 msgid "set screen DPI"
 msgstr "Schimbati aranjamentul DPI"
 
-#: modules/display.bm:393 modules/display.bm:404
+#: modules/display.bm:431 modules/display.bm:444
 #, sh-format
 msgid "set color depth"
 msgstr "Schimbati profunzimea culorii"
 
-#: modules/display.bm:394 modules/display.bm:405
+#: modules/display.bm:432 modules/display.bm:445
+#, fuzzy, sh-format
+msgid "set X-Server driver"
+msgstr "Porniti din nou X-Server "
+
+#: modules/display.bm:433 modules/display.bm:446
+#, fuzzy, sh-format
+msgid "set composite"
+msgstr "Introduceti noua rezolutie"
+
+#: modules/display.bm:434 modules/display.bm:447
 #, sh-format
 msgid "remove modelines"
 msgstr "Eliminati liniile modului"
 
-#: modules/display.bm:395 modules/display.bm:408
+#: modules/display.bm:435 modules/display.bm:451
+#, sh-format
+msgid "Install Ati/nVidia 3d drivers"
+msgstr ""
+
+#: modules/display.bm:436 modules/display.bm:450
 #, sh-format
 msgid "restore X-Server"
 msgstr "Porniti din nou X-Server "
 
-#: modules/display.bm:406
+#: modules/display.bm:448
 #, sh-format
 msgid "register/repair fonts"
 msgstr "Inregistrati/Reparati Fonturile"
 
-#: modules/display.bm:407
+#: modules/display.bm:449
 #, sh-format
 msgid "restart X-Server"
 msgstr "Reporniti X-Server"
@@ -127,17 +179,17 @@ msgstr "Reporniti X-Server"
 msgid "Infos"
 msgstr "Informatii"
 
-#: modules/info.bm:24 modules/info.bm:28
+#: modules/info.bm:28 modules/info.bm:32
 #, sh-format
 msgid "sidux version"
 msgstr "Versiunea sidux"
 
-#: modules/info.bm:25 modules/info.bm:29
+#: modules/info.bm:29 modules/info.bm:33
 #, sh-format
 msgid "infobash"
 msgstr "Infobash"
 
-#: modules/info.bm:28
+#: modules/info.bm:32
 #, sh-format
 msgid "You are using "
 msgstr "Acum folositi "
@@ -147,19 +199,12 @@ msgstr "Acum folositi "
 msgid "Kernel"
 msgstr "Kernel"
 
-#: modules/kernel.bm:16
+#: modules/kernel.bm:20
 #, sh-format
 msgid "kernel-remover is missing! Do you want do install it?"
 msgstr "Kernel-ul lipseste! Vreti sa il instalati?"
 
-#: modules/kernel.bm:27 modules/kernel.bm:85 modules/kernel.bm:121
-#: modules/network.bm:114 modules/software.bm:67 modules/software.bm:76
-#: modules/software.bm:85 modules/software.bm:96
-#, sh-format
-msgid "Process done!"
-msgstr "Procedeul terminat"
-
-#: modules/kernel.bm:67
+#: modules/kernel.bm:88
 #, sh-format
 msgid "The installation is finished!"
 msgstr "Instalarea este terminata!"
@@ -175,8 +220,8 @@ msgid "update kernel"
 msgstr "Update kernel"
 
 #: modules/network.bm:11
-#, sh-format
-msgid "network"
+#, fuzzy, sh-format
+msgid "Network"
 msgstr "Retea"
 
 #: modules/network.bm:42
@@ -184,19 +229,19 @@ msgstr "Retea"
 msgid "Enter a new hostname:"
 msgstr "Introduceti noua rezolutie"
 
-#: modules/network.bm:130 modules/network.bm:134
+#: modules/network.bm:126 modules/network.bm:130
 #, sh-format
 msgid "configure network adapters"
 msgstr ""
 
-#: modules/network.bm:131 modules/network.bm:135
+#: modules/network.bm:127 modules/network.bm:131
 #, sh-format
 msgid "set hostname"
 msgstr "Introduceti noua rezolutie"
 
 #: modules/services.bm:10
-#, sh-format
-msgid "services"
+#, fuzzy, sh-format
+msgid "Services"
 msgstr "Servicii"
 
 #: modules/services.bm:16 modules/services.bm:23
@@ -264,29 +309,29 @@ msgstr "Adaoga o intrare-Runlevel"
 msgid "delete run level entry"
 msgstr "Anuleaza  Runlevel-Entry"
 
-#: modules/services.bm:58 modules/services.bm:62
+#: modules/services.bm:62 modules/services.bm:66
 #, sh-format
 msgid "enable/disable services at boot"
 msgstr "Enable/Disable Services at Boot"
 
-#: modules/services.bm:59 modules/services.bm:63
+#: modules/services.bm:63 modules/services.bm:67
 #, sh-format
 msgid "manage services"
 msgstr "Directioneaza serviciile"
 
 #: modules/software.bm:10
-#, sh-format
-msgid "software"
+#, fuzzy, sh-format
+msgid "Software"
 msgstr "Software"
 
-#: modules/software.bm:30
+#: modules/software.bm:31
 #, sh-format
 msgid "You must be in run-level 3 and out of X to run this script."
 msgstr ""
 "Trebuie sa fii in nivelul 3 run si in afara lui X ca sa poti efectua acest "
 "script"
 
-#: modules/software.bm:35
+#: modules/software.bm:36
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any dist-"
@@ -295,7 +340,7 @@ msgstr ""
 "Nici o conectiune la sidux.com. Nu a fost posibil sa testati daca sunt Niste "
 "Atentionaru de Imbunatatiri Dist. Vrei sa continui oricum? "
 
-#: modules/software.bm:43
+#: modules/software.bm:44
 #, sh-format
 msgid ""
 "There are dist-upgrade warnings.  Please don't run a dist-upgrade! Visit "
@@ -304,12 +349,12 @@ msgstr ""
 "Exista atentionari-DU, va rog. Nu efectuati un dist-upgrade!Va gugam sa "
 "vizitati sidux. com pentru mai multe informatii"
 
-#: modules/software.bm:46 modules/software.bm:167
+#: modules/software.bm:47 modules/software.bm:177
 #, sh-format
 msgid "At the moment there are no dist-upgrade warnings!"
 msgstr "Nu sint DU-Atentionari pentru moment1"
 
-#: modules/software.bm:162
+#: modules/software.bm:172
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there were any "
@@ -318,7 +363,7 @@ msgstr ""
 "Nici o conectiune la sidux.com. Nu a fost posibil sa testati daca sunt Niste "
 "Atentionaru de Imbunatatiri Dist. Vrei sa continui oricum? "
 
-#: modules/software.bm:165
+#: modules/software.bm:175
 #, sh-format
 msgid ""
 "There are dist-upgrde warnings please. Don't run a dist-upgrade!  Visit "
@@ -327,22 +372,17 @@ msgstr ""
 "Exista atentionari-DU, va rog. Nu efectuati un dist-upgrade!Va gugam sa "
 "vizitati sidux. com pentru mai multe informatii"
 
-#: modules/software.bm:173
-#, sh-format
-msgid "Please choose a date..."
-msgstr "Selectati o data"
-
-#: modules/software.bm:210 modules/software.bm:216
+#: modules/software.bm:214 modules/software.bm:220
 #, sh-format
 msgid "run smxi (software update)"
 msgstr ""
 
-#: modules/software.bm:211 modules/software.bm:217
+#: modules/software.bm:215 modules/software.bm:221
 #, sh-format
 msgid "run a dist-upgrade only"
 msgstr "Run Dist-Upgrade"
 
-#: modules/software.bm:212 modules/software.bm:218
+#: modules/software.bm:216 modules/software.bm:222
 #, sh-format
 msgid "show DU warnings"
 msgstr "Arata Atentionarile-DU"
@@ -351,3 +391,6 @@ msgstr "Arata Atentionarile-DU"
 #, sh-format
 msgid "Main Menu"
 msgstr "Menu-ul de Baza"
+
+#~ msgid "Please choose a date..."
+#~ msgstr "Selectati o data"

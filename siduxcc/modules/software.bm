@@ -7,7 +7,7 @@
 #run gettext
 . /usr/bin/gettext.sh
 
-register_module software $(eval_gettext "software")
+register_module software $(eval_gettext "Software")
 
 function checkRunlevel()
 {
@@ -20,6 +20,7 @@ function du()
 {
 	apt-get update
 	apt-get dist-upgrade
+	fDone
 }
 
 function ssftDu()
@@ -59,44 +60,63 @@ function checkASV()
 	fi
 }
 
-
-function download()
-{
-	apt-get -dy dist-upgrade
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
-
-function update()
-{
-	apt-get update
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
-
-function clean()
-{
-	apt-get clean
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-}
-
+#------------------------------------------------------------------------------#
+#--- apt ----------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function installASV()
 {
 	apt-get update
 	apt-get install apt-show-versions
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
 }
+
+function getUpgradablePackages()
+{
+	LANG=C apt-show-versions | grep upgradeable
+}
+
+
+function downloadUpgradablePackages()
+{
+	apt-get update
+	apt-get -d --force-yes dist-upgrade 
+	fDone
+}
+
+function updatePackageIndex()
+{
+	apt-get update
+	fDone
+}
+
+function cleanPackageCache()
+{
+	apt-get clean
+	fDone
+}
+
+
+
+
+
+#------------------------------------------------------------------------------#
+#--- smxi ---------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
+
+
+function getSmxiAlerts()
+{
+	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
+	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/alert_message
+	cat $TMP
+	rm -f $TMP
+}
+
+
+#------------------------------------------------------------------------------#
+#--- sidux warnings & news ----------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function duWarnings()
 {
@@ -125,16 +145,6 @@ function duWarningsDe()
 	TMP="$(mktemp -p /tmp/ du-warning-XXXXXXXXXX)"
 	wget -O $TMP -q -U "siduxcc-hermes" http://sidux.com/backend.php?newlang=deu
 	grep -A 1 Warnung $TMP
-	rm -f $TMP
-}
-
-
-
-function getSmxiAlerts()
-{
-	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
-	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/alert_message
-	cat $TMP
 	rm -f $TMP
 }
 
@@ -168,18 +178,9 @@ function ssftDuWarnings()
 	fi
 }
 
-function dlgDuLog
-{
-	DATE=$(dlg --calendar "$(eval_gettext "Please choose a date...")" 0 0 0 0 0)
-	case $? in
-	0)
-		day=`echo $DATE | cut -f1 -d"/"`
-		month=`echo $DATE | cut -f2 -d"/"`
-		year=`echo $DATE | cut -f3 -d"/"`
-		clear
-		cat /var/log/dpkg.log | grep $year-$month-$day| grep installed | less;;
-	esac
-}
+#------------------------------------------------------------------------------#
+#--- add non-free sources -----------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 
 function addSources()
@@ -201,6 +202,9 @@ function addSources()
 }
 
 
+#------------------------------------------------------------------------------#
+#--- menu ---------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function ssftSoftware()
 {

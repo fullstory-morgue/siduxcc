@@ -14,8 +14,9 @@ DM="$(basename $DM 2>/dev/null)"
 [ -z "$DM" ] && DM=kdm
 
 
-# Screen Resolution
-# ------------------
+#------------------------------------------------------------------------------#
+#--- Screen Resolution --------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getResolution()
 {
@@ -25,11 +26,7 @@ function getResolution()
 function setResolution()
 {
 	backupX
-	fix-res $1
-}
 
-function fix-res()
-{
 	# (C) 2005 Joerg Schirottke <master@kanotix.com>
 	# (C) 2005-2006 modified by Stefan Lippers-Hollman <s.l-h@gmx.de>
 
@@ -99,7 +96,6 @@ function fix-res()
 	"$PERL" -pi -e "s/(Modes).*/\1 $MODE/" "$X_CONF"
 }
 
-
 function ssftResolution()
 {
 	SSFT_DEFAULT="$(getResolution)"
@@ -123,8 +119,9 @@ function ssftResolution()
 }
 
 
-# Screen Frequenz
-# --------------
+#------------------------------------------------------------------------------#
+#--- Screen Frequenz ----------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getHorizSync()
 {
@@ -169,11 +166,12 @@ function ssftFrequenz()
 		&& ssft_display_message "${Title}" "$(eval_gettext "The horizontal sync rate has been changed successfully to $SSFT_DEFAULT.")" \
 		|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the vertical refresh rate to $SSFT_DEFAULT!")"
 	fi
-
 }
 
-# DPI-Settings
-# ------------
+
+#------------------------------------------------------------------------------#
+#--- DPI-Settings -------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getDpi()
 {
@@ -190,7 +188,6 @@ function getDpi()
 	else
 		echo "96"
 	fi
-	
 }
 
 function setDpi()
@@ -202,7 +199,6 @@ function setDpi()
 		fix-dpi-kdm $1
 	fi
 }
-
 
 function ssftDpi()
 {
@@ -216,8 +212,9 @@ function ssftDpi()
 }
 
 
-# ColorDepth
-# ----------
+#------------------------------------------------------------------------------#
+#--- ColorDepth ---------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getColorDepth()
 {
@@ -252,9 +249,9 @@ function ssftColorDepth()
 }
 
 
-# Driver
-# ----------
-
+#------------------------------------------------------------------------------#
+#--- Driver -------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getSection()
 {
@@ -277,7 +274,6 @@ ENDE
 	sed -e "$sedScript" < $X_CONF
 }
 
-
 function getDriver()
 {
 	getSection "Device" | awk "(\$1==\"Driver\"){print \$2}" | sed -e 's/^"\(.*\)"$/\1/;'
@@ -285,7 +281,7 @@ function getDriver()
 
 function setDriver()
 {
-	if [ $1 -eq $(getDriver) ]; then
+	if [ "$1" = "$(getDriver)" ]; then
 		echo "Driver-Settings unchanged."
 		return 128
 	else
@@ -295,6 +291,20 @@ function setDriver()
 	fi
 }
 
+function ssftDriver()
+{
+	SSFT_DEFAULT="$(getDriver)"
+	ssft_menu "${Title}" "$(eval_gettext "Current driver:") $(getDriver)\n$(eval_gettext "Select a new one:")" VESA FBdev nv nvdia ati fglrx vboxvideo
+	if [ "$SSFT_RESULT" ]; then
+		setDriver $SSFT_RESULT
+	fi
+}
+
+
+
+#------------------------------------------------------------------------------#
+#--- Composite ----------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function getComposite()
 {
@@ -312,29 +322,43 @@ function getComposite()
 
 function setComposite()
 {
-		if [ $1 = "true" ]; then
+		input=$1
+		if [ $input = $(eval_gettext "enabled") ]; then
+			input="true"
+		fi
+
+		if [ $input = "true" ]; then
 			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/\tOption\t"Composite"\t"1"/' $X_CONF
 		else
 			perl -pi -e 's/^[\s]*#*[\s]*Option\s*"Composite".*/#\tOption\t"Composite"\t"1"/' $X_CONF
 		fi
 }
 
-
-# Fonts
-# -----
-
-function fixFonts()
+function ssftComposite()
 {
-	clear
-	fix-fonts
-	echo ""
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
-
+	SSFT_DEFAULT="$(getComposite)"
+	ssft_menu "${Title}" "$(eval_gettext "Current status:") $(getComposite)\n$(eval_gettext "Select a new one:")" $(eval_gettext "enabled") $(eval_gettext "disabled")
+	if [ "$SSFT_RESULT" ]; then
+		setComposite $SSFT_RESULT
+	fi
 }
 
-# Modelines
-# ---------
+
+#------------------------------------------------------------------------------#
+#--- Fonts --------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
+
+#function fixFonts()
+#{
+#	clear
+#	fix-fonts
+#	fDone
+#}
+
+
+#------------------------------------------------------------------------------#
+#--- Modelines ----------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function removeModelines()
 {
@@ -342,8 +366,10 @@ function removeModelines()
 	perl -pi -e 's/^.*Mode.ine.*\n?//g' $X_CONF
 }
 
-# X-Server
-# --------
+
+#------------------------------------------------------------------------------#
+#--- X-Server -----------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function backupX()
 {
@@ -364,22 +390,34 @@ function restartX()
 	/etc/init.d/$DM start &>/dev/null
 }
 
-# Driver
-# ------
+
+#------------------------------------------------------------------------------#
+#--- Driver -------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function binaryGfx()
 {
-	#clear
+	clear
 	get-sidux-binary-gfx
 	install-binary-gfx -a
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
+}
+
+
+function ssftBinaryGfx()
+{
+	if [ $SSFT_FRONTEND = "dialog" ]; then
+		binaryGfx
+	else
+		ssft_display_message "${Title}" "$(eval_gettext "Not available in this Frontend!")"
+	fi
 }
 
 
 
-# ssft
-# ---------
+#------------------------------------------------------------------------------#
+#--- menu ---------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function ssftDisplay()
 {
@@ -388,24 +426,29 @@ function ssftDisplay()
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
 			"$(eval_gettext "set max resolution")"      \
-			"$(eval_gettext "set scanning frequency")" \
-			"$(eval_gettext "set screen DPI")"    \
-			"$(eval_gettext "set color depth")"     \
-			"$(eval_gettext "remove modelines")"       \
+			"$(eval_gettext "set scanning frequency")"  \
+			"$(eval_gettext "set screen DPI")"          \
+			"$(eval_gettext "set color depth")"         \
+			"$(eval_gettext "set X-Server driver")"     \
+			"$(eval_gettext "set composite")"           \
+			"$(eval_gettext "remove modelines")"        \
+			"$(eval_gettext "Install Ati/nVidia 3d drivers")" \
 			"$(eval_gettext "restore X-Server")"
 			#"$(eval_gettext "Restart X-Server")"
-			#"$(eval_gettext "Register/Repair fonts")" \
-			#"$(eval_gettext "Install Ati/nVidia 3d drivers")" \
+			#"$(eval_gettext "Register/Repair fonts")"   \
 	
 		case $SSFT_RESULT in
 			$(eval_gettext "set max resolution")     ) ssftResolution;;
 			$(eval_gettext "set scanning frequency") ) ssftFrequenz;;
 			$(eval_gettext "set screen DPI")         ) ssftDpi;;
 			$(eval_gettext "set color depth")        ) ssftColorDepth;;
+			$(eval_gettext "set X-Server driver")    ) ssftDriver;;
+			$(eval_gettext "set composite")          ) ssftComposite;;
 			$(eval_gettext "remove modelines")       ) removeModelines;;
-			$(eval_gettext "register/repair fonts")  ) fixFonts;;
+			$(eval_gettext "register/repair fonts")  ) ssftFixFonts;;
 			$(eval_gettext "restart X-Server")       ) restartX;;
 			$(eval_gettext "restore X-Server")       ) restoreX;;
+			$(eval_gettext "Install Ati/nVidia 3d drivers") ) ssftBinaryGfx;;
 			"") break;;
 		esac
 	done

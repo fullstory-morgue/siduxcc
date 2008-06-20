@@ -9,6 +9,10 @@
 register_module kernel $(eval_gettext "Kernel")
 
 
+#------------------------------------------------------------------------------#
+#--- kernel-remover -----------------------------------------------------------#
+#------------------------------------------------------------------------------#
+
 function removeKernel()
 {
 	# check if kernel-remover is installed
@@ -23,12 +27,25 @@ function removeKernel()
 		kernel-remover -x $1
 	fi
 
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
 }
 
+function getOldKernels()
+{
+	pushd /boot 2>&1 >>/dev/null
+	for v in vmlinuz-*; do
+		Kernel=$(echo $v|sed s/vmlinuz-//)
+		if [ "${Kernel}" != "$(uname -r)" ]; then
+			echo $Kernel
+		fi
+	done
+	popd 2>&1 >> /dev/null
+}
+
+
+#------------------------------------------------------------------------------#
+#--- show-kernels -------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function currentKernel()
 {
@@ -51,6 +68,10 @@ function stableKernel()
 }
 
 
+#------------------------------------------------------------------------------#
+#--- install kernel -----------------------------------------------------------#
+#------------------------------------------------------------------------------#
+
 installKernel()
 {
 
@@ -67,29 +88,30 @@ installKernel()
 	echo "$(eval_gettext "The installation is finished!")"
 	echo "$(eval_gettext "Press <Enter> to continue...")"
 	read
-
 }
 
+
+#------------------------------------------------------------------------------#
+#--- kernel modules -----------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 getModules()
 {
 	wget -U "siduxcc-hermes" -O - http://sidux.com/debian/pool/main/l/linux-modules-sidux-main-2.6 2>/dev/null | grep 2.6-sidux-686 | cut -f8 -d"\"" | cut -f1 -d. | sed 's/-modules-2//g'
 }
 
-
 installModules()
 {
 	apt-get install $@
-
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
 }
 
 
+#------------------------------------------------------------------------------#
+#--- kernel autoinstall -------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
-metapackageStatus()
+getAutoInstallStatus()
 {
 	if [ -f /usr/share/doc/linux-image-2.6-sidux-686/copyright ]; then
 		if [ "$(dpkg --get-selections | grep hold | grep linux-image-2.6-sidux-686 | cut -f1)" ]; then
@@ -103,8 +125,7 @@ metapackageStatus()
 		
 }
 
-
-enableMetapackage()
+enableAutoInstall()
 {
 	if [ ! -f /usr/share/doc/linux-image-2.6-sidux-686/copyright ]; then
 		apt-get install linux-image-2.6-sidux-$(kernelType) linux-headers-2.6-sidux-$(kernelType)
@@ -117,14 +138,11 @@ enableMetapackage()
         echo $i install|dpkg --set-selections
 	done
 
-	echo ""
-	echo "$(eval_gettext "Process done!")"
-	echo "$(eval_gettext "Press <Enter> to continue...")"
-	read
+	fDone
 }
 
 
-disableMetapackage()
+disableAutoInstall()
 {
 	for i in $( ls /usr/share/doc/ | grep 2.6-sidux ); do
 		echo $i hold|dpkg --set-selections
@@ -132,27 +150,9 @@ disableMetapackage()
 }
 
 
-function getOldKernels()
-{
-	pushd /boot 2>&1 >>/dev/null
-	for v in vmlinuz-*; do
-		Kernel=$(echo $v|sed s/vmlinuz-//)
-		if [ "${Kernel}" != "$(uname -r)" ]; then
-			echo $Kernel
-		fi
-	done
-	popd 2>&1 >> /dev/null
-}
-
-
-function getKernelDirs()
-{
-	if [ -d /usr/src/kernel-downloads ]; then
-		cd /usr/src/kernel-downloads
-		ls -d */
-	fi
-}
-
+#------------------------------------------------------------------------------#
+#--- menu ---------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 function ssftKernel()
 {

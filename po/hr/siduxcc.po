@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 12:27+0200\n"
+"POT-Creation-Date: 2008-06-20 14:29+0200\n"
 "PO-Revision-Date: 2008-06-09 13:06+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -23,102 +23,154 @@ msgstr ""
 msgid "Error: You must be root to run this script!"
 msgstr "Pogreška: Morate biti root da izvodite taj skript!"
 
+#: siduxcc:22
+#, sh-format
+msgid "Process done!"
+msgstr "Proces dovršen!"
+
+#: siduxcc:23 modules/kernel.bm:89
+#, sh-format
+msgid "Press <Enter> to continue..."
+msgstr "Pritisnite <Enter> da idete dalje..."
+
+#: siduxcc:27
+#, sh-format
+msgid "sidux Control Center"
+msgstr ""
+
 #: modules/display.bm:9
 #, sh-format
 msgid "Display"
 msgstr "Display"
 
-#: modules/display.bm:106
+#: modules/display.bm:102
 #, sh-format
 msgid "Select new Resolution"
 msgstr "Izaberite novu rezoluciju"
 
-#: modules/display.bm:114
+#: modules/display.bm:110
 #, sh-format
 msgid "Enter new Resolution:"
 msgstr "Upišite novu Rezoluciju:"
 
-#: modules/display.bm:154
+#: modules/display.bm:151
 #, sh-format
 msgid "Do you have a TFT-monitor?"
 msgstr "Koristite TFT-Monitor?"
 
-#: modules/display.bm:157
+#: modules/display.bm:154
 #, sh-format
 msgid "Enter new vertical refresh rate:"
 msgstr "Upišite novu vertikalnu frekvenciju monitora:"
 
-#: modules/display.bm:166
+#: modules/display.bm:163
 #, sh-format
 msgid "Enter new horizontal sync rate:"
 msgstr "Upišite novu horizontalnu frekvenciju monitora:"
 
-#: modules/display.bm:210
+#: modules/display.bm:206
 #, sh-format
 msgid "Enter new DPI-Settings:"
 msgstr "Upišite nove DPI-postavke:"
 
-#: modules/display.bm:245
+#: modules/display.bm:242
 #, sh-format
 msgid "Default Color Depth"
 msgstr "Standardna Dubina boja"
 
-#: modules/display.bm:331 modules/display.bm:375 modules/info.bm:33
-#: modules/kernel.bm:28 modules/kernel.bm:68 modules/kernel.bm:86
-#: modules/kernel.bm:122 modules/network.bm:115 modules/software.bm:68
-#: modules/software.bm:77 modules/software.bm:86 modules/software.bm:97
+#: modules/display.bm:297
 #, sh-format
-msgid "Press <Enter> to continue..."
-msgstr "Pritisnite <Enter> da idete dalje..."
+msgid "Current driver:"
+msgstr ""
 
-#: modules/display.bm:356
+#: modules/display.bm:297 modules/display.bm:340
+#, fuzzy, sh-format
+msgid "Select a new one:"
+msgstr "Izaberite novu rezoluciju"
+
+#: modules/display.bm:326 modules/display.bm:340
+#, sh-format
+msgid "enabled"
+msgstr ""
+
+#: modules/display.bm:340
+#, sh-format
+msgid "Current status:"
+msgstr ""
+
+#: modules/display.bm:340
+#, sh-format
+msgid "disabled"
+msgstr ""
+
+#: modules/display.bm:382
 #, sh-format
 msgid "Select the file that should be restore"
 msgstr "Izaberite datoteku za vračanje postavka"
 
-#: modules/display.bm:389 modules/info.bm:23 modules/kernel.bm:161
-#: modules/network.bm:129 modules/services.bm:15 modules/services.bm:35
-#: modules/services.bm:57 modules/software.bm:209
+#: modules/display.bm:412
+#, sh-format
+msgid "Not available in this Frontend!"
+msgstr ""
+
+#: modules/display.bm:427 modules/info.bm:27 modules/kernel.bm:161
+#: modules/network.bm:125 modules/services.bm:15 modules/services.bm:35
+#: modules/services.bm:61 modules/software.bm:213
 #, sh-format
 msgid "Please make your choice:"
 msgstr ""
 
-#: modules/display.bm:390 modules/display.bm:401
+#: modules/display.bm:428 modules/display.bm:441
 #, sh-format
 msgid "set max resolution"
 msgstr "Promjeni rezoluciju"
 
-#: modules/display.bm:391 modules/display.bm:402
+#: modules/display.bm:429 modules/display.bm:442
 #, sh-format
 msgid "set scanning frequency"
 msgstr "Postavi skening frekvenciju"
 
-#: modules/display.bm:392 modules/display.bm:403
+#: modules/display.bm:430 modules/display.bm:443
 #, sh-format
 msgid "set screen DPI"
 msgstr "Promjeni DPI-postavke"
 
-#: modules/display.bm:393 modules/display.bm:404
+#: modules/display.bm:431 modules/display.bm:444
 #, sh-format
 msgid "set color depth"
 msgstr "Promjeni dubinu boja"
 
-#: modules/display.bm:394 modules/display.bm:405
+#: modules/display.bm:432 modules/display.bm:445
+#, fuzzy, sh-format
+msgid "set X-Server driver"
+msgstr "X-Poslužitelj vratiti u početno stanje"
+
+#: modules/display.bm:433 modules/display.bm:446
+#, fuzzy, sh-format
+msgid "set composite"
+msgstr "Upišite novu Rezoluciju:"
+
+#: modules/display.bm:434 modules/display.bm:447
 #, sh-format
 msgid "remove modelines"
 msgstr "Izbriši Modelinije"
 
-#: modules/display.bm:395 modules/display.bm:408
+#: modules/display.bm:435 modules/display.bm:451
+#, sh-format
+msgid "Install Ati/nVidia 3d drivers"
+msgstr ""
+
+#: modules/display.bm:436 modules/display.bm:450
 #, sh-format
 msgid "restore X-Server"
 msgstr "X-Poslužitelj vratiti u početno stanje"
 
-#: modules/display.bm:406
+#: modules/display.bm:448
 #, sh-format
 msgid "register/repair fonts"
 msgstr "Tip Slova registrirati/reparirati"
 
-#: modules/display.bm:407
+#: modules/display.bm:449
 #, sh-format
 msgid "restart X-Server"
 msgstr "X-Poslužitelj ponovo startati"
@@ -128,17 +180,17 @@ msgstr "X-Poslužitelj ponovo startati"
 msgid "Infos"
 msgstr "Informacije"
 
-#: modules/info.bm:24 modules/info.bm:28
+#: modules/info.bm:28 modules/info.bm:32
 #, sh-format
 msgid "sidux version"
 msgstr "sidux Verzija"
 
-#: modules/info.bm:25 modules/info.bm:29
+#: modules/info.bm:29 modules/info.bm:33
 #, sh-format
 msgid "infobash"
 msgstr "Infobash"
 
-#: modules/info.bm:28
+#: modules/info.bm:32
 #, sh-format
 msgid "You are using "
 msgstr "Vi koristite "
@@ -148,19 +200,12 @@ msgstr "Vi koristite "
 msgid "Kernel"
 msgstr "Kernel"
 
-#: modules/kernel.bm:16
+#: modules/kernel.bm:20
 #, sh-format
 msgid "kernel-remover is missing! Do you want do install it?"
 msgstr "Program Kernel-remover fali! Hočete da ga instalirate? "
 
-#: modules/kernel.bm:27 modules/kernel.bm:85 modules/kernel.bm:121
-#: modules/network.bm:114 modules/software.bm:67 modules/software.bm:76
-#: modules/software.bm:85 modules/software.bm:96
-#, sh-format
-msgid "Process done!"
-msgstr "Proces dovršen!"
-
-#: modules/kernel.bm:67
+#: modules/kernel.bm:88
 #, sh-format
 msgid "The installation is finished!"
 msgstr "Instalacija dovršena!"
@@ -176,8 +221,8 @@ msgid "update kernel"
 msgstr "aktualizirati Kernel"
 
 #: modules/network.bm:11
-#, sh-format
-msgid "network"
+#, fuzzy, sh-format
+msgid "Network"
 msgstr "Mreža"
 
 #: modules/network.bm:42
@@ -185,19 +230,19 @@ msgstr "Mreža"
 msgid "Enter a new hostname:"
 msgstr "Upišite novu Rezoluciju:"
 
-#: modules/network.bm:130 modules/network.bm:134
+#: modules/network.bm:126 modules/network.bm:130
 #, sh-format
 msgid "configure network adapters"
 msgstr ""
 
-#: modules/network.bm:131 modules/network.bm:135
+#: modules/network.bm:127 modules/network.bm:131
 #, sh-format
 msgid "set hostname"
 msgstr "Upišite novu Rezoluciju:"
 
 #: modules/services.bm:10
-#, sh-format
-msgid "services"
+#, fuzzy, sh-format
+msgid "Services"
 msgstr "Servisi"
 
 #: modules/services.bm:16 modules/services.bm:23
@@ -265,27 +310,27 @@ msgstr "Dodaj Runlevel-Upis"
 msgid "delete run level entry"
 msgstr "Izbriši Runlevel-Upis"
 
-#: modules/services.bm:58 modules/services.bm:62
+#: modules/services.bm:62 modules/services.bm:66
 #, sh-format
 msgid "enable/disable services at boot"
 msgstr "Systemservise aktivirati/deaktivirati"
 
-#: modules/services.bm:59 modules/services.bm:63
+#: modules/services.bm:63 modules/services.bm:67
 #, sh-format
 msgid "manage services"
 msgstr "Menadžment servisa"
 
 #: modules/software.bm:10
-#, sh-format
-msgid "software"
+#, fuzzy, sh-format
+msgid "Software"
 msgstr "Softver"
 
-#: modules/software.bm:30
+#: modules/software.bm:31
 #, sh-format
 msgid "You must be in run-level 3 and out of X to run this script."
 msgstr "Morate biti u Runlevel 3, da izvodite ovaj skript!"
 
-#: modules/software.bm:35
+#: modules/software.bm:36
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there any dist-"
@@ -294,7 +339,7 @@ msgstr ""
 "Nema spoja do sidux.com! Ne mogu provjeriti dali postoje Dist-Upgrade "
 "upozorenja. Hočete li nastaviti?"
 
-#: modules/software.bm:43
+#: modules/software.bm:44
 #, sh-format
 msgid ""
 "There are dist-upgrade warnings.  Please don't run a dist-upgrade! Visit "
@@ -303,12 +348,12 @@ msgstr ""
 "Pozor: Postoje Dist-Upgrade-Upozorenja! Nemojte obavljati momentalno Dist-"
 "Upgrade! Više informacija na sidux.com"
 
-#: modules/software.bm:46 modules/software.bm:167
+#: modules/software.bm:47 modules/software.bm:177
 #, sh-format
 msgid "At the moment there are no dist-upgrade warnings!"
 msgstr "Momentalno ne postoju Dist-Upgrade-Upozorenja!"
 
-#: modules/software.bm:162
+#: modules/software.bm:172
 #, sh-format
 msgid ""
 "No connection to sidux.com. It wasn't possible to test if there were any "
@@ -317,7 +362,7 @@ msgstr ""
 "Nema spoja do sidux.com! Ne mogu provjeriti dali postoje Dist-Upgrade "
 "upozorenja. Hočete li nastaviti?"
 
-#: modules/software.bm:165
+#: modules/software.bm:175
 #, sh-format
 msgid ""
 "There are dist-upgrde warnings please. Don't run a dist-upgrade!  Visit "
@@ -326,22 +371,17 @@ msgstr ""
 "Pozor: Postoje Dist-Upgrade-Upozorenja! Nemojte obavljati momentalno Dist-"
 "Upgrade! Više informacija na sidux.com"
 
-#: modules/software.bm:173
-#, sh-format
-msgid "Please choose a date..."
-msgstr "Izaberite Datum..."
-
-#: modules/software.bm:210 modules/software.bm:216
+#: modules/software.bm:214 modules/software.bm:220
 #, sh-format
 msgid "run smxi (software update)"
 msgstr ""
 
-#: modules/software.bm:211 modules/software.bm:217
+#: modules/software.bm:215 modules/software.bm:221
 #, sh-format
 msgid "run a dist-upgrade only"
 msgstr "Izvoditi Dist-upgrade"
 
-#: modules/software.bm:212 modules/software.bm:218
+#: modules/software.bm:216 modules/software.bm:222
 #, sh-format
 msgid "show DU warnings"
 msgstr "Pokaži Dist-Upgrade-Upozorenja"
@@ -350,3 +390,6 @@ msgstr "Pokaži Dist-Upgrade-Upozorenja"
 #, sh-format
 msgid "Main Menu"
 msgstr "Glavni meni"
+
+#~ msgid "Please choose a date..."
+#~ msgstr "Izaberite Datum..."

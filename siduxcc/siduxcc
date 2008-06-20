@@ -16,8 +16,15 @@ testRoot()
 	fi
 }
 
+fDone()
+{
+	echo ""
+	echo "$(eval_gettext "Process done!")"
+	echo "$(eval_gettext "Press <Enter> to continue...")"
+	read
+}
 
-Title="sidux control center"
+Title=$(eval_gettext "sidux Control Center")
 SEARCHPATH="/usr/share/siduxcc"
 
 export TEXTDOMAINDIR="/usr/share/locale"
