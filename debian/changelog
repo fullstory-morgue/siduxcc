@@ -1,3 +1,9 @@
+siduxcc (0.10.12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 20 Jun 2008 22:16:27 +0200
+
 siduxcc (0.10.11) unstable; urgency=low
 
   * kde: network: card -> i18n
