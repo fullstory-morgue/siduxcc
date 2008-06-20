@@ -1,9 +1,5 @@
-siduxcc (0.10.11) UNRELEASED; urgency=low
+siduxcc (0.10.11) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * kde: network: card -> i18n
   * gtk: desktop: (GTK) added
   * cli: fDone added
