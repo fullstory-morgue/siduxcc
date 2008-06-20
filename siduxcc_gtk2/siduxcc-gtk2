@@ -117,7 +117,7 @@ class Whc:
         self.ypos = self.ypos+25
         # Button 31
         self.checkNextRow()
-        self.addButton(self, 'Manaul', self.xpos, self.ypos, '/usr/share/icons/hicolor/48x48/apps/sidux-manual.png', self.browser+'/usr/share/sidux-manual/index.html')
+        self.addButton(self, 'Manual', self.xpos, self.ypos, '/usr/share/icons/hicolor/48x48/apps/sidux-manual.png', self.browser+'/usr/share/sidux-manual/index.html')
         # Button 32
         self.checkNextRow()
         self.addButton(self, 'Forum', self.xpos, self.ypos, self.icondir+'forum.png', self.browser+'http://www.sidux.com/module-PNphpBB2.html')

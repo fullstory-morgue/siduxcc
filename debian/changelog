@@ -7,8 +7,9 @@ siduxcc (0.10.11) UNRELEASED; urgency=low
   * kde: network: card -> i18n
   * gtk: desktop: (GTK) added
   * cli: fDone added
+  * gtk: typo
 
- -- Fabian Wuertz <xadras@sidux.com>  Fri, 20 Jun 2008 14:51:29 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Fri, 20 Jun 2008 18:05:26 +0200
 
 siduxcc (0.10.10) unstable; urgency=low
 
