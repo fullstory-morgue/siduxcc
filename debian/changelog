@@ -1,9 +1,5 @@
-siduxcc (0.10.12) UNRELEASED; urgency=low
+siduxcc (0.10.12) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * hermes-kde: exec problems solved
 
  -- Fabian Wuertz <xadras@sidux.com>  Sun, 22 Jun 2008 02:48:27 +0200
