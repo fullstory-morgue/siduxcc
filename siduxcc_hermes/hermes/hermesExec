@@ -12,6 +12,6 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 case $1 in
-	update)   siduxcc software update;;
-	download) siduxcc software download;;
+	update)   siduxcc software updatePackageIndex;;
+	download) siduxcc software downloadUpgradablePackages;;
 esac

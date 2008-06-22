@@ -95,7 +95,7 @@ void hermes::getNews()
 void hermes::getPackages()
 {
 	packageListView->clear();
-	this->shell->setCommand("LANG=C apt-show-versions | grep upgradeable");
+	this->shell->setCommand("siduxcc software getUpgradablePackages");
 	this->shell->start(true);
 	QStringList upgrade = QStringList::split( "\n", this->shell->getBuffer() );
 
