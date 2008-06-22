@@ -1,3 +1,9 @@
+siduxcc (0.10.13) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 22 Jun 2008 16:13:33 +0200
+
 siduxcc (0.10.12) unstable; urgency=low
 
   * hermes-kde: exec problems solved
