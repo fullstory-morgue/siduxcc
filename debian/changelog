@@ -5,8 +5,9 @@ siduxcc (0.10.13) UNRELEASED; urgency=low
 
   [ Fabian Wuertz ]
   * sidux-hermes-kde4 added
+  * cli: addSources function updated
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 24 Jun 2008 17:26:12 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Tue, 24 Jun 2008 23:49:18 +0200
 
 siduxcc (0.10.12) unstable; urgency=low
 
