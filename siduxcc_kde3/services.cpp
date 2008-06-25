@@ -51,7 +51,7 @@ void services::load()
 {
 	// add services
 	servicesBox->insertItem("apache2");	//0
-	servicesBox->insertItem("cupsys");	//1
+	servicesBox->insertItem("cups");	//1
 	servicesBox->insertItem("mysql");	//2
 	servicesBox->insertItem("samba");	//3
 	servicesBox->insertItem("ssh");		//4
@@ -276,7 +276,7 @@ void services::showDescription(QListBoxItem* input)
 		text = i18n("Enables Universal interface for wireless communication");
 	else if( input->text() == "cron" )
 		text = i18n("Cron is a time-based scheduling service.");
-	else if( input->text() == "cupsys" )
+	else if( input->text() == "cups" )
 		text = i18n("CUPS (Common UNIX Printing System) is a printing system. It supports the IPP (Internet Printing Protocol), and has its own filtering driver model for handling various document types.");
 	else if( input->text() == "gpm" )
 		text = i18n("gpm means general purpose mouse and is the mouse support for linux in the console.");

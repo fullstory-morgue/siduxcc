@@ -1,5 +1,6 @@
-siduxcc (0.10.13) unstable; urgency=low
+siduxcc (0.11.1) unstable; urgency=low
 
+  [ Fabian Wuertz ]
   * sidux-hermes-kde4 added
   * cli: addSources function updated
   * siduxcc_hermes to hermes_kde3 moved
@@ -12,7 +13,10 @@ siduxcc (0.10.13) unstable; urgency=low
   * debian/siduxcc.manpages added
   * kde->kde3
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 12:14:16 +0200
+  [ Stefan Lippers-Hollmann ]
+  * cupsys --> cups.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 25 Jun 2008 16:22:56 +0200
 
 siduxcc (0.10.12) unstable; urgency=low
 

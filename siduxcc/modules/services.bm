@@ -21,7 +21,7 @@ function ssftService1()
 
 	case $SSFT_RESULT in
 		"$(eval_gettext "web server (apache2)")" ) service=apache2; ssftService2;;
-		"$(eval_gettext "print server")"         ) service=cupsys;  ssftService2;;
+		"$(eval_gettext "print server")"         ) service=cups;  ssftService2;;
 		"$(eval_gettext "MySQL database server")"  ) service=mysql;   ssftService2;;
 		"$(eval_gettext "secure shell server")"  ) service=ssh;     ssftService2;;
 		"$(eval_gettext "samba server")"         ) service=samba;   ssftService2;;
