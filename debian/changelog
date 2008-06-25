@@ -8,8 +8,10 @@ siduxcc (0.10.13) unstable; urgency=low
   * disconnected icon to icon folder moved
   * manpage added, not included in the debian yet 
   * another brick in the wall 
+  * subdirs-file updated
+  * debian/siduxcc.manpages added
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 11:29:22 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 12:01:36 +0200
 
 siduxcc (0.10.12) unstable; urgency=low
 
