@@ -10,8 +10,9 @@ siduxcc (0.10.13) unstable; urgency=low
   * another brick in the wall 
   * subdirs-file updated
   * debian/siduxcc.manpages added
+  * kde->kde3
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 12:01:36 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 12:14:16 +0200
 
 siduxcc (0.10.12) unstable; urgency=low
 

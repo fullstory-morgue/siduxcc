@@ -19,7 +19,7 @@ METASOURCES = AUTO
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-siduxcc_kde_SOURCES = \
+siduxcc_kde3_SOURCES = \
 	main.cpp \
 	console.cpp   consoledialog.ui   \
 	start.cpp     startdialog.ui     \
@@ -30,12 +30,12 @@ siduxcc_kde_SOURCES = \
 	internet.cpp  internetdialog.ui  \
 	kernel.cpp    kerneldialog.ui    \
 	info.cpp      infodialog.ui
-siduxcc_kde_LDFLAGS = $(KDE_RPATH) $(all_libraries)
-siduxcc_kde_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
+siduxcc_kde3_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+siduxcc_kde3_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
-bin_PROGRAMS = siduxcc-kde
-xdg_apps_DATA = siduxcc.desktop
+bin_PROGRAMS = siduxcc-kde3
+xdg_apps_DATA = siduxcc-kde3.desktop
 
 
 

@@ -37,7 +37,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 		: KSystemTray ( parent, name )
 {
 	this->shell = new Process();
-	QToolTip::add ( this,i18n("siduxcc-hermes"));
+	QToolTip::add ( this,i18n("sidux-hermes"));
 
 	menu = contextMenu();
 	menu->insertItem ( SmallIcon ( "info" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
@@ -47,7 +47,7 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 	menu->insertItem ( SmallIcon ( "siduxcc_warning" ), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
-	menu->insertItem ( SmallIcon ( "siduxcchermes" ), i18n("&About siduxcc-hermes"), this, SLOT ( showAbout() ) );
+	menu->insertItem ( SmallIcon ( "siduxcchermes" ), i18n("&About sidux-hermes"), this, SLOT ( showAbout() ) );
 
 	updateIcon();
 

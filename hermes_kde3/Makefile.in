@@ -40,7 +40,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-bin_PROGRAMS = siduxcc-hermes$(EXEEXT)
+bin_PROGRAMS = sidux-hermes-kde3$(EXEEXT)
 subdir = hermes_kde3
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
@@ -55,18 +55,18 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_siduxcc_hermes_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
+am_sidux_hermes_kde3_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
 	legend.$(OBJEXT) unique.$(OBJEXT) hermes.$(OBJEXT)
-#>- siduxcc_hermes_OBJECTS = $(am_siduxcc_hermes_OBJECTS)
+#>- sidux_hermes_kde3_OBJECTS = $(am_sidux_hermes_kde3_OBJECTS)
 #>+ 6
-siduxcc_hermes_final_OBJECTS = siduxcc_hermes.all_cpp.o 
-siduxcc_hermes_nofinal_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
+sidux_hermes_kde3_final_OBJECTS = sidux_hermes_kde3.all_cpp.o 
+sidux_hermes_kde3_nofinal_OBJECTS = main.$(OBJEXT) systray.$(OBJEXT) \
 	legend.$(OBJEXT) unique.$(OBJEXT) hermes.$(OBJEXT) legendbase.$(OBJEXT) hermesbase.$(OBJEXT)\
 unique.moc.o systray.moc.o 
-@KDE_USE_FINAL_FALSE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_nofinal_OBJECTS)
-@KDE_USE_FINAL_TRUE@siduxcc_hermes_OBJECTS = $(siduxcc_hermes_final_OBJECTS)
+@KDE_USE_FINAL_FALSE@sidux_hermes_kde3_OBJECTS = $(sidux_hermes_kde3_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@sidux_hermes_kde3_OBJECTS = $(sidux_hermes_kde3_final_OBJECTS)
 am__DEPENDENCIES_1 =
-siduxcc_hermes_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+sidux_hermes_kde3_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	../libsiduxcc/libsiduxcc.la
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/admin/depcomp
@@ -89,8 +89,8 @@ CXXLD = $(CXX)
 #>+ 2
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(KDE_CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(siduxcc_hermes_SOURCES)
-DIST_SOURCES = $(siduxcc_hermes_SOURCES)
+SOURCES = $(sidux_hermes_kde3_SOURCES)
+DIST_SOURCES = $(sidux_hermes_kde3_SOURCES)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
     $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
@@ -360,14 +360,14 @@ noinst_HEADERS = systray.h legend.h unique.h hermes.h
 #>- METASOURCES = AUTO
 
 # the application source, library search path, and link libraries
-#>- siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui unique.cpp hermes.cpp hermesbase.ui
+#>- sidux_hermes_kde3_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui unique.cpp hermes.cpp hermesbase.ui
 #>+ 1
-siduxcc_hermes_SOURCES=main.cpp systray.cpp legend.cpp  unique.cpp hermes.cpp  legendbase.cpp hermesbase.cpp
-siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
-siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
+sidux_hermes_kde3_SOURCES=main.cpp systray.cpp legend.cpp  unique.cpp hermes.cpp  legendbase.cpp hermesbase.cpp
+sidux_hermes_kde3_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+sidux_hermes_kde3_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
-xdg_apps_DATA = siduxcc-hermes.desktop
+xdg_apps_DATA = sidux-hermes-kde3.desktop
 sharedir = $(pkgdatadir)
 #>- all: all-am
 #>+ 1
@@ -445,9 +445,9 @@ clean-binPROGRAMS:
 	  echo " rm -f $$p $$f"; \
 	  rm -f $$p $$f ; \
 	done
-siduxcc-hermes$(EXEEXT): $(siduxcc_hermes_OBJECTS) $(siduxcc_hermes_DEPENDENCIES) 
-	@rm -f siduxcc-hermes$(EXEEXT)
-	$(CXXLINK) $(siduxcc_hermes_LDFLAGS) $(siduxcc_hermes_OBJECTS) $(siduxcc_hermes_LDADD) $(LIBS)
+sidux-hermes-kde3$(EXEEXT): $(sidux_hermes_kde3_OBJECTS) $(sidux_hermes_kde3_DEPENDENCIES) 
+	@rm -f sidux-hermes-kde3$(EXEEXT)
+	$(CXXLINK) $(sidux_hermes_kde3_LDFLAGS) $(sidux_hermes_kde3_OBJECTS) $(sidux_hermes_kde3_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -728,7 +728,7 @@ clean-metasources:
 	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc hermes.moc
 
 #>+ 2
-KDE_DIST=Makefile.in legendbase.ui siduxcc-hermes.desktop hermesbase.ui Makefile.am 
+KDE_DIST=Makefile.in legendbase.ui sidux-hermes-kde3.desktop legendbase.h hermesbase.ui Makefile.am siduxcc-hermes hermesbase.h 
 
 #>+ 5
 clean-ui:
@@ -778,36 +778,36 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_hermes.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp legendbase.cpp hermesbase.cpp unique.moc.cpp systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
-	@echo 'creating siduxcc_hermes.all_cpp.cpp ...'; \
-	rm -f siduxcc_hermes.all_cpp.files siduxcc_hermes.all_cpp.final; \
-	echo "#define KDE_USE_FINAL 1" >> siduxcc_hermes.all_cpp.final; \
+sidux_hermes_kde3.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/systray.cpp $(srcdir)/legend.cpp $(srcdir)/unique.cpp $(srcdir)/hermes.cpp $(srcdir)/legendbase.cpp $(srcdir)/hermesbase.cpp $(srcdir)/unique.moc.cpp $(srcdir)/systray.moc.cpp  hermesbase.moc legendbase.moc legend.moc hermes.moc
+	@echo 'creating sidux_hermes_kde3.all_cpp.cpp ...'; \
+	rm -f sidux_hermes_kde3.all_cpp.files sidux_hermes_kde3.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> sidux_hermes_kde3.all_cpp.final; \
 	for file in main.cpp systray.cpp legend.cpp unique.cpp hermes.cpp legendbase.cpp hermesbase.cpp unique.moc.cpp systray.moc.cpp ; do \
-	  echo "#include \"$$file\"" >> siduxcc_hermes.all_cpp.files; \
-	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_hermes.all_cpp.final; \
+	  echo "#include \"$$file\"" >> sidux_hermes_kde3.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> sidux_hermes_kde3.all_cpp.final; \
 	done; \
-	cat siduxcc_hermes.all_cpp.final siduxcc_hermes.all_cpp.files > siduxcc_hermes.all_cpp.cpp; \
-	rm -f siduxcc_hermes.all_cpp.final siduxcc_hermes.all_cpp.files
+	cat sidux_hermes_kde3.all_cpp.final sidux_hermes_kde3.all_cpp.files > sidux_hermes_kde3.all_cpp.cpp; \
+	rm -f sidux_hermes_kde3.all_cpp.final sidux_hermes_kde3.all_cpp.files
 
 #>+ 3
 clean-final:
-	-rm -f siduxcc_hermes.all_cpp.cpp
+	-rm -f sidux_hermes_kde3.all_cpp.cpp
 
 #>+ 3
 final:
-	$(MAKE) siduxcc_hermes_OBJECTS="$(siduxcc_hermes_final_OBJECTS)" all-am
+	$(MAKE) sidux_hermes_kde3_OBJECTS="$(sidux_hermes_kde3_final_OBJECTS)" all-am
 
 #>+ 3
 final-install:
-	$(MAKE) siduxcc_hermes_OBJECTS="$(siduxcc_hermes_final_OBJECTS)" install-am
+	$(MAKE) sidux_hermes_kde3_OBJECTS="$(sidux_hermes_kde3_final_OBJECTS)" install-am
 
 #>+ 3
 no-final:
-	$(MAKE) siduxcc_hermes_OBJECTS="$(siduxcc_hermes_nofinal_OBJECTS)" all-am
+	$(MAKE) sidux_hermes_kde3_OBJECTS="$(sidux_hermes_kde3_nofinal_OBJECTS)" all-am
 
 #>+ 3
 no-final-install:
-	$(MAKE) siduxcc_hermes_OBJECTS="$(siduxcc_hermes_nofinal_OBJECTS)" install-am
+	$(MAKE) sidux_hermes_kde3_OBJECTS="$(sidux_hermes_kde3_nofinal_OBJECTS)" install-am
 
 #>+ 3
 kde-rpo-clean:

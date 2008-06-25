@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=su-to-root -X -c /usr/bin/siduxcc-kde
+Exec=su-to-root -X -c /usr/bin/siduxcc-kde3
 Icon=siduxcc
 Name=sidux Control Center (KDE3)
 Name[da]=sidux kontrolcenter (KDE3)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 12:22+0200\n"
+"POT-Creation-Date: 2008-06-25 12:12+0200\n"
 "PO-Revision-Date: 2007-09-26 19:23+0200\n"
 "Last-Translator: Salvo Tomaselli <ltworf@galileo.dmi.unict.it>\n"
 "Language-Team: Italiano <it@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Latest Version"
 msgstr "Ultima versione"
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:398 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:398 rc.cpp:18
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
@@ -249,6 +249,11 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 
+#: systray.cpp:40
+#, fuzzy
+msgid "sidux-hermes"
+msgstr "siduxcc-hermes"
+
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
 msgstr "Forum - Avvisi per l'aggiornamento"
@@ -275,7 +280,8 @@ msgid "Show Legend"
 msgstr "Mostra legenda"
 
 #: systray.cpp:50
-msgid "&About siduxcc-hermes"
+#, fuzzy
+msgid "&About sidux-hermes"
 msgstr "Informazioni su siduxcc-hermes"
 
 #, fuzzy

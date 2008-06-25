@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: siduxcchermes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 12:22+0200\n"
-"PO-Revision-Date: 2008-05-30 12:43+0200\n"
+"POT-Creation-Date: 2008-06-25 12:12+0200\n"
+"PO-Revision-Date: 2008-06-25 12:13+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -55,7 +55,7 @@ msgid "Latest Version"
 msgstr "Neuste Version:"
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:398 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:398 rc.cpp:18
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
@@ -237,8 +237,7 @@ msgstr "Legende"
 #. i18n: file ./legendbase.ui line 68
 #: legendbase.cpp:436 rc.cpp:9
 #, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr "Es gibt dist-upgrade-Warnungen. Bitte besuchen Sie sidux.com."
 
 #. i18n: file ./legendbase.ui line 87
@@ -258,6 +257,10 @@ msgstr "Paketierung"
 #: main.cpp:45
 msgid "Icon"
 msgstr "Icon"
+
+#: systray.cpp:40
+msgid "sidux-hermes"
+msgstr "sidux-hermes"
 
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
@@ -284,8 +287,6 @@ msgid "Show Legend"
 msgstr "Legende anzeigen"
 
 #: systray.cpp:50
-msgid "&About siduxcc-hermes"
-msgstr "Über siduxcc-hermes"
+msgid "&About sidux-hermes"
+msgstr "Über sidux-hermes"
 
-#~ msgid "Sm&xi Advices"
-#~ msgstr "Smxi Hinweise"

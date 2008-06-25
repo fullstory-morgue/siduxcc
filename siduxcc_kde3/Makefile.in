@@ -40,7 +40,7 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
-bin_PROGRAMS = siduxcc-kde$(EXEEXT)
+bin_PROGRAMS = siduxcc-kde3$(EXEEXT)
 subdir = siduxcc_kde3
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
@@ -55,21 +55,21 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(xdg_appsdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_siduxcc_kde_OBJECTS = main.$(OBJEXT) console.$(OBJEXT) \
+am_siduxcc_kde3_OBJECTS = main.$(OBJEXT) console.$(OBJEXT) \
 	start.$(OBJEXT) display.$(OBJEXT) network.$(OBJEXT) \
 	services.$(OBJEXT) software.$(OBJEXT) internet.$(OBJEXT) \
 	kernel.$(OBJEXT) info.$(OBJEXT)
-#>- siduxcc_kde_OBJECTS = $(am_siduxcc_kde_OBJECTS)
+#>- siduxcc_kde3_OBJECTS = $(am_siduxcc_kde3_OBJECTS)
 #>+ 7
-siduxcc_kde_final_OBJECTS = siduxcc_kde.all_cpp.o 
-siduxcc_kde_nofinal_OBJECTS = main.$(OBJEXT) console.$(OBJEXT) \
+siduxcc_kde3_final_OBJECTS = siduxcc_kde3.all_cpp.o 
+siduxcc_kde3_nofinal_OBJECTS = main.$(OBJEXT) console.$(OBJEXT) \
 	start.$(OBJEXT) display.$(OBJEXT) network.$(OBJEXT) \
 	services.$(OBJEXT) software.$(OBJEXT) internet.$(OBJEXT) \
 	kernel.$(OBJEXT) info.$(OBJEXT) consoledialog.$(OBJEXT) startdialog.$(OBJEXT) displaydialog.$(OBJEXT) networkdialog.$(OBJEXT) servicesdialog.$(OBJEXT) softwaredialog.$(OBJEXT) internetdialog.$(OBJEXT) kerneldialog.$(OBJEXT) infodialog.$(OBJEXT)
-@KDE_USE_FINAL_FALSE@siduxcc_kde_OBJECTS = $(siduxcc_kde_nofinal_OBJECTS)
-@KDE_USE_FINAL_TRUE@siduxcc_kde_OBJECTS = $(siduxcc_kde_final_OBJECTS)
+@KDE_USE_FINAL_FALSE@siduxcc_kde3_OBJECTS = $(siduxcc_kde3_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@siduxcc_kde3_OBJECTS = $(siduxcc_kde3_final_OBJECTS)
 am__DEPENDENCIES_1 =
-siduxcc_kde_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+siduxcc_kde3_DEPENDENCIES = $(am__DEPENDENCIES_1) \
 	../libsiduxcc/libsiduxcc.la
 DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/admin/depcomp
@@ -92,8 +92,8 @@ CXXLD = $(CXX)
 #>+ 2
 CXXLINK = $(LIBTOOL) --tag=CXX --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(KDE_CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(siduxcc_kde_SOURCES)
-DIST_SOURCES = $(siduxcc_kde_SOURCES)
+SOURCES = $(siduxcc_kde3_SOURCES)
+DIST_SOURCES = $(siduxcc_kde3_SOURCES)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
     $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
@@ -374,7 +374,7 @@ noinst_HEADERS = \
 KDE_ICON = AUTO
 
 # the application source, library search path, and link libraries
-#>- siduxcc_kde_SOURCES = \
+#>- siduxcc_kde3_SOURCES = \
 #>- 	main.cpp \
 #>- 	console.cpp   consoledialog.ui   \
 #>- 	start.cpp     startdialog.ui     \
@@ -386,7 +386,7 @@ KDE_ICON = AUTO
 #>- 	kernel.cpp    kerneldialog.ui    \
 #>- 	info.cpp      infodialog.ui
 #>+ 11
-siduxcc_kde_SOURCES=\
+siduxcc_kde3_SOURCES=\
 	main.cpp \
 	console.cpp      \
 	start.cpp          \
@@ -398,9 +398,9 @@ siduxcc_kde_SOURCES=\
 	kernel.cpp        \
 	info.cpp       consoledialog.cpp startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp
 
-siduxcc_kde_LDFLAGS = $(KDE_RPATH) $(all_libraries)
-siduxcc_kde_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
-xdg_apps_DATA = siduxcc.desktop
+siduxcc_kde3_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+siduxcc_kde3_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
+xdg_apps_DATA = siduxcc-kde3.desktop
 #>- all: all-am
 #>+ 1
 all: docs-am  all-am
@@ -477,9 +477,9 @@ clean-binPROGRAMS:
 	  echo " rm -f $$p $$f"; \
 	  rm -f $$p $$f ; \
 	done
-siduxcc-kde$(EXEEXT): $(siduxcc_kde_OBJECTS) $(siduxcc_kde_DEPENDENCIES) 
-	@rm -f siduxcc-kde$(EXEEXT)
-	$(CXXLINK) $(siduxcc_kde_LDFLAGS) $(siduxcc_kde_OBJECTS) $(siduxcc_kde_LDADD) $(LIBS)
+siduxcc-kde3$(EXEEXT): $(siduxcc_kde3_OBJECTS) $(siduxcc_kde3_DEPENDENCIES) 
+	@rm -f siduxcc-kde3$(EXEEXT)
+	$(CXXLINK) $(siduxcc_kde3_LDFLAGS) $(siduxcc_kde3_OBJECTS) $(siduxcc_kde3_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -797,7 +797,7 @@ clean-metasources:
 	-rm -f  info.moc internet.moc network.moc services.moc console.moc display.moc software.moc kernel.moc start.moc
 
 #>+ 2
-KDE_DIST=startdialog.ui infodialog.ui Makefile.in displaydialog.ui softwaredialog.ui internetdialog.ui kerneldialog.ui networkdialog.ui siduxcc.desktop servicesdialog.ui consoledialog.ui Makefile.am 
+KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde internetdialog.h servicesdialog.h Makefile.in infodialog.ui consoledialog.h displaydialog.ui internetdialog.ui siduxcc-kde3.desktop softwaredialog.h consoledialog.ui startdialog.h Makefile.am 
 
 #>+ 12
 clean-ui:
@@ -854,36 +854,36 @@ bcheck-am:
 
 
 #>+ 11
-siduxcc_kde.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/console.cpp $(srcdir)/start.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp consoledialog.cpp startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp  network.moc internetdialog.moc infodialog.moc displaydialog.moc display.moc kernel.moc kerneldialog.moc info.moc internet.moc services.moc softwaredialog.moc console.moc consoledialog.moc servicesdialog.moc startdialog.moc networkdialog.moc software.moc start.moc
-	@echo 'creating siduxcc_kde.all_cpp.cpp ...'; \
-	rm -f siduxcc_kde.all_cpp.files siduxcc_kde.all_cpp.final; \
-	echo "#define KDE_USE_FINAL 1" >> siduxcc_kde.all_cpp.final; \
+siduxcc_kde3.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/console.cpp $(srcdir)/start.cpp $(srcdir)/display.cpp $(srcdir)/network.cpp $(srcdir)/services.cpp $(srcdir)/software.cpp $(srcdir)/internet.cpp $(srcdir)/kernel.cpp $(srcdir)/info.cpp $(srcdir)/consoledialog.cpp $(srcdir)/startdialog.cpp $(srcdir)/displaydialog.cpp $(srcdir)/networkdialog.cpp $(srcdir)/servicesdialog.cpp $(srcdir)/softwaredialog.cpp $(srcdir)/internetdialog.cpp $(srcdir)/kerneldialog.cpp $(srcdir)/infodialog.cpp  network.moc internetdialog.moc infodialog.moc displaydialog.moc display.moc kernel.moc kerneldialog.moc info.moc internet.moc services.moc softwaredialog.moc console.moc consoledialog.moc servicesdialog.moc startdialog.moc networkdialog.moc software.moc start.moc
+	@echo 'creating siduxcc_kde3.all_cpp.cpp ...'; \
+	rm -f siduxcc_kde3.all_cpp.files siduxcc_kde3.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> siduxcc_kde3.all_cpp.final; \
 	for file in main.cpp console.cpp start.cpp display.cpp network.cpp services.cpp software.cpp internet.cpp kernel.cpp info.cpp consoledialog.cpp startdialog.cpp displaydialog.cpp networkdialog.cpp servicesdialog.cpp softwaredialog.cpp internetdialog.cpp kerneldialog.cpp infodialog.cpp ; do \
-	  echo "#include \"$$file\"" >> siduxcc_kde.all_cpp.files; \
-	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_kde.all_cpp.final; \
+	  echo "#include \"$$file\"" >> siduxcc_kde3.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> siduxcc_kde3.all_cpp.final; \
 	done; \
-	cat siduxcc_kde.all_cpp.final siduxcc_kde.all_cpp.files > siduxcc_kde.all_cpp.cpp; \
-	rm -f siduxcc_kde.all_cpp.final siduxcc_kde.all_cpp.files
+	cat siduxcc_kde3.all_cpp.final siduxcc_kde3.all_cpp.files > siduxcc_kde3.all_cpp.cpp; \
+	rm -f siduxcc_kde3.all_cpp.final siduxcc_kde3.all_cpp.files
 
 #>+ 3
 clean-final:
-	-rm -f siduxcc_kde.all_cpp.cpp
+	-rm -f siduxcc_kde3.all_cpp.cpp
 
 #>+ 3
 final:
-	$(MAKE) siduxcc_kde_OBJECTS="$(siduxcc_kde_final_OBJECTS)" all-am
+	$(MAKE) siduxcc_kde3_OBJECTS="$(siduxcc_kde3_final_OBJECTS)" all-am
 
 #>+ 3
 final-install:
-	$(MAKE) siduxcc_kde_OBJECTS="$(siduxcc_kde_final_OBJECTS)" install-am
+	$(MAKE) siduxcc_kde3_OBJECTS="$(siduxcc_kde3_final_OBJECTS)" install-am
 
 #>+ 3
 no-final:
-	$(MAKE) siduxcc_kde_OBJECTS="$(siduxcc_kde_nofinal_OBJECTS)" all-am
+	$(MAKE) siduxcc_kde3_OBJECTS="$(siduxcc_kde3_nofinal_OBJECTS)" all-am
 
 #>+ 3
 no-final-install:
-	$(MAKE) siduxcc_kde_OBJECTS="$(siduxcc_kde_nofinal_OBJECTS)" install-am
+	$(MAKE) siduxcc_kde3_OBJECTS="$(siduxcc_kde3_nofinal_OBJECTS)" install-am
 
 #>+ 3
 kde-rpo-clean:

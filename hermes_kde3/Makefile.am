@@ -8,13 +8,13 @@ noinst_HEADERS = systray.h legend.h unique.h hermes.h
 METASOURCES = AUTO
 
 # the application source, library search path, and link libraries
-siduxcc_hermes_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui unique.cpp hermes.cpp hermesbase.ui
-siduxcc_hermes_LDFLAGS = $(KDE_RPATH) $(all_libraries)
-siduxcc_hermes_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
+sidux_hermes_kde3_SOURCES = main.cpp systray.cpp legend.cpp legendbase.ui unique.cpp hermes.cpp hermesbase.ui
+sidux_hermes_kde3_LDFLAGS = $(KDE_RPATH) $(all_libraries)
+sidux_hermes_kde3_LDADD = $(LIB_KDEUI) ../libsiduxcc/libsiduxcc.la
 
 # application
-xdg_apps_DATA = siduxcc-hermes.desktop
-bin_PROGRAMS = siduxcc-hermes
+xdg_apps_DATA = sidux-hermes-kde3.desktop
+bin_PROGRAMS = sidux-hermes-kde3
 
 sharedir = $(pkgdatadir)
 install-data-local:

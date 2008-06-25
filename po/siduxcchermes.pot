@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-09 12:22+0200\n"
+"POT-Creation-Date: 2008-06-25 12:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid "Latest Version"
 msgstr ""
 
 #. i18n: file ./hermesbase.ui line 16
-#: hermesbase.cpp:398 rc.cpp:18 systray.cpp:40
+#: hermesbase.cpp:398 rc.cpp:18
 #, no-c-format
 msgid "siduxcc-hermes"
 msgstr ""
@@ -244,6 +244,10 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 
+#: systray.cpp:40
+msgid "sidux-hermes"
+msgstr ""
+
 #: systray.cpp:43
 msgid "Forum - Upgrade Warnings"
 msgstr ""
@@ -269,5 +273,5 @@ msgid "Show Legend"
 msgstr ""
 
 #: systray.cpp:50
-msgid "&About siduxcc-hermes"
+msgid "&About sidux-hermes"
 msgstr ""
