@@ -73,6 +73,8 @@ KDE_CREATE_SUBDIRSLIST
 AC_CONFIG_FILES([ Makefile ])
 AC_CONFIG_FILES([ doc/Makefile ])
 AC_CONFIG_FILES([ doc/en/Makefile ])
+AC_CONFIG_FILES([ hermes_gtk2/Makefile ])
+AC_CONFIG_FILES([ hermes_kde3/Makefile ])
 AC_CONFIG_FILES([ icons/Makefile ])
 AC_CONFIG_FILES([ libsiduxcc/Makefile ])
 AC_CONFIG_FILES([ po/Makefile ])
@@ -90,8 +92,7 @@ AC_CONFIG_FILES([ po/ro/Makefile ])
 AC_CONFIG_FILES([ po/ru/Makefile ])
 AC_CONFIG_FILES([ siduxcc/Makefile ])
 AC_CONFIG_FILES([ siduxcc_gtk2/Makefile ])
-AC_CONFIG_FILES([ siduxcc_hermes/Makefile ])
-AC_CONFIG_FILES([ siduxcc_kde/Makefile ])
+AC_CONFIG_FILES([ siduxcc_kde3/Makefile ])
 AC_OUTPUT
 # Check if KDE_SET_PREFIX was called, and --prefix was passed to configure
 if test -n "$kde_libs_prefix" -a -n "$given_prefix"; then

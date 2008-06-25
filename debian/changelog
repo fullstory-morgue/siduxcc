@@ -2,8 +2,13 @@ siduxcc (0.10.13) unstable; urgency=low
 
   * sidux-hermes-kde4 added
   * cli: addSources function updated
+  * siduxcc_hermes to hermes_kde3 moved
+  * hermes-kde4 to hermes_kde4 moved
+  * hermes_gkt2 folder added
+  * disconnected icon to icon folder moved
+  * manpage added, not included in the debian yet 
 
- -- Fabian Wuertz <xadras@sidux.com>  Tue, 24 Jun 2008 23:49:18 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 25 Jun 2008 11:00:20 +0200
 
 siduxcc (0.10.12) unstable; urgency=low
 

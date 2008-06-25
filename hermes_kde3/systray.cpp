@@ -112,7 +112,7 @@ void SysTray::updateIcon()
 	QString tmp = this->shell->getBuffer().stripWhiteSpace();
 	if ( tmp == "disconnected" )
 	{
-		setPixmap ( loadIcon ( "siduxcc_disconnected" ) );
+		setPixmap( QPixmap("/usr/share/siduxcc/icons/disconnected") );
 	}
 	else
 	{

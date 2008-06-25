@@ -496,7 +496,7 @@ clean: kde-rpo-clean
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=siduxcckde.po siduxcc.po siduxcc.gmo siduxcchermes.gmo siduxcckde.gmo Makefile.in siduxcchermes.po Makefile.am 
+KDE_DIST=Makefile.in siduxcckde.po siduxcc.po siduxcchermes.po Makefile.am 
 
 #>+ 10
 siduxcc.gmo: siduxcc.po

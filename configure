@@ -33248,6 +33248,10 @@ ac_config_files="$ac_config_files doc/Makefile"
 
 ac_config_files="$ac_config_files doc/en/Makefile"
 
+ac_config_files="$ac_config_files hermes_gtk2/Makefile"
+
+ac_config_files="$ac_config_files hermes_kde3/Makefile"
+
 ac_config_files="$ac_config_files icons/Makefile"
 
 ac_config_files="$ac_config_files libsiduxcc/Makefile"
@@ -33282,9 +33286,7 @@ ac_config_files="$ac_config_files siduxcc/Makefile"
 
 ac_config_files="$ac_config_files siduxcc_gtk2/Makefile"
 
-ac_config_files="$ac_config_files siduxcc_hermes/Makefile"
-
-ac_config_files="$ac_config_files siduxcc_kde/Makefile"
+ac_config_files="$ac_config_files siduxcc_kde3/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -33895,6 +33897,8 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "doc/Makefile") CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
     "doc/en/Makefile") CONFIG_FILES="$CONFIG_FILES doc/en/Makefile" ;;
+    "hermes_gtk2/Makefile") CONFIG_FILES="$CONFIG_FILES hermes_gtk2/Makefile" ;;
+    "hermes_kde3/Makefile") CONFIG_FILES="$CONFIG_FILES hermes_kde3/Makefile" ;;
     "icons/Makefile") CONFIG_FILES="$CONFIG_FILES icons/Makefile" ;;
     "libsiduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES libsiduxcc/Makefile" ;;
     "po/Makefile") CONFIG_FILES="$CONFIG_FILES po/Makefile" ;;
@@ -33912,8 +33916,7 @@ do
     "po/ru/Makefile") CONFIG_FILES="$CONFIG_FILES po/ru/Makefile" ;;
     "siduxcc/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc/Makefile" ;;
     "siduxcc_gtk2/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_gtk2/Makefile" ;;
-    "siduxcc_hermes/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_hermes/Makefile" ;;
-    "siduxcc_kde/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kde/Makefile" ;;
+    "siduxcc_kde3/Makefile") CONFIG_FILES="$CONFIG_FILES siduxcc_kde3/Makefile" ;;
 
   *) { { echo "$as_me:$LINENO: error: invalid argument: $ac_config_target" >&5
 echo "$as_me: error: invalid argument: $ac_config_target" >&2;}
