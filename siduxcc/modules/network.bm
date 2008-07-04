@@ -42,9 +42,9 @@ function ssftHostname()
 	ssft_read_string "${Title}" "$(eval_gettext "Enter a new hostname:")"
 
 		if [ "$SSFT_RESULT" ]; then
-			fix-res $SSFT_RESULT \
+			setHostname $SSFT_RESULT \
 			&& ssft_display_message "${Title}" "$(eval_gettext "The resolution has been changed successfully to $SSFT_RESULT.")" \
-			|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the resolution to $SSFT_RESULT!")"
+			|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the hostname to $SSFT_RESULT!")"
 		fi
 
 	if [ "$SSFT_RESULT" != "" ]; then
