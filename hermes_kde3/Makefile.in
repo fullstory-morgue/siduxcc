@@ -728,7 +728,7 @@ clean-metasources:
 	-rm -f  unique.moc.cpp systray.moc.cpp legend.moc hermes.moc
 
 #>+ 2
-KDE_DIST=Makefile.in legendbase.ui sidux-hermes-kde3.desktop legendbase.h hermesbase.ui Makefile.am siduxcc-hermes hermesbase.h 
+KDE_DIST=Makefile.in legendbase.ui sidux-hermes-kde3.desktop legendbase.h sidux-hermes-kde3 hermesbase.ui Makefile.am siduxcc-hermes hermesbase.h 
 
 #>+ 5
 clean-ui:

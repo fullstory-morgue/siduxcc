@@ -797,7 +797,7 @@ clean-metasources:
 	-rm -f  info.moc internet.moc network.moc services.moc console.moc display.moc software.moc kernel.moc start.moc
 
 #>+ 2
-KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde internetdialog.h servicesdialog.h Makefile.in infodialog.ui consoledialog.h displaydialog.ui internetdialog.ui siduxcc-kde3.desktop softwaredialog.h consoledialog.ui startdialog.h Makefile.am 
+KDE_DIST=startdialog.ui softwaredialog.ui networkdialog.h kerneldialog.ui infodialog.h networkdialog.ui servicesdialog.ui kerneldialog.h displaydialog.h siduxcc-kde internetdialog.h servicesdialog.h Makefile.in infodialog.ui consoledialog.h displaydialog.ui internetdialog.ui siduxcc-kde3.desktop siduxcc-kde3 softwaredialog.h consoledialog.ui startdialog.h Makefile.am 
 
 #>+ 12
 clean-ui:

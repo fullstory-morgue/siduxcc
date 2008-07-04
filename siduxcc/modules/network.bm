@@ -43,15 +43,9 @@ function ssftHostname()
 
 		if [ "$SSFT_RESULT" ]; then
 			setHostname $SSFT_RESULT \
-			&& ssft_display_message "${Title}" "$(eval_gettext "The resolution has been changed successfully to $SSFT_RESULT.")" \
+			&& ssft_display_message "${Title}" "$(eval_gettext "The hostname has been changed successfully to $SSFT_RESULT.")" \
 			|| ssft_display_message "${Title}" "$(eval_gettext "An Error occurred while changing the hostname to $SSFT_RESULT!")"
 		fi
-
-	if [ "$SSFT_RESULT" != "" ]; then
-		setHostname $SSFT_RESULT \
-		&&  ssft_display_message "${Title}" "$(eval_gettext "The hostname have been changed successfully to $SSFT_RESULT.")" \
-		||  ssft_display_message "${Title}" "$(eval_gettext "An error occurred while changing the hosntame to $SSFT_RESULT!")"
-	fi
 }
 
 #------------------------------------------------------------------------------#
