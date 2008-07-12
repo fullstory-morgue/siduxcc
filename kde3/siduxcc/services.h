@@ -23,7 +23,7 @@
 
 
 #include "servicesdialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 class services : public ServicesDialog
 {

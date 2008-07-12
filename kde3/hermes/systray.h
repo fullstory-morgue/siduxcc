@@ -27,7 +27,7 @@
 #include <qstring.h>
 
 #include "hermes.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 
 class SysTray : public KSystemTray

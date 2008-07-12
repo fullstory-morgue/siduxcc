@@ -23,7 +23,7 @@
 
 #include "hermesbase.h"
 
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 #include <kde_terminal_interface.h>
 #include <kparts/part.h>

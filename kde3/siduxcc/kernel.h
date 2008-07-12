@@ -21,7 +21,7 @@
 #define KERNEL_H_
 
 #include "kerneldialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 
 class kernel : public KernelDialog

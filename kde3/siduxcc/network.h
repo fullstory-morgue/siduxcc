@@ -22,7 +22,7 @@
 #define NETWORK_H_
 
 #include "networkdialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 class network : public NetworkDialog
 {

@@ -21,7 +21,7 @@
 #define SOFTWARE_H_
 
 #include "softwaredialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 
 class software : public SoftwareDialog

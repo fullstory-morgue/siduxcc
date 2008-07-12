@@ -22,7 +22,7 @@
 #define INFO_H_
 
 #include <infodialog.h>
-#include <../libsiduxcc/process.h>
+#include <process.h>
 
 class info : public InfoDialog
 {

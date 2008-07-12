@@ -21,7 +21,7 @@
 #define INTERNET_H_
 
 #include "internetdialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 class internet : public InternetDialog
 {

@@ -22,7 +22,7 @@
 #define DISPLAY_H_
 
 #include "displaydialog.h"
-#include "../libsiduxcc/process.h"
+#include "process.h"
 
 
 class display : public DisplayDialog
