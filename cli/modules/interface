@@ -1,28 +1,19 @@
-#!/bin/bash
-# siducc-interface
+# siduxcc-interface
 # Copyright (c) 2007 Fabian Wuertz
 # License GPL 2
 # siduxcc is based on knxcc from Andreas Loibl
 
-
-
-
 testRoot
 
-SSFT_FRONTEND=dialog
+SSFT_FRONTEND="dialog"
 
 
 MODULES2="$(echo "$MODULES2" | sort)"
 
-while true;
-do
+while true; do
 	ssft_menu "${Title}" "$(eval_gettext "Main Menu")" $MODULES2
 	case $SSFT_RESULT in
 		exit|"") break;;
 		*)       ssft$SSFT_RESULT;;
 	esac
 done
-
-
-
-

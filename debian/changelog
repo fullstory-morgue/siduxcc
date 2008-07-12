@@ -1,7 +1,4 @@
-siduxcc (0.11.3) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.12.0) unstable; urgency=low
 
   [ Fabian Wuertz ]
   * cmake 1/?: new folder created
@@ -20,7 +17,11 @@ siduxcc (0.11.3) UNRELEASED; urgency=low
   * hermesExec problem solved
   * all translations activated
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jul 2008 22:39:04 +0200
+  [ Stefan Lippers-Hollmann ]
+  * switch stated build-dependency in debian/control from automake to cmake.
+  * "interface" is just a script module, no need to shebang.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Jul 2008 00:06:02 +0200
 
 siduxcc (0.11.2) unstable; urgency=low
 

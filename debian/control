@@ -3,7 +3,7 @@ Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Uploaders: Fabian Wuertz <xadras@sidux.com>
-Build-Depends: cdbs, debhelper (>= 6), automake1.10, kdelibs4-dev, gettext, imagemagick
+Build-Depends: cdbs, debhelper (>= 6), cmake, kdelibs4-dev, gettext, imagemagick
 Standards-Version: 3.8.0
 Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
