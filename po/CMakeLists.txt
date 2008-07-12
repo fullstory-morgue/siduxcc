@@ -11,7 +11,20 @@ else(NOT GETTEXT_MSGFMT_EXECUTABLE)
  
 	add_custom_target(translations ALL)
 	
-	file(GLOB PO_FILES ./de.po)
+	file(GLOB PO_FILES
+		./da..po
+		./de.po
+		./es.po
+		./fr.po
+		./hr.po
+		./it.po
+		./ja.po
+		./nl.po
+		./pl.po
+		./pt.po
+		./ro.po
+		./ru.po
+	)
 	
 	FOREACH(_poFile ${PO_FILES})
 		GET_FILENAME_COMPONENT(_lang ${_poFile} NAME_WE)
