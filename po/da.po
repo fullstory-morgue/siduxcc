@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# translation of da.po to
+# translation of siduxcc.po to
+# translation of siduxcc-console.po to
+# translation of siduxccconsole.po to
+# This file is put in the public domain.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=50231&atid=459007\n"
 "POT-Creation-Date: 2008-07-12 21:51+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2008-07-12 20:42+0200\n"
+"Last-Translator: Fabian Wuertz\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: kde3/hermes/hermes.cpp:71 kde3/hermes/systray.cpp:64
 msgid "en"
-msgstr ""
+msgstr "da"
 
 #: kde3/hermes/hermes.cpp:87
 msgid "Double click to the item to view the full warning."
@@ -31,31 +33,34 @@ msgstr ""
 
 #: kde3/hermes/main.cpp:44 kde3/siduxcc/main.cpp:47
 msgid "Packaging"
-msgstr ""
+msgstr "Pakning"
 
 #: kde3/hermes/main.cpp:45 kde3/siduxcc/main.cpp:50
 msgid "Icon"
-msgstr ""
+msgstr "Handling"
 
 #: kde3/hermes/systray.cpp:40
+#, fuzzy
 msgid "sidux-hermes"
-msgstr ""
+msgstr "sidux Version"
 
 #: kde3/hermes/systray.cpp:43
 msgid "Forum - Upgrade Warnings"
-msgstr ""
+msgstr "Forum - Upgrade advarsler"
 
 #: kde3/hermes/systray.cpp:44
 msgid "Manual - Upgrade of an Installed System"
-msgstr ""
+msgstr "Manual - Opgradering af et installeret system"
 
 #: kde3/hermes/systray.cpp:45
+#, fuzzy
 msgid "Upgradable packages"
-msgstr ""
+msgstr "Opgraderbare pakker"
 
 #: kde3/hermes/systray.cpp:46
+#, fuzzy
 msgid "sidux news"
-msgstr ""
+msgstr "sidux Version"
 
 #: kde3/hermes/systray.cpp:47
 msgid "Warnings"
@@ -63,11 +68,11 @@ msgstr ""
 
 #: kde3/hermes/systray.cpp:49
 msgid "Show Legend"
-msgstr ""
+msgstr "Vis signaturforklaring"
 
 #: kde3/hermes/systray.cpp:50
 msgid "&About sidux-hermes"
-msgstr ""
+msgstr "Om siduxcc-hermes"
 
 #: kde3/siduxcc/console.cpp:100
 msgid "Show details"
@@ -82,11 +87,11 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2178 rc.cpp:173
 #, no-c-format
 msgid "custom"
-msgstr ""
+msgstr "tilpasset"
 
 #: kde3/siduxcc/display.cpp:234
 msgid "Modelines removed"
-msgstr ""
+msgstr "Modelines fjernet"
 
 #: kde3/siduxcc/display.cpp:239
 msgid ""
@@ -109,7 +114,7 @@ msgstr ""
 
 #: kde3/siduxcc/kernel.cpp:189
 msgid "Are you sure you want to install a new kernel?"
-msgstr ""
+msgstr "Er du sikker på at du vil installere en ny kernel?"
 
 #: kde3/siduxcc/kernel.cpp:216
 msgid ""
@@ -231,15 +236,15 @@ msgstr ""
 
 #: kde3/siduxcc/main.cpp:40
 msgid "Frontend for managing sidux."
-msgstr ""
+msgstr "Frontend til administration af sidux."
 
 #: kde3/siduxcc/main.cpp:46
 msgid "Developer"
-msgstr ""
+msgstr "Udvikler"
 
 #: kde3/siduxcc/main.cpp:48
 msgid "Developer of the knxcc"
-msgstr ""
+msgstr "Udviklerne af knxcc"
 
 #: kde3/siduxcc/main.cpp:49
 msgid "Developer of ceni and fw-detect"
@@ -247,7 +252,7 @@ msgstr ""
 
 #: kde3/siduxcc/network.cpp:244 kde3/siduxcc/network.cpp:254
 msgid "Mac Address"
-msgstr ""
+msgstr "Mac Addresse"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
@@ -257,7 +262,7 @@ msgstr ""
 #: rc.cpp:753
 #, no-c-format
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: kde3/siduxcc/network.cpp:321
 msgid "Card"
@@ -289,11 +294,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1977 rc.cpp:509
 #, no-c-format
 msgid "Detected"
-msgstr ""
+msgstr "detekteret"
 
 #: kde3/siduxcc/services.cpp:69 kde3/siduxcc/services.cpp:274
 msgid "Apache v2 is the next generation of the omnipresent Apache web server."
 msgstr ""
+"Apache v2 er den næste generation af den allerstedsnærværende Apache web "
+"server."
 
 #: kde3/siduxcc/services.cpp:70 kde3/siduxcc/services.cpp:280
 msgid ""
@@ -301,12 +308,14 @@ msgid ""
 "(Internet Printing Protocol), and has its own filtering driver model for "
 "handling various document types."
 msgstr ""
+"Common UNIX Printing System (eller CUPS(tm)) er et printsystem og generel "
+"afløser for lpd og deslige."
 
 #: kde3/siduxcc/services.cpp:71 kde3/siduxcc/services.cpp:298
 msgid ""
 "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
 "server."
-msgstr ""
+msgstr "MYSQL er en hurtig, stabil og ægte multitrådet SQL database server."
 
 #: kde3/siduxcc/services.cpp:72
 msgid ""
@@ -314,24 +323,29 @@ msgid ""
 "CIFS protocol for unix systems, allowing you to serve files and printers to "
 "Windows, NT, OS/2 and DOS clients."
 msgstr ""
+" Samba software suite er en gruppe af programmer der implementerer SMB/CIFS "
+"protokollerne for unix systemer, og gør dig dermed i stand til at serve "
+"filer og printere til Windows-, NT-, OS/2- og DOS-klienter."
 
 #: kde3/siduxcc/services.cpp:73 kde3/siduxcc/services.cpp:308
 msgid ""
 "SSH is the portable version of OpenSSH, a free implementation of the Secure "
 "Shell protocol as specified by the IETF secsh working group."
 msgstr ""
+" SSH er den portable version af OpenSSH, en fri implementering af Secure "
+"Shell protokollen, som specificeret af IETF secsh arbejdsgruppen."
 
 #: kde3/siduxcc/services.cpp:188 kde3/siduxcc/services.cpp:193
 msgid "Status: %1"
-msgstr ""
+msgstr "Status: %1"
 
 #: kde3/siduxcc/services.cpp:188
 msgid "not running..."
-msgstr ""
+msgstr "kører ikke..."
 
 #: kde3/siduxcc/services.cpp:193
 msgid "running..."
-msgstr ""
+msgstr "kører..."
 
 #: kde3/siduxcc/services.cpp:272
 msgid ""
@@ -455,18 +469,18 @@ msgstr ""
 
 #: kde3/siduxcc/software.cpp:90
 msgid "Apt-show-versions is missing!"
-msgstr ""
+msgstr "Apt-show-versions mangler!"
 
 #: kde3/siduxcc/software.cpp:90
 msgid "Do you want to install it?"
-msgstr ""
+msgstr "Vil du installer den?"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
 #: kde3/siduxcc/software.cpp:107
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:758 rc.cpp:816
 #, no-c-format
 msgid "There are no warnings"
-msgstr ""
+msgstr "Der er ingen advarsler"
 
 #: kde3/siduxcc/software.cpp:112
 msgid "Couldn't connect to sidux.com!"
@@ -474,7 +488,7 @@ msgstr ""
 
 #: kde3/siduxcc/software.cpp:119
 msgid "Don't make a dist-Upgrade!"
-msgstr ""
+msgstr "Foretag ikke dist-upgrade!"
 
 #: kde3/siduxcc/software.cpp:158
 msgid ""
@@ -482,38 +496,41 @@ msgid ""
 "+ALT+F1, login as root and type init 3. After that run the command smxi or "
 "siduxcc (Software->Dist-upgrade)."
 msgstr ""
+" For at eksekvere en dist-upgrade skal du være i runlevel 3. Tast CTRL+ALT"
+"+F1, log ind som root og tast init 3. Derefter kører du kommandoen siduxcc "
+"og vælger Software -> dist-upgrade"
 
 #: kde3/siduxcc/software.cpp:178
 msgid "Are you sure you want to clear your local repository?"
-msgstr ""
+msgstr "Er du sikker på at du vil rydde dit lokale opbevaringssted?"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 17
 #: kde3/siduxcc/start.cpp:60 kde3/siduxcc/start.cpp:101
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2161 rc.cpp:128
 #, no-c-format
 msgid "Display"
-msgstr ""
+msgstr "Skærm"
 
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 17
 #: kde3/siduxcc/start.cpp:64 kde3/siduxcc/start.cpp:128
 #: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:306 rc.cpp:336
 #, no-c-format
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
 #: kde3/siduxcc/start.cpp:68 kde3/siduxcc/start.cpp:134
 #: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:820 rc.cpp:348
 #, no-c-format
 msgid "Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
 #: kde3/siduxcc/start.cpp:72 kde3/siduxcc/start.cpp:108
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1943 rc.cpp:417
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Network"
-msgstr ""
+msgstr "Netværk"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
@@ -521,27 +538,27 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:683
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:707 rc.cpp:723
 #: rc.cpp:790
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Services"
-msgstr ""
+msgstr "Tjeneste"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 17
 #: kde3/siduxcc/start.cpp:80 kde3/siduxcc/start.cpp:121
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:755 rc.cpp:810
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Software"
-msgstr ""
+msgstr "Software"
 
 #: kde3/siduxcc/start.cpp:84 kde3/siduxcc/start.cpp:141
 msgid "System Info"
-msgstr ""
+msgstr "System Info"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 504
 #: kde3/siduxcc/start.cpp:147
 #: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3511 rc.cpp:917
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "About"
-msgstr ""
+msgstr "Om KDE"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 524
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 527
@@ -550,7 +567,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3516 rc.cpp:927 rc.cpp:930
 #, no-c-format
 msgid "Exit"
-msgstr ""
+msgstr "Afslut"
 
 #: kde3/siduxcc/start.cpp:198
 msgid ""
@@ -566,7 +583,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:759 rc.cpp:24 rc.cpp:819
 #, no-c-format
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 139
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
@@ -576,7 +593,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:760 rc.cpp:27 rc.cpp:822
 #, no-c-format
 msgid "Installed Version"
-msgstr ""
+msgstr "Installeret Version"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 150
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
@@ -586,21 +603,21 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:761 rc.cpp:30 rc.cpp:825
 #, no-c-format
 msgid "Latest Version"
-msgstr ""
+msgstr "Nyeste Version"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 16
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:399 rc.cpp:3
 #, no-c-format
 msgid "siduxcc-hermes"
-msgstr ""
+msgstr "siduxcc-hermes"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 65
 #. i18n: file ./kde3/hermes/legendbase.ui line 103
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:400
 #: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:439 rc.cpp:9 rc.cpp:110
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "No dist-upgrade warnings."
-msgstr ""
+msgstr "Kør Dist-Upgrade"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 49
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:401 rc.cpp:6
@@ -628,9 +645,9 @@ msgstr ""
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 119
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:408 rc.cpp:21
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Upgrada&ble packages"
-msgstr ""
+msgstr "Opgraderbare pakker"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
@@ -669,15 +686,15 @@ msgstr ""
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 182
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:417 rc.cpp:33
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "&Kernel"
-msgstr ""
+msgstr "Kernel"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 354
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:418 rc.cpp:54
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "relo&ad"
-msgstr ""
+msgstr "Genindlæs"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 357
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 429
@@ -696,7 +713,7 @@ msgstr ""
 #: rc.cpp:457 rc.cpp:506 rc.cpp:614 rc.cpp:765 rc.cpp:872
 #, no-c-format
 msgid "Alt+A"
-msgstr ""
+msgstr "Alt+A"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 363
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:420 rc.cpp:60
@@ -723,7 +740,7 @@ msgstr ""
 #: rc.cpp:858
 #, no-c-format
 msgid "Alt+U"
-msgstr ""
+msgstr "Alt+U"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 382
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
@@ -745,7 +762,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:771 rc.cpp:80 rc.cpp:843
 #, no-c-format
 msgid "D&ownload"
-msgstr ""
+msgstr "Hent"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 408
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 418
@@ -762,7 +779,7 @@ msgstr ""
 #: rc.cpp:448 rc.cpp:499 rc.cpp:771 rc.cpp:846
 #, no-c-format
 msgid "Alt+O"
-msgstr ""
+msgstr "Alt+O"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 414
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
@@ -786,28 +803,30 @@ msgstr ""
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 876
 #: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:439
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2212 rc.cpp:95 rc.cpp:256
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Alt+C"
-msgstr ""
+msgstr "Alt+T"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 16
 #: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:435 rc.cpp:98
 #, no-c-format
 msgid "legendbase"
-msgstr ""
+msgstr "Signaturforklaring"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 34
 #: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:436 rc.cpp:101
 #, no-c-format
 msgid "Legend"
-msgstr ""
+msgstr "Signaturforklaring"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 68
 #: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:437 rc.cpp:104
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
+" Der er dist-upgrade advarsler. Foretag ikke en dist-upgrade! Besøg venligst "
+"sidux.com for yderligere information!"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 87
 #: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:438 rc.cpp:107
@@ -819,7 +838,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:113 rc.cpp:113
 #, no-c-format
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 38
 #: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:114 rc.cpp:116
@@ -834,7 +853,7 @@ msgstr ""
 #: rc.cpp:313
 #, no-c-format
 msgid "Alt+T"
-msgstr ""
+msgstr "Alt+T"
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 57
 #: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:116 rc.cpp:122
@@ -846,13 +865,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:117 rc.cpp:125
 #, no-c-format
 msgid "Alt+W"
-msgstr ""
+msgstr "Alt+W"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 45
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2163 rc.cpp:131
 #, no-c-format
 msgid "Change resolution & frequency"
-msgstr ""
+msgstr "Skannings frekvens"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 53
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2164 rc.cpp:134
@@ -870,7 +889,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2166 rc.cpp:140
 #, no-c-format
 msgid "Install graphiccard-drivers"
-msgstr ""
+msgstr "Installer driver"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 128
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 488
@@ -883,7 +902,7 @@ msgstr ""
 #: rc.cpp:208 rc.cpp:235 rc.cpp:280
 #, no-c-format
 msgid "WARNING!"
-msgstr ""
+msgstr "ADVARSEL!"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 143
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 503
@@ -900,178 +919,181 @@ msgid ""
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
 "choose the option Display -> restoreX."
 msgstr ""
+"Med de forkerte indstillinger virker x-serveren ikke! For et genskabe en "
+"gammel konfiguration tast CTRL+ALT+F1, kør kommandoen siduxcc som root, og "
+"vælg Display -> restoreX."
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 174
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2169 rc.cpp:149
 #, no-c-format
 msgid "Resolution"
-msgstr ""
+msgstr "Opløsning"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 198
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2171 rc.cpp:152
 #, no-c-format
 msgid "640x480"
-msgstr ""
+msgstr "640x480"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 203
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2172 rc.cpp:155
 #, no-c-format
 msgid "800x600"
-msgstr ""
+msgstr "800x600"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 208
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2173 rc.cpp:158
 #, no-c-format
 msgid "1024x768"
-msgstr ""
+msgstr "1024x768"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 213
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2174 rc.cpp:161
 #, no-c-format
 msgid "1152x864"
-msgstr ""
+msgstr "1152x864"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 218
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2175 rc.cpp:164
 #, no-c-format
 msgid "1280x1024"
-msgstr ""
+msgstr "1280x1024"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 223
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2176 rc.cpp:167
 #, no-c-format
 msgid "1400x1050"
-msgstr ""
+msgstr "1400x1050"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 228
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2177 rc.cpp:170
 #, no-c-format
 msgid "1600x1200"
-msgstr ""
+msgstr "1600x1200"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 295
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2180 rc.cpp:176
 #, no-c-format
 msgid "Scanning Frequency"
-msgstr ""
+msgstr "Skannings frekvens"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 329
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2181 rc.cpp:179
 #, no-c-format
 msgid "HorizSync:"
-msgstr ""
+msgstr "HorizSync:"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 345
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2182 rc.cpp:182
 #, no-c-format
 msgid "VertRefresh:"
-msgstr ""
+msgstr "VertRefresh:"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 367
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2184 rc.cpp:186
 #, no-c-format
 msgid "Vertical Frequenz"
-msgstr ""
+msgstr "Vertikal frekvens"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 373
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2186 rc.cpp:189
 #, no-c-format
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 378
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2187 rc.cpp:192
 #, no-c-format
 msgid "TFT"
-msgstr ""
+msgstr "TFT"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 383
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2188 rc.cpp:195
 #, no-c-format
 msgid "CRT"
-msgstr ""
+msgstr "CRT"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 428
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2191 rc.cpp:199
 #, no-c-format
 msgid "Horizontal Frequenz"
-msgstr ""
+msgstr "Horisontal frekvens"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 453
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2192 rc.cpp:202
 #, no-c-format
 msgid "Note"
-msgstr ""
+msgstr "Bemærk"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 470
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2193 rc.cpp:205
 #, no-c-format
 msgid ""
 "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
-msgstr ""
+msgstr "Hvis du bruger ATI-drivere (fglrx) kan du ikke ænder farvedybden "
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 523
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2196 rc.cpp:214
 #, no-c-format
 msgid "Color-Depth"
-msgstr ""
+msgstr "Farvedybde"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 547
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2198 rc.cpp:217
 #, no-c-format
 msgid "8 bit"
-msgstr ""
+msgstr "8 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 552
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2199 rc.cpp:220
 #, no-c-format
 msgid "15 bit"
-msgstr ""
+msgstr "15 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 557
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2200 rc.cpp:223
 #, no-c-format
 msgid "16 bit"
-msgstr ""
+msgstr "16 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 562
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2201 rc.cpp:226
 #, no-c-format
 msgid "24 bit"
-msgstr ""
+msgstr "24 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 608
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2203 rc.cpp:229
 #, no-c-format
 msgid "DPI-Settings"
-msgstr ""
+msgstr "DPI-indsillinger"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 645
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2204 rc.cpp:232
 #, no-c-format
 msgid " dpi"
-msgstr ""
+msgstr " dpi"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 765
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2207 rc.cpp:241
 #, no-c-format
 msgid "Modelines"
-msgstr ""
+msgstr "Modelines"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 805
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2208 rc.cpp:244
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Remo&ve Modelines"
-msgstr ""
+msgstr "Fjern Modelines"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 808
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1044
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2209
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2226 rc.cpp:247
 #: rc.cpp:292
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Alt+V"
-msgstr ""
+msgstr "Alt+T"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 836
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2210 rc.cpp:250
@@ -1089,73 +1111,73 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2214 rc.cpp:259
 #, no-c-format
 msgid "VESA"
-msgstr ""
+msgstr "VESA"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 887
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2215 rc.cpp:262
 #, no-c-format
 msgid "FBdev"
-msgstr ""
+msgstr "FBdev"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 892
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2216 rc.cpp:265
 #, no-c-format
 msgid "nv"
-msgstr ""
+msgstr "nv"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 897
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2217 rc.cpp:268
 #, no-c-format
 msgid "nvidia"
-msgstr ""
+msgstr "nvidia"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 902
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2218 rc.cpp:271
 #, no-c-format
 msgid "ati"
-msgstr ""
+msgstr "ati"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 907
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2219 rc.cpp:274
 #, no-c-format
 msgid "fglrx"
-msgstr ""
+msgstr "fglrx"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 912
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2220 rc.cpp:277
 #, no-c-format
 msgid "vboxvideo"
-msgstr ""
+msgstr "vboxvideo"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1001
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2224 rc.cpp:286
 #, no-c-format
 msgid "ATI/Nvidia (Non-Free)"
-msgstr ""
+msgstr "ATI/Nvidia (Non-Free)"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1041
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2225 rc.cpp:289
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Install dri&ver"
-msgstr ""
+msgstr "Installer driver"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1080
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2227 rc.cpp:295
 #, no-c-format
 msgid "Fonts (fix-fonts)"
-msgstr ""
+msgstr "Fonte (fix-fonts)"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1117
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2228 rc.cpp:298
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "&Register Fonts"
-msgstr ""
+msgstr "Registrer Fonte"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1120
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2229 rc.cpp:301
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "Alt+R"
-msgstr ""
+msgstr "Alt+T"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1165
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 471
@@ -1189,13 +1211,13 @@ msgstr ""
 #: rc.cpp:414 rc.cpp:442 rc.cpp:714 rc.cpp:729 rc.cpp:787 rc.cpp:883
 #, no-c-format
 msgid "Alt+B"
-msgstr ""
+msgstr "Alt+B"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1179
 #: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2232 rc.cpp:310
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "res&tart X-Server"
-msgstr ""
+msgstr "Genstart X-Server"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1190
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 74
@@ -1225,31 +1247,31 @@ msgstr ""
 #: rc.cpp:342 rc.cpp:720 rc.cpp:735 rc.cpp:889
 #, no-c-format
 msgid "Alt+Y"
-msgstr ""
+msgstr "Alt+Y"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 17
 #: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:93 rc.cpp:322
 #, no-c-format
 msgid "SysInfo"
-msgstr ""
+msgstr "Sysinfo"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 31
 #: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:94 rc.cpp:325
 #, no-c-format
 msgid "About sidux"
-msgstr ""
+msgstr "Om sidux"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 42
 #: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:95 rc.cpp:328
 #, no-c-format
 msgid "sidux Version:"
-msgstr ""
+msgstr "sidux Version:"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 94
 #: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:97 rc.cpp:332
 #, no-c-format
 msgid "Infobash"
-msgstr ""
+msgstr "Infobash"
 
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 118
 #: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:309 rc.cpp:345
@@ -1291,13 +1313,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:837 rc.cpp:386
 #, no-c-format
 msgid "re&move"
-msgstr ""
+msgstr "fjern"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 336
 #: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:838 rc.cpp:389
 #, no-c-format
 msgid "Alt+M"
-msgstr ""
+msgstr "Alt+M"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 415
 #: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:840 rc.cpp:393
@@ -1315,7 +1337,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:844 rc.cpp:405
 #, no-c-format
 msgid "i&nstall"
-msgstr ""
+msgstr "installer"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 443
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 496
@@ -1328,28 +1350,28 @@ msgstr ""
 #: rc.cpp:490 rc.cpp:620 rc.cpp:831
 #, no-c-format
 msgid "Alt+N"
-msgstr ""
+msgstr "Alt+N"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 276
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1499
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1959 rc.cpp:460
 #, no-c-format
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 287
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1500
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1960 rc.cpp:463
 #, no-c-format
 msgid "IP address"
-msgstr ""
+msgstr "IP adresse"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 298
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1501
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1961 rc.cpp:466
 #, no-c-format
 msgid "Method"
-msgstr ""
+msgstr "Metode"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 309
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1502
@@ -1363,14 +1385,14 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1963 rc.cpp:472
 #, no-c-format
 msgid "Driver"
-msgstr ""
+msgstr "Driver"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 331
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1504
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1964 rc.cpp:475
 #, no-c-format
 msgid "Slot"
-msgstr ""
+msgstr "Slot"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1882
@@ -1435,13 +1457,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1951 rc.cpp:436
 #, no-c-format
 msgid "MAC address"
-msgstr ""
+msgstr "Mac Addresse:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 204
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1952 rc.cpp:439
 #, no-c-format
 msgid "Disa&ble"
-msgstr ""
+msgstr "Slå fra"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 234
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1954 rc.cpp:445
@@ -1453,19 +1475,19 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1956 rc.cpp:451
 #, no-c-format
 msgid "Change the settings of the selected device"
-msgstr ""
+msgstr "Ændre indstilingerne for den valgte enhed"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 267
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1957 rc.cpp:454
 #, no-c-format
 msgid "En&able"
-msgstr ""
+msgstr "Slå til"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 375
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1965 rc.cpp:478
 #, no-c-format
 msgid "List of configured network devices"
-msgstr ""
+msgstr "Liste over konfigurerede netværks enheder"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 402
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1966 rc.cpp:481
@@ -1483,13 +1505,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1968 rc.cpp:487
 #, no-c-format
 msgid "&Ndiswrapper"
-msgstr ""
+msgstr "Ndiswrapper"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 524
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1970 rc.cpp:493
 #, no-c-format
 msgid "Cards known to work"
-msgstr ""
+msgstr "Kort der virker"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 558
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1971 rc.cpp:496
@@ -1501,13 +1523,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1974 rc.cpp:503
 #, no-c-format
 msgid "Inst&all"
-msgstr ""
+msgstr "Installer"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 967
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1978 rc.cpp:512
 #, no-c-format
 msgid "All"
-msgstr ""
+msgstr "alt"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1048
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1982 rc.cpp:517
@@ -1543,13 +1565,13 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1990 rc.cpp:534
 #, no-c-format
 msgid "auto"
-msgstr ""
+msgstr "tilpasset"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1185
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1991 rc.cpp:537
 #, no-c-format
 msgid "<b>Method:</b>"
-msgstr ""
+msgstr "<b>Beskrivelse:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1191
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1993 rc.cpp:540
@@ -1573,7 +1595,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1998 rc.cpp:551
 #, no-c-format
 msgid "Nameserver:"
-msgstr ""
+msgstr "Vælg tjeneste"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1290
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1331
@@ -1613,7 +1635,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2003 rc.cpp:566
 #, no-c-format
 msgid "IP address:"
-msgstr ""
+msgstr "IP adresse:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1353
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2005 rc.cpp:572
@@ -1625,7 +1647,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2006 rc.cpp:575
 #, no-c-format
 msgid "Netmask:"
-msgstr ""
+msgstr "Netværk:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1369
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2007 rc.cpp:578
@@ -1643,7 +1665,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2010 rc.cpp:587
 #, no-c-format
 msgid "Network:"
-msgstr ""
+msgstr "Netværk:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1407
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2013 rc.cpp:596
@@ -1667,7 +1689,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2018 rc.cpp:611
 #, no-c-format
 msgid "&Auto"
-msgstr ""
+msgstr "tilpasset"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1488
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2020 rc.cpp:617
@@ -1685,7 +1707,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2023 rc.cpp:626
 #, no-c-format
 msgid "Alt+Q"
-msgstr ""
+msgstr "Alt+Q"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1521
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2024 rc.cpp:629
@@ -1733,7 +1755,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2031 rc.cpp:650
 #, no-c-format
 msgid "<b>Mode:</b>"
-msgstr ""
+msgstr "<b>Beskrivelse:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1629
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2034 rc.cpp:654
@@ -1769,7 +1791,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2039 rc.cpp:669
 #, no-c-format
 msgid "Auto"
-msgstr ""
+msgstr "tilpasset"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1698
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2040 rc.cpp:672
@@ -1781,7 +1803,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2045 rc.cpp:678
 #, no-c-format
 msgid "None"
-msgstr ""
+msgstr "Bemærk"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1758
 #: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2046 rc.cpp:681
@@ -1817,7 +1839,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:689 rc.cpp:738
 #, no-c-format
 msgid "Manage services"
-msgstr ""
+msgstr "Vælg tjeneste"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 127
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:690 rc.cpp:741
@@ -1829,19 +1851,19 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:691 rc.cpp:744
 #, no-c-format
 msgid "Select service"
-msgstr ""
+msgstr "Vælg tjeneste"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 237
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:692 rc.cpp:747
 #, no-c-format
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 286
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:693 rc.cpp:750
 #, no-c-format
 msgid "Status: not running..."
-msgstr ""
+msgstr "Status: Kører ikke..."
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
@@ -1850,13 +1872,13 @@ msgstr ""
 #: rc.cpp:807
 #, no-c-format
 msgid "Description Text"
-msgstr ""
+msgstr "Beskrivelses tekst"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 354
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:696 rc.cpp:759
 #, no-c-format
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 391
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:697 rc.cpp:762
@@ -1866,69 +1888,69 @@ msgstr ""
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 405
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:699 rc.cpp:768
-#, no-c-format
+#, fuzzy, no-c-format
 msgid "St&op"
-msgstr ""
+msgstr "Stop"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 419
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:701 rc.cpp:774
 #, no-c-format
 msgid "Restart"
-msgstr ""
+msgstr "Genstart"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 433
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:703 rc.cpp:778
 #, no-c-format
 msgid "Re&load"
-msgstr ""
+msgstr "Genindlæs"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 436
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:704 rc.cpp:781
 #, no-c-format
 msgid "Alt+L"
-msgstr ""
+msgstr "Alt+L"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 466
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:705 rc.cpp:784
 #, no-c-format
 msgid "Start service at &Boot"
-msgstr ""
+msgstr "Tilføj en runlevel-entry (start tjenesten ved opstart)"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 518
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:708 rc.cpp:793
 #, no-c-format
 msgid "Active Services:"
-msgstr ""
+msgstr "Aktive tjenester"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 566
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:709 rc.cpp:796
 #, no-c-format
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 594
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:711 rc.cpp:800
 #, no-c-format
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 640
 #: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:713 rc.cpp:804
 #, no-c-format
 msgid "Disabled Services:"
-msgstr ""
+msgstr "Deaktiverede tjenester"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 48
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:757 rc.cpp:813
 #, no-c-format
 msgid "Show upgradable packages"
-msgstr ""
+msgstr "Opgraderbare pakker"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 233
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:762 rc.cpp:828
 #, no-c-format
 msgid "Clea&n"
-msgstr ""
+msgstr "Ryd"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 245
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:764 rc.cpp:834
@@ -1953,7 +1975,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:785 rc.cpp:869
 #, no-c-format
 msgid "Upgr&ade"
-msgstr ""
+msgstr "Upgrade"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 395
 #: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:787 rc.cpp:875
@@ -2008,7 +2030,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3513 rc.cpp:920 rc.cpp:923
 #, no-c-format
 msgid "About siduxcc"
-msgstr ""
+msgstr "Om sidux"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
@@ -2016,7 +2038,7 @@ msgstr ""
 #: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3518 rc.cpp:933 rc.cpp:936
 #, no-c-format
 msgid "About KDE"
-msgstr ""
+msgstr "Om KDE"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
@@ -2037,9 +2059,9 @@ msgstr ""
 #: rc.cpp:943
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "zonker"
 
 #: rc.cpp:944
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "zonker@greenin.dk"

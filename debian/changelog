@@ -16,8 +16,9 @@ siduxcc (0.11.3) UNRELEASED; urgency=low
   * cmake 10/?: moc problem solved
   * cmake 11/?: hermes cmake files added
   * cmake 12/?: main.cpp problem solved
+  * cmake 13/13: translation updated --> change to cmake done
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jul 2008 19:08:37 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jul 2008 21:57:17 +0200
 
 siduxcc (0.11.2) unstable; urgency=low
 
