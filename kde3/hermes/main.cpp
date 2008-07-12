@@ -35,7 +35,7 @@ static KCmdLineOptions options[] =
 int main(int argc, char *argv[])
 {
 	// specify data for About dialog
-	KAboutData* about = new KAboutData("siduxcchermes", "sidux-hermes (sidux dist-upgrade alerter)", "");
+	KAboutData* about = new KAboutData("siduxcc", "sidux-hermes (sidux dist-upgrade alerter)", "");
 	about->setShortDescription(I18N_NOOP("A KDE tray application for sidux"));
 	about->setLicense(KAboutData::License_GPL_V2);
 	about->setCopyrightStatement("(c) 2007 Fabian Würtz");
