@@ -227,16 +227,16 @@ void network::getNetworkcards()
 		if(info[1] == "ethernet")
 		{
 			if(overview[0] == "activ")
-				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_up.png"));
+				item->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/lan_up.png"));
 			else
-				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_lan_down.png"));
+				item->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/lan_down.png"));
 		}
 		if(info[1] == "wireless")
 		{
 			if(overview[0] == "activ")
-				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_up.png"));
+				item->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/wlan_up.png"));
 			else
-				item->setPixmap(0, QPixmap("/usr/share/icons/hicolor/22x22/apps/siduxcc_wlan_down.png"));
+				item->setPixmap(0, QPixmap("/usr/share/siduxcc/icons/wlan_down.png"));
 		}
 
 		if(i == 0)

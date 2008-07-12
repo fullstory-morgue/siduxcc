@@ -30,6 +30,7 @@
 #include <kapp.h>
 #include <klocale.h>
 #include <qtextbrowser.h>
+#include <kiconloader.h>
 
 
 hermes::hermes(QWidget* parent, const char* name )
@@ -46,6 +47,7 @@ hermes::hermes(QWidget* parent, const char* name )
 
 	loadKonsole();
 	konsoleFrame->installEventFilter( this );
+
 
 }
 

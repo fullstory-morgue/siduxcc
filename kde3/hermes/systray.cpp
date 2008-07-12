@@ -41,10 +41,10 @@ SysTray::SysTray ( QWidget* parent, const char* name )
 
 	menu = contextMenu();
 	menu->insertItem ( SmallIcon ( "info" ), i18n("Forum - Upgrade Warnings"), this, SLOT ( forum() ) );
-	menu->insertItem ( SmallIcon ( "sidux_book" ), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
+	menu->insertItem ( QPixmap("/usr/share/siduxcc/icons/manual.png"), i18n("Manual - Upgrade of an Installed System"), this, SLOT ( manual() ) );
 	menu->insertItem ( SmallIcon ( "package" ), i18n("Upgradable packages"), this, SLOT ( upgradablePackages() ) );
 	menu->insertItem ( SmallIcon ( "info" ), i18n("sidux news"), this, SLOT ( news() ) );
-	menu->insertItem ( SmallIcon ( "siduxcc_warning" ), i18n("Warnings"), this, SLOT ( warnings() ) );
+	menu->insertItem ( QPixmap("/usr/share/siduxcc/icons/warning2.png"), i18n("Warnings"), this, SLOT ( warnings() ) );
 	menu->insertSeparator();
 	menu->insertItem ( SmallIcon ( "khelpcenter" ), i18n("Show Legend"), this, SLOT ( showLegend() ) );
 	menu->insertItem ( SmallIcon ( "siduxcchermes" ), i18n("&About sidux-hermes"), this, SLOT ( showAbout() ) );
@@ -138,3 +138,5 @@ void SysTray::mousePressEvent(QMouseEvent* e)
 	if(e->button() == LeftButton)
 		showHermes();
 }
+
+#include "systray.moc"

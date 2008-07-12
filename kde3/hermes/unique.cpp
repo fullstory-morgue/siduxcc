@@ -27,10 +27,9 @@
 #include <qstring.h>
 
 
-
 int Unique::newInstance()
 {
-	KUniqueApplication::newInstance();
+	//KUniqueApplication::newInstance();
 	
 	kdDebug() << "newInstance" << endl;
 	
@@ -42,3 +41,5 @@ int Unique::newInstance()
 	// exit value for the calling process
 	return 0;
 }
+
+#include "unique.moc"
