@@ -7,8 +7,9 @@ siduxcc (0.11.3) UNRELEASED; urgency=low
   * cmake 1/?: new folder created
   * camke 2/?: folder moved
   * cmake 3/?: folder moved
+  * cmake 4/?: make files removed
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jul 2008 18:07:59 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 12 Jul 2008 18:15:59 +0200
 
 siduxcc (0.11.2) unstable; urgency=low
 
