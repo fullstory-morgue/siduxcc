@@ -35,7 +35,7 @@ kde3_automoc( ${SRCS} )
 kde3_add_executable(sidux-hermes-kde3 ${SRCS} ${MOC_HDRS} )
 
 # and link it to qt, kdecore and kdeui
-target_link_libraries(sidux-hermes-kde3  ${QT_AND_KDECORE_LIBS} kdeui kio )
+target_link_libraries(sidux-hermes-kde3 kdeui )
 
 
 install_files( /bin FILES sidux-hermes-kde3)

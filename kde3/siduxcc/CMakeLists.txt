@@ -45,7 +45,7 @@ kde3_automoc(${siduxcc-kde3_SRCS})
 kde3_add_executable(siduxcc-kde3 ${siduxcc-kde3_SRCS} ${MOC_HDRS})
 
 # and link it to qt, kdecore and kdeui
-target_link_libraries(siduxcc-kde3  ${QT_AND_KDECORE_LIBS} kdeui kio)
+target_link_libraries(siduxcc-kde3 kdeui)
 
 
 
