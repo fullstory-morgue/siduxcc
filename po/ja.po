@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=50231&atid=459007\n"
-"POT-Creation-Date: 2008-07-12 21:51+0200\n"
+"POT-Creation-Date: 2008-07-23 02:23+0200\n"
 "PO-Revision-Date: 2008-07-12 21:14+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -19,706 +19,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kde3/hermes/hermes.cpp:71 kde3/hermes/systray.cpp:64
-msgid "en"
-msgstr "ja"
+#. i18n: file ./kde3/hermes/hermesbase.ui line 16
+#: rc.cpp:3
+#, no-c-format
+msgid "siduxcc-hermes"
+msgstr "siduxcc-hermes"
 
-#: kde3/hermes/hermes.cpp:87
-msgid "Double click to the item to view the full warning."
+#. i18n: file ./kde3/hermes/hermesbase.ui line 49
+#: rc.cpp:6
+#, no-c-format
+msgid "&Warnings"
+msgstr ""
+
+#. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: file ./kde3/hermes/legendbase.ui line 103
+#. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: file ./kde3/hermes/legendbase.ui line 103
+#: rc.cpp:9 rc.cpp:110
+#, no-c-format
+msgid "No dist-upgrade warnings."
+msgstr "dist-upgradeの警告はありません."
+
+#. i18n: file ./kde3/hermes/hermesbase.ui line 75
+#: rc.cpp:12
+#, no-c-format
+msgid "&News"
+msgstr ""
+
+#. i18n: file ./kde3/hermes/hermesbase.ui line 91
+#: rc.cpp:15
+#, no-c-format
+msgid "Double click to the item to view the full message."
 msgstr "ダブルクリックすれば警告の全文が読めます"
 
-#: kde3/hermes/main.cpp:39
-msgid "A KDE tray application for sidux"
-msgstr "siduxのKDEトレイアプリケーション"
-
-#: kde3/hermes/main.cpp:44 kde3/siduxcc/main.cpp:47
-msgid "Packaging"
-msgstr "パッケージング"
-
-#: kde3/hermes/main.cpp:45 kde3/siduxcc/main.cpp:50
-#, fuzzy
-msgid "Icon"
-msgstr "アクション"
-
-#: kde3/hermes/systray.cpp:40
-#, fuzzy
-msgid "sidux-hermes"
-msgstr "siduxバージョン"
-
-#: kde3/hermes/systray.cpp:43
-msgid "Forum - Upgrade Warnings"
-msgstr "フォーラム - Dist-Upgradeの警告"
-
-#: kde3/hermes/systray.cpp:44
-msgid "Manual - Upgrade of an Installed System"
-msgstr "手動 - インストールしたシステムの更新"
-
-#: kde3/hermes/systray.cpp:45
-msgid "Upgradable packages"
-msgstr "更新可能パッケージ"
-
-#: kde3/hermes/systray.cpp:46
-#, fuzzy
-msgid "sidux news"
-msgstr "siduxバージョン"
-
-#: kde3/hermes/systray.cpp:47
-msgid "Warnings"
-msgstr "警告"
-
-#: kde3/hermes/systray.cpp:49
-msgid "Show Legend"
-msgstr "レジェンド表示"
-
-#: kde3/hermes/systray.cpp:50
-msgid "&About sidux-hermes"
-msgstr "sidux-hermesについて"
-
-#: kde3/siduxcc/console.cpp:100
-#, fuzzy
-msgid "Show details"
-msgstr "リスト表示"
-
-#: kde3/siduxcc/console.cpp:105
-msgid "Hide details"
-msgstr ""
-
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 233
-#: kde3/siduxcc/display.cpp:191 kde3/siduxcc/display.cpp:246
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2178 rc.cpp:173
+#. i18n: file ./kde3/hermes/hermesbase.ui line 101
+#: rc.cpp:18
 #, no-c-format
-msgid "custom"
-msgstr "カスタム"
-
-#: kde3/siduxcc/display.cpp:234
-msgid "Modelines removed"
-msgstr "Modeline 削除"
-
-#: kde3/siduxcc/display.cpp:239
-msgid ""
-"Are you sure you want to restart the X-Server? All windows will be closed."
-msgstr ""
-"本当にX-Serverを再起動してよろしいですか? すべてのウィンドウが終了します."
-
-#: kde3/siduxcc/kernel.cpp:92
-msgid ""
-"You only can install modules for the newest stable kernel. But this kernel "
-"isn't installed!"
-msgstr ""
-"最新の安定カーネル用のモジュールだけしかインストールできません。そのカーネル"
-"はインストールされていません。"
-
-#: kde3/siduxcc/kernel.cpp:184
-msgid "You have already installed the newest stable kernel!"
-msgstr "最新の安定カーネルはすでにインストールされています"
-
-#: kde3/siduxcc/kernel.cpp:186
-#, fuzzy
-msgid "There is no stable kernel avaiable!"
-msgstr "利用可能な新しいカーネルはありません!"
-
-#: kde3/siduxcc/kernel.cpp:189
-msgid "Are you sure you want to install a new kernel?"
-msgstr "本当に新しいカーネルをインストールしますか?"
-
-#: kde3/siduxcc/kernel.cpp:216
-msgid ""
-"It's recommended to not disable this function! Do you want to continue "
-"anyway?"
-msgstr "この機能をオフにするのはお勧めできません。それでも実行しますか？"
-
-#: kde3/siduxcc/kernel.cpp:307
-msgid ""
-"acer-acpi is a driver to allow you to control various aspects of your Acer "
-"laptop hardware using the proc filesystem.  It was originally developed in "
-"order to activate the wireless LAN card under a 64-bit version of Linux, as "
-"acerhk (the previous fine solution to the problem) relied on making BIOS "
-"calls which are not allowed from a 64-bit OS."
-msgstr ""
-"acer-acpiはAcerのラップトップのハードウェアの様々な機能をprocファイルシステム"
-"を使ってコントロールするドライバーです。元は64bitのlinuxでワイアレスLANカード"
-"をオンにするのに、(それまでの32bitの解決方法だった)acerhkはBIOSのルーチンを呼"
-"んでいてこの方法では64bitのOSでは使えないために開発されたものです"
-
-#: kde3/siduxcc/kernel.cpp:309
-msgid ""
-"This driver will give access to the special keys on notebooks of the Acer "
-"Travelmate series, which are not handled by the keyboard driver. It also "
-"works on notebooks from other manufacturers (some Medion, Fujitsu-"
-"Siemens, ...).<br><br>It also has some other related functionality "
-"(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
-"disable wireless hardware"
-msgstr ""
-"このドライバーはAcer Travelmateシリーズのノートブックの、通常のキーボードドラ"
-"イバーではアクセスできない特殊キーにアクセスするためのものです。他のメーカー"
-"のノートブック(Medion, 富士通シーメンスなど)でも使える場合があります。"
-"<br><br>他にもモデルによっては(メールやワイヤレスの)LEDやワイヤレスのオン/オ"
-"フの設定など関連する機能も持っています"
-
-#: kde3/siduxcc/kernel.cpp:311
-msgid ""
-"atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
-"The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
-"Asus laptop systems, such as the Asus Eee PC."
-msgstr ""
-"atl2はAtheros(R) L2 Fast Ethernet Adapter用のLinuxベースのドライバーです。"
-"Atheros(R) L2 Fast Ethernet AdapterはAsusのEeePCなどの低価格ラップトップに使"
-"われています"
-
-#: kde3/siduxcc/kernel.cpp:313
-msgid ""
-"Aufs is a stackable unification filesystem such as Unionfs, which unifies "
-"several directories and provides a merged single directory."
-msgstr ""
-"Aufsはいくつかのディレクトリを統合して一つのディレクトリとして扱うことができ"
-"るスタッカブル統合ファイルシステムです"
-
-#: kde3/siduxcc/kernel.cpp:315
-msgid "This package provides the Driver for a snapshotting filesystem modules."
-msgstr "このパッケージはスナップショットファイルシステムのドライバを提供します"
-
-#: kde3/siduxcc/kernel.cpp:317
-msgid ""
-"The et131x package is also required in order to make use of these modules. "
-"Kernel source or headers are required to compile these modules.<br><br>This "
-"works with Agere Systems ET-131x PCI-E Ethernet Controller."
-msgstr ""
-"et131xパッケージはこれらのモジュールを使用するのに必要です。これらのモジュー"
-"ルをコンパイルするのにはカーネルソースまたはヘッダーが必要です。"
-"<br><br>Agere SystemのET-131x PCI-E Ethernet Controllerが使えます。"
-
-#: kde3/siduxcc/kernel.cpp:319
-msgid ""
-" The fsam7400 module for the Linux kernel provides support for the software "
-"RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
-"provides the source code for the fsam7400 modules."
-msgstr ""
-"fsam7400モジュールは富士通シーメンスのAmilo M 7400ラップトップのソフトウェア"
-"RFキルスイッチのサポートを提供します。このパッケージはfsam7400のソースコード"
-"を提供します"
-
-#: kde3/siduxcc/kernel.cpp:321
-msgid ""
-"The gpsca video for linux (v4l) driver, provides support for webcams and "
-"digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
-"Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
-msgstr ""
-"linux用gpscaビデオドライバー (v4l)はSunPlus, Sonix, Z-star, Vimicro, "
-"Conexant, Etoms, Mars-semi, Pixart や Transvision などのメーカの、spca5xxチッ"
-"プをベースにしたwebカメラやデジタルカメラをサポートします。"
-
-#: kde3/siduxcc/kernel.cpp:323
-msgid ""
-"LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
-"method."
-msgstr "LZMAは有名な Lempel Ziv com[ressionをベースにした圧縮アルゴリズムです"
-
-#: kde3/siduxcc/kernel.cpp:325
-msgid ""
-"Some vendors do not release specifications of the hardware or provide a "
-"Linux driver for their wireless network cards. This project implements "
-"Windows kernel API and NDIS (Network Driver Interface Specification) API "
-"within Linux kernel. A Windows driver for wireless network card is then "
-"linked to this implementation so that the driver runs natively, as though it "
-"is in Windows, without binary emulation."
-msgstr ""
-"すべてのワイアレスカードのメーカーがハードウェアのスペックを公表したり、linux"
-"のドライバーを提供したりしているわけではありません。このプロジェクトはWindows"
-"のカーネルAPIとNDIS (Network Driver Interface Specification) API をlinuxカー"
-"ネル内部に実装するものです。Windows用に書かれたネットワークカードドライバーは"
-"このAPIにリンクされて、バイナリーエミュレーションなしであたかもWindows上で使"
-"用されているかの様に作動します"
-
-#: kde3/siduxcc/kernel.cpp:327
-msgid ""
-"This package contains the loadable kernel modules for the HP OmniBooks, "
-"Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
-"Electronics, Inc as ODM."
-msgstr ""
-"このパッケージにはHP OmniBook, Pavilion, 東芝のSatelliteその他、Compal "
-"Electronics社のODMで作られたラップトップ用のカーネルモジュールが入っています"
-
-#: kde3/siduxcc/kernel.cpp:329
-msgid ""
-"This package provides the source code for the quickcam kernel module for "
-"Logitech's QuickCam Express webcam and similar webcams.  This driver "
-"supercedes the qce-ga driver."
-msgstr ""
-"このパッケージには Logitech の QuickCam Expressウェッブカメラや類似品用のカー"
-"ネルモジュールのソースが含まれています"
-
-#: kde3/siduxcc/kernel.cpp:331
-msgid ""
-"Modules for controlling the software RF kill switch on the Averatec 5100P "
-"and Packard Bell EasyNote E5. The code may work on other laptops, but these "
-"are the only models on which it has been tested."
-msgstr ""
-"Averatec 5100P と Packard Bell EasyNote E5 のソフトウェアRF Killスイッチをコ"
-"ントロールするモジュールです。他のラップトップでも動作するかもしれませんがテ"
-"ストは上記の2つの機種だけで行われています"
-
-#: kde3/siduxcc/kernel.cpp:333
-msgid ""
-"Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
-"zlib compression to compress both files, inodes and directories.  Inodes in "
-"the system are very small and all blocks are packed to minimise data "
-"overhead.  Block sizes greater than 4K are supported up to a maximum of 64K."
-"<br><br> Squashfs is intended for general read-only filesystem use, for "
-"archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
-"constrained block device/memory systems (e.g.  embedded systems) where low "
-"overhead is needed."
-msgstr ""
-"Squashfsはlinuxの高度に圧縮されたリードオンリーファイルシステムです。zlib圧縮"
-"を使ってファイル、iノードとディレクトリを圧縮します。iノードはとても小さいの"
-"で、すべてのブロックは圧縮されてオーバーヘッドを最小にします。4Kb以上64Kbまで"
-"の大きさのブロックがサポートされています。<br><br>Squashfsはリードオンリーの"
-"ファイルシステム一般、(.tar.gzの代わりとしての)アーカイブとしての使用、ブロッ"
-"クデバイス/メモリーの制限された(組み込み)システムなどでの使用を念頭において作"
-"られています"
-
-#: kde3/siduxcc/kernel.cpp:335 kde3/siduxcc/kernel.cpp:337
-msgid ""
-"VirtualBox is a free PC virtualization solution allowing you to run a wide "
-"range of PC operating systems on your system."
-msgstr ""
-"VirtualBoxはフリーのバーチャルPCプログラムで、様々なPC用のOSを走らすことがで"
-"きます"
-
-#: kde3/siduxcc/main.cpp:40
-msgid "Frontend for managing sidux."
-msgstr "sidux管理用フロントエンド."
-
-#: kde3/siduxcc/main.cpp:46
-msgid "Developer"
-msgstr "開発者"
-
-#: kde3/siduxcc/main.cpp:48
-msgid "Developer of the knxcc"
-msgstr "knxcc開発者"
-
-#: kde3/siduxcc/main.cpp:49
-msgid "Developer of ceni and fw-detect"
-msgstr "ceniとfw-detectの開発者"
-
-#: kde3/siduxcc/network.cpp:244 kde3/siduxcc/network.cpp:254
-msgid "Mac Address"
-msgstr "MAC アドレス"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
-#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
-#: kde3/siduxcc/network.cpp:245 kde3/siduxcc/network.cpp:255
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1950
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:694 rc.cpp:433
-#: rc.cpp:753
-#, no-c-format
-msgid "Description"
-msgstr "記述"
-
-#: kde3/siduxcc/network.cpp:321
-msgid "Card"
+msgid "Smxi Ad&vice"
 msgstr ""
 
-#: kde3/siduxcc/network.cpp:458
-msgid ""
-"<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
-"in and it will be deactivated if the cable is pulled. This is useful on "
-"laptops with onboard network adapters, since it will only configure the "
-"interface when a cable is really connected.<br><br><b>auto</b>: The "
-"networkcard will be activated, when the computer starts"
-msgstr ""
-"<b>ホットプラグを使う</b>: ケーブルが差し込まれた時にネットワークに接続し、"
-"カーブルを抜けばネットワークの接続を停止するように設定する。この設定だとケー"
-"ブルにつながっている時だけネットに接続するので、アダプタ内蔵のラップトップに"
-"使うと便利です。<br><br><b>自動</b>: コンピュータが起動したときにネットワーク"
-"カードが作動するようにする。"
-
-#: kde3/siduxcc/network.cpp:556
-msgid "WEP encryption requires a key with at least 5 characters."
-msgstr "WEPの暗号化には最低５文字のキーが必要です"
-
-#: kde3/siduxcc/network.cpp:558
-msgid "WPA encryption requires a key with 8 to 63 characters."
-msgstr "WPAの暗号化には8文字以上63文字以下のキーが必要です。"
-
-#: kde3/siduxcc/network.cpp:560
-msgid "..."
-msgstr "..."
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 962
-#: kde3/siduxcc/network.cpp:712
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1977 rc.cpp:509
-#, no-c-format
-msgid "Detected"
-msgstr "見つかりました"
-
-#: kde3/siduxcc/services.cpp:69 kde3/siduxcc/services.cpp:274
-msgid "Apache v2 is the next generation of the omnipresent Apache web server."
-msgstr "Apache v2は、アパッチの次世代版ウェブサーバーです."
-
-#: kde3/siduxcc/services.cpp:70 kde3/siduxcc/services.cpp:280
-#, fuzzy
-msgid ""
-"CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
-"(Internet Printing Protocol), and has its own filtering driver model for "
-"handling various document types."
-msgstr ""
-"Common UNIX Printing System (CUPS(tm)) はlpdの代わりとなる汎用印刷システムで"
-"す。IPP(Internet Printing Protocol)をサポートしていて、様々な文書タイプを処理"
-"する独自のフィルタードライバーを持っています。"
-
-#: kde3/siduxcc/services.cpp:71 kde3/siduxcc/services.cpp:298
-msgid ""
-"MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
-"server."
-msgstr ""
-"MySQL は高速かつ安定している真のマルチユーザー、マルチスレッドのSQLデータベー"
-"スサーバーです."
-
-#: kde3/siduxcc/services.cpp:72
-msgid ""
-"The Samba software suite is a collection of programs that implements the SMB/"
-"CIFS protocol for unix systems, allowing you to serve files and printers to "
-"Windows, NT, OS/2 and DOS clients."
-msgstr ""
-"Samba ソフトウェアセットは、SMB/CIFSプロトコルのunix用のプログラム集であり、"
-"ファイルやプリンターをWindows, NT, OS/2およびDOSのクライアントから利用できる"
-"ようにします."
-
-#: kde3/siduxcc/services.cpp:73 kde3/siduxcc/services.cpp:308
-msgid ""
-"SSH is the portable version of OpenSSH, a free implementation of the Secure "
-"Shell protocol as specified by the IETF secsh working group."
-msgstr ""
-"SSHはIETF secshワーキンググループによるSecure Shellプロトコルをフリーソフト"
-"ウェアとして実現したOpenSSHのポータブル版です."
-
-#: kde3/siduxcc/services.cpp:188 kde3/siduxcc/services.cpp:193
-msgid "Status: %1"
-msgstr "状態: %1"
-
-#: kde3/siduxcc/services.cpp:188
-msgid "not running..."
-msgstr "未作動..."
-
-#: kde3/siduxcc/services.cpp:193
-msgid "running..."
-msgstr "作動中..."
-
-#: kde3/siduxcc/services.cpp:272
-msgid ""
-"Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
-"management on your system."
-msgstr ""
-"ACPI(Advanced Configuration and Power Interface)はシステムの電源を賢くマネー"
-"ジメントします"
-
-#: kde3/siduxcc/services.cpp:276
-msgid "Enables Universal interface for wireless communication"
-msgstr "ワイアレスコミュニケーションの汎用インターフェースをオンにします"
-
-#: kde3/siduxcc/services.cpp:278
-msgid "Cron is a time-based scheduling service."
-msgstr "Cronは実行時間を設定できるスケジューリングサービスです"
-
-#: kde3/siduxcc/services.cpp:282
-msgid ""
-"gpm means general purpose mouse and is the mouse support for linux in the "
-"console."
-msgstr "gpmはlinuxのコンソールでマウスを使えるようにサポートします"
-
-#: kde3/siduxcc/services.cpp:284
-msgid ""
-"HAL provides an abstract view on hardware. This abstraction layer is simply "
-"an interface that makes it possible to add support for new devices and new "
-"ways of connecting devices to the computer, without modifying every "
-"application that uses the device."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:286
-#, fuzzy
-msgid ""
-"Ifplugd is a daemon which will automatically configure your ethernet device "
-"when a cable is plugged in and automatically unconfigure it if the cable is "
-"pulled. This is useful on laptops with onboard network adapters, since it "
-"will only configure the interface when a cable is really connected."
-msgstr ""
-"<b>ホットプラグを使う</b>: ケーブルが差し込まれた時にネットワークに接続し、"
-"カーブルを抜けばネットワークの接続を停止するように設定する。この設定だとケー"
-"ブルにつながっている時だけネットに接続するので、アダプタ内蔵のラップトップに"
-"使うと便利です。<br><br><b>自動</b>: コンピュータが起動したときにネットワーク"
-"カードが作動するようにする。"
-
-#: kde3/siduxcc/services.cpp:288
-msgid ""
-"IrDA (Infrared Data Association) is an industry standard for infrared "
-"wireless communication. Most laptops sold today are equipped with an IrDA "
-"compliant infrared transceiver, which enables you to communicate with "
-"devices such as printers, modems, fax, LAN, and other laptops."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:290
-msgid ""
-"Irqbalance is a Linux daemon that distributes interrupts over the processors "
-"and cores you have in your computer system. The design goal of irqbalance is "
-"to do find a balance between power savings and optimal performance."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:292
-msgid "Isndutils is only for use with an internal ISDN adapter."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:294
-msgid ""
-"klogd is a system daemon which intercepts and logs Linux kernel messages."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:296
-msgid ""
-"LIRC is a package that allows you to decode and send infra-red signals of "
-"many (but not all) commonly used remote controls."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:300
-msgid ""
-"These binary drivers provide optimized hardware acceleration of  OpenGL "
-"applications via a direct-rendering X Server."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:302
-msgid "Support for ACPI, APM and CPU frequency scaling."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:304
-msgid ""
-"Rsync is a command line utility traditionally used in synchronizing files "
-"between two computers, but rsync can also be used as an effective backup "
-"tool. In daemon mode, rsync listens to the default TCP port of 873, serving "
-"files in the native rsync protocol. rsync can also be used to synchronize "
-"local directories, or via a remote shell such as RSH or SSH."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:306
-msgid ""
-"SQL Relay is a persistent database connection pooling, proxying and load "
-"balancing system."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:310
-msgid ""
-"Sysklogd provides two system utilities which provide support for system "
-"logging and kernel message trapping. Support of both internet and unix "
-"domain sockets enables this utility package to support both local and remote "
-"logging."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:312
-msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:314
-msgid "Linux Video Disk Recorder (vdr)"
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:316
-msgid ""
-"vdradmin-am provides a webinterface for managing the Linux Video Disk "
-"Recorder (vdr)"
-msgstr ""
-
-#: kde3/siduxcc/services.cpp:318
-msgid ""
-"VirtualBox is an application installed on an existing host operating system; "
-"within this application, additional operating systems can be loaded and run, "
-"each with its own virtual environment."
-msgstr ""
-
-#: kde3/siduxcc/software.cpp:90
-msgid "Apt-show-versions is missing!"
-msgstr "Apt-show-versionがインストールされていません!"
-
-#: kde3/siduxcc/software.cpp:90
-msgid "Do you want to install it?"
-msgstr "インストールしますか?"
-
-#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
-#: kde3/siduxcc/software.cpp:107
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:758 rc.cpp:816
-#, no-c-format
-msgid "There are no warnings"
-msgstr "警告はありません"
-
-#: kde3/siduxcc/software.cpp:112
-msgid "Couldn't connect to sidux.com!"
-msgstr "sidux.comに接続することができません!"
-
-#: kde3/siduxcc/software.cpp:119
-msgid "Don't make a dist-Upgrade!"
-msgstr "今Dist-Upgradeをしてはいけません!"
-
-#: kde3/siduxcc/software.cpp:158
-#, fuzzy
-msgid ""
-"To update your system you have to leave the graphic modus. Press for this CTR"
-"+ALT+F1, login as root and type init 3. After that run the command smxi or "
-"siduxcc (Software->Dist-upgrade)."
-msgstr ""
-"Dist-upgradeをするためにはまずランレベル３に移ります. Ctrl+Alt+F1を押し, root"
-"としてログインしてからinit 3とタイプします. siduxccのコマンドを実行し"
-"Software->Dist-Upgradeのオプションを選びます."
-
-#: kde3/siduxcc/software.cpp:178
-msgid "Are you sure you want to clear your local repository?"
-msgstr "本当にローカルリポジトリをクリアしますか?"
-
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 17
-#: kde3/siduxcc/start.cpp:60 kde3/siduxcc/start.cpp:101
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2161 rc.cpp:128
-#, no-c-format
-msgid "Display"
-msgstr "ディスプレイ"
-
-#. i18n: file ./kde3/siduxcc/internetdialog.ui line 17
-#: kde3/siduxcc/start.cpp:64 kde3/siduxcc/start.cpp:128
-#: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:306 rc.cpp:336
-#, no-c-format
-msgid "Internet"
-msgstr "インターネット"
-
-#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
-#: kde3/siduxcc/start.cpp:68 kde3/siduxcc/start.cpp:134
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:820 rc.cpp:348
-#, no-c-format
-msgid "Kernel"
-msgstr "カーネル"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
-#: kde3/siduxcc/start.cpp:72 kde3/siduxcc/start.cpp:108
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1943 rc.cpp:417
+#. i18n: file ./kde3/hermes/hermesbase.ui line 119
+#: rc.cpp:21
 #, fuzzy, no-c-format
-msgid "Network"
-msgstr "ネットワーク"
-
-#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
-#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
-#: kde3/siduxcc/start.cpp:76 kde3/siduxcc/start.cpp:115
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:683
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:707 rc.cpp:723
-#: rc.cpp:790
-#, fuzzy, no-c-format
-msgid "Services"
-msgstr "サービス"
-
-#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 17
-#: kde3/siduxcc/start.cpp:80 kde3/siduxcc/start.cpp:121
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:755 rc.cpp:810
-#, fuzzy, no-c-format
-msgid "Software"
-msgstr "ソフトウェア"
-
-#: kde3/siduxcc/start.cpp:84 kde3/siduxcc/start.cpp:141
-msgid "System Info"
-msgstr "システム情報"
-
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 504
-#: kde3/siduxcc/start.cpp:147
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3511 rc.cpp:917
-#, fuzzy, no-c-format
-msgid "About"
-msgstr "KDEについて"
-
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
-#: kde3/siduxcc/start.cpp:152
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3515
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3516 rc.cpp:927 rc.cpp:930
-#, no-c-format
-msgid "Exit"
-msgstr "終了"
-
-#: kde3/siduxcc/start.cpp:198
-msgid ""
-"There is still a running process in the control center. It's recommended not "
-"to close the apllication now! Do you want to close it anyway?"
-msgstr ""
+msgid "Upgrada&ble packages"
+msgstr "更新可能パッケージ表示"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 128
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:277
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:405
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:631
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:759 rc.cpp:24 rc.cpp:819
+#. i18n: file ./kde3/hermes/hermesbase.ui line 128
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
+#: rc.cpp:24 rc.cpp:819
 #, no-c-format
 msgid "Name"
 msgstr "名前"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 139
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:278
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:406
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:632
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:760 rc.cpp:27 rc.cpp:822
+#. i18n: file ./kde3/hermes/hermesbase.ui line 139
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
+#: rc.cpp:27 rc.cpp:822
 #, no-c-format
 msgid "Installed Version"
 msgstr "インストールされているバージョン"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 150
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:279
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:407
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:633
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:761 rc.cpp:30 rc.cpp:825
+#. i18n: file ./kde3/hermes/hermesbase.ui line 150
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
+#: rc.cpp:30 rc.cpp:825
 #, no-c-format
 msgid "Latest Version"
 msgstr "最新バージョン"
 
-#. i18n: file ./kde3/hermes/hermesbase.ui line 16
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:399 rc.cpp:3
-#, no-c-format
-msgid "siduxcc-hermes"
-msgstr "siduxcc-hermes"
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 65
-#. i18n: file ./kde3/hermes/legendbase.ui line 103
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:400
-#: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:439 rc.cpp:9 rc.cpp:110
-#, no-c-format
-msgid "No dist-upgrade warnings."
-msgstr "dist-upgradeの警告はありません."
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 49
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:401 rc.cpp:6
-#, no-c-format
-msgid "&Warnings"
-msgstr ""
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 91
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:402 rc.cpp:15
-#, no-c-format
-msgid "Double click to the item to view the full message."
-msgstr "ダブルクリックすれば警告の全文が読めます"
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 75
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:403 rc.cpp:12
-#, no-c-format
-msgid "&News"
-msgstr ""
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 101
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:404 rc.cpp:18
-#, no-c-format
-msgid "Smxi Ad&vice"
-msgstr ""
-
-#. i18n: file ./kde3/hermes/hermesbase.ui line 119
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:408 rc.cpp:21
+#. i18n: file ./kde3/hermes/hermesbase.ui line 182
+#: rc.cpp:33
 #, fuzzy, no-c-format
-msgid "Upgrada&ble packages"
-msgstr "更新可能パッケージ表示"
+msgid "&Kernel"
+msgstr "カーネル"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:410
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:827 rc.cpp:37 rc.cpp:362
+#. i18n: file ./kde3/hermes/hermesbase.ui line 223
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
+#: rc.cpp:37 rc.cpp:362
 #, fuzzy, no-c-format
 msgid "Current kernel:"
 msgstr "現在のカーネル"
@@ -727,37 +110,32 @@ msgstr "現在のカーネル"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 271
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 209
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 225
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:411
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:413
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:831
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:832 rc.cpp:40 rc.cpp:46
-#: rc.cpp:370 rc.cpp:373
+#. i18n: file ./kde3/hermes/hermesbase.ui line 239
+#. i18n: file ./kde3/hermes/hermesbase.ui line 271
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 209
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 225
+#: rc.cpp:40 rc.cpp:46 rc.cpp:370 rc.cpp:373
 #, no-c-format
 msgid "---"
 msgstr ""
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 255
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 168
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:412
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:828 rc.cpp:43 rc.cpp:365
+#. i18n: file ./kde3/hermes/hermesbase.ui line 255
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 168
+#: rc.cpp:43 rc.cpp:365
 #, fuzzy, no-c-format
 msgid "Newest stable kernel:"
 msgstr "最新の安定カーネルをインストール"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 309
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:416 rc.cpp:51
+#: rc.cpp:51
 #, no-c-format
 msgid "To install a new kernel use the sidux Control Center."
 msgstr ""
 
-#. i18n: file ./kde3/hermes/hermesbase.ui line 182
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:417 rc.cpp:33
-#, fuzzy, no-c-format
-msgid "&Kernel"
-msgstr "カーネル"
-
 #. i18n: file ./kde3/hermes/hermesbase.ui line 354
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:418 rc.cpp:54
+#: rc.cpp:54
 #, no-c-format
 msgid "relo&ad"
 msgstr "リロード"
@@ -769,20 +147,20 @@ msgstr "リロード"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1477
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 394
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 390
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:419
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:843
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1958
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1975
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2019
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:698
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:786 rc.cpp:57 rc.cpp:402
-#: rc.cpp:457 rc.cpp:506 rc.cpp:614 rc.cpp:765 rc.cpp:872
+#. i18n: file ./kde3/hermes/hermesbase.ui line 357
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 429
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 270
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 956
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1477
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 394
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 390
+#: rc.cpp:57 rc.cpp:402 rc.cpp:457 rc.cpp:506 rc.cpp:614 rc.cpp:765 rc.cpp:872
 #, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 363
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:420 rc.cpp:60
+#: rc.cpp:60
 #, no-c-format
 msgid ""
 "Reload the current package list of \n"
@@ -792,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 371
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:424 rc.cpp:66
+#: rc.cpp:66
 #, no-c-format
 msgid "&update (apt-get)"
 msgstr "アップデート (apt-get)"
@@ -800,18 +178,19 @@ msgstr "アップデート (apt-get)"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 374
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 244
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 337
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:425
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:834
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:778 rc.cpp:69 rc.cpp:379
-#: rc.cpp:858
+#. i18n: file ./kde3/hermes/hermesbase.ui line 374
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 244
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 337
+#: rc.cpp:69 rc.cpp:379 rc.cpp:858
 #, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 382
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:426
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:779 rc.cpp:72 rc.cpp:861
+#. i18n: file ./kde3/hermes/hermesbase.ui line 382
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
+#: rc.cpp:72 rc.cpp:861
 #, no-c-format
 msgid ""
 "update is used to resynchronize the package \n"
@@ -830,8 +209,9 @@ msgstr ""
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 405
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 287
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:432
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:771 rc.cpp:80 rc.cpp:843
+#. i18n: file ./kde3/hermes/hermesbase.ui line 405
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 287
+#: rc.cpp:80 rc.cpp:843
 #, no-c-format
 msgid "D&ownload"
 msgstr "ダウンロード"
@@ -842,21 +222,22 @@ msgstr "ダウンロード"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 561
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 408
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 290
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:433
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:841
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1955
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1972
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:700
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:772 rc.cpp:83 rc.cpp:396
-#: rc.cpp:448 rc.cpp:499 rc.cpp:771 rc.cpp:846
+#. i18n: file ./kde3/hermes/hermesbase.ui line 408
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 418
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 237
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 561
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 408
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 290
+#: rc.cpp:83 rc.cpp:396 rc.cpp:448 rc.cpp:499 rc.cpp:771 rc.cpp:846
 #, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 414
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:434
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:773 rc.cpp:86 rc.cpp:849
+#. i18n: file ./kde3/hermes/hermesbase.ui line 414
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
+#: rc.cpp:86 rc.cpp:849
 #, no-c-format
 msgid ""
 "package files are only retrieved, not\n"
@@ -869,33 +250,34 @@ msgstr ""
 "コマンド: apt-get -d dist-upgrade"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 422
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:438 rc.cpp:92
+#: rc.cpp:92
 #, no-c-format
 msgid "&close"
 msgstr "閉じる"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 425
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 876
-#: obj-i486-linux-gnu/kde3/hermes/hermesbase.cpp:439
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2212 rc.cpp:95 rc.cpp:256
+#. i18n: file ./kde3/hermes/hermesbase.ui line 425
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 876
+#: rc.cpp:95 rc.cpp:256
 #, fuzzy, no-c-format
 msgid "Alt+C"
 msgstr "Alt+T"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 16
-#: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:435 rc.cpp:98
+#: rc.cpp:98
 #, no-c-format
 msgid "legendbase"
 msgstr "レジェンド"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 34
-#: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:436 rc.cpp:101
+#: rc.cpp:101
 #, no-c-format
 msgid "Legend"
 msgstr "レジェンド"
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 68
-#: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:437 rc.cpp:104
+#: rc.cpp:104
 #, no-c-format
 msgid ""
 "There are dist-upgrade warnings. Please visit sidux.com for more information!"
@@ -904,64 +286,70 @@ msgstr ""
 "い."
 
 #. i18n: file ./kde3/hermes/legendbase.ui line 87
-#: obj-i486-linux-gnu/kde3/hermes/legendbase.cpp:438 rc.cpp:107
+#: rc.cpp:107
 #, no-c-format
 msgid "No connection to sidux.com."
 msgstr "sidux.comに接続していません."
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 16
-#: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:113 rc.cpp:113
+#: rc.cpp:113
 #, no-c-format
 msgid "Widget"
 msgstr "ウィジット"
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 38
-#: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:114 rc.cpp:116
+#: rc.cpp:116
 #, no-c-format
 msgid "Con&tinuo"
 msgstr ""
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 41
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1182
-#: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:115
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2233 rc.cpp:119
-#: rc.cpp:313
+#. i18n: file ./kde3/siduxcc/consoledialog.ui line 41
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1182
+#: rc.cpp:119 rc.cpp:313
 #, no-c-format
 msgid "Alt+T"
 msgstr "Alt+T"
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 57
-#: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:116 rc.cpp:122
+#: rc.cpp:122
 #, fuzzy, no-c-format
 msgid "Sho&w Details"
 msgstr "リスト表示"
 
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 60
-#: obj-i486-linux-gnu/kde3/siduxcc/consoledialog.cpp:117 rc.cpp:125
+#: rc.cpp:125
 #, fuzzy, no-c-format
 msgid "Alt+W"
 msgstr "Alt+O"
 
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 17
+#: rc.cpp:128
+#, no-c-format
+msgid "Display"
+msgstr "ディスプレイ"
+
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 45
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2163 rc.cpp:131
+#: rc.cpp:131
 #, no-c-format
 msgid "Change resolution & frequency"
 msgstr "解像度と周波数を変更"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 53
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2164 rc.cpp:134
+#: rc.cpp:134
 #, no-c-format
 msgid "Configure color-depth & DPI"
 msgstr "色深度とDPIを設定"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 61
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2165 rc.cpp:137
+#: rc.cpp:137
 #, no-c-format
 msgid "Configure X-Server"
 msgstr "X-Server 設定"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 69
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2166 rc.cpp:140
+#: rc.cpp:140
 #, no-c-format
 msgid "Install graphiccard-drivers"
 msgstr "グラフィックカードドライバーインストール"
@@ -970,11 +358,11 @@ msgstr "グラフィックカードドライバーインストール"
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 488
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 719
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 955
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2167
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2194
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2205
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2222 rc.cpp:143
-#: rc.cpp:208 rc.cpp:235 rc.cpp:280
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 128
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 488
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 719
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 955
+#: rc.cpp:143 rc.cpp:208 rc.cpp:235 rc.cpp:280
 #, no-c-format
 msgid "WARNING!"
 msgstr "警告!"
@@ -983,11 +371,11 @@ msgstr "警告!"
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 503
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 734
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 970
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2168
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2195
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2206
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2223 rc.cpp:146
-#: rc.cpp:211 rc.cpp:238 rc.cpp:283
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 143
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 503
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 734
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 970
+#: rc.cpp:146 rc.cpp:211 rc.cpp:238 rc.cpp:283
 #, no-c-format
 msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
@@ -999,257 +387,263 @@ msgstr ""
 "択してください."
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 174
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2169 rc.cpp:149
+#: rc.cpp:149
 #, no-c-format
 msgid "Resolution"
 msgstr "解像度"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 198
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2171 rc.cpp:152
+#: rc.cpp:152
 #, no-c-format
 msgid "640x480"
 msgstr "640x480"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 203
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2172 rc.cpp:155
+#: rc.cpp:155
 #, no-c-format
 msgid "800x600"
 msgstr "800x600"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 208
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2173 rc.cpp:158
+#: rc.cpp:158
 #, no-c-format
 msgid "1024x768"
 msgstr "1024x768"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 213
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2174 rc.cpp:161
+#: rc.cpp:161
 #, no-c-format
 msgid "1152x864"
 msgstr "1152x864"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 218
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2175 rc.cpp:164
+#: rc.cpp:164
 #, no-c-format
 msgid "1280x1024"
 msgstr "1280x1024"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 223
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2176 rc.cpp:167
+#: rc.cpp:167
 #, no-c-format
 msgid "1400x1050"
 msgstr "1400x1050"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 228
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2177 rc.cpp:170
+#: rc.cpp:170
 #, no-c-format
 msgid "1600x1200"
 msgstr "1600x1200"
 
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 233
+#: rc.cpp:173
+#, no-c-format
+msgid "custom"
+msgstr "カスタム"
+
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 295
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2180 rc.cpp:176
+#: rc.cpp:176
 #, no-c-format
 msgid "Scanning Frequency"
 msgstr "周波数走査"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 329
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2181 rc.cpp:179
+#: rc.cpp:179
 #, no-c-format
 msgid "HorizSync:"
 msgstr "水平同期:"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 345
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2182 rc.cpp:182
+#: rc.cpp:182
 #, no-c-format
 msgid "VertRefresh:"
 msgstr "垂直リフレッシュ:"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 367
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2184 rc.cpp:186
+#: rc.cpp:186
 #, no-c-format
 msgid "Vertical Frequenz"
 msgstr "垂直周波数"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 373
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2186 rc.cpp:189
+#: rc.cpp:189
 #, no-c-format
 msgid "Type"
 msgstr "タイプ"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 378
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2187 rc.cpp:192
+#: rc.cpp:192
 #, no-c-format
 msgid "TFT"
 msgstr "TFT"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 383
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2188 rc.cpp:195
+#: rc.cpp:195
 #, no-c-format
 msgid "CRT"
 msgstr "CRT"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 428
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2191 rc.cpp:199
+#: rc.cpp:199
 #, no-c-format
 msgid "Horizontal Frequenz"
 msgstr "水平周波数"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 453
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2192 rc.cpp:202
+#: rc.cpp:202
 #, no-c-format
 msgid "Note"
 msgstr "注意"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 470
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2193 rc.cpp:205
+#: rc.cpp:205
 #, no-c-format
 msgid ""
 "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr "ATI ドライバー(fglrx)を使用しているときは、色深度は変更できません."
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 523
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2196 rc.cpp:214
+#: rc.cpp:214
 #, no-c-format
 msgid "Color-Depth"
 msgstr "色深度"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 547
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2198 rc.cpp:217
+#: rc.cpp:217
 #, no-c-format
 msgid "8 bit"
 msgstr "8 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 552
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2199 rc.cpp:220
+#: rc.cpp:220
 #, no-c-format
 msgid "15 bit"
 msgstr "15 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 557
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2200 rc.cpp:223
+#: rc.cpp:223
 #, no-c-format
 msgid "16 bit"
 msgstr "16 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 562
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2201 rc.cpp:226
+#: rc.cpp:226
 #, no-c-format
 msgid "24 bit"
 msgstr "24 bit"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 608
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2203 rc.cpp:229
+#: rc.cpp:229
 #, no-c-format
 msgid "DPI-Settings"
 msgstr "DPI設定"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 645
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2204 rc.cpp:232
+#: rc.cpp:232
 #, no-c-format
 msgid " dpi"
 msgstr " dpi"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 765
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2207 rc.cpp:241
+#: rc.cpp:241
 #, no-c-format
 msgid "Modelines"
 msgstr "Modelines"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 805
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2208 rc.cpp:244
+#: rc.cpp:244
 #, fuzzy, no-c-format
 msgid "Remo&ve Modelines"
 msgstr "Modelines削除"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 808
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1044
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2209
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2226 rc.cpp:247
-#: rc.cpp:292
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 808
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1044
+#: rc.cpp:247 rc.cpp:292
 #, fuzzy, no-c-format
 msgid "Alt+V"
 msgstr "Alt+Y"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 836
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2210 rc.cpp:250
+#: rc.cpp:250
 #, no-c-format
 msgid "Selecet X-Module"
 msgstr "X-Module選択"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 873
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2211 rc.cpp:253
+#: rc.cpp:253
 #, fuzzy, no-c-format
 msgid "Enable &Composite"
 msgstr "コンポジットを使用"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 882
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2214 rc.cpp:259
+#: rc.cpp:259
 #, no-c-format
 msgid "VESA"
 msgstr "VESA"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 887
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2215 rc.cpp:262
+#: rc.cpp:262
 #, no-c-format
 msgid "FBdev"
 msgstr "FBdev"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 892
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2216 rc.cpp:265
+#: rc.cpp:265
 #, no-c-format
 msgid "nv"
 msgstr "nv"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 897
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2217 rc.cpp:268
+#: rc.cpp:268
 #, no-c-format
 msgid "nvidia"
 msgstr "nvidia"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 902
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2218 rc.cpp:271
+#: rc.cpp:271
 #, no-c-format
 msgid "ati"
 msgstr "ati"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 907
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2219 rc.cpp:274
+#: rc.cpp:274
 #, no-c-format
 msgid "fglrx"
 msgstr "fglrx"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 912
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2220 rc.cpp:277
+#: rc.cpp:277
 #, no-c-format
 msgid "vboxvideo"
 msgstr "vboxvideo"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1001
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2224 rc.cpp:286
+#: rc.cpp:286
 #, no-c-format
 msgid "ATI/Nvidia (Non-Free)"
 msgstr "ATI/Nvidia (Non-Free)"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1041
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2225 rc.cpp:289
+#: rc.cpp:289
 #, fuzzy, no-c-format
 msgid "Install dri&ver"
 msgstr "ドライバーインストール"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1080
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2227 rc.cpp:295
+#: rc.cpp:295
 #, no-c-format
 msgid "Fonts (fix-fonts)"
 msgstr "フォント(fix-fonts)"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1117
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2228 rc.cpp:298
+#: rc.cpp:298
 #, fuzzy, no-c-format
 msgid "&Register Fonts"
 msgstr "フォント登録"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1120
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2229 rc.cpp:301
+#: rc.cpp:301
 #, fuzzy, no-c-format
 msgid "Alt+R"
 msgstr "Alt+O"
@@ -1259,12 +653,12 @@ msgstr "Alt+O"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1949
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 85
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 454
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2230
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:846
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2056
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:684
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:790 rc.cpp:304
-#: rc.cpp:411 rc.cpp:711 rc.cpp:726 rc.cpp:880
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1165
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 471
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1949
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 85
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 454
+#: rc.cpp:304 rc.cpp:411 rc.cpp:711 rc.cpp:726 rc.cpp:880
 #, no-c-format
 msgid "&back"
 msgstr "戻る"
@@ -1276,20 +670,21 @@ msgstr "戻る"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 88
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 469
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 457
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2231
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:847
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1953
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2057
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:685
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:706
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:791 rc.cpp:307
-#: rc.cpp:414 rc.cpp:442 rc.cpp:714 rc.cpp:729 rc.cpp:787 rc.cpp:883
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1168
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 474
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 207
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1952
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 88
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 469
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 457
+#: rc.cpp:307 rc.cpp:414 rc.cpp:442 rc.cpp:714 rc.cpp:729 rc.cpp:787
+#: rc.cpp:883
 #, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1179
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2232 rc.cpp:310
+#: rc.cpp:310
 #, fuzzy, no-c-format
 msgid "res&tart X-Server"
 msgstr "X-Server再起動"
@@ -1299,12 +694,12 @@ msgstr "X-Server再起動"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1969
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 96
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 465
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2234
-#: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:307
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2058
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:686
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:792 rc.cpp:316
-#: rc.cpp:339 rc.cpp:717 rc.cpp:732 rc.cpp:886
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1190
+#. i18n: file ./kde3/siduxcc/internetdialog.ui line 74
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1969
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 96
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 465
+#: rc.cpp:316 rc.cpp:339 rc.cpp:717 rc.cpp:732 rc.cpp:886
 #, no-c-format
 msgid "appl&y"
 msgstr "適用"
@@ -1314,102 +709,114 @@ msgstr "適用"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1972
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 99
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 468
-#: obj-i486-linux-gnu/kde3/siduxcc/displaydialog.cpp:2235
-#: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:308
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2059
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:687
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:793 rc.cpp:319
-#: rc.cpp:342 rc.cpp:720 rc.cpp:735 rc.cpp:889
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1193
+#. i18n: file ./kde3/siduxcc/internetdialog.ui line 77
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1972
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 99
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 468
+#: rc.cpp:319 rc.cpp:342 rc.cpp:720 rc.cpp:735 rc.cpp:889
 #, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 17
-#: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:93 rc.cpp:322
+#: rc.cpp:322
 #, no-c-format
 msgid "SysInfo"
 msgstr "システム情報"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 31
-#: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:94 rc.cpp:325
+#: rc.cpp:325
 #, no-c-format
 msgid "About sidux"
 msgstr "siduxについて"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 42
-#: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:95 rc.cpp:328
+#: rc.cpp:328
 #, no-c-format
 msgid "sidux Version:"
 msgstr "siduxバージョン:"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 94
-#: obj-i486-linux-gnu/kde3/siduxcc/infodialog.cpp:97 rc.cpp:332
+#: rc.cpp:332
 #, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
 
+#. i18n: file ./kde3/siduxcc/internetdialog.ui line 17
+#: rc.cpp:336
+#, no-c-format
+msgid "Internet"
+msgstr "インターネット"
+
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 118
-#: obj-i486-linux-gnu/kde3/siduxcc/internetdialog.cpp:309 rc.cpp:345
+#: rc.cpp:345
 #, no-c-format
 msgid "sidux-Browser"
 msgstr "siduxブラウザ"
 
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
+#: rc.cpp:348
+#, no-c-format
+msgid "Kernel"
+msgstr "カーネル"
+
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 51
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:823 rc.cpp:352
+#: rc.cpp:352
 #, no-c-format
 msgid "Install new kernel"
 msgstr "新しいカーネルをインストール"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 59
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:824 rc.cpp:355
+#: rc.cpp:355
 #, no-c-format
 msgid "Remove old kernels"
 msgstr "古いカーネルを削除"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 67
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:825 rc.cpp:358
+#: rc.cpp:358
 #, no-c-format
 msgid "Install kernel modules"
 msgstr "カーネルモジュールをインストール"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 241
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:833 rc.cpp:376
+#: rc.cpp:376
 #, fuzzy, no-c-format
 msgid "Install automatic new kernels during dist-&updates."
 msgstr "最新カーネルをdist-upgradeの際に自動インストールする"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 269
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:835 rc.cpp:382
+#: rc.cpp:382
 #, no-c-format
 msgid "Current kernel"
 msgstr "現在のカーネル"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 333
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:837 rc.cpp:386
+#: rc.cpp:386
 #, fuzzy, no-c-format
 msgid "re&move"
 msgstr "削除"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 336
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:838 rc.cpp:389
+#: rc.cpp:389
 #, no-c-format
 msgid "Alt+M"
 msgstr "Alt+M"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 415
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:840 rc.cpp:393
+#: rc.cpp:393
 #, fuzzy, no-c-format
 msgid "Sh&ow metapackages"
 msgstr "更新可能パッケージ表示"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 426
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:842 rc.cpp:399
+#: rc.cpp:399
 #, fuzzy, no-c-format
 msgid "&apply"
 msgstr "適用"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 440
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:844 rc.cpp:405
+#: rc.cpp:405
 #, no-c-format
 msgid "i&nstall"
 msgstr "インストール"
@@ -1418,256 +825,236 @@ msgstr "インストール"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 496
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1491
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 236
-#: obj-i486-linux-gnu/kde3/siduxcc/kerneldialog.cpp:845
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1969
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2021
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:763 rc.cpp:408
-#: rc.cpp:490 rc.cpp:620 rc.cpp:831
+#. i18n: file ./kde3/siduxcc/kerneldialog.ui line 443
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 496
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1491
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 236
+#: rc.cpp:408 rc.cpp:490 rc.cpp:620 rc.cpp:831
 #, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
 
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 276
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1499
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1959 rc.cpp:460
-#, no-c-format
-msgid "Interface"
-msgstr "インターフェース"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 287
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1500
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1960 rc.cpp:463
-#, no-c-format
-msgid "IP address"
-msgstr "Ipアドレス"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 298
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1501
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1961 rc.cpp:466
-#, no-c-format
-msgid "Method"
-msgstr "メソッド"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 309
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1502
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1962 rc.cpp:469
-#, no-c-format
-msgid "Class"
-msgstr "クラス"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 320
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1503
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1963 rc.cpp:472
-#, no-c-format
-msgid "Driver"
-msgstr "ドライバー"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 331
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1504
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1964 rc.cpp:475
-#, no-c-format
-msgid "Slot"
-msgstr "スロット"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1882
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2050 rc.cpp:693
-#, no-c-format
-msgid "ESSID"
-msgstr "ESSID"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1839
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1883
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2051 rc.cpp:696
-#, no-c-format
-msgid "Channel"
-msgstr "チャンネル"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1850
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1884
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2052 rc.cpp:699
-#, no-c-format
-msgid "Quality"
-msgstr "クォリティー"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1861
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1885
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2053 rc.cpp:702
-#, no-c-format
-msgid "WEP/WPA"
-msgstr "WEP/WPA"
-
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1872
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1886
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2054 rc.cpp:705
-#, no-c-format
-msgid "BSSID"
-msgstr "BSSID"
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
+#: rc.cpp:417
+#, fuzzy, no-c-format
+msgid "Network"
+msgstr "ネットワーク"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 45
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1945 rc.cpp:420
+#: rc.cpp:420
 #, no-c-format
 msgid "Configure network cards"
 msgstr "ネットワークカード設定"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 53
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1946 rc.cpp:423
+#: rc.cpp:423
 #, no-c-format
 msgid "Set hostname"
 msgstr "ホスト名設定"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 61
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1947 rc.cpp:426
+#: rc.cpp:426
 #, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
 msgstr "WLAN-カード(Ndiswrapper)インストール"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 69
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1948 rc.cpp:429
+#: rc.cpp:429
 #, no-c-format
 msgid "Install WLAN cards (fwdetect)"
 msgstr "WLAN-カード(fwdetect)インストール"
 
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
+#: rc.cpp:433 rc.cpp:753
+#, no-c-format
+msgid "Description"
+msgstr "記述"
+
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 176
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1951 rc.cpp:436
+#: rc.cpp:436
 #, no-c-format
 msgid "MAC address"
 msgstr "MAC アドレス"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 204
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1952 rc.cpp:439
+#: rc.cpp:439
 #, no-c-format
 msgid "Disa&ble"
 msgstr "無効"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 234
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1954 rc.cpp:445
+#: rc.cpp:445
 #, no-c-format
 msgid "C&onfigure"
 msgstr "設定"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 240
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1956 rc.cpp:451
+#: rc.cpp:451
 #, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "選択したデバイスの設定変更"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 267
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1957 rc.cpp:454
+#: rc.cpp:454
 #, no-c-format
 msgid "En&able"
 msgstr "有効"
 
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 276
+#: rc.cpp:460
+#, no-c-format
+msgid "Interface"
+msgstr "インターフェース"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 287
+#: rc.cpp:463
+#, no-c-format
+msgid "IP address"
+msgstr "Ipアドレス"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 298
+#: rc.cpp:466
+#, no-c-format
+msgid "Method"
+msgstr "メソッド"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 309
+#: rc.cpp:469
+#, no-c-format
+msgid "Class"
+msgstr "クラス"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 320
+#: rc.cpp:472
+#, no-c-format
+msgid "Driver"
+msgstr "ドライバー"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 331
+#: rc.cpp:475
+#, no-c-format
+msgid "Slot"
+msgstr "スロット"
+
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 375
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1965 rc.cpp:478
+#: rc.cpp:478
 #, no-c-format
 msgid "List of configured network devices"
 msgstr "設定されたネットワークデバイスのリスト"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 402
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1966 rc.cpp:481
+#: rc.cpp:481
 #, no-c-format
 msgid "Hostname"
 msgstr "ホストネーム"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 459
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1967 rc.cpp:484
+#: rc.cpp:484
 #, no-c-format
 msgid "Install wlan card"
 msgstr "Wlanカードをインストール"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 493
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1968 rc.cpp:487
+#: rc.cpp:487
 #, no-c-format
 msgid "&Ndiswrapper"
 msgstr "Ndiswrapper"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 524
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1970 rc.cpp:493
+#: rc.cpp:493
 #, no-c-format
 msgid "Cards known to work"
 msgstr "機能が確認されたカード"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 558
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1971 rc.cpp:496
+#: rc.cpp:496
 #, no-c-format
 msgid "Sh&ow list"
 msgstr "リスト表示"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 953
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1974 rc.cpp:503
+#: rc.cpp:503
 #, no-c-format
 msgid "Inst&all"
 msgstr "インストール"
 
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 962
+#: rc.cpp:509
+#, no-c-format
+msgid "Detected"
+msgstr "見つかりました"
+
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 967
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1978 rc.cpp:512
+#: rc.cpp:512
 #, no-c-format
 msgid "All"
 msgstr "すべて"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1048
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1982 rc.cpp:517
+#: rc.cpp:517
 #, no-c-format
 msgid "LAN settings"
 msgstr "LANの設定"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1056
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1983 rc.cpp:520
+#: rc.cpp:520
 #, no-c-format
 msgid "WLAN settings"
 msgstr "WLANの設定"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1064
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1984 rc.cpp:523
+#: rc.cpp:523
 #, no-c-format
 msgid "WLAN security"
 msgstr "WLANセキュリティ"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1147
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1988 rc.cpp:528
+#: rc.cpp:528
 #, no-c-format
 msgid "manual"
 msgstr "マニュアル"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1152
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1989 rc.cpp:531
+#: rc.cpp:531
 #, no-c-format
 msgid "allow hotplug"
 msgstr "ホットプラグを使う"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1157
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1990 rc.cpp:534
+#: rc.cpp:534
 #, no-c-format
 msgid "auto"
 msgstr "自動"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1185
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1991 rc.cpp:537
+#: rc.cpp:537
 #, no-c-format
 msgid "<b>Method:</b>"
 msgstr "<b>メソッド:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1191
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1993 rc.cpp:540
+#: rc.cpp:540
 #, no-c-format
 msgid "dhcp"
 msgstr "DHCP"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1196
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1994 rc.cpp:543
+#: rc.cpp:543
 #, no-c-format
 msgid "static"
 msgstr "スタティック"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1246
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1997 rc.cpp:548
+#: rc.cpp:548
 #, no-c-format
 msgid "<b>Class:</b>"
 msgstr "<b>クラス:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1279
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1998 rc.cpp:551
+#: rc.cpp:551
 #, fuzzy, no-c-format
 msgid "Nameserver:"
 msgstr "ネームサーバー設定"
@@ -1678,13 +1065,13 @@ msgstr "ネームサーバー設定"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1377
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1396
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1415
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:1999
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2001
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2004
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2008
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2011
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2014 rc.cpp:554
-#: rc.cpp:560 rc.cpp:569 rc.cpp:581 rc.cpp:590 rc.cpp:599
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1290
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1331
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1350
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1377
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1396
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1415
+#: rc.cpp:554 rc.cpp:560 rc.cpp:569 rc.cpp:581 rc.cpp:590 rc.cpp:599
 #, no-c-format
 msgid "000.000.000.000; "
 msgstr "000.000.000.000; "
@@ -1692,343 +1079,394 @@ msgstr "000.000.000.000; "
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1293
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1399
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1418
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2000
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2012
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2015 rc.cpp:557
-#: rc.cpp:593 rc.cpp:602
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1293
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1399
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1418
+#: rc.cpp:557 rc.cpp:593 rc.cpp:602
 #, no-c-format
 msgid "E.g. 192.168.0.255"
 msgstr "例. 192.168.0.255"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1334
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2002 rc.cpp:563
+#: rc.cpp:563
 #, no-c-format
 msgid "E.g. 192.168.0.2"
 msgstr "例. 192.168.0.2"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1342
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2003 rc.cpp:566
+#: rc.cpp:566
 #, no-c-format
 msgid "IP address:"
 msgstr "Ipアドレス:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1353
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2005 rc.cpp:572
+#: rc.cpp:572
 #, no-c-format
 msgid "E.g. 255.255.255.0"
 msgstr "例. 255.255.255.0"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1361
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2006 rc.cpp:575
+#: rc.cpp:575
 #, no-c-format
 msgid "Netmask:"
 msgstr "ネットマスク:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1369
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2007 rc.cpp:578
+#: rc.cpp:578
 #, no-c-format
 msgid "Gateway:"
 msgstr "ゲートウェイ"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1380
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2009 rc.cpp:584
+#: rc.cpp:584
 #, no-c-format
 msgid "E.g. 192.168.0.254"
 msgstr "例. 192.168.0.254"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1388
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2010 rc.cpp:587
+#: rc.cpp:587
 #, no-c-format
 msgid "Network:"
 msgstr "ネットワーク"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1407
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2013 rc.cpp:596
+#: rc.cpp:596
 #, no-c-format
 msgid "Broadcast:"
 msgstr "ブロードキャスト:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1444
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2016 rc.cpp:605
+#: rc.cpp:605
 #, no-c-format
 msgid "<b>ESSID:</b>"
 msgstr "<b>ESSID:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1460
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2017 rc.cpp:608
+#: rc.cpp:608
 #, no-c-format
 msgid "Channel/ Frequency"
 msgstr "チャンネル/周波数"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1474
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2018 rc.cpp:611
+#: rc.cpp:611
 #, no-c-format
 msgid "&Auto"
 msgstr "自動"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1488
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2020 rc.cpp:617
+#: rc.cpp:617
 #, no-c-format
 msgid "Cha&nnel:"
 msgstr "チャンネル:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1499
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2022 rc.cpp:623
+#: rc.cpp:623
 #, no-c-format
 msgid "Fre&quency:"
 msgstr "周波数:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1502
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2023 rc.cpp:626
+#: rc.cpp:626
 #, no-c-format
 msgid "Alt+Q"
 msgstr "Alt+Q"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1521
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2024 rc.cpp:629
+#: rc.cpp:629
 #, no-c-format
 msgid ".G"
 msgstr ".G"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1524
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2025 rc.cpp:632
+#: rc.cpp:632
 #, no-c-format
 msgid "9.999G;_"
 msgstr "9.999G;_"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1542
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2026 rc.cpp:635
+#: rc.cpp:635
 #, no-c-format
 msgid "Advanced options"
 msgstr "高度なオプション"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1556
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2027 rc.cpp:638
+#: rc.cpp:638
 #, no-c-format
 msgid "NWID:"
 msgstr "NWID:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1564
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2028 rc.cpp:641
+#: rc.cpp:641
 #, no-c-format
 msgid "iwspy:"
 msgstr "iwspy:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1572
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2029 rc.cpp:644
+#: rc.cpp:644
 #, no-c-format
 msgid "iwconfig:"
 msgstr "iwconfig:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1580
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2030 rc.cpp:647
+#: rc.cpp:647
 #, no-c-format
 msgid "iwpriv:"
 msgstr "iwpriv:"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1618
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2031 rc.cpp:650
+#: rc.cpp:650
 #, no-c-format
 msgid "<b>Mode:</b>"
 msgstr "<b>モード:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1629
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2034 rc.cpp:654
+#: rc.cpp:654
 #, no-c-format
 msgid "Managed"
 msgstr "Managed"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1634
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2035 rc.cpp:657
+#: rc.cpp:657
 #, no-c-format
 msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1639
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2036 rc.cpp:660
+#: rc.cpp:660
 #, no-c-format
 msgid "Master"
 msgstr "マスター"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1644
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2037 rc.cpp:663
+#: rc.cpp:663
 #, no-c-format
 msgid "Repeater"
 msgstr "リピーター"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1649
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2038 rc.cpp:666
+#: rc.cpp:666
 #, no-c-format
 msgid "Secondary"
 msgstr "セカンダリー"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1654
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2039 rc.cpp:669
+#: rc.cpp:669
 #, no-c-format
 msgid "Auto"
 msgstr "自動"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1698
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2040 rc.cpp:672
+#: rc.cpp:672
 #, no-c-format
 msgid "Sh&ow List"
 msgstr "リストを表示"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1753
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2045 rc.cpp:678
+#: rc.cpp:678
 #, no-c-format
 msgid "None"
 msgstr "無し"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1758
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2046 rc.cpp:681
+#: rc.cpp:681
 #, no-c-format
 msgid "WEP"
 msgstr "WEP"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1763
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2047 rc.cpp:684
+#: rc.cpp:684
 #, no-c-format
 msgid "WPA-PSK"
 msgstr "WPA-PSK"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1791
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2048 rc.cpp:687
+#: rc.cpp:687
 #, no-c-format
 msgid "<b>Preshared Key:</b>"
 msgstr "<b>プリシェアード キー:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1807
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2049 rc.cpp:690
+#: rc.cpp:690
 #, no-c-format
 msgid "<b>Encryptiontype:</b>"
 msgstr "暗号タイプ"
 
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
+#: rc.cpp:693
+#, no-c-format
+msgid "ESSID"
+msgstr "ESSID"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1839
+#: rc.cpp:696
+#, no-c-format
+msgid "Channel"
+msgstr "チャンネル"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1850
+#: rc.cpp:699
+#, no-c-format
+msgid "Quality"
+msgstr "クォリティー"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1861
+#: rc.cpp:702
+#, no-c-format
+msgid "WEP/WPA"
+msgstr "WEP/WPA"
+
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1872
+#: rc.cpp:705
+#, no-c-format
+msgid "BSSID"
+msgstr "BSSID"
+
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1902
-#: obj-i486-linux-gnu/kde3/siduxcc/networkdialog.cpp:2055 rc.cpp:708
+#: rc.cpp:708
 #, no-c-format
 msgid "Choose a network (doubleklick):"
 msgstr "ネットワークを選んでください (ダブルクリック):"
 
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
+#: rc.cpp:723 rc.cpp:790
+#, fuzzy, no-c-format
+msgid "Services"
+msgstr "サービス"
+
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 119
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:689 rc.cpp:738
+#: rc.cpp:738
 #, no-c-format
 msgid "Manage services"
 msgstr "サービス管理"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 127
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:690 rc.cpp:741
+#: rc.cpp:741
 #, no-c-format
 msgid "Start services at boot"
 msgstr "ブート時開始サービス"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 197
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:691 rc.cpp:744
+#: rc.cpp:744
 #, no-c-format
 msgid "Select service"
 msgstr "サービス選択"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 237
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:692 rc.cpp:747
+#: rc.cpp:747
 #, no-c-format
 msgid "Status"
 msgstr "状態"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 286
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:693 rc.cpp:750
+#: rc.cpp:750
 #, no-c-format
 msgid "Status: not running..."
 msgstr "状態: 未実行..."
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:695
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:714 rc.cpp:756
-#: rc.cpp:807
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
+#: rc.cpp:756 rc.cpp:807
 #, no-c-format
 msgid "Description Text"
 msgstr "解説テキスト"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 354
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:696 rc.cpp:759
+#: rc.cpp:759
 #, no-c-format
 msgid "Action"
 msgstr "アクション"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 391
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:697 rc.cpp:762
+#: rc.cpp:762
 #, fuzzy, no-c-format
 msgid "St&art"
 msgstr "状態"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 405
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:699 rc.cpp:768
+#: rc.cpp:768
 #, no-c-format
 msgid "St&op"
 msgstr ""
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 419
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:701 rc.cpp:774
+#: rc.cpp:774
 #, no-c-format
 msgid "Restart"
 msgstr "リスタート"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 433
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:703 rc.cpp:778
+#: rc.cpp:778
 #, fuzzy, no-c-format
 msgid "Re&load"
 msgstr "リロード"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 436
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:704 rc.cpp:781
+#: rc.cpp:781
 #, fuzzy, no-c-format
 msgid "Alt+L"
 msgstr "Alt+Y"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 466
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:705 rc.cpp:784
+#: rc.cpp:784
 #, fuzzy, no-c-format
 msgid "Start service at &Boot"
 msgstr "ブート時開始サービス"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 518
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:708 rc.cpp:793
+#: rc.cpp:793
 #, no-c-format
 msgid "Active Services:"
 msgstr "アクティブサービス:"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 566
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:709 rc.cpp:796
+#: rc.cpp:796
 #, no-c-format
 msgid ">"
 msgstr ">"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 594
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:711 rc.cpp:800
+#: rc.cpp:800
 #, no-c-format
 msgid "<"
 msgstr "<"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 640
-#: obj-i486-linux-gnu/kde3/siduxcc/servicesdialog.cpp:713 rc.cpp:804
+#: rc.cpp:804
 #, no-c-format
 msgid "Disabled Services:"
 msgstr "サービスを無効に"
 
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 17
+#: rc.cpp:810
+#, fuzzy, no-c-format
+msgid "Software"
+msgstr "ソフトウェア"
+
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 48
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:757 rc.cpp:813
+#: rc.cpp:813
 #, no-c-format
 msgid "Show upgradable packages"
 msgstr "更新可能パッケージ表示"
 
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
+#: rc.cpp:816
+#, no-c-format
+msgid "There are no warnings"
+msgstr "警告はありません"
+
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 233
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:762 rc.cpp:828
+#: rc.cpp:828
 #, fuzzy, no-c-format
 msgid "Clea&n"
 msgstr "クリア"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 245
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:764 rc.cpp:834
+#: rc.cpp:834
 #, no-c-format
 msgid ""
 "clean clears out the local repository \n"
@@ -2048,19 +1486,19 @@ msgstr ""
 "コマンド: apt-get clean"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 334
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:777 rc.cpp:855
+#: rc.cpp:855
 #, no-c-format
 msgid "&Update"
 msgstr ""
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 387
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:785 rc.cpp:869
+#: rc.cpp:869
 #, no-c-format
 msgid "Upgr&ade"
 msgstr "アップグレード"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 395
-#: obj-i486-linux-gnu/kde3/siduxcc/softwaredialog.cpp:787 rc.cpp:875
+#: rc.cpp:875
 #, no-c-format
 msgid ""
 "For an explanation how to \n"
@@ -2071,21 +1509,20 @@ msgstr ""
 "説明を読むにははボタンをクリックして\n"
 "ください。"
 
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 29
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3342
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3501 rc.cpp:895
-#, no-c-format
-msgid "Menu"
-msgstr "メニュー"
-
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 17
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3500 rc.cpp:892
+#: rc.cpp:892
 #, no-c-format
 msgid "sidux Control Center"
 msgstr ""
 
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 29
+#: rc.cpp:895
+#, no-c-format
+msgid "Menu"
+msgstr "メニュー"
+
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 316
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3502 rc.cpp:898
+#: rc.cpp:898
 #, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
@@ -2098,51 +1535,63 @@ msgstr ""
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 470
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 473
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3505
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3506 rc.cpp:903 rc.cpp:906
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 470
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 473
+#: rc.cpp:903 rc.cpp:906
 #, no-c-format
 msgid "sidux manual"
 msgstr "siduxマニュアル"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 487
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 490
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3508
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3509 rc.cpp:910 rc.cpp:913
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 487
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 490
+#: rc.cpp:910 rc.cpp:913
 #, no-c-format
 msgid "sidux Homepage"
 msgstr "siduxホームページ"
 
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 504
+#: rc.cpp:917
+#, fuzzy, no-c-format
+msgid "About"
+msgstr "KDEについて"
+
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 507
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 510
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3512
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3513 rc.cpp:920 rc.cpp:923
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 507
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 510
+#: rc.cpp:920 rc.cpp:923
 #, no-c-format
 msgid "About siduxcc"
 msgstr "siduxccについて"
 
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
+#: rc.cpp:927 rc.cpp:930
+#, no-c-format
+msgid "Exit"
+msgstr "終了"
+
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3517
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3518 rc.cpp:933 rc.cpp:936
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 538
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 541
+#: rc.cpp:933 rc.cpp:936
 #, no-c-format
 msgid "About KDE"
 msgstr "KDEについて"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3519
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3520 rc.cpp:939 rc.cpp:942
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 552
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 555
+#: rc.cpp:939 rc.cpp:942
 #, no-c-format
 msgid "Language"
 msgstr "言語"
-
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3522
-msgid "&File"
-msgstr ""
-
-#: obj-i486-linux-gnu/kde3/siduxcc/startdialog.cpp:3524
-msgid "&Help"
-msgstr ""
 
 #: rc.cpp:943
 msgctxt "NAME OF TRANSLATORS"
@@ -2153,3 +1602,370 @@ msgstr "s.sach & mutsumu nomura"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sachs@infoseek.jp & muchan.m@gmail.com"
+
+#~ msgid "en"
+#~ msgstr "ja"
+
+#~ msgid "Double click to the item to view the full warning."
+#~ msgstr "ダブルクリックすれば警告の全文が読めます"
+
+#~ msgid "A KDE tray application for sidux"
+#~ msgstr "siduxのKDEトレイアプリケーション"
+
+#~ msgid "Packaging"
+#~ msgstr "パッケージング"
+
+#, fuzzy
+#~ msgid "Icon"
+#~ msgstr "アクション"
+
+#, fuzzy
+#~ msgid "sidux-hermes"
+#~ msgstr "siduxバージョン"
+
+#~ msgid "Forum - Upgrade Warnings"
+#~ msgstr "フォーラム - Dist-Upgradeの警告"
+
+#~ msgid "Manual - Upgrade of an Installed System"
+#~ msgstr "手動 - インストールしたシステムの更新"
+
+#~ msgid "Upgradable packages"
+#~ msgstr "更新可能パッケージ"
+
+#, fuzzy
+#~ msgid "sidux news"
+#~ msgstr "siduxバージョン"
+
+#~ msgid "Warnings"
+#~ msgstr "警告"
+
+#~ msgid "Show Legend"
+#~ msgstr "レジェンド表示"
+
+#~ msgid "&About sidux-hermes"
+#~ msgstr "sidux-hermesについて"
+
+#, fuzzy
+#~ msgid "Show details"
+#~ msgstr "リスト表示"
+
+#~ msgid "Modelines removed"
+#~ msgstr "Modeline 削除"
+
+#~ msgid ""
+#~ "Are you sure you want to restart the X-Server? All windows will be closed."
+#~ msgstr ""
+#~ "本当にX-Serverを再起動してよろしいですか? すべてのウィンドウが終了します."
+
+#~ msgid ""
+#~ "You only can install modules for the newest stable kernel. But this "
+#~ "kernel isn't installed!"
+#~ msgstr ""
+#~ "最新の安定カーネル用のモジュールだけしかインストールできません。そのカーネ"
+#~ "ルはインストールされていません。"
+
+#~ msgid "You have already installed the newest stable kernel!"
+#~ msgstr "最新の安定カーネルはすでにインストールされています"
+
+#, fuzzy
+#~ msgid "There is no stable kernel avaiable!"
+#~ msgstr "利用可能な新しいカーネルはありません!"
+
+#~ msgid "Are you sure you want to install a new kernel?"
+#~ msgstr "本当に新しいカーネルをインストールしますか?"
+
+#~ msgid ""
+#~ "It's recommended to not disable this function! Do you want to continue "
+#~ "anyway?"
+#~ msgstr "この機能をオフにするのはお勧めできません。それでも実行しますか？"
+
+#~ msgid ""
+#~ "acer-acpi is a driver to allow you to control various aspects of your "
+#~ "Acer laptop hardware using the proc filesystem.  It was originally "
+#~ "developed in order to activate the wireless LAN card under a 64-bit "
+#~ "version of Linux, as acerhk (the previous fine solution to the problem) "
+#~ "relied on making BIOS calls which are not allowed from a 64-bit OS."
+#~ msgstr ""
+#~ "acer-acpiはAcerのラップトップのハードウェアの様々な機能をprocファイルシス"
+#~ "テムを使ってコントロールするドライバーです。元は64bitのlinuxでワイアレス"
+#~ "LANカードをオンにするのに、(それまでの32bitの解決方法だった)acerhkはBIOSの"
+#~ "ルーチンを呼んでいてこの方法では64bitのOSでは使えないために開発されたもの"
+#~ "です"
+
+#~ msgid ""
+#~ "This driver will give access to the special keys on notebooks of the Acer "
+#~ "Travelmate series, which are not handled by the keyboard driver. It also "
+#~ "works on notebooks from other manufacturers (some Medion, Fujitsu-"
+#~ "Siemens, ...).<br><br>It also has some other related functionality "
+#~ "(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
+#~ "disable wireless hardware"
+#~ msgstr ""
+#~ "このドライバーはAcer Travelmateシリーズのノートブックの、通常のキーボード"
+#~ "ドライバーではアクセスできない特殊キーにアクセスするためのものです。他の"
+#~ "メーカーのノートブック(Medion, 富士通シーメンスなど)でも使える場合がありま"
+#~ "す。<br><br>他にもモデルによっては(メールやワイヤレスの)LEDやワイヤレスの"
+#~ "オン/オフの設定など関連する機能も持っています"
+
+#~ msgid ""
+#~ "atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet "
+#~ "Adapter. The the Atheros(R) L2 Fast Ethernet Adapter is present in a few "
+#~ "low cost Asus laptop systems, such as the Asus Eee PC."
+#~ msgstr ""
+#~ "atl2はAtheros(R) L2 Fast Ethernet Adapter用のLinuxベースのドライバーです。"
+#~ "Atheros(R) L2 Fast Ethernet AdapterはAsusのEeePCなどの低価格ラップトップに"
+#~ "使われています"
+
+#~ msgid ""
+#~ "Aufs is a stackable unification filesystem such as Unionfs, which unifies "
+#~ "several directories and provides a merged single directory."
+#~ msgstr ""
+#~ "Aufsはいくつかのディレクトリを統合して一つのディレクトリとして扱うことがで"
+#~ "きるスタッカブル統合ファイルシステムです"
+
+#~ msgid ""
+#~ "This package provides the Driver for a snapshotting filesystem modules."
+#~ msgstr ""
+#~ "このパッケージはスナップショットファイルシステムのドライバを提供します"
+
+#~ msgid ""
+#~ "The et131x package is also required in order to make use of these "
+#~ "modules. Kernel source or headers are required to compile these modules."
+#~ "<br><br>This works with Agere Systems ET-131x PCI-E Ethernet Controller."
+#~ msgstr ""
+#~ "et131xパッケージはこれらのモジュールを使用するのに必要です。これらのモ"
+#~ "ジュールをコンパイルするのにはカーネルソースまたはヘッダーが必要です。"
+#~ "<br><br>Agere SystemのET-131x PCI-E Ethernet Controllerが使えます。"
+
+#~ msgid ""
+#~ " The fsam7400 module for the Linux kernel provides support for the "
+#~ "software RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. "
+#~ "This package provides the source code for the fsam7400 modules."
+#~ msgstr ""
+#~ "fsam7400モジュールは富士通シーメンスのAmilo M 7400ラップトップのソフトウェ"
+#~ "アRFキルスイッチのサポートを提供します。このパッケージはfsam7400のソース"
+#~ "コードを提供します"
+
+#~ msgid ""
+#~ "The gpsca video for linux (v4l) driver, provides support for webcams and "
+#~ "digital cameras based on the spca5xx range of chips manufactured by "
+#~ "SunPlus, Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and "
+#~ "Transvision."
+#~ msgstr ""
+#~ "linux用gpscaビデオドライバー (v4l)はSunPlus, Sonix, Z-star, Vimicro, "
+#~ "Conexant, Etoms, Mars-semi, Pixart や Transvision などのメーカの、spca5xx"
+#~ "チップをベースにしたwebカメラやデジタルカメラをサポートします。"
+
+#~ msgid ""
+#~ "LZMA is a compression algorithm, based on the famous Lempel Ziv "
+#~ "compression method."
+#~ msgstr ""
+#~ "LZMAは有名な Lempel Ziv com[ressionをベースにした圧縮アルゴリズムです"
+
+#~ msgid ""
+#~ "Some vendors do not release specifications of the hardware or provide a "
+#~ "Linux driver for their wireless network cards. This project implements "
+#~ "Windows kernel API and NDIS (Network Driver Interface Specification) API "
+#~ "within Linux kernel. A Windows driver for wireless network card is then "
+#~ "linked to this implementation so that the driver runs natively, as though "
+#~ "it is in Windows, without binary emulation."
+#~ msgstr ""
+#~ "すべてのワイアレスカードのメーカーがハードウェアのスペックを公表したり、"
+#~ "linuxのドライバーを提供したりしているわけではありません。このプロジェクト"
+#~ "はWindowsのカーネルAPIとNDIS (Network Driver Interface Specification) API "
+#~ "をlinuxカーネル内部に実装するものです。Windows用に書かれたネットワークカー"
+#~ "ドドライバーはこのAPIにリンクされて、バイナリーエミュレーションなしであた"
+#~ "かもWindows上で使用されているかの様に作動します"
+
+#~ msgid ""
+#~ "This package contains the loadable kernel modules for the HP OmniBooks, "
+#~ "Pavilions, Toshiba Satellites and some other laptops manufactured by "
+#~ "Compal Electronics, Inc as ODM."
+#~ msgstr ""
+#~ "このパッケージにはHP OmniBook, Pavilion, 東芝のSatelliteその他、Compal "
+#~ "Electronics社のODMで作られたラップトップ用のカーネルモジュールが入っていま"
+#~ "す"
+
+#~ msgid ""
+#~ "This package provides the source code for the quickcam kernel module for "
+#~ "Logitech's QuickCam Express webcam and similar webcams.  This driver "
+#~ "supercedes the qce-ga driver."
+#~ msgstr ""
+#~ "このパッケージには Logitech の QuickCam Expressウェッブカメラや類似品用の"
+#~ "カーネルモジュールのソースが含まれています"
+
+#~ msgid ""
+#~ "Modules for controlling the software RF kill switch on the Averatec 5100P "
+#~ "and Packard Bell EasyNote E5. The code may work on other laptops, but "
+#~ "these are the only models on which it has been tested."
+#~ msgstr ""
+#~ "Averatec 5100P と Packard Bell EasyNote E5 のソフトウェアRF Killスイッチを"
+#~ "コントロールするモジュールです。他のラップトップでも動作するかもしれません"
+#~ "がテストは上記の2つの機種だけで行われています"
+
+#~ msgid ""
+#~ "Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
+#~ "zlib compression to compress both files, inodes and directories.  Inodes "
+#~ "in the system are very small and all blocks are packed to minimise data "
+#~ "overhead.  Block sizes greater than 4K are supported up to a maximum of "
+#~ "64K.<br><br> Squashfs is intended for general read-only filesystem use, "
+#~ "for archival use (i.e.  in cases where a .tar.gz  file may be used), and "
+#~ "in constrained block device/memory systems (e.g.  embedded systems) where "
+#~ "low overhead is needed."
+#~ msgstr ""
+#~ "Squashfsはlinuxの高度に圧縮されたリードオンリーファイルシステムです。zlib"
+#~ "圧縮を使ってファイル、iノードとディレクトリを圧縮します。iノードはとても小"
+#~ "さいので、すべてのブロックは圧縮されてオーバーヘッドを最小にします。4Kb以"
+#~ "上64Kbまでの大きさのブロックがサポートされています。<br><br>Squashfsはリー"
+#~ "ドオンリーのファイルシステム一般、(.tar.gzの代わりとしての)アーカイブとし"
+#~ "ての使用、ブロックデバイス/メモリーの制限された(組み込み)システムなどでの"
+#~ "使用を念頭において作られています"
+
+#~ msgid ""
+#~ "VirtualBox is a free PC virtualization solution allowing you to run a "
+#~ "wide range of PC operating systems on your system."
+#~ msgstr ""
+#~ "VirtualBoxはフリーのバーチャルPCプログラムで、様々なPC用のOSを走らすことが"
+#~ "できます"
+
+#~ msgid "Frontend for managing sidux."
+#~ msgstr "sidux管理用フロントエンド."
+
+#~ msgid "Developer"
+#~ msgstr "開発者"
+
+#~ msgid "Developer of the knxcc"
+#~ msgstr "knxcc開発者"
+
+#~ msgid "Developer of ceni and fw-detect"
+#~ msgstr "ceniとfw-detectの開発者"
+
+#~ msgid "Mac Address"
+#~ msgstr "MAC アドレス"
+
+#~ msgid ""
+#~ "<b>allow hotplug</b>: The network will be activated  when a cable is "
+#~ "plugged in and it will be deactivated if the cable is pulled. This is "
+#~ "useful on laptops with onboard network adapters, since it will only "
+#~ "configure the interface when a cable is really connected.<br><br><b>auto</"
+#~ "b>: The networkcard will be activated, when the computer starts"
+#~ msgstr ""
+#~ "<b>ホットプラグを使う</b>: ケーブルが差し込まれた時にネットワークに接続"
+#~ "し、カーブルを抜けばネットワークの接続を停止するように設定する。この設定だ"
+#~ "とケーブルにつながっている時だけネットに接続するので、アダプタ内蔵のラップ"
+#~ "トップに使うと便利です。<br><br><b>自動</b>: コンピュータが起動したときに"
+#~ "ネットワークカードが作動するようにする。"
+
+#~ msgid "WEP encryption requires a key with at least 5 characters."
+#~ msgstr "WEPの暗号化には最低５文字のキーが必要です"
+
+#~ msgid "WPA encryption requires a key with 8 to 63 characters."
+#~ msgstr "WPAの暗号化には8文字以上63文字以下のキーが必要です。"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid ""
+#~ "Apache v2 is the next generation of the omnipresent Apache web server."
+#~ msgstr "Apache v2は、アパッチの次世代版ウェブサーバーです."
+
+#, fuzzy
+#~ msgid ""
+#~ "CUPS (Common UNIX Printing System) is a printing system. It supports the "
+#~ "IPP (Internet Printing Protocol), and has its own filtering driver model "
+#~ "for handling various document types."
+#~ msgstr ""
+#~ "Common UNIX Printing System (CUPS(tm)) はlpdの代わりとなる汎用印刷システム"
+#~ "です。IPP(Internet Printing Protocol)をサポートしていて、様々な文書タイプ"
+#~ "を処理する独自のフィルタードライバーを持っています。"
+
+#~ msgid ""
+#~ "MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
+#~ "server."
+#~ msgstr ""
+#~ "MySQL は高速かつ安定している真のマルチユーザー、マルチスレッドのSQLデータ"
+#~ "ベースサーバーです."
+
+#~ msgid ""
+#~ "The Samba software suite is a collection of programs that implements the "
+#~ "SMB/CIFS protocol for unix systems, allowing you to serve files and "
+#~ "printers to Windows, NT, OS/2 and DOS clients."
+#~ msgstr ""
+#~ "Samba ソフトウェアセットは、SMB/CIFSプロトコルのunix用のプログラム集であ"
+#~ "り、ファイルやプリンターをWindows, NT, OS/2およびDOSのクライアントから利用"
+#~ "できるようにします."
+
+#~ msgid ""
+#~ "SSH is the portable version of OpenSSH, a free implementation of the "
+#~ "Secure Shell protocol as specified by the IETF secsh working group."
+#~ msgstr ""
+#~ "SSHはIETF secshワーキンググループによるSecure Shellプロトコルをフリーソフ"
+#~ "トウェアとして実現したOpenSSHのポータブル版です."
+
+#~ msgid "Status: %1"
+#~ msgstr "状態: %1"
+
+#~ msgid "not running..."
+#~ msgstr "未作動..."
+
+#~ msgid "running..."
+#~ msgstr "作動中..."
+
+#~ msgid ""
+#~ "Advanced Configuration and Power Interface (ACPI) to allow intelligent "
+#~ "power management on your system."
+#~ msgstr ""
+#~ "ACPI(Advanced Configuration and Power Interface)はシステムの電源を賢くマ"
+#~ "ネージメントします"
+
+#~ msgid "Enables Universal interface for wireless communication"
+#~ msgstr "ワイアレスコミュニケーションの汎用インターフェースをオンにします"
+
+#~ msgid "Cron is a time-based scheduling service."
+#~ msgstr "Cronは実行時間を設定できるスケジューリングサービスです"
+
+#~ msgid ""
+#~ "gpm means general purpose mouse and is the mouse support for linux in the "
+#~ "console."
+#~ msgstr "gpmはlinuxのコンソールでマウスを使えるようにサポートします"
+
+#, fuzzy
+#~ msgid ""
+#~ "Ifplugd is a daemon which will automatically configure your ethernet "
+#~ "device when a cable is plugged in and automatically unconfigure it if the "
+#~ "cable is pulled. This is useful on laptops with onboard network adapters, "
+#~ "since it will only configure the interface when a cable is really "
+#~ "connected."
+#~ msgstr ""
+#~ "<b>ホットプラグを使う</b>: ケーブルが差し込まれた時にネットワークに接続"
+#~ "し、カーブルを抜けばネットワークの接続を停止するように設定する。この設定だ"
+#~ "とケーブルにつながっている時だけネットに接続するので、アダプタ内蔵のラップ"
+#~ "トップに使うと便利です。<br><br><b>自動</b>: コンピュータが起動したときに"
+#~ "ネットワークカードが作動するようにする。"
+
+#~ msgid "Apt-show-versions is missing!"
+#~ msgstr "Apt-show-versionがインストールされていません!"
+
+#~ msgid "Do you want to install it?"
+#~ msgstr "インストールしますか?"
+
+#~ msgid "Couldn't connect to sidux.com!"
+#~ msgstr "sidux.comに接続することができません!"
+
+#~ msgid "Don't make a dist-Upgrade!"
+#~ msgstr "今Dist-Upgradeをしてはいけません!"
+
+#, fuzzy
+#~ msgid ""
+#~ "To update your system you have to leave the graphic modus. Press for this "
+#~ "CTR+ALT+F1, login as root and type init 3. After that run the command "
+#~ "smxi or siduxcc (Software->Dist-upgrade)."
+#~ msgstr ""
+#~ "Dist-upgradeをするためにはまずランレベル３に移ります. Ctrl+Alt+F1を押し, "
+#~ "rootとしてログインしてからinit 3とタイプします. siduxccのコマンドを実行し"
+#~ "Software->Dist-Upgradeのオプションを選びます."
+
+#~ msgid "Are you sure you want to clear your local repository?"
+#~ msgstr "本当にローカルリポジトリをクリアしますか?"
+
+#~ msgid "System Info"
+#~ msgstr "システム情報"
