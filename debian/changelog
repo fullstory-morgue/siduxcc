@@ -1,9 +1,5 @@
-siduxcc (0.12.1) UNRELEASED; urgency=low
+siduxcc (0.12.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * translation: de,fr&it updated
   * kde3: siduxcc: sidux-binary-gfx disabled
   * kde3: hermes: hermesExec problem solved
