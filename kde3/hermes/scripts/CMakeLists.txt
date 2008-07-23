@@ -1,4 +1,2 @@
-install_files( /share/siduxcc/hermes FILES
-	hermesExec
-)
+INSTALL_PROGRAMS( /share/siduxcc/hermes FILES hermesExec )
 

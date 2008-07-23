@@ -6,8 +6,9 @@ siduxcc (0.12.1) UNRELEASED; urgency=low
   [ Fabian Wuertz ]
   * translation: de,fr&it updated
   * kde3: siduxcc: sidux-binary-gfx disabled
+  * kde3: hermes: hermesExec problem solved
 
- -- Fabian Wuertz <xadras@sidux.com>  Wed, 23 Jul 2008 02:34:44 +0200
+ -- Fabian Wuertz <xadras@sidux.com>  Wed, 23 Jul 2008 15:56:20 +0200
 
 siduxcc (0.12.0) unstable; urgency=low
 

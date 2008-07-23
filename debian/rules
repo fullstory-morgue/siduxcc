@@ -33,8 +33,6 @@ install/siduxcc-common::
 		debian/tmp/usr/share/pixmaps/siduxcc-16.xpm
 	test -r icons/hi16-app-siduxcc.png
 	test -r debian/tmp/usr/share/pixmaps/siduxcc-16.xpm
-	
-	chmod +x debian/tmp/usr/share/siduxcc/hermes/hermesExec
 
 create-icons::
 	# requires inkscape and imagemagick to be installed
