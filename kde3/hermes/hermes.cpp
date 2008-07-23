@@ -186,7 +186,7 @@ void hermes::download()
 
 void hermes::siduxcc()
 {
-	this->shell->setCommand("su-to-root -X -c /usr/bin/siduxcc-kde&");
+	this->shell->setCommand("su-to-root -X -c /usr/bin/siduxcc-kde3&");
 	this->shell->start(true);
 }
 
