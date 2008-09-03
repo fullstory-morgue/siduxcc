@@ -1,8 +1,12 @@
 siduxcc (0.12.4) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 02 Sep 2008 23:38:19 +0200
+  [ Bernard Gray ]
+  * more notok-hermes.svg cleanup
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Wed, 03 Sep 2008 22:11:14 +1000
 
 siduxcc (0.12.3) unstable; urgency=low
 
