@@ -1,9 +1,5 @@
-siduxcc (0.12.4) UNRELEASED; urgency=low
+siduxcc (0.12.4) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * more notok-hermes.svg cleanup
 
  -- Bernard Gray <bernard.gray@gmail.com>  Wed, 03 Sep 2008 22:11:14 +1000
