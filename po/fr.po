@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
-"group_id=50231&atid=459007\n"
-"POT-Creation-Date: 2008-07-23 02:23+0200\n"
-"PO-Revision-Date: 2008-07-23 02:22+0200\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?group_id=50231&atid=459007\n"
+"POT-Creation-Date: 2008-09-18 23:15+0200\n"
+"PO-Revision-Date: 2008-09-18 23:17+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,149 +16,189 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 16
 #: rc.cpp:3
-#, no-c-format
 msgid "siduxcc-hermes"
 msgstr "siduxcc-hermes"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 49
 #: rc.cpp:6
-#, no-c-format
 msgid "&Warnings"
 msgstr "&Alertes"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 103
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 103
 #: rc.cpp:9 rc.cpp:110
-#, no-c-format
 msgid "No dist-upgrade warnings."
 msgstr "Aucune alerte de dist-upgrade"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 75
 #: rc.cpp:12
-#, no-c-format
 msgid "&News"
 msgstr "&Nouveautés"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 91
 #: rc.cpp:15
-#, no-c-format
 msgid "Double click to the item to view the full message."
 msgstr "Double-cliquez sur l'option pour tout lire."
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 101
 #: rc.cpp:18
-#, no-c-format
 msgid "Smxi Ad&vice"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 119
 #: rc.cpp:21
-#, no-c-format
 msgid "Upgrada&ble packages"
 msgstr "Paquetages actualisables"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 128
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 128
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
 #: rc.cpp:24 rc.cpp:819
-#, no-c-format
 msgid "Name"
 msgstr "Nom"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 139
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 139
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
 #: rc.cpp:27 rc.cpp:822
-#, no-c-format
 msgid "Installed Version"
 msgstr "Version installée"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 150
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 150
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
 #: rc.cpp:30 rc.cpp:825
-#, no-c-format
 msgid "Latest Version"
 msgstr "Dernière version"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 182
 #: rc.cpp:33
-#, fuzzy, no-c-format
+#, fuzzy
 msgid "&Kernel"
 msgstr "Noyau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
 #: rc.cpp:37 rc.cpp:362
-#, no-c-format
 msgid "Current kernel:"
 msgstr "Noyau courant"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 239
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 271
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 209
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 225
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 239
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 271
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 209
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 225
 #: rc.cpp:40 rc.cpp:46 rc.cpp:370 rc.cpp:373
-#, no-c-format
 msgid "---"
 msgstr "---"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 255
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 168
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 255
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 168
 #: rc.cpp:43 rc.cpp:365
-#, no-c-format
 msgid "Newest stable kernel:"
 msgstr "Dernier noyau stable"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 309
 #: rc.cpp:51
-#, no-c-format
 msgid "To install a new kernel use the sidux Control Center."
 msgstr "Pour installer un nouveau noyau utilisez le Centre de Contrôle sidux."
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 354
 #: rc.cpp:54
-#, fuzzy, no-c-format
+#, fuzzy
 msgid "relo&ad"
 msgstr "Rechargement"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 357
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 429
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 270
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 956
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1477
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 394
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 390
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 357
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 429
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 270
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 956
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1477
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 394
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 390
 #: rc.cpp:57 rc.cpp:402 rc.cpp:457 rc.cpp:506 rc.cpp:614 rc.cpp:765 rc.cpp:872
-#, no-c-format
 msgid "Alt+A"
 msgstr "Alt+A"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 363
 #: rc.cpp:60
-#, no-c-format
 msgid ""
 "Reload the current package list of \n"
 "siduxcc-hermes. Use this option if \n"
@@ -171,29 +210,37 @@ msgstr ""
 "que si vous avez mis la liste à jour \n"
 "sans siduxcc-hermes."
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 371
 #: rc.cpp:66
-#, no-c-format
 msgid "&update (apt-get)"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 374
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 244
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 337
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 374
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 244
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 337
 #: rc.cpp:69 rc.cpp:379 rc.cpp:858
-#, no-c-format
 msgid "Alt+U"
 msgstr "Alt+U"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 382
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 382
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
 #: rc.cpp:72 rc.cpp:861
-#, no-c-format
 msgid ""
 "update is used to resynchronize the package \n"
 "index files from their sources. The indexes \n"
@@ -209,38 +256,55 @@ msgstr ""
 "\n"
 "Commande : apt-get update"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 405
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 287
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 405
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 287
 #: rc.cpp:80 rc.cpp:843
-#, no-c-format
 msgid "D&ownload"
 msgstr "Télécharger"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 408
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 418
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 237
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 561
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 408
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 290
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 408
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 418
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 237
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 561
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 408
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 290
 #: rc.cpp:83 rc.cpp:396 rc.cpp:448 rc.cpp:499 rc.cpp:771 rc.cpp:846
-#, no-c-format
 msgid "Alt+O"
 msgstr "Alt+O"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 414
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 414
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
 #: rc.cpp:86 rc.cpp:849
-#, no-c-format
 msgid ""
 "package files are only retrieved, not\n"
 "unpacked or installed.\n"
@@ -252,134 +316,147 @@ msgstr ""
 "\n"
 "Commande : apt-get -d dist-upgrade"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 422
 #: rc.cpp:92
-#, no-c-format
 msgid "&close"
 msgstr "&fermer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 425
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 876
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 868
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 425
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 876
-#: rc.cpp:95 rc.cpp:256
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 868
+#: rc.cpp:95 rc.cpp:253
 msgid "Alt+C"
 msgstr "Alt+C"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 16
 #: rc.cpp:98
-#, no-c-format
 msgid "legendbase"
 msgstr "base de légendes"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 34
 #: rc.cpp:101
-#, no-c-format
 msgid "Legend"
 msgstr "Légende"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 68
 #: rc.cpp:104
-#, no-c-format
-msgid ""
-"There are dist-upgrade warnings. Please visit sidux.com for more information!"
+msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Des alertes prévenant le dist-upgrade sont publiées. Consultez sidux.com "
 "pour plus d'information!"
 
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 87
 #: rc.cpp:107
-#, no-c-format
 msgid "No connection to sidux.com."
 msgstr "Aucune connexion à sidux.com"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 16
 #: rc.cpp:113
-#, no-c-format
 msgid "Widget"
 msgstr "Widget"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 38
 #: rc.cpp:116
-#, no-c-format
 msgid "Con&tinuo"
 msgstr "Continuer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 41
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1182
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1215
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 41
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1182
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1215
 #: rc.cpp:119 rc.cpp:313
-#, no-c-format
 msgid "Alt+T"
 msgstr "Alt+T"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 57
 #: rc.cpp:122
-#, no-c-format
 msgid "Sho&w Details"
 msgstr "Affichage"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 60
 #: rc.cpp:125
-#, no-c-format
 msgid "Alt+W"
 msgstr "Alt+W"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 17
 #: rc.cpp:128
-#, no-c-format
 msgid "Display"
 msgstr "Affichage"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 45
 #: rc.cpp:131
-#, no-c-format
 msgid "Change resolution & frequency"
 msgstr "Détecter les fréquences et changer la définition."
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 53
 #: rc.cpp:134
-#, no-c-format
 msgid "Configure color-depth & DPI"
 msgstr "Configurer la profondeur de couleur et la résolution"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 61
 #: rc.cpp:137
-#, no-c-format
 msgid "Configure X-Server"
 msgstr "Configurer le serveur X"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 69
-#: rc.cpp:140
-#, no-c-format
-msgid "Install graphiccard-drivers"
-msgstr "Installer les pilotes de cartes graphiques"
-
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 128
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 488
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 719
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 955
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 128
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 488
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 719
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 955
-#: rc.cpp:143 rc.cpp:208 rc.cpp:235 rc.cpp:280
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 120
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 480
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 711
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 947
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 120
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 480
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 711
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 947
+#: rc.cpp:140 rc.cpp:205 rc.cpp:232 rc.cpp:277
 msgid "WARNING!"
 msgstr "ATTENTION!"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 143
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 503
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 734
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 970
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 143
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 503
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 734
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 970
-#: rc.cpp:146 rc.cpp:211 rc.cpp:238 rc.cpp:283
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 135
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 495
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 726
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 962
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 135
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 495
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 726
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 962
+#: rc.cpp:143 rc.cpp:208 rc.cpp:235 rc.cpp:280
 msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
@@ -389,1091 +466,1174 @@ msgstr ""
 "à la configuration précédente appuyez sur CTR + ALT + F1, lancez la commande "
 "siduxcc en tant que root, puis choisissez Affichage -> restaurer X."
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 174
-#: rc.cpp:149
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 166
+#: rc.cpp:146
 msgid "Resolution"
 msgstr "Définition"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 198
-#: rc.cpp:152
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 190
+#: rc.cpp:149
 msgid "640x480"
 msgstr "640x480"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 203
-#: rc.cpp:155
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 195
+#: rc.cpp:152
 msgid "800x600"
 msgstr "800x600"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 208
-#: rc.cpp:158
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 200
+#: rc.cpp:155
 msgid "1024x768"
 msgstr "1024x768"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 213
-#: rc.cpp:161
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 205
+#: rc.cpp:158
 msgid "1152x864"
 msgstr "1152x864"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 218
-#: rc.cpp:164
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 210
+#: rc.cpp:161
 msgid "1280x1024"
 msgstr "1280x1024"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 223
-#: rc.cpp:167
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 215
+#: rc.cpp:164
 msgid "1400x1050"
 msgstr "1400x1050"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 228
-#: rc.cpp:170
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 220
+#: rc.cpp:167
 msgid "1600x1200"
 msgstr "1600x1200"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 233
-#: rc.cpp:173
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 225
+#: rc.cpp:170
 msgid "custom"
 msgstr "personnalisé"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 295
-#: rc.cpp:176
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 287
+#: rc.cpp:173
 msgid "Scanning Frequency"
 msgstr "Détection des fréquences"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 329
-#: rc.cpp:179
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 321
+#: rc.cpp:176
 msgid "HorizSync:"
 msgstr "Synchronisation Horizontale:"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 345
-#: rc.cpp:182
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 337
+#: rc.cpp:179
 msgid "VertRefresh:"
 msgstr "Rafraîchissement Vertical:"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 367
-#: rc.cpp:186
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 359
+#: rc.cpp:183
 msgid "Vertical Frequenz"
 msgstr "Fréquence verticale"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 373
-#: rc.cpp:189
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 365
+#: rc.cpp:186
 msgid "Type"
 msgstr "Type"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 378
-#: rc.cpp:192
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 370
+#: rc.cpp:189
 msgid "TFT"
 msgstr "TFT"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 383
-#: rc.cpp:195
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 375
+#: rc.cpp:192
 msgid "CRT"
 msgstr "CRT"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 428
-#: rc.cpp:199
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 420
+#: rc.cpp:196
 msgid "Horizontal Frequenz"
 msgstr "Fréquence horizontale"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 453
-#: rc.cpp:202
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 445
+#: rc.cpp:199
 msgid "Note"
 msgstr "Observation"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 470
-#: rc.cpp:205
-#, no-c-format
-msgid ""
-"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 462
+#: rc.cpp:202
+msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
 "Si vous utilisez le pilote ATI (fglrx), vous ne pourrez pas changer la "
 "profondeur de couleur"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 523
-#: rc.cpp:214
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 515
+#: rc.cpp:211
 msgid "Color-Depth"
 msgstr "Profondeur de couleur"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 547
-#: rc.cpp:217
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 539
+#: rc.cpp:214
 msgid "8 bit"
 msgstr "8 bit"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 552
-#: rc.cpp:220
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 544
+#: rc.cpp:217
 msgid "15 bit"
 msgstr "15 bit"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 557
-#: rc.cpp:223
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 549
+#: rc.cpp:220
 msgid "16 bit"
 msgstr "16 bit"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 562
-#: rc.cpp:226
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 554
+#: rc.cpp:223
 msgid "24 bit"
 msgstr "24 bit"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 608
-#: rc.cpp:229
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 600
+#: rc.cpp:226
 msgid "DPI-Settings"
 msgstr "réglage en PPP"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 645
-#: rc.cpp:232
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 637
+#: rc.cpp:229
 msgid " dpi"
 msgstr "ppp"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 765
-#: rc.cpp:241
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 757
+#: rc.cpp:238
 msgid "Modelines"
 msgstr "Modelines"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 805
-#: rc.cpp:244
-#, fuzzy, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 797
+#: rc.cpp:241
+#, fuzzy
 msgid "Remo&ve Modelines"
 msgstr "Effacer les Modelines"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 808
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1044
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 808
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1044
-#: rc.cpp:247 rc.cpp:292
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 800
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1036
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 800
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1036
+#: rc.cpp:244 rc.cpp:289
 msgid "Alt+V"
 msgstr "Alt+V"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 836
-#: rc.cpp:250
-#, fuzzy, no-c-format
-msgid "Selecet X-Module"
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 828
+#: rc.cpp:247
+msgid "Selected X-Module"
 msgstr "Sélection de module X"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 873
-#: rc.cpp:253
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 865
+#: rc.cpp:250
 msgid "Enable &Composite"
 msgstr "Activer &Composite"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 882
-#: rc.cpp:259
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 874
+#: rc.cpp:256
 msgid "VESA"
 msgstr "VESA"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 887
-#: rc.cpp:262
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 879
+#: rc.cpp:259
 msgid "FBdev"
 msgstr "FBdev"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 892
-#: rc.cpp:265
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 884
+#: rc.cpp:262
 msgid "nv"
 msgstr "nv"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 897
-#: rc.cpp:268
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 889
+#: rc.cpp:265
 msgid "nvidia"
 msgstr "nvidia"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 902
-#: rc.cpp:271
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 894
+#: rc.cpp:268
 msgid "ati"
 msgstr "ati"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 907
-#: rc.cpp:274
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 899
+#: rc.cpp:271
 msgid "fglrx"
 msgstr "fglrx"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 912
-#: rc.cpp:277
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 904
+#: rc.cpp:274
 msgid "vboxvideo"
 msgstr "vboxvideo"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1001
-#: rc.cpp:286
-#, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 993
+#: rc.cpp:283
 msgid "ATI/Nvidia (Non-Free)"
 msgstr "ATI/Nvidia (Non-libres)"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1041
-#: rc.cpp:289
-#, fuzzy, no-c-format
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1033
+#: rc.cpp:286
+#, fuzzy
 msgid "Install dri&ver"
 msgstr "Installer le pilote"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1080
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1043
+#: rc.cpp:292
+msgid "Install graphiccard-drivers"
+msgstr "Installer les pilotes de cartes graphiques"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1113
 #: rc.cpp:295
-#, no-c-format
 msgid "Fonts (fix-fonts)"
 msgstr "Polices (fixer les polices)"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1117
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1150
 #: rc.cpp:298
-#, fuzzy, no-c-format
+#, fuzzy
 msgid "&Register Fonts"
 msgstr "En&registrer les Polices"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1120
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1153
 #: rc.cpp:301
-#, no-c-format
 msgid "Alt+R"
 msgstr "Alt+R"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1165
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1198
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 471
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1949
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 85
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 454
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1165
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1198
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 471
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1949
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 85
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 454
 #: rc.cpp:304 rc.cpp:411 rc.cpp:711 rc.cpp:726 rc.cpp:880
-#, no-c-format
 msgid "&back"
 msgstr "&retour"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1168
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1201
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 474
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 207
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1952
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 88
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 469
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 457
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1168
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1201
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 474
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 207
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1952
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 88
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 469
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 457
 #: rc.cpp:307 rc.cpp:414 rc.cpp:442 rc.cpp:714 rc.cpp:729 rc.cpp:787
 #: rc.cpp:883
-#, no-c-format
 msgid "Alt+B"
 msgstr "Alt+B"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1179
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1212
 #: rc.cpp:310
-#, fuzzy, no-c-format
+#, fuzzy
 msgid "res&tart X-Server"
 msgstr "Redémarrer le serveur X"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1190
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1223
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 74
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1969
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 96
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 465
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1190
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1223
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 74
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1969
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 96
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 465
 #: rc.cpp:316 rc.cpp:339 rc.cpp:717 rc.cpp:732 rc.cpp:886
-#, no-c-format
 msgid "appl&y"
 msgstr "Appl&iquer"
 
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1193
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1226
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 77
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1972
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 99
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 468
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1193
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 1226
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 77
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1972
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 99
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 468
 #: rc.cpp:319 rc.cpp:342 rc.cpp:720 rc.cpp:735 rc.cpp:889
-#, no-c-format
 msgid "Alt+Y"
 msgstr "Alt+Y"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 17
 #: rc.cpp:322
-#, no-c-format
 msgid "SysInfo"
 msgstr "Info système"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 31
 #: rc.cpp:325
-#, no-c-format
 msgid "About sidux"
 msgstr "À propos de sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 42
 #: rc.cpp:328
-#, no-c-format
 msgid "sidux Version:"
 msgstr "Version de sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 94
 #: rc.cpp:332
-#, no-c-format
 msgid "Infobash"
 msgstr "Infobash"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 17
 #: rc.cpp:336
-#, no-c-format
 msgid "Internet"
 msgstr "Internet"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 118
 #: rc.cpp:345
-#, no-c-format
 msgid "sidux-Browser"
 msgstr "Navigateur-sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
 #: rc.cpp:348
-#, no-c-format
 msgid "Kernel"
 msgstr "Noyau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 51
 #: rc.cpp:352
-#, no-c-format
 msgid "Install new kernel"
 msgstr "Installer le nouveau noyau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 59
 #: rc.cpp:355
-#, no-c-format
 msgid "Remove old kernels"
 msgstr "Enlever les anciens noyaux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 67
 #: rc.cpp:358
-#, no-c-format
 msgid "Install kernel modules"
 msgstr "Installer les modules du noyau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 241
 #: rc.cpp:376
-#, no-c-format
 msgid "Install automatic new kernels during dist-&updates."
-msgstr ""
-"Installation des nouveaux noyaux en mode automatique pendant le dist-upgrade."
+msgstr "Installation des nouveaux noyaux en mode automatique pendant le dist-upgrade."
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 269
 #: rc.cpp:382
-#, no-c-format
 msgid "Current kernel"
 msgstr "Noyau Courant"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 333
 #: rc.cpp:386
-#, no-c-format
 msgid "re&move"
 msgstr "effacer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 336
 #: rc.cpp:389
-#, no-c-format
 msgid "Alt+M"
 msgstr "Alt+M"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 415
 #: rc.cpp:393
-#, no-c-format
 msgid "Sh&ow metapackages"
 msgstr "V&oir les métapackages"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 426
 #: rc.cpp:399
-#, no-c-format
 msgid "&apply"
 msgstr "&appliquer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 440
 #: rc.cpp:405
-#, no-c-format
 msgid "i&nstall"
 msgstr "I&nstaller"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 443
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 496
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1491
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 236
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 443
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 496
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1491
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 236
 #: rc.cpp:408 rc.cpp:490 rc.cpp:620 rc.cpp:831
-#, no-c-format
 msgid "Alt+N"
 msgstr "Alt+N"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
 #: rc.cpp:417
-#, no-c-format
 msgid "Network"
 msgstr "Réseau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 45
 #: rc.cpp:420
-#, no-c-format
 msgid "Configure network cards"
 msgstr "Configuration des cartes réseau"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 53
 #: rc.cpp:423
-#, no-c-format
 msgid "Set hostname"
 msgstr "Choisir le nom d'hôte (Hostname)"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 61
 #: rc.cpp:426
-#, no-c-format
 msgid "Install WLAN cards (Ndiswrapper)"
 msgstr "Installer les cartes Wifi (Ndiswrapper)"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 69
 #: rc.cpp:429
-#, no-c-format
 msgid "Install WLAN cards (fwdetect)"
 msgstr "Installer les cartes Wifi (fwdetect)"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
 #: rc.cpp:433 rc.cpp:753
-#, no-c-format
 msgid "Description"
 msgstr "Description"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 176
 #: rc.cpp:436
-#, no-c-format
 msgid "MAC address"
 msgstr "Addresse Mac"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 204
 #: rc.cpp:439
-#, no-c-format
 msgid "Disa&ble"
 msgstr "Désactiver"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 234
 #: rc.cpp:445
-#, no-c-format
 msgid "C&onfigure"
 msgstr "C&onfigurer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 240
 #: rc.cpp:451
-#, no-c-format
 msgid "Change the settings of the selected device"
 msgstr "Changer les réglages du contrôleur sélectionné"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 267
 #: rc.cpp:454
-#, no-c-format
 msgid "En&able"
 msgstr "Activer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 276
 #: rc.cpp:460
-#, no-c-format
 msgid "Interface"
 msgstr "Interface"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 287
 #: rc.cpp:463
-#, no-c-format
 msgid "IP address"
 msgstr "Adresse IP"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 298
 #: rc.cpp:466
-#, no-c-format
 msgid "Method"
 msgstr "Méthode"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 309
 #: rc.cpp:469
-#, no-c-format
 msgid "Class"
 msgstr "Classe"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 320
 #: rc.cpp:472
-#, no-c-format
 msgid "Driver"
 msgstr "Pilote"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 331
 #: rc.cpp:475
-#, no-c-format
 msgid "Slot"
 msgstr "Slot"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 375
 #: rc.cpp:478
-#, no-c-format
 msgid "List of configured network devices"
 msgstr "Liste des contrôleurs réseau configurés"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 402
 #: rc.cpp:481
-#, no-c-format
 msgid "Hostname"
 msgstr "Nom d'hôte"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 459
 #: rc.cpp:484
-#, no-c-format
 msgid "Install wlan card"
 msgstr "Installer la carte Wifi"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 493
 #: rc.cpp:487
-#, no-c-format
 msgid "&Ndiswrapper"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 524
 #: rc.cpp:493
-#, no-c-format
 msgid "Cards known to work"
 msgstr "Cartes connues pour fonctionner"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 558
 #: rc.cpp:496
-#, no-c-format
 msgid "Sh&ow list"
 msgstr "V&oir la liste"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 953
 #: rc.cpp:503
-#, no-c-format
 msgid "Inst&all"
 msgstr "Installer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 962
 #: rc.cpp:509
-#, no-c-format
 msgid "Detected"
 msgstr "détecté"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 967
 #: rc.cpp:512
-#, no-c-format
 msgid "All"
 msgstr "Tout"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1048
 #: rc.cpp:517
-#, no-c-format
 msgid "LAN settings"
 msgstr "Paramètres LAN"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1056
 #: rc.cpp:520
-#, no-c-format
 msgid "WLAN settings"
 msgstr "Paramètres Wifi"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1064
 #: rc.cpp:523
-#, no-c-format
 msgid "WLAN security"
 msgstr "Sécurité Wifi"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1147
 #: rc.cpp:528
-#, no-c-format
 msgid "manual"
 msgstr "manuel"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1152
 #: rc.cpp:531
-#, no-c-format
 msgid "allow hotplug"
 msgstr "permettre le branchement à chaud"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1157
 #: rc.cpp:534
-#, no-c-format
 msgid "auto"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1185
 #: rc.cpp:537
-#, no-c-format
 msgid "<b>Method:</b>"
 msgstr "<b>Méthode:</b>"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1191
 #: rc.cpp:540
-#, no-c-format
 msgid "dhcp"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1196
 #: rc.cpp:543
-#, no-c-format
 msgid "static"
 msgstr "statique"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1246
 #: rc.cpp:548
-#, no-c-format
 msgid "<b>Class:</b>"
 msgstr "<b>Classe:</b>"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1279
 #: rc.cpp:551
-#, no-c-format
 msgid "Nameserver:"
 msgstr "choisir le serveur de noms de domain (DNS):"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1290
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1331
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1350
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1377
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1396
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1415
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1290
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1331
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1350
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1377
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1396
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1415
 #: rc.cpp:554 rc.cpp:560 rc.cpp:569 rc.cpp:581 rc.cpp:590 rc.cpp:599
-#, no-c-format
 msgid "000.000.000.000; "
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1293
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1399
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1418
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1293
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1399
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1418
 #: rc.cpp:557 rc.cpp:593 rc.cpp:602
-#, no-c-format
 msgid "E.g. 192.168.0.255"
 msgstr "Ex: 192.168.0.255"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1334
 #: rc.cpp:563
-#, no-c-format
 msgid "E.g. 192.168.0.2"
 msgstr "Ex: 192.168.0.2"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1342
 #: rc.cpp:566
-#, no-c-format
 msgid "IP address:"
 msgstr "Adresse IP:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1353
 #: rc.cpp:572
-#, no-c-format
 msgid "E.g. 255.255.255.0"
 msgstr "Ex: 255.255.255.0"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1361
 #: rc.cpp:575
-#, no-c-format
 msgid "Netmask:"
 msgstr "Masque de sous-réseau:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1369
 #: rc.cpp:578
-#, no-c-format
 msgid "Gateway:"
 msgstr "Passerelle:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1380
 #: rc.cpp:584
-#, no-c-format
 msgid "E.g. 192.168.0.254"
 msgstr "Ex"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1388
 #: rc.cpp:587
-#, no-c-format
 msgid "Network:"
 msgstr "Réseau:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1407
 #: rc.cpp:596
-#, no-c-format
 msgid "Broadcast:"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1444
 #: rc.cpp:605
-#, no-c-format
 msgid "<b>ESSID:</b>"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1460
 #: rc.cpp:608
-#, no-c-format
 msgid "Channel/ Frequency"
 msgstr "Canal/ Fréquence"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1474
 #: rc.cpp:611
-#, no-c-format
 msgid "&Auto"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1488
 #: rc.cpp:617
-#, no-c-format
 msgid "Cha&nnel:"
 msgstr "Ca&nal:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1499
 #: rc.cpp:623
-#, no-c-format
 msgid "Fre&quency:"
 msgstr "Fré&quence:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1502
 #: rc.cpp:626
-#, no-c-format
 msgid "Alt+Q"
 msgstr "Alt+Q"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1521
 #: rc.cpp:629
-#, no-c-format
 msgid ".G"
 msgstr ".G"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1524
 #: rc.cpp:632
-#, no-c-format
 msgid "9.999G;_"
 msgstr "9.999G;_"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1542
 #: rc.cpp:635
-#, no-c-format
 msgid "Advanced options"
 msgstr "Options avancées"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1556
 #: rc.cpp:638
-#, no-c-format
 msgid "NWID:"
 msgstr "NWID:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1564
 #: rc.cpp:641
-#, no-c-format
 msgid "iwspy:"
 msgstr "iwspy:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1572
 #: rc.cpp:644
-#, no-c-format
 msgid "iwconfig:"
 msgstr "iwconfig:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1580
 #: rc.cpp:647
-#, no-c-format
 msgid "iwpriv:"
 msgstr "iwpriv:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1618
 #: rc.cpp:650
-#, no-c-format
 msgid "<b>Mode:</b>"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1629
 #: rc.cpp:654
-#, no-c-format
 msgid "Managed"
 msgstr "Managé"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1634
 #: rc.cpp:657
-#, no-c-format
 msgid "Ad-Hoc"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1639
 #: rc.cpp:660
-#, no-c-format
 msgid "Master"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1644
 #: rc.cpp:663
-#, no-c-format
 msgid "Repeater"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1649
 #: rc.cpp:666
-#, no-c-format
 msgid "Secondary"
 msgstr "Secondaire"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1654
 #: rc.cpp:669
-#, no-c-format
 msgid "Auto"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1698
 #: rc.cpp:672
-#, no-c-format
 msgid "Sh&ow List"
 msgstr "Afficher la liste"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1753
 #: rc.cpp:678
-#, no-c-format
 msgid "None"
 msgstr "Aucun"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1758
 #: rc.cpp:681
-#, no-c-format
 msgid "WEP"
 msgstr "WEP"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1763
 #: rc.cpp:684
-#, no-c-format
 msgid "WPA-PSK"
 msgstr "WPA-PSK"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1791
 #: rc.cpp:687
-#, no-c-format
 msgid "<b>Preshared Key:</b>"
 msgstr "<b>Clé partagée:</b>"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1807
 #: rc.cpp:690
-#, no-c-format
 msgid "<b>Encryptiontype:</b>"
 msgstr "<b>Type de cryptage:</b>"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
 #: rc.cpp:693
-#, no-c-format
 msgid "ESSID"
 msgstr "ESSID"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1839
 #: rc.cpp:696
-#, no-c-format
 msgid "Channel"
 msgstr "Canal"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1850
 #: rc.cpp:699
-#, no-c-format
 msgid "Quality"
 msgstr "Qualité"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1861
 #: rc.cpp:702
-#, no-c-format
 msgid "WEP/WPA"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1872
 #: rc.cpp:705
-#, no-c-format
 msgid "BSSID"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1902
 #: rc.cpp:708
-#, no-c-format
 msgid "Choose a network (doubleklick):"
 msgstr "Choisissez un réseau (double-clic)"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
 #: rc.cpp:723 rc.cpp:790
-#, no-c-format
 msgid "Services"
 msgstr "Services"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 119
 #: rc.cpp:738
-#, no-c-format
 msgid "Manage services"
 msgstr "Gestion des services"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 127
 #: rc.cpp:741
-#, no-c-format
 msgid "Start services at boot"
 msgstr "Demarrer les services au démarrage"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 197
 #: rc.cpp:744
-#, no-c-format
 msgid "Select service"
 msgstr "Sélection de service"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 237
 #: rc.cpp:747
-#, no-c-format
 msgid "Status"
 msgstr "État"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 286
 #: rc.cpp:750
-#, no-c-format
 msgid "Status: not running..."
 msgstr "État: inactif..."
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
 #: rc.cpp:756 rc.cpp:807
-#, no-c-format
 msgid "Description Text"
 msgstr "Texte descriptif"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 354
 #: rc.cpp:759
-#, no-c-format
 msgid "Action"
 msgstr "Action"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 391
 #: rc.cpp:762
-#, no-c-format
 msgid "St&art"
 msgstr "Démarrer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 405
 #: rc.cpp:768
-#, no-c-format
 msgid "St&op"
 msgstr "Arrêter"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 419
 #: rc.cpp:774
-#, no-c-format
 msgid "Restart"
 msgstr "Redémarrer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 433
 #: rc.cpp:778
-#, no-c-format
 msgid "Re&load"
 msgstr "Recharger"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 436
 #: rc.cpp:781
-#, no-c-format
 msgid "Alt+L"
 msgstr "Alt+L"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 466
 #: rc.cpp:784
-#, no-c-format
 msgid "Start service at &Boot"
 msgstr "Demarrer les services au &Boot"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 518
 #: rc.cpp:793
-#, no-c-format
 msgid "Active Services:"
 msgstr "Services actifs:"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 566
 #: rc.cpp:796
-#, no-c-format
 msgid ">"
 msgstr ">"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 594
 #: rc.cpp:800
-#, no-c-format
 msgid "<"
 msgstr "<"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 640
 #: rc.cpp:804
-#, no-c-format
 msgid "Disabled Services:"
 msgstr "Service désactivés"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 17
 #: rc.cpp:810
-#, no-c-format
 msgid "Software"
 msgstr "Logiciels"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 48
 #: rc.cpp:813
-#, no-c-format
 msgid "Show upgradable packages"
 msgstr "Montrer les packages actualisables"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
 #: rc.cpp:816
-#, no-c-format
 msgid "There are no warnings"
 msgstr "Pas d'alerte signalée"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 233
 #: rc.cpp:828
-#, no-c-format
 msgid "Clea&n"
 msgstr "Nettoyer"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 245
 #: rc.cpp:834
-#, no-c-format
 msgid ""
 "clean clears out the local repository \n"
 "of retrieved package files. It removes \n"
@@ -1490,21 +1650,21 @@ msgstr ""
 "/var/cache/apt/archives/partial/.\n"
 "Commande: apt-get clean"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 334
 #: rc.cpp:855
-#, no-c-format
 msgid "&Update"
 msgstr "&Actualiser"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 387
 #: rc.cpp:869
-#, no-c-format
 msgid "Upgr&ade"
 msgstr "Mettre-à-jour"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 395
 #: rc.cpp:875
-#, no-c-format
 msgid ""
 "For an explanation how to \n"
 "do a system upgrade click \n"
@@ -1514,21 +1674,21 @@ msgstr ""
 "mettre un système à niveau, cliquez \n"
 "sur le bouton."
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 17
 #: rc.cpp:892
-#, no-c-format
 msgid "sidux Control Center"
 msgstr "Centre de Contrôle de sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 29
 #: rc.cpp:895
-#, no-c-format
 msgid "Menu"
 msgstr ""
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 316
 #: rc.cpp:898
-#, no-c-format
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
 "to configure your distribution. Select an item from the \n"
@@ -1538,63 +1698,82 @@ msgstr ""
 "pour configurer votre distribution. Sélectionnez une option du menu \n"
 "pour activer le module de configuration de votre choix."
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 470
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 473
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 470
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 473
 #: rc.cpp:903 rc.cpp:906
-#, no-c-format
 msgid "sidux manual"
 msgstr "manuel sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 487
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 490
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 487
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 490
 #: rc.cpp:910 rc.cpp:913
-#, no-c-format
 msgid "sidux Homepage"
 msgstr "Site de sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 504
 #: rc.cpp:917
-#, fuzzy, no-c-format
+#, fuzzy
 msgid "About"
 msgstr "À propos de KDE"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 507
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 510
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 507
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 510
 #: rc.cpp:920 rc.cpp:923
-#, no-c-format
 msgid "About siduxcc"
 msgstr "À propos de sidux"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 527
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 527
 #: rc.cpp:927 rc.cpp:930
-#, no-c-format
 msgid "Exit"
 msgstr "Sortir"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
 #: rc.cpp:933 rc.cpp:936
-#, no-c-format
 msgid "About KDE"
 msgstr "À propos de KDE"
 
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
 #: rc.cpp:939 rc.cpp:942
-#, no-c-format
 msgid "Language"
 msgstr "Langue"
 
@@ -1607,3 +1786,4 @@ msgstr "LjanA"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "isotran@free.fr"
+

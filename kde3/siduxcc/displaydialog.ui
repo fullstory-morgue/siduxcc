@@ -825,7 +825,7 @@
                         </sizepolicy>
                     </property>
                     <property name="title">
-                        <string>Selecet X-Module</string>
+                        <string>Selected X-Module</string>
                     </property>
                     <widget class="QLabel">
                         <property name="name">
