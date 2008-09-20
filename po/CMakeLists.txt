@@ -14,6 +14,7 @@ else(NOT GETTEXT_MSGFMT_EXECUTABLE)
 	file(GLOB PO_FILES
 		./da..po
 		./de.po
+		./el.po
 		./es.po
 		./fr.po
 		./hr.po

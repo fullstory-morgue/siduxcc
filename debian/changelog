@@ -1,14 +1,12 @@
-siduxcc (0.12.7) UNRELEASED; urgency=low
+siduxcc (0.12.6) unstable; urgency=low
 
+  [ slam ]
   * translation el (greek) added
 
- -- slam <slam@chrishildebrandt.com>  Sat, 20 Sep 2008 13:53:35 +0200
+  [ Stefan Lippers-Hollmann ]
+  * really el locales for cmake.
 
-siduxcc (0.12.6) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 18 Sep 2008 23:44:31 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 21 Sep 2008 00:46:46 +0200
 
 siduxcc (0.12.5) unstable; urgency=low
 
