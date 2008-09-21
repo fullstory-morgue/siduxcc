@@ -1,8 +1,8 @@
-siduxcc (0.12.7) UNRELEASED; urgency=low
+siduxcc (0.12.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * update russian translations, thanks to RoEn.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 21 Sep 2008 00:50:54 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 21 Sep 2008 17:52:51 +0200
 
 siduxcc (0.12.6) unstable; urgency=low
 
