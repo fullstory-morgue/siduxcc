@@ -127,7 +127,7 @@ msgstr "---"
 #: rc.cpp:43 rc.cpp:365 rc.cpp:43 rc.cpp:365
 #, no-c-format
 msgid "Newest stable kernel:"
-msgstr "Τελευταίος σταθερός πυρήνας"
+msgstr "Νέος σταθερός πυρήνας:"
 
 #. i18n: file ./kde3/hermes/hermesbase.ui line 309
 #: rc.cpp:51 rc.cpp:51
@@ -392,7 +392,7 @@ msgid ""
 msgstr ""
 "Με λάθος ρυθμίσεις δεν δουλεύει ο x-server ! Για να επαναφέρετε μια παλιά "
 "ρύθμιση πατήστε CTR + ALT + F1, τρέξτε σαν root την εντολή siduxcc και "
-"επιλέξτε Εμφάνιση -> επαναφοράX."
+"επιλέξτε Display -> restoreX."
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 174
 #: rc.cpp:149 rc.cpp:149
@@ -508,7 +508,7 @@ msgstr "Σημείωση"
 msgid ""
 "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
-"Εάν χρησιμοποιείτε τον ATI-Οδηγό (fglrx) δεν μπορείτε να αλλάξετε το Color-Depth."
+"Εάν χρησιμοποιείτε τον ATI-Οδηγό (fglrx) δεν μπορείτε να αλλάξετε Color-Depth."
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 523
 #: rc.cpp:214 rc.cpp:214
@@ -649,7 +649,7 @@ msgstr "Γραμματοσειρές (fix-fonts)"
 #: rc.cpp:298 rc.cpp:298
 #, no-c-format
 msgid "&Register Fonts"
-msgstr "Εγραφή Γραμματοσειρών"
+msgstr "Εγγραφή Γραμματοσειρών"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1120
 #: rc.cpp:301 rc.cpp:301
@@ -714,7 +714,7 @@ msgstr "restart X-Server "
 #: rc.cpp:339 rc.cpp:717 rc.cpp:732 rc.cpp:886
 #, no-c-format
 msgid "appl&y"
-msgstr "apply"
+msgstr "εφαρμογή"
 
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1193
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 77
@@ -742,7 +742,7 @@ msgstr "SysInfo"
 #: rc.cpp:325 rc.cpp:325
 #, no-c-format
 msgid "About sidux"
-msgstr "Για το sidux"
+msgstr "sidux-Σχετικά"
 
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 42
 #: rc.cpp:328 rc.cpp:328
@@ -766,7 +766,7 @@ msgstr "Διαδίκτυο"
 #: rc.cpp:345 rc.cpp:345
 #, no-c-format
 msgid "sidux-Browser"
-msgstr "sidux-Browser"
+msgstr "sidux-Περιηγητής"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
 #: rc.cpp:348 rc.cpp:348
@@ -796,7 +796,7 @@ msgstr "Εγκαταστήστε modules πυρήνα"
 #: rc.cpp:376 rc.cpp:376
 #, no-c-format
 msgid "Install automatic new kernels during dist-&updates."
-msgstr "Αυτόματη εγκατάσταση νέων πυρήνων κατά την διάρκεια του dist-update"
+msgstr "Αυτόματη εγκατάσταση νέων πυρήνων κατά το dist-upgrade"
 
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 269
 #: rc.cpp:382 rc.cpp:382
@@ -981,7 +981,7 @@ msgstr "Ndiswrapper"
 #: rc.cpp:493 rc.cpp:493
 #, no-c-format
 msgid "Cards known to work"
-msgstr "Κάρτες που είναι γνωστό ότι λειτουργούν"
+msgstr "Κάρτες που σίγουρα λειτουργούν"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 558
 #: rc.cpp:496 rc.cpp:496
@@ -1112,7 +1112,7 @@ msgstr "Π.χ. 192.168.0.2"
 #: rc.cpp:566 rc.cpp:566
 #, no-c-format
 msgid "IP address:"
-msgstr "διεύθυνση IP"
+msgstr "Διεύθυνση IP"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1353
 #: rc.cpp:572 rc.cpp:572
@@ -1202,7 +1202,7 @@ msgstr "9.999G;_"
 #: rc.cpp:635 rc.cpp:635
 #, no-c-format
 msgid "Advanced options"
-msgstr "Προχωρημένες Ρυθμίσεις"
+msgstr "Προχ. Ρυθμίσεις"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1556
 #: rc.cpp:638 rc.cpp:638
@@ -1304,7 +1304,7 @@ msgstr "<b>Κλειδί:</b>"
 #: rc.cpp:690 rc.cpp:690
 #, no-c-format
 msgid "<b>Encryptiontype:</b>"
-msgstr "<b>Τύπος Κρυπτογράφησης:</b>"
+msgstr "<b>Κρυπτογράφηση:</b>"
 
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
 #: rc.cpp:693 rc.cpp:693
@@ -1340,7 +1340,7 @@ msgstr "BSSID"
 #: rc.cpp:708 rc.cpp:708
 #, no-c-format
 msgid "Choose a network (doubleklick):"
-msgstr "Επιλέξτε ένα δίκτυο (διπλό κλικ):"
+msgstr "Επιλέξτε δίκτυο (διπλό κλικ):"
 
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
@@ -1466,7 +1466,7 @@ msgstr "Λογισμικό"
 #: rc.cpp:813 rc.cpp:813
 #, no-c-format
 msgid "Show upgradable packages"
-msgstr "Δείξε πακέτα για ενημέρωση"
+msgstr "Εμφάνιση πακέτων για ενημέρωση"
 
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
 #: rc.cpp:816 rc.cpp:816
@@ -1522,7 +1522,7 @@ msgid ""
 msgstr ""
 "Για μια επεξήγηση για το πως \n"
 "να κάνετε upgrade το σύστημα \n"
-"πατήστε το κουμπί."
+"σας πατήστε το κουμπί."
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 17
 #: rc.cpp:892 rc.cpp:892
@@ -1544,9 +1544,9 @@ msgid ""
 "to configure your distribution. Select an item from the \n"
 "menu to load a configuration module."
 msgstr ""
-"Καλώς ήλθατε στο Κέντρο Ελέγχου του sidux, ένας κεντρικός \n"
-"χώρος ρύθμισης της διανομής σας. Επιλέξτε ένα αντικείμενο \n"
-"από το μενού για να φορτώσετε ένα module ρύθμισης."
+"Καλώς ήλθατε στο Κέντρο Ελέγχου του sidux, έναν κεντρικό \n"
+"χώρο ρύθμισης της διανομής σας. Επιλέξτε ένα αντικείμενο \n"
+"από το μενού για να δείτε τις επιλογές ρύθμισης."
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 470
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 473
@@ -1579,7 +1579,7 @@ msgstr "Σχετικά"
 #: rc.cpp:920 rc.cpp:923 rc.cpp:920 rc.cpp:923
 #, no-c-format
 msgid "About siduxcc"
-msgstr "Σχετικά siduxcc"
+msgstr "siduxcc-Σχετικά"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 524
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 527
@@ -1597,7 +1597,7 @@ msgstr "Έξοδος"
 #: rc.cpp:933 rc.cpp:936 rc.cpp:933 rc.cpp:936
 #, no-c-format
 msgid "About KDE"
-msgstr "Σχετικά KDE"
+msgstr "KDE-Σχετικά"
 
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
