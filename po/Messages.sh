@@ -1,13 +1,12 @@
 #!/bin/sh
 
-BASEDIR=".." # root of translatable sources
+BASEDIR="../" # root of translatable sources
 
 PROJECT="siduxcc" # project name
 
 BUGADDR="http://sourceforge.net/tracker/?group_id=50231&atid=459007" # MSGID-Bugs
 
 WDIR=`pwd` # working dir
-
 
 echo "Preparing rc files"
 
@@ -34,7 +33,7 @@ echo "Done preparing rc files"
 echo "Extracting messages"
 
 #cd ${BASEDIR}
-cd /home/wuertz/dev/siduxcc2/
+cd /home/wuertz/dev/siduxcc/
 
 # see above on sorting
 
@@ -58,7 +57,7 @@ for cat in $catalogs; do
 
 echo $cat
 
-msgmerge -o $cat.new $cat ${PROJECT}.pot
+msgmerge -o $cat.new $cat ${WDIR}/${PROJECT}.pot
 
 mv $cat.new $cat
 

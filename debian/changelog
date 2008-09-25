@@ -1,8 +1,12 @@
 siduxcc (0.12.9) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 24 Sep 2008 23:05:36 +0200
+  [ Fabian Wuertz ]
+  * Messages.sh fixed 
+
+ -- Fabian Wuertz <xadras@sidux.com>  Thu, 25 Sep 2008 21:49:00 +0200
 
 siduxcc (0.12.8) unstable; urgency=low
 

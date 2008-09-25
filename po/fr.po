@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?group_id=50231&atid=459007\n"
-"POT-Creation-Date: 2008-09-18 23:15+0200\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
+"group_id=50231&atid=459007\n"
+"POT-Creation-Date: 2008-09-25 21:47+0200\n"
 "PO-Revision-Date: 2008-09-18 23:17+0200\n"
 "Last-Translator: Fabian Wuertz\n"
 "Language-Team: \n"
@@ -17,54 +18,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 16
-#: rc.cpp:3
-msgid "siduxcc-hermes"
-msgstr "siduxcc-hermes"
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 49
-#: rc.cpp:6
-msgid "&Warnings"
-msgstr "&Alertes"
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 65
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/legendbase.ui line 103
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 65
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/legendbase.ui line 103
-#: rc.cpp:9 rc.cpp:110
-msgid "No dist-upgrade warnings."
-msgstr "Aucune alerte de dist-upgrade"
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 75
-#: rc.cpp:12
-msgid "&News"
-msgstr "&Nouveautés"
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 91
-#: rc.cpp:15
-msgid "Double click to the item to view the full message."
-msgstr "Double-cliquez sur l'option pour tout lire."
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 101
-#: rc.cpp:18
-msgid "Smxi Ad&vice"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 119
-#: rc.cpp:21
-msgid "Upgrada&ble packages"
-msgstr "Paquetages actualisables"
-
-#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 128
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
@@ -72,7 +25,9 @@ msgstr "Paquetages actualisables"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 128
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 133
-#: rc.cpp:24 rc.cpp:819
+#: kde3/hermes/hermesbase.cpp:277 kde3/hermes/hermesbase.cpp:405
+#: kde3/siduxcc/softwaredialog.cpp:631 kde3/siduxcc/softwaredialog.cpp:759
+#: po/rc.cpp:24 po/rc.cpp:819 rc.cpp:24 rc.cpp:819
 msgid "Name"
 msgstr "Nom"
 
@@ -84,7 +39,9 @@ msgstr "Nom"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 139
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 144
-#: rc.cpp:27 rc.cpp:822
+#: kde3/hermes/hermesbase.cpp:278 kde3/hermes/hermesbase.cpp:406
+#: kde3/siduxcc/softwaredialog.cpp:632 kde3/siduxcc/softwaredialog.cpp:760
+#: po/rc.cpp:27 po/rc.cpp:822 rc.cpp:27 rc.cpp:822
 msgid "Installed Version"
 msgstr "Version installée"
 
@@ -96,16 +53,60 @@ msgstr "Version installée"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 150
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 155
-#: rc.cpp:30 rc.cpp:825
+#: kde3/hermes/hermesbase.cpp:279 kde3/hermes/hermesbase.cpp:407
+#: kde3/siduxcc/softwaredialog.cpp:633 kde3/siduxcc/softwaredialog.cpp:761
+#: po/rc.cpp:30 po/rc.cpp:825 rc.cpp:30 rc.cpp:825
 msgid "Latest Version"
 msgstr "Dernière version"
 
 #. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 182
-#: rc.cpp:33
-#, fuzzy
-msgid "&Kernel"
-msgstr "Noyau"
+#. i18n: file ./kde3/hermes/hermesbase.ui line 16
+#: kde3/hermes/hermesbase.cpp:399 po/rc.cpp:3 rc.cpp:3
+msgid "siduxcc-hermes"
+msgstr "siduxcc-hermes"
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/legendbase.ui line 103
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 65
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/legendbase.ui line 103
+#: kde3/hermes/hermesbase.cpp:400 kde3/hermes/legendbase.cpp:439 po/rc.cpp:9
+#: po/rc.cpp:110 rc.cpp:9 rc.cpp:110
+msgid "No dist-upgrade warnings."
+msgstr "Aucune alerte de dist-upgrade"
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 49
+#: kde3/hermes/hermesbase.cpp:401 po/rc.cpp:6 rc.cpp:6
+msgid "&Warnings"
+msgstr "&Alertes"
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 91
+#: kde3/hermes/hermesbase.cpp:402 po/rc.cpp:15 rc.cpp:15
+msgid "Double click to the item to view the full message."
+msgstr "Double-cliquez sur l'option pour tout lire."
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 75
+#: kde3/hermes/hermesbase.cpp:403 po/rc.cpp:12 rc.cpp:12
+msgid "&News"
+msgstr "&Nouveautés"
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 101
+#: kde3/hermes/hermesbase.cpp:404 po/rc.cpp:18 rc.cpp:18
+msgid "Smxi Ad&vice"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 119
+#: kde3/hermes/hermesbase.cpp:408 po/rc.cpp:21 rc.cpp:21
+msgid "Upgrada&ble packages"
+msgstr "Paquetages actualisables"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
@@ -115,7 +116,8 @@ msgstr "Noyau"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 223
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 152
-#: rc.cpp:37 rc.cpp:362
+#: kde3/hermes/hermesbase.cpp:410 kde3/siduxcc/kerneldialog.cpp:827
+#: po/rc.cpp:37 po/rc.cpp:362 rc.cpp:37 rc.cpp:362
 msgid "Current kernel:"
 msgstr "Noyau courant"
 
@@ -135,7 +137,10 @@ msgstr "Noyau courant"
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 209
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 225
-#: rc.cpp:40 rc.cpp:46 rc.cpp:370 rc.cpp:373
+#: kde3/hermes/hermesbase.cpp:411 kde3/hermes/hermesbase.cpp:413
+#: kde3/siduxcc/kerneldialog.cpp:831 kde3/siduxcc/kerneldialog.cpp:832
+#: po/rc.cpp:40 po/rc.cpp:46 po/rc.cpp:370 po/rc.cpp:373 rc.cpp:40 rc.cpp:46
+#: rc.cpp:370 rc.cpp:373
 msgid "---"
 msgstr "---"
 
@@ -147,19 +152,27 @@ msgstr "---"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 255
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 168
-#: rc.cpp:43 rc.cpp:365
+#: kde3/hermes/hermesbase.cpp:412 kde3/siduxcc/kerneldialog.cpp:828
+#: po/rc.cpp:43 po/rc.cpp:365 rc.cpp:43 rc.cpp:365
 msgid "Newest stable kernel:"
 msgstr "Dernier noyau stable"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 309
-#: rc.cpp:51
+#: kde3/hermes/hermesbase.cpp:416 po/rc.cpp:51 rc.cpp:51
 msgid "To install a new kernel use the sidux Control Center."
 msgstr "Pour installer un nouveau noyau utilisez le Centre de Contrôle sidux."
 
 #. i18n: tag string
+#. i18n: file ./kde3/hermes/hermesbase.ui line 182
+#: kde3/hermes/hermesbase.cpp:417 po/rc.cpp:33 rc.cpp:33
+#, fuzzy
+msgid "&Kernel"
+msgstr "Noyau"
+
+#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 354
-#: rc.cpp:54
+#: kde3/hermes/hermesbase.cpp:418 po/rc.cpp:54 rc.cpp:54
 #, fuzzy
 msgid "relo&ad"
 msgstr "Rechargement"
@@ -192,13 +205,18 @@ msgstr "Rechargement"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 394
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 390
+#: kde3/hermes/hermesbase.cpp:419 kde3/siduxcc/kerneldialog.cpp:843
+#: kde3/siduxcc/networkdialog.cpp:1958 kde3/siduxcc/networkdialog.cpp:1975
+#: kde3/siduxcc/networkdialog.cpp:2019 kde3/siduxcc/servicesdialog.cpp:698
+#: kde3/siduxcc/softwaredialog.cpp:786 po/rc.cpp:57 po/rc.cpp:402
+#: po/rc.cpp:457 po/rc.cpp:506 po/rc.cpp:614 po/rc.cpp:765 po/rc.cpp:872
 #: rc.cpp:57 rc.cpp:402 rc.cpp:457 rc.cpp:506 rc.cpp:614 rc.cpp:765 rc.cpp:872
 msgid "Alt+A"
 msgstr "Alt+A"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 363
-#: rc.cpp:60
+#: kde3/hermes/hermesbase.cpp:420 po/rc.cpp:60 rc.cpp:60
 msgid ""
 "Reload the current package list of \n"
 "siduxcc-hermes. Use this option if \n"
@@ -212,7 +230,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 371
-#: rc.cpp:66
+#: kde3/hermes/hermesbase.cpp:424 po/rc.cpp:66 rc.cpp:66
 msgid "&update (apt-get)"
 msgstr ""
 
@@ -228,7 +246,9 @@ msgstr ""
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 244
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 337
-#: rc.cpp:69 rc.cpp:379 rc.cpp:858
+#: kde3/hermes/hermesbase.cpp:425 kde3/siduxcc/kerneldialog.cpp:834
+#: kde3/siduxcc/softwaredialog.cpp:778 po/rc.cpp:69 po/rc.cpp:379
+#: po/rc.cpp:858 rc.cpp:69 rc.cpp:379 rc.cpp:858
 msgid "Alt+U"
 msgstr "Alt+U"
 
@@ -240,7 +260,8 @@ msgstr "Alt+U"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 382
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 345
-#: rc.cpp:72 rc.cpp:861
+#: kde3/hermes/hermesbase.cpp:426 kde3/siduxcc/softwaredialog.cpp:779
+#: po/rc.cpp:72 po/rc.cpp:861 rc.cpp:72 rc.cpp:861
 msgid ""
 "update is used to resynchronize the package \n"
 "index files from their sources. The indexes \n"
@@ -264,7 +285,8 @@ msgstr ""
 #. i18n: file ./kde3/hermes/hermesbase.ui line 405
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 287
-#: rc.cpp:80 rc.cpp:843
+#: kde3/hermes/hermesbase.cpp:432 kde3/siduxcc/softwaredialog.cpp:771
+#: po/rc.cpp:80 po/rc.cpp:843 rc.cpp:80 rc.cpp:843
 msgid "D&ownload"
 msgstr "Télécharger"
 
@@ -292,7 +314,12 @@ msgstr "Télécharger"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 408
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 290
-#: rc.cpp:83 rc.cpp:396 rc.cpp:448 rc.cpp:499 rc.cpp:771 rc.cpp:846
+#: kde3/hermes/hermesbase.cpp:433 kde3/siduxcc/kerneldialog.cpp:841
+#: kde3/siduxcc/networkdialog.cpp:1955 kde3/siduxcc/networkdialog.cpp:1972
+#: kde3/siduxcc/servicesdialog.cpp:700 kde3/siduxcc/softwaredialog.cpp:772
+#: po/rc.cpp:83 po/rc.cpp:396 po/rc.cpp:448 po/rc.cpp:499 po/rc.cpp:771
+#: po/rc.cpp:846 rc.cpp:83 rc.cpp:396 rc.cpp:448 rc.cpp:499 rc.cpp:771
+#: rc.cpp:846
 msgid "Alt+O"
 msgstr "Alt+O"
 
@@ -304,7 +331,8 @@ msgstr "Alt+O"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 414
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 296
-#: rc.cpp:86 rc.cpp:849
+#: kde3/hermes/hermesbase.cpp:434 kde3/siduxcc/softwaredialog.cpp:773
+#: po/rc.cpp:86 po/rc.cpp:849 rc.cpp:86 rc.cpp:849
 msgid ""
 "package files are only retrieved, not\n"
 "unpacked or installed.\n"
@@ -318,7 +346,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 422
-#: rc.cpp:92
+#: kde3/hermes/hermesbase.cpp:438 po/rc.cpp:92 rc.cpp:92
 msgid "&close"
 msgstr "&fermer"
 
@@ -330,45 +358,118 @@ msgstr "&fermer"
 #. i18n: file ./kde3/hermes/hermesbase.ui line 425
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 868
-#: rc.cpp:95 rc.cpp:253
+#: kde3/hermes/hermesbase.cpp:439 kde3/siduxcc/displaydialog.cpp:2217
+#: po/rc.cpp:95 po/rc.cpp:253 rc.cpp:95 rc.cpp:253
 msgid "Alt+C"
 msgstr "Alt+C"
 
+#: kde3/hermes/hermes.cpp:71 kde3/hermes/systray.cpp:64
+msgid "en"
+msgstr ""
+
+#: kde3/hermes/hermes.cpp:87
+#, fuzzy
+msgid "Double click to the item to view the full warning."
+msgstr "Double-cliquez sur l'option pour tout lire."
+
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 16
-#: rc.cpp:98
+#: kde3/hermes/legendbase.cpp:435 po/rc.cpp:98 rc.cpp:98
 msgid "legendbase"
 msgstr "base de légendes"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 34
-#: rc.cpp:101
+#: kde3/hermes/legendbase.cpp:436 po/rc.cpp:101 rc.cpp:101
 msgid "Legend"
 msgstr "Légende"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 68
-#: rc.cpp:104
-msgid "There are dist-upgrade warnings. Please visit sidux.com for more information!"
+#: kde3/hermes/legendbase.cpp:437 po/rc.cpp:104 rc.cpp:104
+msgid ""
+"There are dist-upgrade warnings. Please visit sidux.com for more information!"
 msgstr ""
 "Des alertes prévenant le dist-upgrade sont publiées. Consultez sidux.com "
 "pour plus d'information!"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/legendbase.ui line 87
-#: rc.cpp:107
+#: kde3/hermes/legendbase.cpp:438 po/rc.cpp:107 rc.cpp:107
 msgid "No connection to sidux.com."
 msgstr "Aucune connexion à sidux.com"
 
+#: kde3/hermes/main.cpp:39
+msgid "A KDE tray application for sidux"
+msgstr ""
+
+#: kde3/hermes/main.cpp:44 kde3/siduxcc/main.cpp:47
+msgid "Packaging"
+msgstr ""
+
+#: kde3/hermes/main.cpp:45 kde3/siduxcc/main.cpp:50
+#, fuzzy
+msgid "Icon"
+msgstr "Action"
+
+#: kde3/hermes/systray.cpp:40
+#, fuzzy
+msgid "sidux-hermes"
+msgstr "siduxcc-hermes"
+
+#: kde3/hermes/systray.cpp:43
+#, fuzzy
+msgid "Forum - Upgrade Warnings"
+msgstr "Aucune alerte de dist-upgrade"
+
+#: kde3/hermes/systray.cpp:44
+msgid "Manual - Upgrade of an Installed System"
+msgstr ""
+
+#: kde3/hermes/systray.cpp:45
+#, fuzzy
+msgid "Upgradable packages"
+msgstr "Paquetages actualisables"
+
+#: kde3/hermes/systray.cpp:46
+#, fuzzy
+msgid "sidux news"
+msgstr "Version de sidux"
+
+#: kde3/hermes/systray.cpp:47
+#, fuzzy
+msgid "Warnings"
+msgstr "&Alertes"
+
+#: kde3/hermes/systray.cpp:49
+#, fuzzy
+msgid "Show Legend"
+msgstr "Légende"
+
+#: kde3/hermes/systray.cpp:50
+#, fuzzy
+msgid "&About sidux-hermes"
+msgstr "À propos de sidux"
+
+#: kde3/siduxcc/console.cpp:100
+#, fuzzy
+msgid "Show details"
+msgstr "Affichage"
+
+#: kde3/siduxcc/console.cpp:105
+#, fuzzy
+msgid "Hide details"
+msgstr "Affichage"
+
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 16
-#: rc.cpp:113
+#: kde3/siduxcc/consoledialog.cpp:113 po/rc.cpp:113 rc.cpp:113
 msgid "Widget"
 msgstr "Widget"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 38
-#: rc.cpp:116
+#: kde3/siduxcc/consoledialog.cpp:114 po/rc.cpp:116 rc.cpp:116
 msgid "Con&tinuo"
 msgstr "Continuer"
 
@@ -380,43 +481,62 @@ msgstr "Continuer"
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 41
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1215
-#: rc.cpp:119 rc.cpp:313
+#: kde3/siduxcc/consoledialog.cpp:115 kde3/siduxcc/displaydialog.cpp:2240
+#: po/rc.cpp:119 po/rc.cpp:313 rc.cpp:119 rc.cpp:313
 msgid "Alt+T"
 msgstr "Alt+T"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 57
-#: rc.cpp:122
+#: kde3/siduxcc/consoledialog.cpp:116 po/rc.cpp:122 rc.cpp:122
 msgid "Sho&w Details"
 msgstr "Affichage"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/consoledialog.ui line 60
-#: rc.cpp:125
+#: kde3/siduxcc/consoledialog.cpp:117 po/rc.cpp:125 rc.cpp:125
 msgid "Alt+W"
 msgstr "Alt+W"
 
 #. i18n: tag string
+#. i18n: file ./kde3/siduxcc/displaydialog.ui line 225
+#: kde3/siduxcc/display.cpp:191 kde3/siduxcc/display.cpp:246
+#: kde3/siduxcc/displaydialog.cpp:2183 po/rc.cpp:170 rc.cpp:170
+msgid "custom"
+msgstr "personnalisé"
+
+#: kde3/siduxcc/display.cpp:234
+#, fuzzy
+msgid "Modelines removed"
+msgstr "Modelines"
+
+#: kde3/siduxcc/display.cpp:239
+msgid ""
+"Are you sure you want to restart the X-Server? All windows will be closed."
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 17
-#: rc.cpp:128
+#: kde3/siduxcc/displaydialog.cpp:2167 kde3/siduxcc/start.cpp:60
+#: kde3/siduxcc/start.cpp:101 po/rc.cpp:128 rc.cpp:128
 msgid "Display"
 msgstr "Affichage"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 45
-#: rc.cpp:131
+#: kde3/siduxcc/displaydialog.cpp:2169 po/rc.cpp:131 rc.cpp:131
 msgid "Change resolution & frequency"
 msgstr "Détecter les fréquences et changer la définition."
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 53
-#: rc.cpp:134
+#: kde3/siduxcc/displaydialog.cpp:2170 po/rc.cpp:134 rc.cpp:134
 msgid "Configure color-depth & DPI"
 msgstr "Configurer la profondeur de couleur et la résolution"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 61
-#: rc.cpp:137
+#: kde3/siduxcc/displaydialog.cpp:2171 po/rc.cpp:137 rc.cpp:137
 msgid "Configure X-Server"
 msgstr "Configurer le serveur X"
 
@@ -436,7 +556,10 @@ msgstr "Configurer le serveur X"
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 711
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 947
-#: rc.cpp:140 rc.cpp:205 rc.cpp:232 rc.cpp:277
+#: kde3/siduxcc/displaydialog.cpp:2172 kde3/siduxcc/displaydialog.cpp:2199
+#: kde3/siduxcc/displaydialog.cpp:2210 kde3/siduxcc/displaydialog.cpp:2227
+#: po/rc.cpp:140 po/rc.cpp:205 po/rc.cpp:232 po/rc.cpp:277 rc.cpp:140
+#: rc.cpp:205 rc.cpp:232 rc.cpp:277
 msgid "WARNING!"
 msgstr "ATTENTION!"
 
@@ -456,7 +579,10 @@ msgstr "ATTENTION!"
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 726
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 962
-#: rc.cpp:143 rc.cpp:208 rc.cpp:235 rc.cpp:280
+#: kde3/siduxcc/displaydialog.cpp:2173 kde3/siduxcc/displaydialog.cpp:2200
+#: kde3/siduxcc/displaydialog.cpp:2211 kde3/siduxcc/displaydialog.cpp:2228
+#: po/rc.cpp:143 po/rc.cpp:208 po/rc.cpp:235 po/rc.cpp:280 rc.cpp:143
+#: rc.cpp:208 rc.cpp:235 rc.cpp:280
 msgid ""
 "With wrong options the x-server doesn't work! To restore an old "
 "configuration press CTR + ALT + F1, run as root the command siduxcc and "
@@ -468,171 +594,166 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 166
-#: rc.cpp:146
+#: kde3/siduxcc/displaydialog.cpp:2174 po/rc.cpp:146 rc.cpp:146
 msgid "Resolution"
 msgstr "Définition"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 190
-#: rc.cpp:149
+#: kde3/siduxcc/displaydialog.cpp:2176 po/rc.cpp:149 rc.cpp:149
 msgid "640x480"
 msgstr "640x480"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 195
-#: rc.cpp:152
+#: kde3/siduxcc/displaydialog.cpp:2177 po/rc.cpp:152 rc.cpp:152
 msgid "800x600"
 msgstr "800x600"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 200
-#: rc.cpp:155
+#: kde3/siduxcc/displaydialog.cpp:2178 po/rc.cpp:155 rc.cpp:155
 msgid "1024x768"
 msgstr "1024x768"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 205
-#: rc.cpp:158
+#: kde3/siduxcc/displaydialog.cpp:2179 po/rc.cpp:158 rc.cpp:158
 msgid "1152x864"
 msgstr "1152x864"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 210
-#: rc.cpp:161
+#: kde3/siduxcc/displaydialog.cpp:2180 po/rc.cpp:161 rc.cpp:161
 msgid "1280x1024"
 msgstr "1280x1024"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 215
-#: rc.cpp:164
+#: kde3/siduxcc/displaydialog.cpp:2181 po/rc.cpp:164 rc.cpp:164
 msgid "1400x1050"
 msgstr "1400x1050"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 220
-#: rc.cpp:167
+#: kde3/siduxcc/displaydialog.cpp:2182 po/rc.cpp:167 rc.cpp:167
 msgid "1600x1200"
 msgstr "1600x1200"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/displaydialog.ui line 225
-#: rc.cpp:170
-msgid "custom"
-msgstr "personnalisé"
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 287
-#: rc.cpp:173
+#: kde3/siduxcc/displaydialog.cpp:2185 po/rc.cpp:173 rc.cpp:173
 msgid "Scanning Frequency"
 msgstr "Détection des fréquences"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 321
-#: rc.cpp:176
+#: kde3/siduxcc/displaydialog.cpp:2186 po/rc.cpp:176 rc.cpp:176
 msgid "HorizSync:"
 msgstr "Synchronisation Horizontale:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 337
-#: rc.cpp:179
+#: kde3/siduxcc/displaydialog.cpp:2187 po/rc.cpp:179 rc.cpp:179
 msgid "VertRefresh:"
 msgstr "Rafraîchissement Vertical:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 359
-#: rc.cpp:183
+#: kde3/siduxcc/displaydialog.cpp:2189 po/rc.cpp:183 rc.cpp:183
 msgid "Vertical Frequenz"
 msgstr "Fréquence verticale"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 365
-#: rc.cpp:186
+#: kde3/siduxcc/displaydialog.cpp:2191 po/rc.cpp:186 rc.cpp:186
 msgid "Type"
 msgstr "Type"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 370
-#: rc.cpp:189
+#: kde3/siduxcc/displaydialog.cpp:2192 po/rc.cpp:189 rc.cpp:189
 msgid "TFT"
 msgstr "TFT"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 375
-#: rc.cpp:192
+#: kde3/siduxcc/displaydialog.cpp:2193 po/rc.cpp:192 rc.cpp:192
 msgid "CRT"
 msgstr "CRT"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 420
-#: rc.cpp:196
+#: kde3/siduxcc/displaydialog.cpp:2196 po/rc.cpp:196 rc.cpp:196
 msgid "Horizontal Frequenz"
 msgstr "Fréquence horizontale"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 445
-#: rc.cpp:199
+#: kde3/siduxcc/displaydialog.cpp:2197 po/rc.cpp:199 rc.cpp:199
 msgid "Note"
 msgstr "Observation"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 462
-#: rc.cpp:202
-msgid "If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
+#: kde3/siduxcc/displaydialog.cpp:2198 po/rc.cpp:202 rc.cpp:202
+msgid ""
+"If you are using the ATI-Driver (fglrx) you can not change the Color-Depth."
 msgstr ""
 "Si vous utilisez le pilote ATI (fglrx), vous ne pourrez pas changer la "
 "profondeur de couleur"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 515
-#: rc.cpp:211
+#: kde3/siduxcc/displaydialog.cpp:2201 po/rc.cpp:211 rc.cpp:211
 msgid "Color-Depth"
 msgstr "Profondeur de couleur"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 539
-#: rc.cpp:214
+#: kde3/siduxcc/displaydialog.cpp:2203 po/rc.cpp:214 rc.cpp:214
 msgid "8 bit"
 msgstr "8 bit"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 544
-#: rc.cpp:217
+#: kde3/siduxcc/displaydialog.cpp:2204 po/rc.cpp:217 rc.cpp:217
 msgid "15 bit"
 msgstr "15 bit"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 549
-#: rc.cpp:220
+#: kde3/siduxcc/displaydialog.cpp:2205 po/rc.cpp:220 rc.cpp:220
 msgid "16 bit"
 msgstr "16 bit"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 554
-#: rc.cpp:223
+#: kde3/siduxcc/displaydialog.cpp:2206 po/rc.cpp:223 rc.cpp:223
 msgid "24 bit"
 msgstr "24 bit"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 600
-#: rc.cpp:226
+#: kde3/siduxcc/displaydialog.cpp:2208 po/rc.cpp:226 rc.cpp:226
 msgid "DPI-Settings"
 msgstr "réglage en PPP"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 637
-#: rc.cpp:229
+#: kde3/siduxcc/displaydialog.cpp:2209 po/rc.cpp:229 rc.cpp:229
 msgid " dpi"
 msgstr "ppp"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 757
-#: rc.cpp:238
+#: kde3/siduxcc/displaydialog.cpp:2212 po/rc.cpp:238 rc.cpp:238
 msgid "Modelines"
 msgstr "Modelines"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 797
-#: rc.cpp:241
+#: kde3/siduxcc/displaydialog.cpp:2213 po/rc.cpp:241 rc.cpp:241
 #, fuzzy
 msgid "Remo&ve Modelines"
 msgstr "Effacer les Modelines"
@@ -645,99 +766,100 @@ msgstr "Effacer les Modelines"
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 800
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1036
-#: rc.cpp:244 rc.cpp:289
+#: kde3/siduxcc/displaydialog.cpp:2214 kde3/siduxcc/displaydialog.cpp:2231
+#: po/rc.cpp:244 po/rc.cpp:289 rc.cpp:244 rc.cpp:289
 msgid "Alt+V"
 msgstr "Alt+V"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 828
-#: rc.cpp:247
+#: kde3/siduxcc/displaydialog.cpp:2215 po/rc.cpp:247 rc.cpp:247
 msgid "Selected X-Module"
 msgstr "Sélection de module X"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 865
-#: rc.cpp:250
+#: kde3/siduxcc/displaydialog.cpp:2216 po/rc.cpp:250 rc.cpp:250
 msgid "Enable &Composite"
 msgstr "Activer &Composite"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 874
-#: rc.cpp:256
+#: kde3/siduxcc/displaydialog.cpp:2219 po/rc.cpp:256 rc.cpp:256
 msgid "VESA"
 msgstr "VESA"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 879
-#: rc.cpp:259
+#: kde3/siduxcc/displaydialog.cpp:2220 po/rc.cpp:259 rc.cpp:259
 msgid "FBdev"
 msgstr "FBdev"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 884
-#: rc.cpp:262
+#: kde3/siduxcc/displaydialog.cpp:2221 po/rc.cpp:262 rc.cpp:262
 msgid "nv"
 msgstr "nv"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 889
-#: rc.cpp:265
+#: kde3/siduxcc/displaydialog.cpp:2222 po/rc.cpp:265 rc.cpp:265
 msgid "nvidia"
 msgstr "nvidia"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 894
-#: rc.cpp:268
+#: kde3/siduxcc/displaydialog.cpp:2223 po/rc.cpp:268 rc.cpp:268
 msgid "ati"
 msgstr "ati"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 899
-#: rc.cpp:271
+#: kde3/siduxcc/displaydialog.cpp:2224 po/rc.cpp:271 rc.cpp:271
 msgid "fglrx"
 msgstr "fglrx"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 904
-#: rc.cpp:274
+#: kde3/siduxcc/displaydialog.cpp:2225 po/rc.cpp:274 rc.cpp:274
 msgid "vboxvideo"
 msgstr "vboxvideo"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 993
-#: rc.cpp:283
+#: kde3/siduxcc/displaydialog.cpp:2229 po/rc.cpp:283 rc.cpp:283
 msgid "ATI/Nvidia (Non-Free)"
 msgstr "ATI/Nvidia (Non-libres)"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1033
-#: rc.cpp:286
+#: kde3/siduxcc/displaydialog.cpp:2230 po/rc.cpp:286 rc.cpp:286
 #, fuzzy
 msgid "Install dri&ver"
 msgstr "Installer le pilote"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1043
-#: rc.cpp:292
+#: kde3/siduxcc/displaydialog.cpp:2233 po/rc.cpp:292 rc.cpp:292
 msgid "Install graphiccard-drivers"
 msgstr "Installer les pilotes de cartes graphiques"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1113
-#: rc.cpp:295
+#: kde3/siduxcc/displaydialog.cpp:2234 po/rc.cpp:295 rc.cpp:295
 msgid "Fonts (fix-fonts)"
 msgstr "Polices (fixer les polices)"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1150
-#: rc.cpp:298
+#: kde3/siduxcc/displaydialog.cpp:2235 po/rc.cpp:298 rc.cpp:298
 #, fuzzy
 msgid "&Register Fonts"
 msgstr "En&registrer les Polices"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1153
-#: rc.cpp:301
+#: kde3/siduxcc/displaydialog.cpp:2236 po/rc.cpp:301 rc.cpp:301
 msgid "Alt+R"
 msgstr "Alt+R"
 
@@ -761,7 +883,11 @@ msgstr "Alt+R"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 85
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 454
-#: rc.cpp:304 rc.cpp:411 rc.cpp:711 rc.cpp:726 rc.cpp:880
+#: kde3/siduxcc/displaydialog.cpp:2237 kde3/siduxcc/kerneldialog.cpp:846
+#: kde3/siduxcc/networkdialog.cpp:2056 kde3/siduxcc/servicesdialog.cpp:684
+#: kde3/siduxcc/softwaredialog.cpp:790 po/rc.cpp:304 po/rc.cpp:411
+#: po/rc.cpp:711 po/rc.cpp:726 po/rc.cpp:880 rc.cpp:304 rc.cpp:411 rc.cpp:711
+#: rc.cpp:726 rc.cpp:880
 msgid "&back"
 msgstr "&retour"
 
@@ -793,6 +919,11 @@ msgstr "&retour"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 469
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 457
+#: kde3/siduxcc/displaydialog.cpp:2238 kde3/siduxcc/kerneldialog.cpp:847
+#: kde3/siduxcc/networkdialog.cpp:1953 kde3/siduxcc/networkdialog.cpp:2057
+#: kde3/siduxcc/servicesdialog.cpp:685 kde3/siduxcc/servicesdialog.cpp:706
+#: kde3/siduxcc/softwaredialog.cpp:791 po/rc.cpp:307 po/rc.cpp:414
+#: po/rc.cpp:442 po/rc.cpp:714 po/rc.cpp:729 po/rc.cpp:787 po/rc.cpp:883
 #: rc.cpp:307 rc.cpp:414 rc.cpp:442 rc.cpp:714 rc.cpp:729 rc.cpp:787
 #: rc.cpp:883
 msgid "Alt+B"
@@ -800,7 +931,7 @@ msgstr "Alt+B"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/displaydialog.ui line 1212
-#: rc.cpp:310
+#: kde3/siduxcc/displaydialog.cpp:2239 po/rc.cpp:310 rc.cpp:310
 #, fuzzy
 msgid "res&tart X-Server"
 msgstr "Redémarrer le serveur X"
@@ -825,7 +956,11 @@ msgstr "Redémarrer le serveur X"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 96
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 465
-#: rc.cpp:316 rc.cpp:339 rc.cpp:717 rc.cpp:732 rc.cpp:886
+#: kde3/siduxcc/displaydialog.cpp:2241 kde3/siduxcc/internetdialog.cpp:307
+#: kde3/siduxcc/networkdialog.cpp:2058 kde3/siduxcc/servicesdialog.cpp:686
+#: kde3/siduxcc/softwaredialog.cpp:792 po/rc.cpp:316 po/rc.cpp:339
+#: po/rc.cpp:717 po/rc.cpp:732 po/rc.cpp:886 rc.cpp:316 rc.cpp:339 rc.cpp:717
+#: rc.cpp:732 rc.cpp:886
 msgid "appl&y"
 msgstr "Appl&iquer"
 
@@ -849,109 +984,253 @@ msgstr "Appl&iquer"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 99
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 468
-#: rc.cpp:319 rc.cpp:342 rc.cpp:720 rc.cpp:735 rc.cpp:889
+#: kde3/siduxcc/displaydialog.cpp:2242 kde3/siduxcc/internetdialog.cpp:308
+#: kde3/siduxcc/networkdialog.cpp:2059 kde3/siduxcc/servicesdialog.cpp:687
+#: kde3/siduxcc/softwaredialog.cpp:793 po/rc.cpp:319 po/rc.cpp:342
+#: po/rc.cpp:720 po/rc.cpp:735 po/rc.cpp:889 rc.cpp:319 rc.cpp:342 rc.cpp:720
+#: rc.cpp:735 rc.cpp:889
 msgid "Alt+Y"
 msgstr "Alt+Y"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 17
-#: rc.cpp:322
+#: kde3/siduxcc/infodialog.cpp:93 po/rc.cpp:322 rc.cpp:322
 msgid "SysInfo"
 msgstr "Info système"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 31
-#: rc.cpp:325
+#: kde3/siduxcc/infodialog.cpp:94 po/rc.cpp:325 rc.cpp:325
 msgid "About sidux"
 msgstr "À propos de sidux"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 42
-#: rc.cpp:328
+#: kde3/siduxcc/infodialog.cpp:95 po/rc.cpp:328 rc.cpp:328
 msgid "sidux Version:"
 msgstr "Version de sidux"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/infodialog.ui line 94
-#: rc.cpp:332
+#: kde3/siduxcc/infodialog.cpp:97 po/rc.cpp:332 rc.cpp:332
 msgid "Infobash"
 msgstr "Infobash"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 17
-#: rc.cpp:336
+#: kde3/siduxcc/internetdialog.cpp:306 kde3/siduxcc/start.cpp:64
+#: kde3/siduxcc/start.cpp:128 po/rc.cpp:336 rc.cpp:336
 msgid "Internet"
 msgstr "Internet"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/internetdialog.ui line 118
-#: rc.cpp:345
+#: kde3/siduxcc/internetdialog.cpp:309 po/rc.cpp:345 rc.cpp:345
 msgid "sidux-Browser"
 msgstr "Navigateur-sidux"
 
+#: kde3/siduxcc/kernel.cpp:92
+msgid ""
+"You only can install modules for the newest stable kernel. But this kernel "
+"isn't installed!"
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:184
+msgid "You have already installed the newest stable kernel!"
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:186
+#, fuzzy
+msgid "There is no stable kernel avaiable!"
+msgstr "Dernier noyau stable"
+
+#: kde3/siduxcc/kernel.cpp:189
+msgid "Are you sure you want to install a new kernel?"
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:216
+msgid ""
+"It's recommended to not disable this function! Do you want to continue "
+"anyway?"
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:307
+msgid ""
+"acer-acpi is a driver to allow you to control various aspects of your Acer "
+"laptop hardware using the proc filesystem.  It was originally developed in "
+"order to activate the wireless LAN card under a 64-bit version of Linux, as "
+"acerhk (the previous fine solution to the problem) relied on making BIOS "
+"calls which are not allowed from a 64-bit OS."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:309
+msgid ""
+"This driver will give access to the special keys on notebooks of the Acer "
+"Travelmate series, which are not handled by the keyboard driver. It also "
+"works on notebooks from other manufacturers (some Medion, Fujitsu-"
+"Siemens, ...).<br><br>It also has some other related functionality "
+"(depending on the model): - controlling LEDs (Mail, Wireless) - enable/"
+"disable wireless hardware"
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:311
+msgid ""
+"atl2 is the Linux Base Driver for the Atheros(R) L2 Fast Ethernet Adapter. "
+"The the Atheros(R) L2 Fast Ethernet Adapter is present in a few low cost "
+"Asus laptop systems, such as the Asus Eee PC."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:313
+msgid ""
+"Aufs is a stackable unification filesystem such as Unionfs, which unifies "
+"several directories and provides a merged single directory."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:315
+msgid "This package provides the Driver for a snapshotting filesystem modules."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:317
+msgid ""
+"The et131x package is also required in order to make use of these modules. "
+"Kernel source or headers are required to compile these modules.<br><br>This "
+"works with Agere Systems ET-131x PCI-E Ethernet Controller."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:319
+msgid ""
+" The fsam7400 module for the Linux kernel provides support for the software "
+"RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop. This package "
+"provides the source code for the fsam7400 modules."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:321
+msgid ""
+"The gpsca video for linux (v4l) driver, provides support for webcams and "
+"digital cameras based on the spca5xx range of chips manufactured by SunPlus, "
+"Sonix, Z-star, Vimicro, Conexant, Etoms, Mars-semi, Pixart and Transvision."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:323
+msgid ""
+"LZMA is a compression algorithm, based on the famous Lempel Ziv compression "
+"method."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:325
+msgid ""
+"Some vendors do not release specifications of the hardware or provide a "
+"Linux driver for their wireless network cards. This project implements "
+"Windows kernel API and NDIS (Network Driver Interface Specification) API "
+"within Linux kernel. A Windows driver for wireless network card is then "
+"linked to this implementation so that the driver runs natively, as though it "
+"is in Windows, without binary emulation."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:327
+msgid ""
+"This package contains the loadable kernel modules for the HP OmniBooks, "
+"Pavilions, Toshiba Satellites and some other laptops manufactured by Compal "
+"Electronics, Inc as ODM."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:329
+msgid ""
+"This package provides the source code for the quickcam kernel module for "
+"Logitech's QuickCam Express webcam and similar webcams.  This driver "
+"supercedes the qce-ga driver."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:331
+msgid ""
+"Modules for controlling the software RF kill switch on the Averatec 5100P "
+"and Packard Bell EasyNote E5. The code may work on other laptops, but these "
+"are the only models on which it has been tested."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:333
+msgid ""
+"Squashfs is a highly compressed read-only filesystem for Linux.  It uses "
+"zlib compression to compress both files, inodes and directories.  Inodes in "
+"the system are very small and all blocks are packed to minimise data "
+"overhead.  Block sizes greater than 4K are supported up to a maximum of 64K."
+"<br><br> Squashfs is intended for general read-only filesystem use, for "
+"archival use (i.e.  in cases where a .tar.gz  file may be used), and in "
+"constrained block device/memory systems (e.g.  embedded systems) where low "
+"overhead is needed."
+msgstr ""
+
+#: kde3/siduxcc/kernel.cpp:335 kde3/siduxcc/kernel.cpp:337
+msgid ""
+"VirtualBox is a free PC virtualization solution allowing you to run a wide "
+"range of PC operating systems on your system."
+msgstr ""
+
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 17
-#: rc.cpp:348
+#: kde3/siduxcc/kerneldialog.cpp:820 kde3/siduxcc/start.cpp:68
+#: kde3/siduxcc/start.cpp:134 po/rc.cpp:348 rc.cpp:348
 msgid "Kernel"
 msgstr "Noyau"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 51
-#: rc.cpp:352
+#: kde3/siduxcc/kerneldialog.cpp:823 po/rc.cpp:352 rc.cpp:352
 msgid "Install new kernel"
 msgstr "Installer le nouveau noyau"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 59
-#: rc.cpp:355
+#: kde3/siduxcc/kerneldialog.cpp:824 po/rc.cpp:355 rc.cpp:355
 msgid "Remove old kernels"
 msgstr "Enlever les anciens noyaux"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 67
-#: rc.cpp:358
+#: kde3/siduxcc/kerneldialog.cpp:825 po/rc.cpp:358 rc.cpp:358
 msgid "Install kernel modules"
 msgstr "Installer les modules du noyau"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 241
-#: rc.cpp:376
+#: kde3/siduxcc/kerneldialog.cpp:833 po/rc.cpp:376 rc.cpp:376
 msgid "Install automatic new kernels during dist-&updates."
-msgstr "Installation des nouveaux noyaux en mode automatique pendant le dist-upgrade."
+msgstr ""
+"Installation des nouveaux noyaux en mode automatique pendant le dist-upgrade."
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 269
-#: rc.cpp:382
+#: kde3/siduxcc/kerneldialog.cpp:835 po/rc.cpp:382 rc.cpp:382
 msgid "Current kernel"
 msgstr "Noyau Courant"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 333
-#: rc.cpp:386
+#: kde3/siduxcc/kerneldialog.cpp:837 po/rc.cpp:386 rc.cpp:386
 msgid "re&move"
 msgstr "effacer"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 336
-#: rc.cpp:389
+#: kde3/siduxcc/kerneldialog.cpp:838 po/rc.cpp:389 rc.cpp:389
 msgid "Alt+M"
 msgstr "Alt+M"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 415
-#: rc.cpp:393
+#: kde3/siduxcc/kerneldialog.cpp:840 po/rc.cpp:393 rc.cpp:393
 msgid "Sh&ow metapackages"
 msgstr "V&oir les métapackages"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 426
-#: rc.cpp:399
+#: kde3/siduxcc/kerneldialog.cpp:842 po/rc.cpp:399 rc.cpp:399
 msgid "&apply"
 msgstr "&appliquer"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/kerneldialog.ui line 440
-#: rc.cpp:405
+#: kde3/siduxcc/kerneldialog.cpp:844 po/rc.cpp:405 rc.cpp:405
 msgid "i&nstall"
 msgstr "I&nstaller"
 
@@ -971,235 +1250,331 @@ msgstr "I&nstaller"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1491
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 236
-#: rc.cpp:408 rc.cpp:490 rc.cpp:620 rc.cpp:831
+#: kde3/siduxcc/kerneldialog.cpp:845 kde3/siduxcc/networkdialog.cpp:1969
+#: kde3/siduxcc/networkdialog.cpp:2021 kde3/siduxcc/softwaredialog.cpp:763
+#: po/rc.cpp:408 po/rc.cpp:490 po/rc.cpp:620 po/rc.cpp:831 rc.cpp:408
+#: rc.cpp:490 rc.cpp:620 rc.cpp:831
 msgid "Alt+N"
 msgstr "Alt+N"
 
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
-#: rc.cpp:417
-msgid "Network"
-msgstr "Réseau"
+#: kde3/siduxcc/main.cpp:40
+msgid "Frontend for managing sidux."
+msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 45
-#: rc.cpp:420
-msgid "Configure network cards"
-msgstr "Configuration des cartes réseau"
+#: kde3/siduxcc/main.cpp:46
+msgid "Developer"
+msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 53
-#: rc.cpp:423
-msgid "Set hostname"
-msgstr "Choisir le nom d'hôte (Hostname)"
+#: kde3/siduxcc/main.cpp:48
+msgid "Developer of the knxcc"
+msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 61
-#: rc.cpp:426
-msgid "Install WLAN cards (Ndiswrapper)"
-msgstr "Installer les cartes Wifi (Ndiswrapper)"
+#: kde3/siduxcc/main.cpp:49
+msgid "Developer of ceni and fw-detect"
+msgstr ""
 
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 69
-#: rc.cpp:429
-msgid "Install WLAN cards (fwdetect)"
-msgstr "Installer les cartes Wifi (fwdetect)"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
-#: rc.cpp:433 rc.cpp:753
-msgid "Description"
-msgstr "Description"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 176
-#: rc.cpp:436
-msgid "MAC address"
+#: kde3/siduxcc/network.cpp:244 kde3/siduxcc/network.cpp:254
+#, fuzzy
+msgid "Mac Address"
 msgstr "Addresse Mac"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 204
-#: rc.cpp:439
-msgid "Disa&ble"
-msgstr "Désactiver"
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 157
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/servicesdialog.ui line 311
+#: kde3/siduxcc/network.cpp:245 kde3/siduxcc/network.cpp:255
+#: kde3/siduxcc/networkdialog.cpp:1950 kde3/siduxcc/servicesdialog.cpp:694
+#: po/rc.cpp:433 po/rc.cpp:753 rc.cpp:433 rc.cpp:753
+msgid "Description"
+msgstr "Description"
+
+#: kde3/siduxcc/network.cpp:321
+#, fuzzy
+msgid "Card"
+msgstr "Nettoyer"
+
+#: kde3/siduxcc/network.cpp:458
+msgid ""
+"<b>allow hotplug</b>: The network will be activated  when a cable is plugged "
+"in and it will be deactivated if the cable is pulled. This is useful on "
+"laptops with onboard network adapters, since it will only configure the "
+"interface when a cable is really connected.<br><br><b>auto</b>: The "
+"networkcard will be activated, when the computer starts"
+msgstr ""
+
+#: kde3/siduxcc/network.cpp:556
+msgid "WEP encryption requires a key with at least 5 characters."
+msgstr ""
+
+#: kde3/siduxcc/network.cpp:558
+msgid "WPA encryption requires a key with 8 to 63 characters."
+msgstr ""
+
+#: kde3/siduxcc/network.cpp:560
+#, fuzzy
+msgid "..."
+msgstr "&Nouveautés"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 234
-#: rc.cpp:445
-msgid "C&onfigure"
-msgstr "C&onfigurer"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 240
-#: rc.cpp:451
-msgid "Change the settings of the selected device"
-msgstr "Changer les réglages du contrôleur sélectionné"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 267
-#: rc.cpp:454
-msgid "En&able"
-msgstr "Activer"
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 962
+#: kde3/siduxcc/network.cpp:712 kde3/siduxcc/networkdialog.cpp:1977
+#: po/rc.cpp:509 rc.cpp:509
+msgid "Detected"
+msgstr "détecté"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 276
-#: rc.cpp:460
+#: kde3/siduxcc/networkdialog.cpp:1499 kde3/siduxcc/networkdialog.cpp:1959
+#: po/rc.cpp:460 rc.cpp:460
 msgid "Interface"
 msgstr "Interface"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 287
-#: rc.cpp:463
+#: kde3/siduxcc/networkdialog.cpp:1500 kde3/siduxcc/networkdialog.cpp:1960
+#: po/rc.cpp:463 rc.cpp:463
 msgid "IP address"
 msgstr "Adresse IP"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 298
-#: rc.cpp:466
+#: kde3/siduxcc/networkdialog.cpp:1501 kde3/siduxcc/networkdialog.cpp:1961
+#: po/rc.cpp:466 rc.cpp:466
 msgid "Method"
 msgstr "Méthode"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 309
-#: rc.cpp:469
+#: kde3/siduxcc/networkdialog.cpp:1502 kde3/siduxcc/networkdialog.cpp:1962
+#: po/rc.cpp:469 rc.cpp:469
 msgid "Class"
 msgstr "Classe"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 320
-#: rc.cpp:472
+#: kde3/siduxcc/networkdialog.cpp:1503 kde3/siduxcc/networkdialog.cpp:1963
+#: po/rc.cpp:472 rc.cpp:472
 msgid "Driver"
 msgstr "Pilote"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 331
-#: rc.cpp:475
+#: kde3/siduxcc/networkdialog.cpp:1504 kde3/siduxcc/networkdialog.cpp:1964
+#: po/rc.cpp:475 rc.cpp:475
 msgid "Slot"
 msgstr "Slot"
 
 #. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
+#: kde3/siduxcc/networkdialog.cpp:1882 kde3/siduxcc/networkdialog.cpp:2050
+#: po/rc.cpp:693 rc.cpp:693
+msgid "ESSID"
+msgstr "ESSID"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1839
+#: kde3/siduxcc/networkdialog.cpp:1883 kde3/siduxcc/networkdialog.cpp:2051
+#: po/rc.cpp:696 rc.cpp:696
+msgid "Channel"
+msgstr "Canal"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1850
+#: kde3/siduxcc/networkdialog.cpp:1884 kde3/siduxcc/networkdialog.cpp:2052
+#: po/rc.cpp:699 rc.cpp:699
+msgid "Quality"
+msgstr "Qualité"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1861
+#: kde3/siduxcc/networkdialog.cpp:1885 kde3/siduxcc/networkdialog.cpp:2053
+#: po/rc.cpp:702 rc.cpp:702
+msgid "WEP/WPA"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1872
+#: kde3/siduxcc/networkdialog.cpp:1886 kde3/siduxcc/networkdialog.cpp:2054
+#: po/rc.cpp:705 rc.cpp:705
+msgid "BSSID"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 17
+#: kde3/siduxcc/networkdialog.cpp:1943 kde3/siduxcc/start.cpp:72
+#: kde3/siduxcc/start.cpp:108 po/rc.cpp:417 rc.cpp:417
+msgid "Network"
+msgstr "Réseau"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 45
+#: kde3/siduxcc/networkdialog.cpp:1945 po/rc.cpp:420 rc.cpp:420
+msgid "Configure network cards"
+msgstr "Configuration des cartes réseau"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 53
+#: kde3/siduxcc/networkdialog.cpp:1946 po/rc.cpp:423 rc.cpp:423
+msgid "Set hostname"
+msgstr "Choisir le nom d'hôte (Hostname)"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 61
+#: kde3/siduxcc/networkdialog.cpp:1947 po/rc.cpp:426 rc.cpp:426
+msgid "Install WLAN cards (Ndiswrapper)"
+msgstr "Installer les cartes Wifi (Ndiswrapper)"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 69
+#: kde3/siduxcc/networkdialog.cpp:1948 po/rc.cpp:429 rc.cpp:429
+msgid "Install WLAN cards (fwdetect)"
+msgstr "Installer les cartes Wifi (fwdetect)"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 176
+#: kde3/siduxcc/networkdialog.cpp:1951 po/rc.cpp:436 rc.cpp:436
+msgid "MAC address"
+msgstr "Addresse Mac"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 204
+#: kde3/siduxcc/networkdialog.cpp:1952 po/rc.cpp:439 rc.cpp:439
+msgid "Disa&ble"
+msgstr "Désactiver"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 234
+#: kde3/siduxcc/networkdialog.cpp:1954 po/rc.cpp:445 rc.cpp:445
+msgid "C&onfigure"
+msgstr "C&onfigurer"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 240
+#: kde3/siduxcc/networkdialog.cpp:1956 po/rc.cpp:451 rc.cpp:451
+msgid "Change the settings of the selected device"
+msgstr "Changer les réglages du contrôleur sélectionné"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/networkdialog.ui line 267
+#: kde3/siduxcc/networkdialog.cpp:1957 po/rc.cpp:454 rc.cpp:454
+msgid "En&able"
+msgstr "Activer"
+
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 375
-#: rc.cpp:478
+#: kde3/siduxcc/networkdialog.cpp:1965 po/rc.cpp:478 rc.cpp:478
 msgid "List of configured network devices"
 msgstr "Liste des contrôleurs réseau configurés"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 402
-#: rc.cpp:481
+#: kde3/siduxcc/networkdialog.cpp:1966 po/rc.cpp:481 rc.cpp:481
 msgid "Hostname"
 msgstr "Nom d'hôte"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 459
-#: rc.cpp:484
+#: kde3/siduxcc/networkdialog.cpp:1967 po/rc.cpp:484 rc.cpp:484
 msgid "Install wlan card"
 msgstr "Installer la carte Wifi"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 493
-#: rc.cpp:487
+#: kde3/siduxcc/networkdialog.cpp:1968 po/rc.cpp:487 rc.cpp:487
 msgid "&Ndiswrapper"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 524
-#: rc.cpp:493
+#: kde3/siduxcc/networkdialog.cpp:1970 po/rc.cpp:493 rc.cpp:493
 msgid "Cards known to work"
 msgstr "Cartes connues pour fonctionner"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 558
-#: rc.cpp:496
+#: kde3/siduxcc/networkdialog.cpp:1971 po/rc.cpp:496 rc.cpp:496
 msgid "Sh&ow list"
 msgstr "V&oir la liste"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 953
-#: rc.cpp:503
+#: kde3/siduxcc/networkdialog.cpp:1974 po/rc.cpp:503 rc.cpp:503
 msgid "Inst&all"
 msgstr "Installer"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 962
-#: rc.cpp:509
-msgid "Detected"
-msgstr "détecté"
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 967
-#: rc.cpp:512
+#: kde3/siduxcc/networkdialog.cpp:1978 po/rc.cpp:512 rc.cpp:512
 msgid "All"
 msgstr "Tout"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1048
-#: rc.cpp:517
+#: kde3/siduxcc/networkdialog.cpp:1982 po/rc.cpp:517 rc.cpp:517
 msgid "LAN settings"
 msgstr "Paramètres LAN"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1056
-#: rc.cpp:520
+#: kde3/siduxcc/networkdialog.cpp:1983 po/rc.cpp:520 rc.cpp:520
 msgid "WLAN settings"
 msgstr "Paramètres Wifi"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1064
-#: rc.cpp:523
+#: kde3/siduxcc/networkdialog.cpp:1984 po/rc.cpp:523 rc.cpp:523
 msgid "WLAN security"
 msgstr "Sécurité Wifi"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1147
-#: rc.cpp:528
+#: kde3/siduxcc/networkdialog.cpp:1988 po/rc.cpp:528 rc.cpp:528
 msgid "manual"
 msgstr "manuel"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1152
-#: rc.cpp:531
+#: kde3/siduxcc/networkdialog.cpp:1989 po/rc.cpp:531 rc.cpp:531
 msgid "allow hotplug"
 msgstr "permettre le branchement à chaud"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1157
-#: rc.cpp:534
+#: kde3/siduxcc/networkdialog.cpp:1990 po/rc.cpp:534 rc.cpp:534
 msgid "auto"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1185
-#: rc.cpp:537
+#: kde3/siduxcc/networkdialog.cpp:1991 po/rc.cpp:537 rc.cpp:537
 msgid "<b>Method:</b>"
 msgstr "<b>Méthode:</b>"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1191
-#: rc.cpp:540
+#: kde3/siduxcc/networkdialog.cpp:1993 po/rc.cpp:540 rc.cpp:540
 msgid "dhcp"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1196
-#: rc.cpp:543
+#: kde3/siduxcc/networkdialog.cpp:1994 po/rc.cpp:543 rc.cpp:543
 msgid "static"
 msgstr "statique"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1246
-#: rc.cpp:548
+#: kde3/siduxcc/networkdialog.cpp:1997 po/rc.cpp:548 rc.cpp:548
 msgid "<b>Class:</b>"
 msgstr "<b>Classe:</b>"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1279
-#: rc.cpp:551
+#: kde3/siduxcc/networkdialog.cpp:1998 po/rc.cpp:551 rc.cpp:551
 msgid "Nameserver:"
 msgstr "choisir le serveur de noms de domain (DNS):"
 
@@ -1227,7 +1602,12 @@ msgstr "choisir le serveur de noms de domain (DNS):"
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1396
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1415
-#: rc.cpp:554 rc.cpp:560 rc.cpp:569 rc.cpp:581 rc.cpp:590 rc.cpp:599
+#: kde3/siduxcc/networkdialog.cpp:1999 kde3/siduxcc/networkdialog.cpp:2001
+#: kde3/siduxcc/networkdialog.cpp:2004 kde3/siduxcc/networkdialog.cpp:2008
+#: kde3/siduxcc/networkdialog.cpp:2011 kde3/siduxcc/networkdialog.cpp:2014
+#: po/rc.cpp:554 po/rc.cpp:560 po/rc.cpp:569 po/rc.cpp:581 po/rc.cpp:590
+#: po/rc.cpp:599 rc.cpp:554 rc.cpp:560 rc.cpp:569 rc.cpp:581 rc.cpp:590
+#: rc.cpp:599
 msgid "000.000.000.000; "
 msgstr ""
 
@@ -1243,250 +1623,387 @@ msgstr ""
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1399
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1418
-#: rc.cpp:557 rc.cpp:593 rc.cpp:602
+#: kde3/siduxcc/networkdialog.cpp:2000 kde3/siduxcc/networkdialog.cpp:2012
+#: kde3/siduxcc/networkdialog.cpp:2015 po/rc.cpp:557 po/rc.cpp:593
+#: po/rc.cpp:602 rc.cpp:557 rc.cpp:593 rc.cpp:602
 msgid "E.g. 192.168.0.255"
 msgstr "Ex: 192.168.0.255"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1334
-#: rc.cpp:563
+#: kde3/siduxcc/networkdialog.cpp:2002 po/rc.cpp:563 rc.cpp:563
 msgid "E.g. 192.168.0.2"
 msgstr "Ex: 192.168.0.2"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1342
-#: rc.cpp:566
+#: kde3/siduxcc/networkdialog.cpp:2003 po/rc.cpp:566 rc.cpp:566
 msgid "IP address:"
 msgstr "Adresse IP:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1353
-#: rc.cpp:572
+#: kde3/siduxcc/networkdialog.cpp:2005 po/rc.cpp:572 rc.cpp:572
 msgid "E.g. 255.255.255.0"
 msgstr "Ex: 255.255.255.0"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1361
-#: rc.cpp:575
+#: kde3/siduxcc/networkdialog.cpp:2006 po/rc.cpp:575 rc.cpp:575
 msgid "Netmask:"
 msgstr "Masque de sous-réseau:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1369
-#: rc.cpp:578
+#: kde3/siduxcc/networkdialog.cpp:2007 po/rc.cpp:578 rc.cpp:578
 msgid "Gateway:"
 msgstr "Passerelle:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1380
-#: rc.cpp:584
+#: kde3/siduxcc/networkdialog.cpp:2009 po/rc.cpp:584 rc.cpp:584
 msgid "E.g. 192.168.0.254"
 msgstr "Ex"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1388
-#: rc.cpp:587
+#: kde3/siduxcc/networkdialog.cpp:2010 po/rc.cpp:587 rc.cpp:587
 msgid "Network:"
 msgstr "Réseau:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1407
-#: rc.cpp:596
+#: kde3/siduxcc/networkdialog.cpp:2013 po/rc.cpp:596 rc.cpp:596
 msgid "Broadcast:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1444
-#: rc.cpp:605
+#: kde3/siduxcc/networkdialog.cpp:2016 po/rc.cpp:605 rc.cpp:605
 msgid "<b>ESSID:</b>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1460
-#: rc.cpp:608
+#: kde3/siduxcc/networkdialog.cpp:2017 po/rc.cpp:608 rc.cpp:608
 msgid "Channel/ Frequency"
 msgstr "Canal/ Fréquence"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1474
-#: rc.cpp:611
+#: kde3/siduxcc/networkdialog.cpp:2018 po/rc.cpp:611 rc.cpp:611
 msgid "&Auto"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1488
-#: rc.cpp:617
+#: kde3/siduxcc/networkdialog.cpp:2020 po/rc.cpp:617 rc.cpp:617
 msgid "Cha&nnel:"
 msgstr "Ca&nal:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1499
-#: rc.cpp:623
+#: kde3/siduxcc/networkdialog.cpp:2022 po/rc.cpp:623 rc.cpp:623
 msgid "Fre&quency:"
 msgstr "Fré&quence:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1502
-#: rc.cpp:626
+#: kde3/siduxcc/networkdialog.cpp:2023 po/rc.cpp:626 rc.cpp:626
 msgid "Alt+Q"
 msgstr "Alt+Q"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1521
-#: rc.cpp:629
+#: kde3/siduxcc/networkdialog.cpp:2024 po/rc.cpp:629 rc.cpp:629
 msgid ".G"
 msgstr ".G"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1524
-#: rc.cpp:632
+#: kde3/siduxcc/networkdialog.cpp:2025 po/rc.cpp:632 rc.cpp:632
 msgid "9.999G;_"
 msgstr "9.999G;_"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1542
-#: rc.cpp:635
+#: kde3/siduxcc/networkdialog.cpp:2026 po/rc.cpp:635 rc.cpp:635
 msgid "Advanced options"
 msgstr "Options avancées"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1556
-#: rc.cpp:638
+#: kde3/siduxcc/networkdialog.cpp:2027 po/rc.cpp:638 rc.cpp:638
 msgid "NWID:"
 msgstr "NWID:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1564
-#: rc.cpp:641
+#: kde3/siduxcc/networkdialog.cpp:2028 po/rc.cpp:641 rc.cpp:641
 msgid "iwspy:"
 msgstr "iwspy:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1572
-#: rc.cpp:644
+#: kde3/siduxcc/networkdialog.cpp:2029 po/rc.cpp:644 rc.cpp:644
 msgid "iwconfig:"
 msgstr "iwconfig:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1580
-#: rc.cpp:647
+#: kde3/siduxcc/networkdialog.cpp:2030 po/rc.cpp:647 rc.cpp:647
 msgid "iwpriv:"
 msgstr "iwpriv:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1618
-#: rc.cpp:650
+#: kde3/siduxcc/networkdialog.cpp:2031 po/rc.cpp:650 rc.cpp:650
 msgid "<b>Mode:</b>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1629
-#: rc.cpp:654
+#: kde3/siduxcc/networkdialog.cpp:2034 po/rc.cpp:654 rc.cpp:654
 msgid "Managed"
 msgstr "Managé"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1634
-#: rc.cpp:657
+#: kde3/siduxcc/networkdialog.cpp:2035 po/rc.cpp:657 rc.cpp:657
 msgid "Ad-Hoc"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1639
-#: rc.cpp:660
+#: kde3/siduxcc/networkdialog.cpp:2036 po/rc.cpp:660 rc.cpp:660
 msgid "Master"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1644
-#: rc.cpp:663
+#: kde3/siduxcc/networkdialog.cpp:2037 po/rc.cpp:663 rc.cpp:663
 msgid "Repeater"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1649
-#: rc.cpp:666
+#: kde3/siduxcc/networkdialog.cpp:2038 po/rc.cpp:666 rc.cpp:666
 msgid "Secondary"
 msgstr "Secondaire"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1654
-#: rc.cpp:669
+#: kde3/siduxcc/networkdialog.cpp:2039 po/rc.cpp:669 rc.cpp:669
 msgid "Auto"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1698
-#: rc.cpp:672
+#: kde3/siduxcc/networkdialog.cpp:2040 po/rc.cpp:672 rc.cpp:672
 msgid "Sh&ow List"
 msgstr "Afficher la liste"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1753
-#: rc.cpp:678
+#: kde3/siduxcc/networkdialog.cpp:2045 po/rc.cpp:678 rc.cpp:678
 msgid "None"
 msgstr "Aucun"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1758
-#: rc.cpp:681
+#: kde3/siduxcc/networkdialog.cpp:2046 po/rc.cpp:681 rc.cpp:681
 msgid "WEP"
 msgstr "WEP"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1763
-#: rc.cpp:684
+#: kde3/siduxcc/networkdialog.cpp:2047 po/rc.cpp:684 rc.cpp:684
 msgid "WPA-PSK"
 msgstr "WPA-PSK"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1791
-#: rc.cpp:687
+#: kde3/siduxcc/networkdialog.cpp:2048 po/rc.cpp:687 rc.cpp:687
 msgid "<b>Preshared Key:</b>"
 msgstr "<b>Clé partagée:</b>"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1807
-#: rc.cpp:690
+#: kde3/siduxcc/networkdialog.cpp:2049 po/rc.cpp:690 rc.cpp:690
 msgid "<b>Encryptiontype:</b>"
 msgstr "<b>Type de cryptage:</b>"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1828
-#: rc.cpp:693
-msgid "ESSID"
-msgstr "ESSID"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1839
-#: rc.cpp:696
-msgid "Channel"
-msgstr "Canal"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1850
-#: rc.cpp:699
-msgid "Quality"
-msgstr "Qualité"
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1861
-#: rc.cpp:702
-msgid "WEP/WPA"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/networkdialog.ui line 1872
-#: rc.cpp:705
-msgid "BSSID"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/networkdialog.ui line 1902
-#: rc.cpp:708
+#: kde3/siduxcc/networkdialog.cpp:2055 po/rc.cpp:708 rc.cpp:708
 msgid "Choose a network (doubleklick):"
 msgstr "Choisissez un réseau (double-clic)"
 
+#: kde3/siduxcc/services.cpp:69 kde3/siduxcc/services.cpp:274
+msgid "Apache v2 is the next generation of the omnipresent Apache web server."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:70 kde3/siduxcc/services.cpp:280
+msgid ""
+"CUPS (Common UNIX Printing System) is a printing system. It supports the IPP "
+"(Internet Printing Protocol), and has its own filtering driver model for "
+"handling various document types."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:71 kde3/siduxcc/services.cpp:298
+msgid ""
+"MySQL is a fast, stable and true multi-user, multi-threaded SQL database "
+"server."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:72
+msgid ""
+"The Samba software suite is a collection of programs that implements the SMB/"
+"CIFS protocol for unix systems, allowing you to serve files and printers to "
+"Windows, NT, OS/2 and DOS clients."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:73 kde3/siduxcc/services.cpp:308
+msgid ""
+"SSH is the portable version of OpenSSH, a free implementation of the Secure "
+"Shell protocol as specified by the IETF secsh working group."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:188 kde3/siduxcc/services.cpp:193
+#, fuzzy
+msgid "Status: %1"
+msgstr "État"
+
+#: kde3/siduxcc/services.cpp:188
+#, fuzzy
+msgid "not running..."
+msgstr "État: inactif..."
+
+#: kde3/siduxcc/services.cpp:193
+#, fuzzy
+msgid "running..."
+msgstr "État: inactif..."
+
+#: kde3/siduxcc/services.cpp:272
+msgid ""
+"Advanced Configuration and Power Interface (ACPI) to allow intelligent power "
+"management on your system."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:276
+msgid "Enables Universal interface for wireless communication"
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:278
+msgid "Cron is a time-based scheduling service."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:282
+msgid ""
+"gpm means general purpose mouse and is the mouse support for linux in the "
+"console."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:284
+msgid ""
+"HAL provides an abstract view on hardware. This abstraction layer is simply "
+"an interface that makes it possible to add support for new devices and new "
+"ways of connecting devices to the computer, without modifying every "
+"application that uses the device."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:286
+msgid ""
+"Ifplugd is a daemon which will automatically configure your ethernet device "
+"when a cable is plugged in and automatically unconfigure it if the cable is "
+"pulled. This is useful on laptops with onboard network adapters, since it "
+"will only configure the interface when a cable is really connected."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:288
+msgid ""
+"IrDA (Infrared Data Association) is an industry standard for infrared "
+"wireless communication. Most laptops sold today are equipped with an IrDA "
+"compliant infrared transceiver, which enables you to communicate with "
+"devices such as printers, modems, fax, LAN, and other laptops."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:290
+msgid ""
+"Irqbalance is a Linux daemon that distributes interrupts over the processors "
+"and cores you have in your computer system. The design goal of irqbalance is "
+"to do find a balance between power savings and optimal performance."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:292
+msgid "Isndutils is only for use with an internal ISDN adapter."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:294
+msgid ""
+"klogd is a system daemon which intercepts and logs Linux kernel messages."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:296
+msgid ""
+"LIRC is a package that allows you to decode and send infra-red signals of "
+"many (but not all) commonly used remote controls."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:300
+msgid ""
+"These binary drivers provide optimized hardware acceleration of  OpenGL "
+"applications via a direct-rendering X Server."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:302
+msgid "Support for ACPI, APM and CPU frequency scaling."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:304
+msgid ""
+"Rsync is a command line utility traditionally used in synchronizing files "
+"between two computers, but rsync can also be used as an effective backup "
+"tool. In daemon mode, rsync listens to the default TCP port of 873, serving "
+"files in the native rsync protocol. rsync can also be used to synchronize "
+"local directories, or via a remote shell such as RSH or SSH."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:306
+msgid ""
+"SQL Relay is a persistent database connection pooling, proxying and load "
+"balancing system."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:310
+msgid ""
+"Sysklogd provides two system utilities which provide support for system "
+"logging and kernel message trapping. Support of both internet and unix "
+"domain sockets enables this utility package to support both local and remote "
+"logging."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:312
+msgid "TiMidity++ is a very high quality software-only MIDI sequencer."
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:314
+msgid "Linux Video Disk Recorder (vdr)"
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:316
+msgid ""
+"vdradmin-am provides a webinterface for managing the Linux Video Disk "
+"Recorder (vdr)"
+msgstr ""
+
+#: kde3/siduxcc/services.cpp:318
+msgid ""
+"VirtualBox is an application installed on an existing host operating system; "
+"within this application, additional operating systems can be loaded and run, "
+"each with its own virtual environment."
+msgstr ""
+
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
 #. i18n: tag string
@@ -1495,37 +2012,39 @@ msgstr "Choisissez un réseau (double-clic)"
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 17
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 495
-#: rc.cpp:723 rc.cpp:790
+#: kde3/siduxcc/servicesdialog.cpp:683 kde3/siduxcc/servicesdialog.cpp:707
+#: kde3/siduxcc/start.cpp:76 kde3/siduxcc/start.cpp:115 po/rc.cpp:723
+#: po/rc.cpp:790 rc.cpp:723 rc.cpp:790
 msgid "Services"
 msgstr "Services"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 119
-#: rc.cpp:738
+#: kde3/siduxcc/servicesdialog.cpp:689 po/rc.cpp:738 rc.cpp:738
 msgid "Manage services"
 msgstr "Gestion des services"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 127
-#: rc.cpp:741
+#: kde3/siduxcc/servicesdialog.cpp:690 po/rc.cpp:741 rc.cpp:741
 msgid "Start services at boot"
 msgstr "Demarrer les services au démarrage"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 197
-#: rc.cpp:744
+#: kde3/siduxcc/servicesdialog.cpp:691 po/rc.cpp:744 rc.cpp:744
 msgid "Select service"
 msgstr "Sélection de service"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 237
-#: rc.cpp:747
+#: kde3/siduxcc/servicesdialog.cpp:692 po/rc.cpp:747 rc.cpp:747
 msgid "Status"
 msgstr "État"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 286
-#: rc.cpp:750
+#: kde3/siduxcc/servicesdialog.cpp:693 po/rc.cpp:750 rc.cpp:750
 msgid "Status: not running..."
 msgstr "État: inactif..."
 
@@ -1537,103 +2056,134 @@ msgstr "État: inactif..."
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 334
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 671
-#: rc.cpp:756 rc.cpp:807
+#: kde3/siduxcc/servicesdialog.cpp:695 kde3/siduxcc/servicesdialog.cpp:714
+#: po/rc.cpp:756 po/rc.cpp:807 rc.cpp:756 rc.cpp:807
 msgid "Description Text"
 msgstr "Texte descriptif"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 354
-#: rc.cpp:759
+#: kde3/siduxcc/servicesdialog.cpp:696 po/rc.cpp:759 rc.cpp:759
 msgid "Action"
 msgstr "Action"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 391
-#: rc.cpp:762
+#: kde3/siduxcc/servicesdialog.cpp:697 po/rc.cpp:762 rc.cpp:762
 msgid "St&art"
 msgstr "Démarrer"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 405
-#: rc.cpp:768
+#: kde3/siduxcc/servicesdialog.cpp:699 po/rc.cpp:768 rc.cpp:768
 msgid "St&op"
 msgstr "Arrêter"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 419
-#: rc.cpp:774
+#: kde3/siduxcc/servicesdialog.cpp:701 po/rc.cpp:774 rc.cpp:774
 msgid "Restart"
 msgstr "Redémarrer"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 433
-#: rc.cpp:778
+#: kde3/siduxcc/servicesdialog.cpp:703 po/rc.cpp:778 rc.cpp:778
 msgid "Re&load"
 msgstr "Recharger"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 436
-#: rc.cpp:781
+#: kde3/siduxcc/servicesdialog.cpp:704 po/rc.cpp:781 rc.cpp:781
 msgid "Alt+L"
 msgstr "Alt+L"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 466
-#: rc.cpp:784
+#: kde3/siduxcc/servicesdialog.cpp:705 po/rc.cpp:784 rc.cpp:784
 msgid "Start service at &Boot"
 msgstr "Demarrer les services au &Boot"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 518
-#: rc.cpp:793
+#: kde3/siduxcc/servicesdialog.cpp:708 po/rc.cpp:793 rc.cpp:793
 msgid "Active Services:"
 msgstr "Services actifs:"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 566
-#: rc.cpp:796
+#: kde3/siduxcc/servicesdialog.cpp:709 po/rc.cpp:796 rc.cpp:796
 msgid ">"
 msgstr ">"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 594
-#: rc.cpp:800
+#: kde3/siduxcc/servicesdialog.cpp:711 po/rc.cpp:800 rc.cpp:800
 msgid "<"
 msgstr "<"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/servicesdialog.ui line 640
-#: rc.cpp:804
+#: kde3/siduxcc/servicesdialog.cpp:713 po/rc.cpp:804 rc.cpp:804
 msgid "Disabled Services:"
 msgstr "Service désactivés"
 
+#: kde3/siduxcc/software.cpp:90
+msgid "Apt-show-versions is missing!"
+msgstr ""
+
+#: kde3/siduxcc/software.cpp:90
+msgid "Do you want to install it?"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
+#: kde3/siduxcc/software.cpp:107 kde3/siduxcc/softwaredialog.cpp:758
+#: po/rc.cpp:816 rc.cpp:816
+msgid "There are no warnings"
+msgstr "Pas d'alerte signalée"
+
+#: kde3/siduxcc/software.cpp:112
+#, fuzzy
+msgid "Couldn't connect to sidux.com!"
+msgstr "Aucune connexion à sidux.com"
+
+#: kde3/siduxcc/software.cpp:119
+msgid "Don't make a dist-Upgrade!"
+msgstr ""
+
+#: kde3/siduxcc/software.cpp:158
+msgid ""
+"To update your system you have to leave the graphic modus. Press for this CTR"
+"+ALT+F1, login as root and type init 3. After that run the command smxi or "
+"siduxcc (Software->Dist-upgrade)."
+msgstr ""
+
+#: kde3/siduxcc/software.cpp:178
+msgid "Are you sure you want to clear your local repository?"
+msgstr ""
+
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 17
-#: rc.cpp:810
+#: kde3/siduxcc/softwaredialog.cpp:755 kde3/siduxcc/start.cpp:80
+#: kde3/siduxcc/start.cpp:121 po/rc.cpp:810 rc.cpp:810
 msgid "Software"
 msgstr "Logiciels"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 48
-#: rc.cpp:813
+#: kde3/siduxcc/softwaredialog.cpp:757 po/rc.cpp:813 rc.cpp:813
 msgid "Show upgradable packages"
 msgstr "Montrer les packages actualisables"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/softwaredialog.ui line 111
-#: rc.cpp:816
-msgid "There are no warnings"
-msgstr "Pas d'alerte signalée"
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 233
-#: rc.cpp:828
+#: kde3/siduxcc/softwaredialog.cpp:762 po/rc.cpp:828 rc.cpp:828
 msgid "Clea&n"
 msgstr "Nettoyer"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 245
-#: rc.cpp:834
+#: kde3/siduxcc/softwaredialog.cpp:764 po/rc.cpp:834 rc.cpp:834
 msgid ""
 "clean clears out the local repository \n"
 "of retrieved package files. It removes \n"
@@ -1652,19 +2202,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 334
-#: rc.cpp:855
+#: kde3/siduxcc/softwaredialog.cpp:777 po/rc.cpp:855 rc.cpp:855
 msgid "&Update"
 msgstr "&Actualiser"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 387
-#: rc.cpp:869
+#: kde3/siduxcc/softwaredialog.cpp:785 po/rc.cpp:869 rc.cpp:869
 msgid "Upgr&ade"
 msgstr "Mettre-à-jour"
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/softwaredialog.ui line 395
-#: rc.cpp:875
+#: kde3/siduxcc/softwaredialog.cpp:787 po/rc.cpp:875 rc.cpp:875
 msgid ""
 "For an explanation how to \n"
 "do a system upgrade click \n"
@@ -1674,21 +2224,55 @@ msgstr ""
 "mettre un système à niveau, cliquez \n"
 "sur le bouton."
 
+#: kde3/siduxcc/start.cpp:84 kde3/siduxcc/start.cpp:141
+#, fuzzy
+msgid "System Info"
+msgstr "Info système"
+
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 17
-#: rc.cpp:892
-msgid "sidux Control Center"
-msgstr "Centre de Contrôle de sidux"
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 504
+#: kde3/siduxcc/start.cpp:147 kde3/siduxcc/startdialog.cpp:3511 po/rc.cpp:917
+#: rc.cpp:917
+#, fuzzy
+msgid "About"
+msgstr "À propos de KDE"
+
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
+#. i18n: tag string
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
+#: kde3/siduxcc/start.cpp:152 kde3/siduxcc/startdialog.cpp:3515
+#: kde3/siduxcc/startdialog.cpp:3516 po/rc.cpp:927 po/rc.cpp:930 rc.cpp:927
+#: rc.cpp:930
+msgid "Exit"
+msgstr "Sortir"
+
+#: kde3/siduxcc/start.cpp:198
+msgid ""
+"There is still a running process in the control center. It's recommended not "
+"to close the apllication now! Do you want to close it anyway?"
+msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 29
-#: rc.cpp:895
+#: kde3/siduxcc/startdialog.cpp:3342 kde3/siduxcc/startdialog.cpp:3501
+#: po/rc.cpp:895 rc.cpp:895
 msgid "Menu"
 msgstr ""
 
 #. i18n: tag string
+#. i18n: file ./kde3/siduxcc/startdialog.ui line 17
+#: kde3/siduxcc/startdialog.cpp:3500 po/rc.cpp:892 rc.cpp:892
+msgid "sidux Control Center"
+msgstr "Centre de Contrôle de sidux"
+
+#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 316
-#: rc.cpp:898
+#: kde3/siduxcc/startdialog.cpp:3502 po/rc.cpp:898 rc.cpp:898
 msgid ""
 "Welcome to the sidux Control Center, a central place \n"
 "to configure your distribution. Select an item from the \n"
@@ -1706,7 +2290,8 @@ msgstr ""
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 470
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 473
-#: rc.cpp:903 rc.cpp:906
+#: kde3/siduxcc/startdialog.cpp:3505 kde3/siduxcc/startdialog.cpp:3506
+#: po/rc.cpp:903 po/rc.cpp:906 rc.cpp:903 rc.cpp:906
 msgid "sidux manual"
 msgstr "manuel sidux"
 
@@ -1718,18 +2303,12 @@ msgstr "manuel sidux"
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 487
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 490
-#: rc.cpp:910 rc.cpp:913
+#: kde3/siduxcc/startdialog.cpp:3508 kde3/siduxcc/startdialog.cpp:3509
+#: po/rc.cpp:910 po/rc.cpp:913 rc.cpp:910 rc.cpp:913
 msgid "sidux Homepage"
 msgstr "Site de sidux"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 504
-#: rc.cpp:917
-#, fuzzy
-msgid "About"
-msgstr "À propos de KDE"
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 507
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 510
@@ -1737,23 +2316,12 @@ msgstr "À propos de KDE"
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 507
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 510
-#: rc.cpp:920 rc.cpp:923
+#: kde3/siduxcc/startdialog.cpp:3512 kde3/siduxcc/startdialog.cpp:3513
+#: po/rc.cpp:920 po/rc.cpp:923 rc.cpp:920 rc.cpp:923
 msgid "About siduxcc"
 msgstr "À propos de sidux"
 
 #. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 524
-#. i18n: tag string
-#. i18n: file ./kde3/siduxcc/startdialog.ui line 527
-#: rc.cpp:927 rc.cpp:930
-msgid "Exit"
-msgstr "Sortir"
-
-#. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
@@ -1761,7 +2329,8 @@ msgstr "Sortir"
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 538
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 541
-#: rc.cpp:933 rc.cpp:936
+#: kde3/siduxcc/startdialog.cpp:3517 kde3/siduxcc/startdialog.cpp:3518
+#: po/rc.cpp:933 po/rc.cpp:936 rc.cpp:933 rc.cpp:936
 msgid "About KDE"
 msgstr "À propos de KDE"
 
@@ -1773,17 +2342,1090 @@ msgstr "À propos de KDE"
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 552
 #. i18n: tag string
 #. i18n: file ./kde3/siduxcc/startdialog.ui line 555
-#: rc.cpp:939 rc.cpp:942
+#: kde3/siduxcc/startdialog.cpp:3519 kde3/siduxcc/startdialog.cpp:3520
+#: po/rc.cpp:939 po/rc.cpp:942 rc.cpp:939 rc.cpp:942
 msgid "Language"
 msgstr "Langue"
 
-#: rc.cpp:943
+#: kde3/siduxcc/startdialog.cpp:3522
+#, fuzzy
+msgid "&File"
+msgstr "&Nouveautés"
+
+#: kde3/siduxcc/startdialog.cpp:3524
+msgid "&Help"
+msgstr ""
+
+#: po/rc.cpp:943 rc.cpp:943
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "LjanA"
 
-#: rc.cpp:944
+#: po/rc.cpp:944 rc.cpp:944
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "isotran@free.fr"
 
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "réglage en PPP"
+
+#, fuzzy
+#~ msgid "C&ustom"
+#~ msgstr "personnalisé"
+
+#, fuzzy
+#~ msgid "Download Progress"
+#~ msgstr "Télécharger"
+
+#, fuzzy
+#~ msgid "Cancel Download"
+#~ msgstr "Télécharger"
+
+#, fuzzy
+#~ msgid "(name)"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "(description)"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Interface:"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "Smart"
+#~ msgstr "Démarrer"
+
+#, fuzzy
+#~ msgid "name"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "status"
+#~ msgstr "État"
+
+#, fuzzy
+#~ msgid "change"
+#~ msgstr "Managé"
+
+#, fuzzy
+#~ msgid "description..."
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Details"
+#~ msgstr "Affichage"
+
+#, fuzzy
+#~ msgid "(remove)"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "Installed Files"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "candidate version"
+#~ msgstr "Dernière version"
+
+#, fuzzy
+#~ msgid "installed version"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "section"
+#~ msgstr "Action"
+
+#, fuzzy
+#~ msgid "installed size"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "description,"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Distribution"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Reset"
+#~ msgstr "Redémarrer"
+
+#, fuzzy
+#~ msgid "Apply"
+#~ msgstr "Appl&iquer"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "&fermer"
+
+#, fuzzy
+#~ msgid "Show: "
+#~ msgstr "V&oir la liste"
+
+#, fuzzy
+#~ msgid "not installed,"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "installed,"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "upgradable packages,"
+#~ msgstr "Paquetages actualisables"
+
+#, fuzzy
+#~ msgid "install,"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "removal,"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "Sortir"
+
+#, fuzzy
+#~ msgid "Advanced Options"
+#~ msgstr "Options avancées"
+
+#, fuzzy
+#~ msgid "Advanced Device Information"
+#~ msgstr "Options avancées"
+
+#, fuzzy
+#~ msgid "Set advanced setting for the network device"
+#~ msgstr "Changer les réglages du contrôleur sélectionné"
+
+#, fuzzy
+#~ msgid "Description:"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "IP address of the network device"
+#~ msgstr "Liste des contrôleurs réseau configurés"
+
+#, fuzzy
+#~ msgid "Configure Interface"
+#~ msgstr "Configurer le serveur X"
+
+#, fuzzy
+#~ msgid "TCP/IP Address"
+#~ msgstr "Adresse IP"
+
+#, fuzzy
+#~ msgid "Manual"
+#~ msgstr "manuel"
+
+#, fuzzy
+#~ msgid "Automatic"
+#~ msgstr "statique"
+
+#, fuzzy
+#~ msgid "bootp"
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "IP address for the network device"
+#~ msgstr "Liste des contrôleurs réseau configurés"
+
+#, fuzzy
+#~ msgid "255.255.255.0"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "255.255.0.0"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "255.255.255.128"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "255.255.255.192"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "255.255.255.240"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "255.255.255.248"
+#~ msgstr "Ex: 255.255.255.0"
+
+#, fuzzy
+#~ msgid "Subnetmask of the network device"
+#~ msgstr "Liste des contrôleurs réseau configurés"
+
+#, fuzzy
+#~ msgid "&Advanced Settings..."
+#~ msgstr "Options avancées"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Canal"
+
+#, fuzzy
+#~ msgid "Wireless Settings"
+#~ msgstr "Paramètres Wifi"
+
+#, fuzzy
+#~ msgid "ESSID:"
+#~ msgstr "ESSID"
+
+#, fuzzy
+#~ msgid "Aliases"
+#~ msgstr "Classe"
+
+#, fuzzy
+#~ msgid "Alt+E"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "Network Settings"
+#~ msgstr "Paramètres LAN"
+
+#, fuzzy
+#~ msgid "Network Interfaces"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "IP Address"
+#~ msgstr "Adresse IP"
+
+#, fuzzy
+#~ msgid "State"
+#~ msgstr "État"
+
+#, fuzzy
+#~ msgid "Enable Interface"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "Disable Interface"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "Routes"
+#~ msgstr "Observation"
+
+#, fuzzy
+#~ msgid "Default Gateway"
+#~ msgstr "Passerelle:"
+
+#, fuzzy
+#~ msgid "Device:"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Domain Name Servers"
+#~ msgstr "choisir le serveur de noms de domain (DNS):"
+
+#, fuzzy
+#~ msgid "Host name:"
+#~ msgstr "Nom d'hôte"
+
+#, fuzzy
+#~ msgid "Freeze &Services"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Alt+S"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "Ser&vices"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Resol&ution"
+#~ msgstr "Définition"
+
+#, fuzzy
+#~ msgid "Resolution / Modelines"
+#~ msgstr "Effacer les Modelines"
+
+#, fuzzy
+#~ msgid "&Select Resolution:"
+#~ msgstr "Définition"
+
+#, fuzzy
+#~ msgid "Default Color-Depth:"
+#~ msgstr "Profondeur de couleur"
+
+#, fuzzy
+#~ msgid ""
+#~ "<b>Note:</b> If you are using the ATI-Driver (fglrx) you can not change "
+#~ "the Color-Depth (it has to be 24 bit then)"
+#~ msgstr ""
+#~ "Si vous utilisez le pilote ATI (fglrx), vous ne pourrez pas changer la "
+#~ "profondeur de couleur"
+
+#, fuzzy
+#~ msgid "Dr&ivers"
+#~ msgstr "Pilote"
+
+#, fuzzy
+#~ msgid "Change Driver"
+#~ msgstr "Pilote"
+
+#, fuzzy
+#~ msgid "VE&SA"
+#~ msgstr "VESA"
+
+#, fuzzy
+#~ msgid "n&v"
+#~ msgstr "nv"
+
+#, fuzzy
+#~ msgid "a&ti"
+#~ msgstr "ati"
+
+#, fuzzy
+#~ msgid "nv&idia"
+#~ msgstr "nvidia"
+
+#, fuzzy
+#~ msgid "Alt+I"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "&Install"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "Rein&stall"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "Options"
+#~ msgstr "Action"
+
+#, fuzzy
+#~ msgid "Enable &Composite-Extension"
+#~ msgstr "Activer &Composite"
+
+#, fuzzy
+#~ msgid "VertRefresh (Monitor 2):"
+#~ msgstr "Rafraîchissement Vertical:"
+
+#, fuzzy
+#~ msgid "HorizSync (Monitor 2):"
+#~ msgstr "Synchronisation Horizontale:"
+
+#, fuzzy
+#~ msgid "Above"
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "Clone"
+#~ msgstr "Aucun"
+
+#, fuzzy
+#~ msgid "MetaModes:"
+#~ msgstr "Méthode"
+
+#, fuzzy
+#~ msgid "Enable T&winView"
+#~ msgstr "Activer &Composite"
+
+#, fuzzy
+#~ msgid "Remove Modelines"
+#~ msgstr "Effacer les Modelines"
+
+#, fuzzy
+#~ msgid "Register Fonts"
+#~ msgstr "En&registrer les Polices"
+
+#, fuzzy
+#~ msgid "Re&gister/Repair Fonts (fix-fonts)"
+#~ msgstr "Polices (fixer les polices)"
+
+#, fuzzy
+#~ msgid "Alt+G"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "Add/Remove modules"
+#~ msgstr "Effacer les Modelines"
+
+#, fuzzy
+#~ msgid "In&stalled:"
+#~ msgstr "Installer"
+
+#, fuzzy
+#~ msgid "Info"
+#~ msgstr "Info système"
+
+#, fuzzy
+#~ msgid "About Kanotix"
+#~ msgstr "À propos de sidux"
+
+#, fuzzy
+#~ msgid "Kanotix Version:"
+#~ msgstr "Version de sidux"
+
+#, fuzzy
+#~ msgid "Interface details"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "In&terface"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "&IP address"
+#~ msgstr "Adresse IP"
+
+#, fuzzy
+#~ msgid "IP-Configuration"
+#~ msgstr "C&onfigurer"
+
+#, fuzzy
+#~ msgid "&Static IP"
+#~ msgstr "statique"
+
+#, fuzzy
+#~ msgid "Network Mask:"
+#~ msgstr "Réseau:"
+
+#, fuzzy
+#~ msgid "Default Gateway:"
+#~ msgstr "Passerelle:"
+
+#, fuzzy
+#~ msgid "IP Address:"
+#~ msgstr "Adresse IP:"
+
+#, fuzzy
+#~ msgid "&WLAN settings"
+#~ msgstr "Paramètres Wifi"
+
+#, fuzzy
+#~ msgid "(unconfigured)"
+#~ msgstr "C&onfigurer"
+
+#, fuzzy
+#~ msgid "A&uto"
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "&Channel:"
+#~ msgstr "Ca&nal:"
+
+#, fuzzy
+#~ msgid "iwspy-options:"
+#~ msgstr "iwspy:"
+
+#, fuzzy
+#~ msgid "iwconfig-options:"
+#~ msgstr "iwconfig:"
+
+#, fuzzy
+#~ msgid "iwpriv-options:"
+#~ msgstr "iwpriv:"
+
+#, fuzzy
+#~ msgid "WLAN &security"
+#~ msgstr "Sécurité Wifi"
+
+#, fuzzy
+#~ msgid "pri&vate"
+#~ msgstr "Mettre-à-jour"
+
+#, fuzzy
+#~ msgid "64 bit"
+#~ msgstr "16 bit"
+
+#, fuzzy
+#~ msgid "128 bit"
+#~ msgstr "8 bit"
+
+#, fuzzy
+#~ msgid "152 bit"
+#~ msgstr "15 bit"
+
+#, fuzzy
+#~ msgid "256 bit"
+#~ msgstr "15 bit"
+
+#, fuzzy
+#~ msgid "Net&work Interfaces"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "&Nameserver"
+#~ msgstr "choisir le serveur de noms de domain (DNS):"
+
+#, fuzzy
+#~ msgid "Hostname:"
+#~ msgstr "Nom d'hôte"
+
+#, fuzzy
+#~ msgid "DNS Servers"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Server"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Recharger"
+
+#, fuzzy
+#~ msgid "Add a Runle&vel-Entry (Start service at Boot)"
+#~ msgstr "Demarrer les services au &Boot"
+
+#, fuzzy
+#~ msgid "Start &now"
+#~ msgstr "Démarrer"
+
+#, fuzzy
+#~ msgid "Host Key"
+#~ msgstr "Nom d'hôte"
+
+#, fuzzy
+#~ msgid "Alt+K"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "description"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Name:"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "Enable CD polling"
+#~ msgstr "Activer &Composite"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "détecté"
+
+#, fuzzy
+#~ msgid "Edit Service"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Displa&y service for:"
+#~ msgstr "Service désactivés"
+
+#, fuzzy
+#~ msgid "Quiet"
+#~ msgstr "Qualité"
+
+#, fuzzy
+#~ msgid "Short names:"
+#~ msgstr "LjanA"
+
+#, fuzzy
+#~ msgid "&Close"
+#~ msgstr "&fermer"
+
+#, fuzzy
+#~ msgid "&Interfaces"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "Display:"
+#~ msgstr "Affichage"
+
+#, fuzzy
+#~ msgid "Statistics"
+#~ msgstr "statique"
+
+#, fuzzy
+#~ msgid "Vertic&al lines"
+#~ msgstr "Fréquence verticale"
+
+#, fuzzy
+#~ msgid "Hori&zontal lines"
+#~ msgstr "Fréquence horizontale"
+
+#, fuzzy
+#~ msgid "&Colors"
+#~ msgstr "&fermer"
+
+#, fuzzy
+#~ msgid "Vertical lines:"
+#~ msgstr "Fréquence verticale"
+
+#, fuzzy
+#~ msgid "Horizontal lines:"
+#~ msgstr "Fréquence horizontale"
+
+#, fuzzy
+#~ msgid "Daily"
+#~ msgstr "Affichage"
+
+#, fuzzy
+#~ msgid "Interface Status"
+#~ msgstr "Interface"
+
+#, fuzzy
+#~ msgid "Connection"
+#~ msgstr "Continuer"
+
+#, fuzzy
+#~ msgid "IP-Address:"
+#~ msgstr "Adresse IP:"
+
+#, fuzzy
+#~ msgid "Subnet Mask:"
+#~ msgstr "Masque de sous-réseau:"
+
+#, fuzzy
+#~ msgid "HW-Address:"
+#~ msgstr "Addresse Mac"
+
+#, fuzzy
+#~ msgid "Status:"
+#~ msgstr "État"
+
+#, fuzzy
+#~ msgid "Current connection"
+#~ msgstr "Noyau Courant"
+
+#, fuzzy
+#~ msgid "Frequency [Channel]:"
+#~ msgstr "Fré&quence:"
+
+#, fuzzy
+#~ msgid "Nickname:"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "Link Quality:"
+#~ msgstr "Qualité"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "<b>Type de cryptage:</b>"
+
+#, fuzzy
+#~ msgid "&Metapackages"
+#~ msgstr "V&oir les métapackages"
+
+#, fuzzy
+#~ msgid "Education"
+#~ msgstr "Action"
+
+#, fuzzy
+#~ msgid "Games"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "I&nstall"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "E&xit"
+#~ msgstr "Sortir"
+
+#, fuzzy
+#~ msgid "Alt+X"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "cl&ose"
+#~ msgstr "&fermer"
+
+#, fuzzy
+#~ msgid "Installed only"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "Not installed only"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "H&omepage"
+#~ msgstr "Site de sidux"
+
+#, fuzzy
+#~ msgid "Homepage"
+#~ msgstr "Site de sidux"
+
+#, fuzzy
+#~ msgid "Rem&ove"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "Startup"
+#~ msgstr "État"
+
+#, fuzzy
+#~ msgid "kdpkg-install"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "a&bout"
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "inst&all"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "Alt+Z"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "Version"
+#~ msgstr "Dernière version"
+
+#, fuzzy
+#~ msgid "<b>Version:</b>"
+#~ msgstr "<b>Méthode:</b>"
+
+#, fuzzy
+#~ msgid "<b>Maintainer:</b>"
+#~ msgstr "<b>Type de cryptage:</b>"
+
+#, fuzzy
+#~ msgid "<b>Section:</b>"
+#~ msgstr "<b>Méthode:</b>"
+
+#, fuzzy
+#~ msgid "<b>Size:</b>"
+#~ msgstr "<b>Méthode:</b>"
+
+#, fuzzy
+#~ msgid "<b>Name:</b>"
+#~ msgstr "<b>Classe:</b>"
+
+#, fuzzy
+#~ msgid "Descripti&on"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Depends"
+#~ msgstr "Légende"
+
+#, fuzzy
+#~ msgid "Provides"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "&about"
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "&Copy"
+#~ msgstr "Arrêter"
+
+#, fuzzy
+#~ msgid "Alt+D"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~ msgid "&About..."
+#~ msgstr "À propos de KDE"
+
+#, fuzzy
+#~ msgid "R&emove"
+#~ msgstr "effacer"
+
+#, fuzzy
+#~ msgid "Alt+H"
+#~ msgstr "Alt+A"
+
+#, fuzzy
+#~ msgid "&Manage Frames..."
+#~ msgstr "Gestion des services"
+
+#, fuzzy
+#~ msgid "&Homepage:"
+#~ msgstr "Site de sidux"
+
+#, fuzzy
+#~ msgid "&Template"
+#~ msgstr "&Actualiser"
+
+#, fuzzy
+#~ msgid "kwebserver"
+#~ msgstr "choisir le serveur de noms de domain (DNS):"
+
+#, fuzzy
+#~ msgid "Service 1:"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "Service 2:"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Canal"
+
+#, fuzzy
+#~ msgid "S&tatus"
+#~ msgstr "État"
+
+#, fuzzy
+#~ msgid "S&top"
+#~ msgstr "Arrêter"
+
+#, fuzzy
+#~ msgid "&Restart"
+#~ msgstr "Redémarrer"
+
+#, fuzzy
+#~ msgid "Start at &boot"
+#~ msgstr "Demarrer les services au démarrage"
+
+#, fuzzy
+#~ msgid "Soft&ware"
+#~ msgstr "Logiciels"
+
+#, fuzzy
+#~ msgid "Installed"
+#~ msgstr "Installer"
+
+#, fuzzy
+#~ msgid "Newest"
+#~ msgstr "&Nouveautés"
+
+#, fuzzy
+#~ msgid "Install/Update"
+#~ msgstr "Installer"
+
+#, fuzzy
+#~ msgid "Select &none"
+#~ msgstr "Sélection de module X"
+
+#, fuzzy
+#~ msgid "C&onfiguration"
+#~ msgstr "C&onfigurer"
+
+#, fuzzy
+#~ msgid "enabled:"
+#~ msgstr "Activer"
+
+#, fuzzy
+#~ msgid "disabled:"
+#~ msgstr "Désactiver"
+
+#, fuzzy
+#~ msgid "Selecet X-Module"
+#~ msgstr "Sélection de module X"
+
+#, fuzzy
+#~ msgid "Install addons"
+#~ msgstr "Version installée"
+
+#, fuzzy
+#~ msgid "ins&tall"
+#~ msgstr "I&nstaller"
+
+#, fuzzy
+#~ msgid "Updatable"
+#~ msgstr "&Actualiser"
+
+#, fuzzy
+#~ msgid "New"
+#~ msgstr "&Nouveautés"
+
+#, fuzzy
+#~ msgid "CD Version"
+#~ msgstr "Dernière version"
+
+#, fuzzy
+#~ msgid "System Version"
+#~ msgstr "Dernière version"
+
+#, fuzzy
+#~ msgid "Dri&vers"
+#~ msgstr "Pilote"
+
+#, fuzzy
+#~ msgid "detected"
+#~ msgstr "détecté"
+
+#, fuzzy
+#~ msgid "all"
+#~ msgstr "Tout"
+
+#, fuzzy
+#~ msgid "&Kernels"
+#~ msgstr "Noyau"
+
+#, fuzzy
+#~ msgid "Current Kernel"
+#~ msgstr "Noyau Courant"
+
+#, fuzzy
+#~ msgid "Downloadpath:"
+#~ msgstr "Télécharger"
+
+#, fuzzy
+#~ msgid "Experimental Kernel:"
+#~ msgstr "Noyau courant"
+
+#, fuzzy
+#~ msgid "Current Kernel:"
+#~ msgstr "Noyau courant"
+
+#, fuzzy
+#~ msgid "Version:"
+#~ msgstr "Version de sidux"
+
+#, fuzzy
+#~ msgid "Addresse"
+#~ msgstr "Addresse Mac"
+
+#, fuzzy
+#~ msgid "<b>Package:</b>"
+#~ msgstr "<b>Classe:</b>"
+
+#, fuzzy
+#~ msgid "Install/Remove"
+#~ msgstr "Installer"
+
+#, fuzzy
+#~ msgid "&X-Server"
+#~ msgstr "Redémarrer le serveur X"
+
+#, fuzzy
+#~ msgid "Remove &Modelines"
+#~ msgstr "Effacer les Modelines"
+
+#, fuzzy
+#~ msgid "Rest&art X-Server"
+#~ msgstr "Redémarrer le serveur X"
+
+#, fuzzy
+#~ msgid "Scanning Frequenz"
+#~ msgstr "Détection des fréquences"
+
+#, fuzzy
+#~ msgid "X-&Server"
+#~ msgstr "Redémarrer le serveur X"
+
+#, fuzzy
+#~ msgid "Register F&onts"
+#~ msgstr "En&registrer les Polices"
+
+#, fuzzy
+#~ msgid "I&nstall driver"
+#~ msgstr "Installer le pilote"
+
+#, fuzzy
+#~ msgid "Br&owser"
+#~ msgstr "Navigateur-sidux"
+
+#, fuzzy
+#~ msgid "&New Kernels"
+#~ msgstr "Noyau"
+
+#, fuzzy
+#~ msgid "&Old Kernels"
+#~ msgstr "Noyau"
+
+#, fuzzy
+#~ msgid "&Modules"
+#~ msgstr "Modelines"
+
+#, fuzzy
+#~ msgid "Drivers"
+#~ msgstr "Pilote"
+
+#, fuzzy
+#~ msgid "Metapackages"
+#~ msgstr "V&oir les métapackages"
+
+#, fuzzy
+#~ msgid "Configure Networkcards"
+#~ msgstr "Configuration des cartes réseau"
+
+#, fuzzy
+#~ msgid "Set Hostname"
+#~ msgstr "Choisir le nom d'hôte (Hostname)"
+
+#, fuzzy
+#~ msgid "Set Nameservers"
+#~ msgstr "choisir le serveur de noms de domain (DNS):"
+
+#, fuzzy
+#~ msgid "Install Wlan-Cards (Ndiswrapper)"
+#~ msgstr "Installer les cartes Wifi (Ndiswrapper)"
+
+#, fuzzy
+#~ msgid "Install Wlan-Cards (fwdetect)"
+#~ msgstr "Installer les cartes Wifi (fwdetect)"
+
+#, fuzzy
+#~ msgid "<b>Description:</b>"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "<b>Mac Address:</b>"
+#~ msgstr "<b>Classe:</b>"
+
+#, fuzzy
+#~ msgid "Ip Address    "
+#~ msgstr "Adresse IP"
+
+#, fuzzy
+#~ msgid "Na&meservers"
+#~ msgstr "choisir le serveur de noms de domain (DNS):"
+
+#, fuzzy
+#~ msgid "fwdetect"
+#~ msgstr "détecté"
+
+#, fuzzy
+#~ msgid "Insta&ll"
+#~ msgstr "Installer"
+
+#, fuzzy
+#~ msgid "&Start"
+#~ msgstr "Démarrer"
+
+#, fuzzy
+#~ msgid "Reloa&d"
+#~ msgstr "Recharger"
+
+#, fuzzy
+#~ msgid "&Add a Runlevel-Entry (Start service at Boot)"
+#~ msgstr "Demarrer les services au &Boot"
+
+#, fuzzy
+#~ msgid "Upgrada&ble Packages"
+#~ msgstr "Paquetages actualisables"
+
+#, fuzzy
+#~ msgid "I&nstall Metapackages"
+#~ msgstr "V&oir les métapackages"
+
+#, fuzzy
+#~ msgid "ca&ncel"
+#~ msgstr "Ca&nal:"
+
+#, fuzzy
+#~ msgid "sidux handbook"
+#~ msgstr "manuel sidux"
+
+#, fuzzy
+#~ msgid "About sidux-seminarix"
+#~ msgstr "À propos de sidux"
