@@ -1,9 +1,5 @@
-siduxcc (0.12.9) UNRELEASED; urgency=low
+siduxcc (0.12.9) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * Messages.sh fixed 
 
  -- Fabian Wuertz <xadras@sidux.com>  Thu, 25 Sep 2008 21:49:00 +0200
