@@ -2,7 +2,7 @@ Source: siduxcc
 Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Uploaders: Fabian Wuertz <xadras@sidux.com>
+Uploaders: Fabian Wuertz <xadras@sidux.com>, Joaquim Boura <x-un-i@sidux.com>
 Build-Depends: cdbs, debhelper (>= 6), cmake, kdelibs4-dev, gettext, imagemagick
 Standards-Version: 3.8.0
 Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
