@@ -1,3 +1,9 @@
+siduxcc (0.12.12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 14 Dec 2008 00:55:57 +0100
+
 siduxcc (0.12.11) unstable; urgency=low
 
   * fix parsing for Composite in display.bm, thanks to icf7 for noticing.
