@@ -311,7 +311,7 @@ function getComposite()
 	if ! grep -i Option[[:space:]]*\"Composite\" $X_CONF | egrep -qv ^\s*#; then
 		echo "NOT USED"
 		return 128
-	elif [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | sed -e s/\#.*// -e s/\"//g | awk '{ print $3 }')" -eq 0 ] || [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | sed -e s/\#.*// -e s/\"//g | awk '{ print $3 }')" = false ]; then
+	elif [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | sed -e s/\#.*// -e s/\"//g | awk '{ print $3 }')" -eq 0 ] || [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | sed -e s/\#.*// -e s/\"//g | awk '{ print $3 }')" = false ] || [ "$(eval echo $(grep -i Option[[:space:]]*\"Composite\" $X_CONF) | sed -e s/\#.*// -e s/\"//g | awk '{ print $3 }')" = off ]; then
 		echo "NOT USED"
 		return 128
 	else
