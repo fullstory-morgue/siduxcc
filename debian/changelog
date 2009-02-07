@@ -1,3 +1,9 @@
+siduxcc (0.12.15) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Feb 2009 00:05:06 +0100
+
 siduxcc (0.12.14) unstable; urgency=low
 
   * make rcconf.pl executable.
