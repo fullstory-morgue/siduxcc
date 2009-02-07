@@ -8,8 +8,9 @@ siduxcc (0.12.13) UNRELEASED; urgency=low
   * sidux-hermes-kde4 removed (now its part of sidux-hermes) 
   * gtk2: CMakeList.txt fixed
   * debian: description of the the package siduxcc-gtk2 corrected.
+  * gtk2: destroy handler added 
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 07 Feb 2009 18:30:07 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 07 Feb 2009 18:42:22 +0100
 
 siduxcc (0.12.12) unstable; urgency=low
 
