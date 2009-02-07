@@ -1,9 +1,5 @@
-siduxcc (0.12.13) UNRELEASED; urgency=low
+siduxcc (0.12.13) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * sidux-hermes-gkt2 removed (now its part of sidux-hermes)
   * sidux-hermes-kde4 removed (now its part of sidux-hermes) 
   * gtk2: CMakeList.txt fixed
