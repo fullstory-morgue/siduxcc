@@ -6,13 +6,13 @@ It was downloaded from http://www.wuertz.org/downloads/siduxcc/
 Upstream Author: Fabian Wuertz
 
 Copyright:
-	© 2007 Fabian Wuertz
+	Copyright © 2007 Fabian Wuertz
 
 
    --- code ---
 
 	siduxcc is based on knxcc from:
-	© 2006 Andreas Loibl <andreas@andreas-loibl.de>
+	Copyright © 2006 Andreas Loibl <andreas@andreas-loibl.de>
 	The following files are based on knxcc (Kanotix-Control-Center):
 	siduxcc/siduxcc
 	siduxcc/scripts/rcconf.pl
@@ -36,14 +36,14 @@ Copyright:
 
 
 	The following file is based on netcardconfig from:
-	© 2006 Niall Walsh to integrate wlan cards
-	© 2004-2007 by Stefan Lippers-Hollmann <s.l-h@gmx.de>
-	© 2007 by Horst Tritremmel <hjt@sidux.com>
+	Copyright © 2006 Niall Walsh to integrate wlan cards
+	Copyright © 2004-2007 by Stefan Lippers-Hollmann <s.l-h@gmx.de>
+	Coypright © 2007 by Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/network.bm
 
 
 	The following file is based on install-meta from:
-	© 2007 Horst Tritremmel <hjt@sidux.com>
+	Copyright © 2007 Horst Tritremmel <hjt@sidux.com>
 	siduxcc/modules/software.bm
 
 
@@ -51,7 +51,7 @@ Copyright:
 	--- icons ---
 
 	The following icons are from kde-icons-nuovext
-	© 2005 Alexandre Moore <alexandre.moore@gmail.com>
+	Coypright © 2005 Alexandre Moore <alexandre.moore@gmail.com>
 	display.png                  in siduxcc_kde/icons/display.png
 	browser.png                  in siduxcc_kde/icons/browser.png
 	tux.png                      in siduxcc_kde/icons/tux.png
@@ -73,7 +73,7 @@ Copyright:
 
 
 	The following icons are from adept-common
-	© 2004  David Vignoni <dave@icon-king.com>
+	Copyright © 2004  David Vignoni <dave@icon-king.com>
 	adept_sourceseditor.png      in siduxcc_kde/softwaredialog.ui
 	adept_reinstall.png          in siduxcc_kde/displaydialog.ui
 	adept_update.png             in siduxcc_kde/kerneldialog.ui
@@ -86,7 +86,7 @@ Copyright:
 
 
 	The following icons are from knetworkconf
-	© Bernhard Rosenkraenzer <bero@redhat.de> and many others.
+	Copyright © Bernhard Rosenkraenzer <bero@redhat.de> and many others.
 	network_connected_lan_knc.png  icons/hi22-app-siduxcc_lan_down.png
 	network_disconnected_lan.png   icons/hi22-app-siduxcc_lan_up.png
 	network_traffic_wlan.png       icons/hi*-app-siduxcc_wlan_down.png
@@ -94,7 +94,7 @@ Copyright:
 
 
 	The following icons are from kdelibs-data
-	© 2002 Kalle Dalheimer <kalle@kde.org> and many others
+	Copyright © 2002 Kalle Dalheimer <kalle@kde.org> and many others
 	connect_no.png               icons/hi22-app-siduxcc_disconnected.png
 	kcmpci.png                   icons/hi32-app-siduxcc_lan_up.png
 	                             icons/hi48-app-siduxcc_lan_up.png
@@ -115,25 +115,25 @@ Copyright:
 
 
 	The following icons are from kdebase-data
-	© 2002 Stephan Kulow <coolo@kde.org> and many others.
+	Copyright © 2002 Stephan Kulow <coolo@kde.org> and many others.
 	kcontrol.png                 in siduxcc_kde/displaydialog.ui
 	fifteenpieces.png            in siduxcc_kde/kernel.ui
 
 
 	The following icons are from sidux-icons
-	© 2007 cathbard <cathbard@gmail.com>
+	Copyright © 2007 cathbard <cathbard@gmail.com>
 	kmenu.png                    icons/hi*-app-siduxcc.png
 	sidux-book2s.png             icons/hi*-app-sidux_book.png
     sidux-net.png                icons/hi*-app-sidux_net.png
 
 
 	The following icon is from krdc
-	© 2002 Stephan Kulow <coolo@kde.org> and many others.
+	Copyright © 2002 Stephan Kulow <coolo@kde.org> and many others.
 	krdc.png                     in siduxcc_kde/displaydialog.ui
 
 
 	The following icon is from ksim
-	© 2002 Matthias Elter <elter@kde.org> and many others.
+	Copyright © 2002 Matthias Elter <elter@kde.org> and many others.
 	ksim.pnp                     siduxcc_kde/icons/hardware.png
 	                             in siduxcc_kde/network/networkdialog.ui
 
@@ -144,22 +144,22 @@ Copyright:
 
 
 	The following icon is from configure-ndiswrapper
-	© 2007 cathbard <cathbard@gmail.com>
+	Copyright © 2007 cathbard <cathbard@gmail.com>
 	sidux-ndiswrapper.png        in siduxcc_kde/network/networkdialog.ui
 
 
 	The following icon is from kde-icons-crystalproject
-	© 2005 Everaldo Coelho <everaldo@everaldo.com>
+	Copyright © 2005 Everaldo Coelho <everaldo@everaldo.com>
 	gpg.png                      in siduxcc_kde/network/networkdialog.ui
 
 
 	The following icon is from kde-icons-crystalproject
-	© 2005 Everaldo Coelho <everaldo@everaldo.com>
+	Copyright © 2005 Everaldo Coelho <everaldo@everaldo.com>
 	remote.png                   in siduxcc_kde/network/networkdialog.ui
 
 
 	The following icons are from gnome-icon-theme-nuovo
-	© 2005 Silvestre Herrera <silvestre.herrera@gmail.com>
+	Copyright © 2005 Silvestre Herrera <silvestre.herrera@gmail.com>
 	administration.svg	         siduxcc_gtk2/gtk2/icons/settings.png
 	clock.svg                    siduxcc_gtk2/gtk2/icons/clock.png
 	config-xfree.svg             siduxcc_gtk2/gtk2/icons/dipplay.png
@@ -171,7 +171,7 @@ Copyright:
 	bonobo.svg                   siduxcc_gtk2/gtk2/icons/info.png
 
 	The following icons are from gnome-icon-theme
-	© 2005 Gnome Artwork Team
+	Copyright © 2005 Gnome Artwork Team
 	system-users.svg users       siduxcc_gtk2/gtk2/icons/users.png
 	gtk-about.png                siduxcc_gtk2/gtk2/icons/about.png
 
@@ -193,8 +193,8 @@ License:
 
 
 On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
+Public License can be found in `/usr/share/common-licenses/GPL-2'.
 
-The Debian packaging is © 2007, Stefan Lippers-Hollmann <s.l-h@gmx.de> and
+The Debian packaging is Copyright © 2007, Stefan Lippers-Hollmann <s.l-h@gmx.de> and
 is licensed under the GPL, see above.
 

@@ -1,3 +1,11 @@
+siduxcc (0.12.14) unstable; urgency=low
+
+  * make rcconf.pl executable.
+  * specify GPL-2 explicitly for common licenses.
+  * prepend "Copyright " to copyright notices in debian/copyright.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Feb 2009 00:02:03 +0100
+
 siduxcc (0.12.13) unstable; urgency=low
 
   * sidux-hermes-gkt2 removed (now its part of sidux-hermes)
