@@ -11,8 +11,9 @@ siduxcc (0.12.13) UNRELEASED; urgency=low
   * gtk2: destroy handler added 
   * gtk2: siduxcc folder removed
   * gtk2: siduxcc folder removed  
+  * gtk2: missing CMakeFile added 
 
- -- Fabian Wuertz <xadras@sidux.com>  Sat, 07 Feb 2009 18:46:00 +0100
+ -- Fabian Wuertz <xadras@sidux.com>  Sat, 07 Feb 2009 18:54:38 +0100
 
 siduxcc (0.12.12) unstable; urgency=low
 
