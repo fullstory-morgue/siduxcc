@@ -25,7 +25,7 @@ Description: sidux control center (GTK2 frontend)
 Package: siduxcc-common
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ceni (>= 1.31), gettext-base, sidux-scripts
-Replaces: siduxcc (<< 0.7)
+Replaces: siduxcc (<< 0.12.15)
 Description: sidux control center (backend and cli tools)
  Common tool backend and command line interface for the sidux control center
 

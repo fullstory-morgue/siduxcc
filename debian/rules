@@ -5,22 +5,6 @@ include /usr/share/cdbs/1/class/cmake.mk
 
 DEB_DESTDIR = $(CURDIR)/debian/tmp/
 
-### Libtool and Automake updates
-#post-patches:: debian/stamp-autothings-update
-#debian/stamp-autothings-update:
-#	cp -f /usr/share/libtool/libtool.m4 $(DEB_SRCDIR)/admin/libtool.m4.in
-#	cp -f /usr/share/libtool/ltmain.sh  $(DEB_SRCDIR)/admin/ltmain.sh
-#	for f in /usr/share/automake-1.10/*; do \
-#		if  test -f $$f && \
-#			test -f $(DEB_SRCDIR)/admin/`basename $$f`; then \
-#			cp -f $$f $(DEB_SRCDIR)/admin; \
-#		fi; \
-#	done
-#	touch $@
-#
-#clean::
-#	rm -f debian/stamp-autothings-update
-
 install/siduxcc-common::
 	mkdir -p debian/tmp/usr/share/pixmaps
 	
@@ -50,12 +34,6 @@ create-icons::
 				"$(CURDIR)/icons/siduxcc.svg" ; \
 		test -r "$(CURDIR)/icons/siduxcc.svg" ; \
 		test -r "$(CURDIR)/icons/hi$${i}-app-siduxcc.png" ; \
-		inkscape --export-width=$${i} \
-			 --export-height=$${i} \
-			 --export-png="$(CURDIR)/icons/hi$${i}-app-siduxcchermes.png" \
-				"$(CURDIR)/icons/siduxcchermes.svg" ; \
-		test -r "$(CURDIR)/icons/siduxcchermes.svg" ; \
-		test -r "$(CURDIR)/icons/hi$${i}-app-siduxcchermes.png" ; \
 	done
 	
 	# create GUI icons
@@ -73,20 +51,4 @@ create-icons::
 	test -r "$(CURDIR)/icons/sidux_book.svg"
 	test -r "$(CURDIR)/icons/hi22-app-sidux_book.png"
 	
-	# create siduxcc status icons
-	inkscape --export-width=22 \
-		 --export-height=22 \
-		 --export-png="$(CURDIR)/icons/icons/ok-hermes.png" \
-		 	"$(CURDIR)/icons/icons/ok-hermes.svg"
-	test -r "$(CURDIR)/icons/icons/ok-hermes.svg"
-	test -r "$(CURDIR)/icons/icons/ok-hermes.png"
-	
-	inkscape --export-width=22 \
-		 --export-height=22 \
-		 --export-png="$(CURDIR)/icons/icons/notok-hermes.png" \
-		 	"$(CURDIR)/icons/icons/notok-hermes.svg"
-	test -r "$(CURDIR)/icons/icons/notok-hermes.svg"
-	test -r "$(CURDIR)/icons/icons/notok-hermes.png"
-	
 	@echo "all PNGs created successfully."
-

@@ -1,8 +1,9 @@
-siduxcc (0.12.15) UNRELEASED; urgency=low
+siduxcc (0.13.0) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * drop the kde3 of hermes, it will break in kde4.
+  * move the manpage to siduxcc-common, add appropriate replaces.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Feb 2009 00:05:06 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 10 Feb 2009 21:41:36 +0100
 
 siduxcc (0.12.14) unstable; urgency=low
 
