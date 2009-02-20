@@ -1,8 +1,8 @@
-siduxcc (0.13.1) UNRELEASED; urgency=low
+siduxcc (0.13.1) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * fix desktop-entry-contains-encoding-key.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 10 Feb 2009 21:45:46 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 20 Feb 2009 17:52:59 +0100
 
 siduxcc (0.13.0) unstable; urgency=low
 

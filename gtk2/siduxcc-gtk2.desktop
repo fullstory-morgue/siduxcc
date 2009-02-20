@@ -8,7 +8,6 @@ Name[it]=Centro di controllo di sidux (GTK)
 Name[nl]=sidux-Kontrol Center (GTK)
 Name[ro]=Centrul de control sidux (GTK)
 Name[ru]=Цетр управления sidux (GTK)
-Encoding=UTF-8
 Exec=siduxcc-gtk2
 Icon=siduxcc
 Categories=GTK;System;
