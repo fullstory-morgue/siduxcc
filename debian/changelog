@@ -1,3 +1,9 @@
+siduxcc (0.13.2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 01 Mar 2009 05:21:52 +0100
+
 siduxcc (0.13.1) unstable; urgency=low
 
   * fix desktop-entry-contains-encoding-key.
