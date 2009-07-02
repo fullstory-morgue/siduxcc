@@ -1,8 +1,12 @@
 siduxcc (0.13.2) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 01 Mar 2009 05:21:52 +0100
+  [ Bernard Gray ]
+  * update art for 2009-02 -- do not release
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Thu, 02 Jul 2009 19:00:35 +1000
 
 siduxcc (0.13.1) unstable; urgency=low
 
