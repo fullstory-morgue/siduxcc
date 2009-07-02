@@ -1,8 +1,8 @@
-siduxcc (0.13.3) UNRELEASED; urgency=low
+siduxcc (0.13.3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * add missing graphics.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jul 2009 23:50:18 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 03 Jul 2009 00:14:12 +0200
 
 siduxcc (0.13.2) unstable; urgency=low
 
