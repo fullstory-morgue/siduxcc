@@ -50,6 +50,14 @@ Copyright:
 
 	--- icons ---
 
+	siduxcc.svg
+	   Copyright: 
+	   © 2008 Bernard Gray <bernard.gray@gmail.com>
+           © 2008 David Creedy <djcreedy@iinet.net.au>
+	   License:
+	   GPL v2 or later
+
+
 	The following icons are from kde-icons-nuovext
 	Coypright © 2005 Alexandre Moore <alexandre.moore@gmail.com>
 	display.png                  in siduxcc_kde/icons/display.png
@@ -174,6 +182,7 @@ Copyright:
 	Copyright © 2005 Gnome Artwork Team
 	system-users.svg users       siduxcc_gtk2/gtk2/icons/users.png
 	gtk-about.png                siduxcc_gtk2/gtk2/icons/about.png
+
 
 
 License:
