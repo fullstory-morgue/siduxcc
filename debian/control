@@ -3,29 +3,52 @@ Section: admin
 Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Uploaders: Fabian Wuertz <xadras@sidux.com>, Joaquim Boura <x-un-i@sidux.com>
-Build-Depends: cdbs, debhelper (>= 6), cmake, kdelibs4-dev, gettext, imagemagick
-Standards-Version: 3.8.0
+Build-Depends: cdbs,
+ debhelper (>= 6),
+ cmake,
+ kdelibs4-dev,
+ gettext,
+ imagemagick
+Standards-Version: 3.8.2
 Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
 Package: siduxcc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu, konsole
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ siduxcc-common (= ${source:Version}),
+ menu,
+ konsole
 Recommends: apt-show-versions, configure-ndiswrapper
 Description: sidux control center (KDE frontend)
  KDE based frontend for managing sidux
 
 Package: siduxcc-gtk2
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, siduxcc-common (= ${source:Version}), menu, python, python-gtk2
-Suggests: xfce4-mcs-manager, gnome-control-center, install-meta, gnome-system-tools, gnome-alsamixer, gnome-cups-manager, hardinfo
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ siduxcc-common (= ${source:Version}),
+ menu,
+ python,
+ python-gtk2
+Suggests: xfce4-mcs-manager,
+ gnome-control-center,
+ install-meta,
+ gnome-system-tools,
+ gnome-alsamixer,
+ gnome-cups-manager,
+ hardinfo
 Description: sidux control center (GTK2 frontend)
  GTK2 based frontend for managing sidux
 
 Package: siduxcc-common
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ceni (>= 1.31), gettext-base, sidux-scripts
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ ceni (>= 1.31),
+ gettext-base,
+ sidux-scripts
 Replaces: siduxcc (<< 0.12.15)
 Description: sidux control center (backend and cli tools)
  Common tool backend and command line interface for the sidux control center
-

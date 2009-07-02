@@ -1,16 +1,16 @@
-siduxcc (0.13.2) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+siduxcc (0.13.2) unstable; urgency=low
 
   [ Bernard Gray ]
   * update art for 2009-02
   * convert all bitmaps to new svg art
   * update copyright for new art 
 
-  * ready for release
+  [ Stefan Lippers-Hollmann ]
+  * generate binary artwork.
+  * wrap control entries.
+  * bump standards version to 3.8.2.
 
- -- Bernard Gray <bernard.gray@gmail.com>  Thu, 02 Jul 2009 21:48:45 +1000
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jul 2009 23:47:38 +0200
 
 siduxcc (0.13.1) unstable; urgency=low
 
