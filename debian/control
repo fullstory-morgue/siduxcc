@@ -20,7 +20,8 @@ Depends: ${shlibs:Depends},
  siduxcc-common (= ${source:Version}),
  menu,
  konsole
-Recommends: apt-show-versions, configure-ndiswrapper
+Recommends: apt-show-versions,
+ configure-ndiswrapper
 Description: sidux control center (KDE frontend)
  KDE based frontend for managing sidux
 
@@ -34,7 +35,6 @@ Depends: ${shlibs:Depends},
  python-gtk2
 Suggests: xfce4-mcs-manager,
  gnome-control-center,
- install-meta,
  gnome-system-tools,
  gnome-alsamixer,
  gnome-cups-manager,
