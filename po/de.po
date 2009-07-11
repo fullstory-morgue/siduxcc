@@ -105,12 +105,6 @@ msgid "&News"
 msgstr "News"
 
 #. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 101
-#: kde3/hermes/hermesbase.cpp:404 po/rc.cpp:18 rc.cpp:18
-msgid "Smxi Ad&vice"
-msgstr "Smxi Hinweis"
-
-#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 119
 #: kde3/hermes/hermesbase.cpp:408 po/rc.cpp:21 rc.cpp:21
 msgid "Upgrada&ble packages"
@@ -2261,12 +2255,10 @@ msgstr "Bitte keinen Dist-Upgrade durchführen."
 #: kde3/siduxcc/software.cpp:158
 msgid ""
 "To update your system you have to leave the graphic modus. Press for this CTR"
-"+ALT+F1, login as root and type init 3. After that run the command smxi or "
-"siduxcc (Software->Dist-upgrade)."
+"+ALT+F1, login as root and type init 3. After that run siduxcc (Software->Dist-upgrade)."
 msgstr ""
 "Für einen Systemupgrade muss der graphische Modus verlassen werden. Hierzu "
-"CTR+ALT+F1 drücken, sich als root einloggen und init 3 eingeben. Danach den "
-"Befehl smxi oder siduxcc (Software->Dist-upgrade) ausführen."
+"CTR+ALT+F1 drücken, sich als root einloggen und init 3 eingeben. Danach siduxcc (Software->Dist-upgrade) ausführen."
 
 #: kde3/siduxcc/software.cpp:178
 msgid "Are you sure you want to clear your local repository?"

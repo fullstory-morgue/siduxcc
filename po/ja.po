@@ -99,12 +99,6 @@ msgid "&News"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 101
-#: kde3/hermes/hermesbase.cpp:404 po/rc.cpp:18 rc.cpp:18
-msgid "Smxi Ad&vice"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 119
 #: kde3/hermes/hermesbase.cpp:408 po/rc.cpp:21 rc.cpp:21
 #, fuzzy
@@ -2227,8 +2221,7 @@ msgstr "今Dist-Upgradeをしてはいけません!"
 #, fuzzy
 msgid ""
 "To update your system you have to leave the graphic modus. Press for this CTR"
-"+ALT+F1, login as root and type init 3. After that run the command smxi or "
-"siduxcc (Software->Dist-upgrade)."
+"+ALT+F1, login as root and type init 3. After that run siduxcc (Software->Dist-upgrade)."
 msgstr ""
 "Dist-upgradeをするためにはまずランレベル３に移ります. Ctrl+Alt+F1を押し, root"
 "としてログインしてからinit 3とタイプします. siduxccのコマンドを実行し"

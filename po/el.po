@@ -719,15 +719,13 @@ msgstr "Μην κάνετε dist-Upgrade!"
 msgid ""
 "To update your system you have to leave the graphic modus. Press for"
 " this CTR"
-"+ALT+F1, login as root and type init 3. After that run the command"
-" smxi or "
-"siduxcc (Software->Dist-upgrade)."
+"+ALT+F1, login as root and type init 3. After that run siduxcc (Software->Dist-upgrade)."
 msgstr ""
 "Για να αναβαθμίσετε το σύστημα, πρέπει να βγείτε από το γραφικό"
 " περιβάλλον. "
 "Πατήστε CTR+ALT+F1, συνδεθείτε σαν υπέρ-χρήστης και γράψτε init 3."
 " Μετά από αυτό"
-"τρέξτε την εντολή smxi ή siduxcc (Software->Dist-upgrade)."
+"τρέξτε siduxcc (Software->Dist-upgrade)."
 
 #: kde3/siduxcc/software.cpp:178
 msgid "Are you sure you want to clear your local repository?"
@@ -849,12 +847,6 @@ msgstr "Νέα"
 #: po/rc.cpp:15 rc.cpp:15
 msgid "Double click to the item to view the full message."
 msgstr "Κάντε διπλό κλικ σε ένα αντικείμενο για να δείτε όλο το μήνυμα"
-
-#. i18n: tag string
-#. i18n: file ./kde3/hermes/hermesbase.ui line 101
-#: po/rc.cpp:18 rc.cpp:18
-msgid "Smxi Ad&vice"
-msgstr "Smxi Συμβουλές"
 
 #. i18n: tag string
 #. i18n: file ./kde3/hermes/hermesbase.ui line 119

@@ -96,24 +96,6 @@ function cleanPackageCache()
 	fDone
 }
 
-
-
-
-
-#------------------------------------------------------------------------------#
-#--- smxi ---------------------------------------------------------------------#
-#------------------------------------------------------------------------------#
-
-
-function getSmxiAlerts()
-{
-	TMP="$(mktemp -p /tmp/ sidux-news-XXXXXXXXXX)"
-	wget -O $TMP -q -U "siduxcc-hermes" http://techpatterns.com/downloads/distro/alert_message
-	cat $TMP
-	rm -f $TMP
-}
-
-
 #------------------------------------------------------------------------------#
 #--- sidux warnings & news ----------------------------------------------------#
 #------------------------------------------------------------------------------#
@@ -201,13 +183,11 @@ function ssftSoftware()
 	while true;
 	do
 		ssft_menu "${Title}" "$(eval_gettext "Please make your choice:")" \
-			"$(eval_gettext "run smxi (software update)")" \
 			"$(eval_gettext "run a dist-upgrade only")" \
 			"$(eval_gettext "show DU warnings")" \
 			#"$(eval_gettext "Show DU log")"
 	
 		case $SSFT_RESULT in
-			"$(eval_gettext "run smxi (software update)")" ) smxi;;
 			"$(eval_gettext "run a dist-upgrade only")"           ) ssftDu;;
 			"$(eval_gettext "show DU warnings")"           ) ssftDuWarnings;;
 			#"$(eval_gettext "Show DU log")"                ) ssftDuLog;;

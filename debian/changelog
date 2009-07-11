@@ -1,3 +1,9 @@
+siduxcc (0.13.5) unstable; urgency=low
+
+  * remove last traces of smxi.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jul 2009 16:50:28 +0200
+
 siduxcc (0.13.4) unstable; urgency=low
 
   * don't suggest install-meta anymore, it's gone.
