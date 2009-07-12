@@ -1,3 +1,9 @@
+siduxcc (0.13.6) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jul 2009 16:51:05 +0200
+
 siduxcc (0.13.5) unstable; urgency=low
 
   * remove last traces of smxi.
