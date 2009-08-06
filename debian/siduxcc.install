@@ -1,3 +1,9 @@
-debian/tmp/usr/bin/siduxcc-kde3					usr/bin/
-debian/tmp/usr/share/applications/kde/siduxcc-kde3.desktop	usr/share/applications/kde/
-debian/tmp/usr/share/siduxcc/icons				usr/share/siduxcc/
+debian/tmp/usr/bin/nicstatus                         usr/bin/
+debian/tmp/usr/bin/siduxcc                           usr/bin/
+debian/tmp/usr/share/pixmaps                         usr/share/
+debian/tmp/usr/share/siduxcc/modules	             usr/share/siduxcc/
+debian/tmp/usr/share/siduxcc/scripts/rcconf.pl       usr/share/siduxcc/scripts/
+debian/tmp/usr/share/siduxcc/scripts/loadssft.sh     usr/share/siduxcc/scripts/
+icons/siduxcc.svg                                    usr/share/icons/hicolor/scalable/apps/
+debian/tmp/usr/share/icons                           usr/share/
+debian/tmp/usr/share/locale/*/LC_MESSAGES/siduxcc.mo

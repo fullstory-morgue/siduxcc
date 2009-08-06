@@ -1,0 +1,24 @@
+#!/bin/sh
+# (C) Fabian Wuertz Jun 2009
+
+nicinfo $@ | while read line; do
+	interface=$(echo $line | cut -d, -f1)
+
+	ip=$(/sbin/ifconfig $interface | grep "inet addr" | gawk -F: '{print $2}' | gawk '{print $1}')
+	status=$(grep $interface /etc/network/run/ifstate)
+	method=$(ps -ef | grep dhclient | grep $interface)
+	if [ -z "$method" ]; then 
+		method="static"; 
+	else
+		method="dhcp";
+	fi
+	if [ -z $status ]; then 
+		status="not_running"; 
+	else
+		status="running"; 
+	fi
+
+	echo "$line,$ip,$method,$status"
+done
+
+

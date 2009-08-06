@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=siduxcc KDE4
+GenericName=siduxcc
+Type=Application
+Exec=siduxcc-kde4
+Icon=siduxcc
+Categories=Qt;KDE;Utility;

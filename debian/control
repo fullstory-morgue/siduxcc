@@ -13,23 +13,24 @@ Standards-Version: 3.8.2
 Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
+
 Package: siduxcc
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- siduxcc-common (= ${source:Version}),
- menu,
- konsole
-Recommends: apt-show-versions,
- configure-ndiswrapper
-Description: sidux control center (KDE frontend)
- KDE based frontend for managing sidux
+ ceni (>= 1.31),
+ gettext-base,
+ sidux-scripts
+Replaces: siduxcc (<< 0.12.15)
+Description: sidux control center (backend and cli tools)
+ Common tool backend and command line interface for the sidux control center
+
 
 Package: siduxcc-gtk2
 Architecture: all
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- siduxcc-common (= ${source:Version}),
+ siduxcc (= ${source:Version}),
  menu,
  python,
  python-gtk2
@@ -44,11 +45,17 @@ Description: sidux control center (GTK2 frontend)
 
 Package: siduxcc-common
 Architecture: all
+Depends:  siduxcc (= ${source:Version})
+Description: siduxcc (transitional dummy package)
+ This is a "dummy" package that depends on the package siduxcc.
+
+
+Package: siduxcc-kde4
+Architecture: any
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- ceni (>= 1.31),
- gettext-base,
- sidux-scripts
-Replaces: siduxcc (<< 0.12.15)
-Description: sidux control center (backend and cli tools)
- Common tool backend and command line interface for the sidux control center
+ siduxcc-common (= ${source:Version}),
+ menu
+Description: sidux control center (KDE4 frontend)
+ KDE4 based frontend for managing sidux
+
