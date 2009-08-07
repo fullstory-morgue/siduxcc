@@ -1,3 +1,9 @@
+siduxcc (0.14.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 07 Aug 2009 15:41:04 +0200
+
 siduxcc (0.14.3) unstable; urgency=low
 
   * make siduxcc replace siduxcc-common (<< 0.14.2).
