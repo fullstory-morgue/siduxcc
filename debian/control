@@ -6,7 +6,7 @@ Uploaders: Fabian Wuertz <xadras@sidux.com>, Joaquim Boura <x-un-i@sidux.com>
 Build-Depends: cdbs,
  debhelper (>= 6),
  cmake,
- kdelibs4-dev,
+ kdelibs5-dev,
  gettext,
  imagemagick
 Standards-Version: 3.8.2
@@ -24,7 +24,6 @@ Depends: ${shlibs:Depends},
 Replaces: siduxcc (<< 0.12.15)
 Description: sidux control center (backend and cli tools)
  Common tool backend and command line interface for the sidux control center
-
 
 Package: siduxcc-gtk2
 Architecture: all
@@ -49,7 +48,6 @@ Depends:  siduxcc (= ${source:Version})
 Description: siduxcc (transitional dummy package)
  This is a "dummy" package that depends on the package siduxcc.
 
-
 Package: siduxcc-kde4
 Architecture: any
 Depends: ${shlibs:Depends},
@@ -58,4 +56,3 @@ Depends: ${shlibs:Depends},
  menu
 Description: sidux control center (KDE4 frontend)
  KDE4 based frontend for managing sidux
-
