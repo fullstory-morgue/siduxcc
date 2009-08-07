@@ -13,7 +13,6 @@ Standards-Version: 3.8.2
 Vcs-Svn: svn://svn.berlios.de/fullstory/siduxcc/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/siduxcc/trunk/
 
-
 Package: siduxcc
 Architecture: all
 Depends: ${shlibs:Depends},
@@ -21,7 +20,6 @@ Depends: ${shlibs:Depends},
  ceni (>= 1.31),
  gettext-base,
  sidux-scripts
-Replaces: siduxcc (<< 0.12.15)
 Description: sidux control center (backend and cli tools)
  Common tool backend and command line interface for the sidux control center
 
