@@ -1,9 +1,5 @@
-siduxcc (0.13.6) UNRELEASED; urgency=low
+siduxcc (0.13.6) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * a first version of siduxcc kde4 added
 
  -- Fabian Wuertz <xadras@sidux.com>  Thu, 06 Aug 2009 17:05:06 +0200
