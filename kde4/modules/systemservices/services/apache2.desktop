@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Apache
+Comment=Web server
+Comment[de]=Webserver
+Description=Apache v2 is the next generation of the omnipresent Apache web server.
+Description[de]=Apache2 ist eine Weiterentwicklung des Apache Webservers.
+Pid=apache2

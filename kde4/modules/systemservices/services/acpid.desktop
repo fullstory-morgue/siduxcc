@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=ACPI
+Comment=Utilities for using ACPI power management
+Comment[de]=Baterieverwalltungsdienst
+Pid=acpid

@@ -1,7 +1,15 @@
 [Desktop Entry]
-Name=siduxcc KDE4
-GenericName=siduxcc
 Type=Application
-Exec=siduxcc-kde4
+Exec=su-to-root -X -c /usr/bin/siduxcc-kde4
 Icon=siduxcc
-Categories=Qt;KDE;Utility;
+Name=sidux Control Center (KDE4)
+Name[da]=sidux kontrolcenter (KDE4)
+Name[de]=sidux Kontrollzentrum (KDE4)
+Name[fr]=Centre de Contrôle de Sidux (KDE4)
+Name[hr]=sidux-Kontrolni Centar (KDE4)
+Name[it]=Centro di controllo di sidux (KDE4)
+Name[nl]=sidux-Kontrol Center (KDE4)
+Name[ro]=Centrul de control sidux (KDE4)
+Name[ru]=Цетр управления sidux (KDE4)
+Categories=Qt;KDE;System;
+Type=Application

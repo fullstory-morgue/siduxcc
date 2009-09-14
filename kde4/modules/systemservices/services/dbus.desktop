@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=D-Bus
+Comment=Interprocess messaging system
+Pid=dbus-daemon

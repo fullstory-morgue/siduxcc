@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=System Services
+Comment=Manage your system services
+Icon=system-run
+
+Type=Service
+
+Exec=kcmshell4 kcm_siduxcc_systemservices
+
+
+X-KDE-ServiceTypes=KCModule
+X-KDE-Library=kcm_siduxcc_systemservices
+X-KDE-ParentApp=kcontrol
+X-KDE-System-Settings-Parent-Category=advanced-user-settings
+X-KDE-Keywords=GTK,effects,size,style,colors
+Categories=Qt;KDE;X-KDE-settings-looknfeel;siduxcc

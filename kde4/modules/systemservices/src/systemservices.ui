@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemServicesGui</class>
+ <widget class="QWidget" name="SystemServicesGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>646</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>System Services</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QWidget" name="topWidget" native="true">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QWidget" name="searchWidget" native="true">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="KLineEdit" name="searchKLineEdit">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="trapEnterKeyEvent" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="clickMessage">
+             <string>Seach for a service ...</string>
+            </property>
+            <property name="showClearButton" stdset="0">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="locale">
+          <locale language="English" country="UnitedStates"/>
+         </property>
+         <property name="rootIsDecorated">
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable">
+          <bool>false</bool>
+         </property>
+         <property name="animated">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QWidget" name="buttonWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="bootPushButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Enable start at boot</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="stopPushButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="locale">
+             <locale language="English" country="UnitedStates"/>
+            </property>
+            <property name="text">
+             <string>Stop service</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="startPushButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="locale">
+             <locale language="English" country="UnitedStates"/>
+            </property>
+            <property name="text">
+             <string>Start service</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTextBrowser" name="descriptionTextBrowser"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>displayService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchKLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>searchServices(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>displayService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>startService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>stopService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bootPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SystemServicesGui</receiver>
+   <slot>toggleAutoBoot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>startService()</slot>
+  <slot>stopService()</slot>
+  <slot>restartService()</slot>
+  <slot>adminMode()</slot>
+  <slot>displayService()</slot>
+  <slot>searchServices(QString)</slot>
+  <slot>updateServices()</slot>
+  <slot>toggleAutoBoot()</slot>
+ </slots>
+</ui>

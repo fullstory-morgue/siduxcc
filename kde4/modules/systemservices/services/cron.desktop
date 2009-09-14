@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Cron
+Comment=Time-based scheduling service
+Pid=cron

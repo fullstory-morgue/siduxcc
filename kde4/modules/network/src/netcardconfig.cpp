@@ -43,9 +43,11 @@ K_EXPORT_PLUGIN(NwaFactory("kcm_networkaround"));
 Netcardconfig::Netcardconfig( QWidget *parent, const QVariantList &)
         : KCModule(NwaFactory::componentData(), parent)
 {
+  
+  
 	setButtons(NoAdditionalButton);
 
-	KAboutData *about = new KAboutData( "kcm_networkaround ", 0, ki18n( "Network Settings" ), "0.8.5", ki18n( "Configure Network Settings" ), KAboutData::License_GPL, ki18n( "Copyright (C) 2009 Fabian Wuertz" ), KLocalizedString(), "http://linux.wuertz.org/", "xadras@sidux.com" );
+	KAboutData *about = new KAboutData( "kcm_networkaround ", 0, ki18n( "Network Settings" ), "1", ki18n( "Configure Network Settings" ), KAboutData::License_GPL, ki18n( "Copyright (C) 2009 Fabian Wuertz" ), KLocalizedString(), "http://linux.wuertz.org/", "xadras@sidux.com" );
 	about->addAuthor( ki18n("Fabian Wuertz"), ki18n( "Developer" ), "xadras@sidux.com" );
 	setAboutData( about );  
   
@@ -75,15 +77,16 @@ void Netcardconfig::lanConfig() {
 	QString device = networkCardsTreeWidget->selectedItems().first()->text(0);
 
 	// checkRootPrivileges
-	if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
-		  Forward = "lanConfig";
-		  dlg = new KPasswordDialog( this);
-		  dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
-		  connect( dlg, SIGNAL( gotPassword( const QString& , bool ) )  , this, SLOT( setPassword( const QString &) ) );
-		  connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
-		  dlg->show();
-		  return;
-	}
+	if(getuid() != 0)
+		if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
+			  Forward = "lanConfig";
+			  dlg = new KPasswordDialog( this);
+			  dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
+			  connect( dlg, SIGNAL( gotPassword( const QString& , bool ) )  , this, SLOT( setPassword( const QString &) ) );
+			  connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
+			  dlg->show();
+			  return;
+		}
 
 
 
@@ -102,15 +105,16 @@ void Netcardconfig::wlanConfig() {
 	QString device = networkCardsTreeWidget->selectedItems().first()->text(0);
 
 	// checkRootPrivileges
-	if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
-		Forward = "wlanConfig";
-		dlg = new KPasswordDialog( this);
-		dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
-		connect( dlg, SIGNAL( gotPassword(const QString& , bool ) )  , this, SLOT( setPassword(const QString &) ) );
-		connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
-		dlg->show();
-		return;
-	}
+	if(getuid() != 0)
+		if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
+			Forward = "wlanConfig";
+			dlg = new KPasswordDialog( this);
+			dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
+			connect( dlg, SIGNAL( gotPassword(const QString& , bool ) )  , this, SLOT( setPassword(const QString &) ) );
+			connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
+			dlg->show();
+			return;
+		}
 
 	wlan* wlanWindow = new wlan(this, Password, device);
 	if ( wlanWindow->exec() )
@@ -253,15 +257,16 @@ QString Netcardconfig::readProcess(QString run, QStringList arguments)
 void Netcardconfig::kdesu( QByteArray input ) {
 	cmd = input;
 	// checkRootPrivileges
-	if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
-		  Forward = "kdesu";
-		  dlg = new KPasswordDialog( this);
-		  dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
-		  connect( dlg, SIGNAL( gotPassword( const QString& , bool ) )  , this, SLOT( setPassword( const QString &) ) );
-		  connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
-		  dlg->show();
-		  return;
-	}
+	if(getuid() != 0)
+		if ( Password.isEmpty() || KDESu::SuProcess( "root" ).checkInstall( Password.toLocal8Bit() ) != 0 ) {
+			  Forward = "kdesu";
+			  dlg = new KPasswordDialog( this);
+			  dlg->setPrompt(i18nc("@info", "<para>Administrator privileges are required.</para><para>In order to procede, please enter the system administrator's password.</para>"));
+			  connect( dlg, SIGNAL( gotPassword( const QString& , bool ) )  , this, SLOT( setPassword( const QString &) ) );
+			  connect( dlg, SIGNAL( rejected() )  , this, SLOT( slotCancel() ) );
+			  dlg->show();
+			  return;
+		}
 	KDESu::SuProcess su( QByteArray( "root" ), cmd);
 	su.exec( Password.toLocal8Bit() );
 	getNetworkcards();
