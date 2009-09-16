@@ -1,9 +1,5 @@
-siduxcc (0.99.1) UNRELEASED; urgency=low
+siduxcc (0.99.1) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Fabian Wuertz ]
   * kde4: system services module added
 
  -- Fabian Wuertz <xadras@sidux.com>  Mon, 14 Sep 2009 21:44:57 +0200
