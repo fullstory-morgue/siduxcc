@@ -1,3 +1,9 @@
+siduxcc (0.99.2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 16 Sep 2009 19:51:34 +0200
+
 siduxcc (0.99.1) unstable; urgency=low
 
   * kde4: system services module added
