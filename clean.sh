@@ -27,6 +27,13 @@ rm -rf debian/*.substvars
 rm -rf lib
 rm kde4/starter/siduxcc-kde4.shell
 rm kde4/starter/siduxcc-kde4
+rm -rf debian/siduxcc-kde4
+rm -rf debian/siduxcc-common
+rm -rf debian/siduxcc-gtk2
+rm -rf debian/siduxcc.postinst.debhelper
+rm -rf debian/siduxcc.postrm.debhelper
+
+
 
 
 

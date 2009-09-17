@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=System Services
+Name[de]=Systemdienste
 Comment=Manage your system services
+Comment=Verwaltung der Systemdienste
 Icon=system-run
 
 Type=Service

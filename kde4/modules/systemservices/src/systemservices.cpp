@@ -93,7 +93,7 @@ void SystemServices::loadServices()
 
 		QTreeWidgetItem *item = new QTreeWidgetItem(treeWidget, 0);
 		item->setText(4, serviceName );
-		QString configFile = KGlobal::dirs()->findResource ("data", "systemsettings-systemservices/services/"+serviceName+".desktop");
+                QString configFile = KGlobal::dirs()->findResource ("data", "siduxcc/services/"+serviceName+".desktop");
 		
 		if (QFile::exists(configFile) ) {
 		  KDesktopFile config(configFile);

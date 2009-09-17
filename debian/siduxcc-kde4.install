@@ -1,8 +1,11 @@
-debian/tmp/usr/bin/siduxcc-kde4					usr/bin/
-debian/tmp/usr/share/applications/kde4/siduxcc-kde4.desktop	usr/share/applications/kde/
-debian/tmp/usr/share/siduxcc/kde4				usr/share/siduxcc/
+debian/tmp/usr/bin/siduxcc-kde4                                         usr/bin/
+debian/tmp/usr/share/applications/kde4/siduxcc-kde4.desktop             usr/share/applications/kde/
+debian/tmp/usr/share/siduxcc/kde4                                       usr/share/siduxcc/
 
+debian/tmp/usr/lib/kde4/kcm_siduxcc_network.so                          usr/lib/kde4/
+debian/tmp/usr/share/kde4/services/kcm_siduxcc_network.desktop          usr/share/kde4/services/
+debian/tmp/usr/bin/nicinfo-plus                                         usr/bin/
 
-debian/tmp/usr/lib/kde4/kcm_siduxcc_network.so			usr/lib/kde4/
-debian/tmp/usr/share/kde4/services/kcm_siduxcc_network.desktop	usr/share/kde4/services/
-debian/tmp/usr/bin/nicinfo-plus					usr/bin/
+debian/tmp/usr/lib/kde4/kcm_siduxcc_systemservices.so                   usr/lib/kde4/
+debian/tmp/usr/share/kde4/services/kcm_siduxcc_systemservices.desktop   usr/share/kde4/services/
+debian/tmp/usr/share/kde4/apps/siduxcc                                  usr/share/kde4/apps/
